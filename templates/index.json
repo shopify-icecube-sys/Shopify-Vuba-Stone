@@ -83,36 +83,10 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
-    },
-    "vuba_richtext_gzJDPi": {
-      "type": "vuba-richtext",
-      "blocks": {
-        "title_web6Hd": {
-          "type": "title",
-          "settings": {
-            "title": "",
-            "title_size": "text-4xl"
-          }
-        },
-        "inline_richtext_paDyYf": {
-          "type": "inline_richtext",
-          "settings": {
-            "richtext": ""
-          }
-        }
-      },
-      "block_order": [
-        "title_web6Hd",
-        "inline_richtext_paDyYf"
-      ],
-      "settings": {
-        "background_color": ""
-      }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection",
-    "vuba_richtext_gzJDPi"
+    "featured_collection"
   ]
 }
