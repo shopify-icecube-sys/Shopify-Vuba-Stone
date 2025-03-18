@@ -83,10 +83,22 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "vuba_banner_image_7g3wi4": {
+      "type": "vuba-banner-image",
+      "settings": {
+        "background_image": "shopify://shop_images/IMG_4653.jpg",
+        "logo": "shopify://shop_images/image_109.png",
+        "title": "Let us help you Find an Installer",
+        "richtext": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra dolor magna, quis consequat ligula convallis non. Nullam euismod, lorem quis blandit dictum, enim sem consectetur sapien, eget consectetur sapien sapien sit amet sapien.</p>",
+        "button_text": "Click here if you would like to become an installer",
+        "button_link": ""
+      }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection"
+    "featured_collection",
+    "vuba_banner_image_7g3wi4"
   ]
 }
