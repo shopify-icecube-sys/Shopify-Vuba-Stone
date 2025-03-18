@@ -109,7 +109,7 @@
       "settings": {
         "background_color": "",
         "title": "Rich Text Title",
-        "title_size": "text-4xl",
+        "title_size": "text-xl",
         "text-alignment": "center",
         "richtext": "<p>This is some rich text content.</p>",
         "alignment": "center"
