@@ -6,9 +6,11 @@
 >
   <div class="container mx-auto px-4">
     <div class="text-center">
-      <h2 class="text-{{ section.settings.title_size }} text-{{ section.settings.text-alignment }}">
-        {{ section.settings.title }}
-      </h2>
+      {% if section.settings.title != blank %}
+        <h2 class="text-{{ section.settings.title_size }} text-{{ section.settings.text-alignment }}">
+          {{ section.settings.title }}
+        </h2>
+      {% endif %}
       <div class="text-{{ section.settings.alignment }}">
         {{ section.settings.richtext }}
       </div>
