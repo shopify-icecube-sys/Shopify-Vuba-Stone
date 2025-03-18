@@ -11,7 +11,7 @@
           {{ section.settings.title }}
         </h2>
       {% endif %}
-      {% if section.settings.richtext %}
+      {% if section.settings.richtext != blank  %}
         <div class="text-{{ section.settings.alignment }}">
           {{ section.settings.richtext }}
         </div>
@@ -27,11 +27,16 @@
           </a>
         {% endif %}
         {% if block.type == 'image' %}
-          <img
-            src="{{ block.settings.image | image_url: width: 800 }}"
-            alt="{{ block.settings.image.alt | default: 'Image' }}"
-            class="w-full h-auto"
-          >
+          {%- if block.settings.image != blank -%}
+            <img
+              src="{{ block.settings.image | img_url: '800x' }}"
+              alt="{{ block.settings.image.alt | default: 'Image' }}"
+              class="w-full h-auto"
+            >
+          {% else %}
+          {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+          {%- endif -%}
+
         {% endif %}
       </div>
     {% endfor %}
