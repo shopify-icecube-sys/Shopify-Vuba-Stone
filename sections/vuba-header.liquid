@@ -28,6 +28,8 @@
         <li>
           {%- if link.links != blank -%}
             <a href="{{ link.url }}" class="text-white font-bold">{{ link.title }}</a>
+          {% else %}
+            link not found
           {% endif %}
         </li>
       {% endfor %}
