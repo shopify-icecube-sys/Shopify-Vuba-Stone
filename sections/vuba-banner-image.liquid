@@ -1,6 +1,5 @@
 <section class="relative">
   {% if section.settings.background_image != blank %}
-    {{ section.settings.background_image }}
     <div
       class="absolute inset-0 bg-cover bg-center"
       style="background-image: url('{{ section.settings.background_image | image_url }}');"
