@@ -25,10 +25,9 @@
   <nav>
     <ul class="flex space-x-4">
       {%- for link in section.settings.menu -%}
-        {{ link }}
         <li>
           {%- if link.links != blank -%}
-            <a href="{{ link.url }}" class="text-white font-bold">{{ link.title }}</a>
+            {{ link }}
           {% else %}
             link not found
           {% endif %}
