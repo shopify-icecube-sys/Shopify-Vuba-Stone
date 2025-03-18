@@ -1,0 +1,119 @@
+<section class="py-12 {% if section.settings.background_color %}bg-{{ section.settings.background_color }}{% endif %} {% if section.settings.background_image != blank %}bg-cover bg-center{% endif %}" {% if section.settings.background_image != blank %}style="background-image: url('{{ section.settings.background_image | image_url }}');"{% endif %}>
+    <div class="container mx-auto px-4">
+      {% for block in section.blocks %}
+        <div class="mb-8">
+          {% if block.type == 'title' %}
+            <h2 class="text-{{ block.settings.title_size }} font-bold mb-4">{{ block.settings.title }}</h2>
+          {% endif %}
+          {% if block.type == 'inline_richtext' %}
+            <div class="prose mb-4">{{ block.settings.richtext }}</div>
+          {% endif %}
+          {% if block.type == 'button' %}
+            <a href="{{ block.settings.button_link }}" class="inline-block bg-blue-500 text-white py-2 px-4 rounded">{{ block.settings.button_text }}</a>
+          {% endif %}
+          {% if block.type == 'image' %}
+            <img src="{{ block.settings.image | image_url: width: 800 }}" alt="{{ block.settings.image.alt | default: 'Image' }}" class="w-full h-auto">
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+  
+  {% schema %}
+  {
+    "name": "Rich Text Section",
+    "settings": [
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background Color"
+      },
+      {
+        "type": "image_picker",
+        "id": "background_image",
+        "label": "Background Image"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "title",
+        "name": "Title",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "select",
+            "id": "title_size",
+            "label": "Title Size",
+            "options": [
+              {
+                "value": "text-4xl",
+                "label": "Extra Large"
+              },
+              {
+                "value": "text-3xl",
+                "label": "Large"
+              },
+              {
+                "value": "text-2xl",
+                "label": "Medium"
+              },
+              {
+                "value": "text-xl",
+                "label": "Small"
+              }
+            ],
+            "default": "text-4xl"
+          }
+        ]
+      },
+      {
+        "type": "inline_richtext",
+        "name": "Inline Rich Text",
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "richtext",
+            "label": "Rich Text"
+          }
+        ]
+      },
+      {
+        "type": "button",
+        "name": "Button",
+        "settings": [
+          {
+            "type": "text",
+            "id": "button_text",
+            "label": "Button Text"
+          },
+          {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button Link"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "name": "Image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Rich Text Section",
+        "category": "Custom"
+      }
+    ]
+  }
+  {% endschema %}
