@@ -16,7 +16,9 @@
   <div class="search flex items-center">
     <input type="text" placeholder="Search..." class="p-2 rounded-l-md border-none">
     <button type="submit" class="bg-white p-2 rounded-r-md">
-      {{- 'icon-search.svg' | inline_asset_content -}}
+      <span class="svg-wrapper">
+        {{- 'icon-search.svg' | inline_asset_content -}}
+      </span>
     </button>
   </div>
 
