@@ -1,12 +1,19 @@
 <section class="relative">
   {% if section.settings.background_image != blank %}
-    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ section.settings.background_image | image_url }}');"></div>
+    {{ section.settings.background_image }}
+    <div
+      class="absolute inset-0 bg-cover bg-center"
+      style="background-image: url('{{ section.settings.background_image | image_url }}');"
+    ></div>
   {% endif %}
   <div class="container mx-auto relative z-10 py-12 px-4">
     <div class="bg-maroon-800 p-6 rounded-lg text-white max-w-md">
       {% if section.settings.logo != blank %}
-        {{ section.settings.background_image }}
-        <img src="{{ section.settings.logo | image_url: width: 200 }}" alt="{{ section.settings.logo.alt | default: shop.name }}" class="h-12 mb-4">
+        <img
+          src="{{ section.settings.logo | image_url: width: 200 }}"
+          alt="{{ section.settings.logo.alt | default: shop.name }}"
+          class="h-12 mb-4"
+        >
       {% endif %}
       {% if section.settings.title != blank %}
         <h2 class="text-2xl font-bold mb-4">{{ section.settings.title }}</h2>
@@ -15,12 +22,13 @@
         <div class="prose mb-4">{{ section.settings.richtext }}</div>
       {% endif %}
       {% if section.settings.button_text != blank and section.settings.button_link != blank %}
-        <a href="{{ section.settings.button_link }}" class="inline-block bg-blue-500 text-white py-2 px-4 rounded">{{ section.settings.button_text }}</a>
+        <a href="{{ section.settings.button_link }}" class="inline-block bg-blue-500 text-white py-2 px-4 rounded">
+          {{- section.settings.button_text -}}
+        </a>
       {% endif %}
     </div>
   </div>
 </section>
-
 
 {% schema %}
 {
