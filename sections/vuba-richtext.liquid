@@ -1,7 +1,14 @@
-<section class="py-12 {% if section.settings.background_color %}bg-{{ section.settings.background_color }}{% endif %} {% if section.settings.background_image != blank %}bg-cover bg-center{% endif %}" {% if section.settings.background_image != blank %}style="background-image: url('{{ section.settings.background_image | image_url }}');"{% endif %}>
+<section
+  class="py-12 {% if section.settings.background_color %}bg-{{ section.settings.background_color }}{% endif %} {% if section.settings.background_image != blank %}bg-cover bg-center{% endif %}"
+  {% if section.settings.background_image != blank %}
+    style="background-image: url('{{ section.settings.background_image | image_url }}');"
+  {% endif %}
+>
   <div class="container mx-auto px-4">
     <div class="text-center">
-      <h2 class="text-{{ section.settings.title_size }} text-{{ section.settings.alignment }}">{{ section.settings.title }}</h2>
+      <h2 class="text-{{ section.settings.title_size }} text-{{ section.settings.text-alignment }}">
+        {{ section.settings.title }}
+      </h2>
       <div class="text-{{ section.settings.alignment }}">
         {{ section.settings.richtext }}
       </div>
@@ -11,10 +18,16 @@
     {% for block in section.blocks %}
       <div class="mb-8 text-{{ block.settings.alignment }}">
         {% if block.type == 'button' %}
-          <a href="{{ block.settings.button_link }}" class="inline-block bg-blue-500 text-white py-2 px-4 rounded">{{ block.settings.button_text }}</a>
+          <a href="{{ block.settings.button_link }}" class="inline-block bg-blue-500 text-white py-2 px-4 rounded">
+            {{- block.settings.button_text -}}
+          </a>
         {% endif %}
         {% if block.type == 'image' %}
-          <img src="{{ block.settings.image | image_url: width: 800 }}" alt="{{ block.settings.image.alt | default: 'Image' }}" class="w-full h-auto">
+          <img
+            src="{{ block.settings.image | image_url: width: 800 }}"
+            alt="{{ block.settings.image.alt | default: 'Image' }}"
+            class="w-full h-auto"
+          >
         {% endif %}
       </div>
     {% endfor %}
@@ -67,7 +80,7 @@
         },
         {
           "type": "select",
-          "id": "alignment",
+          "id": "text-alignment",
           "label": "Alignment",
           "options": [
             {
@@ -127,7 +140,6 @@
           "type": "url",
           "id": "button_link",
           "label": "Button Link",
-          "default": "#"
         },
         {
           "type": "select",
@@ -188,12 +200,6 @@
       "name": "Vuba Rich Text Section",
       "category": "Custom",
       "blocks": [
-        {
-          "type": "title"
-        },
-        {
-          "type": "inline_richtext"
-        },
         {
           "type": "button"
         }
