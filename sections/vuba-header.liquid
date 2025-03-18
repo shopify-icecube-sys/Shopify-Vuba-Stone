@@ -24,7 +24,7 @@
 
   <nav>
     <ul class="flex space-x-4">
-      {%- for link in section.settings.menu.links -%}
+      {%- for link in section.settings.menu -%}
         {{ link }}
         <li>
           {%- if link.links != blank -%}
