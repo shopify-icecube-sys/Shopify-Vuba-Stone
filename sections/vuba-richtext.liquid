@@ -11,9 +11,11 @@
           {{ section.settings.title }}
         </h2>
       {% endif %}
-      <div class="text-{{ section.settings.alignment }}">
-        {{ section.settings.richtext }}
-      </div>
+      {% if section.settings.richtext %}
+        <div class="text-{{ section.settings.alignment }}">
+          {{ section.settings.richtext }}
+        </div>
+      {% endif %}
     </div>
   </div>
   <div class="container mx-auto px-4">
