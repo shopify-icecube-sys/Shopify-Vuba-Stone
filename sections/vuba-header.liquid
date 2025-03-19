@@ -6,20 +6,8 @@
         {% if block.type == 'logo' %}
           <div class="flex items-center">
             <a href="{{ block.settings.logo_link }}">
-              {% if block.settings.logo_desktop != blank %}
-                <img
-                  src="{{ block.settings.logo_desktop | img_url:'medium' }}"
-                  class="brand hidden md:block"
-                  alt="Header Logo"
-                >
-              {% endif %}
-              {% if block.settings.logo_mobile != blank %}
-                <img
-                  src="{{ block.settings.logo_mobile | img_url:'medium' }}"
-                  class="brand md:hidden"
-                  alt="Header Logo Mobile"
-                >
-              {% endif %}
+              <img src="{{ 'header-logo.svg' | asset_url }}" class="brand hidden md:block" alt="Header Logo">
+              <img src="{{ 'header-logo-m.svg' | asset_url }}" class="brand md:hidden" alt="Header Logo Mobile">
             </a>
           </div>
         {% elsif block.type == 'search' %}
