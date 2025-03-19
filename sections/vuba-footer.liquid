@@ -14,8 +14,11 @@
                 >
               {% endif %}
               {% if block.settings.logo_mobile != blank %}
-                mobile
-                <img src="{{ block.settings.logo_mobile | asset_url }}" class="md:hidden" alt="Vuba Stone Logo Mobile">
+                <img
+                  src="{{ block.settings.logo_mobile | img_url:'medium' }}"
+                  class="md:hidden"
+                  alt="Vuba Stone Logo Mobile"
+                >
               {% endif %}
             </a>
           </div>
