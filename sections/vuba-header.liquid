@@ -13,7 +13,13 @@
                   alt="Header Logo"
                 >
               {% endif %}
-              <img src="{{ 'header-logo-m.svg' | asset_url }}" class="brand md:hidden" alt="Header Logo Mobile">
+              {% if block.settings.logo_mobile != blank %}
+                <img
+                  src="{{ block.settings.logo_mobile | img_url:'medium' }}"
+                  class="brand md:hidden"
+                  alt="Header Logo Mobile"
+                >
+              {% endif %}
             </a>
           </div>
         {% elsif block.type == 'search' %}
