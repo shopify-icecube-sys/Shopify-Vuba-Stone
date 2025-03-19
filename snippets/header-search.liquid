@@ -7,86 +7,83 @@
   Usage:
   {% render 'header-search', input_id: 'My-Id'%}
 {% endcomment %}
+<div
+  class="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center z-50"
+  role="dialog"
+  aria-modal="true"
+  aria-label="{{ 'general.search.search' | t }}"
+>
+  <div class="absolute inset-0 bg-black opacity-50"></div>
+  <div class="relative bg-white p-6 rounded-lg shadow-lg w-full max-w-lg mx-auto">
+    {%- if settings.predictive_search_enabled -%}
+      <predictive-search class="w-full" data-loading-text="{{ 'accessibility.loading' | t }}">
+    {%- else -%}
+      <search-form class="w-full">
+    {%- endif -%}
+    <form action="{{ routes.search_url }}" method="get" role="search" class="w-full">
+      <div class="flex items-center border-b border-gray-300 py-2">
+        <input
+          class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+          id="{{ input_id }}"
+          type="search"
+          name="q"
+          value="{{ search.terms | escape }}"
+          placeholder="{{ 'general.search.search' | t }}"
+          {%- if settings.predictive_search_enabled -%}
+            role="combobox"
+            aria-expanded="false"
+            aria-owns="predictive-search-results"
+            aria-controls="predictive-search-results"
+            aria-haspopup="listbox"
+            aria-autocomplete="list"
+            autocorrect="off"
+            autocomplete="off"
+            autocapitalize="off"
+            spellcheck="false"
+          {%- endif -%}
+        >
+        <label class="hidden" for="{{ input_id }}">{{ 'general.search.search' | t }}</label>
+        <input type="hidden" name="options[prefix]" value="last">
+        <button
+          type="reset"
+          class="flex-shrink-0 bg-red-500 hover:bg-red-700 border-red-500 hover:border-red-700 text-sm border-4 text-white py-1 px-2 rounded hidden"
+          aria-label="{{ 'general.search.reset' | t }}"
+        >
+          <span class="w-4 h-4">
+            {{- 'icon-reset.svg' | inline_asset_content -}}
+          </span>
+        </button>
+        <button
+          class="flex-shrink-0 bg-blue-500 hover:bg-blue-700 border-blue-500 hover:border-blue-700 text-sm border-4 text-white py-1 px-2 rounded"
+          aria-label="{{ 'general.search.search' | t }}"
+        >
+          <span class="w-4 h-4">
+            {{- 'icon-search.svg' | inline_asset_content -}}
+          </span>
+        </button>
+      </div>
 
-<details class="relative">
-  <div
-    class="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center z-50"
-    role="dialog"
-    aria-modal="true"
-    aria-label="{{ 'general.search.search' | t }}"
-  >
-    <div class="absolute inset-0 bg-black opacity-50"></div>
-    <div class="relative bg-white p-6 rounded-lg shadow-lg w-full max-w-lg mx-auto">
       {%- if settings.predictive_search_enabled -%}
-        <predictive-search class="w-full" data-loading-text="{{ 'accessibility.loading' | t }}">
-      {%- else -%}
-        <search-form class="w-full">
-      {%- endif -%}
-      <form action="{{ routes.search_url }}" method="get" role="search" class="w-full">
-        <div class="flex items-center border-b border-gray-300 py-2">
-          <input
-            class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
-            id="{{ input_id }}"
-            type="search"
-            name="q"
-            value="{{ search.terms | escape }}"
-            placeholder="{{ 'general.search.search' | t }}"
-            {%- if settings.predictive_search_enabled -%}
-              role="combobox"
-              aria-expanded="false"
-              aria-owns="predictive-search-results"
-              aria-controls="predictive-search-results"
-              aria-haspopup="listbox"
-              aria-autocomplete="list"
-              autocorrect="off"
-              autocomplete="off"
-              autocapitalize="off"
-              spellcheck="false"
-            {%- endif -%}
-          >
-          <label class="hidden" for="{{ input_id }}">{{ 'general.search.search' | t }}</label>
-          <input type="hidden" name="options[prefix]" value="last">
-          <button
-            type="reset"
-            class="flex-shrink-0 bg-red-500 hover:bg-red-700 border-red-500 hover:border-red-700 text-sm border-4 text-white py-1 px-2 rounded hidden"
-            aria-label="{{ 'general.search.reset' | t }}"
-          >
-            <span class="w-4 h-4">
-              {{- 'icon-reset.svg' | inline_asset_content -}}
-            </span>
-          </button>
-          <button
-            class="flex-shrink-0 bg-blue-500 hover:bg-blue-700 border-blue-500 hover:border-blue-700 text-sm border-4 text-white py-1 px-2 rounded"
-            aria-label="{{ 'general.search.search' | t }}"
-          >
-            <span class="w-4 h-4">
-              {{- 'icon-search.svg' | inline_asset_content -}}
-            </span>
-          </button>
+        <div class="predictive-search predictive-search--header" tabindex="-1" data-predictive-search>
+          {%- render 'loading-spinner', class: 'predictive-search__loading-state' -%}
         </div>
 
-        {%- if settings.predictive_search_enabled -%}
-          <div class="predictive-search predictive-search--header" tabindex="-1" data-predictive-search>
-            {%- render 'loading-spinner', class: 'predictive-search__loading-state' -%}
-          </div>
-
-          <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
-        {%- endif -%}
-      </form>
-      {%- if settings.predictive_search_enabled -%}
-        </predictive-search>
-      {%- else -%}
-        </search-form>
+        <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
       {%- endif -%}
-      <button
-        type="button"
-        class="absolute top-0 right-0 mt-4 mr-4 text-gray-700 hover:text-gray-900"
-        aria-label="{{ 'accessibility.close' | t }}"
-      >
-        <span class="w-6 h-6">
-          {{- 'icon-close.svg' | inline_asset_content -}}
-        </span>
-      </button>
-    </div>
+    </form>
+    {%- if settings.predictive_search_enabled -%}
+      </predictive-search>
+    {%- else -%}
+      </search-form>
+    {%- endif -%}
+    <button
+      type="button"
+      class="absolute top-0 right-0 mt-4 mr-4 text-gray-700 hover:text-gray-900"
+      aria-label="{{ 'accessibility.close' | t }}"
+    >
+      <span class="w-6 h-6">
+        {{- 'icon-close.svg' | inline_asset_content -}}
+      </span>
+    </button>
   </div>
-</details>
+</div>
