@@ -35,7 +35,11 @@
           </div>
         {% elsif block.type == 'address' %}
           <div class="col w-full md:w-[45%] lg:w-auto">
-            <h3 class="text-2xl font-semibold mb-5">{{ block.settings.address_heading }}</h3>
+            {% if block.settings.address_heading != blank %}
+              <h3 class="text-2xl font-semibold mb-5">
+                {{ block.settings.address_heading }}
+              </h3>
+            {% endif %}
             <p class="text-base leading-7">
               {{ block.settings.address_name -}}
               <br>
