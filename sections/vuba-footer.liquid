@@ -11,8 +11,12 @@
       <div class="col w-full md:w-[45%] lg:w-auto">
         <h3 class="text-2xl font-semibold mb-5">Site map</h3>
         <ul class="space-y-3 text-base">
-          {% for link in linklists[settings.menu].links %}
-            <li><a href="{{ link.url }}" class="hover:text-primary">{{ link.title }}</a></li>
+            {%- for link in section.settings.menu.links -%}
+            <li>
+                {%- if link != blank -%}    
+            <a href="{{ link.url }}" class="hover:text-primary">{{ link.title }}</a>
+        {% endif %}
+            </li>
           {% endfor %}
         </ul>
       </div>
