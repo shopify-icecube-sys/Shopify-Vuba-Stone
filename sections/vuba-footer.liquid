@@ -8,14 +8,14 @@
             <a href="{{ block.settings.logo_link }}" class="inline-block mb-5">
               {% if block.settings.logo_desktop != blank %}
                 <img
-                  src="{{ block.settings.logo_desktop | img_url:'medium' }}"
+                  src="{{ 'footer-logo-d.svg' | asset_url }}"
                   class="hidden md:block"
                   alt="Vuba Stone Logo Desktop"
                 >
               {% endif %}
               {% if block.settings.logo_mobile != blank %}
                 <img
-                  src="{{ block.settings.logo_mobile | img_url:'medium' }}"
+                  src="{{ 'footer-logo-m.svg' | asset_url }}"
                   class="md:hidden"
                   alt="Vuba Stone Logo Mobile"
                 >
