@@ -43,7 +43,7 @@
           "type": "social_media",
           "settings": {
             "social_heading": "Let’s stay connected",
-            "instagram_link": "",
+            "instagram_link": "https://instagram.com",
             "facebook_link": "",
             "twitter_link": ""
           }
