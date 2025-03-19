@@ -34,6 +34,7 @@
         {% elsif block.type == 'social_media' %}
           <div class="col w-full md:w-[45%] lg:w-auto">
             <h3 class="text-2xl font-semibold mb-5">{{ block.settings.social_heading }}</h3>
+            <p>Instagram: {{ 'icon-instagram.svg' | asset_url }}</p>
             <div class="flex justify-center md:justify-normal space-x-8 mb-6">
               <a href="{{ block.settings.instagram_link }}"><img class="h-[23px]" src="{{ 'icon-instagram.svg' | asset_url }}" alt="instagram-icon"/></a>
               <a href="{{ block.settings.facebook_link }}"><img class="h-[23px]" src="{{ 'icon-facebook.svg' | asset_url }}" alt="facebook-icon"/></a>
