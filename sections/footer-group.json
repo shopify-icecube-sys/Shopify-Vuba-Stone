@@ -11,11 +11,9 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
-    "vuba_footer_7hJfbB": {
+    "vuba_footer_8R3CeT": {
       "type": "vuba-footer",
-      "settings": {
-        "menu": "main-menu"
-      }
+      "settings": {}
     },
     "footer": {
       "type": "footer",
@@ -36,7 +34,7 @@
     }
   },
   "order": [
-    "vuba_footer_7hJfbB",
+    "vuba_footer_8R3CeT",
     "footer"
   ]
 }
