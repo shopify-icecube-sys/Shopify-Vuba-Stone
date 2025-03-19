@@ -1,34 +1,90 @@
-<header class="bg-maroon-800 p-4 flex justify-between items-center">
-  <div class="logo">
-    <a href="{{ routes.root_url }}">
-      {% if settings.logo != blank %}
-        <img
-          src="{{ settings.logo | image_url: width: 200 }}"
-          alt="{{ settings.logo.alt | default: shop.name }}"
-          class="h-12"
-        >
-      {% else %}
-        <span class="text-white text-xl font-bold">{{ shop.name }}</span>
-      {% endif %}
-    </a>
-  </div>
-
-  <div class="search flex items-center">
-    {% render 'header-search', input_id: 'My-Id' %}
-  </div>
-
-  <nav>
-    <ul class="flex space-x-4">
-      {%- for link in section.settings.menu.links -%}
-        <li>
-          {%- if link != blank -%}
-            <a href="{{ link.url }}" class="text-white font-bold">{{ link.title }}</a>
-          {% endif %}
-        </li>
+<!-- ----- Start of header ----- -->
+<header id="header" class="header z-50 fixed left-0 top-0 w-full transition-all duration-300">
+  <div class="md:bg-primary py-12 md:py-3">
+    <div class="container mx-auto flex justify-between items-center">
+      {% for block in section.blocks %}
+        {% if block.type == 'logo' %}
+          <div class="flex items-center">
+            <a href="{{ block.settings.logo_link }}">
+              <img src="{{ block.settings.logo_desktop | asset_url }}" class="brand hidden md:block" alt="Header Logo">
+              <img src="{{ block.settings.logo_mobile | asset_url }}" class="brand md:hidden" alt="Header Logo Mobile">
+            </a>
+          </div>
+        {% elsif block.type == 'search' %}
+          <div class="hidden md:flex items-center">
+            <input
+              type="text"
+              class="outline-none w-[328px] h-[35px] bg-white px-3 py-1 rounded-md"
+              placeholder="Search"
+            >
+            <img class="ms-5" src="{{ block.settings.search_icon | asset_url }}" alt="search-icon">
+          </div>
+        {% endif %}
       {% endfor %}
-    </ul>
+      <button class="md:hidden" id="menu-btn">
+        <img src="{{ 'nav-bar-btn.png' | asset_url }}" alt="Nav bar btn">
+      </button>
+    </div>
+  </div>
+  <nav class="bg-secondary md:py-3">
+    <div class="container">
+      <div class="mx-auto flex justify-between items-center text-xs lg:text-sm xl:text-base tracking-wider xl:tracking-widest font-semibold">
+        <ul class="hidden md:flex space-x-3 lg:space-x-10 xl:space-x-8 2xl:space-x-14">
+          {% for link in linklists[section.settings.menu].links %}
+            <li>
+              <a href="{{ link.url }}" class="text-white">{{ link.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+        <a href="#" class="hidden md:block text-white">CONTACT</a>
+      </div>
+    </div>
   </nav>
+  <div
+    id="mobile-menu"
+    class="absolute top-0 left-0 w-full bg-white transform -translate-y-full transition-transform duration-300 ease-in-out z-50"
+  >
+    <div class="bg-white flex justify-center min-h-screen py-12 px-4">
+      <div class="w-full text-center">
+        <div class="flex justify-end mb-5">
+          <button class="md:hidden" id="close-btn">
+            <img src="{{ 'nav-close-btn.png' | asset_url }}" alt="Nav close btn">
+          </button>
+        </div>
+        <div class="header-logo-open">
+          <img src="{{ 'header-logo-menu.svg' | asset_url }}" class="mx-auto" alt="Vuba Stone Logo Mobile">
+        </div>
+        <div class="relative my-10 px-3">
+          <input
+            type="text"
+            placeholder="SEARCH"
+            class="outline-none w-full h-[50px] text-sm border border-[#707070] rounded-md py-2 px-3 pr-12"
+          >
+          <img class="absolute right-6 top-3" src="{{ 'search-icon-m.svg' | asset_url }}" alt="search icon mobile">
+        </div>
+        <nav class="text-xl font-bold">
+          <ul class="space-y-5">
+            {% for link in linklists[section.settings.menu].links %}
+              <li>
+                <a href="{{ link.url }}" class="text-secondary hover:text-primary">{{ link.title }}</a>
+              </li>
+            {% endfor %}
+            <li><a href="#" class="text-secondary hover:text-primary">CONTACT</a></li>
+          </ul>
+        </nav>
+        <div class="mt-10">
+          <ul class="space-y-3 text-[12px] mb-6">
+            <li><a href="#" class="inline-block hover:text-primary">Privacy policy</a></li>
+            <li><a href="#" class="inline-block hover:text-primary">Cookie preferences</a></li>
+            <li><a href="#" class="inline-block hover:text-primary">Terms &amp; conditions</a></li>
+          </ul>
+          <p class="mt-4 text-[10px]">2025* Vuba Stone All rights reserved</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </header>
+<!-- ----- End of header ----- -->
 
 {% schema %}
 {
@@ -41,9 +97,52 @@
       "default": "main-menu"
     }
   ],
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Logo",
+      "settings": [
+        {
+          "type": "url",
+          "id": "logo_link",
+          "label": "Logo Link",
+          "default": "/"
+        },
+        {
+          "type": "image_picker",
+          "id": "logo_desktop",
+          "label": "Logo Desktop"
+        },
+        {
+          "type": "image_picker",
+          "id": "logo_mobile",
+          "label": "Logo Mobile"
+        }
+      ]
+    },
+    {
+      "type": "search",
+      "name": "Search",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "search_icon",
+          "label": "Search Icon"
+        }
+      ]
+    }
+  ],
   "presets": [
     {
-      "name": "Vuba Header"
+      "name": "Vuba Header",
+      "blocks": [
+        {
+          "type": "logo"
+        },
+        {
+          "type": "search"
+        }
+      ]
     }
   ]
 }
