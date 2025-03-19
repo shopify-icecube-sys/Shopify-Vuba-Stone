@@ -6,13 +6,14 @@
         {% if block.type == 'logo' %}
           <div class="col w-full 2xl:w-auto">
             <a href="{{ block.settings.logo_link }}" class="inline-block mb-5">
-              {% if block.settings.logo_desktop %}
+              {% if block.settings.logo_desktop != blank %}
+                <img
+                  src="{{ block.settings.logo_desktop | asset_url }}"
+                  class="hidden md:block"
+                  alt="Vuba Stone Logo Desktop"
+                >
               {% endif %}
-              <img
-                src="{{ block.settings.logo_desktop | asset_url }}"
-                class="hidden md:block"
-                alt="Vuba Stone Logo Desktop"
-              >
+
               <img src="{{ block.settings.logo_mobile | asset_url }}" class="md:hidden" alt="Vuba Stone Logo Mobile">
             </a>
           </div>
