@@ -13,6 +13,10 @@
     </a>
   </div>
 
+  <div class="search flex items-center">
+    {% render 'header-search', input_id: 'My-Id' %}
+  </div>
+
   <nav>
     <ul class="flex space-x-4">
       {%- for link in section.settings.menu.links -%}
