@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g id="Nav_BTN" data-name="Nav BTN" transform="translate(-315 -30)">
+    <g id="Rectangle_5" data-name="Rectangle 5" transform="translate(315 30)" fill="#fff" stroke="#00557d" stroke-width="2">
+      <rect width="50" height="50" stroke="none"/>
+      <rect x="1" y="1" width="48" height="48" fill="none"/>
+    </g>
+    <g id="Group_3" data-name="Group 3">
+      <rect id="Rectangle_6" data-name="Rectangle 6" width="33" height="3" transform="translate(324 44)" fill="#00557d"/>
+      <rect id="Rectangle_7" data-name="Rectangle 7" width="33" height="3" transform="translate(324 52)" fill="#00557d"/>
+      <text id="Menu" transform="translate(322 55)" fill="#00557d" font-size="10" font-family="Poppins-Bold, Poppins" font-weight="700" letter-spacing="0.08em"><tspan x="-16.315" y="11">menu</tspan></text>
+    </g>
+  </g>
+</svg>
