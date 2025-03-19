@@ -2,25 +2,20 @@
 <header id="header" class="header z-50 fixed left-0 top-0 w-full transition-all duration-300">
   <div class="md:bg-primary py-12 md:py-3">
     <div class="container mx-auto flex justify-between items-center">
-      {% for block in section.blocks %}
-        {% if block.type == 'logo' %}
-          <div class="flex items-center">
-            <a href="#">
-              <img src="{{ 'header-logo.svg' | asset_url }}" class="brand hidden md:block" alt="Header Logo">
-              <img src="{{ 'header-logo-m.svg' | asset_url }}" class="brand md:hidden" alt="Header Logo Mobile">
-            </a>
-          </div>
-        {% elsif block.type == 'search' %}
-          <div class="hidden md:flex items-center">
-            <input
-              type="text"
-              class="outline-none w-[328px] h-[35px] bg-white px-3 py-1 rounded-md"
-              placeholder="Search"
-            >
-            <img class="ms-5" src="{{ block.settings.search_icon | asset_url }}" alt="search-icon">
-          </div>
-        {% endif %}
-      {% endfor %}
+      <div class="flex items-center">
+        <a href="#">
+          <img src="{{ 'header-logo.svg' | asset_url }}" class="brand hidden md:block" alt="Header Logo">
+          <img src="{{ 'header-logo-m.svg' | asset_url }}" class="brand md:hidden" alt="Header Logo Mobile">
+        </a>
+      </div>
+      <div class="hidden md:flex items-center">
+        <input
+          type="text"
+          class="outline-none w-[328px] h-[35px] bg-white px-3 py-1 rounded-md"
+          placeholder="Search"
+        >
+        <img class="ms-5" src="{{ block.settings.search_icon | asset_url }}" alt="search-icon">
+      </div>
       <button class="md:hidden" id="menu-btn">
         <img src="{{ 'nav-bar-btn.png' | asset_url }}" alt="Nav bar btn">
       </button>
