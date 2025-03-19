@@ -36,6 +36,13 @@
             "address_content": "<p>Distributor HQ</p><p>Sierra Stone / Rubber Stone</p><p>E.W. Industries Ltd.</p><p>P.O Box 336</p><p>Imperial, Saskatchewan S0G 2J0</p><p>1-888-799-3960</p>"
           }
         },
+        "address_9bf8QQ": {
+          "type": "address",
+          "settings": {
+            "address_heading": "UK Manufacturer",
+            "address_content": "<p>Vuba Chemical Innovations Ltd                Units B2-B4, Grovehill Industrial Estate        Annie Reed Road, Beverley                </p><p>HU17 0LE                </p><p>sales@vubagroup.com               </p><p> 01482 778897</p>"
+          }
+        },
         "social_media_def34U": {
           "type": "social_media",
           "settings": {
@@ -50,6 +57,7 @@
         "logo_cFCjp4",
         "menu_3FtDTb",
         "address_CfzBjX",
+        "address_9bf8QQ",
         "social_media_def34U"
       ],
       "settings": {}
