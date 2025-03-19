@@ -11,8 +11,50 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
-    "vuba_footer_8R3CeT": {
+    "vuba_footer_BTCt4F": {
       "type": "vuba-footer",
+      "blocks": {
+        "logo_cFCjp4": {
+          "type": "logo",
+          "settings": {
+            "logo_link": "/"
+          }
+        },
+        "menu_3FtDTb": {
+          "type": "menu",
+          "settings": {
+            "menu_heading": "Site map",
+            "menu": "main-menu"
+          }
+        },
+        "address_CfzBjX": {
+          "type": "address",
+          "settings": {
+            "address_heading": "Distributor HQ",
+            "address_name": "Distributor HQ",
+            "address_line1": "Sierra Stone / Rubber Stone",
+            "address_line2": "E.W. Industries Ltd.",
+            "address_city": "Imperial, Saskatchewan",
+            "address_postcode": "S0G 2J0",
+            "address_phone": "1-888-799-3960"
+          }
+        },
+        "social_media_def34U": {
+          "type": "social_media",
+          "settings": {
+            "social_heading": "Let’s stay connected",
+            "instagram_link": "",
+            "facebook_link": "",
+            "twitter_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_cFCjp4",
+        "menu_3FtDTb",
+        "address_CfzBjX",
+        "social_media_def34U"
+      ],
       "settings": {}
     },
     "footer": {
@@ -34,7 +76,7 @@
     }
   },
   "order": [
-    "vuba_footer_8R3CeT",
+    "vuba_footer_BTCt4F",
     "footer"
   ]
 }
