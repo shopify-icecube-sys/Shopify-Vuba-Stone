@@ -17,7 +17,8 @@
         "logo_cFCjp4": {
           "type": "logo",
           "settings": {
-            "logo_link": "/"
+            "logo_link": "/",
+            "logo_desktop": "shopify://shop_images/IMG_4503_1.jpg"
           }
         },
         "menu_3FtDTb": {
