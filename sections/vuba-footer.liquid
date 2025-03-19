@@ -37,7 +37,19 @@
           <div class="col w-full md:w-[45%] lg:w-auto">
             <h3 class="text-2xl font-semibold mb-5">{{ block.settings.address_heading }}</h3>
             <p class="text-base leading-7">
-              {{ block.settings.address_content }}
+              {{ block.settings.address_name -}}
+              <br>
+              {{ block.settings.address_line1 -}}
+              <br>
+              {{ block.settings.address_line2 -}}
+              <br>
+              {{ block.settings.address_city -}}
+              <br>
+              {{ block.settings.address_postcode -}}
+              <br>
+              <a href="tel:{{ block.settings.address_phone }}" class="text-primary underline">
+                {{- block.settings.address_phone -}}
+              </a>
             </p>
           </div>
         {% elsif block.type == 'social_media' %}
@@ -119,23 +131,53 @@
       ]
     },
     {
-  "type": "address",
-  "name": "Address",
-  "settings": [
-    {
-      "type": "text",
-      "id": "address_heading",
-      "label": "Address Heading",
-      "default": "Distributor HQ"
+      "type": "address",
+      "name": "Address",
+      "settings": [
+        {
+          "type": "text",
+          "id": "address_heading",
+          "label": "Address Heading",
+          "default": "Distributor HQ"
+        },
+        {
+          "type": "text",
+          "id": "address_name",
+          "label": "Address Name",
+          "default": "Distributor HQ"
+        },
+        {
+          "type": "text",
+          "id": "address_line1",
+          "label": "Address Line 1",
+          "default": "Sierra Stone / Rubber Stone"
+        },
+        {
+          "type": "text",
+          "id": "address_line2",
+          "label": "Address Line 2",
+          "default": "E.W. Industries Ltd."
+        },
+        {
+          "type": "text",
+          "id": "address_city",
+          "label": "Address City",
+          "default": "Imperial, Saskatchewan"
+        },
+        {
+          "type": "text",
+          "id": "address_postcode",
+          "label": "Address Postcode",
+          "default": "S0G 2J0"
+        },
+        {
+          "type": "text",
+          "id": "address_phone",
+          "label": "Address Phone",
+          "default": "1-888-799-3960"
+        }
+      ]
     },
-    {
-      "type": "richtext",
-      "id": "address_content",
-      "label": "Address Content",
-      "default": "<p>Add Your Content</p>"
-    }
-  ]
-},
     {
       "type": "social_media",
       "name": "Social Media",
