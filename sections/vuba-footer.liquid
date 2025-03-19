@@ -36,9 +36,9 @@
         {% elsif block.type == 'address' %}
           <div class="col w-full md:w-[45%] lg:w-auto">
             <h3 class="text-2xl font-semibold mb-5">{{ block.settings.address_heading }}</h3>
-            <div class="text-base leading-7">
+            <p class="text-base leading-7">
               {{ block.settings.address_content }}
-            </div>
+            </p>
           </div>
         {% elsif block.type == 'social_media' %}
           <div class="col w-full md:w-[45%] lg:w-auto">
