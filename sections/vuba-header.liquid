@@ -5,7 +5,7 @@
       {% for block in section.blocks %}
         {% if block.type == 'logo' %}
           <div class="flex items-center">
-            <a href="{{ block.settings.logo_link }}">
+            <a href="#">
               <img src="{{ 'header-logo.svg' | asset_url }}" class="brand hidden md:block" alt="Header Logo">
               <img src="{{ 'header-logo-m.svg' | asset_url }}" class="brand md:hidden" alt="Header Logo Mobile">
             </a>
