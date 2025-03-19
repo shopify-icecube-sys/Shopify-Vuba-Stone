@@ -30,7 +30,7 @@
     <div class="container">
       <div class="mx-auto flex justify-between items-center text-xs lg:text-sm xl:text-base tracking-wider xl:tracking-widest font-semibold">
         <ul class="hidden md:flex space-x-3 lg:space-x-10 xl:space-x-8 2xl:space-x-14">
-          {% for link in section.settings.menu.links %}
+          {% for link in linklists[section.settings.menu].links %}
             hello
             <li>
               <a href="{{ link.url }}" class="text-white">{{ link.title }}</a>
