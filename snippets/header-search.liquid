@@ -9,20 +9,6 @@
 {% endcomment %}
 
 <details class="relative">
-  <summary
-    class="cursor-pointer flex items-center"
-    aria-haspopup="dialog"
-    aria-label="{{ 'general.search.search' | t }}"
-  >
-    <span class="flex items-center">
-      <span class="w-6 h-6">
-        {{- 'icon-search.svg' | inline_asset_content -}}
-      </span>
-      <span class="w-6 h-6 hidden">
-        {{- 'icon-close.svg' | inline_asset_content -}}
-      </span>
-    </span>
-  </summary>
   <div
     class="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center z-50"
     role="dialog"
