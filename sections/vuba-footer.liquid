@@ -12,11 +12,11 @@
         <h3 class="text-2xl font-semibold mb-5">Site map</h3>
         <ul class="space-y-3 text-base">
             {%- for link in section.settings.menu.links -%}
-            <li>
-                {%- if link != blank -%}    
-            <a href="{{ link.url }}" class="hover:text-primary">{{ link.title }}</a>
-        {% endif %}
-            </li>
+                <li>
+                    {%- if link != blank -%}    
+                        <a href="{{ link.url }}" class="hover:text-primary">{{ link.title }}</a>
+                    {% endif %}
+                </li>
           {% endfor %}
         </ul>
       </div>
@@ -74,7 +74,7 @@
       "type": "link_list",
       "id": "menu",
       "label": "Vuba Menu",
-      "default": "footer-menu"
+      "default": "main-menu"
     }
   ],
   "presets": [
