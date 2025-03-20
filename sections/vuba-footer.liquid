@@ -136,9 +136,11 @@
                     tabindex="-1"
                     autofocus
                   >
-                    <span class="svg-wrapper">
-                      {{- 'icon-success.svg' | inline_asset_content -}}
-                    </span>
+                    {% comment %}
+                      <span class="svg-wrapper">
+                        {{- 'icon-success.svg' | inline_asset_content -}}
+                      </span>
+                    {% endcomment %}
                     {{- 'newsletter.success' | t }}
                   </h3>
                 {%- endif -%}
