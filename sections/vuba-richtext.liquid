@@ -1,15 +1,7 @@
 <section
   class="vuba-stone pt-44 md:pt-10 pb-14 3xl:pb-32"
-  style="
-    {% if section.settings.background_image != blank %}
-      background-image: url('{{ section.settings.background_image | image_url }}');
-    {% endif %}
-    {% if section.settings.background_color != blank %}
-      background-color: {{ section.settings.background_color }};
-    {% endif %}
-  "
 >
-  <div class="container md:px-24 3xl:px-36" style="color: {{ section.settings.text_color }};">
+  <div class="container md:px-24 3xl:px-36">
     <div class="flex-wrap gap-7 md:gap-4 3xl:gap-7 mb-20 md:mb-14 3xl:mb-20 hidden">
       {% if section.settings.button_text != blank %}
         <a
@@ -30,7 +22,8 @@
     </div>
     <div class="text-{{ section.settings.text-alignment }}">
       <h2
-        class="text-primary text-4xl lg:text-4xl 3xl:text-[51px] font-bold mb-5 3xl:mb-20 text-primary" >
+        class="text-primary text-4xl lg:text-4xl 3xl:text-[51px] font-bold mb-5 3xl:mb-20 text-primary"
+      >
         {{ section.settings.title }}
       </h2>
       <p class="text-sm md:text-base 3xl:text-2xl">{{ section.settings.richtext }}</p>
@@ -42,74 +35,17 @@
   "name": "Vuba Rich Text Section",
   "settings": [
     {
-      "type": "color",
-      "id": "background_color",
-      "label": "Background Color"
-    },
-    {
-      "type": "color",
-      "id": "title_color",
-      "label": "Title Color",
-      "default": "#000000"
-    },
-    {
-      "type": "color",
-      "id": "text_color",
-      "label": "Text Color",
-      "default": "#121212"
-    },
-    {
       "type": "image_picker",
       "id": "background_image",
       "label": "Background Image"
     },
     {
-          "type": "text",
-          "id": "title",
-          "label": "Title",
-          "default": "Rich Text Title"
-        },
-        {
-        "type": "select",
-        "id": "title_size",
-        "label": "Title Size",
-        "options": [
-          {
-            "value": "text-4xl",
-            "label": "Extra Large"
-          },
-          {
-            "value": "text-3xl",
-            "label": "Large"
-          },
-          {
-            "value": "text-2xl",
-            "label": "Medium"
-          },
-          {
-            "value": "text-xl",
-            "label": "Small"
-          }
-        ],
-          "default": "text-4xl"
-        },
-        {
-          "type": "select",
-          "id": "text-alignment",
-          "label": "Alignment",
-          "options": [
-            {
-              "value": "left",
-              "label": "Left"
-            },
-            {
-              "value": "center",
-              "label": "Center"
-            }
-          ],
-          "default": "center"
-        },
-        {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Rich Text Title"
+    },
+    {
       "type": "richtext",
       "id": "richtext",
       "label": "Rich Text",
@@ -153,22 +89,6 @@
           "type": "url",
           "id": "button_link",
           "label": "Button Link",
-        },
-        {
-          "type": "select",
-          "id": "alignment",
-          "label": "Alignment",
-          "options": [
-            {
-              "value": "left",
-              "label": "Left"
-            },
-            {
-              "value": "center",
-              "label": "Center"
-            }
-          ],
-          "default": "center"
         }
       ]
     },
@@ -180,26 +100,6 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image"
-        },
-        {
-          "type": "select",
-          "id": "alignment",
-          "label": "Alignment",
-          "options": [
-            {
-              "value": "left",
-              "label": "Left"
-            },
-            {
-              "value": "center",
-              "label": "Center"
-            },
-            {
-              "value": "right",
-              "label": "Right"
-            }
-          ],
-          "default": "center"
         }
       ]
     }
