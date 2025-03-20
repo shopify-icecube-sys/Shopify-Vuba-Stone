@@ -3,7 +3,7 @@
   class="vuba-stone pt-44 md:pt-10 pb-14 2xl:pb-32"
   style="
     {% if section.settings.background_image != blank %}
-      background-image: url('{{ section.settings.background_image }}');
+      background-image: url('{{ section.settings.background_image | image_url }}');
     {% endif %}
     {% if section.settings.background_color != blank %}
       background-color: {{ section.settings.background_color }};
