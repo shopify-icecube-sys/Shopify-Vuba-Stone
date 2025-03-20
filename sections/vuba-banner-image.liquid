@@ -5,6 +5,8 @@
       class="w-full h-screen object-cover md:block hidden"
       alt="banner desktop"
     >
+  {% else %}
+    <div class="w-full h-screen bg-gray-200 md:block hidden"></div>
   {% endif %}
   {% if section.settings.background_image_mobile != blank %}
     <img
@@ -12,9 +14,14 @@
       class="w-full object-cover md:hidden"
       alt="banner mobile"
     >
+  {% else %}
+    <div class="w-full h-screen bg-gray-200 md:hidden"></div>
   {% endif %}
   <div class="container relative">
-    <div class="absolute -bottom-32 md:bottom-0 left-4 md:left-0 right-4 md:right-auto text-white px-5 md:px-12 py-10 md:py-14 max-w-sm md:max-w-[534px] bg-secondary">
+    <div
+      class="absolute -bottom-32 md:bottom-0 left-4 md:left-0 right-4 md:right-auto text-white px-5 md:px-12 py-10 md:py-14 max-w-sm md:max-w-[534px]"
+      style="background-color: {{ section.settings.div_color | default: '#6c757d' }};"
+    >
       <div class="flex items-center mb-8">
         {% if section.settings.logo_desktop != blank %}
           <img
@@ -22,6 +29,8 @@
             class="mr-2 hidden md:block"
             alt="vuba stone brochure download desktop"
           >
+        {% else %}
+          <div class="mr-2 hidden md:block bg-gray-300 h-12 w-12"></div>
         {% endif %}
         {% if section.settings.logo_mobile != blank %}
           <img
@@ -29,6 +38,8 @@
             class="mr-2 md:hidden"
             alt="vuba stone brochure download mobile"
           >
+        {% else %}
+          <div class="mr-2 md:hidden bg-gray-300 h-12 w-12"></div>
         {% endif %}
       </div>
       {% if section.settings.title != blank %}
@@ -116,6 +127,12 @@
       "type": "url",
       "id": "button_link_esp",
       "label": "Button Link (ESP)"
+    },
+    {
+      "type": "color",
+      "id": "div_color",
+      "label": "Small Div Background Color",
+      "default": "#6c757d"
     }
   ],
   "presets": [
