@@ -11,6 +11,10 @@ body {
   /*font-family: 'Poppins' !important;*/
   font-size: 1rem !important;
 }
+.search-modal__form svg {
+  width: 1em;
+  height: 1em;
+}
 .latest-project .bg-gradient:before {
   background: rgba(0, 0, 0, 0.2);
 }
