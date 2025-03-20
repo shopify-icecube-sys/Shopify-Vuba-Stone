@@ -60,8 +60,7 @@
                 {{ block.settings.address_city -}}
               {% endif %}
 
-              {% if block.settings.address_postcode %}
-                HELLO
+              {% if block.settings.address_postcode != blank %}
                 <br>
                 {{ block.settings.address_postcode -}}
               {% else %}
