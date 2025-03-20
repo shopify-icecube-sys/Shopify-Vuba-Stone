@@ -1,33 +1,38 @@
-<section class="relative">
-  {% if section.settings.background_image != blank %}
-    <div
-      class="absolute inset-0 bg-cover bg-center"
-      style="background-image: url('{{ section.settings.background_image | image_url }}');"
-    ></div>
-  {% endif %}
-  <div class="container mx-auto relative z-10 py-12 px-4">
-    <div class="bg-maroon-800 p-6 rounded-lg text-white max-w-md">
-      {% if section.settings.logo != blank %}
+<!-- ----- Start of banner ----- -->
+<section class="banner">
+  <img src="images/banner-d.jpg" class="w-full h-screen object-cover md:block hidden" alt="banner desktop">
+  <img src="images/banner-m.jpg" class="w-full object-cover md:hidden" alt="banner mobile">
+  <div class="container relative">
+    <div class="absolute -bottom-32 md:bottom-0 left-4 md:left-0 right-4 md:right-auto text-white px-5 md:px-12 py-10 md:py-14 max-w-sm md:max-w-[534px] bg-secondary">
+      <div class="flex items-center mb-8 ">
         <img
-          src="{{ section.settings.logo | image_url: width: 200 }}"
-          alt="{{ section.settings.logo.alt | default: shop.name }}"
-          class="h-12 mb-4"
+          src="images/vuba-stone-brochure-d.svg"
+          class="mr-2 hidden md:block"
+          alt="vuba stone brochure download desktop"
         >
-      {% endif %}
-      {% if section.settings.title != blank %}
-        <h2 class="text-2xl font-bold mb-4">{{ section.settings.title }}</h2>
-      {% endif %}
-      {% if section.settings.richtext != blank %}
-        <div class="prose mb-4">{{ section.settings.richtext }}</div>
-      {% endif %}
-      {% if section.settings.button_text != blank and section.settings.button_link != blank %}
-        <a href="{{ section.settings.button_link }}" class="inline-block bg-blue-500 text-white py-2 px-4 rounded">
-          {{- section.settings.button_text -}}
-        </a>
-      {% endif %}
+        <img src="images/vuba-stone-brochure-m.svg" class="mr-2 md:hidden" alt="vuba stone brochure download mobile">
+      </div>
+      <h3 class="text-xl md:text-[27px] font-bold mb-2">DOWNLOAD OUR BROCHURE</h3>
+      <p class="text-sm font-light mb-5">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a
+          href="#"
+          class="px-5 py-3 rounded-[10px] tracking-widest text-sm font-bold border-[3px] border-white hover:bg-primary hover:border-primary"
+          >DOWNLOAD EN</a
+        >
+        <a
+          href="#"
+          class="px-5 py-3 rounded-[10px] tracking-widest text-sm font-bold border-[3px] border-white hover:bg-primary hover:border-primary"
+          >DOWNLOAD ESP</a
+        >
+      </div>
     </div>
   </div>
 </section>
+<!-- ----- End of banner ----- -->
 
 {% schema %}
 {
