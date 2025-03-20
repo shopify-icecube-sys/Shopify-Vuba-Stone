@@ -44,25 +44,29 @@
               {% if block.settings.address_name %}
                 {{ block.settings.address_name -}}
               {% endif %}
-              
+
               {% if block.settings.address_line1 %}
                 <br>
                 {{ block.settings.address_line1 -}}
               {% endif %}
-              
+
               {% if block.settings.address_line2 %}
                 <br>
                 {{ block.settings.address_line2 -}}
               {% endif %}
-              
+
               {% if block.settings.address_city %}
                 <br>
                 {{ block.settings.address_city -}}
               {% endif %}
-              
+
               {% if block.settings.address_postcode %}
                 <br>
                 {{ block.settings.address_postcode -}}
+              {% else %}
+                <a href="mailto:{{ block.settings.address_email }}" class="underline mailto:text-primary">
+                  {{- block.settings.address_email -}}
+                </a>
               {% endif %}
               <br>
               <a href="tel:{{ block.settings.address_phone }}" class="text-primary underline">
