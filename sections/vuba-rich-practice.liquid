@@ -1,5 +1,15 @@
 <!-- ----- Start of This is vuba stone ----- -->
-<section class="vuba-stone pt-44 md:pt-10 pb-14 2xl:pb-32">
+<section
+  class="vuba-stone pt-44 md:pt-10 pb-14 2xl:pb-32"
+  style="
+    {% if section.settings.background_image != blank %}
+      background-image: url('{{ section.settings.background_image }}');
+    {% endif %}
+    {% if section.settings.background_color != blank %}
+      background-color: {{ section.settings.background_color }};
+    {% endif %}
+  "
+>
   <div class="container">
     <div class="flex-wrap gap-7 mb-16 hidden md:flex text-{{ section.settings.alignment }}">
       {% if section.settings.button_text != blank %}
