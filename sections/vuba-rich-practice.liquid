@@ -1,6 +1,218 @@
+<section
+  class="vuba-stone pt-44 md:pt-10 pb-14 2xl:pb-32 {% if section.settings.background_color %}bg-{{ section.settings.background_color }}{% endif %} {% if section.settings.background_image != blank %}bg-cover bg-center{% endif %}"
+  {% if section.settings.background_image != blank %}
+    style="background-image: url('{{ section.settings.background_image | image_url }}');"
+  {% endif %}
+>
+  <div class="container">
+    <div class="text-center">
+      {% if section.settings.title != blank %}
+        <h2 class="text-primary text-4xl lg:text-4xl 2xl:text-[51px] font-bold mb-5 2xl:mb-20">
+          {{ section.settings.title }}
+        </h2>
+      {% endif %}
+      {% if section.settings.richtext != blank %}
+        <div class="text-sm lg:text-xl 2xl:text-2xl">
+          {{ section.settings.richtext }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+  <div class="container">
+    <div class="flex-wrap gap-7 mb-16 hidden md:flex">
+      {% for block in section.blocks %}
+        <div class="mb-8 text-{{ block.settings.alignment }}">
+          {% if block.type == 'button' %}
+            <a
+              href="{{ block.settings.button_link }}"
+              class="px-10 py-[6px] rounded-full text-lg font-medium border-[3px] border-primary text-primary hover:bg-primary hover:text-white"
+            >
+              {{- block.settings.button_text -}}
+            </a>
+          {% endif %}
+          {% if block.type == 'image' %}
+            {%- if block.settings.image != blank -%}
+              <img
+                src="{{ block.settings.image | img_url: '800x' }}"
+                alt="{{ block.settings.image.alt | default: 'Image' }}"
+                class="w-full h-auto"
+              >
+            {% else %}
+              {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+            {%- endif -%}
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Vuba Rich Text Section",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Rich Text Title"
+        },
+        {
+        "type": "select",
+        "id": "title_size",
+        "label": "Title Size",
+        "options": [
+          {
+            "value": "text-4xl",
+            "label": "Extra Large"
+          },
+          {
+            "value": "text-3xl",
+            "label": "Large"
+          },
+          {
+            "value": "text-2xl",
+            "label": "Medium"
+          },
+          {
+            "value": "text-xl",
+            "label": "Small"
+          }
+        ],
+          "default": "text-4xl"
+        },
+        {
+          "type": "select",
+          "id": "text-alignment",
+          "label": "Alignment",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "center"
+        },
+        {
+      "type": "richtext",
+      "id": "richtext",
+      "label": "Rich Text",
+      "default": "<p>This is some rich text content.</p>"
+    },
+    {
+      "type": "select",
+      "id": "alignment",
+      "label": "Alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "button",
+      "name": "Button",
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "Button"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link",
+        },
+        {
+          "type": "select",
+          "id": "alignment",
+          "label": "Alignment",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "center"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "select",
+          "id": "alignment",
+          "label": "Alignment",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "center"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vuba Rich Text Section",
+      "category": "Custom"
+    }
+  ]
+}
 {% endschema %}
