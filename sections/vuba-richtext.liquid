@@ -1,47 +1,46 @@
+<!-- ----- Start of This is vuba stone ----- -->
 <section
-  class="py-12 {% if section.settings.background_color %}bg-{{ section.settings.background_color }}{% endif %} {% if section.settings.background_image != blank %}bg-cover bg-center{% endif %}"
-  {% if section.settings.background_image != blank %}
-    style="background-image: url('{{ section.settings.background_image | image_url }}');"
-  {% endif %}
+  class="vuba-stone pt-44 md:pt-10 pb-14 2xl:pb-32"
+  style="
+    {% if section.settings.background_image != blank %}
+      background-image: url('{{ section.settings.background_image | image_url }}');
+    {% endif %}
+    {% if section.settings.background_color != blank %}
+      background-color: {{ section.settings.background_color }};
+    {% endif %}
+  "
 >
-  <div class="container mx-auto px-4">
-    <div class="text-center">
-      {% if section.settings.title != blank %}
-        <h2 class="text-{{ section.settings.title_size }} text-{{ section.settings.text-alignment }}">
-          {{ section.settings.title }}
-        </h2>
+  <div class="container" style="color: {{ section.settings.text_color }};">
+    <div class="flex-wrap gap-7 mb-16 hidden md:flex text-{{ section.settings.alignment }}">
+      {% if section.settings.button_text != blank %}
+        <a
+          href="{{ section.settings.button_url }}"
+          class="px-10 py-[6px] rounded-full text-lg font-medium border-[3px] border-primary text-primary hover:bg-primary hover:text-white"
+        >
+          {{- section.settings.button_text -}}
+        </a>
       {% endif %}
-      {% if section.settings.richtext != blank  %}
-        <div class="text-{{ section.settings.alignment }}">
-          {{ section.settings.richtext }}
-        </div>
+      {% if section.settings.button_text_two != blank %}
+        <a
+          href="{{ section.settings.button_two_url }}"
+          class="px-10 py-[6px] rounded-full text-lg font-medium border-[3px] border-primary text-primary hover:bg-primary hover:text-white"
+        >
+          {{- section.settings.button_text_two -}}
+        </a>
       {% endif %}
     </div>
-  </div>
-  <div class="container mx-auto px-4">
-    {% for block in section.blocks %}
-      <div class="mb-8 text-{{ block.settings.alignment }}">
-        {% if block.type == 'button' %}
-          <a href="{{ block.settings.button_link }}" class="inline-block bg-blue-500 text-white py-2 px-4 rounded">
-            {{- block.settings.button_text -}}
-          </a>
-        {% endif %}
-        {% if block.type == 'image' %}
-          {%- if block.settings.image != blank -%}
-            <img
-              src="{{ block.settings.image | img_url: '800x' }}"
-              alt="{{ block.settings.image.alt | default: 'Image' }}"
-              class="w-full h-auto"
-            >
-          {% else %}
-          {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
-          {%- endif -%}
-
-        {% endif %}
-      </div>
-    {% endfor %}
+    <div class="text-{{ section.settings.text-alignment }}">
+      <h2
+        class="text-primary {{ section.settings.title_size }} lg:{{ section.settings.title_size }} 2xl:{{ section.settings.title_size }} font-bold mb-5 2xl:mb-20"
+        style="color: {{ section.settings.title_color }};"
+      >
+        {{ section.settings.title }}
+      </h2>
+      <p class="text-sm lg:text-xl 2xl:text-2xl">{{ section.settings.richtext }}</p>
+    </div>
   </div>
 </section>
+<!-- ----- End of This is vuba stone ----- -->
 
 {% schema %}
 {
@@ -51,6 +50,18 @@
       "type": "color",
       "id": "background_color",
       "label": "Background Color"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#121212"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title Color",
+      "default": "#000000"
     },
     {
       "type": "image_picker",
@@ -99,10 +110,6 @@
             {
               "value": "center",
               "label": "Center"
-            },
-            {
-              "value": "right",
-              "label": "Right"
             }
           ],
           "default": "center"
@@ -114,24 +121,26 @@
       "default": "<p>This is some rich text content.</p>"
     },
     {
-      "type": "select",
-      "id": "alignment",
-      "label": "Alignment",
-      "options": [
-        {
-          "value": "left",
-          "label": "Left"
-        },
-        {
-          "value": "center",
-          "label": "Center"
-        },
-        {
-          "value": "right",
-          "label": "Right"
-        }
-      ],
-      "default": "center"
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Click Here"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "text",
+      "id": "button_text_two",
+      "label": "Button Text",
+      "default": "Click Here"
+    },
+    {
+      "type": "url",
+      "id": "button_two_url",
+      "label": "Button URL"
     }
   ],
   "blocks": [
@@ -162,10 +171,6 @@
             {
               "value": "center",
               "label": "Center"
-            },
-            {
-              "value": "right",
-              "label": "Right"
             }
           ],
           "default": "center"
