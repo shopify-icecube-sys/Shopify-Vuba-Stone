@@ -22,6 +22,8 @@
             class="mr-2 hidden md:block"
             alt="vuba stone brochure download desktop"
           >
+        {% else %}
+          {{ section.settings.title }}
         {% endif %}
         {% if section.settings.logo_mobile != blank %}
           <img
