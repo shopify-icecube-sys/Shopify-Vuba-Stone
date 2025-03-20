@@ -25,8 +25,25 @@
         "div_color": "#005676"
       }
     },
+    "vuba_richtext_6J9PEW": {
+      "type": "vuba-richtext",
+      "settings": {
+        "background_color": "",
+        "text_color": "#121212",
+        "title_color": "#821832",
+        "title": "This is Vuba Stone",
+        "title_size": "text-4xl",
+        "text-alignment": "center",
+        "richtext": "<p>We are preferred surface for household names, big brands and homeowners worldwide. Proudly BBA certified, a testament to our quality and excellence.</p>",
+        "button_text": "Download EN",
+        "button_url": "",
+        "button_text_two": "Download ESP",
+        "button_two_url": ""
+      }
+    },
     "vuba_rich_practice_xNbB6N": {
       "type": "vuba-rich-practice",
+      "disabled": true,
       "settings": {
         "background_color": "",
         "text_color": "#121212",
@@ -72,6 +89,7 @@
   },
   "order": [
     "vuba_banner_image_kFLjhb",
+    "vuba_richtext_6J9PEW",
     "vuba_rich_practice_xNbB6N",
     "featured_collection"
   ]
