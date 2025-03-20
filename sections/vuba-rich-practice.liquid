@@ -4,18 +4,18 @@
     <div class="flex-wrap gap-7 mb-16 hidden md:flex">
       <a
         href="{{ section.settings.button_url }}"
-        class="px-10 py-[6px] rounded-full text-lg font-medium border-[3px] border-primary text-primary hover:bg-primary hover:text-white text-{{ section.settings.button_alignment }}"
+        class="px-10 py-[6px] rounded-full text-lg font-medium border-[3px] border-primary text-primary hover:bg-primary hover:text-white text-{{ section.settings.alignment }}"
       >
         {{- section.settings.button_text -}}
       </a>
       <a
         href="{{ section.settings.button_two_url }}"
-        class="px-10 py-[6px] rounded-full text-lg font-medium border-[3px] border-primary text-primary hover:bg-primary hover:text-white text-{{ section.settings.button_alignment }}"
+        class="px-10 py-[6px] rounded-full text-lg font-medium border-[3px] border-primary text-primary hover:bg-primary hover:text-white text-{{ section.settings.alignment }}"
       >
         {{- section.settings.button_text_two -}}
       </a>
     </div>
-    <div class="text-{{ section.settings.alignment }}">
+    <div class="text-{{ section.settings.text-alignment }}">
       <h2 class="text-primary text-4xl lg:text-4xl 2xl:text-[51px] font-bold mb-5 2xl:mb-20">
         {{ section.settings.title }}
       </h2>
@@ -98,7 +98,7 @@
     {
       "type": "select",
       "id": "alignment",
-      "label": "Text Alignment",
+      "label": "Button Alignment",
       "options": [
         {
           "value": "left",
