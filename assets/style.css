@@ -1,0 +1,51 @@
+@import url("https://use.typekit.net/qjy2fey.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    font-size: 16px;
+}
+body {
+    font-size: 1rem;
+    font-family: 'Poppins';
+}
+.latest-project .bg-gradient:before {
+    background: rgba(0, 0, 0, 0.20);
+}
+.latest-project .owl-carousel button.owl-dot {
+    width: 20%;
+    height: 3px;
+    background-color: #B9B9B9;
+    border: 1px solid #B9B9B9;
+    border-radius: 2px;
+}
+.latest-project .owl-carousel .owl-dots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 50px;
+}
+.latest-project .owl-carousel button.owl-dot.active {
+    background: #821732;
+    border-color: #821732;
+}
+
+
+@media screen and (max-width:767px) {
+    .latest-project .bg-gradient:before {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    }
+    .latest-project .owl-carousel .owl-dots {
+        padding-top: 40px;
+    }
+    .latest-project .owl-carousel button.owl-dot {
+        width: 10px;
+        height: 10px;
+        background-color: transparent;
+        border: 1px solid #000;
+        border-radius: 50%;
+    }
+}
