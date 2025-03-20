@@ -60,15 +60,12 @@
         <img src="{{ 'nav-bar-btn.png' | asset_url }}" alt="Nav bar btn">
       </button>
       {% comment %}
-                        <input
-            type="text"
-            class="outline-none w-[328px] h-[35px] bg-white px-3 py-1 rounded-md"
-            placeholder="Search"
-          >
-          <img class="ms-5" src="{{ 'search-icon.svg' | asset_url }}" alt="search-icon">
-        <button class="md:hidden" id="menu-btn">
-          <img src="{{ 'nav-bar-btn.png' | asset_url }}" alt="Nav bar btn">
-        </button>
+                      <input
+          type="text"
+          class="outline-none w-[328px] h-[35px] bg-white px-3 py-1 rounded-md"
+          placeholder="Search"
+        >
+        <img class="ms-5" src="{{ 'search-icon.svg' | asset_url }}" alt="search-icon">
       {% endcomment %}
     </div>
   </div>
@@ -101,13 +98,52 @@
           <img src="{{ 'header-logo-menu.svg' | asset_url }}" class="mx-auto" alt="Vuba Stone Logo Mobile">
         </div>
         <div class="relative my-10 px-3">
-          <input
-            type="text"
-            id="menu-btn"
-            placeholder="SEARCH"
-            class="outline-none w-full h-[50px] text-sm border border-[#707070] rounded-md py-2 px-3 pr-12"
-          >
-          <img class="absolute right-6 top-3" src="{{ 'search-icon-m.svg' | asset_url }}" alt="search icon mobile">
+          <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
+            <div class="field">
+              <input
+                class="outline-none w-[328px] h-[35px] bg-white px-3 py-1 rounded-md"
+                id="{{ input_id }} menu-btn"
+                type="search"
+                name="q"
+                value="{{ search.terms | escape }}"
+                {%- if settings.predictive_search_enabled -%}
+                  role="combobox"
+                  aria-expanded="false"
+                  aria-owns="predictive-search-results"
+                  aria-controls="predictive-search-results"
+                  aria-haspopup="listbox"
+                  aria-autocomplete="list"
+                  autocorrect="off"
+                  autocomplete="off"
+                  autocapitalize="off"
+                  spellcheck="false"
+                {%- endif -%}
+              >
+              <input type="hidden" name="options[prefix]" value="last">
+              <button
+                type="reset"
+                class="reset__button field__button{% if search.terms == blank %} hidden{% endif %}"
+                aria-label="{{ 'general.search.reset' | t }}"
+              >
+                <span class="svg-wrapper">
+                  {{- 'icon-reset.svg' | inline_asset_content -}}
+                </span>
+              </button>
+              <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
+                <span class="svg-wrapper">
+                  {{- 'search-icon.svg' | inline_asset_content -}}
+                </span>
+              </button>
+            </div>
+
+            {%- if settings.predictive_search_enabled -%}
+              <div class="predictive-search predictive-search--header" tabindex="-1" data-predictive-search>
+                {%- render 'loading-spinner', class: 'predictive-search__loading-state' -%}
+              </div>
+
+              <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
+            {%- endif -%}
+          </form>
         </div>
         <nav class="text-xl font-bold">
           <ul class="space-y-5">
