@@ -38,6 +38,7 @@
             "address_line2": "E.W. Industries Ltd.",
             "address_city": "Imperial, Saskatchewan",
             "address_postcode": "S0G 2J0",
+            "address_email": "",
             "address_phone": "1-888-799-3960"
           }
         },
@@ -50,6 +51,7 @@
             "address_line2": "Annie Reed Road, Beverley",
             "address_city": "HU17 0LE",
             "address_postcode": "",
+            "address_email": "sales@vubagroup.com",
             "address_phone": "01482 778897"
           }
         },
