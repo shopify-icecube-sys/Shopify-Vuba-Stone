@@ -29,11 +29,12 @@
       "type": "vuba-rich-practice",
       "settings": {
         "background_color": "",
+        "text_color": "#121212",
+        "title_color": "#821832",
         "title": "This is Vuba Stone",
         "title_size": "text-4xl",
         "text-alignment": "center",
         "richtext": "<p>We are preferred surface for household names, big brands and homeowners worldwide. Proudly BBA certified, a testament to our quality and excellence.</p>",
-        "alignment": "center",
         "button_text": "Download EN",
         "button_url": "",
         "button_text_two": "Download ESP",
