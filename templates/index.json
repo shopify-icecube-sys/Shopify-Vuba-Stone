@@ -19,9 +19,9 @@
         "title": "Let us help you Find an Installer",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
         "button_text_en": "DOWNLOAD EN",
-        "button_link_en": "",
+        "button_link_en": "shopify://collections",
         "button_text_esp": "DOWNLOAD ESP",
-        "button_link_esp": "",
+        "button_link_esp": "shopify://collections/vuba-america",
         "div_color": "#005676"
       }
     },
