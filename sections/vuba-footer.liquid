@@ -41,21 +41,21 @@
               </h3>
             {% endif %}
             <p class="text-base leading-7">
-              {% if block.settings.address_name %}
+              {% if block.settings.address_name != blank %}
                 {{ block.settings.address_name -}}
               {% endif %}
 
-              {% if block.settings.address_line1 %}
+              {% if block.settings.address_line1 != blank %}
                 <br>
                 {{ block.settings.address_line1 -}}
               {% endif %}
 
-              {% if block.settings.address_line2 %}
+              {% if block.settings.address_line2 != blank %}
                 <br>
                 {{ block.settings.address_line2 -}}
               {% endif %}
 
-              {% if block.settings.address_city %}
+              {% if block.settings.address_city != blank %}
                 <br>
                 {{ block.settings.address_city -}}
               {% endif %}
@@ -68,6 +68,7 @@
                   {{- block.settings.address_email -}}
                 </a>
               {% endif %}
+
               <br>
               <a href="tel:{{ block.settings.address_phone }}" class="text-primary underline">
                 {{- block.settings.address_phone -}}
