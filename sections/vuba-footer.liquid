@@ -109,9 +109,12 @@
                       placeholder="{{ 'newsletter.label' | t }}"
                       required
                     >
-                    <label class="field__label" for="NewsletterForm--{{ section.id }}">
-                      {{ 'newsletter.label' | t }}
-                    </label>
+                    {% comment %}
+                                            <label class="field__label" for="NewsletterForm--{{ section.id }}">
+                        {{ 'newsletter.label' | t }}
+                      </label>
+                    {% endcomment %}
+
                     <button
                       type="submit"
                       class="newsletter-form__button field__button"
