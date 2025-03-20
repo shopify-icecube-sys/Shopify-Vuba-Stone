@@ -1,6 +1,5 @@
-<!-- ----- Start of This is vuba stone ----- -->
 <section
-  class="vuba-stone pt-44 md:pt-10 pb-14 2xl:pb-32"
+  class="vuba-stone pt-44 md:pt-10 pb-14 3xl:pb-32"
   style="
     {% if section.settings.background_image != blank %}
       background-image: url('{{ section.settings.background_image | image_url }}');
@@ -10,12 +9,12 @@
     {% endif %}
   "
 >
-  <div class="container" style="color: {{ section.settings.text_color }};">
-    <div class="flex-wrap gap-7 mb-16 hidden md:flex text-{{ section.settings.alignment }}">
+  <div class="container md:px-24 3xl:px-36" style="color: {{ section.settings.text_color }};">
+    <div class="flex-wrap gap-7 md:gap-4 3xl:gap-7 mb-20 md:mb-14 3xl:mb-20 hidden md:flex text-{{ section.settings.alignment }}">
       {% if section.settings.button_text != blank %}
         <a
           href="{{ section.settings.button_url }}"
-          class="px-10 py-[6px] rounded-full text-lg font-medium border-[3px] border-primary text-primary hover:bg-primary hover:text-white"
+          class="px-10 md:px-6 3xl:px-10 py-[6px] rounded-full text-sm 3xl:text-lg font-medium border-[3px] border-primary text-primary hover:bg-primary hover:text-white"
         >
           {{- section.settings.button_text -}}
         </a>
@@ -23,7 +22,7 @@
       {% if section.settings.button_text_two != blank %}
         <a
           href="{{ section.settings.button_two_url }}"
-          class="px-10 py-[6px] rounded-full text-lg font-medium border-[3px] border-primary text-primary hover:bg-primary hover:text-white"
+          class="px-10 md:px-6 3xl:px-10 py-[6px] rounded-full text-sm 3xl:text-lg font-medium border-[3px] border-primary text-primary hover:bg-primary hover:text-white"
         >
           {{- section.settings.button_text_two -}}
         </a>
@@ -31,17 +30,13 @@
     </div>
     <div class="text-{{ section.settings.text-alignment }}">
       <h2
-        class="text-primary {{ section.settings.title_size }} lg:{{ section.settings.title_size }} 2xl:{{ section.settings.title_size }} font-bold mb-5 2xl:mb-20"
-        style="color: {{ section.settings.title_color }};"
-      >
+        class="text-primary text-4xl lg:text-4xl 3xl:text-[51px] font-bold mb-5 3xl:mb-20 text-primary" >
         {{ section.settings.title }}
       </h2>
-      <p class="text-sm lg:text-xl 2xl:text-2xl">{{ section.settings.richtext }}</p>
+      <p class="text-sm md:text-base 3xl:text-2xl">{{ section.settings.richtext }}</p>
     </div>
   </div>
 </section>
-<!-- ----- End of This is vuba stone ----- -->
-
 {% schema %}
 {
   "name": "Vuba Rich Text Section",
