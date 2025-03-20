@@ -63,7 +63,10 @@
               {% if block.settings.address_postcode != blank %}
                 <br>
                 {{ block.settings.address_postcode -}}
-              {% else %}
+              {% endif %}
+
+              {% if block.settings.address_email != blank %}
+                <br>
                 <a href="mailto:{{ block.settings.address_email }}" class="underline text-primary">
                   {{- block.settings.address_email -}}
                 </a>
