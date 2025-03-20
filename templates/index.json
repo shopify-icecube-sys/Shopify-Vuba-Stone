@@ -9,13 +9,6 @@
  */
 {
   "sections": {
-    "vuba_banner_image_kFLjhb": {
-      "type": "vuba-banner-image",
-      "settings": {
-        "background_image": "shopify://shop_images/banner-d.jpg",
-        "title": "Let us help you Find an Installer"
-      }
-    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -43,10 +36,32 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "vuba_banner_image_kFLjhb": {
+      "type": "vuba-banner-image",
+      "settings": {
+        "title": "Let us help you Find an Installer"
+      }
+    },
+    "vuba_rich_practice_xNbB6N": {
+      "type": "vuba-rich-practice",
+      "settings": {
+        "background_color": "",
+        "title": "This is Vuba Stone",
+        "title_size": "text-4xl",
+        "text-alignment": "center",
+        "richtext": "<p>We are preferred surface for household names, big brands and homeowners worldwide. Proudly BBA certified, a testament to our quality and excellence.</p>",
+        "alignment": "center",
+        "button_text": "Download EN",
+        "button_url": "",
+        "button_text_two": "Download ESP",
+        "button_two_url": ""
+      }
     }
   },
   "order": [
+    "featured_collection",
     "vuba_banner_image_kFLjhb",
-    "featured_collection"
+    "vuba_rich_practice_xNbB6N"
   ]
 }
