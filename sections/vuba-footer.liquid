@@ -24,11 +24,11 @@
           </div>
         {% elsif block.type == 'menu' %}
           <div class="col w-full md:w-[45%] lg:w-auto">
-            <h3 class="text-2xl font-semibold mb-5">{{ block.settings.menu_heading }}</h3>
+            <h3 class="text-black text-2xl font-semibold mb-5">{{ block.settings.menu_heading }}</h3>
             <ul class="space-y-3 text-base">
               {% for link in linklists[block.settings.menu].links %}
                 <li>
-                  <a href="{{ link.url }}" class="hover:text-primary">{{ link.title }}</a>
+                  <a href="{{ link.url }}" class="text-black hover:text-primary">{{ link.title }}</a>
                 </li>
               {% endfor %}
             </ul>
@@ -36,7 +36,7 @@
         {% elsif block.type == 'address' %}
           <div class="col w-full md:w-[45%] lg:w-auto">
             {% if block.settings.address_heading != blank %}
-              <h3 class="text-2xl font-semibold mb-5">
+              <h3 class="text-black text-2xl font-semibold mb-5">
                 {{ block.settings.address_heading }}
               </h3>
             {% endif %}
@@ -68,7 +68,7 @@
           </div>
         {% elsif block.type == 'social_media' %}
           <div class="col w-full md:w-[45%] lg:w-auto">
-            <h3 class="text-2xl font-semibold mb-5">{{ block.settings.social_heading }}</h3>
+            <h3 class="text-black text-2xl font-semibold mb-5">{{ block.settings.social_heading }}</h3>
             <div class="flex justify-center md:justify-normal space-x-8 mb-6">
               <a href="{{ block.settings.instagram_link }}"
                 ><img class="h-[23px]" src="{{ 'instagram-icon.svg' | asset_url }}" alt="instagram-icon"
@@ -89,9 +89,9 @@
     </div>
     <div class="pt-10 md:hidden">
       <ul class="space-y-2 text-base mb-5">
-        <li><a href="#" class="hover:text-primary text-xs">Privacy Policy</a></li>
-        <li><a href="#" class="hover:text-primary text-xs">Cookie preferences</a></li>
-        <li><a href="#" class="hover:text-primary text-xs">Terms & conditions</a></li>
+        <li><a href="#" class="text-black hover:text-primary text-xs">Privacy Policy</a></li>
+        <li><a href="#" class="text-black hover:text-primary text-xs">Cookie preferences</a></li>
+        <li><a href="#" class="text-black hover:text-primary text-xs">Terms & conditions</a></li>
       </ul>
       <p class="text-[10px]">2025® Vuba Stone All rights reserved</p>
     </div>
