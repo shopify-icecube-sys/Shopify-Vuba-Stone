@@ -14,6 +14,7 @@
       "settings": {
         "background_image": "shopify://shop_images/banner-d.jpg",
         "background_image_mobile": "shopify://shop_images/banner-m.jpg",
+        "logo_desktop": "shopify://shop_images/vuba-stone-brochure-d.svg",
         "title": "Let us help you Find an Installer",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
         "button_text_en": "DOWNLOAD EN",
