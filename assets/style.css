@@ -7,10 +7,12 @@
 :root {
   font-size: 16px;
 }
+.predictive-search {
+  display: none;
+}
 .owl-carousel .owl-stage {
   display: flex;
 }
-
 .vuba-stone-update .owl-theme .owl-nav.disabled + .owl-dots {
   margin-top: 25px;
 }
@@ -38,11 +40,10 @@
   width: 667px;
   margin-right: 40px;
 }
-.latest-project .bg-gradient:before {
-  background: rgba(0, 0, 0, 0.2);
-}
+
 .latest-project .owl-carousel button.owl-dot {
-  width: 20%;
+  max-width: 300px;
+  min-width: 365px;
   height: 3px;
   background-color: #b9b9b9;
   border: 1px solid #b9b9b9;
@@ -50,7 +51,6 @@
 }
 .latest-project .owl-carousel .owl-dots:not(.disabled) {
   display: flex;
-  flex-wrap: wrap;
   gap: 10px;
   padding-top: 50px;
 }
