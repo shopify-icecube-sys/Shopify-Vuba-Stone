@@ -1,0 +1,63 @@
+<section class="vuba-mac pt-20 md:pt-14 3xl:pt-36 bg-primary text-center">
+    <div class="container">
+        <div class="text-white xl:max-w-3xl 3xl:max-w-6xl mx-auto">
+            <h2 class="text-8xl 3xl:text-[164px] font-bold pb-9">
+                {{ section.settings.title }}
+            </h2>
+            <p class="text-sm md:text-base 3xl:text-2xl mb-5">
+                {{ section.settings.description }}
+            </p>
+            <p class="text-sm md:text-base 3xl:text-2xl">
+                {{ section.settings.details | newline_to_br }}
+            </p>
+        </div>
+        <div class="text-center pt-9 md:pt-20">
+            <img class="hidden md:block mx-auto" src="{{ section.settings.desktop_image | file_url }}" alt="VubaMacAggregate"/>
+            <img class="md:hidden mx-auto" src="{{ section.settings.mobile_image | file_url }}" alt="placeholder product"/>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "Vuba Mac Section One",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Vuba Mac"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "We would like a section dedicated to VubaMac and how it is the first permeable base specifically designed for Resin Bound surfacing."
+    },
+    {
+      "type": "textarea",
+      "id": "details",
+      "label": "Details",
+      "default": "- We offer a 10 year warranty on VubaMac.\n- Video of VubaMac being installed."
+    },
+    {
+      "type": "image_picker",
+      "id": "desktop_image",
+      "label": "Desktop Image",
+      "default": "images/VubaMacAggregate.png"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile Image",
+      "default": "images/placeholder-product.png"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vuba Mac Section One",
+      "category": "Custom Sections"
+    }
+  ]
+}
+{% endschema %}
