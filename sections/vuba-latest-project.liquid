@@ -2,6 +2,8 @@
     <div class="mx-auto">
         <h2 class="text-primary text-center md:text-start text-4xl 3xl:text-[51px] font-bold mb-10 md:mb-10 3xl:mb-20">
             {% if section.settings.section_heading != blank %}
+             {{ section.settings.section_heading }}   
+            {% endif %} 
         </h2>
         <div class="owl-carousel latest-project-slider">
             {% assign blog_handle = section.settings.blog_handle %}
