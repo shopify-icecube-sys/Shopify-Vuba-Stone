@@ -1,4 +1,4 @@
-<section class="latest-project padding-right-zeero pt-14 md:pt-28 3xl:pt-44 pb-24">
+<section class="latest-project padding-right-zeero pt-14 md:pt-28 3xl:pt-44 pb-24 overflow-hidden">
   <div class="mx-auto">
     <h2 class="text-primary text-center md:text-start text-4xl 3xl:text-[51px] font-bold mb-10 md:mb-10 3xl:mb-20">
       {% if section.settings.section_heading != blank %}
@@ -9,9 +9,15 @@
       {% assign blog_handle = section.settings.blog_handle %}
       {% if blog_handle %}
         {% for article in blogs[blog_handle].articles %}
-          <div class="item bg-gradient relative rounded-[20px] overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:w-full before:h-full">
-            <img src="{{ article.image | img_url: '720x720' }}" alt="{{ article.title }}" class="w-full object-cover">
-            <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-5 2xl:py-12 2xl:px-10 text-white">
+          <div class="item bg-gradient relative rounded-[20px] overflow-hidden before:left-0 h-full">
+            <figure>
+              <img
+                src="{{ article.image | img_url: '720x720' }}"
+                alt="{{ article.title }}"
+                class="w-full object-cover aspect-square h-full"
+              >
+            </figure>
+            <div class="absolute inset-0 bg-opacity-40 flex flex-col justify-end p-5 2xl:py-12 2xl:px-10 text-white bg-balck">
               <h3 class="font-bold text-2xl 3xl:text-[33px]">{{ article.title }}</h3>
               <p class="text-sm mt-3 mb-4">
                 {%- if article.excerpt.size > 0 -%}
