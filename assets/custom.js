@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // });
 
 $(document).ready(function () {
-  $("#vs-update-slider").owlCarousel({
+  $(".vs-update-slider").owlCarousel({
     loop: false,
     margin: 0,
     nav: false,
@@ -55,14 +55,15 @@ $(document).ready(function () {
       },
       992: {
         items: 3,
-        margin: 0,
+        margin: 40,
         loop: false,
-        dots: false,
+        MouseDrag: false,
+        touchDrag: false,
       },
     },
   });
 
-  $("#latest-project-slider").owlCarousel({
+  $(".latest-project-slider").owlCarousel({
     loop: true,
     margin: 0,
     nav: false,
