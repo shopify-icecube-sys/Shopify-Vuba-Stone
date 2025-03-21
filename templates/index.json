@@ -81,7 +81,7 @@
         "image": "shopify://shop_images/vuba-mac-2.jpg",
         "image_alt": "vuba-mac-2",
         "video_poster": "shopify://shop_images/vuba-mac-2.jpg",
-        "video_mp4": "shopify://files/videos/BigBuckBunny.mp4",
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/728b5f01834f4ec2bbee173c63051434.mp4",
         "video_webm": ""
       }
     }
