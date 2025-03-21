@@ -72,12 +72,24 @@
         "details": "- We offer a 10 year warranty on VubaMac.\n- Video of VubaMac being installed.",
         "desktop_image": "shopify://shop_images/VubaMacAggregate.png"
       }
+    },
+    "vuba_mac_section_two_6aJYrG": {
+      "type": "vuba-mac-section-two",
+      "settings": {
+        "heading": "Vuba Mac",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "image": "shopify://shop_images/vuba-mac-2.jpg",
+        "image_alt": "vuba-mac-2",
+        "video_mp4": "",
+        "video_webm": ""
+      }
     }
   },
   "order": [
     "vuba_banner_image_kFLjhb",
     "vuba_richtext_6J9PEW",
     "featured_collection",
-    "vuba_mac_section_one_y7KRnV"
+    "vuba_mac_section_one_y7KRnV",
+    "vuba_mac_section_two_6aJYrG"
   ]
 }
