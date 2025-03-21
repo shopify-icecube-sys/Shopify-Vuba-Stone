@@ -7,7 +7,7 @@
       {% assign blog_handle = section.settings.blog_handle %}
       {% if blog_handle %}
         {% for article in blogs[blog_handle].articles %}
-          <div class="bg-white col h-full flex flex-wrap flex-col column transition-all duration-500 ease-in-out group">
+          <div class="bg-white col h-full flex flex-wrap flex-col column transition-all duration-500 ease-in-out group hover:cursor-pointer">
             <figure class="aspect-square">
               <img
                 src="{{ article.image | img_url: 'master' }}"
