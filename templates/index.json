@@ -73,7 +73,8 @@
     "vuba_stone_update_e9mMwW": {
       "type": "vuba-stone-update",
       "settings": {
-        "section_heading": "Vuba Stone Updates"
+        "section_heading": "Vuba Stone Updates",
+        "blog": "news"
       }
     }
   },
