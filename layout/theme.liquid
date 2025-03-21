@@ -9,6 +9,7 @@
     {{ 'custom-fonts.css' | asset_url | stylesheet_tag }}
     {{ 'tailwind.css' | asset_url | stylesheet_tag }}
     {{ 'style.css' | asset_url | stylesheet_tag }}
+
     {{ 'custom.js' | asset_url | script_tag }}
 
     {%- if settings.favicon != blank -%}
