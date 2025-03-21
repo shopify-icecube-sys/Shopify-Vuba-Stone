@@ -17,7 +17,7 @@
       {% if section.settings.image != blank %}
         <img
           class="hidden md:block mx-auto"
-          src="{{ section.settings.image | img_url:'800x800' }}"
+          src="{{ section.settings.image | img_url }}"
           alt="{{ section.settings.image_alt }}"
         >
       {% endif %}
