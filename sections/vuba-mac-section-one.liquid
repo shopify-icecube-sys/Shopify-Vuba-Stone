@@ -11,11 +11,6 @@
           {{ section.settings.description }}
         </p>
       {% endif %}
-      {% if section.settings.details != blank %}
-        <p class="text-sm md:text-base 3xl:text-2xl">
-          {{ section.settings.details | newline_to_br }}
-        </p>
-      {% endif %}
     </div>
     <div class="text-center pt-9 md:pt-20">
       {% if section.settings.desktop_image != blank %}
