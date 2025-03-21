@@ -14,7 +14,11 @@
                 <h3 class="text-xl 3xl:text-2xl font-bold">{{ article.title }}</h3>
                 <p class="text-base 3xl:text-xl font-medium pt-3 pb-6 3xl:py-7">CATEGORY: {{ article.blog.title }}</p>
                 <p class="text-gray-600 text-sm pb-5 3xl:pb-14">
-                  {{ article.content | strip_html | truncatewords: 30 }}
+                  {%- if article.excerpt.size > 0 -%}
+                    {{ article.excerpt | strip_html | truncatewords: 30 }}
+                  {%- else -%}
+                    {{ article.content | strip_html | truncatewords: 30 }}
+                  {%- endif -%}
                 </p>
                 <a
                   href="{{ article.url }}"
