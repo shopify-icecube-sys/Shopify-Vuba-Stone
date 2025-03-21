@@ -1,9 +1,11 @@
 <div class="relative banner w-full h-[500px] 3xl:h-[600px] flex items-center justify-center text-white before:content-[''] before:bg-balck before:absolute before:w-full before:h-full before:bg-black before:opacity-25 before:left-0 before:top-0 before:z-[1]">
-  <img
-    src="{{ section.settings.headline_image | img_url:'master' }}"
-    class="absolute w-full h-full object-cover"
-    alt="Headline Click Through Image"
-  >
+  {% if section.settings.headline_image != blank %}
+    <img
+      src="{{ section.settings.headline_image | img_url:'master' }}"
+      class="absolute w-full h-full object-cover"
+      alt="Headline Click Through Image"
+    >
+  {% endif %}
   <div class="relative z-10 text-center px-6">
     {% if section.settings.headline_text != blank %}
       <h1 class="text-4xl 3xl:text-[51px] font-bold">{{ section.settings.headline_text }}</h1>
