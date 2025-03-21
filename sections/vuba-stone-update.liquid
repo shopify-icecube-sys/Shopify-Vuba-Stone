@@ -1,0 +1,59 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<section class="vuba-stone-update bg-gray py-14 3xl:pt-32 3xl:pb-28">
+  <div class="container">
+    <h2 class="text-primary text-center text-4xl lg:text-4xl 3xl:text-[51px] font-bold mb-10 3xl:mb-20">
+      {{ section.settings.section_heading }}
+    </h2>
+    <div class="owl-carousel owl-theme" id="vs-update-slider">
+      {% assign blog_handle = section.settings.blog_handle %}
+      {% if blog_handle %}
+        {% for article in blogs[blog_handle].articles %}
+          <div class="item">
+            <div class="bg-white col">
+              <img src="{{ article.image | img_url: '720x720' }}" class="w-full object-cover" alt="{{ article.title }}">
+              <div class="pt-7 md:pt-10 3xl:pt-16 pb-7 3xl:pb-28 px-7 3xl:px-12 text-center">
+                <h3 class="text-xl 3xl:text-2xl font-bold">{{ article.title }}</h3>
+                <p class="text-base 3xl:text-xl font-medium pt-3 pb-6 3xl:py-7">CATEGORY: {{ article.blog.title }}</p>
+                <p class="text-gray-600 text-sm pb-5 3xl:pb-14">{{ article.excerpt | strip_html | truncate: 150 }}</p>
+                <a
+                  href="{{ article.url }}"
+                  class="px-12 3xl:px-10 py-2 3xl:py-[6px] inline-block rounded-full text-base 3xl:text-lg font-medium border-[3px] border-primary text-primary hover:bg-primary hover:text-white"
+                >
+                  Read Article
+                </a>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      {% else %}
+        <p class="text-center">No blog selected or no articles available.</p>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Vuba Stone Updates",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_heading",
+      "label": "Section Heading",
+      "default": "Vuba Stone Updates"
+    },
+    {
+      "type": "blog",
+      "id": "blog_handle",
+      "label": "Select Blog"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vuba Stone Updates",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

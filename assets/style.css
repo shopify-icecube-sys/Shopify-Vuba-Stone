@@ -8,12 +8,26 @@
   font-size: 16px;
 }
 body {
-  /*font-family: 'Poppins' !important;*/
-  font-size: 1rem;
+  font-family: "Poppins";
 }
-.search-modal__form svg {
-  width: 1.5em;
-  height: 1.5em;
+
+.vuba-stone-update .owl-stage {
+  margin-bottom: 25px;
+}
+.vuba-stone-update .owl-carousel button.owl-dot span {
+  background: #fff;
+  margin: 0 5px;
+}
+.vuba-stone-update .owl-carousel button.owl-dot.active span {
+  background: #821832;
+}
+
+.padding-right-zeero {
+  padding-left: calc((100vw - 1420px) / 2);
+}
+.latest-project .item {
+  width: 667px;
+  margin-right: 40px;
 }
 .latest-project .bg-gradient:before {
   background: rgba(0, 0, 0, 0.2);
@@ -28,7 +42,6 @@ body {
 .latest-project .owl-carousel .owl-dots {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 10px;
   padding-top: 50px;
 }
@@ -37,12 +50,69 @@ body {
   border-color: #821732;
 }
 
+@media screen and (min-width: 992px) {
+  .vuba-stone-update .owl-stage {
+    width: 100% !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .vuba-stone-update .owl-stage .owl-item {
+    padding: 0 20px;
+    width: 33.33% !important;
+  }
+}
+
+@media screen and (max-width: 1799px) {
+  .padding-right-zeero {
+    padding-left: calc((100vw - 1300px) / 2);
+  }
+  .latest-project .item {
+    width: 550px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .padding-right-zeero {
+    padding-left: calc((100vw - 1170px) / 2);
+  }
+  .latest-project .item {
+    width: 520px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .padding-right-zeero {
+    padding-left: calc((100vw - 960px) / 2);
+  }
+  .latest-project .item {
+    width: 380px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .padding-right-zeero {
+    padding-left: calc((100vw - 730px) / 2);
+  }
+  .latest-project .item {
+    width: 300px;
+  }
+}
+
 @media screen and (max-width: 767px) {
+  .padding-right-zeero {
+    padding-left: calc((100vw - 550px) / 2);
+  }
+  .latest-project .item {
+    width: 300px;
+    margin-right: 20px;
+  }
   .latest-project .bg-gradient:before {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
   }
   .latest-project .owl-carousel .owl-dots {
     padding-top: 40px;
+    justify-content: center;
   }
   .latest-project .owl-carousel button.owl-dot {
     width: 10px;
@@ -50,5 +120,15 @@ body {
     background-color: transparent;
     border: 1px solid #000;
     border-radius: 50%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .padding-right-zeero {
+    padding: 60px 16px 50px;
+  }
+  .latest-project .item {
+    width: 300px;
+    margin-right: 20px;
   }
 }
