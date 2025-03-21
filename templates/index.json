@@ -76,7 +76,6 @@
         "update_item_RTgmyx": {
           "type": "update_item",
           "settings": {
-            "image": "shopify://shop_images/placeholder-product.png",
             "alt_text": "",
             "title": "",
             "category": "",
