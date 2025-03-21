@@ -18,16 +18,20 @@
       {% endif %}
     </div>
     <div class="text-center pt-9 md:pt-20">
-      <img
-        class="hidden md:block mx-auto"
-        src="{{ section.settings.desktop_image | img_url:'700x700' }}"
-        alt="VubaMacAggregate"
-      >
-      <img
-        class="md:hidden mx-auto"
-        src="{{ section.settings.mobile_image | img_url:'700x700' }}"
-        alt="placeholder product"
-      >
+      {% if section.settings.desktop_image != blank %}
+        <img
+          class="hidden md:block mx-auto"
+          src="{{ section.settings.desktop_image | img_url:'700x700' }}"
+          alt="VubaMacAggregate"
+        >
+      {% endif %}
+      {% if section.settings.mobile_image != blank %}
+        <img
+          class="md:hidden mx-auto"
+          src="{{ section.settings.mobile_image | img_url:'700x700' }}"
+          alt="placeholder product"
+        >
+      {% endif %}
     </div>
   </div>
 </section>
