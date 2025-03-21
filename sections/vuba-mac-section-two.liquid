@@ -22,7 +22,7 @@
         >
       {% endif %}
       <div id="videoContainer" class="relative w-full max-w-lg md:hidden mx-auto cursor-pointer">
-        {% if section.settings.video_url %}
+        {% if section.settings.video_url != blank %}
           <video id="video" class="w-full" poster="{{ section.settings.video_poster | img_url: 'master' }}" controls>
             <source src="{{ section.settings.video_url }}" type="video/mp4">
             <source src="{{ section.settings.video_url | replace: '.mp4', '.webm' }}" type="video/webm">
