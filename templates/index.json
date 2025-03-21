@@ -28,29 +28,7 @@
     "vuba_richtext_6J9PEW": {
       "type": "vuba-richtext",
       "settings": {
-        "background_color": "",
-        "text_color": "#121212",
-        "title_color": "#821832",
         "title": "This is Vuba Stone",
-        "title_size": "text-4xl",
-        "text-alignment": "center",
-        "richtext": "<p>We are preferred surface for household names, big brands and homeowners worldwide. Proudly BBA certified, a testament to our quality and excellence.</p>",
-        "button_text": "Download EN",
-        "button_url": "",
-        "button_text_two": "Download ESP",
-        "button_two_url": ""
-      }
-    },
-    "vuba_rich_practice_xNbB6N": {
-      "type": "vuba-rich-practice",
-      "disabled": true,
-      "settings": {
-        "background_color": "",
-        "text_color": "#121212",
-        "title_color": "#821832",
-        "title": "This is Vuba Stone",
-        "title_size": "text-4xl",
-        "text-alignment": "center",
         "richtext": "<p>We are preferred surface for household names, big brands and homeowners worldwide. Proudly BBA certified, a testament to our quality and excellence.</p>",
         "button_text": "Download EN",
         "button_url": "",
@@ -85,12 +63,21 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "vuba_mac_section_one_y7KRnV": {
+      "type": "vuba-mac-section-one",
+      "settings": {
+        "title": "Vuba Mac",
+        "description": "We would like a section dedicated to VubaMac and how it is the first permeable base specifically designed for Resin Bound surfacing.",
+        "details": "- We offer a 10 year warranty on VubaMac.\n- Video of VubaMac being installed.",
+        "desktop_image": "shopify://shop_images/VubaMacAggregate.png"
+      }
     }
   },
   "order": [
     "vuba_banner_image_kFLjhb",
     "vuba_richtext_6J9PEW",
-    "vuba_rich_practice_xNbB6N",
-    "featured_collection"
+    "featured_collection",
+    "vuba_mac_section_one_y7KRnV"
   ]
 }
