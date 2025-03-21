@@ -7,6 +7,9 @@
 :root {
   font-size: 16px;
 }
+.owl-carousel .owl-stage {
+  display: flex;
+}
 
 .vuba-stone-update .owl-theme .owl-nav.disabled + .owl-dots {
   margin-top: 25px;
