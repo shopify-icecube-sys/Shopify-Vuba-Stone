@@ -27,15 +27,15 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 // <!---------- End of the navbar toggle and sticky header ----------->
 
-const video = document.getElementById("video");
+// const video = document.getElementById("video");
 
-video.addEventListener("click", () => {
-  if (video.paused) {
-    video.play();
-  } else {
-    video.pause();
-  }
-});
+// video.addEventListener("click", () => {
+//   if (video.paused) {
+//     video.play();
+//   } else {
+//     video.pause();
+//   }
+// });
 
 $(document).ready(function () {
   $("#vs-update-slider").owlCarousel({
