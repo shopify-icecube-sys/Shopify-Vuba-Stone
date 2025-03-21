@@ -81,6 +81,7 @@
     },
     "vuba_headline_zqWMqq": {
       "type": "vuba-headline",
+      "disabled": true,
       "settings": {
         "headline_image": "shopify://shop_images/Headline-Click-through.jpg",
         "headline_text": "Headline & Click Throughs",
