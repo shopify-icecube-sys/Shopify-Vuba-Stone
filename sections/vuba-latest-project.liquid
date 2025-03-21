@@ -15,9 +15,9 @@
               <h3 class="font-bold text-2xl 3xl:text-[33px]">{{ article.title }}</h3>
               <p class="text-sm mt-3 mb-4">
                 {%- if article.excerpt.size > 0 -%}
-                  {{ article.excerpt | strip_html | truncatewords: 30 }}
+                  {{ article.excerpt | strip_html | truncatewords: 20 }}
                 {%- else -%}
-                  {{ article.content | strip_html | truncatewords: 30 }}
+                  {{ article.content | strip_html | truncatewords: 20 }}
                 {%- endif -%}
               </p>
               <div>
