@@ -17,7 +17,7 @@
             </figure>
             <div class="pt-7 md:pt-10 3xl:pt-16 pb-7 3xl:pb-28 px-7 3xl:px-12 text-center flex-1 basis-auto flex flex-wrap flex-col">
               <h3 class="title text-xl 3xl:text-2xl font-bold group-hover:text-secondary">{{ article.title }}</h3>
-              <h4 class="text-base 3xl:text-xl font-medium pt-3 pb-6 3xl:py-7">CATEGORY: {{ article.blog.title }}</h4>
+              <h4 class="text-base 3xl:text-xl font-medium pt-3 pb-6 3xl:py-7">CATEGORY: {{ blog.title }}</h4>
               <div class="dis text-gray-600 text-sm pb-5 3xl:pb-14">
                 {%- if article.excerpt.size > 0 -%}
                   {{ article.excerpt | strip_html | truncatewords: 30 }}
