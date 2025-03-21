@@ -10,7 +10,7 @@
       </p>
     </div>
     <div class="text-center pt-9 md:pt-12 3xl:pt-20 relative">
-      {% if section.settings.image %}
+      {% if section.settings.image != blank %}
         <img
           class="hidden md:block mx-auto"
           src="{{ section.settings.image | img_url:'800x800' }}"
