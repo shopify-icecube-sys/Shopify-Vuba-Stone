@@ -42,6 +42,16 @@
         "mobile_image": "shopify://shop_images/placeholder-product.png"
       }
     },
+    "vuba_mac_section_two_qGUWdX": {
+      "type": "vuba-mac-section-two",
+      "settings": {
+        "heading": "Vuba Mac",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "image": "shopify://shop_images/vuba-mac-2.jpg",
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/728b5f01834f4ec2bbee173c63051434.mp4",
+        "video_poster": "shopify://shop_images/Video-placeholder-m.jpg"
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -76,24 +86,14 @@
         "section_heading": "Vuba Stone Updates",
         "blog_handle": "news"
       }
-    },
-    "vuba_mac_section_two_qGUWdX": {
-      "type": "vuba-mac-section-two",
-      "settings": {
-        "heading": "Vuba Mac",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "image": "shopify://shop_images/vuba-mac-2.jpg",
-        "video_url": "https://cdn.shopify.com/videos/c/o/v/728b5f01834f4ec2bbee173c63051434.mp4",
-        "video_poster": "shopify://shop_images/Video-placeholder-m.jpg"
-      }
     }
   },
   "order": [
     "vuba_banner_image_kFLjhb",
     "vuba_richtext_6J9PEW",
     "vuba_mac_section_one_y7KRnV",
+    "vuba_mac_section_two_qGUWdX",
     "featured_collection",
-    "vuba_stone_update_e9mMwW",
-    "vuba_mac_section_two_qGUWdX"
+    "vuba_stone_update_e9mMwW"
   ]
 }
