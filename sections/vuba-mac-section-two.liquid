@@ -27,7 +27,7 @@
             <source src="{{ section.settings.video_mp4 }}" type="video/mp4">
           {% endif %}
           {% if section.settings.video_webm != blank %}
-            <source src="{{ section.settings.video_webm | file_url }}" type="video/webm">
+            <source src="{{ section.settings.video_webm }}" type="video/webm">
           {% endif %}
         </video>
       </div>
