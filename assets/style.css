@@ -10,6 +10,9 @@
 body {
   font-family: "Poppins";
 }
+.predictive-search {
+  display: none;
+}
 
 .vuba-stone-update .owl-stage {
   margin-bottom: 25px;
