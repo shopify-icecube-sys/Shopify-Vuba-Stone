@@ -670,10 +670,6 @@ video {
   margin-top: 1rem;
 }
 
-.mt-auto {
-  margin-top: auto;
-}
-
 .block {
   display: block;
 }
@@ -688,10 +684,6 @@ video {
 
 .hidden {
   display: none;
-}
-
-.aspect-square {
-  aspect-ratio: 1 / 1;
 }
 
 .h-12 {
@@ -752,14 +744,6 @@ video {
 
 .max-w-sm {
   max-width: 24rem;
-}
-
-.flex-1 {
-  flex: 1 1 0%;
-}
-
-.basis-auto {
-  flex-basis: auto;
 }
 
 .-translate-y-full {
@@ -891,6 +875,11 @@ video {
 .border-primary {
   --tw-border-opacity: 1;
   border-color: rgb(130 24 50 / var(--tw-border-opacity));
+}
+
+.border-secondary {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 86 118 / var(--tw-border-opacity));
 }
 
 .border-white {
@@ -1124,6 +1113,11 @@ video {
   line-height: 1.5rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1211,10 +1205,6 @@ video {
   transition-duration: 300ms;
 }
 
-.duration-500 {
-  transition-duration: 500ms;
-}
-
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1225,10 +1215,6 @@ video {
 
 .predictive-search {
   display: none;
-}
-
-.owl-carousel .owl-stage {
-  display: flex;
 }
 
 .vuba-stone-update .owl-theme .owl-nav.disabled + .owl-dots {
@@ -1426,6 +1412,11 @@ video {
   background-color: rgb(130 24 50 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-secondary:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 86 118 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1437,26 +1428,6 @@ video {
 }
 
 .hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.group:hover .group-hover\:border-secondary {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 86 118 / var(--tw-border-opacity));
-}
-
-.group:hover .group-hover\:bg-secondary {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 86 118 / var(--tw-bg-opacity));
-}
-
-.group:hover .group-hover\:text-secondary {
-  --tw-text-opacity: 1;
-  color: rgb(0 86 118 / var(--tw-text-opacity));
-}
-
-.group:hover .group-hover\:text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -1831,11 +1802,6 @@ video {
     padding-bottom: 0.75rem;
   }
 
-  .\33xl\:py-32 {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-  }
-
   .\33xl\:py-7 {
     padding-top: 1.75rem;
     padding-bottom: 1.75rem;
@@ -1852,6 +1818,10 @@ video {
 
   .\33xl\:pb-28 {
     padding-bottom: 7rem;
+  }
+
+  .\33xl\:pb-32 {
+    padding-bottom: 8rem;
   }
 
   .\33xl\:pb-8 {
