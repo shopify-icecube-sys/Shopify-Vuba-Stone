@@ -36,8 +36,8 @@
       "type": "vuba-mac-section-one",
       "settings": {
         "title": "Vuba Mac",
-        "description": "<p>We would like a section dedicated to VubaMac and how it is the first permeable base</p><p> specifically designed for Resin Bound surfacing.</p>",
-        "details": "- We offer a 10 year warranty on VubaMac.\n- Video of VubaMac being installed.",
+        "description": "<p>We would like a section dedicated to VubaMac and how it is the first permeable base</p><p> specifically designed for Resin Bound surfacing.</p><p>- We offer a 10 year warranty on VubaMac.<br/>- Video of VubaMac being installed.</p>",
+        "details": "",
         "desktop_image": "shopify://shop_images/VubaMacAggregate.png",
         "mobile_image": "shopify://shop_images/placeholder-product.png"
       }
