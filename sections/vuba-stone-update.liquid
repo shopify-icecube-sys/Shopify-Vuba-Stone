@@ -3,7 +3,7 @@
     <h2 class="text-primary text-center text-4xl lg:text-4xl 3xl:text-[51px] font-bold mb-10 3xl:mb-20">
       {{ section.settings.section_heading }}
     </h2>
-    <div class="owl-carousel owl-theme" id="vs-update-slider">
+    <div class="owl-carousel owl-theme vs-update-slider">
       {% assign blog_handle = section.settings.blog_handle %}
       {% if blog_handle %}
         {% for article in blogs[blog_handle].articles %}
