@@ -32,6 +32,13 @@
         "richtext": "<p>We are preferred surface for household names, big brands and homeowners worldwide. </p><p>Proudly BBA certified, a testament to our quality and excellence.</p>"
       }
     },
+    "vuba_stone_update_e9mMwW": {
+      "type": "vuba-stone-update",
+      "settings": {
+        "section_heading": "Vuba Stone Updates",
+        "blog_handle": "news"
+      }
+    },
     "vuba_mac_section_one_y7KRnV": {
       "type": "vuba-mac-section-one",
       "settings": {
@@ -51,39 +58,11 @@
         "video_poster": "shopify://shop_images/Video-placeholder-m.jpg"
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "vuba_latest_project_3JtQrN": {
+      "type": "vuba-latest-project",
       "settings": {
-        "collection": "all",
-        "products_to_show": 8,
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 4,
-        "enable_desktop_slider": false,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 44,
-        "padding_bottom": 36
-      }
-    },
-    "vuba_stone_update_e9mMwW": {
-      "type": "vuba-stone-update",
-      "settings": {
-        "section_heading": "Vuba Stone Updates",
-        "blog_handle": "news"
+        "section_heading": "Latest Projects",
+        "blog_handle": "project"
       }
     },
     "vuba_headline_TCzfaj": {
@@ -95,23 +74,15 @@
         "button_text": "GO TO INSTALLER",
         "button_link": ""
       }
-    },
-    "vuba_latest_project_3JtQrN": {
-      "type": "vuba-latest-project",
-      "settings": {
-        "section_heading": "Latest Projects",
-        "blog_handle": "project"
-      }
     }
   },
   "order": [
     "vuba_banner_image_kFLjhb",
     "vuba_richtext_6J9PEW",
+    "vuba_stone_update_e9mMwW",
     "vuba_mac_section_one_y7KRnV",
     "vuba_mac_section_two_qGUWdX",
-    "featured_collection",
-    "vuba_stone_update_e9mMwW",
-    "vuba_headline_TCzfaj",
-    "vuba_latest_project_3JtQrN"
+    "vuba_latest_project_3JtQrN",
+    "vuba_headline_TCzfaj"
   ]
 }
