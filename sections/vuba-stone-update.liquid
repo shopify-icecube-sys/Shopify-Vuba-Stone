@@ -9,7 +9,7 @@
         {% for article in blogs[blog_handle].articles %}
           <div class="item">
             <div class="bg-white col">
-              <img src="{{ article.image | img_url: '720x720' }}" class="w-full object-cover" alt="{{ article.title }}">
+              <img src="{{ article.image | img_url: 'master' }}" class="w-full object-cover" alt="{{ article.title }}">
               <div class="pt-7 md:pt-10 3xl:pt-16 pb-7 3xl:pb-28 px-7 3xl:px-12 text-center">
                 <h3 class="text-xl 3xl:text-2xl font-bold">{{ article.title }}</h3>
                 <p class="text-base 3xl:text-xl font-medium pt-3 pb-6 3xl:py-7">CATEGORY: {{ article.blog.title }}</p>
