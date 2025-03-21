@@ -22,15 +22,12 @@
         >
       {% endif %}
       <div id="videoContainer" class="relative w-full max-w-lg md:hidden mx-auto cursor-pointer">
-        <video id="video" class="w-full" poster="{{ section.settings.video_poster }}">
-          {% if section.settings.video_mp4 != blank %}
-            <source src="{{ section.settings.video_mp4 }}" type="video/mp4">
-          {% endif %}
-          {% if section.settings.video_webm != blank %}
-            <source src="{{ section.settings.video_webm }}" type="video/webm">
-          {% endif %}
-          Your browser does not support the video tag.
-        </video>
+        {% if section.settings.video_url %}
+          <video id="video" class="w-full" poster="{{ section.settings.video_poster | img_url: '2048x2048' }}">
+            <source src="{{ section.settings.video_url }}" type="video/mp4">
+            <source src="{{ section.settings.video_url | replace: '.mp4', '.webm' }}" type="video/webm">
+          </video>
+        {% endif %}
       </div>
     </div>
   </div>
@@ -70,7 +67,7 @@
     },
     {
       "type": "url",
-      "id": "video_mp4",
+      "id": "video_url",
       "label": "Video MP4 URL"
     },
     {
