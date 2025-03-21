@@ -1,26 +1,37 @@
 <section class="vuba-stone-update bg-gray py-14 3xl:pt-32 3xl:pb-28">
-    <div class="container">
-        <h2 class="text-primary text-center text-4xl lg:text-4xl 3xl:text-[51px] font-bold mb-10 3xl:mb-20">{{ section.settings.section_heading }}</h2>
-        <div class="owl-carousel owl-theme" id="vs-update-slider">
-            {% for block in section.blocks %}
-            <div class="item">
-                <div class="bg-white col">
-                    <img src="{{ block.settings.image | asset_url }}" class="w-full object-cover" alt="{{ block.settings.alt_text }}"/>
-                    <div class="pt-7 md:pt-10 3xl:pt-16 pb-7 3xl:pb-28 px-7 3xl:px-12 text-center">
-                        <h3 class="text-xl 3xl:text-2xl font-bold {% if block.settings.highlight %}text-secondary{% endif %}">
-                            {{ block.settings.title }}
-                        </h3>
-                        <p class="text-base 3xl:text-xl font-medium pt-3 pb-6 3xl:py-7">CATEGORY: {{ block.settings.category }}</p>
-                        <p class="text-gray-600 text-sm pb-5 3xl:pb-14">{{ block.settings.description }}</p>
-                        <a href="{{ block.settings.link }}" class="px-12 3xl:px-10 py-2 3xl:py-[6px] inline-block rounded-full text-base 3xl:text-lg font-medium border-[3px] border-primary text-primary hover:bg-primary hover:text-white">
-                            {{ block.settings.button_text }}
-                        </a>
-                    </div>
-                </div>
+  <div class="container">
+    <h2 class="text-primary text-center text-4xl lg:text-4xl 3xl:text-[51px] font-bold mb-10 3xl:mb-20">
+      {{ section.settings.section_heading }}
+    </h2>
+    <div class="owl-carousel owl-theme" id="vs-update-slider">
+      {% for block in section.blocks %}
+        <div class="item">
+          <div class="bg-white col">
+            <img
+              src="{{ block.settings.image | img_url:'master' }}"
+              class="w-full object-cover"
+              alt="{{ block.settings.alt_text }}"
+            >
+            <div class="pt-7 md:pt-10 3xl:pt-16 pb-7 3xl:pb-28 px-7 3xl:px-12 text-center">
+              <h3 class="text-xl 3xl:text-2xl font-bold {% if block.settings.highlight %}text-secondary{% endif %}">
+                {{ block.settings.title }}
+              </h3>
+              <p class="text-base 3xl:text-xl font-medium pt-3 pb-6 3xl:py-7">
+                CATEGORY: {{ block.settings.category }}
+              </p>
+              <p class="text-gray-600 text-sm pb-5 3xl:pb-14">{{ block.settings.description }}</p>
+              <a
+                href="{{ block.settings.link }}"
+                class="px-12 3xl:px-10 py-2 3xl:py-[6px] inline-block rounded-full text-base 3xl:text-lg font-medium border-[3px] border-primary text-primary hover:bg-primary hover:text-white"
+              >
+                {{ block.settings.button_text }}
+              </a>
             </div>
-            {% endfor %}
+          </div>
         </div>
+      {% endfor %}
     </div>
+  </div>
 </section>
 
 {% schema %}
