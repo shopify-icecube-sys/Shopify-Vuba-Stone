@@ -74,7 +74,7 @@
       "type": "vuba-stone-update",
       "settings": {
         "section_heading": "Vuba Stone Updates",
-        "blog": "news"
+        "blog_handle": "news"
       }
     }
   },
