@@ -24,7 +24,7 @@
       <div id="videoContainer" class="relative w-full max-w-lg md:hidden mx-auto cursor-pointer">
         <video id="video" class="w-full" poster="{{ section.settings.video_poster | file_url }}">
           {% if section.settings.video_mp4 != blank %}
-            <source src="{{ section.settings.video_mp4 | file_url }}" type="video/mp4">
+            <source src="{{ section.settings.video_mp4 }}" type="video/mp4">
           {% endif %}
           {% if section.settings.video_webm != blank %}
             <source src="{{ section.settings.video_webm | file_url }}" type="video/webm">
