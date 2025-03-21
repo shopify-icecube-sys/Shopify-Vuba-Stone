@@ -7,22 +7,28 @@
       {% assign blog_handle = section.settings.blog_handle %}
       {% if blog_handle %}
         {% for article in blogs[blog_handle].articles %}
-          <div class="item">
-            <div class="bg-white col">
-              <img src="{{ article.image | img_url: 'master' }}" class="w-full object-cover" alt="{{ article.title }}">
-              <div class="pt-7 md:pt-10 3xl:pt-16 pb-7 3xl:pb-28 px-7 3xl:px-12 text-center">
-                <h3 class="text-xl 3xl:text-2xl font-bold">{{ article.title }}</h3>
-                <p class="text-base 3xl:text-xl font-medium pt-3 pb-6 3xl:py-7">CATEGORY: {{ article.blog.title }}</p>
-                <p class="text-gray-600 text-sm pb-5 3xl:pb-14">
-                  {%- if article.excerpt.size > 0 -%}
-                    {{ article.excerpt | strip_html | truncatewords: 30 }}
-                  {%- else -%}
-                    {{ article.content | strip_html | truncatewords: 30 }}
-                  {%- endif -%}
-                </p>
+          <div class="bg-white col h-full flex flex-wrap flex-col column transition-all duration-500 ease-in-out group">
+            <figure class="aspect-square">
+              <img
+                src="{{ article.image | img_url: 'master' }}"
+                class="w-full object-cover h-full"
+                alt="{{ article.title }}"
+              >
+            </figure>
+            <div class="pt-7 md:pt-10 3xl:pt-16 pb-7 3xl:pb-28 px-7 3xl:px-12 text-center flex-1 basis-auto flex flex-wrap flex-col">
+              <h3 class="title text-xl 3xl:text-2xl font-bold group-hover:text-secondary">{{ article.title }}</h3>
+              <h4 class="text-base 3xl:text-xl font-medium pt-3 pb-6 3xl:py-7">CATEGORY: {{ article.blog.title }}</h4>
+              <div class="dis text-gray-600 text-sm pb-5 3xl:pb-14">
+                {%- if article.excerpt.size > 0 -%}
+                  {{ article.excerpt | strip_html | truncatewords: 30 }}
+                {%- else -%}
+                  {{ article.content | strip_html | truncatewords: 30 }}
+                {%- endif -%}
+              </div>
+              <div class="btn-wrap mt-auto">
                 <a
                   href="{{ article.url }}"
-                  class="px-12 3xl:px-10 py-2 3xl:py-[6px] inline-block rounded-full text-base 3xl:text-lg font-medium border-[3px] border-primary text-primary hover:bg-primary hover:text-white"
+                  class="px-12 3xl:px-10 py-2 3xl:py-[6px] inline-block rounded-full text-base 3xl:text-lg font-medium border-[3px] border-primary text-primary group-hover:bg-secondary group-hover:text-white group-hover:border-secondary"
                 >
                   Read Article
                 </a>
