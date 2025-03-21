@@ -80,9 +80,8 @@
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "image": "shopify://shop_images/vuba-mac-2.jpg",
         "image_alt": "vuba-mac-2",
-        "video_poster": "shopify://shop_images/vuba-mac-2.jpg",
-        "video_mp4": "https://youtu.be/zeZTgOiU0LI?si=QsrkF7PxE1rOYJMo",
-        "video_webm": "https://youtu.be/zeZTgOiU0LI?si=QsrkF7PxE1rOYJMo"
+        "video_mp4": "",
+        "video_webm": ""
       }
     }
   },
