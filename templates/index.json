@@ -29,11 +29,7 @@
       "type": "vuba-richtext",
       "settings": {
         "title": "This is Vuba Stone",
-        "richtext": "<p>We are preferred surface for household names, big brands and homeowners worldwide. </p><p>Proudly BBA certified, a testament to our quality and excellence.</p>",
-        "button_text": "Download EN",
-        "button_url": "",
-        "button_text_two": "Download ESP",
-        "button_two_url": ""
+        "richtext": "<p>We are preferred surface for household names, big brands and homeowners worldwide. </p><p>Proudly BBA certified, a testament to our quality and excellence.</p>"
       }
     },
     "vuba_mac_section_one_y7KRnV": {
