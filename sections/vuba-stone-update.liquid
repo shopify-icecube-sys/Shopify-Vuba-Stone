@@ -4,32 +4,29 @@
       {{ section.settings.section_heading }}
     </h2>
     <div class="owl-carousel owl-theme" id="vs-update-slider">
-      {% for block in section.blocks %}
-        <div class="item">
-          <div class="bg-white col">
-            <img
-              src="{{ block.settings.image | img_url:'master' }}"
-              class="w-full object-cover"
-              alt="{{ block.settings.alt_text }}"
-            >
-            <div class="pt-7 md:pt-10 3xl:pt-16 pb-7 3xl:pb-28 px-7 3xl:px-12 text-center">
-              <h3 class="text-xl 3xl:text-2xl font-bold {% if block.settings.highlight %}text-secondary{% endif %}">
-                {{ block.settings.title }}
-              </h3>
-              <p class="text-base 3xl:text-xl font-medium pt-3 pb-6 3xl:py-7">
-                CATEGORY: {{ block.settings.category }}
-              </p>
-              <p class="text-gray-600 text-sm pb-5 3xl:pb-14">{{ block.settings.description }}</p>
-              <a
-                href="{{ block.settings.link }}"
-                class="px-12 3xl:px-10 py-2 3xl:py-[6px] inline-block rounded-full text-base 3xl:text-lg font-medium border-[3px] border-primary text-primary hover:bg-primary hover:text-white"
-              >
-                {{ block.settings.button_text }}
-              </a>
+      {% assign blog_handle = section.settings.blog_handle %}
+      {% if blog_handle %}
+        {% for article in blogs[blog_handle].articles %}
+          <div class="item">
+            <div class="bg-white col">
+              <img src="{{ article.image | img_url: '720x720' }}" class="w-full object-cover" alt="{{ article.title }}">
+              <div class="pt-7 md:pt-10 3xl:pt-16 pb-7 3xl:pb-28 px-7 3xl:px-12 text-center">
+                <h3 class="text-xl 3xl:text-2xl font-bold">{{ article.title }}</h3>
+                <p class="text-base 3xl:text-xl font-medium pt-3 pb-6 3xl:py-7">CATEGORY: {{ article.blog.title }}</p>
+                <p class="text-gray-600 text-sm pb-5 3xl:pb-14">{{ article.excerpt | strip_html | truncate: 150 }}</p>
+                <a
+                  href="{{ article.url }}"
+                  class="px-12 3xl:px-10 py-2 3xl:py-[6px] inline-block rounded-full text-base 3xl:text-lg font-medium border-[3px] border-primary text-primary hover:bg-primary hover:text-white"
+                >
+                  Read Article
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-      {% endfor %}
+        {% endfor %}
+      {% else %}
+        <p class="text-center">No blog selected or no articles available.</p>
+      {% endif %}
     </div>
   </div>
 </section>
@@ -43,55 +40,11 @@
       "id": "section_heading",
       "label": "Section Heading",
       "default": "Vuba Stone Updates"
-    }
-  ],
-  "blocks": [
+    },
     {
-      "type": "update_item",
-      "name": "Update Item",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        },
-        {
-          "type": "text",
-          "id": "alt_text",
-          "label": "Alt Text"
-        },
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Title"
-        },
-        {
-          "type": "text",
-          "id": "category",
-          "label": "Category"
-        },
-        {
-          "type": "textarea",
-          "id": "description",
-          "label": "Description"
-        },
-        {
-          "type": "url",
-          "id": "link",
-          "label": "Link"
-        },
-        {
-          "type": "text",
-          "id": "button_text",
-          "label": "Button Text",
-          "default": "Read Article"
-        },
-        {
-          "type": "checkbox",
-          "id": "highlight",
-          "label": "Highlight Title"
-        }
-      ]
+      "type": "blog",
+      "id": "blog_handle",
+      "label": "Select Blog"
     }
   ],
   "presets": [
