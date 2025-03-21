@@ -17,7 +17,7 @@
       {% if section.settings.image != blank %}
         <img
           class="hidden md:block mx-auto"
-          src="{{ section.settings.image | img_url }}"
+          src="{{ section.settings.image | img_url: 'master' }}"
           alt="{{ section.settings.image_alt }}"
         >
       {% endif %}
