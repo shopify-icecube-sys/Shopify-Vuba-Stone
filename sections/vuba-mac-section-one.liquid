@@ -21,14 +21,14 @@
       {% if section.settings.desktop_image != blank %}
         <img
           class="hidden md:block mx-auto"
-          src="{{ section.settings.desktop_image | img_url }}"
+          src="{{ section.settings.desktop_image | img_url:'master' }}"
           alt="VubaMacAggregate"
         >
       {% endif %}
       {% if section.settings.mobile_image != blank %}
         <img
           class="md:hidden mx-auto"
-          src="{{ section.settings.mobile_image | img_url }}"
+          src="{{ section.settings.mobile_image | img_url:'master' }}"
           alt="placeholder product"
         >
       {% endif %}
