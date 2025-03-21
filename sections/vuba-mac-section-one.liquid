@@ -1,21 +1,29 @@
 <section class="vuba-mac pt-20 md:pt-14 3xl:pt-36 bg-primary text-center">
-    <div class="container">
-        <div class="text-white xl:max-w-3xl 3xl:max-w-6xl mx-auto">
-            <h2 class="text-8xl 3xl:text-[164px] font-bold pb-9">
-                {{ section.settings.title }}
-            </h2>
-            <p class="text-sm md:text-base 3xl:text-2xl mb-5">
-                {{ section.settings.description }}
-            </p>
-            <p class="text-sm md:text-base 3xl:text-2xl">
-                {{ section.settings.details | newline_to_br }}
-            </p>
-        </div>
-        <div class="text-center pt-9 md:pt-20">
-            <img class="hidden md:block mx-auto" src="{{ section.settings.desktop_image | img_url:'1200x1200' }}" alt="VubaMacAggregate"/>
-            <img class="md:hidden mx-auto" src="{{ section.settings.mobile_image | img_url:'1200x1200' }}" alt="placeholder product"/>
-        </div>
+  <div class="container">
+    <div class="text-white xl:max-w-3xl 3xl:max-w-6xl mx-auto">
+      <h2 class="text-8xl 3xl:text-[164px] font-bold pb-9">
+        {{ section.settings.title }}
+      </h2>
+      <p class="text-sm md:text-base 3xl:text-2xl mb-5">
+        {{ section.settings.description }}
+      </p>
+      <p class="text-sm md:text-base 3xl:text-2xl">
+        {{ section.settings.details | newline_to_br }}
+      </p>
     </div>
+    <div class="text-center pt-9 md:pt-20">
+      <img
+        class="hidden md:block mx-auto"
+        src="{{ section.settings.desktop_image | img_url:'large' }}"
+        alt="VubaMacAggregate"
+      >
+      <img
+        class="md:hidden mx-auto"
+        src="{{ section.settings.mobile_image | img_url:'1200x1200' }}"
+        alt="placeholder product"
+      >
+    </div>
+  </div>
 </section>
 
 {% schema %}
