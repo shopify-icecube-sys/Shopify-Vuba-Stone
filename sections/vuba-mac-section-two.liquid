@@ -17,7 +17,7 @@
         <img
           class="hidden md:block mx-auto"
           src="{{ section.settings.image | img_url: 'master' }}"
-          alt="{{ section.settings.image_alt }}"
+          alt="Image Not Found"
         >
       {% endif %}
       <div id="videoContainer" class="relative w-full max-w-lg md:hidden mx-auto cursor-pointer">
@@ -52,12 +52,6 @@
       "type": "image_picker",
       "id": "image",
       "label": "Image"
-    },
-    {
-      "type": "text",
-      "id": "image_alt",
-      "label": "Image Alt Text",
-      "default": "vuba-mac-2"
     },
     {
       "type": "url",
