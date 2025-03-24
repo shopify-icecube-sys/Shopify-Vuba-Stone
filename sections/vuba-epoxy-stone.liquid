@@ -1,0 +1,146 @@
+<!-- filepath: sections/epoxy-vuba-stone.liquid -->
+<section class="epoxy-vuba-stone">
+    <div class="container mx-auto text-center max-w-5xl">
+        <h2 class="text-3xl font-bold mb-10">
+            <span class="text-black">{{ section.settings.title_part1 }}</span> vs <span class="text-black font-extrabold">{{ section.settings.title_part2 }}</span>
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <!-- Epoxy Cons -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <div class="relative">
+                    <img src="{{ section.settings.epoxy_image }}" class="w-full rounded-lg" alt="{{ section.settings.epoxy_image_alt }}">
+                    <img src="{{ section.settings.epoxy_icon }}" class="absolute bottom-0 right-0 transform translate-x-1/3 translate-y-1/3 w-28 h-28 rounded-full border-4 border-white shadow-lg" alt="{{ section.settings.epoxy_icon_alt }}">
+                </div>
+                <h3 class="text-xl font-bold mt-6">{{ section.settings.epoxy_title }}</h3>
+                <p class="text-gray-600 mt-2 text-sm text-left">
+                    {{ section.settings.epoxy_description }}
+                </p>
+            </div>
+            
+            <!-- Vuba Stone Pros -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <div class="relative">
+                    <img src="{{ section.settings.vuba_image }}" class="w-full rounded-lg" alt="{{ section.settings.vuba_image_alt }}">
+                    <img src="{{ section.settings.vuba_icon }}" class="absolute bottom-0 right-0 transform translate-x-1/3 translate-y-1/3 w-28 h-28 rounded-full border-4 border-white shadow-lg" alt="{{ section.settings.vuba_icon_alt }}">
+                </div>
+                <h3 class="text-xl font-bold mt-6">{{ section.settings.vuba_title }}</h3>
+                <p class="text-gray-600 mt-2 text-sm text-left">
+                    {{ section.settings.vuba_description }}
+                </p>
+            </div>
+        </div>
+        
+        <div class="mt-10">
+            <a href="{{ section.settings.button_link }}" class="bg-[#7b1720] text-white px-6 py-3 rounded-lg text-sm font-semibold tracking-wide inline-block hover:bg-red-900">
+                {{ section.settings.button_text }}
+            </a>
+        </div>
+    </div>
+</section>
+<!-- filepath: sections/epoxy-vuba-stone.liquid -->
+{% schema %}
+    {
+      "name": "Epoxy vs Vuba Stone",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title_part1",
+          "label": "Title Part 1",
+          "default": "Epoxy"
+        },
+        {
+          "type": "text",
+          "id": "title_part2",
+          "label": "Title Part 2",
+          "default": "Vuba Stone"
+        },
+        {
+          "type": "image_picker",
+          "id": "epoxy_image",
+          "label": "Epoxy Image"
+        },
+        {
+          "type": "text",
+          "id": "epoxy_image_alt",
+          "label": "Epoxy Image Alt Text",
+          "default": "Epoxy Driveway"
+        },
+        {
+          "type": "image_picker",
+          "id": "epoxy_icon",
+          "label": "Epoxy Icon"
+        },
+        {
+          "type": "text",
+          "id": "epoxy_icon_alt",
+          "label": "Epoxy Icon Alt Text",
+          "default": "Epoxy Sample"
+        },
+        {
+          "type": "text",
+          "id": "epoxy_title",
+          "label": "Epoxy Title",
+          "default": "Epoxy cons"
+        },
+        {
+          "type": "textarea",
+          "id": "epoxy_description",
+          "label": "Epoxy Description",
+          "default": "Can Vuba Stone be installed in cold and hot climates? We would like to show we offer a 5-year warranty on Vuba Stone and 10 years on VubaMac..."
+        },
+        {
+          "type": "image_picker",
+          "id": "vuba_image",
+          "label": "Vuba Image"
+        },
+        {
+          "type": "text",
+          "id": "vuba_image_alt",
+          "label": "Vuba Image Alt Text",
+          "default": "Vuba Stone Poolside"
+        },
+        {
+          "type": "image_picker",
+          "id": "vuba_icon",
+          "label": "Vuba Icon"
+        },
+        {
+          "type": "text",
+          "id": "vuba_icon_alt",
+          "label": "Vuba Icon Alt Text",
+          "default": "Stone Pros"
+        },
+        {
+          "type": "text",
+          "id": "vuba_title",
+          "label": "Vuba Title",
+          "default": "Vuba Stone pros"
+        },
+        {
+          "type": "textarea",
+          "id": "vuba_description",
+          "label": "Vuba Description",
+          "default": "Can Vuba Stone be installed in cold and hot climates? We would like to show we offer a 5-year warranty on Vuba Stone and 10 years on VubaMac..."
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "GO TO INSTALLER"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link",
+          "default": "#"
+        }
+      ],
+      "presets": [
+    {
+      "name": "Epoxy vs Vuba Stone",
+      "category": "Custom"
+    }
+  ]
+    }
+    {% endschema %}
