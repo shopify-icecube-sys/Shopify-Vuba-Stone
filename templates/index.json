@@ -83,16 +83,6 @@
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       }
     },
-    "vuba_headline_TCzfaj": {
-      "type": "vuba-headline",
-      "settings": {
-        "headline_image": "shopify://shop_images/Headline-Click-through.jpg",
-        "headline_text": "Headline & Click through",
-        "subheading_text": "We are the preferred surface for household names, big brands and homeowners worldwide.",
-        "button_text": "GO TO INSTALLER",
-        "button_link": ""
-      }
-    },
     "vuba_epoxy_stone_VGBVrL": {
       "type": "vuba-epoxy-stone",
       "settings": {
@@ -113,6 +103,16 @@
         "button_text": "GO TO INSTALLER",
         "button_link": ""
       }
+    },
+    "vuba_headline_TCzfaj": {
+      "type": "vuba-headline",
+      "settings": {
+        "headline_image": "shopify://shop_images/Headline-Click-through.jpg",
+        "headline_text": "Headline & Click through",
+        "subheading_text": "We are the preferred surface for household names, big brands and homeowners worldwide.",
+        "button_text": "GO TO INSTALLER",
+        "button_link": ""
+      }
     }
   },
   "order": [
@@ -124,7 +124,7 @@
     "vuba_latest_project_3JtQrN",
     "vuba_installer_CrtiUM",
     "vuba_stampede_8CrHmw",
-    "vuba_headline_TCzfaj",
-    "vuba_epoxy_stone_VGBVrL"
+    "vuba_epoxy_stone_VGBVrL",
+    "vuba_headline_TCzfaj"
   ]
 }
