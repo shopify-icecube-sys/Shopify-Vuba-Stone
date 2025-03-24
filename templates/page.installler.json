@@ -24,9 +24,9 @@
         "background_image_mobile": "shopify://shop_images/vuba-mac-2.jpg",
         "title": "Let us help you find <br> an Installler",
         "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p><p><br/><a href=\"/blogs/project\" title=\"Project\">Click here if you would like to be an installer</a></p>",
-        "button_text_en": "DOWNLOAD EN",
+        "button_text_en": "",
         "button_link_en": "",
-        "button_text_esp": "DOWNLOAD ESP",
+        "button_text_esp": "",
         "button_link_esp": "",
         "div_color": "#821832"
       }
