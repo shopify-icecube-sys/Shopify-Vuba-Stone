@@ -76,6 +76,13 @@
         "image_alt": "Vuba Installer"
       }
     },
+    "vuba_stampede_8CrHmw": {
+      "type": "vuba-stampede",
+      "settings": {
+        "heading": "Join the Stampede!",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      }
+    },
     "vuba_headline_TCzfaj": {
       "type": "vuba-headline",
       "settings": {
@@ -84,13 +91,6 @@
         "subheading_text": "We are the preferred surface for household names, big brands and homeowners worldwide.",
         "button_text": "GO TO INSTALLER",
         "button_link": ""
-      }
-    },
-    "vuba_stampede_8CrHmw": {
-      "type": "vuba-stampede",
-      "settings": {
-        "heading": "Join the Stampede!",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       }
     }
   },
@@ -102,7 +102,7 @@
     "vuba_mac_section_two_qGUWdX",
     "vuba_latest_project_3JtQrN",
     "vuba_installer_CrtiUM",
-    "vuba_headline_TCzfaj",
-    "vuba_stampede_8CrHmw"
+    "vuba_stampede_8CrHmw",
+    "vuba_headline_TCzfaj"
   ]
 }
