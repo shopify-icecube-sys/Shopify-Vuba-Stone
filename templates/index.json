@@ -92,6 +92,23 @@
         "button_text": "GO TO INSTALLER",
         "button_link": ""
       }
+    },
+    "vuba_epoxy_stone_VGBVrL": {
+      "type": "vuba-epoxy-stone",
+      "settings": {
+        "title_part1": "Epoxy",
+        "title_part2": "Vuba Stone",
+        "epoxy_image_alt": "Epoxy Driveway",
+        "epoxy_icon_alt": "Epoxy Sample",
+        "epoxy_title": "Epoxy cons",
+        "epoxy_description": "Can Vuba Stone be installed in cold and hot climates? We would like to show we offer a 5-year warranty on Vuba Stone and 10 years on VubaMac...",
+        "vuba_image_alt": "Vuba Stone Poolside",
+        "vuba_icon_alt": "Stone Pros",
+        "vuba_title": "Vuba Stone pros",
+        "vuba_description": "Can Vuba Stone be installed in cold and hot climates? We would like to show we offer a 5-year warranty on Vuba Stone and 10 years on VubaMac...",
+        "button_text": "GO TO INSTALLER",
+        "button_link": ""
+      }
     }
   },
   "order": [
@@ -103,6 +120,7 @@
     "vuba_latest_project_3JtQrN",
     "vuba_installer_CrtiUM",
     "vuba_stampede_8CrHmw",
-    "vuba_headline_TCzfaj"
+    "vuba_headline_TCzfaj",
+    "vuba_epoxy_stone_VGBVrL"
   ]
 }
