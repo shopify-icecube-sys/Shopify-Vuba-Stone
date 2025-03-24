@@ -89,6 +89,17 @@
         "button_text": "GO TO INSTALLER",
         "button_link": "shopify://collections"
       }
+    },
+    "vuba_installer_FFY7En": {
+      "type": "vuba-installer",
+      "settings": {
+        "category_name": "Category Name",
+        "heading": "Become a Vuba Installer",
+        "button_link": "shopify://collections",
+        "button_text": "GO TO INSTALLER",
+        "image": "shopify://shop_images/vuba-installer-man-d.jpg",
+        "image_alt": "Vuba Installer"
+      }
     }
   },
   "order": [
@@ -97,6 +108,7 @@
     "featured_collection",
     "vuba_mac_section_one_y7KRnV",
     "vuba_mac_section_two_6aJYrG",
-    "vuba_headline_zqWMqq"
+    "vuba_headline_zqWMqq",
+    "vuba_installer_FFY7En"
   ]
 }
