@@ -69,7 +69,6 @@
       "type": "vuba-installer",
       "settings": {
         "category_name": "Category Name",
-        "heading": "Become a Vuba Installer",
         "button_link": "#",
         "button_text": "GO TO INSTALLER",
         "image": "shopify://shop_images/vuba-installer-man-d.png",
@@ -81,7 +80,7 @@
       "settings": {
         "main_image": "shopify://shop_images/tiktok.jpg",
         "heading": "Join the Stampede!",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       }
     },
     "vuba_headline_TCzfaj": {
