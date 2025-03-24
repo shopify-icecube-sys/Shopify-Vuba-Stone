@@ -113,6 +113,13 @@
         "button_text": "GO TO INSTALLER",
         "button_link": ""
       }
+    },
+    "vuba_world_blends_LnkJbx": {
+      "type": "vuba-world-blends",
+      "settings": {
+        "heading": "Vuba World Blends",
+        "collection": "vuba-america"
+      }
     }
   },
   "order": [
@@ -125,6 +132,7 @@
     "vuba_installer_CrtiUM",
     "vuba_stampede_8CrHmw",
     "vuba_epoxy_stone_VGBVrL",
-    "vuba_headline_TCzfaj"
+    "vuba_headline_TCzfaj",
+    "vuba_world_blends_LnkJbx"
   ]
 }
