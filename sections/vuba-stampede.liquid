@@ -7,13 +7,15 @@
     </div>
     <div class="w-full lg:w-[40%] px-4 md:px-8 pb-12 lg:pb-0 -mt-12 lg:mt-0 lg:-left-40 relative">
       <div class="bg-primary text-white py-10 lg:py-14 3xl:py-24 px-4 lg:px-10 3xl:px-20 lg:max-w-[694px] text-sm 3xl:text-base">
-        <h2 class="text-4xl 3xl:text-5xl font-bold mb-7">{{ section.settings.heading }}</h2>
-        <p>{{ section.settings.description }}</p>
+        {% if section.settings.heading != blank %}
+          <h2 class="text-4xl 3xl:text-5xl font-bold mb-7">{{ section.settings.heading }}</h2>
+        {% endif %}
+        {% if section.settings.description != blank %}
+          <p>{{ section.settings.description }}</p>
+        {% endif %}
         <div class="flex space-x-5 mt-8 3xl:mt-12">
           <a href="#"><img src="{{ 'instagram-w-icon.svg' | asset_url }}" class="h-[22px] 3xl:h-8" alt="Instagram"></a>
-
           <a href="#"><img src="{{ 'facebook-w-icon.svg' | asset_url }}" class="h-[22px] 3xl:h-8" alt="Facebook"></a>
-
           <a href="#"><img src="{{ 'twitter-w-icon.svg' | asset_url }}" class="h-[22px] 3xl:h-8" alt="Twitter"></a>
         </div>
       </div>
