@@ -29,9 +29,10 @@
       "type": "vuba-richtext",
       "settings": {
         "title": "This is Vuba Stone",
-        "richtext": "<p>We are preferred surface for household names, big brands and homeowners worldwide. Proudly BBA certified, a testament to our quality and excellence.</p>"
+        "richtext": "<p>We are preferred surface for household names, big brands and homeowners worldwide. </p><p>Proudly BBA certified, a testament to our quality and excellence.</p>"
       }
     },
+
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -58,18 +59,25 @@
         "swipe_on_mobile": false,
         "padding_top": 44,
         "padding_bottom": 36
+
+    "vuba_stone_update_e9mMwW": {
+      "type": "vuba-stone-update",
+      "settings": {
+        "section_heading": "Vuba Stone Updates",
+        "blog_handle": "news"
+
       }
     },
     "vuba_mac_section_one_y7KRnV": {
       "type": "vuba-mac-section-one",
       "settings": {
         "title": "Vuba Mac",
-        "description": "<p>We would like a section dedicated to VubaMac and how it is the first permeable base specifically designed for Resin Bound surfacing.</p>",
-        "details": "- We offer a 10 year warranty on VubaMac.\n- Video of VubaMac being installed.",
-        "desktop_image": "shopify://shop_images/VubaMacAggregate.png"
+        "description": "<p>We would like a section dedicated to VubaMac and how it is the first permeable base</p><p> specifically designed for Resin Bound surfacing.</p><p>- We offer a 10 year warranty on VubaMac.<br/>- Video of VubaMac being installed.</p>",
+        "desktop_image": "shopify://shop_images/VubaMacAggregate.png",
+        "mobile_image": "shopify://shop_images/placeholder-product.png"
       }
     },
-    "vuba_mac_section_two_6aJYrG": {
+    "vuba_mac_section_two_qGUWdX": {
       "type": "vuba-mac-section-two",
       "settings": {
         "heading": "Vuba Mac",
@@ -79,16 +87,24 @@
         "video_poster": "shopify://shop_images/Video-placeholder-m.jpg"
       }
     },
-    "vuba_headline_zqWMqq": {
+    "vuba_latest_project_3JtQrN": {
+      "type": "vuba-latest-project",
+      "settings": {
+        "section_heading": "Latest Projects",
+        "blog_handle": "project"
+      }
+    },
+    "vuba_headline_TCzfaj": {
       "type": "vuba-headline",
       "disabled": true,
       "settings": {
         "headline_image": "shopify://shop_images/Headline-Click-through.jpg",
-        "headline_text": "Headline & Click Throughs",
+        "headline_text": "Headline & Click through",
         "subheading_text": "We are the preferred surface for household names, big brands and homeowners worldwide.",
         "button_text": "GO TO INSTALLER",
-        "button_link": "shopify://collections"
+        "button_link": ""
       }
+
     },
     "vuba_installer_FFY7En": {
       "type": "vuba-installer",
@@ -100,15 +116,24 @@
         "image": "shopify://shop_images/vuba-installer-man-d.jpg",
         "image_alt": "Vuba Installer"
       }
+
     }
   },
   "order": [
     "vuba_banner_image_kFLjhb",
     "vuba_richtext_6J9PEW",
+
     "featured_collection",
     "vuba_mac_section_one_y7KRnV",
     "vuba_mac_section_two_6aJYrG",
     "vuba_headline_zqWMqq",
     "vuba_installer_FFY7En"
+
+    "vuba_stone_update_e9mMwW",
+    "vuba_mac_section_one_y7KRnV",
+    "vuba_mac_section_two_qGUWdX",
+    "vuba_latest_project_3JtQrN",
+    "vuba_headline_TCzfaj"
+
   ]
 }

@@ -2,7 +2,7 @@
   <div class="md:bg-primary py-12 md:py-5">
     <div class="container mx-auto flex justify-between items-center">
       <div class="flex items-center">
-        <a href="#">
+        <a href="/">
           <img
             src="{{ 'header-logo.svg' | asset_url }}"
             class="brand hidden md:block md:w-[230px] 3xl:w-auto"
@@ -74,13 +74,13 @@
             </li>
           {% endfor %}
         </ul>
-        <a href="#" class="hidden md:block text-white">CONTACT</a>
+        <a href="/" class="hidden md:block text-white">CONTACT</a>
       </div>
     </div>
   </nav>
   <div
     id="mobile-menu"
-    class="absolute top-0 left-0 w-full bg-white transform -translate-y-full transition-transform duration-300 ease-in-out z-50"
+    class="absolute top-0 left-0 w-full bg-white transform -translate-y-full transition-transform duration-300 ease-in-out z-50 h-[100vh] md:h-auto overflow-y-auto"
   >
     <div class="bg-white flex justify-center min-h-screen py-12 px-4">
       <div class="w-full text-center">
@@ -147,7 +147,7 @@
                 <a href="{{ link.url }}" class="text-secondary hover:text-primary">{{ link.title }}</a>
               </li>
             {% endfor %}
-            <li><a href="#" class="text-secondary hover:text-primary">CONTACT</a></li>
+            <li><a href="/" class="text-secondary hover:text-primary">CONTACT</a></li>
           </ul>
         </nav>
         <div class="mt-10">

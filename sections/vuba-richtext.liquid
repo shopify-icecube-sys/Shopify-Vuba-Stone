@@ -1,5 +1,5 @@
 <section
-  class="vuba-stone pt-44 md:pt-10 pb-14 3xl:pb-32"
+  class="vuba-stone pt-44 md:pt-14 pb-14  3xl:py-32"
 >
   <div class="container md:px-24 3xl:px-36">
     <div class="flex-wrap gap-7 md:gap-4 3xl:gap-7 mb-20 md:mb-14 3xl:mb-20 hidden">
@@ -26,7 +26,9 @@
       >
         {{ section.settings.title }}
       </h2>
-      <p class="text-sm md:text-base 3xl:text-2xl">{{ section.settings.richtext }}</p>
+      <div class="text-sm md:text-base 3xl:text-2xl">
+        <p>{{ section.settings.richtext }}</p>
+      </div>
     </div>
   </div>
 </section>
