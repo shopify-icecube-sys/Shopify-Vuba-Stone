@@ -1,13 +1,13 @@
-<section class="epoxy-vuba-stone">
-  <div class="container mx-auto text-center max-w-5xl">
-    <h2 class="text-3xl font-bold mb-10">
-      <span class="text-black">{{ section.settings.title_part1 }}</span> vs
-      <span class="text-black font-extrabold">{{ section.settings.title_part2 }}</span>
-    </h2>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-      <!-- Epoxy Cons -->
-      <div class="bg-white p-6 rounded-lg shadow-lg">
+<section class="epoxy-vuba-stone py-16 3xl:py-40">
+  <div class="inner-container">
+    <div class="text-center mb-10 3xl:mb-28">
+      <h2 class="text-4xl 3xl:text-[68px] font-bold inline-block 3xl:leading-[80px]">
+        {{ section.settings.title_part1 }}
+        <span class="font-normal">vs</span> {{ section.settings.title_part2 }}
+      </h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 3xl:gap-36">
+      <div class="text-left">
         <div class="relative">
           <img
             src="{{ section.settings.epoxy_image }}"
@@ -20,13 +20,15 @@
             alt="{{ section.settings.epoxy_icon_alt }}"
           >
         </div>
-        <h3 class="text-xl font-bold mt-6">{{ section.settings.epoxy_title }}</h3>
-        <div class="text-gray-600 mt-2 text-sm text-left">
+        <h3 class="text-4xl xl:text-3xl 3xl:text-[38px] font-bold mt-12 3xl:mt-24 ">
+          {{ section.settings.epoxy_title }}
+        </h3>
+        <div class="mt-6 text-sm 3xl:text-lg text-left space-y-4">
           {{ section.settings.epoxy_description }}
         </div>
       </div>
 
-      <div class="bg-white p-6 rounded-lg shadow-lg">
+      <div class="text-left">
         <div class="relative">
           <img
             src="{{ section.settings.vuba_image }}"
@@ -39,17 +41,19 @@
             alt="{{ section.settings.vuba_icon_alt }}"
           >
         </div>
-        <h3 class="text-xl font-bold mt-6">{{ section.settings.vuba_title }}</h3>
-        <div class="text-gray-600 mt-2 text-sm text-left">
+        <h3 class="text-4xl xl:text-3xl 3xl:text-[38px] font-bold mt-12 3xl:mt-24 ">
+          {{ section.settings.epoxy_title }}
+        </h3>
+        <div class="mt-6 text-sm 3xl:text-lg text-left space-y-4">
           {{ section.settings.vuba_description }}
         </div>
       </div>
     </div>
 
-    <div class="mt-10">
+    <div class="mt-8 3xl:mt-14 text-center">
       <a
         href="{{ section.settings.button_link }}"
-        class="bg-[#7b1720] text-white px-6 py-3 rounded-lg text-sm font-semibold tracking-wide inline-block hover:bg-red-900"
+        class="text-sm 3xl:text-base tracking-widest inline-block bg-primary hover:bg-secondary text-white hover:text-white px-7 py-4 rounded-xl font-bold"
       >
         {{ section.settings.button_text }}
       </a>
