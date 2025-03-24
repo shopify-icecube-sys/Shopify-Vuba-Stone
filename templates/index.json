@@ -17,7 +17,7 @@
         "logo_desktop": "shopify://shop_images/vuba-stone-brochure-d.svg",
         "logo_mobile": "shopify://shop_images/vuba-stone-brochure-m.svg",
         "title": "DOWNLOAD OUR BROCHURE",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>",
         "button_text_en": "DOWNLOAD EN",
         "button_link_en": "shopify://collections",
         "button_text_esp": "DOWNLOAD ESP",
@@ -29,54 +29,26 @@
       "type": "vuba-richtext",
       "settings": {
         "title": "This is Vuba Stone",
-        "richtext": "<p>We are preferred surface for household names, big brands and homeowners worldwide. Proudly BBA certified, a testament to our quality and excellence.</p>"
+        "richtext": "<p>We are preferred surface for household names, big brands and homeowners worldwide. </p><p>Proudly BBA certified, a testament to our quality and excellence.</p>"
       }
     },
-
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "collection": "all",
-        "products_to_show": 8,
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 4,
-        "enable_desktop_slider": false,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 44,
-        "padding_bottom": 36
-
     "vuba_stone_update_e9mMwW": {
       "type": "vuba-stone-update",
       "settings": {
         "section_heading": "Vuba Stone Updates",
         "blog_handle": "news"
-
       }
     },
     "vuba_mac_section_one_y7KRnV": {
       "type": "vuba-mac-section-one",
       "settings": {
         "title": "Vuba Mac",
-        "description": "<p>We would like a section dedicated to VubaMac and how it is the first permeable base specifically designed for Resin Bound surfacing.</p>",
-        "desktop_image": "shopify://shop_images/VubaMacAggregate.png"
+        "description": "<p>We would like a section dedicated to VubaMac and how it is the first permeable base</p><p> specifically designed for Resin Bound surfacing.</p><p>- We offer a 10 year warranty on VubaMac.<br/>- Video of VubaMac being installed.</p>",
+        "desktop_image": "shopify://shop_images/VubaMacAggregate.png",
+        "mobile_image": "shopify://shop_images/placeholder-product.png"
       }
     },
-    "vuba_mac_section_two_6aJYrG": {
+    "vuba_mac_section_two_qGUWdX": {
       "type": "vuba-mac-section-two",
       "settings": {
         "heading": "Vuba Mac",
@@ -86,9 +58,6 @@
         "video_poster": "shopify://shop_images/Video-placeholder-m.jpg"
       }
     },
-
-    "vuba_headline_zqWMqq": {
-
     "vuba_latest_project_3JtQrN": {
       "type": "vuba-latest-project",
       "settings": {
@@ -108,55 +77,32 @@
       }
     },
     "vuba_headline_TCzfaj": {
-
       "type": "vuba-headline",
       "settings": {
         "headline_image": "shopify://shop_images/Headline-Click-through.jpg",
-        "headline_text": "Headline & Click Throughs",
+        "headline_text": "Headline & Click through",
         "subheading_text": "We are the preferred surface for household names, big brands and homeowners worldwide.",
         "button_text": "GO TO INSTALLER",
-        "button_link": "shopify://collections"
-      }
-
-    },
-    "vuba_installer_FFY7En": {
-      "type": "vuba-installer",
-      "settings": {
-        "category_name": "Category Name",
-        "heading": "Become a Vuba Installer",
-        "button_link": "shopify://collections",
-        "button_text": "GO TO INSTALLER",
-        "image": "shopify://shop_images/vuba-installer-man-d.jpg",
-        "image_alt": "Vuba Installer"
+        "button_link": ""
       }
     },
-    "vuba_stampede_XhMWq3": {
+    "vuba_stampede_8CrHmw": {
       "type": "vuba-stampede",
       "settings": {
-        "main_image": "shopify://shop_images/tiktok.jpg",
         "heading": "Join the Stampede!",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       }
-
     }
   },
   "order": [
     "vuba_banner_image_kFLjhb",
     "vuba_richtext_6J9PEW",
-
-    "featured_collection",
-    "vuba_mac_section_one_y7KRnV",
-    "vuba_mac_section_two_6aJYrG",
-    "vuba_headline_zqWMqq",
-    "vuba_installer_FFY7En",
-    "vuba_stampede_XhMWq3"
-
     "vuba_stone_update_e9mMwW",
     "vuba_mac_section_one_y7KRnV",
     "vuba_mac_section_two_qGUWdX",
     "vuba_latest_project_3JtQrN",
     "vuba_installer_CrtiUM",
-    "vuba_headline_TCzfaj"
-
+    "vuba_headline_TCzfaj",
+    "vuba_stampede_8CrHmw"
   ]
 }
