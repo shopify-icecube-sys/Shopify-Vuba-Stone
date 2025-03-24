@@ -32,6 +32,7 @@
         "richtext": "<p>We are preferred surface for household names, big brands and homeowners worldwide. Proudly BBA certified, a testament to our quality and excellence.</p>"
       }
     },
+
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -58,6 +59,13 @@
         "swipe_on_mobile": false,
         "padding_top": 44,
         "padding_bottom": 36
+
+    "vuba_stone_update_e9mMwW": {
+      "type": "vuba-stone-update",
+      "settings": {
+        "section_heading": "Vuba Stone Updates",
+        "blog_handle": "news"
+
       }
     },
     "vuba_mac_section_one_y7KRnV": {
@@ -78,9 +86,30 @@
         "video_poster": "shopify://shop_images/Video-placeholder-m.jpg"
       }
     },
+
     "vuba_headline_zqWMqq": {
+
+    "vuba_latest_project_3JtQrN": {
+      "type": "vuba-latest-project",
+      "settings": {
+        "section_heading": "Latest Projects",
+        "blog_handle": "project"
+      }
+    },
+    "vuba_installer_CrtiUM": {
+      "type": "vuba-installer",
+      "settings": {
+        "category_name": "Category Name",
+        "heading": "Become a Vuba Installer",
+        "button_link": "#",
+        "button_text": "GO TO INSTALLER",
+        "image": "shopify://shop_images/vuba-installer-man-d.png",
+        "image_alt": "Vuba Installer"
+      }
+    },
+    "vuba_headline_TCzfaj": {
+
       "type": "vuba-headline",
-      "disabled": true,
       "settings": {
         "headline_image": "shopify://shop_images/Headline-Click-through.jpg",
         "headline_text": "Headline & Click Throughs",
@@ -88,6 +117,7 @@
         "button_text": "GO TO INSTALLER",
         "button_link": "shopify://collections"
       }
+
     },
     "vuba_installer_FFY7En": {
       "type": "vuba-installer",
@@ -107,16 +137,26 @@
         "heading": "Join the Stampede!",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       }
+
     }
   },
   "order": [
     "vuba_banner_image_kFLjhb",
     "vuba_richtext_6J9PEW",
+
     "featured_collection",
     "vuba_mac_section_one_y7KRnV",
     "vuba_mac_section_two_6aJYrG",
     "vuba_headline_zqWMqq",
     "vuba_installer_FFY7En",
     "vuba_stampede_XhMWq3"
+
+    "vuba_stone_update_e9mMwW",
+    "vuba_mac_section_one_y7KRnV",
+    "vuba_mac_section_two_qGUWdX",
+    "vuba_latest_project_3JtQrN",
+    "vuba_installer_CrtiUM",
+    "vuba_headline_TCzfaj"
+
   ]
 }

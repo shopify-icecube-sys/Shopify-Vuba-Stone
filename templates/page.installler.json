@@ -1,0 +1,59 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "vuba_banner_image_nFy4be": {
+      "type": "vuba-banner-image",
+      "settings": {
+        "background_image": "shopify://shop_images/vuba-mac-2.jpg",
+        "background_image_mobile": "shopify://shop_images/vuba-mac-2.jpg",
+        "title": "Let us help you find <br> an Installler",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        "button_text_en": "DOWNLOAD EN",
+        "button_link_en": "",
+        "button_text_esp": "DOWNLOAD ESP",
+        "button_link_esp": "",
+        "div_color": "#821832"
+      }
+    },
+    "vuba_installer_wi69pN": {
+      "type": "vuba-installer",
+      "settings": {
+        "category_name": "Category Name",
+        "heading": "Become a Vuba Installer",
+        "button_link": "#",
+        "button_text": "GO TO INSTALLER",
+        "image": "shopify://shop_images/vuba-installer-man-d.png",
+        "image_alt": "Vuba Installer"
+      }
+    },
+    "vuba_latest_project_6834X8": {
+      "type": "vuba-latest-project",
+      "settings": {
+        "section_heading": "Latest Projects",
+        "blog_handle": "project"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "vuba_banner_image_nFy4be",
+    "vuba_installer_wi69pN",
+    "vuba_latest_project_6834X8"
+  ]
+}
