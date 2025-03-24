@@ -6,11 +6,11 @@
           {% if section.settings.category_name != blank %}
             <p class="text-sm md:text-base 2xl:text-xl font-semibold">{{ section.settings.category_name }}</p>
           {% endif %}
-          {% if section.settings.heading != blank %}
-            <h2 class="text-4xl 3xl:text-[49px] font-bold mt-3 mb-7 lg:mt-4 3xl:mt-9 lg:mb-8 3xl:mb-10">
-              {{ section.settings.heading | newline_to_br }}
-            </h2>
-          {% endif %}
+          <h2 class="text-4xl 3xl:text-[49px] font-bold mt-3 mb-7 lg:mt-4 3xl:mt-9 lg:mb-8 3xl:mb-10">
+            Become <br class="sm:hidden">
+            a Vuba <br class="md:hidden">
+            Installer
+          </h2>
           {% if section.settings.button_text != blank %}
             <a
               href="{{ section.settings.button_link }}"
@@ -41,12 +41,6 @@
       "default": "Category Name"
     },
     {
-      "type": "textarea",
-      "id": "heading",
-      "label": "Heading",
-      "default": "Become a Vuba Installer"
-    },
-    {
       "type": "url",
       "id": "button_link",
       "label": "Button Link"
@@ -75,7 +69,6 @@
       "category": "Custom Sections",
       "settings": {
         "category_name": "Category Name",
-        "heading": "Become a Vuba Installer",
         "button_link": "#",
         "button_text": "GO TO INSTALLER",
         "image": "",
