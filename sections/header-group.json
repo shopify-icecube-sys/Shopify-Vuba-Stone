@@ -36,10 +36,23 @@
       "settings": {
         "menu": "vuba-header"
       }
+    },
+    "vuba_banner_image_6Wp4bn": {
+      "type": "vuba-banner-image",
+      "settings": {
+        "title": "DOWNLOAD OUR BROCHURE",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        "button_text_en": "DOWNLOAD EN",
+        "button_link_en": "",
+        "button_text_esp": "DOWNLOAD ESP",
+        "button_link_esp": "",
+        "div_color": "#6c757d"
+      }
     }
   },
   "order": [
     "header",
-    "vuba_header_73AFLj"
+    "vuba_header_73AFLj",
+    "vuba_banner_image_6Wp4bn"
   ]
 }
