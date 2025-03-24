@@ -8,15 +8,12 @@
         <h2 class="text-4xl 3xl:text-5xl font-bold mb-7">{{ section.settings.heading }}</h2>
         <p>{{ section.settings.description }}</p>
         <div class="flex space-x-5 mt-8 3xl:mt-12">
-          {% if section.settings.instagram_link %}
             <a href="#"><img src="{{ 'instagram-icon.svg' | asset_url }}" class="h-[22px] 3xl:h-8" alt="Instagram">
-          {% endif %}
-          {% if section.settings.facebook_link %}
+
             <a href="#"><img src="{{ 'facebook-icon.svg' | asset_url }}" class="h-[22px] 3xl:h-8" alt="Facebook">
-          {% endif %}
-          {% if section.settings.twitter_link %}
+
             <a href="#"><img src="{{ 'twitter-icon.svg' | asset_url }}" class="h-[22px] 3xl:h-8" alt="Twitter"></a>
-          {% endif %}
+         
         </div>
       </div>
     </div>
