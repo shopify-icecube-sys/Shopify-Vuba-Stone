@@ -1,7 +1,9 @@
 <section class="joint-the-stampede bg-secondary">
   <div class="mx-auto flex flex-wrap justify-center flex-col md:flex-row items-center">
     <div class="relative w-full lg:w-[60%]">
-      <img src="{{ section.settings.main_image | image_url }}" class="w-full" alt="Main Image">
+      {% if section.settings.main_image != blank %}
+        <img src="{{ section.settings.main_image | image_url }}" class="w-full" alt="Main Image">
+      {% endif %}
     </div>
     <div class="w-full lg:w-[40%] px-4 md:px-8 pb-12 lg:pb-0 -mt-12 lg:mt-0 lg:-left-40 relative">
       <div class="bg-primary text-white py-10 lg:py-14 3xl:py-24 px-4 lg:px-10 3xl:px-20 lg:max-w-[694px] text-sm 3xl:text-base">
