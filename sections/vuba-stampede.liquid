@@ -9,13 +9,13 @@
         <p>{{ section.settings.description }}</p>
         <div class="flex space-x-5 mt-8 3xl:mt-12">
           {% if section.settings.instagram_link %}
-            <a href="#"><img src="images/instagram-w-icon.svg" class="h-[22px] 3xl:h-8" alt="Instagram">
+            <a href="#"><img src="{{ 'instagram-icon.svg' | asset_url }}" class="h-[22px] 3xl:h-8" alt="Instagram">
           {% endif %}
           {% if section.settings.facebook_link %}
-            <a href="#"><img src="images/facebook-w-icon.svg" class="h-[22px] 3xl:h-8" alt="Facebook">
+            <a href="#"><img src="{{ 'facebook-icon.svg' | asset_url }}" class="h-[22px] 3xl:h-8" alt="Facebook">
           {% endif %}
           {% if section.settings.twitter_link %}
-            <a href="#"><img src="images/twitter-w-icon.svg" class="h-[22px] 3xl:h-8" alt="Twitter"></a>
+            <a href="#"><img src="{{ 'twitter-icon.svg' | asset_url }}" class="h-[22px] 3xl:h-8" alt="Twitter"></a>
           {% endif %}
         </div>
       </div>
