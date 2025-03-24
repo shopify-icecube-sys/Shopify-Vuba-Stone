@@ -36,35 +36,10 @@
       "settings": {
         "menu": "vuba-header"
       }
-    },
-    "vuba_banner_image_6Wp4bn": {
-      "type": "vuba-banner-image",
-      "settings": {
-        "title": "DOWNLOAD OUR BROCHURE",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-        "button_text_en": "DOWNLOAD EN",
-        "button_link_en": "",
-        "button_text_esp": "DOWNLOAD ESP",
-        "button_link_esp": "",
-        "div_color": "#6c757d"
-      }
-    },
-    "vuba_installer_BfzBLG": {
-      "type": "vuba-installer",
-      "settings": {
-        "category_name": "Category Name",
-        "heading": "Become a Vuba Installer",
-        "button_link": "#",
-        "button_text": "GO TO INSTALLER",
-        "image": "shopify://shop_images/vuba-installer-man-d.png",
-        "image_alt": "Vuba Installer"
-      }
     }
   },
   "order": [
     "header",
-    "vuba_header_73AFLj",
-    "vuba_banner_image_6Wp4bn",
-    "vuba_installer_BfzBLG"
+    "vuba_header_73AFLj"
   ]
 }
