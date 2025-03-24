@@ -79,6 +79,7 @@
     "vuba_stampede_8CrHmw": {
       "type": "vuba-stampede",
       "settings": {
+        "main_image": "shopify://shop_images/tiktok.jpg",
         "heading": "Join the Stampede!",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       }
