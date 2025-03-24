@@ -1,0 +1,55 @@
+<section class="joint-the-stampede bg-secondary">
+  <div class="mx-auto flex flex-wrap justify-center flex-col md:flex-row items-center">
+    <div class="relative w-full lg:w-[60%]">
+      {% if section.settings.main_image != blank %}
+        <img src="{{ section.settings.main_image | image_url }}" class="w-full" alt="Main Image">
+      {% endif %}
+    </div>
+    <div class="w-full lg:w-[40%] px-4 md:px-8 pb-12 lg:pb-0 -mt-12 lg:mt-0 lg:-left-40 relative">
+      <div class="bg-primary text-white py-10 lg:py-14 3xl:py-24 px-4 lg:px-10 3xl:px-20 lg:max-w-[694px] text-sm 3xl:text-base">
+        {% if section.settings.heading != blank %}
+          <h2 class="text-4xl 3xl:text-5xl font-bold mb-7">{{ section.settings.heading }}</h2>
+        {% endif %}
+        {% if section.settings.description != blank %}
+          <p>{{ section.settings.description }}</p>
+        {% endif %}
+        <div class="flex space-x-5 mt-8 3xl:mt-12">
+          <a href="#"><img src="{{ 'instagram-w-icon.svg' | asset_url }}" class="h-[22px] 3xl:h-8" alt="Instagram"></a>
+          <a href="#"><img src="{{ 'facebook-w-icon.svg' | asset_url }}" class="h-[22px] 3xl:h-8" alt="Facebook"></a>
+          <a href="#"><img src="{{ 'twitter-w-icon.svg' | asset_url }}" class="h-[22px] 3xl:h-8" alt="Twitter"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Join the Stampede",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "main_image",
+      "label": "Main Image"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Join the Stampede!"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Join the Stampede",
+      "category": "Custom Sections"
+    }
+  ]
+}
+{% endschema %}
