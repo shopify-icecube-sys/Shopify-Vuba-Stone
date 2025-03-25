@@ -50,12 +50,83 @@
         "section_heading": "Latest Projects",
         "blog_handle": "project"
       }
+    },
+    "vuba_multicolumn_installer_ERz7NA": {
+      "type": "vuba-multicolumn-installer",
+      "blocks": {
+        "slide_HVFFc3": {
+          "type": "slide",
+          "settings": {
+            "alt_text": "Vuba Stone Update",
+            "title": "Installer",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
+            "background_color": "#FFFFFF",
+            "link": "",
+            "button_text": "Learn more"
+          }
+        },
+        "slide_WYkATr": {
+          "type": "slide",
+          "settings": {
+            "alt_text": "Vuba Stone Update",
+            "title": "Installer",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
+            "background_color": "#FFFFFF",
+            "link": "",
+            "button_text": "Learn more"
+          }
+        },
+        "slide_8Nkcgn": {
+          "type": "slide",
+          "settings": {
+            "alt_text": "Vuba Stone Update",
+            "title": "Installer",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
+            "background_color": "#FFFFFF",
+            "link": "",
+            "button_text": "Learn more"
+          }
+        },
+        "slide_jrba67": {
+          "type": "slide",
+          "settings": {
+            "alt_text": "Vuba Stone Update",
+            "title": "Installer",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
+            "background_color": "#FFFFFF",
+            "link": "",
+            "button_text": "Learn more"
+          }
+        },
+        "slide_VLm6p4": {
+          "type": "slide",
+          "settings": {
+            "alt_text": "Vuba Stone Update",
+            "title": "Installer",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
+            "background_color": "#FFFFFF",
+            "link": "",
+            "button_text": "Learn more"
+          }
+        }
+      },
+      "block_order": [
+        "slide_HVFFc3",
+        "slide_WYkATr",
+        "slide_8Nkcgn",
+        "slide_jrba67",
+        "slide_VLm6p4"
+      ],
+      "settings": {
+        "heading": "Vuba Installer Text here"
+      }
     }
   },
   "order": [
     "main",
     "vuba_banner_image_nFy4be",
     "vuba_installer_wi69pN",
-    "vuba_latest_project_6834X8"
+    "vuba_latest_project_6834X8",
+    "vuba_multicolumn_installer_ERz7NA"
   ]
 }
