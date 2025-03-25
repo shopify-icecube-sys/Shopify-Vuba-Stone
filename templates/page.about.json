@@ -33,10 +33,18 @@
         "button_link_esp": "shopify://products/ellis-island",
         "div_color": "#821832"
       }
+    },
+    "vuba_richtext_NEgFBD": {
+      "type": "vuba-richtext",
+      "settings": {
+        "title": "",
+        "richtext": "<p>We are preferred surface for household names, big brands and homeowners worldwide.</p><p>Proudly BBA certified, a testament to our quality and excellence.</p>"
+      }
     }
   },
   "order": [
     "main",
-    "vuba_banner_image_wqtQtY"
+    "vuba_banner_image_wqtQtY",
+    "vuba_richtext_NEgFBD"
   ]
 }
