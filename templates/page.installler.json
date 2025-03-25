@@ -57,6 +57,7 @@
         "slide_TR4yge": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/banner-d.jpg",
             "alt_text": "Installer",
             "title": "Installer",
             "description": "<p>Default description for Installer.</p>",
