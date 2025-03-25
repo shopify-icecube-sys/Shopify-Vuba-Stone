@@ -7,7 +7,7 @@
       {% assign selected_collection = collections[section.settings.collection] %}
       {% if selected_collection and selected_collection.products.size > 0 %}
         {% for product in selected_collection.products %}
-          <div class="item bg-gray rounded-2xl py-12 px-10 text-center">
+          <div class="item bg-gray rounded-2xl py-12 px-10 md:px-5 xl:px-10 text-center h-full flex flex-wrap flex-col">
             <div class="w-40 3xl:w-80 h-40 3xl:h-80 mx-auto rounded-full overflow-hidden mb-7">
               <img
                 src="{{ product.featured_image | img_url: '400x400' }}"
@@ -15,9 +15,11 @@
                 class="w-full h-full object-cover"
               >
             </div>
-            <span class="text-sm 2xl:text-lg text-primary mt-2">{{ product.options[0] }}</span>
-            <h3 class="text-3xl font-medium my-3">{{ product.title }}</h3>
-            <a href="{{ product.url }}" class="text-xl inline-block font-medium underline hover:text-primary"
+            <span class="text-sm xl:text-lg text-primary mt-2">{{ product.options[0] }}</span>
+            <h3 class="text-3xl md:text-2xl xl:text-2xl 3xl:text-3xl font-medium my-3">{{ product.title }}</h3>
+            <a
+              href="{{ product.url }}"
+              class="text-xl md:text-lg 3xl:text-xl inline-block font-medium underline hover:text-primary"
               >View product</a
             >
           </div>
