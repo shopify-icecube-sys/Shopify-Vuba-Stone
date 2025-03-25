@@ -11,13 +11,32 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "vuba_banner_image_wqtQtY": {
+      "type": "vuba-banner-image",
+      "settings": {
+        "background_image": "shopify://shop_images/vuba-mac-2.jpg",
+        "background_image_mobile": "shopify://shop_images/vuba-mac-2.jpg",
+        "logo_desktop": "shopify://shop_images/header-logo-blue-d.svg",
+        "logo_mobile": "shopify://shop_images/header-logo-blue-m.svg",
+        "title": "About Us",
+        "title2": "",
+        "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>",
+        "button_text_en": "MEET THE TEAM",
+        "button_link_en": "shopify://collections/all",
+        "button_text_esp": "OUR HISTORY",
+        "button_link_esp": "shopify://products/ellis-island",
+        "div_color": "#821832"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "vuba_banner_image_wqtQtY"
   ]
 }
