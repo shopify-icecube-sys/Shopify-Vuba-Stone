@@ -98,4 +98,37 @@ $(document).ready(function () {
     autoplay: true,
     autoplayTimeout: 3000,
   });
+  $(".vuba-installer-slider").owlCarousel({
+    loop: false,
+    margin: 0,
+    nav: false,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    responsive: {
+      0: {
+        loop: true,
+        items: 1,
+        margin: 15,
+      },
+      576: {
+        items: 2,
+        margin: 15,
+      },
+      768: {
+        items: 3,
+        margin: 15,
+      },
+      992: {
+        items: 4,
+        margin: 15,
+      },
+      1200: {
+        items: 5,
+        margin: 15,
+        loop: false,
+        MouseDrag: false,
+        touchDrag: false,
+      },
+    },
+  });
 });
