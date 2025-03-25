@@ -47,12 +47,20 @@
         "section_heading": "Completed during training, and participants",
         "blog_handle": "news"
       }
+    },
+    "vuba_richtext_UBaXta": {
+      "type": "vuba-richtext",
+      "settings": {
+        "title": "technical and training team",
+        "richtext": "<p>We are preferred surface for household names, big brands and homeowners worldwide.</p><p>Proudly BBA certified, a testament to our quality and excellence.</p>"
+      }
     }
   },
   "order": [
     "main",
     "vuba_banner_image_7M8KaE",
     "vuba_richtext_nL7x4D",
-    "vuba_latest_project_djTy4n"
+    "vuba_latest_project_djTy4n",
+    "vuba_richtext_UBaXta"
   ]
 }
