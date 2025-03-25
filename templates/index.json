@@ -123,8 +123,9 @@
         "benefit_Bjqcyz": {
           "type": "benefit",
           "settings": {
+            "icon": "shopify://shop_images/making-icon.svg",
             "title": "Benefit Title",
-            "title2": "Benefit Title2",
+            "title2": "",
             "description": "<p>Benefit description goes here.</p>"
           }
         },
