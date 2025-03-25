@@ -107,6 +107,7 @@
         "slide_a8QnKx": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/banner-d.jpg",
             "alt_text": "Vuba Stone Update",
             "title": "Installer",
             "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
