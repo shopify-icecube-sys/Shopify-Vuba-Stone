@@ -115,7 +115,8 @@
           "type": "benefit",
           "settings": {
             "icon": "shopify://shop_images/making-icon.svg",
-            "title": "Benefit Title",
+            "title": "30 years in",
+            "title2": "the making",
             "description": "<p>Benefit description goes here.</p>"
           }
         },
@@ -123,6 +124,7 @@
           "type": "benefit",
           "settings": {
             "title": "Benefit Title",
+            "title2": "Benefit Title2",
             "description": "<p>Benefit description goes here.</p>"
           }
         },
@@ -130,6 +132,7 @@
           "type": "benefit",
           "settings": {
             "title": "Benefit Title",
+            "title2": "Benefit Title2",
             "description": "<p>Benefit description goes here.</p>"
           }
         },
@@ -137,6 +140,7 @@
           "type": "benefit",
           "settings": {
             "title": "Benefit Title",
+            "title2": "Benefit Title2",
             "description": "<p>Benefit description goes here.</p>"
           }
         }
