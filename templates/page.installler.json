@@ -34,23 +34,6 @@
         "div_color": "#821832"
       }
     },
-    "vuba_installer_wi69pN": {
-      "type": "vuba-installer",
-      "settings": {
-        "category_name": "Category Name",
-        "button_link": "#",
-        "button_text": "GO TO INSTALLER",
-        "image": "shopify://shop_images/vuba-installer-man-d.png",
-        "image_alt": "Vuba Installer"
-      }
-    },
-    "vuba_latest_project_6834X8": {
-      "type": "vuba-latest-project",
-      "settings": {
-        "section_heading": "Latest Projects",
-        "blog_handle": "project"
-      }
-    },
     "vuba_benefit_q9HxXa": {
       "type": "vuba-benefit",
       "blocks": {
@@ -100,6 +83,93 @@
       "settings": {
         "section_heading": "Benefits of using a Vuba Installer"
       }
+    },
+    "vuba_installer_wi69pN": {
+      "type": "vuba-installer",
+      "settings": {
+        "category_name": "Category Name",
+        "button_link": "#",
+        "button_text": "GO TO INSTALLER",
+        "image": "shopify://shop_images/vuba-installer-man-d.png",
+        "image_alt": "Vuba Installer"
+      }
+    },
+    "vuba_latest_project_6834X8": {
+      "type": "vuba-latest-project",
+      "settings": {
+        "section_heading": "Latest Projects",
+        "blog_handle": "project"
+      }
+    },
+    "vuba_multicolumn_installer_m97x4Y": {
+      "type": "vuba-multicolumn-installer",
+      "blocks": {
+        "slide_qAxkH6": {
+          "type": "slide",
+          "settings": {
+            "alt_text": "Vuba Stone Update",
+            "title": "Installer",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
+            "background_color": "#FFFFFF",
+            "link": "",
+            "button_text": "Learn more"
+          }
+        },
+        "slide_6ztcB4": {
+          "type": "slide",
+          "settings": {
+            "alt_text": "Vuba Stone Update",
+            "title": "Installer",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
+            "background_color": "#FFFFFF",
+            "link": "",
+            "button_text": "Learn more"
+          }
+        },
+        "slide_mYGq3H": {
+          "type": "slide",
+          "settings": {
+            "alt_text": "Vuba Stone Update",
+            "title": "Installer",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
+            "background_color": "#FFFFFF",
+            "link": "",
+            "button_text": "Learn more"
+          }
+        },
+        "slide_X7KBQk": {
+          "type": "slide",
+          "settings": {
+            "alt_text": "Vuba Stone Update",
+            "title": "Installer",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
+            "background_color": "#FFFFFF",
+            "link": "",
+            "button_text": "Learn more"
+          }
+        },
+        "slide_qkYkRt": {
+          "type": "slide",
+          "settings": {
+            "alt_text": "Vuba Stone Update",
+            "title": "Installer",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
+            "background_color": "#FFFFFF",
+            "link": "",
+            "button_text": "Learn more"
+          }
+        }
+      },
+      "block_order": [
+        "slide_qAxkH6",
+        "slide_6ztcB4",
+        "slide_mYGq3H",
+        "slide_X7KBQk",
+        "slide_qkYkRt"
+      ],
+      "settings": {
+        "heading": "Vuba Installer Text here"
+      }
     }
   },
   "order": [
@@ -107,6 +177,7 @@
     "vuba_banner_image_nFy4be",
     "vuba_benefit_q9HxXa",
     "vuba_installer_wi69pN",
-    "vuba_latest_project_6834X8"
+    "vuba_latest_project_6834X8",
+    "vuba_multicolumn_installer_m97x4Y"
   ]
 }
