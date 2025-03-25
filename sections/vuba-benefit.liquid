@@ -12,7 +12,7 @@
             <img
               src="{{ block.settings.icon | image_url }}"
               class="h-20 3xl:h-32 mx-auto"
-              alt="{{ block.settings.title }} icon"
+              alt="Image icon"
             >
           {% endif %}
           <h3 class="text-lg 3xl:text-[26px] font-bold text-primary my-5 3xl:mt-8 3xl:my-8">
@@ -25,7 +25,9 @@
             {% endif %}
           </h3>
           <div class="text-sm 2xl:text-base mt-2">
-            {{ block.settings.description }}
+            {% if block.settings.description != blank %}
+              {{ block.settings.description }}
+            {% endif %}
           </div>
         </div>
       {% endfor %}
