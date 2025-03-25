@@ -33,10 +33,26 @@
         "button_link_esp": "shopify://products/cano-cristales",
         "div_color": "#821832"
       }
+    },
+    "vuba_richtext_nL7x4D": {
+      "type": "vuba-richtext",
+      "settings": {
+        "title": "Our training courses",
+        "richtext": "<p>We are preferred surface for household names, big brands and homeowners worldwide.</p><p>Proudly BBA certified, a testament to our quality and excellence.</p>"
+      }
+    },
+    "vuba_latest_project_djTy4n": {
+      "type": "vuba-latest-project",
+      "settings": {
+        "section_heading": "Completed during training, and participants",
+        "blog_handle": "news"
+      }
     }
   },
   "order": [
     "main",
-    "vuba_banner_image_7M8KaE"
+    "vuba_banner_image_7M8KaE",
+    "vuba_richtext_nL7x4D",
+    "vuba_latest_project_djTy4n"
   ]
 }
