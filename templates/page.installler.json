@@ -101,64 +101,6 @@
         "blog_handle": "project"
       }
     },
-    "vuba_multicolumn_installer_dkPWQ9": {
-      "type": "vuba-multicolumn-installer",
-      "blocks": {
-        "slide_Lre7WJ": {
-          "type": "slide",
-          "settings": {
-            "alt_text": "Vuba Stone Update",
-            "title": "Installer",
-            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-            "background_color": "#ffffff",
-            "link": "",
-            "button_text": "Learn more"
-          }
-        },
-        "slide_HMKXCi": {
-          "type": "slide",
-          "settings": {
-            "alt_text": "Vuba Stone Update",
-            "title": "Installer",
-            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-            "background_color": "#ffffff",
-            "link": "",
-            "button_text": "Learn more"
-          }
-        },
-        "slide_w9wAHK": {
-          "type": "slide",
-          "settings": {
-            "alt_text": "Vuba Stone Update",
-            "title": "Installer",
-            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-            "background_color": "#ffffff",
-            "link": "",
-            "button_text": "Learn more"
-          }
-        },
-        "slide_BFJaAg": {
-          "type": "slide",
-          "settings": {
-            "alt_text": "Vuba Stone Update",
-            "title": "Installer",
-            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-            "background_color": "#ffffff",
-            "link": "",
-            "button_text": "Learn more"
-          }
-        }
-      },
-      "block_order": [
-        "slide_Lre7WJ",
-        "slide_HMKXCi",
-        "slide_w9wAHK",
-        "slide_BFJaAg"
-      ],
-      "settings": {
-        "heading": "Vuba Installer Text here"
-      }
-    },
     "vuba_multicolumn_installer_fUJeYR": {
       "type": "vuba-multicolumn-installer",
       "blocks": {
@@ -189,6 +131,7 @@
         "slide_JXMMqJ": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/banner-d.jpg",
             "alt_text": "Approved",
             "title": "Approved",
             "description": "<p>Default description for Approved.</p>",
@@ -200,6 +143,7 @@
         "slide_NC4PCJ": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/banner-d.jpg",
             "alt_text": "Premium",
             "title": "Premium",
             "description": "<p>Default description for Premium.</p>",
@@ -211,6 +155,7 @@
         "slide_DbDenH": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/banner-d.jpg",
             "alt_text": "Elite",
             "title": "Elite",
             "description": "<p>Default description for Elite.</p>",
@@ -238,7 +183,6 @@
     "vuba_benefit_q9HxXa",
     "vuba_installer_wi69pN",
     "vuba_latest_project_6834X8",
-    "vuba_multicolumn_installer_dkPWQ9",
     "vuba_multicolumn_installer_fUJeYR"
   ]
 }
