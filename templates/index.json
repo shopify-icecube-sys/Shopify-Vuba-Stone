@@ -33,11 +33,40 @@
         "richtext": "<p>We are preferred surface for household names, big brands and homeowners worldwide. </p><p>Proudly BBA certified, a testament to our quality and excellence.</p>"
       }
     },
+
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "all",
+        "products_to_show": 8,
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 36
+
     "vuba_stone_update_e9mMwW": {
       "type": "vuba-stone-update",
       "settings": {
         "section_heading": "Vuba Stone Updates",
         "blog_handle": "news"
+
       }
     },
     "vuba_mac_section_one_y7KRnV": {
@@ -59,6 +88,11 @@
         "video_poster": "shopify://shop_images/Video-placeholder-m.jpg"
       }
     },
+
+    "vuba_headline_zqWMqq": {
+      "type": "vuba-headline",
+      "disabled": true,
+
     "vuba_latest_project_3JtQrN": {
       "type": "vuba-latest-project",
       "settings": {
@@ -78,6 +112,7 @@
     },
     "vuba_stampede_8CrHmw": {
       "type": "vuba-stampede",
+
       "settings": {
         "main_image": "shopify://shop_images/tiktok.jpg",
         "heading": "Join the Stampede!",
@@ -121,11 +156,66 @@
         "button_text": "GO TO INSTALLER",
         "button_link": ""
       }
+
+    },
+    "vuba_benefit_PdaBJM": {
+      "type": "vuba-benefit",
+      "blocks": {
+        "benefit_GfHxNY": {
+          "type": "benefit",
+          "settings": {
+            "icon": "shopify://shop_images/making-icon.svg",
+            "title": "30 years in",
+            "title2": "the making",
+            "description": "<p>Benefit description goes here.</p>"
+          }
+        },
+        "benefit_Bjqcyz": {
+          "type": "benefit",
+          "settings": {
+            "title": "",
+            "title2": "",
+            "description": ""
+          }
+        },
+        "benefit_Y43wFH": {
+          "type": "benefit",
+          "settings": {
+            "title": "Benefit Title",
+            "title2": "Benefit Title2",
+            "description": "<p>Benefit description goes here.</p>"
+          }
+        },
+        "benefit_9RAdCj": {
+          "type": "benefit",
+          "settings": {
+            "title": "Benefit Title",
+            "title2": "Benefit Title2",
+            "description": "<p>Benefit description goes here.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "benefit_GfHxNY",
+        "benefit_Bjqcyz",
+        "benefit_Y43wFH",
+        "benefit_9RAdCj"
+      ],
+      "settings": {
+        "section_heading": "Benefits of using a Vuba Installer"
+      }
     }
   },
   "order": [
     "vuba_banner_image_kFLjhb",
     "vuba_richtext_6J9PEW",
+    "featured_collection",
+    "vuba_mac_section_one_y7KRnV",
+    "vuba_mac_section_two_6aJYrG",
+    "vuba_headline_zqWMqq",
+    "vuba_installer_FFY7En",
+    "vuba_stampede_XhMWq3",
+    "vuba_benefit_PdaBJM",
     "vuba_stone_update_e9mMwW",
     "vuba_mac_section_one_y7KRnV",
     "vuba_mac_section_two_qGUWdX",
@@ -135,5 +225,6 @@
     "vuba_epoxy_stone_VGBVrL",
     "vuba_world_blends_LnkJbx",
     "vuba_headline_TCzfaj"
+
   ]
 }
