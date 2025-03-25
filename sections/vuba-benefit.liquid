@@ -7,7 +7,7 @@
     {% endif %}
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 2xl:gap-8 3xl:gap-16 gap-y-12">
       {% for block in section.blocks %}
-        <div class="text-center" {{ block.shopify_attributes }}>
+        <div class="text-center">
           {% if block.settings.icon != blank %}
             <img
               src="{{ block.settings.icon | image_url }}"
