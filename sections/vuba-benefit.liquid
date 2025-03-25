@@ -15,6 +15,7 @@
           {% endif %}
           <h3 class="text-lg 3xl:text-[26px] font-bold text-primary my-5 3xl:mt-8 3xl:my-8">
             {{ block.settings.title }}
+            {% if block.settings.title2 != blank %} {{ block.settings.title2 }} {% endif %}
           </h3>
           <div class="text-sm 2xl:text-base mt-2">
             {{ block.settings.description }}
@@ -51,6 +52,12 @@
           "id": "title",
           "label": "Benefit Title",
           "default": "Benefit Title"
+        },
+        {
+          "type": "text",
+          "id": "title2",
+          "label": "Benefit Title2",
+          "default": "Benefit Title2"
         },
         {
           "type": "richtext",
