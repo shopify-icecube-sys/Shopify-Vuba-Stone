@@ -87,6 +87,15 @@ $(document).ready(function () {
       },
     },
   });
+  //  Vuba World Blends section
+  $(".vuba-world-bleds-slider").owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: false,
+    dots: true,
+    items: 4,
+    autoWidth: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+  });
 });
-
-//  Vuba World Blends section
