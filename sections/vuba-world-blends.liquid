@@ -4,7 +4,8 @@
       {{ section.settings.heading }}
     </h2>
     <div class="owl-carousel vuba-world-bleds-slider">
-      {{ collections['section.settings.collection'].products }}
+      {% assign selected_collection = collections[section.settings.collection] %}
+      {{ selected_collection }}
       {% for product in collections.all.products %}
         hello
         <div class="item bg-gray rounded-2xl py-12 px-10 text-center">
