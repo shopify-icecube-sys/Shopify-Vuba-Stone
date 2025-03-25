@@ -22,17 +22,23 @@
             class="p-7 md:px-4 3xl:px-7 text-center flex-1 basis-auto flex flex-wrap flex-col"
             style="background-color: {{ block.settings.background_color }}"
           >
-            <h4 class="text-xl 3xl:text-2xl font-bold uppercase">{{ block.settings.title }}</h4>
-            <div class="dis text-sm py-5">
-              {{ block.settings.description }}
-            </div>
+            {% if block.settings.title != blank %}
+              <h4 class="text-xl 3xl:text-2xl font-bold uppercase">{{ block.settings.title }}</h4>
+            {% endif %}
+            {% if block.settings.description != blank %}
+              <div class="dis text-sm py-5">
+                {{ block.settings.description }}
+              </div>
+            {% endif %}
             <div class="btn-wrap mt-auto">
-              <a
-                href="{{ block.settings.link }}"
-                class="px-10 3xl:px-11 py-3 3xl:py-3 inline-block rounded-full text-sm 3xl:text-[17px] font-bold uppercase tracking-widest xl:tracking-normal xl:capitalize border-[3px] text-white border-white group-hover:bg-white group-hover:text-black group-hover:border-white"
-              >
-                {{ block.settings.button_text }}
-              </a>
+              {% if block.settings.button_text != blank %}
+                <a
+                  href="{% if block.settings.link != blank %}{{ block.settings.link }}{% endif %}"
+                  class="px-10 3xl:px-11 py-3 3xl:py-3 inline-block rounded-full text-sm 3xl:text-[17px] font-bold uppercase tracking-widest xl:tracking-normal xl:capitalize border-[3px] text-white border-white group-hover:bg-white group-hover:text-black group-hover:border-white"
+                >
+                  {{ block.settings.button_text }}
+                </a>
+              {% endif %}
             </div>
           </div>
         </div>
