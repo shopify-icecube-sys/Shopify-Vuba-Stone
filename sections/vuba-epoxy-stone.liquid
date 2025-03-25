@@ -39,6 +39,20 @@
             {{ section.settings.epoxy_description }}
           {% endif %}
         </div>
+        <div class="mt-8 3xl:mt-10">
+          {% if section.settings.button_text != blank %}
+            <a
+              href="
+                {% if section.settings.button_link != blank %}
+                {{ section.settings.button_link }}
+                {% endif %}
+              "
+              class="text-sm 3xl:text-base tracking-widest inline-block bg-primary hover:bg-secondary text-white hover:text-white px-7 py-4 rounded-xl font-bold"
+            >
+              {{ section.settings.button_text }}
+            </a>
+          {% endif %}
+        </div>
       </div>
 
       <div class="text-left">
