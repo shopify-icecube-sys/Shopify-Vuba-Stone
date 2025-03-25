@@ -1,0 +1,63 @@
+<section class="vuba-world-bleds pt-0 pb-14 md:pb-16 3xl:pb-28 overflow-hidden">
+  <div class="padding-right-zeero">
+    <h2 class="text-secondary text-center md:text-start text-4xl 2xl:text-5xl 3xl:text-[148px] font-bold mb-10 md:mb-10 leading-[1.1] 3xl:mb-20">
+      {{ section.settings.heading }}
+    </h2>
+    <div class="owl-carousel vuba-world-bleds-slider">
+      {% assign selected_collection = collections[section.settings.collection] %}
+      {% if selected_collection and selected_collection.products.size > 0 %}
+        {% for product in selected_collection.products %}
+          <div class="item bg-gray rounded-2xl py-12 px-10 md:px-5 xl:px-10 text-center h-full flex flex-wrap flex-col">
+            <div class="w-40 3xl:w-80 h-40 3xl:h-80 mx-auto rounded-full overflow-hidden mb-7">
+              <img
+                src="{{ product.featured_image | img_url: '400x400' }}"
+                alt="{{ product.title }}"
+                class="w-full h-full object-cover"
+              >
+            </div>
+            <span class="text-sm 3xl:text-xl text-primary mt-2">{{ product.options[0] }}</span>
+            <h3 class="text-2xl 3xl:text-3xl font-medium my-3">{{ product.title }}</h3>
+            <a
+              href="{{ product.url }}"
+              class="text-sm 3xl:text-xl xl:my-3 inline-block font-medium underline hover:text-primary"
+              >View product</a
+            >
+          </div>
+        {% endfor %}
+      {% else %}
+        <p>No products found in this collection.</p>
+      {% endif %}
+    </div>
+  </div>
+  <div class="text-center mt-10 xl:mt-6 3xl:mt-20 container">
+    <a
+      href="/collections/{{ section.settings.collection }}"
+      class="text-primary text-sm xl:text-lg 3xl:text-2xl underline"
+      >See the full range here</a
+    >
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Vuba World Blends",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Vuba World Blends"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vuba World Blends",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

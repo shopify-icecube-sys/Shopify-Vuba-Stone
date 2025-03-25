@@ -1,0 +1,209 @@
+<section class="epoxy-vuba-stone py-16 3xl:py-40">
+  <div class="inner-container">
+    <div class="text-center mb-10 3xl:mb-28">
+      <h2 class="text-4xl 3xl:text-[68px] font-bold inline-block 3xl:leading-[80px]">
+        {% if section.settings.title_part1 != blank %}
+          {{ section.settings.title_part1 }}
+        {% endif %}
+        <span class="font-normal">vs</span>
+        {% if section.settings.title_part2 != blank %}
+          {{ section.settings.title_part2 }}
+        {% endif %}
+      </h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 3xl:gap-36">
+      <div class="text-left">
+        <div class="relative">
+          {% if section.settings.epoxy_image != blank %}
+            <img
+              src="{{ section.settings.epoxy_image | img_url:'master' }}"
+              class="w-full rounded-2xl md:rounded-none"
+              alt="{{ section.settings.epoxy_image_alt }}"
+            >
+          {% endif %}
+          {% if section.settings.epoxy_icon != blank %}
+            <img
+              src="{{ section.settings.epoxy_icon | img_url:'master' }}"
+              class="absolute -bottom-10 3xl:-bottom-24 right-4 3xl:-right-7 w-44 3xl:w-80 h-44 3xl:h-80 rounded-full"
+              alt="{{ section.settings.epoxy_icon_alt }}"
+            >
+          {% endif %}
+        </div>
+        {% if section.settings.epoxy_title != blank %}
+          <h3 class="text-4xl md:text-3xl xl:text-3xl 3xl:text-[38px] font-bold mt-12 3xl:mt-24">
+            {{ section.settings.epoxy_title }}
+          </h3>
+        {% endif %}
+        <div class="mt-6 text-sm 3xl:text-lg text-left space-y-4">
+          {% if section.settings.epoxy_description != blank %}
+            {{ section.settings.epoxy_description }}
+          {% endif %}
+        </div>
+        <div class="mt-8 3xl:mt-10">
+          {% if section.settings.button_text != blank %}
+            <a
+              href="
+                {% if section.settings.button_link != blank %}
+                {{ section.settings.button_link }}
+                {% endif %}
+              "
+              class="text-sm 3xl:text-base tracking-widest inline-block bg-primary hover:bg-secondary text-white hover:text-white px-7 py-4 rounded-xl font-bold"
+            >
+              {{ section.settings.button_text }}
+            </a>
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="text-left">
+        <div class="relative">
+          {% if section.settings.vuba_image != blank %}
+            <img
+              src="{{ section.settings.vuba_image | img_url:'master' }}"
+              class="w-full rounded-2xl md:rounded-none"
+              alt="{{ section.settings.vuba_image_alt }}"
+            >
+          {% endif %}
+          {% if section.settings.vuba_icon != blank %}
+            <img
+              src="{{ section.settings.vuba_icon | img_url:'master' }}"
+              class="absolute -bottom-10 3xl:-bottom-24 right-4 3xl:-right-7 w-44 3xl:w-80 h-44 3xl:h-80 rounded-full"
+              alt="{{ section.settings.vuba_icon_alt }}"
+            >
+          {% endif %}
+        </div>
+        <div class="px-4 xl:pl-0 xl:pr-16">
+          {% if section.settings.vuba_title != blank %}
+            <h3 class="text-4xl md:text-3xl xl:text-3xl 3xl:text-[38px] font-bold mt-12 3xl:mt-24">
+              {{ section.settings.vuba_title }}
+            </h3>
+          {% endif %}
+          <div class="mt-6 text-sm 2xl:text-lg text-left space-y-4">
+            {% if section.settings.vuba_description != blank %}
+              {{ section.settings.vuba_description }}
+            {% endif %}
+          </div>
+        </div>
+        <div class="mt-8 3xl:mt-10">
+          {% if section.settings.button_text != blank %}
+            <a
+              href="
+                {% if section.settings.button_link != blank %}
+                {{ section.settings.button_link }}
+                {% endif %}
+              "
+              class="text-sm 3xl:text-base tracking-widest inline-block bg-primary hover:bg-secondary text-white hover:text-white px-7 py-4 rounded-xl font-bold"
+            >
+              {{ section.settings.button_text }}
+            </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Vuba Stone",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title_part1",
+        "label": "Title Part 1",
+        "default": "Epoxy"
+      },
+      {
+        "type": "text",
+        "id": "title_part2",
+        "label": "Title Part 2",
+        "default": "Vuba Stone"
+      },
+      {
+        "type": "image_picker",
+        "id": "epoxy_image",
+        "label": "Epoxy Image"
+      },
+      {
+        "type": "text",
+        "id": "epoxy_image_alt",
+        "label": "Epoxy Image Alt Text",
+        "default": "Epoxy Driveway"
+      },
+      {
+        "type": "image_picker",
+        "id": "epoxy_icon",
+        "label": "Epoxy Icon"
+      },
+      {
+        "type": "text",
+        "id": "epoxy_icon_alt",
+        "label": "Epoxy Icon Alt Text",
+        "default": "Epoxy Sample"
+      },
+      {
+        "type": "text",
+        "id": "epoxy_title",
+        "label": "Epoxy Title",
+        "default": "Epoxy cons"
+      },
+      {
+        "type": "richtext",
+        "id": "epoxy_description",
+        "label": "Epoxy Description",
+        "default": "<p>Can Vuba Stone be installed in cold and hot climates? We would like to show we offer a 5-year warranty on Vuba Stone and 10 years on VubaMac</p>"
+      },
+      {
+        "type": "image_picker",
+        "id": "vuba_image",
+        "label": "Vuba Image"
+      },
+      {
+        "type": "text",
+        "id": "vuba_image_alt",
+        "label": "Vuba Image Alt Text",
+        "default": "Vuba Stone Poolside"
+      },
+      {
+        "type": "image_picker",
+        "id": "vuba_icon",
+        "label": "Vuba Icon"
+      },
+      {
+        "type": "text",
+        "id": "vuba_icon_alt",
+        "label": "Vuba Icon Alt Text",
+        "default": "Stone Pros"
+      },
+      {
+        "type": "text",
+        "id": "vuba_title",
+        "label": "Vuba Title",
+        "default": "Vuba Stone pros"
+      },
+      {
+        "type": "richtext",
+        "id": "vuba_description",
+        "label": "Vuba Description",
+        "default": "<p>Can Vuba Stone be installed in cold and hot climates? We would like to show we offer a 5-year warranty on Vuba Stone and 10 years on VubaMac</p>"
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Text",
+        "default": "GO TO INSTALLER"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button Link"
+      }
+    ],
+    "presets": [
+  {
+    "name": "Vuba Stone",
+    "category": "Custom"
+  }
+]
+  }
+{% endschema %}

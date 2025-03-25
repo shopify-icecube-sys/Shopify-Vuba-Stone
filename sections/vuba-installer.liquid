@@ -1,16 +1,16 @@
-<section class="vuba-installer flex justify-center items-center 3xl:pb-8 pb-6">
-  <div class="container">
+<section class="vuba-installer flex justify-center items-center pb-8 sm:pb-12 xl:pb-10 2xl:pb-12 3xl:pb-16">
+  <div class="inner-container">
     <div class="pt-14 md:pt-10 lg:pt-[100px] 3xl:pt-[150px] pb-5 md:pb-10 2xl:pb-16 3xl:pb-24">
-      <div class="relative bg-gray 3xl:max-w-[1410px] 2xl:max-w-[1300px] mx-auto rounded-xl shadow-lg flex items-center px-5 pt-32 pb-10 lg:py-24 3xl:py-36 lg:px-20 3xl:px-24">
+      <div class="relative bg-gray rounded-xl lg:rounded-3xl shadow-lg flex items-center px-5 pt-32 pb-10 lg:py-24 3xl:py-36 lg:px-20 3xl:px-24">
         <div class="relative z-10">
           {% if section.settings.category_name != blank %}
-            <p class="text-sm md:text-base 2xl:text-xl">{{ section.settings.category_name }}</p>
+            <p class="text-sm md:text-base 2xl:text-xl font-semibold">{{ section.settings.category_name }}</p>
           {% endif %}
-          {% if section.settings.heading != blank %}
-            <h2 class="text-4xl 3xl:text-[49px] font-bold mt-3 mb-7 lg:mt-4 3xl:mt-9 lg:mb-8 3xl:mb-10">
-              {{ section.settings.heading | newline_to_br }}
-            </h2>
-          {% endif %}
+          <h2 class="text-4xl 3xl:text-[49px] font-bold mt-3 mb-7 lg:mt-4 3xl:mt-9 lg:mb-8 3xl:mb-10">
+            Become <br class="sm:hidden">
+            a Vuba <br class="md:hidden">
+            Installer
+          </h2>
           {% if section.settings.button_text != blank %}
             <a
               href="{{ section.settings.button_link }}"
@@ -20,7 +20,7 @@
             </a>
           {% endif %}
         </div>
-        <div class="absolute w-[215px] sm:w-[195px] md:w-[170px] lg:w-[215px] 2xl:w-[235px] 3xl:w-[325px] -top-[55px] md:-top-[40px] lg:-top-[100px] 2xl:-top-28 3xl:-top-[150px] -right-4 sm:right-8 md:right-32 2xl:right-[280px] 3xl:right-[260px]">
+        <div class="absolute w-[215px] sm:w-[205px] md:w-[180px] lg:w-[220px] 2xl:w-[235px] 3xl:w-[325px] -top-[55px] md:-top-[40px] lg:-top-[100px] 2xl:-top-28 3xl:-top-[150px] -right-4 sm:right-4 md:right-16 xl:right-24  2xl:right-[280px] 3xl:right-[300px]">
           {% if section.settings.image != blank %}
             <img src="{{ section.settings.image | img_url: 'master' }}" class="w-full" alt="Vuba Installer">
           {% endif %}
@@ -39,12 +39,6 @@
       "id": "category_name",
       "label": "Category Name",
       "default": "Category Name"
-    },
-    {
-      "type": "textarea",
-      "id": "heading",
-      "label": "Heading",
-      "default": "Become a Vuba Installer"
     },
     {
       "type": "url",
@@ -75,7 +69,6 @@
       "category": "Custom Sections",
       "settings": {
         "category_name": "Category Name",
-        "heading": "Become a Vuba Installer",
         "button_link": "#",
         "button_text": "GO TO INSTALLER",
         "image": "",

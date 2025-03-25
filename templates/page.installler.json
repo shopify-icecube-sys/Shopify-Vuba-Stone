@@ -22,11 +22,14 @@
       "settings": {
         "background_image": "shopify://shop_images/vuba-mac-2.jpg",
         "background_image_mobile": "shopify://shop_images/vuba-mac-2.jpg",
-        "title": "Let us help you find <br> an Installler",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-        "button_text_en": "DOWNLOAD EN",
+        "logo_desktop": "shopify://shop_images/header-logo-blue-d.svg",
+        "logo_mobile": "shopify://shop_images/header-logo-blue-m.svg",
+        "title": "Let us help you find",
+        "title2": "an Installler",
+        "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p><p><br/><a href=\"/blogs/project\" title=\"Project\">Click here if you would like to be an installer</a></p>",
+        "button_text_en": "",
         "button_link_en": "",
-        "button_text_esp": "DOWNLOAD ESP",
+        "button_text_esp": "",
         "button_link_esp": "",
         "div_color": "#821832"
       }
@@ -35,7 +38,6 @@
       "type": "vuba-installer",
       "settings": {
         "category_name": "Category Name",
-        "heading": "Become a Vuba Installer",
         "button_link": "#",
         "button_text": "GO TO INSTALLER",
         "image": "shopify://shop_images/vuba-installer-man-d.png",
@@ -48,12 +50,88 @@
         "section_heading": "Latest Projects",
         "blog_handle": "project"
       }
+    },
+    "vuba_multicolumn_installer_tdmbJJ": {
+      "type": "vuba-multicolumn-installer",
+      "blocks": {
+        "slide_TR4yge": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/banner-d.jpg",
+            "alt_text": "Installer",
+            "title": "Installer",
+            "description": "<p>Default description for Installer.</p>",
+            "background_color": "#005676",
+            "link": "#",
+            "button_text": "Learn more"
+          }
+        },
+        "slide_VgBCFP": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/banner-d.jpg",
+            "alt_text": "Registered",
+            "title": "Registered",
+            "description": "<p>Default description for Registered.</p>",
+            "background_color": "#821832",
+            "link": "#",
+            "button_text": "Learn more"
+          }
+        },
+        "slide_Q8LVLn": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/banner-d.jpg",
+            "alt_text": "Approved",
+            "title": "Approved",
+            "description": "<p>Default description for Approved.</p>",
+            "background_color": "#b16f4d",
+            "link": "#",
+            "button_text": "Learn more"
+          }
+        },
+        "slide_WnG9ga": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/banner-d.jpg",
+            "alt_text": "Premium",
+            "title": "Premium",
+            "description": "<p>Default description for Premium.</p>",
+            "background_color": "#b7b7b7",
+            "link": "#",
+            "button_text": "Learn more"
+          }
+        },
+        "slide_GxJAF6": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/banner-d.jpg",
+            "alt_text": "Elite",
+            "title": "Elite",
+            "description": "<p>Default description for Elite.</p>",
+            "background_color": "#a38c6b",
+            "link": "#",
+            "button_text": "Learn more"
+          }
+        }
+      },
+      "block_order": [
+        "slide_TR4yge",
+        "slide_VgBCFP",
+        "slide_Q8LVLn",
+        "slide_WnG9ga",
+        "slide_GxJAF6"
+      ],
+      "settings": {
+        "heading": "Vuba Installer Text here"
+      }
     }
   },
   "order": [
     "main",
     "vuba_banner_image_nFy4be",
     "vuba_installer_wi69pN",
-    "vuba_latest_project_6834X8"
+    "vuba_latest_project_6834X8",
+    "vuba_multicolumn_installer_tdmbJJ"
   ]
 }
