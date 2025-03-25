@@ -20,6 +20,8 @@
     "vuba_banner_image_8aiPXN": {
       "type": "vuba-banner-image",
       "settings": {
+        "background_image": "shopify://shop_images/SistineChapel_eaf07e6b-d55b-4781-ba16-81230b6c438a.jpg",
+        "background_image_mobile": "shopify://shop_images/SistineChapel_eaf07e6b-d55b-4781-ba16-81230b6c438a.jpg",
         "logo_desktop": "shopify://shop_images/header-logo-blue-d.svg",
         "logo_mobile": "shopify://shop_images/header-logo-blue-m.svg",
         "title": "Our Installer are always",
