@@ -114,6 +114,7 @@
         "benefit_GfHxNY": {
           "type": "benefit",
           "settings": {
+            "icon": "shopify://shop_images/making-icon.svg",
             "title": "Benefit Title",
             "description": "<p>Benefit description goes here.</p>"
           }
