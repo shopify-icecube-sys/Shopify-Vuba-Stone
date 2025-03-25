@@ -29,69 +29,131 @@
 <!------- End of Vuba Installer Text Here ------->
 
 {% schema %}
-{
-  "name": "Vuba multicolumn",
-  "settings": [
     {
-      "type": "text",
-      "id": "heading",
-      "label": "Section Heading",
-      "default": "Vuba Installer Text here"
-    }
-  ],
-  "blocks": [
-    {
-      "type": "slide",
-      "name": "Slide",
+      "name": "Vuba multicolumn",
       "settings": [
         {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        },
-        {
           "type": "text",
-          "id": "alt_text",
-          "label": "Alt Text",
-          "default": "Vuba Stone Update"
-        },
+          "id": "heading",
+          "label": "Section Heading",
+          "default": "Vuba Installer Text here"
+        }
+      ],
+      "blocks": [
         {
-          "type": "text",
-          "id": "title",
-          "label": "Title",
-          "default": "Installer"
-        },
+          "type": "slide",
+          "name": "Slide",
+          "settings": [
+            {
+              "type": "image_picker",
+              "id": "image",
+              "label": "Image"
+            },
+            {
+              "type": "text",
+              "id": "alt_text",
+              "label": "Alt Text",
+              "default": "Vuba Stone Update"
+            },
+            {
+              "type": "text",
+              "id": "title",
+              "label": "Title",
+              "default": "Installer"
+            },
+            {
+              "type": "richtext",
+              "id": "description",
+              "label": "Description",
+              "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+            },
+            {
+              "type": "color",
+              "id": "background_color",
+              "label": "Background Color",
+              "default": "#FFFFFF"
+            },
+            {
+              "type": "url",
+              "id": "link",
+              "label": "Button Link"
+            },
+            {
+              "type": "text",
+              "id": "button_text",
+              "label": "Button Text",
+              "default": "Learn more"
+            }
+          ]
+        }
+      ],
+      "presets": [
         {
-          "type": "richtext",
-          "id": "description",
-          "label": "Description",
-          "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
-        },
-        {
-          "type": "color",
-          "id": "background_color",
-          "label": "Background Color",
-          "default": "#FFFFFF"
-        },
-        {
-          "type": "url",
-          "id": "link",
-          "label": "Button Link"
-        },
-        {
-          "type": "text",
-          "id": "button_text",
-          "label": "Button Text",
-          "default": "Learn more"
+          "name": "Vuba multicolumn Installer",
+          "category": "Custom",
+          "blocks": [
+            {
+              "type": "slide",
+              "settings": {
+                "image": "shopify://shop_images/image1.jpg",
+                "alt_text": "Installer",
+                "title": "Installer",
+                "description": "<p>Default description for Installer.</p>",
+                "background_color": "#FFFFFF",
+                "link": "#",
+                "button_text": "Learn more"
+              }
+            },
+            {
+              "type": "slide",
+              "settings": {
+                "image": "shopify://shop_images/image2.jpg",
+                "alt_text": "Registered",
+                "title": "Registered",
+                "description": "<p>Default description for Registered.</p>",
+                "background_color": "#F0F0F0",
+                "link": "#",
+                "button_text": "Learn more"
+              }
+            },
+            {
+              "type": "slide",
+              "settings": {
+                "image": "shopify://shop_images/image3.jpg",
+                "alt_text": "Approved",
+                "title": "Approved",
+                "description": "<p>Default description for Approved.</p>",
+                "background_color": "#B16F4D",
+                "link": "#",
+                "button_text": "Learn more"
+              }
+            },
+            {
+              "type": "slide",
+              "settings": {
+                "image": "shopify://shop_images/image4.jpg",
+                "alt_text": "Premium",
+                "title": "Premium",
+                "description": "<p>Default description for Premium.</p>",
+                "background_color": "#B7B7B7",
+                "link": "#",
+                "button_text": "Learn more"
+              }
+            },
+            {
+              "type": "slide",
+              "settings": {
+                "image": "shopify://shop_images/image5.jpg",
+                "alt_text": "Elite",
+                "title": "Elite",
+                "description": "<p>Default description for Elite.</p>",
+                "background_color": "#A38C6B",
+                "link": "#",
+                "button_text": "Learn more"
+              }
+            }
+          ]
         }
       ]
     }
-  ],
-  "presets": [
-    {
-      "name": "Vuba multicolumn Installer",
-      "category": "Custom"
-    }
-  ]
-}
-{% endschema %}
+    {% endschema %}
