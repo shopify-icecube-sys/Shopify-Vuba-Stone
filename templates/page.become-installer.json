@@ -21,13 +21,14 @@
       "type": "vuba-banner-image",
       "settings": {
         "logo_desktop": "shopify://shop_images/header-logo-blue-d.svg",
-        "title": "DOWNLOAD OUR BROCHURE",
+        "title": "Our Installer are always",
+        "title2": "In demand",
         "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>",
-        "button_text_en": "DOWNLOAD EN",
+        "button_text_en": "",
         "button_link_en": "",
-        "button_text_esp": "DOWNLOAD ESP",
+        "button_text_esp": "",
         "button_link_esp": "",
-        "div_color": "#6c757d"
+        "div_color": "#821832"
       }
     }
   },
