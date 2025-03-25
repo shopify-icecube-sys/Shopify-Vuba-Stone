@@ -11,13 +11,28 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "vuba_banner_image_8aiPXN": {
+      "type": "vuba-banner-image",
+      "settings": {
+        "logo_desktop": "shopify://shop_images/header-logo-blue-d.svg",
+        "title": "DOWNLOAD OUR BROCHURE",
+        "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>",
+        "button_text_en": "DOWNLOAD EN",
+        "button_link_en": "",
+        "button_text_esp": "DOWNLOAD ESP",
+        "button_link_esp": "",
+        "div_color": "#6c757d"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "vuba_banner_image_8aiPXN"
   ]
 }
