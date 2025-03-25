@@ -30,7 +30,7 @@
           {% endif %}
         </div>
         {% if section.settings.epoxy_title != blank %}
-          <h3 class="text-4xl xl:text-3xl 3xl:text-[38px] font-bold mt-12 3xl:mt-24 ">
+          <h3 class="text-4xl md:text-3xl xl:text-3xl 3xl:text-[38px] font-bold mt-12 3xl:mt-24">
             {{ section.settings.epoxy_title }}
           </h3>
         {% endif %}
@@ -58,32 +58,34 @@
             >
           {% endif %}
         </div>
-        {% if section.settings.vuba_title != blank %}
-          <h3 class="text-4xl xl:text-3xl 3xl:text-[38px] font-bold mt-12 3xl:mt-24 ">
-            {{ section.settings.vuba_title }}
-          </h3>
-        {% endif %}
-        <div class="mt-6 text-sm 3xl:text-lg text-left space-y-4">
-          {% if section.settings.vuba_description != blank %}
-            {{ section.settings.vuba_description }}
+        <div class="px-4 xl:pl-0 xl:pr-16">
+          {% if section.settings.vuba_title != blank %}
+            <h3 class="text-4xl md:text-3xl xl:text-3xl 3xl:text-[38px] font-bold mt-12 3xl:mt-24">
+              {{ section.settings.vuba_title }}
+            </h3>
           {% endif %}
+          <div class="mt-6 text-sm 2xl:text-lg text-left space-y-4">
+            {% if section.settings.vuba_description != blank %}
+              {{ section.settings.vuba_description }}
+            {% endif %}
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="mt-8 3xl:mt-14 text-center">
-      {% if section.settings.button_text != blank %}
-        <a
-          href="
-            {% if section.settings.button_link != blank %}
-            {{ section.settings.button_link }}
-            {% endif %}
-          "
-          class="text-sm 3xl:text-base tracking-widest inline-block bg-primary hover:bg-secondary text-white hover:text-white px-7 py-4 rounded-xl font-bold"
-        >
-          {{ section.settings.button_text }}
-        </a>
-      {% endif %}
+      <div class="mt-8 3xl:mt-10">
+        {% if section.settings.button_text != blank %}
+          <a
+            href="
+              {% if section.settings.button_link != blank %}
+              {{ section.settings.button_link }}
+              {% endif %}
+            "
+            class="text-sm 3xl:text-base tracking-widest inline-block bg-primary hover:bg-secondary text-white hover:text-white px-7 py-4 rounded-xl font-bold"
+          >
+            {{ section.settings.button_text }}
+          </a>
+        {% endif %}
+      </div>
     </div>
   </div>
 </section>
