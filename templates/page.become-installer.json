@@ -21,6 +21,7 @@
       "type": "vuba-banner-image",
       "settings": {
         "logo_desktop": "shopify://shop_images/header-logo-blue-d.svg",
+        "logo_mobile": "shopify://shop_images/header-logo-blue-m.svg",
         "title": "Our Installer are always",
         "title2": "In demand",
         "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>",
