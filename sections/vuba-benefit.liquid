@@ -1,22 +1,23 @@
-<!-- filepath: sections/benefit-vuba-installer.liquid -->
 <section class="benefit-vuba-installer py-14 3xl:py-32">
   <div class="inner-container mx-auto text-center">
     <h2 class="text-4xl 3xl:text-[51px] font-bold text-primary mb-14 3xl:mb-32">
-      {{ section.settings.heading }}
+      {{ section.settings.section_heading }}
     </h2>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 2xl:gap-8 3xl:gap-16 gap-y-12">
       {% for block in section.blocks %}
-        <div class="text-center">
-          <img
-            src="{{ block.settings.icon | file_url }}"
-            class="h-20 3xl:h-32 mx-auto"
-            alt="{{ block.settings.icon_alt }}"
-          >
+        <div class="text-center" {{ block.shopify_attributes }}>
+          {% if block.settings.icon != blank %}
+            <img
+              src="{{ block.settings.icon | image_url }}"
+              class="h-20 3xl:h-32 mx-auto"
+              alt="{{ block.settings.title }} icon"
+            >
+          {% endif %}
           <h3 class="text-lg 3xl:text-[26px] font-bold text-primary my-5 3xl:mt-8 3xl:my-8">
             {{ block.settings.title }}
           </h3>
           <div class="text-sm 2xl:text-base mt-2">
-            <p>{{ block.settings.description }}</p>
+            {{ block.settings.description }}
           </div>
         </div>
       {% endfor %}
@@ -26,11 +27,11 @@
 
 {% schema %}
 {
-  "name": "Benefit Vuba Installer",
+  "name": "Vuba Installer Benefits",
   "settings": [
     {
       "type": "text",
-      "id": "heading",
+      "id": "section_heading",
       "label": "Section Heading",
       "default": "Benefits of using a Vuba Installer"
     }
@@ -38,38 +39,46 @@
   "blocks": [
     {
       "type": "benefit",
-      "name": "Benefit",
+      "name": "Benefit Item",
       "settings": [
         {
           "type": "image_picker",
           "id": "icon",
-          "label": "Icon"
-        },
-        {
-          "type": "text",
-          "id": "icon_alt",
-          "label": "Icon Alt Text",
-          "default": "icon"
+          "label": "Benefit Icon"
         },
         {
           "type": "text",
           "id": "title",
-          "label": "Title",
+          "label": "Benefit Title",
           "default": "Benefit Title"
         },
         {
-          "type": "textarea",
+          "type": "richtext",
           "id": "description",
-          "label": "Description",
-          "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          "label": "Benefit Description",
+          "default": "<p>Benefit description goes here.</p>"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Benefit Vuba Installer",
-      "category": "Custom"
+      "name": "Vuba Installer Benefits",
+      "category": "Custom",
+      "blocks": [
+        {
+          "type": "benefit"
+        },
+        {
+          "type": "benefit"
+        },
+        {
+          "type": "benefit"
+        },
+        {
+          "type": "benefit"
+        }
+      ]
     }
   ]
 }
