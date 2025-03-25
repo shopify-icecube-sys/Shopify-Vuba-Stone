@@ -34,56 +34,6 @@
         "div_color": "#821832"
       }
     },
-    "vuba_benefit_nkNMz4": {
-      "type": "vuba-benefit",
-      "blocks": {
-        "benefit_yVHATd": {
-          "type": "benefit",
-          "settings": {
-            "icon": "shopify://shop_images/making-icon.svg",
-            "title": "Benefit Title",
-            "title2": "Benefit Title2",
-            "description": "<p>Benefit description goes here.</p>"
-          }
-        },
-        "benefit_p9izHU": {
-          "type": "benefit",
-          "settings": {
-            "icon": "shopify://shop_images/technology-icon.svg",
-            "title": "Benefit Title",
-            "title2": "Benefit Title2",
-            "description": "<p>Benefit description goes here.</p>"
-          }
-        },
-        "benefit_WRxKeL": {
-          "type": "benefit",
-          "settings": {
-            "icon": "shopify://shop_images/quartz-icon.svg",
-            "title": "Benefit Title",
-            "title2": "Benefit Title2",
-            "description": "<p>Benefit description goes here.</p>"
-          }
-        },
-        "benefit_TBTUhA": {
-          "type": "benefit",
-          "settings": {
-            "icon": "shopify://shop_images/dealers-icon.svg",
-            "title": "Benefit Title",
-            "title2": "Benefit Title2",
-            "description": "<p>Benefit description goes here.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "benefit_yVHATd",
-        "benefit_p9izHU",
-        "benefit_WRxKeL",
-        "benefit_TBTUhA"
-      ],
-      "settings": {
-        "section_heading": "Benefits of using a Vuba Installer"
-      }
-    },
     "vuba_installer_wi69pN": {
       "type": "vuba-installer",
       "settings": {
@@ -100,89 +50,12 @@
         "section_heading": "Latest Projects",
         "blog_handle": "project"
       }
-    },
-    "vuba_multicolumn_installer_tdmbJJ": {
-      "type": "vuba-multicolumn-installer",
-      "blocks": {
-        "slide_TR4yge": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/banner-d.jpg",
-            "alt_text": "Installer",
-            "title": "Installer",
-            "description": "<p>Default description for Installer.</p>",
-            "background_color": "#005676",
-            "link": "#",
-            "button_text": "Learn more"
-          }
-        },
-        "slide_VgBCFP": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/banner-d.jpg",
-            "alt_text": "Registered",
-            "title": "Registered",
-            "description": "<p>Default description for Registered.</p>",
-            "background_color": "#821832",
-            "link": "#",
-            "button_text": "Learn more"
-          }
-        },
-        "slide_Q8LVLn": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/banner-d.jpg",
-            "alt_text": "Approved",
-            "title": "Approved",
-            "description": "<p>Default description for Approved.</p>",
-            "background_color": "#b16f4d",
-            "link": "#",
-            "button_text": "Learn more"
-          }
-        },
-        "slide_WnG9ga": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/banner-d.jpg",
-            "alt_text": "Premium",
-            "title": "Premium",
-            "description": "<p>Default description for Premium.</p>",
-            "background_color": "#b7b7b7",
-            "link": "#",
-            "button_text": "Learn more"
-          }
-        },
-        "slide_GxJAF6": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/banner-d.jpg",
-            "alt_text": "Elite",
-            "title": "Elite",
-            "description": "<p>Default description for Elite.</p>",
-            "background_color": "#a38c6b",
-            "link": "#",
-            "button_text": "Learn more"
-          }
-        }
-      },
-      "block_order": [
-        "slide_TR4yge",
-        "slide_VgBCFP",
-        "slide_Q8LVLn",
-        "slide_WnG9ga",
-        "slide_GxJAF6"
-      ],
-      "settings": {
-        "heading": "Vuba Installer Text here"
-      }
     }
   },
   "order": [
     "main",
     "vuba_banner_image_nFy4be",
-    "vuba_benefit_nkNMz4",
     "vuba_installer_wi69pN",
-    "vuba_multicolumn_installer_tdmbJJ",
     "vuba_latest_project_6834X8"
   ]
 }
