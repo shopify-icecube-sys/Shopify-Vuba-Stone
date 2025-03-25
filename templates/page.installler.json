@@ -125,6 +125,56 @@
       "settings": {
         "heading": "Vuba Installer Text here"
       }
+    },
+    "vuba_benefit_nkNMz4": {
+      "type": "vuba-benefit",
+      "blocks": {
+        "benefit_yVHATd": {
+          "type": "benefit",
+          "settings": {
+            "icon": "shopify://shop_images/making-icon.svg",
+            "title": "Benefit Title",
+            "title2": "Benefit Title2",
+            "description": "<p>Benefit description goes here.</p>"
+          }
+        },
+        "benefit_p9izHU": {
+          "type": "benefit",
+          "settings": {
+            "icon": "shopify://shop_images/technology-icon.svg",
+            "title": "Benefit Title",
+            "title2": "Benefit Title2",
+            "description": "<p>Benefit description goes here.</p>"
+          }
+        },
+        "benefit_WRxKeL": {
+          "type": "benefit",
+          "settings": {
+            "icon": "shopify://shop_images/quartz-icon.svg",
+            "title": "Benefit Title",
+            "title2": "Benefit Title2",
+            "description": "<p>Benefit description goes here.</p>"
+          }
+        },
+        "benefit_TBTUhA": {
+          "type": "benefit",
+          "settings": {
+            "icon": "shopify://shop_images/dealers-icon.svg",
+            "title": "Benefit Title",
+            "title2": "Benefit Title2",
+            "description": "<p>Benefit description goes here.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "benefit_yVHATd",
+        "benefit_p9izHU",
+        "benefit_WRxKeL",
+        "benefit_TBTUhA"
+      ],
+      "settings": {
+        "section_heading": "Benefits of using a Vuba Installer"
+      }
     }
   },
   "order": [
@@ -132,6 +182,7 @@
     "vuba_banner_image_nFy4be",
     "vuba_installer_wi69pN",
     "vuba_latest_project_6834X8",
-    "vuba_multicolumn_installer_tdmbJJ"
+    "vuba_multicolumn_installer_tdmbJJ",
+    "vuba_benefit_nkNMz4"
   ]
 }
