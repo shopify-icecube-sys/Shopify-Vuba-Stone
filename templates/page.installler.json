@@ -165,6 +165,7 @@
         "slide_mcetYG": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/banner-d.jpg",
             "alt_text": "Installer",
             "title": "Installer",
             "description": "<p>Default description for Installer.</p>",
@@ -176,6 +177,7 @@
         "slide_Udy9pr": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/banner-d.jpg",
             "alt_text": "Registered",
             "title": "Registered",
             "description": "<p>Default description for Registered.</p>",
