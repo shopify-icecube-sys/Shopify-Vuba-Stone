@@ -158,6 +158,76 @@
       "settings": {
         "heading": "Vuba Installer Text here"
       }
+    },
+    "vuba_multicolumn_installer_fUJeYR": {
+      "type": "vuba-multicolumn-installer",
+      "blocks": {
+        "slide_mcetYG": {
+          "type": "slide",
+          "settings": {
+            "alt_text": "Installer",
+            "title": "Installer",
+            "description": "<p>Default description for Installer.</p>",
+            "background_color": "#ffffff",
+            "link": "#",
+            "button_text": "Learn more"
+          }
+        },
+        "slide_Udy9pr": {
+          "type": "slide",
+          "settings": {
+            "alt_text": "Registered",
+            "title": "Registered",
+            "description": "<p>Default description for Registered.</p>",
+            "background_color": "#f0f0f0",
+            "link": "#",
+            "button_text": "Learn more"
+          }
+        },
+        "slide_JXMMqJ": {
+          "type": "slide",
+          "settings": {
+            "alt_text": "Approved",
+            "title": "Approved",
+            "description": "<p>Default description for Approved.</p>",
+            "background_color": "#b16f4d",
+            "link": "#",
+            "button_text": "Learn more"
+          }
+        },
+        "slide_NC4PCJ": {
+          "type": "slide",
+          "settings": {
+            "alt_text": "Premium",
+            "title": "Premium",
+            "description": "<p>Default description for Premium.</p>",
+            "background_color": "#b7b7b7",
+            "link": "#",
+            "button_text": "Learn more"
+          }
+        },
+        "slide_DbDenH": {
+          "type": "slide",
+          "settings": {
+            "alt_text": "Elite",
+            "title": "Elite",
+            "description": "<p>Default description for Elite.</p>",
+            "background_color": "#a38c6b",
+            "link": "#",
+            "button_text": "Learn more"
+          }
+        }
+      },
+      "block_order": [
+        "slide_mcetYG",
+        "slide_Udy9pr",
+        "slide_JXMMqJ",
+        "slide_NC4PCJ",
+        "slide_DbDenH"
+      ],
+      "settings": {
+        "heading": "Vuba Installer Text here"
+      }
     }
   },
   "order": [
@@ -166,6 +236,7 @@
     "vuba_benefit_q9HxXa",
     "vuba_installer_wi69pN",
     "vuba_latest_project_6834X8",
-    "vuba_multicolumn_installer_dkPWQ9"
+    "vuba_multicolumn_installer_dkPWQ9",
+    "vuba_multicolumn_installer_fUJeYR"
   ]
 }
