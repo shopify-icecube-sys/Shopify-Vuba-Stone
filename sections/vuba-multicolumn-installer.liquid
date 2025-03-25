@@ -1,8 +1,10 @@
 <section class="vuba-stone-update vuba-installer-text-here bg-gray py-14 3xl:py-40">
   <div class="container">
-    <h2 class="text-primary text-center text-4xl lg:text-4xl 3xl:text-[51px] font-bold mb-10 3xl:mb-20">
-      {{ section.settings.heading }}
-    </h2>
+    {% if section.settings.heading != blank %}
+      <h2 class="text-primary text-center text-4xl lg:text-4xl 3xl:text-[51px] font-bold mb-10 3xl:mb-20">
+        {{ section.settings.heading }}
+      </h2>
+    {% endif %}
     <div class="owl-carousel owl-theme vuba-installer-slider">
       {% for block in section.blocks %}
         <div
