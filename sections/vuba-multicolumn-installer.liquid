@@ -1,0 +1,98 @@
+<!------- Start of Vuba Installer Text Here ------->
+<section class="vuba-stone-update vuba-installer-text-here bg-gray py-14 3xl:py-40">
+    <div class="container">
+        <h2 class="text-primary text-center text-4xl lg:text-4xl 3xl:text-[51px] font-bold mb-10 3xl:mb-20">
+            {{ section.settings.heading }}
+        </h2>
+        <div class="owl-carousel owl-theme vuba-installer-slider">
+            {% for block in section.blocks %}
+            <div class="hover:cursor-pointer bg-white text-white col h-full flex flex-wrap flex-col column transition-all duration-500 ease-in-out group rounded-xl overflow-hidden">
+                <figure class="aspect-square">
+                    <img src="{{ block.settings.image | img_url: '600x600' }}" class="w-full object-cover h-full aspect-square" alt="{{ block.settings.alt_text }}" />
+                </figure>
+                <div class="p-7 md:px-4 3xl:px-7 text-center flex-1 basis-auto flex flex-wrap flex-col" style="background-color: {{ block.settings.background_color }}">
+                    <h4 class="text-xl 3xl:text-2xl font-bold uppercase">{{ block.settings.title }}</h4>
+                    <div class="dis text-sm py-5">
+                       {{ block.settings.description }}
+                    </div>
+                    <div class="btn-wrap mt-auto">
+                        <a href="{{ block.settings.link }}" class="px-10 3xl:px-11 py-3 3xl:py-3 inline-block rounded-full text-sm 3xl:text-[17px] font-bold uppercase tracking-widest xl:tracking-normal xl:capitalize border-[3px] text-white border-white group-hover:bg-white group-hover:text-black group-hover:border-white">
+                            {{ block.settings.button_text }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!------- End of Vuba Installer Text Here ------->
+
+{% schema %}
+{
+  "name": "Vuba multicolumn",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section Heading",
+      "default": "Vuba Installer Text here"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "alt_text",
+          "label": "Alt Text",
+          "default": "Vuba Stone Update"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Installer"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description",
+          "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+        },
+        {
+          "type": "color",
+          "id": "background_color",
+          "label": "Background Color",
+          "default": "#FFFFFF"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Button Link",
+          "default": "#"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "Learn more"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vuba multicolumn Installer",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
