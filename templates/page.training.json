@@ -47,12 +47,84 @@
         "section_heading": "Completed during training, and participants",
         "blog_handle": "news"
       }
+    },
+    "vuba_teams_bTE3HP": {
+      "type": "vuba-teams",
+      "blocks": {
+        "team_member_xd4PwN": {
+          "type": "team_member",
+          "settings": {
+            "team_member_name": "Name, Surname",
+            "team_member_company": "Company",
+            "team_member_image": "shopify://shop_images/technical-1.jpg",
+            "team_member_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum"
+          }
+        },
+        "team_member_jnpr3E": {
+          "type": "team_member",
+          "settings": {
+            "team_member_name": "Name, Surname",
+            "team_member_company": "Company",
+            "team_member_image": "shopify://shop_images/technical-1.jpg",
+            "team_member_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum..."
+          }
+        },
+        "team_member_THpkjU": {
+          "type": "team_member",
+          "settings": {
+            "team_member_name": "Name, Surname",
+            "team_member_company": "Company",
+            "team_member_image": "shopify://shop_images/technical-1.jpg",
+            "team_member_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum..."
+          }
+        },
+        "team_member_XwKrb9": {
+          "type": "team_member",
+          "settings": {
+            "team_member_name": "Name, Surname",
+            "team_member_company": "Company",
+            "team_member_image": "shopify://shop_images/technical-1.jpg",
+            "team_member_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum..."
+          }
+        },
+        "team_member_RnEh9X": {
+          "type": "team_member",
+          "settings": {
+            "team_member_name": "Name, Surname",
+            "team_member_company": "Company",
+            "team_member_image": "shopify://shop_images/technical-1.jpg",
+            "team_member_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum..."
+          }
+        },
+        "team_member_74wF86": {
+          "type": "team_member",
+          "settings": {
+            "team_member_name": "Name, Surname",
+            "team_member_company": "Company",
+            "team_member_image": "shopify://shop_images/technical-1.jpg",
+            "team_member_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum..."
+          }
+        }
+      },
+      "block_order": [
+        "team_member_xd4PwN",
+        "team_member_jnpr3E",
+        "team_member_THpkjU",
+        "team_member_XwKrb9",
+        "team_member_RnEh9X",
+        "team_member_74wF86"
+      ],
+      "settings": {
+        "section_title": "Technical and Training Team",
+        "section_description": "We are the preferred surface for household names, big brands and homeowners worldwide. Proudly BBA certified, a testament to our quality and excellence."
+      }
     }
   },
   "order": [
     "main",
     "vuba_banner_image_7M8KaE",
     "vuba_richtext_nL7x4D",
-    "vuba_latest_project_djTy4n"
+    "vuba_latest_project_djTy4n",
+    "vuba_teams_bTE3HP"
   ]
 }
