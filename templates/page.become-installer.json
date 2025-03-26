@@ -93,12 +93,23 @@
         "installer_kit_items": "Forced action mixer|Sample case|Vuba Merch|Brochures|Website Listing|Access to portal|Order calculator",
         "installer_image": "shopify://shop_images/vuba-installer-man-d.png"
       }
+    },
+    "vuba_register_installer_3Y3kKE": {
+      "type": "vuba-register-installer",
+      "settings": {
+        "register_bg_image": "shopify://shop_images/epoxy-vuba-2.jpg",
+        "client_image": "shopify://shop_images/client-pic.jpg",
+        "client_name": "Name, Surname",
+        "client_company": "Company",
+        "client_testimonial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      }
     }
   },
   "order": [
     "main",
     "vuba_banner_image_8aiPXN",
     "vuba_benefit_fhD8ge",
-    "vuba_installer_kit_fzrneG"
+    "vuba_installer_kit_fzrneG",
+    "vuba_register_installer_3Y3kKE"
   ]
 }
