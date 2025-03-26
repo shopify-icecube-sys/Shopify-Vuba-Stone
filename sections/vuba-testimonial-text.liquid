@@ -5,7 +5,11 @@
         {% if section.settings.testimonial_text != blank %}
           <p class="inline-block">
             {{ section.settings.testimonial_text }}
-            <em class="font-normal inline-block">{{ section.settings.testimonial_subtext }}</em>
+            <em class="font-normal inline-block">
+              {%- if section.settings.testimonial_subtext != blank -%}
+                {{- section.settings.testimonial_subtext }}
+              {% endif -%}
+            </em>
           </p>
         {% endif %}
       </div>
