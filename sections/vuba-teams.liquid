@@ -1,6 +1,103 @@
+<section class="technical-team">
+  <div class="container">
+    <div class="max-w-5xl mx-auto text-center pb-10 3xl:pb-28">
+      <h2 class="text-4xl md:text-4xl 3xl:text-[51px] text-primary font-bold mb-7 3xl:mb-14">
+        {{ section.settings.section_heading }}
+      </h2>
+      <p class="text-sm md:text-base 3xl:text-2xl">
+        {{ section.settings.section_description }}
+      </p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-4 gap-y-10">
+      {% for block in section.blocks %}
+        <div class="relative bg-white rounded-2xl overflow-hidden">
+          {% if block.settings.image %}
+            <img
+              src="{{ block.settings.image | img_url: 'large' }}"
+              class="w-full object-cover h-full"
+              alt="{{ block.settings.name }}"
+            >
+          {% endif %}
+          <div class="absolute left-0 right-0 bottom-0 p-4">
+            <div class="bg-secondary text-white p-4 w-full text-sm 3xl:text-base rounded-2xl">
+              <h3 class="text-xl font-bold">{{ block.settings.name }}</h3>
+              <strong class="text-sm my-2 inline-block">{{ block.settings.company }}</strong>
+              <p>{{ block.settings.description }}</p>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Vuba Teams",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_heading",
+      "label": "Section Heading",
+      "default": "Technical and Training Team"
+    },
+    {
+      "type": "richtext",
+      "id": "section_description",
+      "label": "Section Description",
+      "default": "<p>We are the preferred surface for household names, big brands, and homeowners worldwide. Proudly BBA certified, a testament to our quality and excellence.</p>"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "team_member",
+      "name": "Team Member",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Member Image"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name",
+          "default": "Name, Surname"
+        },
+        {
+          "type": "text",
+          "id": "company",
+          "label": "Company",
+          "default": "Company Name"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description",
+          "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vuba Teams",
+      "category": "Custom",
+      "blocks": [
+        {
+          "type": "team_member"
+        },
+        {
+          "type": "team_member"
+        },
+        {
+          "type": "team_member"
+        },
+        {
+          "type": "team_member"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
