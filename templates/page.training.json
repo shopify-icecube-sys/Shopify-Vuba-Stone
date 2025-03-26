@@ -48,11 +48,25 @@
         "blog_handle": "news"
       }
     },
-    "vuba_richtext_UBaXta": {
-      "type": "vuba-richtext",
+    "vuba_teams_HAhh6k": {
+      "type": "vuba-teams",
+      "blocks": {
+        "team_member_9mKtTn": {
+          "type": "team_member",
+          "settings": {
+            "team_member_name": "Name, Surname",
+            "team_member_company": "Company",
+            "team_member_image": "shopify://shop_images/technical-1.jpg",
+            "team_member_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum..."
+          }
+        }
+      },
+      "block_order": [
+        "team_member_9mKtTn"
+      ],
       "settings": {
-        "title": "technical and training team",
-        "richtext": "<p>We are preferred surface for household names, big brands and homeowners worldwide.</p><p>Proudly BBA certified, a testament to our quality and excellence.</p>"
+        "section_title": "Technical and Training Team",
+        "section_description": "We are the preferred surface for household names, big brands and homeowners worldwide. Proudly BBA certified, a testament to our quality and excellence."
       }
     }
   },
@@ -61,6 +75,6 @@
     "vuba_banner_image_7M8KaE",
     "vuba_richtext_nL7x4D",
     "vuba_latest_project_djTy4n",
-    "vuba_richtext_UBaXta"
+    "vuba_teams_HAhh6k"
   ]
 }
