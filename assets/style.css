@@ -71,6 +71,10 @@
     margin-right: 15px;
 }
 
+.register-installer .absolute {
+    bottom: 0;
+}
+
 @media screen and (max-width:1799px) {
     .padding-right-zeero {
         padding-left: calc((100% - 1080px) / 2);
