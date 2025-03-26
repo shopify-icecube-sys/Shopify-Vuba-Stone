@@ -23,11 +23,13 @@
             <li>{{ item }}</li>
           {% endfor %}
         </ul>
-        <img
-          src="{{ section.settings.installer_image | image_url }}"
-          alt="Worker"
-          class="absolute bottom-6 md:-bottom-10 3xl:-bottom-[70px] -right-[15px] md:right-auto md:-left-20 lg:-left-[70px] 2xl:-left-[75px] 3xl:-left-32 w-[175px] md:w-[150px] lg:w-[130px] 2xl:w-[140px] 3xl:w-[245px]"
-        >
+        {% if section.settings.installer_image != blank %}
+          <img
+            src="{{ section.settings.installer_image | image_url }}"
+            alt="Worker"
+            class="absolute bottom-6 md:-bottom-10 3xl:-bottom-[70px] -right-[15px] md:right-auto md:-left-20 lg:-left-[70px] 2xl:-left-[75px] 3xl:-left-32 w-[175px] md:w-[150px] lg:w-[130px] 2xl:w-[140px] 3xl:w-[245px]"
+          >
+        {% endif %}
       </div>
     </div>
   </div>
