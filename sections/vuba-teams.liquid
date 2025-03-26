@@ -1,6 +1,97 @@
+<section class="technical-team">
+  <div class="container">
+    <div class="max-w-5xl mx-auto text-center pb-10 3xl:pb-28">
+      {% if section.settings.section_title != blank %}
+        <h2 class="text-4xl md:text-4xl 3xl:text-[51px] text-primary font-bold mb-7 3xl:mb-14">
+          {{ section.settings.section_title }}
+        </h2>
+      {% endif %}
+      {% if section.settings.section_description != blank %}
+        <p class="text-sm md:text-base 3xl:text-2xl">{{ section.settings.section_description }}</p>
+      {% endif %}
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-4 gap-y-10">
+      {% for block in section.blocks %}
+        <div class="relative bg-white rounded-2xl overflow-hidden">
+          {% if block.settings.team_member_image != blank %}
+            <img
+              src="{{ block.settings.team_member_image | image_url }}"
+              class="w-full object-cover h-full"
+              alt="team member image"
+            >
+          {% endif %}
+          <div class="absolute left-0 right-0 bottom-0 p-4">
+            <div class="bg-secondary text-white p-4 w-full text-sm 3xl:text-base rounded-2xl">
+              {% if block.settings.team_member_name != blank %}
+                <h3 class="text-xl font-bold">{{ block.settings.team_member_name }}</h3>
+              {% endif %}
+              {% if block.settings.team_member_company != blank %}
+                <strong class="text-sm my-2 inline-block">{{ block.settings.team_member_company }}</strong>
+              {% endif %}
+              {% if block.settings.team_member_description != blank %}
+                <p>{{ block.settings.team_member_description }}</p>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Vuba Team",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Section Title",
+      "id": "section_title",
+      "default": "Technical and Training Team"
+    },
+    {
+      "type": "textarea",
+      "label": "Section Description",
+      "id": "section_description",
+      "default": "We are the preferred surface for household names, big brands and homeowners worldwide. Proudly BBA certified, a testament to our quality and excellence."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "team_member",
+      "name": "Team Member",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Name",
+          "id": "team_member_name",
+          "default": "Name, Surname"
+        },
+        {
+          "type": "text",
+          "label": "Company",
+          "id": "team_member_company",
+          "default": "Company"
+        },
+        {
+          "type": "image_picker",
+          "label": "Image",
+          "id": "team_member_image"
+        },
+        {
+          "type": "textarea",
+          "label": "Description",
+          "id": "team_member_description",
+          "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum..."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vuba Team",
+      "category": "Custom Section"
+    }
+  ]
+}
 {% endschema %}
