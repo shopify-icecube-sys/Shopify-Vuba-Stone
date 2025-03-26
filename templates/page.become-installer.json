@@ -33,10 +33,61 @@
         "button_link_esp": "",
         "div_color": "#821832"
       }
+    },
+    "vuba_benefit_fhD8ge": {
+      "type": "vuba-benefit",
+      "blocks": {
+        "benefit_WHCzAe": {
+          "type": "benefit",
+          "settings": {
+            "icon": "shopify://shop_images/making-icon.svg",
+            "title": "Dedicated Account Manager",
+            "title2": "",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum aquis congue. Nullam cursuLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum augue quis congue. </p>"
+          }
+        },
+        "benefit_UYQjhh": {
+          "type": "benefit",
+          "settings": {
+            "icon": "shopify://shop_images/technology-icon.svg",
+            "title": "Top Tier Training",
+            "title2": "",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum aquis congue. Nullam cursuLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum augue quis congue. </p>"
+          }
+        },
+        "benefit_4RYwGq": {
+          "type": "benefit",
+          "settings": {
+            "icon": "shopify://shop_images/quartz-icon.svg",
+            "title": "Exclusive Products",
+            "title2": "",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum aquis congue. Nullam cursuLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum augue quis congue. </p>"
+          }
+        },
+        "benefit_9k33Yn": {
+          "type": "benefit",
+          "settings": {
+            "icon": "shopify://shop_images/dealers-icon.svg",
+            "title": "Benefit from our R&D",
+            "title2": "",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum aquis congue. Nullam cursuLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum augue quis congue. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "benefit_WHCzAe",
+        "benefit_UYQjhh",
+        "benefit_4RYwGq",
+        "benefit_9k33Yn"
+      ],
+      "settings": {
+        "section_heading": "Why become  a Vuba Installer"
+      }
     }
   },
   "order": [
     "main",
-    "vuba_banner_image_8aiPXN"
+    "vuba_banner_image_8aiPXN",
+    "vuba_benefit_fhD8ge"
   ]
 }
