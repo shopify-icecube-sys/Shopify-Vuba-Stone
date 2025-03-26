@@ -34,11 +34,30 @@
         "div_color": "#821832"
       }
     },
-    "vuba_richtext_nL7x4D": {
-      "type": "vuba-richtext",
+    "vuba_training_course_WMYMRq": {
+      "type": "vuba-training-course",
+      "blocks": {
+        "course_yWb7CL": {
+          "type": "course",
+          "settings": {
+            "course_title": "2 Day Training Course",
+            "course_description": "The courses are 2 days long and include a presentation and on-site training learning about the preparation of the base and Vuba Stone application.",
+            "background_image": "shopify://shop_images/training-cource-1.jpg",
+            "course_id": "1",
+            "registration_link": "",
+            "registration_button_text": "BECOME A REGISTERED INSTALLER",
+            "form_image": "shopify://shop_images/register-installer-form.jpg",
+            "day_1_content": "<p>Meet and greet with an introduction to Vuba Stone</p><ul><li>On-site introduction to all tools, equipment, and project preparation</li><li>Introduction to the installation process</li><li>Theory Presentation</li><li>Q&A sessions with the Vuba team and experienced Vuba Stone installers</li></ul>",
+            "day_2_content": "<p>Completing a Vuba Stone project up to 1000 square feet</p><p></p>"
+          }
+        }
+      },
+      "block_order": [
+        "course_yWb7CL"
+      ],
       "settings": {
-        "title": "Our training courses",
-        "richtext": "<p>We are preferred surface for household names, big brands and homeowners worldwide.</p><p>Proudly BBA certified, a testament to our quality and excellence.</p>"
+        "section_title": "Our training courses",
+        "section_description": "<p>We are the preferred surface for household names, big brands and homeowners worldwide. Proudly BBA certified, a testament to our quality and excellence.</p>"
       }
     },
     "vuba_latest_project_djTy4n": {
@@ -138,13 +157,23 @@
         "section_title": "Technical and Training Team",
         "section_description": "<p>We are the preferred surface for household names, big brands and homeowners worldwide.</p><p>Proudly BBA certified, a testament to our quality and excellence.</p>"
       }
+    },
+    "vuba_testimonial_text_LtDpNt": {
+      "type": "vuba-testimonial-text",
+      "settings": {
+        "testimonial_text": "“We would like a testimonial from Ogburn Construction” (An installer that has completed 1-1 training) for new installers to view.",
+        "testimonial_subtext": "for new installers",
+        "testimonial_name": "Person's name,",
+        "testimonial_date": "date here"
+      }
     }
   },
   "order": [
     "main",
     "vuba_banner_image_7M8KaE",
-    "vuba_richtext_nL7x4D",
+    "vuba_training_course_WMYMRq",
     "vuba_latest_project_djTy4n",
-    "vuba_teams_bTE3HP"
+    "vuba_teams_bTE3HP",
+    "vuba_testimonial_text_LtDpNt"
   ]
 }
