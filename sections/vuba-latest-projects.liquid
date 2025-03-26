@@ -1,6 +1,87 @@
+<section class="latest-project padding-right-zeero py-14 md:py-16 3xl:py-28 3xl:pt-44 overflow-hidden">
+  <div class="mx-auto">
+    <h2 class="text-primary text-center md:text-start text-4xl 3xl:text-[51px] font-bold mb-10 md:mb-10 3xl:mb-20">
+      {{ section.settings.section_title }}
+    </h2>
+    <div class="owl-carousel latest-project-slider owl-loaded owl-drag">
+      <div class="owl-stage-outer">
+        <div class="owl-stage" style="transform: translate3d(-3780px, 0px, 0px); transition: 0.25s; width: 6300px;">
+          {% for block in section.blocks %}
+            <div class="owl-item" style="width: auto;">
+              <div class="item bg-gradient relative rounded-[20px] overflow-hidden before:left-0 h-full">
+                <figure>
+                  <img
+                    src="{{ block.settings.project_image | img_url: '800x800' }}"
+                    alt="{{ block.settings.project_name }}"
+                    class="w-full object-cover aspect-square h-full"
+                  >
+                </figure>
+                <div class="absolute inset-0 bg-opacity-40 flex flex-col justify-end p-5 2xl:py-12 2xl:px-10 text-white bg-black">
+                  <h3 class="font-bold text-2xl 3xl:text-[33px]">{{ block.settings.project_name }}</h3>
+                  <p class="text-sm mt-3 mb-4">{{ block.settings.project_description }}</p>
+                  <div>
+                    <a
+                      href="{{ block.settings.project_link }}"
+                      class="px-6 uppercase py-3 rounded-[10px] inline-block tracking-widest text-sm font-bold border-[3px] border-white hover:bg-primary hover:border-primary"
+                      >Learn More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Vuba Latest Projects",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Section Title",
+      "id": "section_title",
+      "default": "Completed during training, and participants"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "project",
+      "name": "Project",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Project Name",
+          "id": "project_name",
+          "default": "Project Name"
+        },
+        {
+          "type": "image_picker",
+          "label": "Project Image",
+          "id": "project_image"
+        },
+        {
+          "type": "textarea",
+          "label": "Project Description",
+          "id": "project_description",
+          "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+          "type": "url",
+          "label": "Project Link",
+          "id": "project_link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vuba Latest Projects",
+      "category": "Custom Section"
+    }
+  ]
+}
 {% endschema %}
