@@ -83,11 +83,22 @@
       "settings": {
         "section_heading": "Why become  a Vuba Installer"
       }
+    },
+    "vuba_installer_kit_fzrneG": {
+      "type": "vuba-installer-kit",
+      "settings": {
+        "process_heading": "What's the process",
+        "process_steps": "Attend our 2 day Training Course|Sign on to become a certified Vuba Stone installer|Purchase our ‘Installer Kit’|Most installers also purchase a trailer|Average start-up costs are approximately just under $10,000 USD|Once your first order has arrived then you are ready to go!",
+        "installer_kit_heading": "Installer Kit",
+        "installer_kit_items": "Forced action mixer|Sample case|Vuba Merch|Brochures|Website Listing|Access to portal|Order calculator",
+        "installer_image": "shopify://shop_images/vuba-installer-man-d.png"
+      }
     }
   },
   "order": [
     "main",
     "vuba_banner_image_8aiPXN",
-    "vuba_benefit_fhD8ge"
+    "vuba_benefit_fhD8ge",
+    "vuba_installer_kit_fzrneG"
   ]
 }
