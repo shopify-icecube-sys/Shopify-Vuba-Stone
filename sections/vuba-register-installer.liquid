@@ -1,64 +1,72 @@
 <section class="register-installer pt-14 3xl:pt-40">
-    <div class="container">
-        <div class="mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 3xl:gap-14">
-            <div class="bg-primary p-8 rounded-3xl text-white">
-                <img src="images/register-form.jpg" alt="">
+  <div class="container">
+    <div class="mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 3xl:gap-14">
+      <div class="bg-primary p-8 rounded-3xl text-white">
+        <img src="images/register-form.jpg" alt="">
+      </div>
+      <div class="relative">
+        <img
+          src="{{ section.settings.register_bg_image | img_url: 'master' }}"
+          alt="House Image"
+          class="w-full rounded-3xl"
+        >
+        <div class="absolute left-0 right-0 bottom-0 p-5 md:pb-0 3xl:p-6 3xl:pb-0">
+          <div class="text-white p-5 3xl:py-14 3xl:px-12 rounded-3xl w-[100%] bg-secondary">
+            <div class="flex flex-wrap items-center gap-3 mb-5">
+              <img
+                src="{{ section.settings.client_image | img_url: 'master' }}"
+                class="w-28 3xl:w-40 h-28 3xl:h-40 rounded-full border-[2px] xl:border-[3px] border-white"
+                alt="Client Pic"
+              >
+              <div class="block ps-0 3xl:ps-5">
+                <h3 class="text-xl 3xl:text-4xl font-bold block mb-0 3xl:mb-5">{{ section.settings.client_name }}</h3>
+                <strong class="text-sm 3xl:text-[28px]">{{ section.settings.client_company }}</strong>
+              </div>
             </div>
-            <div class="relative">
-                <img src="{{ section.settings.register_bg_image | img_url: 'master' }}" alt="House Image" class="w-full rounded-3xl">
-                <div class="absolute left-0 right-0 bottom-0 p-5 md:pb-0 3xl:p-6 3xl:pb-0">
-                    <div class="text-white p-5 3xl:py-14 3xl:px-12 rounded-3xl w-[100%] bg-secondary">
-                        <div class="flex flex-wrap items-center gap-3 mb-5">
-                            <img src="{{ section.settings.client_image | img_url: 'master' }}" class="w-28 3xl:w-40 h-28 3xl:h-40 rounded-full border-[2px] xl:border-[3px] border-white" alt="Client Pic">
-                            <div class="block ps-0 3xl:ps-5">
-                                <h3 class="text-xl 3xl:text-4xl font-bold block mb-0 3xl:mb-5">{{ section.settings.client_name }}</h3>
-                                <strong class="text-sm 3xl:text-[28px]">{{ section.settings.client_company }}</strong>
-                            </div>
-                        </div>
-                        <div class="text-sm 2xl:text-base">
-                            <p>{{ section.settings.client_testimonial }}</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="text-sm 2xl:text-base">
+              <p>{{ section.settings.client_testimonial }}</p>
             </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </section>
 {% schema %}
+{
+  "name": "Vuba Register Installer",
+  "settings": [
     {
-      "name": "Register Installer",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "register_bg_image",
-          "label": "Background Image"
-        },
-        {
-          "type": "image_picker",
-          "id": "client_image",
-          "label": "Client Image"
-        },
-        {
-          "type": "text",
-          "id": "client_name",
-          "label": "Client Name"
-        },
-        {
-          "type": "text",
-          "id": "client_company",
-          "label": "Client Company"
-        },
-        {
-          "type": "textarea",
-          "id": "client_testimonial",
-          "label": "Client Testimonial"
-        }
-      ],
-      "presets": [
-        {
-          "name": "Register Installer",
-          "category": "Custom"
-        }
-      ]
+      "type": "image_picker",
+      "id": "register_bg_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "client_image",
+      "label": "Client Image"
+    },
+    {
+      "type": "text",
+      "id": "client_name",
+      "label": "Client Name"
+    },
+    {
+      "type": "text",
+      "id": "client_company",
+      "label": "Client Company"
+    },
+    {
+      "type": "textarea",
+      "id": "client_testimonial",
+      "label": "Client Testimonial"
     }
-    {% endschema %}
+  ],
+  "presets": [
+    {
+      "name": "Vuba Register Installer",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
