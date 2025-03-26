@@ -41,8 +41,8 @@
           "type": "benefit",
           "settings": {
             "icon": "shopify://shop_images/making-icon.svg",
-            "title": "30 Years In",
-            "title2": "the making",
+            "title": "Benefit Title",
+            "title2": "",
             "description": "<p>Benefit description goes here.</p>"
           }
         },
