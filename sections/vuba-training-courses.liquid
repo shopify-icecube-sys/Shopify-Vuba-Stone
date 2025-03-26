@@ -1,0 +1,122 @@
+<section class="our-training-cources">
+    <div class="pt-44 pb-14 md:py-14 3xl:py-16 text-sm 2xl:text-base 3xl:text-2xl text-center max-w-5xl mx-auto px-4">
+        <h2 class="text-primary text-4xl 3xl:text-[51px] font-bold mb-6 3xl:mb-14">{{ section.settings.title }}</h2>
+        <p>{{ section.settings.description }}</p>
+    </div>
+    {% for block in section.blocks %}
+    <div class="training-cources-{{ forloop.index }} py-36 3xl:py-40 relative w-full min-h-screen bg-fixed bg-center bg-cover before:content-[''] before:w-full before:h-full before:top-0 before:left-0 before:absolute before:bg-black before:opacity-50" style="background-image: url('{{ block.settings.background_image | file_url }}');">
+        <div class="container">
+            <div class="relative">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                    <div class="text-white text-sm xl:text-lg md:max-w-lg">
+                        <h2 class="text-4xl 3xl:text-5xl font-bold mb-8 md:mb-5 3xl:mb-8">{{ block.settings.course_title }}</h2>
+                        <p>{{ block.settings.course_description }}</p>
+                        <div class="mt-5 text-sm">
+                            <h3 class="font-bold xl:text-lg mb-3">Day 1</h3>
+                            <ul>
+                                {% for item in block.settings.day_1_items %}
+                                <li>- {{ item }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        <div class="mt-5 text-sm">
+                            <h3 class="font-bold xl:text-lg mb-3">Day 2</h3>
+                            <ul>
+                                {% for item in block.settings.day_2_items %}
+                                <li>- {{ item }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        <a href="{{ block.settings.button_link }}" class="inline-block cursor-pointer mt-8 px-6 py-3 border-[3px] hover:text-primary hover:bg-white hover:border-white font-bold rounded-lg">{{ block.settings.button_text }}</a>
+                    </div>
+                    <div class="col-right hidden md:block">
+                        <div class="max-w-3xl mr-0 ml-auto bg-white rounded-3xl overflow-hidden">
+                            <img class="w-full" src="{{ block.settings.right_image | file_url }}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</section>
+
+{% schema %}
+{
+  "name": "Training Courses",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Our training courses"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Section Description",
+      "default": "We are the preferred surface for household names, big brands and homeowners worldwide. Proudly BBA certified, a testament to our quality and excellence."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "course",
+      "name": "Training Course",
+      "settings": [
+        {
+          "type": "text",
+          "id": "course_title",
+          "label": "Course Title",
+          "default": "2 Day Training Course"
+        },
+        {
+          "type": "textarea",
+          "id": "course_description",
+          "label": "Course Description",
+          "default": "The courses are 2 days long and include a presentation and on-site training learning about the preparation of the base and Vuba Stone application."
+        },
+        {
+          "type": "image_picker",
+          "id": "background_image",
+          "label": "Background Image"
+        },
+        {
+          "type": "textarea",
+          "id": "day_1_items",
+          "label": "Day 1 Items (one item per line)",
+          "default": "Meet and greet with an introduction to Vuba Stone\nOn-site introduction to all tools, equipment, and project preparation\nIntroduction to the installation process\nTheory Presentation\nQ&A sessions with the Vuba team and experienced Vuba Stone installers"
+        },
+        {
+          "type": "textarea",
+          "id": "day_2_items",
+          "label": "Day 2 Items (one item per line)",
+          "default": "Completing a Vuba Stone project up to 1000 square feet\nPractical introduction to mixing and applying Vuba Stone\nUsing all necessary tools and equipment\nIntroduction to vertical and VubaMec applications"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "BECOME A REGISTERED INSTALLER"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link",
+          "default": "#"
+        },
+        {
+          "type": "image_picker",
+          "id": "right_image",
+          "label": "Right Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Training Courses",
+      "category": "Custom Sections"
+    }
+  ]
+}
+{% endschema %}
