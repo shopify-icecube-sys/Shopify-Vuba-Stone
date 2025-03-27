@@ -33,11 +33,14 @@
                   alt="Logo Desktop"
                 >
               {% endif %}
-              <img
-                src="{{ section.settings.mobile_logo | image_url }}"
-                class="md:hidden inline-block w-10"
-                alt="Logo Mobile"
-              >
+
+              {% if section.settings.mobile_logo != blank %}
+                <img
+                  src="{{ section.settings.mobile_logo | image_url }}"
+                  class="md:hidden inline-block w-10"
+                  alt="Logo Mobile"
+                >
+              {% endif %}
             </a>
           </div>
         </div>
