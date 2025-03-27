@@ -2,7 +2,7 @@
   <div class="container mx-auto px-6">
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 text-start gap-10 text-white">
       {% for block in section.blocks %}
-        <div class="flex justify-center">
+        <div class="flex justify-center" {{ block.shopify_attributes }}>
           <div class="flex flex-col items-center">
             {% if block.settings.icon != blank %}
               <img src="{{ block.settings.icon | img_url: '100x' }}" alt="Icon" class="h-10 mb-5 ml-0 mr-auto">
