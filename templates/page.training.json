@@ -84,6 +84,10 @@
         "blog_handle": "news"
       }
     },
+    "vuba_teams_HAhh6k": {
+      "type": "vuba-teams",
+      "blocks": {
+        "team_member_9mKtTn": {
     "vuba_teams_bTE3HP": {
       "type": "vuba-teams",
       "blocks": {
@@ -161,6 +165,11 @@
         }
       },
       "block_order": [
+        "team_member_9mKtTn"
+      ],
+      "settings": {
+        "section_title": "Technical and Training Team",
+        "section_description": "We are the preferred surface for household names, big brands and homeowners worldwide. Proudly BBA certified, a testament to our quality and excellence."
         "team_member_xd4PwN",
         "team_member_jnpr3E",
         "team_member_THpkjU",
@@ -190,6 +199,7 @@
     "vuba_banner_image_7M8KaE",
     "vuba_training_course_WMYMRq",
     "vuba_latest_project_djTy4n",
+    "vuba_teams_HAhh6k"
     "vuba_teams_bTE3HP",
     "vuba_testimonial_text_LtDpNt"
   ]

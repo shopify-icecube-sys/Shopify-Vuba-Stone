@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "vuba_banner_image_kFLjhb": {
       "type": "vuba-banner-image",
@@ -17,7 +17,8 @@
         "logo_desktop": "shopify://shop_images/vuba-stone-brochure-d.svg",
         "logo_mobile": "shopify://shop_images/vuba-stone-brochure-m.svg",
         "title": "DOWNLOAD OUR BROCHURE",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        "title2": "DOWNLOAD OUR BROCHURE",
+        "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>",
         "button_text_en": "DOWNLOAD EN",
         "button_link_en": "shopify://collections",
         "button_text_esp": "DOWNLOAD ESP",
@@ -93,7 +94,6 @@
       "type": "vuba-installer",
       "settings": {
         "category_name": "Category Name",
-        "heading": "Become a Vuba Installer",
         "button_link": "shopify://collections",
         "button_text": "GO TO INSTALLER",
         "image": "shopify://shop_images/vuba-installer-man-d.jpg",
@@ -154,6 +154,58 @@
       "settings": {
         "section_heading": "Benefits of using a Vuba Installer"
       }
+    },
+    "vuba_technical_advice_zHMBhh": {
+      "type": "vuba-technical-advice",
+      "blocks": {
+        "technical_item_37L4a7": {
+          "type": "technical_item",
+          "settings": {
+            "title": "Cracking",
+            "description": "If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.",
+            "icon": "shopify://shop_images/dealers-icon.svg",
+            "download_btn": "Download",
+            "button_link": "shopify://collections"
+          }
+        },
+        "technical_item_tDJMkY": {
+          "type": "technical_item",
+          "settings": {
+            "title": "Cracking",
+            "description": "If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.",
+            "icon": "shopify://shop_images/doc-icon.png",
+            "download_btn": "Click Here",
+            "button_link": ""
+          }
+        },
+        "technical_item_zEEzWL": {
+          "type": "technical_item",
+          "settings": {
+            "title": "Cracking",
+            "description": "If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.",
+            "download_btn": "Click Here",
+            "button_link": ""
+          }
+        },
+        "technical_item_4TXKGR": {
+          "type": "technical_item",
+          "settings": {
+            "title": "Cracking",
+            "description": "If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.",
+            "download_btn": "Click Here",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "technical_item_37L4a7",
+        "technical_item_tDJMkY",
+        "technical_item_zEEzWL",
+        "technical_item_4TXKGR"
+      ],
+      "settings": {
+        "section_title": "Technical Advice"
+      }
     }
   },
   "order": [
@@ -165,6 +217,7 @@
     "vuba_headline_zqWMqq",
     "vuba_installer_FFY7En",
     "vuba_stampede_XhMWq3",
-    "vuba_benefit_PdaBJM"
+    "vuba_benefit_PdaBJM",
+    "vuba_technical_advice_zHMBhh"
   ]
 }

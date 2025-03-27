@@ -1,0 +1,106 @@
+<section class="technical-advice pt-40 3xl:pt-52 pb-14 3xl:pb-32">
+  <div class="container">
+    {% if section.settings.section_title != blank %}
+      <h2 class="text-4xl 2xl:text-[51px] text-secondary font-medium mb-8 3xl:mb-14">
+        {{ section.settings.section_title }}
+      </h2>
+    {% endif %}
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {% for block in section.blocks %}
+        <div
+          class="border-[3px] border-secondary p-6 2xl:p-10 rounded-[20px] bg-white text-sm 3xl:text-xl"
+          {{ block.shopify_attributes }}
+        >
+          <div class="flex justify-start mb-5 3xl:mb-7">
+            <div class="flex xl:flex-col items-center gap-x-3">
+              {% if block.settings.icon != blank %}
+                <img
+                  src="{{ block.settings.icon | image_url }}"
+                  class="w-10 3xl:w-20 xl:mb-5 3xl:mb-7 xl:ml-0 mr-auto"
+                  alt="Image Icon"
+                >
+              {% endif %}
+
+              {% if block.settings.title != blank %}
+                <h3 class="font-medium text-lg 3xl:text-[26px] text-secondary">{{ block.settings.title }}</h3>
+              {% endif %}
+            </div>
+          </div>
+          {% if block.settings.description != blank %}
+            <p>{{ block.settings.description }}</p>
+          {% endif %}
+
+          <a
+            {% if block.settings.button_link != blank %}
+              href="{{ block.settings.button_link }}"
+            {% endif %}
+            class="font-medium underline flex justify-between md:justify-center items-center mt-4 3xl:mt-12 gap-x-3"
+          >
+            {{ block.settings.download_btn }}
+            <img
+              src="https://cdn.shopify.com/s/files/1/0628/7520/5734/files/download-icon.svg?v=1743054092"
+              alt="Download Icon"
+            >
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Vuba Technical Advice",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section Title",
+      "default": "Technical Advice"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "technical_item",
+      "name": "Technical Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Item Title",
+          "default": "Cracking"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project."
+        },
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Item Icon"
+        },
+        {
+          "type": "text",
+          "id": "download_btn",
+          "label": "Download",
+          "default": "Download"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link",
+          "default": "/"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vuba Technical Advice",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
