@@ -34,6 +34,56 @@
         "div_color": "#821832"
       }
     },
+    "vuba_benefit_q9HxXa": {
+      "type": "vuba-benefit",
+      "blocks": {
+        "benefit_tQctYF": {
+          "type": "benefit",
+          "settings": {
+            "icon": "shopify://shop_images/making-icon.svg",
+            "title": "Benefit Title",
+            "title2": "",
+            "description": "<p>Benefit description goes here.</p>"
+          }
+        },
+        "benefit_rYmbUG": {
+          "type": "benefit",
+          "settings": {
+            "icon": "shopify://shop_images/technology-icon.svg",
+            "title": "Benefit Title",
+            "title2": "",
+            "description": "<p>Benefit description goes here.</p>"
+          }
+        },
+        "benefit_EcatwE": {
+          "type": "benefit",
+          "settings": {
+            "icon": "shopify://shop_images/quartz-icon.svg",
+            "title": "Benefit Title",
+            "title2": "",
+            "description": "<p>Benefit description goes here.</p>"
+          }
+        },
+        "benefit_EqFjJr": {
+          "type": "benefit",
+          "settings": {
+            "icon": "shopify://shop_images/dealers-icon.svg",
+            "title": "Benefit Title",
+            "title2": "",
+            "description": "<p>Benefit description goes here.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "benefit_tQctYF",
+        "benefit_rYmbUG",
+        "benefit_EcatwE",
+        "benefit_EqFjJr"
+      ],
+      "settings": {
+        "section_heading": "Benefits of using a Vuba Installer"
+      }
+    },
     "vuba_installer_wi69pN": {
       "type": "vuba-installer",
       "settings": {
@@ -44,17 +94,10 @@
         "image_alt": "Vuba Installer"
       }
     },
-    "vuba_latest_project_6834X8": {
-      "type": "vuba-latest-project",
-      "settings": {
-        "section_heading": "Latest Projects",
-        "blog_handle": "project"
-      }
-    },
-    "vuba_multicolumn_installer_tdmbJJ": {
+    "vuba_multicolumn_installer_fUJeYR": {
       "type": "vuba-multicolumn-installer",
       "blocks": {
-        "slide_TR4yge": {
+        "slide_mcetYG": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/banner-d.jpg",
@@ -66,7 +109,7 @@
             "button_text": "Learn more"
           }
         },
-        "slide_VgBCFP": {
+        "slide_Udy9pr": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/banner-d.jpg",
@@ -78,7 +121,7 @@
             "button_text": "Learn more"
           }
         },
-        "slide_Q8LVLn": {
+        "slide_JXMMqJ": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/banner-d.jpg",
@@ -90,7 +133,7 @@
             "button_text": "Learn more"
           }
         },
-        "slide_WnG9ga": {
+        "slide_NC4PCJ": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/banner-d.jpg",
@@ -102,7 +145,7 @@
             "button_text": "Learn more"
           }
         },
-        "slide_GxJAF6": {
+        "slide_DbDenH": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/banner-d.jpg",
@@ -116,22 +159,30 @@
         }
       },
       "block_order": [
-        "slide_TR4yge",
-        "slide_VgBCFP",
-        "slide_Q8LVLn",
-        "slide_WnG9ga",
-        "slide_GxJAF6"
+        "slide_mcetYG",
+        "slide_Udy9pr",
+        "slide_JXMMqJ",
+        "slide_NC4PCJ",
+        "slide_DbDenH"
       ],
       "settings": {
         "heading": "Vuba Installer Text here"
+      }
+    },
+    "vuba_latest_project_6834X8": {
+      "type": "vuba-latest-project",
+      "settings": {
+        "section_heading": "Latest Projects",
+        "blog_handle": "project"
       }
     }
   },
   "order": [
     "main",
     "vuba_banner_image_nFy4be",
+    "vuba_benefit_q9HxXa",
     "vuba_installer_wi69pN",
-    "vuba_latest_project_6834X8",
-    "vuba_multicolumn_installer_tdmbJJ"
+    "vuba_multicolumn_installer_fUJeYR",
+    "vuba_latest_project_6834X8"
   ]
 }

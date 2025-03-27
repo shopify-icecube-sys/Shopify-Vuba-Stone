@@ -15,15 +15,15 @@
               alt="Image icon"
             >
           {% endif %}
-          <h3 class="text-lg 3xl:text-[26px] font-bold text-primary my-5 3xl:mt-8 3xl:my-8">
-            {% if block.settings.title != blank %}
+          {% if block.settings.title != blank %}
+            <h3 class="text-lg 3xl:text-[26px] font-bold text-primary my-5 3xl:mt-8 3xl:my-8">
               {{ block.settings.title }}
-            {% endif %}
-            {% if block.settings.title2 != blank %}
-              <br>
-              {{ block.settings.title2 }}
-            {% endif %}
-          </h3>
+              {% if block.settings.title2 != blank %}
+                <br>
+                {{ block.settings.title2 }}
+              {% endif %}
+            </h3>
+          {% endif %}
           <div class="text-sm 2xl:text-base mt-2">
             {% if block.settings.description != blank %}
               {{ block.settings.description }}
@@ -65,8 +65,7 @@
         {
           "type": "text",
           "id": "title2",
-          "label": "Benefit Title2",
-          "default": "Benefit Title2"
+          "label": "Benefit Title2"
         },
         {
           "type": "richtext",

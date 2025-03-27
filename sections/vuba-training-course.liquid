@@ -1,0 +1,157 @@
+<section class="our-training-cources">
+  <div class="pt-44 pb-14 md:py-14 3xl:py-16 text-sm 2xl:text-base 3xl:text-2xl text-center max-w-5xl mx-auto px-4">
+    <h2 class="text-primary text-4xl 3xl:text-[51px] font-bold mb-6 3xl:mb-14">{{ section.settings.section_title }}</h2>
+    <p>{{ section.settings.section_description }}</p>
+  </div>
+
+  {% for block in section.blocks %}
+    <div
+      class="training-cources-{{ block.settings.course_id }} py-36 3xl:py-40 relative w-full min-h-screen bg-fixed bg-center bg-cover before:content-[''] before:w-full before:h-full before:top-0 before:left-0 before:absolute before:bg-black before:opacity-50"
+      style="background-image: url('{{ block.settings.background_image | img_url: 'master' }}');"
+    >
+      <div class="container">
+        <div class="relative">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div class="text-white text-sm xl:text-lg md:max-w-lg">
+              <h2 class="text-4xl 3xl:text-5xl font-bold mb-8 md:mb-5 3xl:mb-8">{{ block.settings.course_title }}</h2>
+              <p>{{ block.settings.course_description }}</p>
+
+              <div class="mt-5 text-sm">
+                <h3 class="font-bold xl:text-lg mb-3">{{ block.settings.heading_one }}</h3>
+                <ul>
+                  {% for item in block.settings.day_1_content %}
+                    <li>{{ item }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+              <div class="mt-5 text-sm">
+                <h3 class="font-bold xl:text-lg mb-3">{{ block.settings.heading_two }}</h3>
+                <ul>
+                  {% for item in block.settings.day_2_content %}
+                    <li>{{ item }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+              <a
+                href="{{ block.settings.registration_link }}"
+                class="inline-block cursor-pointer mt-8 px-6 py-3 border-[3px] hover:text-primary hover:bg-white hover:border-white font-bold rounded-lg"
+              >
+                {{- block.settings.registration_button_text -}}
+              </a>
+              <div class="btn-wrap flex flex-wrap gap-5 mt-10">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0628/7520/5734/files/10-year-waranty.svg?v=1742993864"
+                  alt="10 year warranty"
+                >
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0628/7520/5734/files/10-year-waranty.svg?v=1742993864"
+                  alt="10 year warranty"
+                >
+              </div>
+            </div>
+            <div class="col-right hidden md:block">
+              <div class="max-w-3xl mr-0 ml-auto bg-white rounded-3xl overflow-hidden">
+                <img
+                  class="w-full"
+                  src="https://cdn.shopify.com/s/files/1/0628/7520/5734/files/register-installer-form_1.jpg?v=1743047843"
+                  alt="Form image"
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</section>
+
+{% schema %}
+{
+  "name": "Vuba Training Courses",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Section Title",
+      "id": "section_title",
+      "default": "Our training courses"
+    },
+    {
+      "type": "richtext",
+      "label": "Section Description",
+      "id": "section_description",
+      "default": "<p>We are the preferred surface for household names, big brands and homeowners worldwide. Proudly BBA certified, a testament to our quality and excellence.</p>"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "course",
+      "name": "Training Course",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Course Title",
+          "id": "course_title",
+          "default": "2 Day Training Course"
+        },
+        {
+          "type": "richtext",
+          "label": "Course Description",
+          "id": "course_description",
+          "default": "<p>The courses are 2 days long and include a presentation and on-site training learning about the preparation of the base and Vuba Stone application.</p>"
+        },
+        {
+          "type": "image_picker",
+          "label": "Background Image",
+          "id": "background_image"
+        },
+        {
+          "type": "text",
+          "label": "Day One Heading",
+          "id": "heading_one"
+        },
+                {
+          "type": "richtext",
+          "label": "Day 1 Content",
+          "id": "day_1_content",
+          "default": "<p>Meet and greet with an introduction to Vuba Stone</p><ul><li>On-site introduction to all tools, equipment, and project preparation</li><li>Introduction to the installation process</li><li>Theory Presentation</li><li>Q&amp;A sessions with the Vuba team and experienced Vuba Stone installers</li></ul>"
+        },
+        {
+          "type": "text",
+          "label": "Day Two Heading",
+          "id": "heading_two"
+        },
+                {
+          "type": "richtext",
+          "label": "Day 2 Content",
+          "id": "day_2_content",
+          "default": "<p>Completing a Vuba Stone project up to 1000 square feet<p>"
+        },
+        {
+          "type": "text",
+          "label": "Course ID (unique identifier)",
+          "id": "course_id",
+          "default": "1"
+        },
+        {
+          "type": "url",
+          "label": "Registration Link",
+          "id": "registration_link"
+        },
+        {
+          "type": "text",
+          "label": "Registration Button Text",
+          "id": "registration_button_text",
+          "default": "BECOME A REGISTERED INSTALLER"
+        },
+
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vuba Training Courses",
+      "category": "Custom Sections"
+    }
+  ]
+}
+{% endschema %}

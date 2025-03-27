@@ -1,0 +1,85 @@
+{% assign process_steps = section.settings.process_steps | split: '|' %}
+{% assign installer_kit_items = section.settings.installer_kit_items | split: '|' %}
+
+<section class="installer-kit md:pb-20 3xl:pb-36">
+  <div class="container">
+    <div class="flex flex-col md:flex-row relative gap-3 md:gap-2">
+      <div class="bg-primary text-white md:w-[60%] lg:w-[70%] 2xl:w-[75%] md:text-center px-5 md:px-8 py-14 3xl:py-36 rounded-3xl md:rounded-none">
+        {% if section.settings.process_heading != blank %}
+          <h2 class="text-4xl md:text-2xl 3xl:text-5xl font-bold mb-5 3xl:mb-14 relative z-10">
+            {{ section.settings.process_heading }}
+          </h2>
+        {% endif %}
+        <ol class="list-none text-sm 2xl:text-base 3xl:text-2xl space-y-2 relative z-10">
+          {% for step in process_steps %}
+            <li>{{ forloop.index }}. {{ step }}</li>
+          {% endfor %}
+        </ol>
+      </div>
+      <div class="bg-secondary text-white md:w-[40%] lg:w-[30%] 2xl:w-[25%] md:text-center p-5 pt-20 md:pt-14 pr-[20vw] md:px-8 3xl:py-36 rounded-3xl md:rounded-none relative">
+        {% if section.settings.installer_kit_heading != blank %}
+          <h2 class="text-4xl md:text-2xl 3xl:text-5xl font-bold mb-5 3xl:mb-14 relative z-10">
+            {{ section.settings.installer_kit_heading }}
+          </h2>
+        {% endif %}
+        {% if section.settings.installer_kit_items != blank %}
+          <ul class="list-none text-sm 2xl:text-base 3xl:text-2xl space-y-2 relative z-10">
+            {% for item in installer_kit_items %}
+              <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+        {% if section.settings.installer_image != blank %}
+          <img
+            src="{{ section.settings.installer_image | image_url }}"
+            alt="Worker"
+            class="absolute bottom-6 md:-bottom-10 3xl:-bottom-[70px] -right-[15px] md:right-auto md:-left-20 lg:-left-[70px] 2xl:-left-[75px] 3xl:-left-32 w-[175px] md:w-[150px] lg:w-[130px] 2xl:w-[140px] 3xl:w-[245px]"
+          >
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Vuba Installer Kit",
+  "settings": [
+    {
+      "type": "text",
+      "id": "process_heading",
+      "label": "Process Heading",
+      "default": "What's the process"
+    },
+    {
+      "type": "textarea",
+      "id": "process_steps",
+      "label": "Process Steps (separate with |)",
+      "default": "Attend our 2 day Training Course|Sign on to become a certified Vuba Stone installer|Purchase our ‘Installer Kit’"
+    },
+    {
+      "type": "text",
+      "id": "installer_kit_heading",
+      "label": "Installer Kit Heading",
+      "default": "Installer Kit"
+    },
+    {
+      "type": "textarea",
+      "id": "installer_kit_items",
+      "label": "Installer Kit Items (separate with |)",
+      "default": "Forced action mixer|Sample case|Vuba Merch"
+    },
+    {
+      "type": "image_picker",
+      "id": "installer_image",
+      "label": "Installer Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vuba Installer Kit",
+      "category": "Custom Section"
+    }
+  ]
+}
+{% endschema %}
