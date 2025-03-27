@@ -280,41 +280,28 @@
           "type": "distributor",
           "settings": {
             "icon": "shopify://shop_images/distributor-icon-1.png",
-            "text": "<p>We extract the finest stone sustainably.</p>"
+            "text": "<p>We extract the </p><p>Finest stone </p><p>sustainably.</p>"
           }
         },
         "distributor_NraEME": {
           "type": "distributor",
           "settings": {
             "icon": "shopify://shop_images/distributor-icon-2.png",
-            "text": "<p><strong>12 million tonnes</strong></p><p><strong>TransportedSustainably.</strong></p>"
+            "text": "<p><strong>12 million tonnes</strong></p><p><strong>Transported</strong></p><p><strong>Sustainably.</strong></p>"
           }
         },
         "distributor_VBDXWJ": {
           "type": "distributor",
           "settings": {
-            "text": "<p>We extract the finest stone sustainably.</p>"
-          }
-        },
-        "distributor_RDLiRN": {
-          "type": "distributor",
-          "settings": {
-            "text": "<p>We extract the finest stone sustainably.</p>"
-          }
-        },
-        "distributor_L8fxjU": {
-          "type": "distributor",
-          "settings": {
-            "text": "<p>We extract the finest stone sustainably.</p>"
+            "icon": "shopify://shop_images/distributor-icon-3.png",
+            "text": "<p><strong>Distributors in</strong></p><p><strong>2 countries</strong></p><p><strong>And growing.</strong></p>"
           }
         }
       },
       "block_order": [
         "distributor_qwQPqn",
         "distributor_NraEME",
-        "distributor_VBDXWJ",
-        "distributor_RDLiRN",
-        "distributor_L8fxjU"
+        "distributor_VBDXWJ"
       ],
       "settings": {}
     }
