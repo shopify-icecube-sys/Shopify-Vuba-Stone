@@ -266,7 +266,8 @@
     "vuba_distribution_hub_a3nAJU": {
       "type": "vuba-distribution-hub",
       "settings": {
-        "heading": "Distribution hub in <br> The North of the UK",
+        "background_image": "shopify://shop_images/distribution-us.jpg",
+        "heading": "Distribution hub in  The North of the UK",
         "description": "<p>Experience the magic of Vusion technology!</p>",
         "quote": "<p>“The best tool for selling a job is to let the customer see what can be done beforehand. Vusion takes away the guesswork and allows customers to see the future. Amazing!”</p>",
         "author": "George Child, New Look Surfacing"
