@@ -15,9 +15,21 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "vuba_world_colors_VmCREt": {
+      "type": "vuba-world-colors",
+      "settings": {
+        "logo": "shopify://shop_images/footer-logo-d.png",
+        "logo_alt": "Footer Logo",
+        "section_title": "Vuba World Colors",
+        "section_description": "<p>Discover the world of endless possibilities with Vuba Stone’s exclusive palette of 24</p><p>captivating colors. Our wide range of hues, meticulously curated to suit every taste and style, </p><p>allows you to transform your space into a masterpiece.</p>",
+        "image_alt": "Epoxy Colors",
+        "text_color": "text-primary"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "vuba_world_colors_VmCREt"
   ]
 }
