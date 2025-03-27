@@ -128,7 +128,8 @@
         "team_member_3xEXHY"
       ],
       "settings": {
-        "section_title": "Senior Management",
+        "section_title": "",
+        "section_title_left": "Senior Management",
         "section_description": ""
       }
     }
