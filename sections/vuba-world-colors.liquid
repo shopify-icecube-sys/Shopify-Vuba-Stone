@@ -3,12 +3,15 @@
     <div class="max-block 3xl:max-w-[1140px] max-w-[774px] mx-auto">
       <div class="text-box px-3 font-poppins">
         {% if section.settings.section_title != blank %}
-          <h2 class="text-primary md:text-secondary text-4xl lg:text-4xl 3xl:text-[51px] font-bold mb-5 3xl:mb-8">
+          <h2
+            class="text-4xl lg:text-4xl 3xl:text-[51px] font-bold mb-5 3xl:mb-8"
+            style="color: {{ section.settings.text_color }}"
+          >
             {{ section.settings.section_title }}
           </h2>
         {% endif %}
         {% if section.settings.section_description != blank %}
-          <div class="text-sm md:text-base 3xl:text-2xl">
+          <div class="text-sm md:text-base 3xl:text-2xl" style="color: {{ section.settings.text_color }}">
             <p>{{ section.settings.section_description }}</p>
           </div>
         {% endif %}
@@ -32,6 +35,11 @@
       "id": "section_description",
       "label": "Section Description",
       "default": "<p>Discover the world of endless possibilities with Vuba Stone’s exclusive palette of 24 captivating colors. Our wide range of hues, meticulously curated to suit every taste and style, allows you to transform your space into a masterpiece.</p>"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color"
     }
   ],
   "presets": [
