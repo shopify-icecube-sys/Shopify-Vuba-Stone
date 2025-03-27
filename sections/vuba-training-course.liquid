@@ -17,7 +17,7 @@
               <p>{{ block.settings.course_description }}</p>
 
               <div class="mt-5 text-sm">
-                <h3 class="font-bold xl:text-lg mb-3">Day 1</h3>
+                <h3 class="font-bold xl:text-lg mb-3">{{ block.settings.heading_one }}</h3>
                 <ul>
                   {% for item in block.settings.day_1_content %}
                     <li>- {{ item }}</li>
@@ -51,7 +51,11 @@
             </div>
             <div class="col-right hidden md:block">
               <div class="max-w-3xl mr-0 ml-auto bg-white rounded-3xl overflow-hidden">
-                <img class="w-full" src="{{ block.settings.form_image | img_url: 'medium' }}" alt="">
+                <img
+                  class="w-full"
+                  src="https://cdn.shopify.com/s/files/1/0628/7520/5734/files/register-installer-form_1.jpg?v=1743047843"
+                  alt="Form image"
+                >
               </div>
             </div>
           </div>
@@ -90,10 +94,15 @@
           "default": "2 Day Training Course"
         },
         {
-          "type": "textarea",
+          "type": "text",
+          "label": "Day One Heading",
+          "id": "heading_one"
+        },
+        {
+          "type": "richtext",
           "label": "Course Description",
           "id": "course_description",
-          "default": "The courses are 2 days long and include a presentation and on-site training learning about the preparation of the base and Vuba Stone application."
+          "default": "<p>The courses are 2 days long and include a presentation and on-site training learning about the preparation of the base and Vuba Stone application.</p>"
         },
         {
           "type": "image_picker",
@@ -116,11 +125,6 @@
           "label": "Registration Button Text",
           "id": "registration_button_text",
           "default": "BECOME A REGISTERED INSTALLER"
-        },
-        {
-          "type": "image_picker",
-          "label": "Form Image",
-          "id": "form_image"
         },
         {
           "type": "richtext",
