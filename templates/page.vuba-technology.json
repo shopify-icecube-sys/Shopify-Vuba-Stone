@@ -11,13 +11,57 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "vuba_magic_experience_LJ7Jnc": {
+      "type": "vuba-magic-experience",
+      "blocks": {
+        "slide_eMJBHR": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/epoxy-vuba-1.jpg",
+            "alt_text": "slide 1"
+          }
+        },
+        "slide_MHyjBP": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/slide-magic1-min.png",
+            "alt_text": ""
+          }
+        },
+        "slide_Ht4UwV": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/epoxy-vuba-1.jpg",
+            "alt_text": ""
+          }
+        },
+        "slide_jFcwEi": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/slide-magic1-min.png",
+            "alt_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_eMJBHR",
+        "slide_MHyjBP",
+        "slide_Ht4UwV",
+        "slide_jFcwEi"
+      ],
+      "settings": {
+        "title": "Experience the magic of Vusion technology!"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "vuba_magic_experience_LJ7Jnc"
   ]
 }
