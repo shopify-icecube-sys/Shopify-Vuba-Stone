@@ -15,9 +15,17 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "vuba_latest_project_4neBBT": {
+      "type": "vuba-latest-project",
+      "settings": {
+        "section_heading": "Completed during training, and participants",
+        "blog_handle": "project"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "vuba_latest_project_4neBBT"
   ]
 }
