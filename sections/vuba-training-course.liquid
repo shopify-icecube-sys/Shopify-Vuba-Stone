@@ -17,7 +17,7 @@
               <p>{{ block.settings.course_description }}</p>
 
               <div class="mt-5 text-sm">
-                <h3 class="font-bold xl:text-lg mb-3">Day 1</h3>
+                <h3 class="font-bold xl:text-lg mb-3">{{ block.settings.heading_one }}</h3>
                 <ul>
                   {% for item in block.settings.day_1_content %}
                     <li>- {{ item }}</li>
@@ -92,6 +92,11 @@
           "label": "Course Title",
           "id": "course_title",
           "default": "2 Day Training Course"
+        },
+        {
+          "type": "text",
+          "label": "Day One Heading",
+          "id": "heading_one"
         },
         {
           "type": "richtext",
