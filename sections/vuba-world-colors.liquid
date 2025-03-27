@@ -24,7 +24,7 @@
       </div>
       <div class="img-box px-3">
         {% if section.settings.image != blank %}
-          <img class="mx-auto" src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image_alt }}">
+          <img class="mx-auto" src="{{ section.settings.image | image_url }}" alt="Epoxy Color">
         {% endif %}
       </div>
     </div>
@@ -62,12 +62,6 @@
       "type": "image_picker",
       "id": "image",
       "label": "Main Image"
-    },
-    {
-      "type": "text",
-      "id": "image_alt",
-      "label": "Image Alt Text",
-      "default": "Epoxy Colors"
     },
     {
       "type": "select",
