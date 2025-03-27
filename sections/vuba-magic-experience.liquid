@@ -1,23 +1,26 @@
 <section class="hero-slide-section pt-40 3xl:pt-52 mb-[60px] 3xl:mb-[145px]">
-    <div class="inner-container">
-      <h2 class="text-center text-secondary text-[24px] 3xl:text-[44px] font-medium mb-[40px] 3xl:mb-[60px] font-poppins">
-        {% if section.settings.title != blank %}  
+  <div class="inner-container">
+    <h2 class="text-center text-secondary text-[24px] 3xl:text-[44px] font-medium mb-[40px] 3xl:mb-[60px] font-poppins">
+      {% if section.settings.title != blank %}
         {{ section.settings.title }}
-        {% endif %}
-      </h2>
-    </div>  
-    <div id="magic-slider" class="owl-carousel owl-theme">
-      {% for block in section.blocks %}
+      {% endif %}
+    </h2>
+  </div>
+  <div id="magic-slider" class="owl-carousel owl-theme">
+    {% for block in section.blocks %}
       <div class="item">
         <figure class="rounded-[20px] overflow-hidden">
-          <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.alt_text }}" class="object-cover w-full h-full aspect-[2/1.1]">
+          <img
+            src="{{ block.settings.image | img_url: 'master' }}"
+            alt="{{ block.settings.alt_text }}"
+            class="object-cover w-full h-full aspect-[2/1.1]"
+          >
         </figure>
       </div>
-      {% endfor %}
-    </div>
+    {% endfor %}
+  </div>
 </section>
-{% schema  %} 
-
+{% schema %}
 {
   "name": "Hero Slider",
   "settings": [
@@ -41,7 +44,8 @@
         {
           "type": "text",
           "id": "alt_text",
-          "label": "Alt Text"
+          "label": "Alt Text",
+         "default": "Vuba Magic Experience"
         }
       ]
     }
@@ -53,5 +57,4 @@
     }
   ]
 }
-
 {% endschema %}
