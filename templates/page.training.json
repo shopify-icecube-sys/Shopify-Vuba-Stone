@@ -51,7 +51,9 @@
             "day_2_content": "<p>- Completing a Vuba Stone project up to 1000 square feet</p><p>- Practical introduction to mixing and applying Vuba Stone</p><p>- Using all necessary tools and equipment</p><p>- Introduction to vertical and VubaMec applications</p><p></p>",
             "course_id": "1",
             "registration_link": "",
-            "registration_button_text": "BECOME A REGISTERED INSTALLER"
+            "registration_button_text": "BECOME A REGISTERED INSTALLER",
+            "warranty_image": "shopify://shop_images/10-year-waranty.svg",
+            "warranty_image_alt": "shopify://shop_images/10-year-waranty.svg"
           }
         },
         "course_CdxFqP": {
