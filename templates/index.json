@@ -257,7 +257,8 @@
       "type": "vuba-world-colors",
       "settings": {
         "section_title": "Vuba World Colors",
-        "section_description": "<p>Discover the world of endless possibilities with Vuba Stone’s exclusive palette of 24 </p><p>captivating colors. Our wide range of hues, meticulously curated to suit every taste and style,</p><p>allows you to transform your space into a masterpiece.</p>"
+        "section_description": "<p>Discover the world of endless possibilities with Vuba Stone’s exclusive palette of 24 </p><p>captivating colors. Our wide range of hues, meticulously curated to suit every taste and style,</p><p>allows you to transform your space into a masterpiece.</p>",
+        "text_color": "#821832"
       }
     }
   },
