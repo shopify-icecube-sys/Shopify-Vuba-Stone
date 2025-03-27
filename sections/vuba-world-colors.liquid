@@ -1,0 +1,74 @@
+<section class="vuba-color-top text-center text-sm md:text-base pt-40 3xl:pt-52 mb-14">
+  <div class="inner-container">
+    <div class="max-block 3xl:max-w-[1140px] max-w-[774px] mx-auto">
+      <div class="logo-wrap text-center mb-14">
+        {% if section.settings.logo != blank %}
+          <img
+            src="{{ section.settings.logo | image_url }}"
+            class="mx-auto max-w-[4.875em] md:max-w-[6em] lg:max-w-[9.8em]"
+            alt="{{ section.settings.logo_alt }}"
+          >
+        {% endif %}
+      </div>
+      <div class="text-box px-3 mb-8 3xl:mb-12 font-poppins">
+        {% if section.settings.section_title != blank %}
+          <h2 class="text-primary md:text-secondary text-4xl lg:text-4xl 3xl:text-[51px] font-bold mb-5 3xl:mb-8">
+            {{ section.settings.section_title }}
+          </h2>
+        {% endif %}
+        {% if section.settings.section_description != blank %}
+          <div class="text-sm md:text-base 3xl:text-2xl">
+            <p>{{ section.settings.section_description }}</p>
+          </div>
+        {% endif %}
+      </div>
+      <div class="img-box px-3">
+        {% if section.settings.image != blank %}
+          <img class="mx-auto" src="{{ section.settings.image | image_url }}" alt="Epoxy Color">
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Vuba World Colors",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo Image"
+    },
+    {
+      "type": "text",
+      "id": "logo_alt",
+      "label": "Logo Alt Text",
+      "default": "Footer Logo"
+    },
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section Title",
+      "default": "Vuba World Colors"
+    },
+    {
+      "type": "richtext",
+      "id": "section_description",
+      "label": "Section Description",
+      "default": "<p>Discover the world of endless possibilities with Vuba Stone’s exclusive palette of 24 captivating colors.</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Main Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vuba World Colors",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

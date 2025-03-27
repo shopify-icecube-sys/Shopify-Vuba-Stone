@@ -163,7 +163,7 @@
           "settings": {
             "title": "Cracking",
             "description": "If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.",
-            "icon": "shopify://shop_images/dealers-icon.svg",
+            "icon": "shopify://shop_images/doc-icon.png",
             "download_btn": "Download",
             "button_link": "shopify://collections"
           }
@@ -174,7 +174,7 @@
             "title": "Cracking",
             "description": "If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.",
             "icon": "shopify://shop_images/doc-icon.png",
-            "download_btn": "Click Here",
+            "download_btn": "Download",
             "button_link": ""
           }
         },
@@ -183,7 +183,8 @@
           "settings": {
             "title": "Cracking",
             "description": "If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.",
-            "download_btn": "Click Here",
+            "icon": "shopify://shop_images/doc-icon.png",
+            "download_btn": "Download",
             "button_link": ""
           }
         },
@@ -192,8 +193,49 @@
           "settings": {
             "title": "Cracking",
             "description": "If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.",
-            "download_btn": "Click Here",
+            "icon": "shopify://shop_images/doc-icon.png",
+            "download_btn": "Download",
             "button_link": ""
+          }
+        },
+        "technical_item_Ln7Pxr": {
+          "type": "technical_item",
+          "settings": {
+            "title": "Cracking",
+            "description": "If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.",
+            "icon": "shopify://shop_images/doc-icon.png",
+            "download_btn": "Download",
+            "button_link": "/"
+          }
+        },
+        "technical_item_hjNJp3": {
+          "type": "technical_item",
+          "settings": {
+            "title": "Cracking",
+            "description": "If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.",
+            "icon": "shopify://shop_images/doc-icon.png",
+            "download_btn": "Download",
+            "button_link": "/"
+          }
+        },
+        "technical_item_bi8whp": {
+          "type": "technical_item",
+          "settings": {
+            "title": "Cracking",
+            "description": "If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.",
+            "icon": "shopify://shop_images/doc-icon.png",
+            "download_btn": "Download",
+            "button_link": "/"
+          }
+        },
+        "technical_item_NLapHU": {
+          "type": "technical_item",
+          "settings": {
+            "title": "Cracking",
+            "description": "If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.",
+            "icon": "shopify://shop_images/doc-icon.png",
+            "download_btn": "Download",
+            "button_link": "/"
           }
         }
       },
@@ -201,7 +243,11 @@
         "technical_item_37L4a7",
         "technical_item_tDJMkY",
         "technical_item_zEEzWL",
-        "technical_item_4TXKGR"
+        "technical_item_4TXKGR",
+        "technical_item_Ln7Pxr",
+        "technical_item_hjNJp3",
+        "technical_item_bi8whp",
+        "technical_item_NLapHU"
       ],
       "settings": {
         "section_title": "Technical Advice"
