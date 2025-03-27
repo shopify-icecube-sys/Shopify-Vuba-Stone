@@ -48,7 +48,7 @@
             "course_id": "1",
             "registration_link": "",
             "registration_button_text": "BECOME A REGISTERED INSTALLER",
-            "day_1_content": "<p>Meet and greet with an introduction to Vuba Stone</p><ul><li>On-site introduction to all tools, equipment, and project preparation</li><li>Introduction to the installation process</li><li>Theory Presentation</li><li>Q&A sessions with the Vuba team and experienced Vuba Stone installers</li></ul>",
+            "day_1_content": "<p>Meet and greet with an introduction to Vuba Stone</p><ul><li>On-site introduction to all tools, equipment, and project preparation</li><li>Introduction to the installation process</li><li>Theory Presentation</li></ul><ol><li>Q&A sessions with the Vuba team and experienced Vuba Stone installers</li></ol>",
             "day_2_content": "<p>Completing a Vuba Stone project up to 1000 square feet</p><p></p>"
           }
         },
