@@ -17,9 +17,11 @@
                 <a href="mailto:{{ section.settings.email }}" class="text-primary">{{ section.settings.email }}</a>
               </li>
             {% endif %}
-            <li>
-              <a href="tel:{{ section.settings.phone }}" class="text-primary">{{ section.settings.phone }}</a>
-            </li>
+            {% if section.settings.phone != blank %}
+              <li>
+                <a href="tel:{{ section.settings.phone }}" class="text-primary">{{ section.settings.phone }}</a>
+              </li>
+            {% endif %}
           </ul>
 
           <div class="contact-logo">
