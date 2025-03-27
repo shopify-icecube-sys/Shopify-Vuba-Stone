@@ -26,11 +26,13 @@
 
           <div class="contact-logo">
             <a href="{{ section.settings.logo_link }}" class="inline-block">
-              <img
-                src="{{ section.settings.desktop_logo | image_url }}"
-                class="hidden md:block md:w-[130px] 3xl:w-[230px]"
-                alt="Logo Desktop"
-              >
+              {% if section.settings.desktop_logo != blank %}
+                <img
+                  src="{{ section.settings.desktop_logo | image_url }}"
+                  class="hidden md:block md:w-[130px] 3xl:w-[230px]"
+                  alt="Logo Desktop"
+                >
+              {% endif %}
               <img
                 src="{{ section.settings.mobile_logo | image_url }}"
                 class="md:hidden inline-block w-10"
