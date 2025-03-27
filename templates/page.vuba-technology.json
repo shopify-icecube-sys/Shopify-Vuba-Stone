@@ -26,10 +26,18 @@
             "image": "shopify://shop_images/slide-magic1-min.png",
             "alt_text": "Default Vuba Magic Slide"
           }
+        },
+        "slide_xaQDGL": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/epoxy-vuba-1.jpg",
+            "alt_text": "Vuba Magic Experience"
+          }
         }
       },
       "block_order": [
-        "slide_izm8pr"
+        "slide_izm8pr",
+        "slide_xaQDGL"
       ],
       "settings": {
         "title": "Experience the magic of Vusion technology!"
