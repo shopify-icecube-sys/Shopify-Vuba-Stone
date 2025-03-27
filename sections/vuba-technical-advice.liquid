@@ -1,8 +1,10 @@
 <section class="technical-advice pt-40 3xl:pt-52 pb-14 3xl:pb-32">
   <div class="container">
-    <h2 class="text-4xl 2xl:text-[51px] text-secondary font-medium mb-8 3xl:mb-14">
-      {{ section.settings.section_title }}
-    </h2>
+    {% if section.settings.section_title != blank %}
+      <h2 class="text-4xl 2xl:text-[51px] text-secondary font-medium mb-8 3xl:mb-14">
+        {{ section.settings.section_title }}
+      </h2>
+    {% endif %}
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
       {% for block in section.blocks %}
         <div
