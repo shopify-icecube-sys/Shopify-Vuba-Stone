@@ -262,6 +262,15 @@
         "section_description": "<p>Discover the world of endless possibilities with Vuba Stone’s exclusive palette of 24 captivating colors.</p>",
         "image": "shopify://shop_images/epoxy-cons.png"
       }
+    },
+    "vuba_distribution_hub_a3nAJU": {
+      "type": "vuba-distribution-hub",
+      "settings": {
+        "heading": "Distribution hub in <br> The North of the UK",
+        "description": "<p>Experience the magic of Vusion technology!</p>",
+        "quote": "<p>“The best tool for selling a job is to let the customer see what can be done beforehand. Vusion takes away the guesswork and allows customers to see the future. Amazing!”</p>",
+        "author": "George Child, New Look Surfacing"
+      }
     }
   },
   "order": [
@@ -275,6 +284,7 @@
     "vuba_stampede_XhMWq3",
     "vuba_benefit_PdaBJM",
     "vuba_technical_advice_zHMBhh",
-    "vuba_world_colors_GeamGU"
+    "vuba_world_colors_GeamGU",
+    "vuba_distribution_hub_a3nAJU"
   ]
 }
