@@ -162,7 +162,8 @@
           "type": "technical_item",
           "settings": {
             "title": "Cracking",
-            "description": "If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project."
+            "description": "If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.",
+            "icon": "shopify://shop_images/dealers-icon.svg"
           }
         },
         "technical_item_tDJMkY": {
