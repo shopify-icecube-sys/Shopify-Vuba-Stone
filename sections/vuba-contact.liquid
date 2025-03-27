@@ -47,9 +47,11 @@
       </div>
 
       <div class="col-right">
-        <div class="max-w-3xl mr-0 ml-auto bg-gray rounded-3xl overflow-hidden">
-          <img class="w-full" src="{{ section.settings.contact_image | image_url }}" alt="Contact Form">
-        </div>
+        {% if section.settings.contact_image != blank %}
+          <div class="max-w-3xl mr-0 ml-auto bg-gray rounded-3xl overflow-hidden">
+            <img class="w-full" src="{{ section.settings.contact_image | image_url }}" alt="Contact Form">
+          </div>
+        {% endif %}
       </div>
     </div>
   </div>
