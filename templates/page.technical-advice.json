@@ -16,16 +16,9 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
-    },
-    "vuba_technical_advice_V4MFGJ": {
-      "type": "vuba-technical-advice",
-      "settings": {
-        "section_title": "Technical Advice"
-      }
     }
   },
   "order": [
-    "main",
-    "vuba_technical_advice_V4MFGJ"
+    "main"
   ]
 }
