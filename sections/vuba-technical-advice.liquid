@@ -32,7 +32,7 @@
 
           <a
             {% if block.settings.button_link != blank %}
-              href="{{ block.settings.button_link }}"
+              href="{{ block.settings.button_link | default: '#' }}"
             {% endif %}
             class="font-medium underline flex justify-between md:justify-center items-center mt-4 3xl:mt-12 gap-x-3"
           >
