@@ -17,10 +17,6 @@
           </h2>
         {% endif %}
 
-        {% if section.settings.description != blank %}
-          <p>{{ section.settings.description }}</p>
-        {% endif %}
-
         {% if section.settings.quote != blank %}
           <blockquote>
             {{ section.settings.quote }}
@@ -55,12 +51,6 @@
             "id": "heading2",
             "label": "Heading",
             "default": "Distribution Hub"
-        },
-        {
-            "type": "richtext",
-            "id": "description",
-            "label": "Description",
-            "default": "<p>Experience the magic of Vusion technology!</p>"
         },
         {
             "type": "richtext",
