@@ -1,20 +1,21 @@
 <section class="our-training-cources">
   <div class="pt-44 pb-14 md:py-14 3xl:py-16 text-sm 2xl:text-base 3xl:text-2xl text-center max-w-5xl mx-auto px-4">
     <h2 class="text-primary text-4xl 3xl:text-[51px] font-bold mb-6 3xl:mb-14">{{ section.settings.section_title }}</h2>
-    <p>{{ section.settings.section_description }}</p>
+    <div>{{ section.settings.section_description }}</div>
   </div>
 
   {% for block in section.blocks %}
     <div
       class="training-cources-{{ block.settings.course_id }} py-36 3xl:py-40 relative w-full min-h-screen bg-fixed bg-center bg-cover before:content-[''] before:w-full before:h-full before:top-0 before:left-0 before:absolute before:bg-black before:opacity-50"
       style="background-image: url('{{ block.settings.background_image | img_url: 'master' }}');"
+      {{ block.shopify_attributes }}
     >
       <div class="container">
         <div class="relative">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div class="text-white text-sm xl:text-lg md:max-w-lg">
               <h2 class="text-4xl 3xl:text-5xl font-bold mb-8 md:mb-5 3xl:mb-8">{{ block.settings.course_title }}</h2>
-              <p>{{ block.settings.course_description }}</p>
+              <div>{{ block.settings.course_description }}</p>
 
               <div class="mt-5 text-sm">
                 <h3 class="font-bold xl:text-lg mb-3">{{ block.settings.heading_one }}</h3>
