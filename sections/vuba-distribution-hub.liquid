@@ -10,6 +10,10 @@
         {% if section.settings.heading != blank %}
           <h2 class="text-2xl xl:text-4xl 3xl:text-[58px] font-medium xl:leading-[1.2] inline-block">
             {{ section.settings.heading }}
+            {% if section.settings.heading != blank %}
+              <br>
+              {{ section.settings.heading2 }}
+            {% endif %}
           </h2>
         {% endif %}
 
@@ -43,6 +47,12 @@
         {
             "type": "text",
             "id": "heading",
+            "label": "Heading",
+            "default": "Distribution Hub"
+        },
+         {
+            "type": "text",
+            "id": "heading2",
             "label": "Heading",
             "default": "Distribution Hub"
         },
