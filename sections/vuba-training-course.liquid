@@ -1,6 +1,10 @@
 <section class="our-training-cources">
   <div class="pt-44 pb-14 md:py-14 3xl:py-16 text-sm 2xl:text-base 3xl:text-2xl text-center max-w-5xl mx-auto px-4">
-    <h2 class="text-primary text-4xl 3xl:text-[51px] font-bold mb-6 3xl:mb-14">{{ section.settings.section_title }}</h2>
+    {% if section.settings.section_title != blank %}
+      <h2 class="text-primary text-4xl 3xl:text-[51px] font-bold mb-6 3xl:mb-14">
+        {{ section.settings.section_title }}
+      </h2>
+    {% endif %}
     <div>{{ section.settings.section_description }}</div>
   </div>
 
