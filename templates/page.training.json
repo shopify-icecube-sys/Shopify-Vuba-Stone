@@ -42,14 +42,14 @@
           "settings": {
             "course_title": "2 Day Training Course",
             "heading_one": "Day 1",
+            "day_1_content": "<p>-     Meet and greet with an introduction to Vuba Stone</p><p>-   On-site introduction to all tools, equipment, and project preparation</p><p>-  Introduction to the installation process</p><p>-  Theory Presentation</p><p>- Q&A sessions with the Vuba team and experienced Vuba Stone installers</p>",
             "heading_two": "Day 2",
+            "day_2_content": "<p>- Completing a Vuba Stone project up to 1000 square feet</p><p>- Practical introduction to mixing and applying Vuba Stone</p><p>- Using all necessary tools and equipment</p><p>- Introduction to vertical and VubaMec applications</p><p></p>",
             "course_description": "<p>The courses are 2 days long and include a presentation and on-site training learning about the preparation of the base and Vuba Stone application.</p>",
             "background_image": "shopify://shop_images/training-cource-1.jpg",
             "course_id": "1",
             "registration_link": "",
-            "registration_button_text": "BECOME A REGISTERED INSTALLER",
-            "day_1_content": "<p>Meet and greet with an introduction to Vuba Stone</p><ul><li>On-site introduction to all tools, equipment, and project preparation</li><li>Introduction to the installation process</li><li>Theory Presentation</li></ul><ol><li>Q&A sessions with the Vuba team and experienced Vuba Stone installers</li></ol>",
-            "day_2_content": "<p>Completing a Vuba Stone project up to 1000 square feet</p><p></p>"
+            "registration_button_text": "BECOME A REGISTERED INSTALLER"
           }
         },
         "course_CdxFqP": {
@@ -57,14 +57,14 @@
           "settings": {
             "course_title": "1-1 Training",
             "heading_one": "",
+            "day_1_content": "<p>The 1-1 training is offered to the installer when they have sold between 3-5 projects and a member of the technical and training team fly’s over to their location and helps them install during an intense training week.</p><p>- During this training they cover base preparation, training the team, handing over the project to the client, borders and features, optional Vuba Mac and VubaVert if the customer has sold them.</p><p>- The cost varies based on how many jobs sold, days the technical team are there, flight and hotel costs etc. We would like them to fill in a form about 1-1 training so we can have a video call about costs and scheduling this with the team.</p>",
             "heading_two": "",
+            "day_2_content": "",
             "course_description": "<p>2 day training must be completed prior</p><p>To registering for this training</p>",
             "background_image": "shopify://shop_images/banner-d.jpg",
             "course_id": "1",
             "registration_link": "",
-            "registration_button_text": "BECOME A REGISTERED INSTALLER",
-            "day_1_content": "<p>Meet and greet with an introduction to Vuba Stone</p><ul><li>On-site introduction to all tools, equipment, and project preparation</li><li>Introduction to the installation process</li><li>Theory Presentation</li><li>Q&A sessions with the Vuba team and experienced Vuba Stone installers</li></ul>",
-            "day_2_content": "<p>Completing a Vuba Stone project up to 1000 square feet</p><p></p>"
+            "registration_button_text": "BECOME A REGISTERED INSTALLER"
           }
         }
       },
@@ -74,7 +74,7 @@
       ],
       "settings": {
         "section_title": "Our training courses",
-        "section_description": "<p>We are the preferred surface for household names, big brands and homeowners worldwide. Proudly BBA certified, a testament to our quality and excellence.</p>"
+        "section_description": "<p>We are the preferred surface for household names, big brands and homeowners worldwide. </p><p>Proudly BBA certified, a testament to our quality and excellence.</p>"
       }
     },
     "vuba_latest_project_djTy4n": {
