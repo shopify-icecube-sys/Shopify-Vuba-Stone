@@ -12,9 +12,11 @@
         {% endif %}
         <div class="flex md:block justify-between items-center mt-5">
           <ul class="text-xl 3xl:text-[29px] font-bold md:mb-8 leading-[1.5]">
-            <li>
-              <a href="mailto:{{ section.settings.email }}" class="text-primary">{{ section.settings.email }}</a>
-            </li>
+            {% if section.settings.email != blank %}
+              <li>
+                <a href="mailto:{{ section.settings.email }}" class="text-primary">{{ section.settings.email }}</a>
+              </li>
+            {% endif %}
             <li>
               <a href="tel:{{ section.settings.phone }}" class="text-primary">{{ section.settings.phone }}</a>
             </li>
