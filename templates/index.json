@@ -30,14 +30,21 @@
       "type": "vuba-richtext",
       "settings": {
         "title": "This is Vuba Stone",
-        "richtext": "<p>We are preferred surface for household names, big brands and homeowners worldwide. Proudly BBA certified, a testament to our quality and excellence.</p>"
+        "richtext": "<p>We are preferred surface for household names, big brands and homeowners worldwide. </p><p>Proudly BBA certified, a testament to our quality and excellence.</p>"
+      }
+    },
+    "vuba_stone_update_ejAbT4": {
+      "type": "vuba-stone-update",
+      "settings": {
+        "section_heading": "Vuba Stone Updates",
+        "blog_handle": "news"
       }
     },
     "vuba_mac_section_one_y7KRnV": {
       "type": "vuba-mac-section-one",
       "settings": {
         "title": "Vuba Mac",
-        "description": "<p>We would like a section dedicated to VubaMac and how it is the first permeable base specifically designed for Resin Bound surfacing.</p>",
+        "description": "<p>We would like a section dedicated to VubaMac and how it is the first permeable base</p><p> specifically designed for Resin Bound surfacing.</p><p>- We offer a 10 year warranty on VubaMac.<br/>- Video of VubaMac been installed.</p>",
         "desktop_image": "shopify://shop_images/VubaMacAggregate.png"
       }
     },
@@ -78,23 +85,16 @@
         "heading": "Join the Stampede!",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       }
-    },
-    "vuba_stone_update_ejAbT4": {
-      "type": "vuba-stone-update",
-      "settings": {
-        "section_heading": "Vuba Stone Updates",
-        "blog_handle": "news"
-      }
     }
   },
   "order": [
     "vuba_banner_image_kFLjhb",
     "vuba_richtext_6J9PEW",
+    "vuba_stone_update_ejAbT4",
     "vuba_mac_section_one_y7KRnV",
     "vuba_mac_section_two_6aJYrG",
     "vuba_headline_zqWMqq",
     "vuba_installer_FFY7En",
-    "vuba_stampede_XhMWq3",
-    "vuba_stone_update_ejAbT4"
+    "vuba_stampede_XhMWq3"
   ]
 }
