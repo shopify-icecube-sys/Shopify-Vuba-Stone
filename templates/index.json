@@ -65,16 +65,6 @@
         "blog_handle": "news"
       }
     },
-    "vuba_headline_zqWMqq": {
-      "type": "vuba-headline",
-      "settings": {
-        "headline_image": "shopify://shop_images/Headline-Click-through.jpg",
-        "headline_text": "Headline & Click Throughs",
-        "subheading_text": "We are the preferred surface for household names, big brands and homeowners worldwide.",
-        "button_text": "GO TO INSTALLER",
-        "button_link": "shopify://collections"
-      }
-    },
     "vuba_installer_FFY7En": {
       "type": "vuba-installer",
       "settings": {
@@ -92,6 +82,37 @@
         "heading": "Join the Stampede!",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       }
+    },
+    "vuba_headline_zqWMqq": {
+      "type": "vuba-headline",
+      "settings": {
+        "headline_image": "shopify://shop_images/Headline-Click-through.jpg",
+        "headline_text": "Headline & Click Throughs",
+        "subheading_text": "We are the preferred surface for household names, big brands and homeowners worldwide.",
+        "button_text": "GO TO INSTALLER",
+        "button_link": "shopify://collections"
+      }
+    },
+    "vuba_epoxy_stone_eWXmKp": {
+      "type": "vuba-epoxy-stone",
+      "settings": {
+        "title_part1": "Epoxy",
+        "title_part2": "Vuba Stone",
+        "epoxy_image": "shopify://shop_images/epoxy-vuba-1.jpg",
+        "epoxy_image_alt": "Epoxy Driveway",
+        "epoxy_icon": "shopify://shop_images/epoxy-cons.png",
+        "epoxy_icon_alt": "Epoxy Sample",
+        "epoxy_title": "Epoxy cons",
+        "epoxy_description": "<p>Can Vuba Stone be installed in cold and hot climates? We would like to show we offer a 5-year warranty on Vuba Stone and 10 years on VubaMac</p>",
+        "vuba_image": "shopify://shop_images/epoxy-vuba-2.jpg",
+        "vuba_image_alt": "Vuba Stone Poolside",
+        "vuba_icon": "shopify://shop_images/stone-pros.png",
+        "vuba_icon_alt": "Stone Pros",
+        "vuba_title": "Vuba Stone pros",
+        "vuba_description": "<p>Can Vuba Stone be installed in cold and hot climates? We would like to show we offer a 5-year warranty on Vuba Stone and 10 years on VubaMac</p>",
+        "button_text": "GO TO INSTALLER",
+        "button_link": ""
+      }
     }
   },
   "order": [
@@ -103,6 +124,7 @@
     "vuba_latest_project_EzJDYY",
     "vuba_installer_FFY7En",
     "vuba_stampede_XhMWq3",
-    "vuba_headline_zqWMqq"
+    "vuba_headline_zqWMqq",
+    "vuba_epoxy_stone_eWXmKp"
   ]
 }
