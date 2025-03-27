@@ -16,9 +16,17 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "vuba_world_colors_two_C6fFJp": {
+      "type": "vuba-world-colors-two",
+      "settings": {
+        "heading": "Vuba World Colors",
+        "description": "<p>Discover the world of endless possibilities with Vuba Stone’s exclusive palette of 24 </p><p>captivating colors. Our wide range of hues, meticulously curated to suit every taste and style, </p><p>allows you to transform your space into a masterpiece.</p>"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "vuba_world_colors_two_C6fFJp"
   ]
 }
