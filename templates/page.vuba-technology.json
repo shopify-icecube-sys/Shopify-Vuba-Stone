@@ -42,10 +42,23 @@
       "settings": {
         "title": "Experience the magic of Vusion technology!"
       }
+    },
+    "vuba_vusion_HXBYXe": {
+      "type": "vuba-vusion",
+      "settings": {
+        "logo": "shopify://shop_images/download.png",
+        "heading": "Experience the magic of Vusion technology!",
+        "heading2": "",
+        "description": "<p>Experience the magic of Vusion technology! “The best tool for selling a job is to let the customer see what can be done beforehand. Vusion takes away the guesswork and allows customers to see the future. Amazing!”</p>",
+        "author": "George Child, New Look Surfacing",
+        "button_text": "Download Guide",
+        "button_link": "/"
+      }
     }
   },
   "order": [
     "main",
-    "vuba_magic_experience_dX8D9x"
+    "vuba_magic_experience_dX8D9x",
+    "vuba_vusion_HXBYXe"
   ]
 }
