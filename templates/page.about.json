@@ -40,11 +40,103 @@
         "title": "",
         "richtext": "<p>We are preferred surface for household names, big brands and homeowners worldwide.</p><p>Proudly BBA certified, a testament to our quality and excellence.</p>"
       }
+    },
+    "vuba_teams_Uiw86R": {
+      "type": "vuba-teams",
+      "blocks": {
+        "team_member_t9UmB3": {
+          "type": "team_member",
+          "settings": {
+            "team_member_name": "Name, Surname",
+            "team_member_company": "Company",
+            "team_member_image": "shopify://shop_images/technical-1.jpg",
+            "team_member_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum"
+          }
+        },
+        "team_member_rYLxyG": {
+          "type": "team_member",
+          "settings": {
+            "team_member_name": "Name, Surname",
+            "team_member_company": "Company",
+            "team_member_image": "shopify://shop_images/technical-1.jpg",
+            "team_member_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum"
+          }
+        },
+        "team_member_NLKFtG": {
+          "type": "team_member",
+          "settings": {
+            "team_member_name": "Name, Surname",
+            "team_member_company": "Company",
+            "team_member_image": "shopify://shop_images/technical-1.jpg",
+            "team_member_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum"
+          }
+        },
+        "team_member_gHbKCg": {
+          "type": "team_member",
+          "settings": {
+            "team_member_name": "Name, Surname",
+            "team_member_company": "Company",
+            "team_member_image": "shopify://shop_images/technical-1.jpg",
+            "team_member_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum"
+          }
+        },
+        "team_member_YwynTx": {
+          "type": "team_member",
+          "settings": {
+            "team_member_name": "Name, Surname",
+            "team_member_company": "Company",
+            "team_member_image": "shopify://shop_images/technical-1.jpg",
+            "team_member_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum"
+          }
+        },
+        "team_member_KkVRhk": {
+          "type": "team_member",
+          "settings": {
+            "team_member_name": "Name, Surname",
+            "team_member_company": "Company",
+            "team_member_image": "shopify://shop_images/technical-1.jpg",
+            "team_member_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum"
+          }
+        },
+        "team_member_UtWErm": {
+          "type": "team_member",
+          "settings": {
+            "team_member_name": "Name, Surname",
+            "team_member_company": "Company",
+            "team_member_image": "shopify://shop_images/technical-1.jpg",
+            "team_member_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum"
+          }
+        },
+        "team_member_3xEXHY": {
+          "type": "team_member",
+          "settings": {
+            "team_member_name": "Name, Surname",
+            "team_member_company": "Company",
+            "team_member_image": "shopify://shop_images/technical-1.jpg",
+            "team_member_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum"
+          }
+        }
+      },
+      "block_order": [
+        "team_member_t9UmB3",
+        "team_member_rYLxyG",
+        "team_member_NLKFtG",
+        "team_member_gHbKCg",
+        "team_member_YwynTx",
+        "team_member_KkVRhk",
+        "team_member_UtWErm",
+        "team_member_3xEXHY"
+      ],
+      "settings": {
+        "section_title": "Technical and Training Team",
+        "section_description": ""
+      }
     }
   },
   "order": [
     "main",
     "vuba_banner_image_wqtQtY",
-    "vuba_richtext_NEgFBD"
+    "vuba_richtext_NEgFBD",
+    "vuba_teams_Uiw86R"
   ]
 }
