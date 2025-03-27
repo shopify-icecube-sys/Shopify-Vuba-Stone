@@ -37,16 +37,6 @@
         </div>
       {% endfor %}
     </div>
-    {% if section.settings.button_text != blank and section.settings.button_link != blank %}
-      <div class="btn-wrap text-center mt-10">
-        <a
-          class="bg-primary text-white px-8 py-[15px] text-sm font-bold uppercase hover:bg-secondar inline-block rounded-lg"
-          href="{{ section.settings.button_link }}"
-        >
-          {{ section.settings.button_text }}
-        </a>
-      </div>
-    {% endif %}
   </div>
 </section>
 
@@ -83,17 +73,6 @@
           "id": "icon",
           "label": "Item Icon"
         },
-        {
-      "type": "text",
-      "id": "button_text",
-      "label": "Button Text",
-      "default": "View More"
-    },
-    {
-      "type": "url",
-      "id": "button_link",
-      "label": "Button Link"
-    },
         {
           "type": "url",
           "id": "download_link",
