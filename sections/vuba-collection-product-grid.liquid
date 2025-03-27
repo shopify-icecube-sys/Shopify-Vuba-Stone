@@ -4,45 +4,72 @@
       {% if section.settings.product_collection != blank %}
         {% assign collection = collections[section.settings.product_collection] %}
         {% if collection.products.size > 0 %}
-          {% for product in collection.products %}
-            <div class="item bg-gray rounded-2xl py-12 px-10 md:px-5 xl:px-10 text-center h-full flex flex-wrap flex-col">
-              <div class="mx-auto rounded-full overflow-hidden mb-7">
-                <img
-                  src="{{ product.featured_image | img_url: '500x500' }}"
-                  alt="{{ product.title }}"
-                  class="w-full h-full object-cover"
+          {% paginate collection.products by 10 %}
+            {% for product in collection.products %}
+              <div class="item bg-gray rounded-2xl py-12 px-10 md:px-5 xl:px-10 text-center h-full flex flex-wrap flex-col">
+                <div class="mx-auto rounded-full overflow-hidden mb-7">
+                  <img
+                    src="{{ product.featured_image | img_url: '500x500' }}"
+                    alt="{{ product.title }}"
+                    class="w-full h-full object-cover"
+                  >
+                </div>
+                <span class="text-sm 3xl:text-xl text-primary mt-2">
+                  {% if product.tags.size > 0 %}
+                    {{ product.tags | first }}
+                  {% else %}
+                    No Tag
+                  {% endif %}
+                </span>
+                <h3 class="text-2xl 3xl:text-3xl font-medium my-3">{{ product.title }}</h3>
+                <a
+                  href="{{ product.url }}"
+                  class="text-sm 3xl:text-xl xl:my-3 inline-block font-medium underline hover:text-primary"
+                  >View product</a
                 >
               </div>
-              <span class="text-sm 3xl:text-xl text-primary mt-2">
-                {% if product.tags.size > 0 %}
-                  {{ product.tags | first }}
-                {% else %}
-                  No Tag
+            {% endfor %}
+
+            <div class="mt-8 3xl:mt-10 text-center hidden md:block">
+              {% if section.settings.product_collection != blank %}
+                {% if paginate.pages > 1 %}
+                  <nav class="pagination">
+                    {% if paginate.previous %}
+                      <a
+                        href="{{ paginate.previous.url }}"
+                        class="px-4 py-2 bg-primary text-white rounded hover:bg-secondary"
+                        >Previous</a
+                      >
+                    {% endif %}
+                    {% for part in paginate.parts %}
+                      {% if part.is_link %}
+                        <a
+                          href="{{ part.url }}"
+                          class="px-4 py-2 bg-gray-200 text-gray-700 rounded hover:bg-primary hover:text-white"
+                        >
+                          {{- part.title -}}
+                        </a>
+                      {% else %}
+                        <span class="px-4 py-2 bg-primary text-white rounded">{{ part.title }}</span>
+                      {% endif %}
+                    {% endfor %}
+                    {% if paginate.next %}
+                      <a
+                        href="{{ paginate.next.url }}"
+                        class="px-4 py-2 bg-primary text-white rounded hover:bg-secondary"
+                        >Next</a
+                      >
+                    {% endif %}
+                  </nav>
                 {% endif %}
-              </span>
-              <h3 class="text-2xl 3xl:text-3xl font-medium my-3">{{ product.title }}</h3>
-              <a
-                href="{{ product.url }}"
-                class="text-sm 3xl:text-xl xl:my-3 inline-block font-medium underline hover:text-primary"
-                >View product</a
-              >
+              {% endif %}
             </div>
-          {% endfor %}
+          {% endpaginate %}
         {% else %}
           <p class="text-center text-gray-500">No products found in this collection.</p>
         {% endif %}
       {% else %}
         <p class="text-center text-gray-500">Please select a collection in the theme editor.</p>
-      {% endif %}
-    </div>
-    <div class="mt-8 3xl:mt-10 text-center block md:hidden">
-      {% if section.settings.product_collection != blank %}
-        <a
-          href="/collections/{{ section.settings.product_collection }}"
-          class="text-sm 3xl:text-base tracking-widest inline-block bg-primary hover:bg-secondary text-white hover:text-white px-7 py-4 rounded-xl font-bold"
-        >
-          VIEW MORE
-        </a>
       {% endif %}
     </div>
   </div>
