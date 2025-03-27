@@ -23,14 +23,44 @@
         "logo_alt": "Footer Logo",
         "section_title": "Vuba World Colors",
         "section_description": "<p>Discover the world of endless possibilities with Vuba Stone’s exclusive palette of 24</p><p>captivating colors. Our wide range of hues, meticulously curated to suit every taste and style, </p><p>allows you to transform your space into a masterpiece.</p>",
-        "image": "shopify://shop_images/epoxy-cons.png",
-        "image_alt": "Epoxy Colors",
-        "text_color": "text-primary"
+        "image": "shopify://shop_images/epoxy-cons.png"
+      }
+    },
+    "vuba_clor_bottom_cPXydP": {
+      "type": "vuba-clor-bottom",
+      "blocks": {
+        "product_6kEkJq": {
+          "type": "product",
+          "settings": {
+            "image": "shopify://shop_images/epoxy-cons.png",
+            "size": "2-5mm",
+            "title": "Ivory Marble",
+            "product_url": "shopify://collections/all"
+          }
+        },
+        "product_z4RXWz": {
+          "type": "product",
+          "settings": {
+            "image": "shopify://shop_images/epoxy-cons.png",
+            "size": "2-5mm",
+            "title": "Ivory Marble",
+            "product_url": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "product_6kEkJq",
+        "product_z4RXWz"
+      ],
+      "settings": {
+        "view_more_url": "",
+        "view_more_text": "VIEW MORE"
       }
     }
   },
   "order": [
     "main",
-    "vuba_world_colors_VmCREt"
+    "vuba_world_colors_VmCREt",
+    "vuba_clor_bottom_cPXydP"
   ]
 }
