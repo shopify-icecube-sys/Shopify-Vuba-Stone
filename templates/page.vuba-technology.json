@@ -16,9 +16,28 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "vuba_magic_experience_dX8D9x": {
+      "type": "vuba-magic-experience",
+      "blocks": {
+        "slide_izm8pr": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/slide-magic1-min.png",
+            "alt_text": "Default Vuba Magic Slide"
+          }
+        }
+      },
+      "block_order": [
+        "slide_izm8pr"
+      ],
+      "settings": {
+        "title": "Experience the magic of Vusion technology!"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "vuba_magic_experience_dX8D9x"
   ]
 }
