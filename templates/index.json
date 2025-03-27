@@ -280,32 +280,32 @@
           "type": "distributor",
           "settings": {
             "icon": "shopify://shop_images/distributor-icon-1.png",
-            "text": "We extract the finest stone sustainably."
+            "text": "<p>We extract the finest stone sustainably.</p>"
           }
         },
         "distributor_NraEME": {
           "type": "distributor",
           "settings": {
             "icon": "shopify://shop_images/distributor-icon-2.png",
-            "text": "We extract the finest stone sustainably."
+            "text": "<p><strong>12 million tonnes</strong></p><p><strong>TransportedSustainably.</strong></p>"
           }
         },
         "distributor_VBDXWJ": {
           "type": "distributor",
           "settings": {
-            "text": "We extract the finest stone sustainably."
+            "text": "<p>We extract the finest stone sustainably.</p>"
           }
         },
         "distributor_RDLiRN": {
           "type": "distributor",
           "settings": {
-            "text": "We extract the finest stone sustainably."
+            "text": "<p>We extract the finest stone sustainably.</p>"
           }
         },
         "distributor_L8fxjU": {
           "type": "distributor",
           "settings": {
-            "text": "We extract the finest stone sustainably."
+            "text": "<p>We extract the finest stone sustainably.</p>"
           }
         }
       },
