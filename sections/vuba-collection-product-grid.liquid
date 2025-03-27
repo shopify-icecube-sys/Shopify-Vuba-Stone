@@ -15,7 +15,7 @@
               </div>
               <span class="text-sm 3xl:text-xl text-primary mt-2">
                 {% if product.tags.size > 0 %}
-                  {{ product.tags | first }}
+                  {{ product.tags[1] | first }}
                 {% else %}
                   No Tag
                 {% endif %}
