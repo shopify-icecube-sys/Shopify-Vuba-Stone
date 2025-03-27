@@ -1,0 +1,57 @@
+<section class="vuba-color-bottom pb-14 3xl:pb-28">
+    <div class="container">
+        <div class="vuba-world-bleds-slider grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-x-3 gap-y-3.5">
+            {% if settings.product_collection != blank %}
+                {% assign collection = collections[settings.product_collection] %}
+                {% if collection.products.size > 0 %}
+                    {% for product in collection.products %}
+                    <div class="item bg-gray rounded-2xl py-12 px-10 md:px-5 xl:px-10 text-center h-full flex flex-wrap flex-col">
+                        <div class="mx-auto rounded-full overflow-hidden mb-7">
+                            <img src="{{ product.featured_image | img_url: '500x500' }}" alt="{{ product.title }}" class="w-full h-full object-cover">
+                        </div>
+                        <span class="text-sm 3xl:text-xl text-primary mt-2">
+                            {% if product.tags.size > 0 %}
+                                {{ product.tags | first }}
+                            {% else %}
+                                No Tag
+                            {% endif %}
+                        </span>
+                        <h3 class="text-2xl 3xl:text-3xl font-medium my-3">{{ product.title }}</h3>
+                        <a href="{{ product.url }}" class="text-sm 3xl:text-xl xl:my-3 inline-block font-medium underline hover:text-primary">View product</a>
+                    </div>
+                    {% endfor %}
+                {% else %}
+                    <p class="text-center text-gray-500">No products found in this collection.</p>
+                {% endif %}
+            {% else %}
+                <p class="text-center text-gray-500">Please select a collection in the theme editor.</p>
+            {% endif %}
+        </div>
+        <div class="mt-8 3xl:mt-10 text-center block md:hidden">
+            {% if settings.product_collection != blank %}
+                <a href="/collections/{{ settings.product_collection }}" class="text-sm 3xl:text-base tracking-widest inline-block bg-primary hover:bg-secondary text-white hover:text-white px-7 py-4 rounded-xl font-bold">
+                    VIEW MORE
+                </a>
+            {% endif %}
+        </div>
+    </div>
+</section>
+{% schema %}
+    {
+        "name": "Vuba Product Section",
+        "settings": [
+        {
+            "type": "collection",
+            "id": "product_collection",
+            "label": "Product Collection",
+            "default": ""
+        }
+        ],
+        "presets": [
+        {
+            "name": "Vuba Product Grid Section",
+            "category": "Products"
+        }
+        ]
+    }
+    {% endschema %}
