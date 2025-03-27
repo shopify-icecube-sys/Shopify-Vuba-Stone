@@ -24,7 +24,7 @@
           <p>{{ block.settings.description }}</p>
           {% if block.settings.download_link != blank %}
             <a
-              href="{{ block.settings.download_link }}"
+              href="#"
               class="font-medium underline flex justify-between md:justify-center items-center mt-4 3xl:mt-12 gap-x-3"
             >
               Download
@@ -72,11 +72,6 @@
           "type": "image_picker",
           "id": "icon",
           "label": "Item Icon"
-        },
-        {
-          "type": "url",
-          "id": "download_link",
-          "label": "Download Link"
         }
       ]
     }
