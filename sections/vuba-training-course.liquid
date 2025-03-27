@@ -22,7 +22,9 @@
         <div class="relative">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div class="text-white text-sm xl:text-lg md:max-w-lg">
-              <h2 class="text-4xl 3xl:text-5xl font-bold mb-8 md:mb-5 3xl:mb-8">{{ block.settings.course_title }}</h2>
+              {% if block.settings.course_title != blank %}
+                <h2 class="text-4xl 3xl:text-5xl font-bold mb-8 md:mb-5 3xl:mb-8">{{ block.settings.course_title }}</h2>
+              {% endif %}
               {% if block.settings.course_desc_one != blank %}
                 <div class="text-sm xl:text-xl font-bold space-y-1 mb-6">
                   <span class="inline-block bg-primary px-4">{{ block.settings.course_desc_one }}</span>
