@@ -17,6 +17,19 @@
         "padding_bottom": 28
       }
     },
+    "vuba_contact_cjYCgP": {
+      "type": "vuba-contact",
+      "settings": {
+        "heading": "Contact Us Today",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum augue quis congue. Nullam cursus lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "email": "sales@vuba-stone.com",
+        "phone": "01482 778897",
+        "logo_link": "/",
+        "desktop_logo": "shopify://shop_images/footer-logo-m.svg",
+        "mobile_logo": "shopify://shop_images/footer-logo-m.svg",
+        "contact_image": "shopify://shop_images/register-installer-form.jpg"
+      }
+    },
     "vuba_latest_project_4neBBT": {
       "type": "vuba-latest-project",
       "settings": {
@@ -27,6 +40,7 @@
   },
   "order": [
     "main",
+    "vuba_contact_cjYCgP",
     "vuba_latest_project_4neBBT"
   ]
 }
