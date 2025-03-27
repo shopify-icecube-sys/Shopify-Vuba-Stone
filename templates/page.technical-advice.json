@@ -16,9 +16,64 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "vuba_technical_advice_B6kdaW": {
+      "type": "vuba-technical-advice",
+      "blocks": {
+        "technical_item_QLeqHb": {
+          "type": "technical_item",
+          "settings": {
+            "title": "Cracking",
+            "description": "If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.",
+            "icon": "shopify://shop_images/doc-icon.png",
+            "download_btn": "Download",
+            "button_link": "/"
+          }
+        },
+        "technical_item_JYQb4B": {
+          "type": "technical_item",
+          "settings": {
+            "title": "Cracking",
+            "description": "If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.",
+            "icon": "shopify://shop_images/doc-icon.png",
+            "download_btn": "Download",
+            "button_link": "/"
+          }
+        },
+        "technical_item_DBaRqK": {
+          "type": "technical_item",
+          "settings": {
+            "title": "Cracking",
+            "description": "If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.",
+            "icon": "shopify://shop_images/doc-icon.png",
+            "download_btn": "Download",
+            "button_link": "/"
+          }
+        },
+        "technical_item_Grzg9w": {
+          "type": "technical_item",
+          "settings": {
+            "title": "Cracking",
+            "description": "If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.",
+            "icon": "shopify://shop_images/doc-icon.png",
+            "download_btn": "Download",
+            "button_link": "/"
+          }
+        }
+      },
+      "block_order": [
+        "technical_item_QLeqHb",
+        "technical_item_JYQb4B",
+        "technical_item_DBaRqK",
+        "technical_item_Grzg9w"
+      ],
+      "settings": {
+        "section_title": "Technical Advice"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "vuba_technical_advice_B6kdaW"
   ]
 }
