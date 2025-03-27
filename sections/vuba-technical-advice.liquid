@@ -1,0 +1,108 @@
+<section class="technical-advice pt-40 3xl:pt-52 pb-14 3xl:pb-32">
+  <div class="container">
+    <h2 class="text-4xl 2xl:text-[51px] text-secondary font-medium mb-8 3xl:mb-14">
+      {{ section.settings.section_title }}
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {% for block in section.blocks %}
+        <div
+          class="border-[3px] border-secondary p-6 2xl:p-10 rounded-[20px] bg-white text-sm 3xl:text-xl"
+          {{ block.shopify_attributes }}
+        >
+          <div class="flex justify-start mb-5 3xl:mb-7">
+            <div class="flex xl:flex-col items-center gap-x-3">
+              {% if block.settings.icon != blank %}
+                <img
+                  src="{{ block.settings.icon | image_url }}"
+                  class="w-10 3xl:w-20 xl:mb-5 3xl:mb-7 xl:ml-0 mr-auto"
+                  alt="{{ block.settings.title }} Icon"
+                >
+              {% endif %}
+              <h3 class="font-medium text-lg 3xl:text-[26px] text-secondary">{{ block.settings.title }}</h3>
+            </div>
+          </div>
+          <p>{{ block.settings.description }}</p>
+          {% if block.settings.download_link != blank %}
+            <a
+              href="{{ block.settings.download_link }}"
+              class="font-medium underline flex justify-between md:justify-center items-center mt-4 3xl:mt-12 gap-x-3"
+            >
+              Download <img src="images/download-icon.svg" alt="Download Icon">
+            </a>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+    {% if section.settings.button_text != blank and section.settings.button_link != blank %}
+      <div class="btn-wrap text-center mt-10">
+        <a
+          class="bg-primary text-white px-8 py-[15px] text-sm font-bold uppercase hover:bg-secondar inline-block rounded-lg"
+          href="{{ section.settings.button_link }}"
+        >
+          {{ section.settings.button_text }}
+        </a>
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Technical Advice",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section Title",
+      "default": "Technical Advice"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "View More"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "technical_item",
+      "name": "Technical Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Item Title",
+          "default": "Cracking"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project."
+        },
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Item Icon"
+        },
+        {
+          "type": "url",
+          "id": "download_link",
+          "label": "Download Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Technical Advice",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
