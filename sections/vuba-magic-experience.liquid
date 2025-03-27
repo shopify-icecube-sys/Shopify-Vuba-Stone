@@ -8,7 +8,7 @@
   </div>
   <div id="magic-slider" class="owl-carousel owl-theme">
     {% for block in section.blocks %}
-      <div class="item">
+      <div class="item" {{ block.shopify_attributes }}>
         <figure class="rounded-[20px] overflow-hidden">
           <img
             src="{{ block.settings.image | img_url: 'master' }}"
