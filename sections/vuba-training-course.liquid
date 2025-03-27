@@ -31,7 +31,10 @@
                   <span class="inline-block bg-primary px-4">{{ block.settings.course_desc_two }}</span>
                 </div>
               {% endif %}
-              <div>{{ block.settings.course_description }}</div>
+
+              {% if block.settings.course_description != blank %}
+                <div>{{ block.settings.course_description }}</div>
+              {% endif %}
 
               <div class="mt-5 text-sm">
                 <h3 class="font-bold xl:text-lg mb-3">{{ block.settings.heading_one }}</h3>
