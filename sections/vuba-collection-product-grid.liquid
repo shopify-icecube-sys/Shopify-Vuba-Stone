@@ -36,9 +36,9 @@
       {% endif %}
     </div>
     <div class="mt-8 3xl:mt-10 text-center block md:hidden">
-      {% if settings.product_collection != blank %}
+      {% if section.settings.product_collection != blank %}
         <a
-          href="/collections/{{ settings.product_collection }}"
+          href="/collections/{{ section.settings.product_collection }}"
           class="text-sm 3xl:text-base tracking-widest inline-block bg-primary hover:bg-secondary text-white hover:text-white px-7 py-4 rounded-xl font-bold"
         >
           VIEW MORE
