@@ -26,7 +26,9 @@
               {% endif %}
             </div>
           </div>
-          <p>{{ block.settings.description }}</p>
+          {% if block.settings.description != blank %}
+            <p>{{ block.settings.description }}</p>
+          {% endif %}
           <a
             href="{{ block.settings.button_link }}"
             class="font-medium underline flex justify-between md:justify-center items-center mt-4 3xl:mt-12 gap-x-3"
