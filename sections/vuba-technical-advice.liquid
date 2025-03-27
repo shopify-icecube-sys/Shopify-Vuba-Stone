@@ -31,7 +31,9 @@
           {% endif %}
 
           <a
-            href="{{ block.settings.button_link }}"
+            {% if block.settings.button_link != blank %}
+              href="{{ block.settings.button_link }}"
+            {% endif %}
             class="font-medium underline flex justify-between md:justify-center items-center mt-4 3xl:mt-12 gap-x-3"
           >
             {{ block.settings.download_btn }}
