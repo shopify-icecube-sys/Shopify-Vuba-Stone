@@ -26,10 +26,21 @@
         "quote": "<p>Experience the magic of Vusion technology!<br/>“The best tool for selling a job is to let the customer see what can be done beforehand. Vusion takes away the guesswork and allows customers to see the future. Amazing!”</p>",
         "author": "George Child, New Look Surfacing"
       }
+    },
+    "vuba_distributor_hub_wwPyEk": {
+      "type": "vuba-distributor-hub",
+      "settings": {
+        "background_image": "shopify://shop_images/distribution-uk.jpg",
+        "heading": "Distribution hub in",
+        "heading2": "The North of the UK",
+        "quote": "<p>Experience the magic of Vusion technology!<br/>“The best tool for selling a job is to let the customer see what can be done beforehand. Vusion takes away the guesswork and allows customers to see the future. Amazing!”</p>",
+        "author": "George Child, New Look Surfacing"
+      }
     }
   },
   "order": [
     "main",
+    "vuba_distributor_hub_wwPyEk",
     "vuba_distributor_hub_YgaUVi"
   ]
 }
