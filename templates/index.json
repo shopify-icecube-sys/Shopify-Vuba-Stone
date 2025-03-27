@@ -58,6 +58,13 @@
         "video_poster": "shopify://shop_images/Video-placeholder-m.jpg"
       }
     },
+    "vuba_latest_project_EzJDYY": {
+      "type": "vuba-latest-project",
+      "settings": {
+        "section_heading": "Latest Projects",
+        "blog_handle": "news"
+      }
+    },
     "vuba_headline_zqWMqq": {
       "type": "vuba-headline",
       "settings": {
@@ -85,13 +92,6 @@
         "heading": "Join the Stampede!",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       }
-    },
-    "vuba_latest_project_EzJDYY": {
-      "type": "vuba-latest-project",
-      "settings": {
-        "section_heading": "Latest Projects",
-        "blog_handle": "news"
-      }
     }
   },
   "order": [
@@ -100,9 +100,9 @@
     "vuba_stone_update_ejAbT4",
     "vuba_mac_section_one_y7KRnV",
     "vuba_mac_section_two_6aJYrG",
-    "vuba_headline_zqWMqq",
+    "vuba_latest_project_EzJDYY",
     "vuba_installer_FFY7En",
     "vuba_stampede_XhMWq3",
-    "vuba_latest_project_EzJDYY"
+    "vuba_headline_zqWMqq"
   ]
 }
