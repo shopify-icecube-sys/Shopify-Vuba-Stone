@@ -163,7 +163,7 @@
           "settings": {
             "title": "Cracking",
             "description": "If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.",
-            "icon": "shopify://shop_images/dealers-icon.svg",
+            "icon": "shopify://shop_images/doc-icon.png",
             "download_btn": "Download",
             "button_link": "shopify://collections"
           }
@@ -183,6 +183,7 @@
           "settings": {
             "title": "Cracking",
             "description": "If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.",
+            "icon": "shopify://shop_images/doc-icon.png",
             "download_btn": "Click Here",
             "button_link": ""
           }
@@ -192,6 +193,7 @@
           "settings": {
             "title": "Cracking",
             "description": "If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.",
+            "icon": "shopify://shop_images/doc-icon.png",
             "download_btn": "Click Here",
             "button_link": ""
           }
