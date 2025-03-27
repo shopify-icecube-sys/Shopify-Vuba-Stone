@@ -104,6 +104,13 @@
         "button_link": ""
       }
     },
+    "vuba_world_blends_qLUdYH": {
+      "type": "vuba-world-blends",
+      "settings": {
+        "heading": "Vuba World Blends",
+        "collection": "vuba-america"
+      }
+    },
     "vuba_headline_zqWMqq": {
       "type": "vuba-headline",
       "settings": {
@@ -112,13 +119,6 @@
         "subheading_text": "We are the preferred surface for household names, big brands and homeowners worldwide.",
         "button_text": "GO TO INSTALLER",
         "button_link": "shopify://collections"
-      }
-    },
-    "vuba_world_blends_qLUdYH": {
-      "type": "vuba-world-blends",
-      "settings": {
-        "heading": "Vuba World Blends",
-        "collection": "vuba-america"
       }
     }
   },
@@ -132,7 +132,7 @@
     "vuba_installer_FFY7En",
     "vuba_stampede_XhMWq3",
     "vuba_epoxy_stone_eWXmKp",
-    "vuba_headline_zqWMqq",
-    "vuba_world_blends_qLUdYH"
+    "vuba_world_blends_qLUdYH",
+    "vuba_headline_zqWMqq"
   ]
 }
