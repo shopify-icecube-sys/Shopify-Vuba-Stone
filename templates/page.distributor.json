@@ -46,12 +46,61 @@
         "quote": "<p>Experience the magic of Vusion technology!<br/>“The best tool for selling a job is to let the customer see what can be done beforehand. Vusion takes away the guesswork and allows customers to see the future. Amazing!”</p>",
         "author": "George Child, New Look Surfacing"
       }
+    },
+    "vuba_distributor_extract_KGwEft": {
+      "type": "vuba-distributor-extract",
+      "blocks": {
+        "distributor_9zjHCn": {
+          "type": "distributor",
+          "settings": {
+            "icon": "shopify://shop_images/distributor-icon-1.png",
+            "text": "<p>We extract the finest stone sustainably.</p>"
+          }
+        },
+        "distributor_X6GMKQ": {
+          "type": "distributor",
+          "settings": {
+            "icon": "shopify://shop_images/distributor-icon-2.png",
+            "text": "<p>We extract the finest stone sustainably.</p>"
+          }
+        },
+        "distributor_WVn7Gr": {
+          "type": "distributor",
+          "settings": {
+            "icon": "shopify://shop_images/distributor-icon-3.png",
+            "text": "<p>We extract the finest stone sustainably.</p>"
+          }
+        },
+        "distributor_TDf6Dp": {
+          "type": "distributor",
+          "settings": {
+            "icon": "shopify://shop_images/distributor-icon-4.png",
+            "text": "<p>We extract the finest stone sustainably.</p>"
+          }
+        },
+        "distributor_ktKRYe": {
+          "type": "distributor",
+          "settings": {
+            "icon": "shopify://shop_images/distributor-icon-5.png",
+            "text": "<p>We extract the finest stone sustainably.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "distributor_9zjHCn",
+        "distributor_X6GMKQ",
+        "distributor_WVn7Gr",
+        "distributor_TDf6Dp",
+        "distributor_ktKRYe"
+      ],
+      "settings": {}
     }
   },
   "order": [
     "main",
     "vuba_distributor_hub_wwPyEk",
     "vuba_distributor_hub_YgaUVi",
-    "vuba_distributor_hub_TxAAXV"
+    "vuba_distributor_hub_TxAAXV",
+    "vuba_distributor_extract_KGwEft"
   ]
 }
