@@ -1,6 +1,8 @@
 <div
   class="mt-36 md:mt-28 3xl:mt-[134px] distribution-hub py-36 3xl:py-40 relative w-full bg-center bg-cover before:content-[''] before:w-full before:h-full before:top-0 before:left-0 before:absolute before:bg-black before:opacity-50"
-  style="background-image: url('{{ section.settings.background_image | img_url: 'master' }}');"
+  {% if section.settings.background_image != blank %}
+    style="background-image: url('{{ section.settings.background_image | img_url: 'master' }}');"
+  {% endif %}
 >
   <div class="container">
     <div class="relative">
