@@ -41,19 +41,32 @@
           "type": "course",
           "settings": {
             "course_title": "2 Day Training Course",
-            "course_description": "The courses are 2 days long and include a presentation and on-site training learning about the preparation of the base and Vuba Stone application.",
+            "course_description": "<p>The courses are 2 days long and include a presentation and on-site training learning about the preparation of the base and Vuba Stone application.</p>",
             "background_image": "shopify://shop_images/training-cource-1.jpg",
             "course_id": "1",
             "registration_link": "",
             "registration_button_text": "BECOME A REGISTERED INSTALLER",
-            "form_image": "shopify://shop_images/register-installer-form.jpg",
+            "day_1_content": "<p>Meet and greet with an introduction to Vuba Stone</p><ul><li>On-site introduction to all tools, equipment, and project preparation</li><li>Introduction to the installation process</li><li>Theory Presentation</li><li>Q&A sessions with the Vuba team and experienced Vuba Stone installers</li></ul>",
+            "day_2_content": "<p>Completing a Vuba Stone project up to 1000 square feet</p><p></p>"
+          }
+        },
+        "course_CdxFqP": {
+          "type": "course",
+          "settings": {
+            "course_title": "1-1 Training",
+            "course_description": "<p>2 day training must be completed prior</p><p>To registering for this training</p>",
+            "background_image": "shopify://shop_images/banner-d.jpg",
+            "course_id": "1",
+            "registration_link": "",
+            "registration_button_text": "BECOME A REGISTERED INSTALLER",
             "day_1_content": "<p>Meet and greet with an introduction to Vuba Stone</p><ul><li>On-site introduction to all tools, equipment, and project preparation</li><li>Introduction to the installation process</li><li>Theory Presentation</li><li>Q&A sessions with the Vuba team and experienced Vuba Stone installers</li></ul>",
             "day_2_content": "<p>Completing a Vuba Stone project up to 1000 square feet</p><p></p>"
           }
         }
       },
       "block_order": [
-        "course_yWb7CL"
+        "course_yWb7CL",
+        "course_CdxFqP"
       ],
       "settings": {
         "section_title": "Our training courses",
