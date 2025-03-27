@@ -23,10 +23,10 @@
           </div>
           <p>{{ block.settings.description }}</p>
           <a
-            href="#"
+            href="{{ block.settings.button_link }}"
             class="font-medium underline flex justify-between md:justify-center items-center mt-4 3xl:mt-12 gap-x-3"
           >
-            Download
+            {{ block.settings.download_btn }}
             <img
               src="https://cdn.shopify.com/s/files/1/0628/7520/5734/files/download-icon.svg?v=1743054092"
               alt="Download Icon"
@@ -70,7 +70,18 @@
           "type": "image_picker",
           "id": "icon",
           "label": "Item Icon"
-        }
+        },
+        {
+      "type": "text",
+      "id": "download_btn",
+      "label": "Download",
+      "default": "Click Here"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    }
       ]
     }
   ],
