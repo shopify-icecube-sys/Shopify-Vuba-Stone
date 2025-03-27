@@ -85,6 +85,13 @@
         "heading": "Join the Stampede!",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       }
+    },
+    "vuba_latest_project_EzJDYY": {
+      "type": "vuba-latest-project",
+      "settings": {
+        "section_heading": "Latest Projects",
+        "blog_handle": "news"
+      }
     }
   },
   "order": [
@@ -95,6 +102,7 @@
     "vuba_mac_section_two_6aJYrG",
     "vuba_headline_zqWMqq",
     "vuba_installer_FFY7En",
-    "vuba_stampede_XhMWq3"
+    "vuba_stampede_XhMWq3",
+    "vuba_latest_project_EzJDYY"
   ]
 }
