@@ -1,99 +1,98 @@
 <section class="mb-[60px] 3xl:mb-[145px]">
-  <div class="inner-container">
-    <div class="row flex flex-col md:flex-row items-center md:items-center">
-      <div class="w-full md:w-1/2">
-        {% if section.settings.logo != blank %}
-          <figure class="3xl:max-w-[644px]">
-            <img src="{{ section.settings.logo | image_url }}" alt="Sample Image" class="w-full h-auto object-cover">
-          </figure>
-        {% endif %}
-      </div>
-      <div class="w-full md:w-1/2 mt-8 md:mt-0 md:pl-8">
-        {% if section.settings.heading != blank or section.settings.heading2 != blank %}
-          <h2 class="text-secondary text-[24px] 3xl:text-[58px] font-medium mb-[40px] mb-[20px] 3xl:mb-[50px] font-poppins">
-            {% if section.settings.heading != blank %}
-              {{ section.settings.heading }}
-            {% endif %}
-            {% if section.settings.heading2 != blank %}
-              <br>
-              {{ section.settings.heading2 }}
-            {% endif %}
-          </h2>
-        {% endif %}
-        {% if section.settings.description != blank %}
-          <div class="desc-w text-[14px] 3xl:text-[23px] mb-[20px] 3xl:mb-[35px] 3xl:max-w-[570px] font-poppins">
-            {{ section.settings.description }}
-          </div>
-        {% endif %}
-        {% if section.settings.author != blank %}
-          <span class="name text-[14px] 3xl:text-[23px] text-[#005676] block mb-[20px] 3xl:mb-[35px] font-poppins">
-            - {{ section.settings.author }}
-          </span>
-        {% endif %}
- 
-        <a
-          href="{{ section.settings.button_link }}"
-          class="px-8 md:tracking-widest 3xl:px-12 py-[15px] 3xl:py-4 inline-block font-AvenirNext rounded-[10px] text-sm 3xl:text-base font-bold text-white bg-primary hover:bg-secondary"
-        >
-          {{ section.settings.button_text }}
-        </a>
-      </div>
-    </div>
-  </div>
+ <div class="inner-container">
+ <div class="row flex flex-col md:flex-row items-center md:items-center">
+ <div class="w-full md:w-1/2">
+ {% if section.settings.logo != blank %}
+ <figure class="3xl:max-w-[644px]">
+ <img src="{{ section.settings.logo | image_url }}" alt="Sample Image" class="w-full h-auto object-cover">
+ </figure>
+ {% endif %}
+ </div>
+ <div class="w-full md:w-1/2 mt-8 md:mt-0 md:pl-8">
+ {% if section.settings.heading != blank or section.settings.heading2 != blank %}
+ <h2 class="text-secondary text-[24px] 3xl:text-[58px] font-medium mb-[40px] mb-[20px] 3xl:mb-[50px] font-poppins">
+ {% if section.settings.heading != blank %}
+ {{ section.settings.heading }}
+ {% endif %}
+ {% if section.settings.heading2 != blank %}
+ <br>
+ {{ section.settings.heading2 }}
+ {% endif %}
+ </h2>
+ {% endif %}
+ {% if section.settings.description != blank %}
+ <div class="desc-w text-[14px] 3xl:text-[23px] mb-[20px] 3xl:mb-[35px] 3xl:max-w-[570px] font-poppins">
+ {{ section.settings.description }}
+ </div>
+ {% endif %}
+ {% if section.settings.author != blank %}
+ <span class="name text-[14px] 3xl:text-[23px] text-[#005676] block mb-[20px] 3xl:mb-[35px] font-poppins">
+ - {{ section.settings.author }}
+ </span>
+ {% endif %}
+
+ <a
+ href="{{ section.settings.button_link }}"
+ class="px-8 md:tracking-widest 3xl:px-12 py-[15px] 3xl:py-4 inline-block font-AvenirNext rounded-[10px] text-sm 3xl:text-base font-bold text-white bg-primary hover:bg-secondary"
+ >
+ {{ section.settings.button_text }}
+ </a>
+ </div>
+ </div>
+ </div>
 </section>
- 
+
 {% schema %}
 {
-  "name": "Vuba Vusion Technology",
-  "settings": [
-    {
-      "type": "image_picker",
-      "id": "logo",
-      "label": "Logo Image"
-    },
-    {
-      "type": "text",
-      "id": "heading",
-      "label": "Heading",
-      "default": "Experience the magic of Vusion technology!"
-    },
-    {
-      "type": "text",
-      "id": "heading2",
-      "label": "Heading",
-      "default": "Experience the magic of Vusion technology!"
-    },
-    {
-      "type": "richtext",
-      "id": "description",
-      "label": "Description",
-      "default": "<p>Experience the magic of Vusion technology! “The best tool for selling a job is to let the customer see what can be done beforehand. Vusion takes away the guesswork and allows customers to see the future. Amazing!”</p>"
-    },
-    {
-      "type": "text",
-      "id": "author",
-      "label": "Author",
-      "default": "George Child, New Look Surfacing"
-    },
-    {
-      "type": "text",
-      "id": "button_text",
-      "label": "Button Text",
-      "default": "Download Guide"
-    },
-    {
-      "type": "url",
-      "id": "button_link",
-      "label": "Button Link",
-      "default": "/"
-    }
-  ],
-  "presets": [
-    {
-      "name": "Vuba Vusion Technology",
-      "category": "Custom Sections"
-    }
-  ]
+  "name": "Vuba Vusion Technology",
+    "settings": [
+    {
+    "type": "image_picker",
+    "id": "logo",
+    "label": "Logo Image"
+    },
+ {
+ "type": "text",
+ "id": "heading",
+ "label": "Heading",
+ "default": "Experience the magic of Vusion technology!"
+ },
+ {
+ "type": "text",
+ "id": "heading2",
+ "label": "Heading",
+ "default": "Experience the magic of Vusion technology!"
+ },
+ {
+ "type": "richtext",
+ "id": "description",
+ "label": "Description",
+ "default": "<p>Experience the magic of Vusion technology! “The best tool for selling a job is to let the customer see what can be done beforehand. Vusion takes away the guesswork and allows customers to see the future. Amazing!”</p>"
+ },
+ {
+ "type": "text",
+ "id": "author",
+ "label": "Author",
+ "default": "George Child, New Look Surfacing"
+ },
+ {
+ "type": "text",
+ "id": "button_text",
+ "label": "Button Text",
+ "default": "Download Guide"
+ },
+ {
+ "type": "url",
+ "id": "button_link",
+ "label": "Button Link",
+ "default": "/"
+ }
+ ],
+ "presets": [
+ {
+ "name": "Vuba Vusion Technology",
+ "category": "Custom Sections"
+ }
+ ]
 }
 {% endschema %}
- 
