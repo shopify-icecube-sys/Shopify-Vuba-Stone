@@ -1,0 +1,44 @@
+<section class="vuba-color-top text-center text-sm md:text-base pt-40 3xl:pt-52 mb-14 3xl:pb-10">
+  <div class="inner-container">
+    <div class="max-block 3xl:max-w-[1140px] max-w-[774px] mx-auto">
+      <div class="text-box px-3 font-poppins">
+        {% if section.settings.section_title != blank %}
+          <h2 class="text-primary md:text-secondary text-4xl lg:text-4xl 3xl:text-[51px] font-bold mb-5 3xl:mb-8">
+            {{ section.settings.section_title }}
+          </h2>
+        {% endif %}
+        <div class="text-sm md:text-base 3xl:text-2xl">
+          {% if section.settings.section_description != blank %}
+            <p>{{ section.settings.section_description }}</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Vuba World Colors",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section Title",
+      "default": "Vuba World Colors"
+    },
+    {
+      "type": "textarea",
+      "id": "section_description",
+      "label": "Section Description",
+      "default": "Discover the world of endless possibilities with Vuba Stone’s exclusive palette of 24 captivating colors. Our wide range of hues, meticulously curated to suit every taste and style, allows you to transform your space into a masterpiece."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vuba World Colors",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
