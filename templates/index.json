@@ -78,6 +78,13 @@
         "heading": "Join the Stampede!",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       }
+    },
+    "vuba_stone_update_ejAbT4": {
+      "type": "vuba-stone-update",
+      "settings": {
+        "section_heading": "Vuba Stone Updates",
+        "blog_handle": "news"
+      }
     }
   },
   "order": [
@@ -87,6 +94,7 @@
     "vuba_mac_section_two_6aJYrG",
     "vuba_headline_zqWMqq",
     "vuba_installer_FFY7En",
-    "vuba_stampede_XhMWq3"
+    "vuba_stampede_XhMWq3",
+    "vuba_stone_update_ejAbT4"
   ]
 }
