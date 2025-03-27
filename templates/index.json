@@ -252,14 +252,6 @@
       "settings": {
         "section_title": "Technical Advice"
       }
-    },
-    "vuba_world_colors_PTz4h7": {
-      "type": "vuba-world-colors",
-      "settings": {
-        "section_title": "Vuba World Colors",
-        "section_description": "<p>Discover the world of endless possibilities with Vuba Stone’s exclusive palette of 24 </p><p>captivating colors. Our wide range of hues, meticulously curated to suit every taste and style,</p><p>allows you to transform your space into a masterpiece.</p>",
-        "text_color": "#821832"
-      }
     }
   },
   "order": [
@@ -272,7 +264,6 @@
     "vuba_installer_FFY7En",
     "vuba_stampede_XhMWq3",
     "vuba_benefit_PdaBJM",
-    "vuba_technical_advice_zHMBhh",
-    "vuba_world_colors_PTz4h7"
+    "vuba_technical_advice_zHMBhh"
   ]
 }
