@@ -6,6 +6,11 @@
           {{ section.settings.section_title }}
         </h2>
       {% endif %}
+      {% if section.settings.section_title_left != blank %}
+        <h2 class="text-4xl md:text-4xl 3xl:text-[51px] text-primary font-bold mb-7 3xl:mb-14">
+          {{ section.settings.section_title_left }}
+        </h2>
+      {% endif %}
       {% if section.settings.section_description != blank %}
         <p class="text-sm md:text-base 3xl:text-2xl">{{ section.settings.section_description }}</p>
       {% endif %}
@@ -48,6 +53,11 @@
       "label": "Section Title",
       "id": "section_title",
       "default": "Technical and Training Team"
+    },
+    {
+      "type": "text",
+      "label": "Section Title",
+      "id": "section_title_left"
     },
       {
       "type": "richtext",
