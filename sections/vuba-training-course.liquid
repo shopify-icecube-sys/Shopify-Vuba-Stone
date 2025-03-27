@@ -46,14 +46,18 @@
                 {{- block.settings.registration_button_text -}}
               </a>
               <div class="btn-wrap flex flex-wrap gap-5 mt-10">
-                <img
-                  src="https://cdn.shopify.com/s/files/1/0628/7520/5734/files/10-year-waranty.svg?v=1742993864"
-                  alt="10 year warranty"
-                >
-                <img
-                  src="https://cdn.shopify.com/s/files/1/0628/7520/5734/files/10-year-waranty.svg?v=1742993864"
-                  alt="10 year warranty"
-                >
+                {% if block.settings.warranty_image != blank %}
+                  <img
+                    src="{{ block.settings.warranty_image | img_url: 'master' }}"
+                    alt="10 year warranty"
+                  >
+                {% endif %}
+                {% if block.settings.warranty_image_alt != blank %}
+                  <img
+                    src="{{ block.settings.warranty_image_alt | img_url: 'master' }}"
+                    alt="10 year warranty"
+                  >
+                {% endif %}
               </div>
             </div>
             <div class="col-right hidden md:block">
