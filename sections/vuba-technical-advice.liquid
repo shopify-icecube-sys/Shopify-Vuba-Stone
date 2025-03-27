@@ -20,7 +20,10 @@
                   alt="Image Icon"
                 >
               {% endif %}
-              <h3 class="font-medium text-lg 3xl:text-[26px] text-secondary">{{ block.settings.title }}</h3>
+
+              {% if block.settings.title != blank %}
+                <h3 class="font-medium text-lg 3xl:text-[26px] text-secondary">{{ block.settings.title }}</h3>
+              {% endif %}
             </div>
           </div>
           <p>{{ block.settings.description }}</p>
