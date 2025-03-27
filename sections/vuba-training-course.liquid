@@ -47,7 +47,9 @@
                 </ul>
               </div>
               <div class="mt-5 text-sm">
-                <h3 class="font-bold xl:text-lg mb-3">{{ block.settings.heading_two }}</h3>
+                {% if section.settings.heading_two != blank %}
+                  <h3 class="font-bold xl:text-lg mb-3">{{ block.settings.heading_two }}</h3>
+                {% endif %}
                 <ul>
                   {% for item in block.settings.day_2_content %}
                     <li>{{ item }}</li>
