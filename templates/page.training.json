@@ -41,6 +41,8 @@
           "type": "course",
           "settings": {
             "course_title": "2 Day Training Course",
+            "heading_one": "Day 1",
+            "heading_two": "Day 2",
             "course_description": "<p>The courses are 2 days long and include a presentation and on-site training learning about the preparation of the base and Vuba Stone application.</p>",
             "background_image": "shopify://shop_images/training-cource-1.jpg",
             "course_id": "1",
@@ -54,6 +56,8 @@
           "type": "course",
           "settings": {
             "course_title": "1-1 Training",
+            "heading_one": "",
+            "heading_two": "",
             "course_description": "<p>2 day training must be completed prior</p><p>To registering for this training</p>",
             "background_image": "shopify://shop_images/banner-d.jpg",
             "course_id": "1",
