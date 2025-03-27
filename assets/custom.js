@@ -131,4 +131,22 @@ $(document).ready(function () {
       },
     },
   });
+  $("#magic-slider").owlCarousel({
+    center: true,
+    items: 1,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    margin: 55,
+    dots: true,
+    responsive: {
+      0: {
+        dots: true,
+      },
+      768: {
+        items: 2,
+        dots: false,
+      },
+    },
+  });
 });
