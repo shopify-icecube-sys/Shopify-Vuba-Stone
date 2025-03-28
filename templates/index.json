@@ -316,6 +316,30 @@
         "button_text": "Download Guide",
         "button_link": "shopify://collections"
       }
+    },
+    "vuba_tech_image_FfB9AM": {
+      "type": "vuba-tech-image",
+      "blocks": {
+        "image_block_M9Re8N": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/register-installer-form_1.jpg"
+          }
+        },
+        "image_block_74QAKD": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/register-installer-form_1.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_block_M9Re8N",
+        "image_block_74QAKD"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/training-cource-1.jpg"
+      }
     }
   },
   "order": [
@@ -332,6 +356,7 @@
     "vuba_world_colors_GeamGU",
     "vuba_distribution_hub_a3nAJU",
     "vuba_distributor_extract_R8Eihf",
-    "vuba_vusion_technology_w6qUQx"
+    "vuba_vusion_technology_w6qUQx",
+    "vuba_tech_image_FfB9AM"
   ]
 }
