@@ -2,11 +2,13 @@
   <div class="container">
     <div class="bg-secondary rounded-3xl py-14 3xl:py-16 px-5 relative z-10">
       <div class="max-w-2xl mx-auto text-white text-sm 2xl:text-base text-center">
-        <img
-          src="{{ section.settings.desktop_image | img_url: 'large' }}"
-          class="mx-auto hidden md:block w-56 3xl:w-96"
-          alt="Technical Download Logo Image"
-        >
+        {% if section.settings.desktop_image != blank %}
+          <img
+            src="{{ section.settings.desktop_image | img_url: 'large' }}"
+            class="mx-auto hidden md:block w-56 3xl:w-96"
+            alt="Technical Download Logo Image"
+          >
+        {% endif %}
         <img
           src="{{ section.settings.mobile_image | img_url: 'large' }}"
           class="mx-auto md:hidden w-56"
