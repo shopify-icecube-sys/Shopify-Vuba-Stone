@@ -6,9 +6,9 @@
           <div class="flex {% cycle 'flex-row', 'flex-row-reverse' %} xl:px-24 3xl:px-52">
             <div class="w-[45%] lg:w-[49%] text-{% cycle 'end', 'start' %} text-sm 3xl:text-base relative z-10 {% cycle 'pr-7 md:pr-10 3xl:pr-20', 'pl-7 md:pl-10 3xl:pl-20 pt-[70px] xl:pt-16 3xl:pt-[180px]' %}">
               {% if block.settings.title != blank %}
-                <div class="text-xl xl:text-2xl 3xl:text-[51px] font-bold xl:leading-[1] text-primary mb-3 3xl:mb-7">
+                <h2 class="text-xl xl:text-2xl 3xl:text-[51px] font-bold xl:leading-[1] text-primary mb-3 3xl:mb-7">
                   {{ block.settings.title }}
-                </div>
+                </h2>
               {% endif %}
               {% if block.settings.description != blank %}
                 <p>{{ block.settings.description }}</p>
@@ -51,7 +51,7 @@
           "type": "text",
           "id": "title",
           "label": "Title",
-          "default": "<h2>Our Training Courses</h2>"
+          "default": "Our Training Courses"
         },
         {
           "type": "textarea",
