@@ -1,109 +1,83 @@
 <section class="timeline-wrapper max-h-screen overflow-y-auto">
   <div class="container">
     <div class="timeline-container h-screen overflow-y-scroll scroll-smooth snap-y snap-mandatory">
-      <div class="timeline-item h-screen flex items-center justify-center text-2xl snap-start relative about before:content-[''] before:w-24 3xl:before:3xl:w-60 before:h-full before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:bg-primary before:z-[1]">
-        <div class="flex xl:px-24 3xl:px-52">
-          <div class="w-[45%] lg:w-[49%] text-end text-sm 3xl:text-base relative z-10 pr-7 md:pr-10 3xl:pr-20">
-            <h2 class="text-xl xl:text-2xl 3xl:text-[51px] font-bold xl:leading-[1] text-primary mb-3 3xl:mb-7">
-              {{ section.settings.heading }}
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum aquis congu. Nullam
-              cursu. Lorem ipsum dolor sit am quis congue. Nullam curugue quis congue. Nullam cursu. Lorem ipsum dolor
-              sit amet, consectetur adipiscing elit. Vivamus viverra bibendum augue quis congue. Nullam cursu
-            </p>
-          </div>
-          <div class="bg-primary w-16 3xl:w-[180px] text-white relative z-10 pt-6 3xl:pt-10 right-2">
-            <h3 class="font-bold w-full text-4xl 3xl:text-9xl break-words px-2 inline-block]">2009</h3>
-          </div>
-          <div class="w-[45%] lg:w-[49%]  relative z-10 pt-[70px] xl:pt-16 3xl:pt-[180px]">
-            <h2 class="text-primary font-bold text-3xl xl:text-4xl xl:leading-[1] 2xl:text-5xl 3xl:text-[138px] absolute pl-6 2xl:pl-10 3xl:pl-24 -top-16 xl:-top-20 3xl:-top-48">
-              Our<br>
-              History
-            </h2>
-            <img src="images/bull-pic.jpg" class="w-full rounded-2xl 3xl:rounded-3xl" alt="bull pic">
-          </div>
-        </div>
-      </div>
-      <div class="timeline-item h-screen flex items-center justify-center text-2xl snap-start relative about before:content-[''] before:w-24 3xl:before:3xl:w-60 before:h-full before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:bg-primary before:z-[1]">
-        <div class="flex flex-row-reverse xl:px-24 3xl:px-52">
-          <div class="w-[45%] lg:w-[49%]  text-start text-sm 3xl:text-base relative z-10 pl-7 md:pl-10 3xl:pl-20 pt-[70px] xl:pt-16 3xl:pt-[180px]">
-            <h2 class="text-xl xl:text-2xl 3xl:text-[51px] font-bold xl:leading-[1] text-primary mb-3 3xl:mb-7">
-              Our <br>
-              training <br>
-              courses
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum aquis congu. Nullam
-              cursu. Lorem ipsum dolor sit am quis congue. Nullam curugue quis congue. Nullam cursu. Lorem ipsum dolor
-              sit amet, consectetur adipiscing elit. Vivamus viverra bibendum augue quis congue. Nullam cursu
-            </p>
-          </div>
-          <div class="bg-primary w-16 3xl:w-[180px] text-white relative z-10 pt-6 3xl:pt-10 left-2">
-            <h3 class="font-bold w-full text-4xl 3xl:text-9xl break-words px-2 inline-block]">2009</h3>
-          </div>
-          <div class="w-[45%] lg:w-[49%]  relative z-10">
-            <img src="images/bull-pic.jpg" class="w-full rounded-2xl 3xl:rounded-3xl" alt="bull pic">
+      {% for block in section.blocks %}
+        <div class="timeline-item h-screen flex items-center justify-center text-2xl snap-start relative about before:content-[''] before:w-24 3xl:before:3xl:w-60 before:h-full before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:bg-primary before:z-[1]">
+          <div class="flex {% if block.settings.image_position == 'right' %}flex-row-reverse{% endif %} xl:px-24 3xl:px-52">
+            <div class="w-[45%] lg:w-[49%] {% if block.settings.image_position == 'right' %}text-start{% else %}text-end{% endif %} text-sm 3xl:text-base relative z-10 {% if block.settings.image_position == 'right' %}pl-7 md:pl-10 3xl:pl-20{% else %}pr-7 md:pr-10 3xl:pr-20{% endif %} pt-[70px] xl:pt-16 3xl:pt-[180px]">
+              <h2 class="text-xl xl:text-2xl 3xl:text-[51px] font-bold xl:leading-[1] text-primary mb-3 3xl:mb-7">
+                {{ block.settings.heading }}
+              </h2>
+              <p>{{ block.settings.description }}</p>
+            </div>
+            <div class="bg-primary w-16 3xl:w-[180px] text-white relative z-10 pt-6 3xl:pt-10 {% if block.settings.image_position == 'right' %}left-2{% else %}right-2{% endif %}">
+              <h3 class="font-bold w-full text-4xl 3xl:text-9xl break-words px-2 inline-block">
+                {{ block.settings.year }}
+              </h3>
+            </div>
+            <div class="w-[45%] lg:w-[49%] relative z-10 {% if block.settings.image_position == 'right' %}pt-[70px] xl:pt-16 3xl:pt-[180px]{% endif %}">
+              <img
+                src="{{ block.settings.image | img_url: 'original' }}"
+                class="w-full rounded-2xl 3xl:rounded-3xl"
+                alt="{{ block.settings.heading }}"
+              >
+            </div>
           </div>
         </div>
-      </div>
-      <div class="timeline-item h-screen flex items-center justify-center text-2xl snap-start relative about before:content-[''] before:w-24 3xl:before:3xl:w-60 before:h-full before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:bg-primary before:z-[1]">
-        <div class="flex xl:px-24 3xl:px-52">
-          <div class="w-[45%] lg:w-[49%] text-end text-sm 3xl:text-base relative z-10 pr-7 md:pr-10 3xl:pr-20">
-            <h2 class="text-xl xl:text-2xl 3xl:text-[51px] font-bold xl:leading-[1] text-primary mb-3 3xl:mb-7">
-              Our <br>
-              training <br>
-              courses
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum aquis congu. Nullam
-              cursu. Lorem ipsum dolor sit am quis congue. Nullam curugue quis congue. Nullam cursu. Lorem ipsum dolor
-              sit amet, consectetur adipiscing elit. Vivamus viverra bibendum augue quis congue. Nullam cursu
-            </p>
-          </div>
-          <div class="bg-primary w-16 3xl:w-[180px] text-white relative z-10 pt-6 3xl:pt-10 right-2">
-            <h3 class="font-bold w-full text-4xl 3xl:text-9xl break-words px-2 inline-block]">2009</h3>
-          </div>
-          <div class="w-[45%] lg:w-[49%]  relative z-10 pt-[70px] xl:pt-16 3xl:pt-[180px]">
-            <img src="images/bull-pic.jpg" class="w-full rounded-2xl 3xl:rounded-3xl" alt="bull pic">
-          </div>
-        </div>
-      </div>
-      <div class="timeline-item h-screen flex items-center justify-center text-2xl snap-start relative about before:content-[''] before:w-24 3xl:before:3xl:w-60 before:h-full before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:bg-primary before:z-[1]">
-        <div class="flex flex-row-reverse xl:px-24 3xl:px-52">
-          <div class="w-[45%] lg:w-[49%]  text-start text-sm 3xl:text-base relative z-10 pl-7 md:pl-10 3xl:pl-20 pt-[70px] xl:pt-16 3xl:pt-[180px]">
-            <h2 class="text-xl xl:text-2xl 3xl:text-[51px] font-bold xl:leading-[1] text-primary mb-3 3xl:mb-7">
-              Our <br>
-              training <br>
-              courses
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum aquis congu. Nullam
-              cursu. Lorem ipsum dolor sit am quis congue. Nullam curugue quis congue. Nullam cursu. Lorem ipsum dolor
-              sit amet, consectetur adipiscing elit. Vivamus viverra bibendum augue quis congue. Nullam cursu
-            </p>
-          </div>
-          <div class="bg-primary w-16 3xl:w-[180px] text-white relative z-10 pt-6 3xl:pt-10 left-2">
-            <h3 class="font-bold w-full text-4xl 3xl:text-9xl break-words px-2 inline-block]">2009</h3>
-          </div>
-          <div class="w-[45%] lg:w-[49%]  relative z-10">
-            <img src="images/bull-pic.jpg" class="w-full rounded-2xl 3xl:rounded-3xl" alt="bull pic">
-          </div>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
 
 {% schema %}
 {
-  "name": "Custom Sectio",
-  "settings": [
+  "name": "Timeline Section",
+  "settings": [],
+  "blocks": [
     {
-      "type": "richtext",
-      "label": "Heading",
-      "id": "heading",
-      "default": "<p>Your Default Heading Here</p>"
+      "type": "timeline_item",
+      "name": "Timeline Item",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Year",
+          "id": "year",
+          "default": "2009"
+        },
+        {
+          "type": "text",
+          "label": "Heading",
+          "id": "heading",
+          "default": "Our Training Courses"
+        },
+        {
+          "type": "textarea",
+          "label": "Description",
+          "id": "description",
+          "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum aquis congu."
+        },
+        {
+          "type": "image_picker",
+          "label": "Image",
+          "id": "image"
+        },
+        {
+          "type": "radio",
+          "label": "Image Position",
+          "id": "image_position",
+          "default": "left",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ]
+        }
+      ]
     }
   ],
   "presets": [
