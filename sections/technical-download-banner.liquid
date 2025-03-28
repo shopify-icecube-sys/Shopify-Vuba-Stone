@@ -9,11 +9,14 @@
             alt="Technical Download Logo Image"
           >
         {% endif %}
-        <img
-          src="{{ section.settings.mobile_image | img_url: 'large' }}"
-          class="mx-auto md:hidden w-56"
-          alt="Technical Download Logo Image"
-        >
+
+        {% if section.settings.mobile_image != blank %}
+          <img
+            src="{{ section.settings.mobile_image | img_url: 'large' }}"
+            class="mx-auto md:hidden w-56"
+            alt="Technical Download Logo Image"
+          >
+        {% endif %}
         <h2 class="text-4xl 3xl:text-[51px] font-bold my-7 3xl:mt-12 3xl:mb-20">{{ section.settings.heading }}</h2>
         <div>{{ section.settings.paragraph }}</div>
       </div>
