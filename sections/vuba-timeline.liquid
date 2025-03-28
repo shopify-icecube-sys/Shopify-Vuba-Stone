@@ -4,7 +4,7 @@
       {% for block in section.blocks %}
         <div class="timeline-item h-screen flex items-center justify-center text-2xl snap-start relative about before:content-[''] before:w-24 3xl:before:3xl:w-60 before:h-full before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:bg-primary before:z-[1]">
           <div class="flex {% cycle 'flex-row', 'flex-row-reverse' %} xl:px-24 3xl:px-52">
-            <div class="w-[45%] lg:w-[49%]  text-start text-sm 3xl:text-base relative z-10 pl-7 md:pl-10 3xl:pl-20 pt-[70px] xl:pt-16 3xl:pt-[180px]">
+            <div class="w-[45%] lg:w-[49%] text-{% cycle 'end', 'start' %} text-sm 3xl:text-base relative z-10 {% cycle 'pr-7 md:pr-10 3xl:pr-20', 'pl-7 md:pl-10 3xl:pl-20 pt-[70px] xl:pt-16 3xl:pt-[180px]' %}">
               {% if block.settings.title != blank %}
                 <h2 class="text-xl xl:text-2xl 3xl:text-[51px] font-bold xl:leading-[1] text-primary mb-3 3xl:mb-7">
                   {{ block.settings.title }}
@@ -15,7 +15,7 @@
               {% endif %}
             </div>
             {% if block.settings.year != blank %}
-              <div class="bg-primary w-16 3xl:w-[180px] text-white relative z-10 pt-6 3xl:pt-10 right-2">
+              <div class="bg-primary w-16 3xl:w-[180px] text-white relative z-10 pt-6 3xl:pt-10 {% cycle 'right-2', 'left-2' %}">
                 <h3 class="font-bold w-full text-4xl 3xl:text-9xl break-words px-2 inline-block]">
                   {{ block.settings.year }}
                 </h3>
@@ -23,11 +23,11 @@
             {% endif %}
 
             {% if block.settings.image != blank %}
-              <div class="w-[45%] lg:w-[49%]  relative z-10">
+              <div class="w-[45%] lg:w-[49%] relative z-10 {% if forloop.index0 == 0 or forloop.index0 == 2 %}pt-[70px] xl:pt-16 3xl:pt-[180px]{% endif %}">
                 <img
                   src="{{ block.settings.image | img_url: 'master' }}"
                   class="w-full rounded-2xl 3xl:rounded-3xl"
-                  alt="Timeline Image"
+                  alt="{{ block.settings.title }}"
                 >
               </div>
             {% endif %}
