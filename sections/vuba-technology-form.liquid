@@ -1,6 +1,64 @@
+<section
+  class=" bg-cover bg-center bg-no-repeat py-14 xl:py-28 3xl:py-32"
+  {% if section.settings.background_image != blank %}
+    style="background-image: url({{ section.settings.background_image | image_url }});"
+  {% endif %}
+>
+  <div class="inner-container">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-[40px] xl:gap-[80px]">
+      {% for block in section.blocks %}
+        {% if block.settings.image != blank %}
+          <div class="bg-white px-[20px] md:px-[30px] xl:px-[50px] py-[60px] md:py-[30px] xl:py-[45px] 3xl:px-[70px] 3xl:py-[55px] rounded-[20px]">
+            <figure class="rounded-lg overflow-hidden">
+              <img
+                src="{{ block.settings.image | image_url }}"
+                alt="Vuba Technology Images"
+                class="w-full h-auto object-cover pe-9"
+              >
+            </figure>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Vuba Technology Forms",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image_block",
+      "name": "Image Block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vuba Technology Forms",
+      "category": "Custom Sections",
+      "blocks": [
+        {
+          "type": "image_block"
+        },
+        {
+          "type": "image_block"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
