@@ -347,17 +347,19 @@
         "event_RJMQmE": {
           "type": "event",
           "settings": {
-            "title": "Our Training Courses",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "year": "2009"
+            "title": "Our Training Course",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.s",
+            "year": "2009",
+            "image": "shopify://shop_images/bull-pic.jpg"
           }
         },
         "event_tqwGde": {
           "type": "event",
           "settings": {
-            "title": "Company Expansion",
-            "description": "We expanded our company worldwide.",
-            "year": "2015"
+            "title": "Company Expansions",
+            "description": "We expanded our company worldwides.",
+            "year": "2015",
+            "image": "shopify://shop_images/bull-pic.jpg"
           }
         }
       },
