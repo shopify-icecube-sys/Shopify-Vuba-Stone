@@ -15,9 +15,11 @@
               {% endif %}
             </div>
             <div class="bg-primary w-16 3xl:w-[180px] text-white relative z-10 pt-6 3xl:pt-10 {% if block.settings.image_position == 'right' %}left-2{% else %}right-2{% endif %}">
-              <h3 class="font-bold w-full text-4xl 3xl:text-9xl break-words px-2 inline-block]">
-                {{ block.settings.year }}
-              </h3>
+              {% if block.settings.year != blank %}
+                <h3 class="font-bold w-full text-4xl 3xl:text-9xl break-words px-2 inline-block]">
+                  {{ block.settings.year }}
+                </h3>
+              {% endif %}
             </div>
             <div class="w-[45%] lg:w-[49%] relative z-10 {% if block.settings.image_position == 'right' %}pt-[70px] xl:pt-16 3xl:pt-[180px]{% endif %}">
               <img
