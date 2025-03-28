@@ -14,12 +14,13 @@
                 <p>{{ block.settings.description }}</p>
               {% endif %}
             </div>
-
-            <div class="bg-primary w-16 3xl:w-[180px] text-white relative z-10 pt-6 3xl:pt-10 {% cycle 'right-2', 'left-2' %}">
-              <h3 class="font-bold w-full text-4xl 3xl:text-9xl break-words px-2 inline-block]">
-                {{ block.settings.year }}
-              </h3>
-            </div>
+            {% if block.settings.year != blank %}
+              <div class="bg-primary w-16 3xl:w-[180px] text-white relative z-10 pt-6 3xl:pt-10 {% cycle 'right-2', 'left-2' %}">
+                <h3 class="font-bold w-full text-4xl 3xl:text-9xl break-words px-2 inline-block]">
+                  {{ block.settings.year }}
+                </h3>
+              </div>
+            {% endif %}
 
             <div class="w-[45%] lg:w-[49%] relative z-10 {% if forloop.index0 == 0 or forloop.index0 == 2 %}pt-[70px] xl:pt-16 3xl:pt-[180px]{% endif %}">
               <img
