@@ -347,8 +347,8 @@
         "event_RJMQmE": {
           "type": "event",
           "settings": {
-            "title": "Our Training Course",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.s",
+            "title": "<p>Our </p><p>Training </p><p>Course</p>",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.s</p>",
             "year": "2009",
             "image": "shopify://shop_images/bull-pic.jpg"
           }
@@ -356,8 +356,8 @@
         "event_tqwGde": {
           "type": "event",
           "settings": {
-            "title": "Company Expansions",
-            "description": "We expanded our company worldwides.",
+            "title": "<p>Company </p><p>Expansions</p>",
+            "description": "<p>We expanded our company worldwides.</p>",
             "year": "2016",
             "image": "shopify://shop_images/bull-pic.jpg"
           }
