@@ -23,7 +23,7 @@
             {% endif %}
 
             {% if block.settings.image != blank %}
-              <div class="w-[45%] lg:w-[49%] relative z-10 {% if forloop.index0 == 0 or forloop.index0 == 2 %}pt-[70px] xl:pt-16 3xl:pt-[180px]{% endif %}">
+              <div class="w-[45%] lg:w-[49%]  relative z-10">
                 <img
                   src="{{ block.settings.image | img_url: 'master' }}"
                   class="w-full rounded-2xl 3xl:rounded-3xl"
