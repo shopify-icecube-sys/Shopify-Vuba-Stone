@@ -376,8 +376,8 @@
       "settings": {
         "desktop_image": "shopify://shop_images/vuba-stone-brochure-m.svg",
         "mobile_image": "shopify://shop_images/vuba-stone-brochure-d.svg",
-        "heading": "Technical Downloads",
-        "paragrapgh": "<p>This is a technical downloads paragrapgh.</p><p>This is a technical downloads paragrapgh.</p><p>This is a technical downloads paragrapgh.</p><p>This is a technical downloads paragrapgh.</p><p></p>"
+        "heading": "Technical Download",
+        "paragrapgh": "<p>This is a technical downloads paragrapgh.</p><p>This is a technical downloads paragrapgh.</p><p>This is a technical downloads paragrapgh.</p><p>This is a technical downloads paragrapgh.</p><p>Hello</p>"
       }
     }
   },
