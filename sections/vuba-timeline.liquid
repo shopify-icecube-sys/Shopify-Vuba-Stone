@@ -10,7 +10,9 @@
                   {{ block.settings.title }}
                 </h2>
               {% endif %}
-              <p>{{ block.settings.description }}</p>
+              {% if block.settings.description != blank %}
+                <p>{{ block.settings.description }}</p>
+              {% endif %}
             </div>
 
             <div class="bg-primary w-16 3xl:w-[180px] text-white relative z-10 pt-6 3xl:pt-10 {% cycle 'right-2', 'left-2' %}">
