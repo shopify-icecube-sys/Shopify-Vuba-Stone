@@ -348,8 +348,8 @@
           "type": "timeline_item",
           "settings": {
             "year": "2009",
-            "heading": "Our Training Courses",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum aquis congu.",
+            "heading": "<p>Our Training Courses</p>",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum aquis congu.</p>",
             "image": "shopify://shop_images/bull-pic.jpg",
             "image_position": "left"
           }
@@ -358,8 +358,8 @@
           "type": "timeline_item",
           "settings": {
             "year": "2009",
-            "heading": "Our Training Courses",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum aquis congu.",
+            "heading": "<p>Our Training Courses</p>",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum aquis congu.</p>",
             "image": "shopify://shop_images/bull-pic.jpg",
             "image_position": "right"
           }
@@ -370,6 +370,15 @@
         "timeline_item_Nj7BJp"
       ],
       "settings": {}
+    },
+    "technical_download_banner_Cehjgz": {
+      "type": "technical-download-banner",
+      "settings": {
+        "desktop_image": "shopify://shop_images/vuba-stone-brochure-m.svg",
+        "mobile_image": "shopify://shop_images/vuba-stone-brochure-d.svg",
+        "heading": "Technical Downloads",
+        "paragrapgh": "<p>This is a technical downloads paragrapgh.</p><p>This is a technical downloads paragrapgh.</p><p>This is a technical downloads paragrapgh.</p><p>This is a technical downloads paragrapgh.</p><p></p>"
+      }
     }
   },
   "order": [
@@ -388,6 +397,7 @@
     "vuba_distributor_extract_R8Eihf",
     "vuba_vusion_technology_w6qUQx",
     "vuba_tech_image_FfB9AM",
-    "vuba_timeline_46bUyn"
+    "vuba_timeline_46bUyn",
+    "technical_download_banner_Cehjgz"
   ]
 }
