@@ -356,7 +356,7 @@
         "event_RzA6eq": {
           "type": "event",
           "settings": {
-            "title": "<p>Our Training Courses</p>",
+            "title": "<p>Our </p><p>Training </p><p>Courses</p>",
             "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
             "year": "2012",
             "image": "shopify://shop_images/bull-pic.jpg"
@@ -365,7 +365,7 @@
         "event_m66qDE": {
           "type": "event",
           "settings": {
-            "title": "<p>Our Training Courses</p>",
+            "title": "<p>Our </p><p>Training</p><p> Courses</p>",
             "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
             "year": "2016",
             "image": "shopify://shop_images/bull-pic.jpg"
