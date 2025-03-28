@@ -8,7 +8,7 @@
               <h2 class="text-xl xl:text-2xl 3xl:text-[51px] font-bold xl:leading-[1] text-primary mb-3 3xl:mb-7">
                 {{ block.settings.heading }}
               </h2>
-              <p>{{ block.settings.description }}</p>
+              <div>{{ block.settings.description }}</div>
             </div>
             <div class="bg-primary w-16 3xl:w-[180px] text-white relative z-10 pt-6 3xl:pt-10 {% if block.settings.image_position == 'right' %}left-2{% else %}right-2{% endif %}">
               <h3 class="font-bold w-full text-4xl 3xl:text-9xl break-words px-2 inline-block]">
@@ -51,10 +51,10 @@
           "default": "Our Training Courses"
         },
         {
-          "type": "textarea",
+          "type": "richtext",
           "label": "Description",
           "id": "description",
-          "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum aquis congu."
+          "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum aquis congu.</p>"
         },
         {
           "type": "image_picker",
