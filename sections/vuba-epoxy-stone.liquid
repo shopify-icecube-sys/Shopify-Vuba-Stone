@@ -24,7 +24,7 @@
           {% if section.settings.epoxy_icon != blank %}
             <img
               src="{{ section.settings.epoxy_icon | img_url:'master' }}"
-              class="absolute -bottom-10 3xl:-bottom-24 right-4 3xl:-right-7 w-44 3xl:w-80 h-44 3xl:h-80 rounded-full"
+              class="absolute -bottom-10 3xl:-bottom-24 right-4 3xl:-right-7 w-44 3xl:w-80 rounded-full aspect-square object-cover"
               alt="{{ section.settings.epoxy_icon_alt }}"
             >
           {% endif %}
