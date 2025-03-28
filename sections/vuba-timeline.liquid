@@ -10,7 +10,9 @@
                   {{ block.settings.heading }}
                 </div>
               {% endif %}
-              <div>{{ block.settings.description }}</div>
+              {% if block.settings.description != blank %}
+                <div>{{ block.settings.description }}</div>
+              {% endif %}
             </div>
             <div class="bg-primary w-16 3xl:w-[180px] text-white relative z-10 pt-6 3xl:pt-10 {% if block.settings.image_position == 'right' %}left-2{% else %}right-2{% endif %}">
               <h3 class="font-bold w-full text-4xl 3xl:text-9xl break-words px-2 inline-block]">
