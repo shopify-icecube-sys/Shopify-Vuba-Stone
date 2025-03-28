@@ -19,9 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.addEventListener("scroll", function () {
     if (window.scrollY > 50) {
-      header.classList.add("bg-white");
+      //header.classList.add("bg-white");
     } else {
-      header.classList.remove("bg-white");
+     // header.classList.remove("bg-white");
     }
   });
 });
@@ -72,20 +72,7 @@ $(document).ready(function () {
     autoWidth: true,
     autoplay: true,
     autoplayTimeout: 3000,
-    responsive: {
-      0: { items: 1 },
-      768: {
-        items: 2,
-        margin: 0,
-      },
-      1024: {
-        items: 3,
-        margin: 0,
-      },
-      1200: {
-        items: 3,
-      },
-    },
+    
   });
   //  Vuba World Blends section
   $(".vuba-world-bleds-slider").owlCarousel({
