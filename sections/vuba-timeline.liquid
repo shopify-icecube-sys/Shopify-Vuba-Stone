@@ -25,11 +25,13 @@
               {% endif %}
             </div>
             <div class="w-[45%] lg:w-[49%] relative z-10 {% if block.settings.image_position == 'right' %}pt-[70px] xl:pt-16 3xl:pt-[180px]{% endif %}">
-              <img
-                src="{{ block.settings.image | img_url: 'original' }}"
-                class="w-full rounded-2xl 3xl:rounded-3xl"
-                alt="{{ block.settings.heading }}"
-              >
+              {% if block.settings.image != blank %}
+                <img
+                  src="{{ block.settings.image | img_url: 'original' }}"
+                  class="w-full rounded-2xl 3xl:rounded-3xl"
+                  alt="{{ block.settings.heading }}"
+                >
+              {% endif %}
             </div>
           </div>
         </div>
