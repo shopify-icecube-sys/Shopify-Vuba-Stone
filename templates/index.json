@@ -377,7 +377,7 @@
         "desktop_image": "shopify://shop_images/vuba-stone-brochure-m.svg",
         "mobile_image": "shopify://shop_images/vuba-stone-brochure-d.svg",
         "heading": "Technical Download",
-        "paragrapgh": "<p>This is a technical downloads paragrapgh.</p><p>This is a technical downloads paragrapgh.</p><p>This is a technical downloads paragrapgh.</p><p>This is a technical downloads paragrapgh.</p><p>Hello</p>"
+        "paragraph": "<p>This is a technical downloads paragraph.</p><p>This is a technical downloads paragraph.</p><p>This is a technical downloads paragraph.</p><p>This is a technical downloads paragraph.</p>"
       }
     }
   },
