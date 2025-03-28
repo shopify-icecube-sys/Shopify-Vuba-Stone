@@ -12,7 +12,7 @@
             <figure class="rounded-lg overflow-hidden">
               <img
                 src="{{ block.settings.image | image_url }}"
-                alt="{{ block.settings.alt_text | escape }}"
+                alt="Vuba Technology Images"
                 class="w-full h-auto object-cover pe-9"
               >
             </figure>
@@ -42,12 +42,6 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image"
-        },
-        {
-          "type": "text",
-          "id": "alt_text",
-          "label": "Alt Text",
-          "default": "Sample Image"
         }
       ]
     }
