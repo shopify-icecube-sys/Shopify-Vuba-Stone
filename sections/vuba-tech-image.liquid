@@ -7,15 +7,17 @@
   <div class="inner-container">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-[40px] xl:gap-[80px]">
       {% for block in section.blocks %}
-        <div class="bg-white px-[20px] md:px-[30px] xl:px-[50px] py-[60px] md:py-[30px] xl:py-[45px] 3xl:px-[70px] 3xl:py-[55px] rounded-[20px]">
-          <figure class="rounded-lg overflow-hidden">
-            <img
-              src="{{ block.settings.image | image_url }}"
-              alt="{{ block.settings.alt_text | escape }}"
-              class="w-full h-auto object-cover pe-9"
-            >
-          </figure>
-        </div>
+        {% if block.settings.image != blank %}
+          <div class="bg-white px-[20px] md:px-[30px] xl:px-[50px] py-[60px] md:py-[30px] xl:py-[45px] 3xl:px-[70px] 3xl:py-[55px] rounded-[20px]">
+            <figure class="rounded-lg overflow-hidden">
+              <img
+                src="{{ block.settings.image | image_url }}"
+                alt="{{ block.settings.alt_text | escape }}"
+                class="w-full h-auto object-cover pe-9"
+              >
+            </figure>
+          </div>
+        {% endif %}
       {% endfor %}
     </div>
   </div>
