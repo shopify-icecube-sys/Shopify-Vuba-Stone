@@ -347,7 +347,7 @@
         "event_nHUYVL": {
           "type": "event",
           "settings": {
-            "title": "<p>Our Training Courses</p>",
+            "title": "<p>Our </p><p>Training </p><p>Courses</p>",
             "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
             "year": "2009",
             "image": "shopify://shop_images/bull-pic.jpg"
