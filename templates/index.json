@@ -344,47 +344,38 @@
     "vuba_timeline_tRyq8w": {
       "type": "vuba-timeline",
       "blocks": {
-        "timeline_item_JEjN7k": {
-          "type": "timeline_item",
+        "event_nHUYVL": {
+          "type": "event",
           "settings": {
-            "heading": "Our training courses",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "title": "<p>Our Training Courses</p>",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
             "year": "2009",
-            "image": "shopify://shop_images/bull-pic.jpg",
-            "image_alt": "bull pic",
-            "reverse_layout": false,
-            "text_alignment": "end"
+            "image": "shopify://shop_images/bull-pic.jpg"
           }
         },
-        "timeline_item_grh7GG": {
-          "type": "timeline_item",
+        "event_RzA6eq": {
+          "type": "event",
           "settings": {
-            "heading": "Our training courses",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "year": "2009",
-            "image": "shopify://shop_images/bull-pic.jpg",
-            "image_alt": "bull pic",
-            "reverse_layout": false,
-            "text_alignment": "end"
+            "title": "<p>Our Training Courses</p>",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
+            "year": "2012",
+            "image": "shopify://shop_images/bull-pic.jpg"
           }
         },
-        "timeline_item_6igqJY": {
-          "type": "timeline_item",
+        "event_m66qDE": {
+          "type": "event",
           "settings": {
-            "heading": "Our training courses",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "year": "2009",
-            "image": "shopify://shop_images/bull-pic.jpg",
-            "image_alt": "bull pic",
-            "reverse_layout": false,
-            "text_alignment": "end"
+            "title": "<p>Our Training Courses</p>",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
+            "year": "2016",
+            "image": "shopify://shop_images/bull-pic.jpg"
           }
         }
       },
       "block_order": [
-        "timeline_item_JEjN7k",
-        "timeline_item_grh7GG",
-        "timeline_item_6igqJY"
+        "event_nHUYVL",
+        "event_RzA6eq",
+        "event_m66qDE"
       ],
       "settings": {}
     }
