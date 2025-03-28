@@ -341,41 +341,33 @@
         "background_image": "shopify://shop_images/training-cource-1.jpg"
       }
     },
-    "vuba_timeline_tRyq8w": {
+    "vuba_timeline_46bUyn": {
       "type": "vuba-timeline",
       "blocks": {
-        "event_nHUYVL": {
-          "type": "event",
+        "timeline_item_8xJkX4": {
+          "type": "timeline_item",
           "settings": {
-            "title": "<p>Our </p><p>Training </p><p>Courses</p>",
-            "description": "<p>Lorem Ipsumis simply dummy text </p><p>of the printing and typesetting industry.</p><p>Lorem Ipsum has been the</p><p>industry's standard dummy text </p><p>ever since the 1500s, when</p><p>an unknown printer took a gal</p>",
             "year": "2009",
-            "image": "shopify://shop_images/bull-pic.jpg"
+            "heading": "Our Training Courses",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum aquis congu.",
+            "image": "shopify://shop_images/bull-pic.jpg",
+            "image_position": "left"
           }
         },
-        "event_RzA6eq": {
-          "type": "event",
+        "timeline_item_Nj7BJp": {
+          "type": "timeline_item",
           "settings": {
-            "title": "<p>Our </p><p>Training </p><p>Courses</p>",
-            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-            "year": "2012",
-            "image": "shopify://shop_images/bull-pic.jpg"
-          }
-        },
-        "event_m66qDE": {
-          "type": "event",
-          "settings": {
-            "title": "<p>Our </p><p>Training</p><p> Courses</p>",
-            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-            "year": "2016",
-            "image": "shopify://shop_images/bull-pic.jpg"
+            "year": "2009",
+            "heading": "Our Training Courses",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum aquis congu.",
+            "image": "shopify://shop_images/bull-pic.jpg",
+            "image_position": "right"
           }
         }
       },
       "block_order": [
-        "event_nHUYVL",
-        "event_RzA6eq",
-        "event_m66qDE"
+        "timeline_item_8xJkX4",
+        "timeline_item_Nj7BJp"
       ],
       "settings": {}
     }
@@ -396,6 +388,6 @@
     "vuba_distributor_extract_R8Eihf",
     "vuba_vusion_technology_w6qUQx",
     "vuba_tech_image_FfB9AM",
-    "vuba_timeline_tRyq8w"
+    "vuba_timeline_46bUyn"
   ]
 }
