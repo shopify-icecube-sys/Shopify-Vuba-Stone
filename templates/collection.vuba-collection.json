@@ -38,6 +38,16 @@
         "padding_bottom": 36
       }
     },
+    "vuba_world_colors_CwnG7t": {
+      "type": "vuba-world-colors",
+      "settings": {
+        "logo": "shopify://shop_images/footer-logo-d.png",
+        "logo_alt": "Footer Logo",
+        "section_title": "Vuba World Colors",
+        "section_description": "<p>Discover the world of endless possibilities with Vuba Stone’s exclusive palette of 24 captivating colors. Our wide range of hues, meticulously curated to suit every taste and style,</p><p>allows you to transform your space into a masterpiece.</p>",
+        "image": "shopify://shop_images/epoxy-cons.png"
+      }
+    },
     "vuba_collection_product_grid_4QwM7q": {
       "type": "vuba-collection-product-grid",
       "settings": {
@@ -48,6 +58,7 @@
   "order": [
     "banner",
     "product-grid",
+    "vuba_world_colors_CwnG7t",
     "vuba_collection_product_grid_4QwM7q"
   ]
 }
