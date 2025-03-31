@@ -54,11 +54,66 @@
         "button_text": "Download Guide",
         "button_link": "/"
       }
+    },
+    "vuba_collection_list_g9ck8x": {
+      "type": "vuba-collection-list",
+      "blocks": {
+        "collection_x4N4Fa": {
+          "type": "collection",
+          "settings": {
+            "collection": "vuba-america"
+          }
+        },
+        "collection_aBC7Lf": {
+          "type": "collection",
+          "settings": {
+            "collection": "vuba-america"
+          }
+        },
+        "collection_L6bxDn": {
+          "type": "collection",
+          "settings": {
+            "collection": "vuba-america"
+          }
+        },
+        "collection_ey7yyL": {
+          "type": "collection",
+          "settings": {
+            "collection": "vuba-america"
+          }
+        },
+        "collection_YmETUg": {
+          "type": "collection",
+          "settings": {
+            "collection": "vuba-america"
+          }
+        },
+        "collection_3pcLkC": {
+          "type": "collection",
+          "settings": {
+            "collection": "vuba-america"
+          }
+        }
+      },
+      "block_order": [
+        "collection_x4N4Fa",
+        "collection_aBC7Lf",
+        "collection_L6bxDn",
+        "collection_ey7yyL",
+        "collection_YmETUg",
+        "collection_3pcLkC"
+      ],
+      "settings": {
+        "heading": "Our Colours",
+        "view_more_button": "View More",
+        "view_more_url": "/"
+      }
     }
   },
   "order": [
     "main",
     "vuba_magic_experience_dX8D9x",
-    "vuba_vusion_HXBYXe"
+    "vuba_vusion_HXBYXe",
+    "vuba_collection_list_g9ck8x"
   ]
 }
