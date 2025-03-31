@@ -9,9 +9,11 @@
                 {{ section.settings.heading_1 }}
               </h3>
             {% endif %}
-            <div class="text-[16px] 2xl:text-[23px] font-poppins ">
-              {{ section.settings.description_1 }}
-            </div>
+            {% if section.settings.description_1 != blank %}
+              <div class="text-[16px] 2xl:text-[23px] font-poppins ">
+                {{ section.settings.description_1 }}
+              </div>
+            {% endif %}
           </div>
         </div>
         <div class="column w-[100%] md:w-[54%]">
