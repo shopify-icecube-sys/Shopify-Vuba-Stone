@@ -115,12 +115,37 @@
         "view_more_button": "View More",
         "view_more_url": "/"
       }
+    },
+    "vuba_technology_form_wXGBph": {
+      "type": "vuba-technology-form",
+      "blocks": {
+        "image_block_BBMjgf": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/Group-432.png"
+          }
+        },
+        "image_block_b6za6B": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/Group-397.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_block_BBMjgf",
+        "image_block_b6za6B"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/training-cource-1.jpg"
+      }
     }
   },
   "order": [
     "main",
     "vuba_magic_experience_dX8D9x",
     "vuba_vusion_HXBYXe",
-    "vuba_collection_list_g9ck8x"
+    "vuba_collection_list_g9ck8x",
+    "vuba_technology_form_wXGBph"
   ]
 }
