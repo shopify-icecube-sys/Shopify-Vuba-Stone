@@ -25,7 +25,7 @@
         {% endif %}
         <div class="column w-[100%] md:w-[54%]">
           <figure class="relative w-full pb-[56.25%] rounded-2xl overflow-hidden">
-            {% if final_video_url != '' %}
+            {% if final_video_url != blank %}
               <iframe
                 class="absolute top-0 left-0 w-full h-full"
                 src="{{ final_video_url }}"
