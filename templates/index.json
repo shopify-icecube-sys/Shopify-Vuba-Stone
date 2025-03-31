@@ -403,7 +403,8 @@
         "data_sheet_MHHi7w"
       ],
       "settings": {
-        "heading": "Manuals"
+        "heading": "Manuals",
+        "view_more_btn": "View More"
       }
     }
   },
