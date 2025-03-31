@@ -17,28 +17,18 @@
           </div>
         </div>
         {% if section.settings.video_intro_url != blank %}
-          {% assign video_url = section.settings.video_intro_url %}
-
-          {% if video_url contains 'youtube.com/watch?v=' %}
-            {% assign video_id = video_url | split: 'v=' | last | split: '&' | first %}
-          {% elsif video_url contains 'youtu.be/' %}
-            {% assign video_id = video_url | split: '/' | last | split: '?' | first %}
-          {% else %}
-            {% assign video_id = '' %}
-          {% endif %}
-
-          {% if video_id != '' %}
-            <iframe
-              class="absolute top-0 left-0 w-full h-full"
-              src="https://www.youtube.com/embed/{{ video_id }}"
-              title="Video"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          {% else %}
-            <p class="text-red-500">Invalid YouTube URL</p>
-          {% endif %}
+          <div class="column w-[100%] md:w-[54%]">
+            <figure class="relative w-full pb-[56.25%] rounded-2xl overflow-hidden">
+              <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/{{ section.settings.video_intro_url }}"
+                title="Video"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen=""
+              ></iframe>
+            </figure>
+          </div>
         {% endif %}
       </div>
       <div class="flex flex-wrap gap-y-[40px] lg:items-center">
