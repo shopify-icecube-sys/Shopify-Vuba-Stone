@@ -387,25 +387,6 @@
         "heading": "Search our extensive list of Technical data sheets etc",
         "description": "<p>We are the preferred surface for household names, big brands and homeowners worldwide. Proudly BBA certified, a testament to our quality and excellence.</p>"
       }
-    },
-    "vuba_technical_data_qzj89i": {
-      "type": "vuba-technical-data",
-      "blocks": {
-        "data_sheet_MHHi7w": {
-          "type": "data_sheet",
-          "settings": {
-            "product_name": "Technical Data Sheet Product Name",
-            "date": "12.02.23"
-          }
-        }
-      },
-      "block_order": [
-        "data_sheet_MHHi7w"
-      ],
-      "settings": {
-        "heading": "Manuals",
-        "view_more_btn": "View More"
-      }
     }
   },
   "order": [
@@ -426,7 +407,6 @@
     "vuba_tech_image_FfB9AM",
     "vuba_timeline_46bUyn",
     "technical_download_banner_Cehjgz",
-    "vuba_technical_searchbar_UdqkKf",
-    "vuba_technical_data_qzj89i"
+    "vuba_technical_searchbar_UdqkKf"
   ]
 }
