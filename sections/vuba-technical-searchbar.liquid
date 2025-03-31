@@ -1,6 +1,48 @@
+<section class="technical-data-sheet bg-gray-light">
+  <div class="inner-container">
+    <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-4 text-sm 3xl:text-2xl py-14 3xl:py-32">
+      <h2 class="text-2xl 3xl:text-4xl font-medium text-secondary">
+        {{ section.settings.heading | escape | newline_to_br }}
+      </h2>
+      <div>
+        {{ section.settings.description }}
+      </div>
+      <div class="relative mt-3 md:max-w-lg">
+        <input
+          type="text"
+          placeholder="Search"
+          class="w-full pl-3 pr-12 py-2 placeholder:font-light uppercase md:capitalize bg-transparent border border-black h-12 rounded-md focus:outline-none focus:border-black"
+        >
+        <span class="absolute right-3 top-2">
+          <img src="images/search-icon-m.svg" alt="search icon">
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Technical Search",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Search our extensive list of Technical data sheets etc"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>We are the preferred surface for household names, big brands and homeowners worldwide. Proudly BBA certified, a testament to our quality and excellence.</p>"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Technical Search",
+      "category": "Custom Section"
+    }
+  ]
+}
 {% endschema %}
