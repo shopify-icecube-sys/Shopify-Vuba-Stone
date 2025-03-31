@@ -379,6 +379,13 @@
         "heading": "Technical Download",
         "paragraph": "<p>this page would have a big list of all the pdfs we have to data sheets, application guides , </p><p>warranty documents etc. We would want this to look simple whilst condensing all the</p><p>information.</p>"
       }
+    },
+    "vuba_technical_searchbar_UdqkKf": {
+      "type": "vuba-technical-searchbar",
+      "settings": {
+        "heading": "Search our extensive list of Technical data sheets etc",
+        "description": "<p>We are the preferred surface for household names, big brands and homeowners worldwide. Proudly BBA certified, a testament to our quality and excellence.</p>"
+      }
     }
   },
   "order": [
@@ -398,6 +405,7 @@
     "vuba_vusion_technology_w6qUQx",
     "vuba_tech_image_FfB9AM",
     "vuba_timeline_46bUyn",
-    "technical_download_banner_Cehjgz"
+    "technical_download_banner_Cehjgz",
+    "vuba_technical_searchbar_UdqkKf"
   ]
 }
