@@ -114,6 +114,13 @@
         "background_image": "shopify://shop_images/vuba-mac-2.jpg",
         "description": "<p>With a monolithic bond guaranteeing long-lasting performance, VubaMac surpasses conventional materials like </p><p>concrete and asphalt in longevity and flexibility. Plus, its ease of application, provided by a single supplier, offers</p><p>unmatched convenience, with installations completed in just one day, minimising disruption and providing a</p><p>smoother, quieter alternative.</p>"
       }
+    },
+    "vuba_latest_project_4QqytH": {
+      "type": "vuba-latest-project",
+      "settings": {
+        "section_heading": "Latest Projects",
+        "blog_handle": "project"
+      }
     }
   },
   "order": [
@@ -121,6 +128,7 @@
     "vuba_introduction_aUQnJY",
     "vuba_introduction_two_GptM3Q",
     "vuba_richtext_intro_L37gmb",
-    "vuba_intro_multicolumn_ifK3H3"
+    "vuba_intro_multicolumn_ifK3H3",
+    "vuba_latest_project_4QqytH"
   ]
 }
