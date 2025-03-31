@@ -70,11 +70,13 @@
         <ul class="hidden md:flex lg:space-x-5 3xl:space-x-5">
           {% for link in linklists[section.settings.menu].links %}
             <li>
-              <a href="{{ link.url }}" class="text-white">{{ link.title }}</a>
+              <a href="{{ link.url }}" class="text-white hover:bg-primary py-3 px-2 lg:px-3 3xl:px-5 inline-block">
+                {{- link.title -}}
+              </a>
             </li>
           {% endfor %}
         </ul>
-        <a href="/" class="hidden md:block text-white">CONTACT</a>
+        <a href="/" class="hidden md:block text-white hover:bg-primary py-3 px-2 lg:px-3">CONTACT</a>
       </div>
     </div>
   </nav>
