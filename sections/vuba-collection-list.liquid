@@ -1,6 +1,76 @@
+<section class="mb-[60px] 3xl:mb-[120px]">
+  <div class="inner-container">
+    <h2 class="font-poppins text-center text-secondary text-4xl lg:text-4xl 3xl:text-[44px] font-medium mb-5 xl:mb-[50px] 3xl:mb-[83px]">
+      {{ section.settings.heading }}
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-[30px] gap-y-[20px] md:gap-x-[40px] md:gap-y-[40px] 3xl:gap-x-[60px] 3xl:gap-y-[60px]">
+      {% for block in section.blocks %}
+        {% if block.settings.collection %}
+          <div class="column">
+            <figure class="text-center">
+              <img
+                src="{{ block.settings.collection.image | img_url: 'medium' }}"
+                alt="{{ block.settings.collection.title }}"
+                class="w-full h-auto object-cover aspect-[1/1] mb-[20px] 3xl:mb-[22px]"
+              >
+              <figcaption class="font-medium text[18px] font-poppins">
+                {{ block.settings.collection.title }}
+              </figcaption>
+            </figure>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="mt-8 3xl:mt-10 text-center block md:hidden">
+      <a
+        href="/collections"
+        class="text-sm 3xl:text-base tracking-widest inline-block bg-primary hover:bg-secondary text-white hover:text-white px-7 py-4 rounded-xl font-bold"
+      >
+        VIEW MORE
+      </a>
+    </div>
+  </div>
+</section>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Collection List",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Our Colours"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "Collection",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Select Collection"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection List",
+      "blocks": [
+        {
+          "type": "collection"
+        },
+        {
+          "type": "collection"
+        },
+        {
+          "type": "collection"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
