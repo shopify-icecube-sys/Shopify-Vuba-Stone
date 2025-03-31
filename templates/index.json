@@ -537,10 +537,10 @@
         "card_NCE4jz": {
           "type": "card",
           "settings": {
-            "card_title": "Learn About",
+            "card_title": "Learn Abouts",
             "card_description": "This is a sample description.",
             "download_link": "/",
-            "download_btn": "Download"
+            "download_btn": "Downloads"
           }
         },
         "card_dQUtah": {
