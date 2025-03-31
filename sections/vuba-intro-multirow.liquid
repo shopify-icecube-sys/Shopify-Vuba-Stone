@@ -35,7 +35,10 @@
                 allowfullscreen=""
               ></iframe>
             {% else %}
-              {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+              {{
+                'hero-apparel-3'
+                | placeholder_svg_tag: 'placeholder-svg placeholder absolute top-0 left-0 w-full h-full'
+              }}
             {% endif %}
           </figure>
         </div>
