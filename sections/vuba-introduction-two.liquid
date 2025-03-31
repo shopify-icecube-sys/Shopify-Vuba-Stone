@@ -21,9 +21,11 @@
                   {% endif %}
                 </div>
               </div>
-              <div class="desck-wrap text-[14px] 3xl:text-[12px] leading-[1.5]">
-                <p>{{ block.settings.card_description }}</p>
-              </div>
+              {% if block.settings.card_description != blank %}
+                <div class="desck-wrap text-[14px] 3xl:text-[12px] leading-[1.5]">
+                  <p>{{ block.settings.card_description }}</p>
+                </div>
+              {% endif %}
               {% if block.settings.download_link %}
                 <a
                   href="{{ block.settings.download_link }}"
