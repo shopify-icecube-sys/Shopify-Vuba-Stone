@@ -26,7 +26,7 @@
               </div>
               {% if block.settings.card_description != blank %}
                 <div class="desck-wrap text-[14px] 3xl:text-[12px] leading-[1.5]">
-                  <p>{{ block.settings.card_description }}</p>
+                  {{ block.settings.card_description }}
                 </div>
               {% endif %}
               {% if block.settings.download_btn != blank %}
@@ -80,10 +80,10 @@
           "default": "Learn About"
         },
         {
-          "type": "textarea",
+          "type": "richtext",
           "id": "card_description",
           "label": "Card Description",
-          "default": "This is a sample description."
+          "default": "<p>This is a sample description.</p>"
         },
         {
           "type": "url",
