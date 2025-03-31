@@ -382,6 +382,7 @@
     },
     "vuba_technical_searchbar_UdqkKf": {
       "type": "vuba-technical-searchbar",
+      "disabled": true,
       "settings": {
         "heading": "Search our extensive list of Technical data sheets etc",
         "description": "<p>We are the preferred surface for household names, big brands and homeowners worldwide. Proudly BBA certified, a testament to our quality and excellence.</p>"
