@@ -1,8 +1,10 @@
 <section class="mb-[60px] 3xl:mb-[120px]">
   <div class="inner-container">
-    <h2 class="font-poppins text-center text-secondary text-4xl lg:text-4xl 3xl:text-[44px] font-medium mb-5 xl:mb-[50px] 3xl:mb-[83px]">
-      {{ section.settings.heading }}
-    </h2>
+    {% if section.settings.heading != blank %}
+      <h2 class="font-poppins text-center text-secondary text-4xl lg:text-4xl 3xl:text-[44px] font-medium mb-5 xl:mb-[50px] 3xl:mb-[83px]">
+        {{ section.settings.heading }}
+      </h2>
+    {% endif %}
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-[30px] gap-y-[20px] md:gap-x-[40px] md:gap-y-[40px] 3xl:gap-x-[60px] 3xl:gap-y-[60px]">
       {% for block in section.blocks %}
         {% if block.settings.collection %}
