@@ -34,13 +34,6 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen=""
               ></iframe>
-            {% else %}
-              <img
-                src="{{ section.settings.fallback_image | default: 'https://via.placeholder.com/600x350?text=No+Video+Available' }}"
-                class="w-full h-auto rounded-2xl"
-                alt="No video available"
-              >
-              <p class="text-center text-gray-500 mt-2">No video available</p>
             {% endif %}
           </figure>
         </div>
