@@ -4,11 +4,13 @@
       <div class="flex flex-wrap gap-y-[40px] lg:items-center flex-row-reverse">
         <div class="column w-[100%] md:w-[46%]">
           <div class="md:max-w-[300px] lg:max-w-[400px] xl:max-w-[500px] 2xl:max-w-[599px]">
-            <h3 class="text-secondary text-[36px] xl:text-3xl 3xl:text-[53px] font-medium font-poppins leading-[40px] 3xl:leading-normal mb-[20px] lg:mb-7 ">
-              {{ section.settings.heading_1 }}
-            </h3>
+            {% if section.settings.heading_1 != blank %}
+              <h3 class="text-secondary text-[36px] xl:text-3xl 3xl:text-[53px] font-medium font-poppins leading-[40px] 3xl:leading-normal mb-[20px] lg:mb-7 ">
+                {{ section.settings.heading_1 }}
+              </h3>
+            {% endif %}
             <div class="text-[16px] 2xl:text-[23px] font-poppins ">
-              {{ section.settings.description_1 }}
+              {% if section.settings.description_1 != blank %}{{ section.settings.description_1 }} {% endif %}
             </div>
           </div>
         </div>
@@ -38,9 +40,11 @@
       <div class="flex flex-wrap gap-y-[40px] lg:items-center">
         <div class="column w-[100%] md:w-[46%]">
           <div class="md:max-w-[300px] lg:max-w-[400px] xl:max-w-[500px] 2xl:max-w-[599px]">
-            <h3 class="text-secondary text-[36px] xl:text-3xl 3xl:text-[53px] font-medium font-poppins leading-[40px] 3xl:leading-normal mb-[20px] lg:mb-7 ">
-              {{ section.settings.heading_2 }}
-            </h3>
+            {% if section.settings.heading_2 != blank %}
+              <h3 class="text-secondary text-[36px] xl:text-3xl 3xl:text-[53px] font-medium font-poppins leading-[40px] 3xl:leading-normal mb-[20px] lg:mb-7 ">
+                {{ section.settings.heading_2 }}
+              </h3>
+            {% endif %}
             <div class="text-[16px] 2xl:text-[23px] font-poppins ">
               {{ section.settings.description_2 }}
             </div>
