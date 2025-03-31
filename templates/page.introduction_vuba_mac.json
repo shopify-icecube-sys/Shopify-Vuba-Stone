@@ -56,11 +56,63 @@
       "settings": {
         "right_image": "shopify://shop_images/Introducing-Vuba-Stone-hero.png"
       }
+    },
+    "vuba_intro_multicolumn_87pp9a": {
+      "type": "vuba-intro-multicolumn",
+      "blocks": {
+        "highlight_9hwrFG": {
+          "type": "highlight",
+          "settings": {
+            "icon": "shopify://shop_images/m-icon1.svg",
+            "icon_mobile": "shopify://shop_images/m-icon-mobile-1.svg",
+            "title": "30 Years In",
+            "title2": "The Making"
+          }
+        },
+        "highlight_zhFabh": {
+          "type": "highlight",
+          "settings": {
+            "icon": "shopify://shop_images/m-icon2.svg",
+            "icon_mobile": "shopify://shop_images/m-icon-mobile-2.svg",
+            "title": "Next Generation",
+            "title2": "Technologies"
+          }
+        },
+        "highlight_L8krMb": {
+          "type": "highlight",
+          "settings": {
+            "icon": "shopify://shop_images/m-icon3.svg",
+            "icon_mobile": "shopify://shop_images/m-icon-mobile-3.svg",
+            "title": "Real European Marble &",
+            "title2": "Quartz"
+          }
+        },
+        "highlight_CxkJbN": {
+          "type": "highlight",
+          "settings": {
+            "icon": "shopify://shop_images/m-icon4.svg",
+            "icon_mobile": "shopify://shop_images/m-icon-mobile-4.svg",
+            "title": "We Invest In Our",
+            "title2": "Dealers"
+          }
+        }
+      },
+      "block_order": [
+        "highlight_9hwrFG",
+        "highlight_zhFabh",
+        "highlight_L8krMb",
+        "highlight_CxkJbN"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/vuba-mac-2.jpg",
+        "description": "<p>With a monolithic bond guaranteeing long-lasting performance, VubaMac surpasses conventional materials like </p><p>concrete and asphalt in longevity and flexibility. Plus, its ease of application, provided by a single supplier, offers</p><p>unmatched convenience, with installations completed in just one day, minimising disruption and providing a </p><p>smoother, quieter alternative.</p>"
+      }
     }
   },
   "order": [
     "main",
     "vuba_introduction_pAVw9g",
-    "vuba_introduction_two_63M8U6"
+    "vuba_introduction_two_63M8U6",
+    "vuba_intro_multicolumn_87pp9a"
   ]
 }
