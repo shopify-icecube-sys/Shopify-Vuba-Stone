@@ -488,7 +488,7 @@
         "collection_j98JD8": {
           "type": "collection",
           "settings": {
-            "collection": ""
+            "collection": "vuba-america"
           }
         },
         "collection_e4jhdq": {
@@ -518,7 +518,9 @@
         "collection_XKUfTr"
       ],
       "settings": {
-        "heading": "Our Colours"
+        "heading": "Our Colours",
+        "view_more_button": "View More",
+        "view_more_url": "/"
       }
     }
   },
