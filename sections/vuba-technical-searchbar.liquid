@@ -6,9 +6,11 @@
           {{ section.settings.heading | escape | newline_to_br }}
         </h2>
       {% endif %}
-      <div>
-        {{ section.settings.description }}
-      </div>
+      {% if section.settings.description != blank %}
+        <div>
+          {{ section.settings.description }}
+        </div>
+      {% endif %}
       <div class="relative mt-3 md:max-w-lg">
         <input
           type="text"
