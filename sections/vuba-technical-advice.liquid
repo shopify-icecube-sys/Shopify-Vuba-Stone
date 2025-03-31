@@ -45,17 +45,19 @@
         </div>
       {% endfor %}
     </div>
-    <div class="btn-wrap text-center mt-10">
-      <a
-        class="bg-primary text-white px-8 py-[15px] text-sm font-bold uppercase hover:bg-secondar inline-block rounded-lg"
-        href=""
-        {% if section.settings.viewall_link != blank %}
-          href="{{ section.settings.viewAll_link }}"
-        {% endif %}
-      >
-        {{- section.settings.viewBtn_btn -}}
-      </a>
-    </div>
+    {% if section.settings.viewBtn_btn != blank %}
+      <div class="btn-wrap text-center mt-10">
+        <a
+          class="bg-primary text-white px-8 py-[15px] text-sm font-bold uppercase hover:bg-secondar inline-block rounded-lg"
+          href=""
+          {% if section.settings.viewall_link != blank %}
+            href="{{ section.settings.viewAll_link }}"
+          {% endif %}
+        >
+          {{- section.settings.viewBtn_btn -}}
+        </a>
+      </div>
+    {% endif %}
   </div>
 </section>
 
