@@ -1,4 +1,148 @@
 @font-face {
+  font-family: "Poppins";
+  src: url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-Italic.eot");
+  src: url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-Italic.woff2")
+      format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-Italic.woff")
+      format("woff"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-Italic.ttf")
+      format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-Bold.eot");
+  src: url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-Bold.woff2")
+      format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-Bold.woff")
+      format("woff"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-Bold.ttf")
+      format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-ExtraBold.eot");
+  src: url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-ExtraBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-ExtraBold.woff2")
+      format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-ExtraBold.woff")
+      format("woff"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-ExtraBold.ttf")
+      format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-Black.eot");
+  src: url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-Black.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-Black.woff2")
+      format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-Black.woff")
+      format("woff"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-Black.ttf")
+      format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-ExtraLight.eot");
+  src: url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-ExtraLight.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-ExtraLight.woff2")
+      format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-ExtraLight.woff")
+      format("woff"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-ExtraLight.ttf")
+      format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-Medium.eot");
+  src: url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-Medium.woff2")
+      format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-Medium.woff")
+      format("woff"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-Medium.ttf")
+      format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-SemiBold.eot");
+  src: url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-SemiBold.woff2")
+      format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-SemiBold.woff")
+      format("woff"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-SemiBold.ttf")
+      format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-Thin.eot");
+  src: url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-Thin.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-Thin.woff2")
+      format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-Thin.woff")
+      format("woff"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-Thin.ttf")
+      format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-Regular.eot");
+  src: url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-Regular.woff2")
+      format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-Regular.woff")
+      format("woff"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Poppins-Regular.ttf")
+      format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Schibsted Grotesk";
   src: url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/SchibstedGrotesk-Regular.eot");
   src: url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/SchibstedGrotesk-Regular.eot?#iefix")
@@ -26,6 +170,38 @@
     url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/SchibstedGrotesk-Medium.ttf")
       format("truetype");
   font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Avenir Next LT Pro";
+  src: url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/AvenirNextLTPro-Bold.eot");
+  src: url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/AvenirNextLTPro-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/AvenirNextLTPro-Bold.woff2")
+      format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/AvenirNextLTPro-Bold.woff")
+      format("woff"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/AvenirNextLTPro-Bold.ttf")
+      format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Avenir Next LT Pro";
+  src: url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/AvenirNextLTPro-Regular.eot");
+  src: url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/AvenirNextLTPro-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/AvenirNextLTPro-Regular.woff2")
+      format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/AvenirNextLTPro-Regular.woff")
+      format("woff"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/AvenirNextLTPro-Regular.ttf")
+      format("truetype");
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
@@ -75,6 +251,22 @@
       format("truetype");
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Avenir Next LT Pro";
+  src: url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/AvenirNextLTPro-It.eot");
+  src: url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/AvenirNextLTPro-It.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/AvenirNextLTPro-It.woff2")
+      format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/AvenirNextLTPro-It.woff")
+      format("woff"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/AvenirNextLTPro-It.ttf")
+      format("truetype");
+  font-weight: normal;
+  font-style: italic;
   font-display: swap;
 }
 
