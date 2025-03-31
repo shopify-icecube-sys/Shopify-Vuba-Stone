@@ -10,7 +10,7 @@
         <div class="column">
           <div class="inner-block">
             <figure class="mb-[20px] md:mb-[45px] 3xl:mb-[75px]">
-              <img src="{{ resource.image | image_url }}" alt="Download image" class="aspect-[1/1]">
+              <img src="{{ resource.image | img_url: 'master' }}" alt="Download image" class="aspect-[1/1]">
             </figure>
             <div class="download-block flex flex-col gap-[13px]">
               {% for file in resource.files %}
