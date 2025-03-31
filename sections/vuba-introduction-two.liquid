@@ -1,1 +1,105 @@
-hi
+<section class="pb-14 lg:py-16 xl:py-14">
+  <div class="container">
+    <div class="flex flex-wrap gap-14 lg:gap-0">
+      <!-- Left Column - Cards -->
+      <div class="column order-2 lg:order-1 lg:w-[50%] xl:w-[44%]">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-[20px] 2xl:gap-[30px] 3xl:gap-[40px] lg:max-w-[600px] xl:max-w-[500px] 2xl:max-w-[548px]">
+          {% for block in section.blocks %}
+            <div class="border-[3px] border-secondary p-7 2xl:p-8 3xl:p-10 2xl:pb-6 rounded-[20px] bg-white text-sm 3xl:text-xl">
+              <div class="flex justify-start mb-5 xl:mb-2">
+                <div class="flex xl:flex-col items-center gap-x-3">
+                  {% if block.settings.card_image %}
+                    <img
+                      src="{{ block.settings.card_image | image_url }}"
+                      class="w-10 3xl:w-20 xl:mb-5 3xl:mb-[22px] xl:ml-0 mr-auto 3xl:max-w-[65px]"
+                      alt="Document Icon"
+                    >
+                  {% endif %}
+                  <h3 class="font-medium lg:font-semibold font-poppins text-lg 3xl:text-[19px] text-secondary block">
+                    {{ block.settings.card_title }}
+                  </h3>
+                </div>
+              </div>
+              <div class="desck-wrap text-[14px] 3xl:text-[12px] leading-[1.5]">
+                <p>{{ block.settings.card_description }}</p>
+              </div>
+              {% if block.settings.download_link %}
+                <a
+                  href="{{ block.settings.download_link }}"
+                  class="font-medium underline flex justify-between md:justify-center items-center mt-4 3xl:mt-[24px] font-poppins text-[14px]"
+                >
+                  Download
+                </a>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- Right Column - Image -->
+      <div class="column order-1 px-5 lg:px-0 lg:order-2 lg:w-[50%] xl:w-[56%] lg:ps-5 xl:ps-0">
+        <figure class="-mt-[60px] lg:-mt-[100px] xl:-mt-[250px] 2xl:-mt-[325px] 3xl:-mt-[360px]">
+          {% if section.settings.right_image %}
+            <img class="w-[100%]" src="{{ section.settings.right_image | image_url }}" alt="Image">
+          {% endif %}
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Dynamic Card Section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "right_image",
+      "label": "Right Side Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "card_image",
+          "label": "Card Icon"
+        },
+        {
+          "type": "text",
+          "id": "card_title",
+          "label": "Card Title",
+          "default": "Learn About"
+        },
+        {
+          "type": "textarea",
+          "id": "card_description",
+          "label": "Card Description",
+          "default": "This is a sample description."
+        },
+        {
+          "type": "url",
+          "id": "download_link",
+          "label": "Download Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Dynamic Card Section",
+      "blocks": [
+        {
+          "type": "card"
+        },
+        {
+          "type": "card"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
