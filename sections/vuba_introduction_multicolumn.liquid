@@ -8,19 +8,25 @@
     <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-[40px] md:gap-6 mb-[40px] 3xl:mb-[130px] max-w-[400px] md:max-w-max mx-auto">
       {% for block in section.blocks %}
         <div class="text-center" {{ block.shopify_attributes }}>
-          <img
-            src="{{ block.settings.icon | img_url: 'master' }}"
-            alt="{{ block.settings.title }}"
-            class="w-full max-w-[60px] 3xl:max-h-[142px] mx-auto mb-[32px] hidden md:block"
-          >
-          <img
-            src="{{ block.settings.icon_mobile | img_url: 'master' }}"
-            alt="{{ block.settings.title }}"
-            class="w-full max-w-[60px] 3xl:max-h-[142px] mb-[20px]  md:hidden"
-          >
-          <h3 class="text-white text-left md:text-center text-[text-[14px] 3xl:text-[24px] font-bold font-poppins xl:leading-6 3xl:leading-9">
-            {{ block.settings.title }}
-          </h3>
+          {% if block.settings.icon != blank %}
+            <img
+              src="{{ block.settings.icon | img_url: 'master' }}"
+              alt="{{ block.settings.title }}"
+              class="w-full max-w-[60px] 3xl:max-h-[142px] mx-auto mb-[32px] hidden md:block"
+            >
+          {% endif %}
+          {% if block.settings.icon_mobile != blank %}
+            <img
+              src="{{ block.settings.icon_mobile | img_url: 'master' }}"
+              alt="{{ block.settings.title }}"
+              class="w-full max-w-[60px] 3xl:max-h-[142px] mb-[20px]  md:hidden"
+            >
+          {% endif %}
+          {% if block.settings.title != blank %}
+            <h3 class="text-white text-left md:text-center text-[text-[14px] 3xl:text-[24px] font-bold font-poppins xl:leading-6 3xl:leading-9">
+              {{ block.settings.title }}
+            </h3>
+          {% endif %}
         </div>
       {% endfor %}
     </div>
