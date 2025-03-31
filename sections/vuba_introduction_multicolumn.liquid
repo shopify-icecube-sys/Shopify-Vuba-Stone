@@ -30,9 +30,11 @@
         </div>
       {% endfor %}
     </div>
-    <div class="desc-wrap font-poppins text-[14px] 3xl:text-[20px] text-center max-w-[800px] 3xl:max-w-[1275px] mx-auto ">
-      {{ section.settings.description }}
-    </div>
+    {% if section.settings.description != blank %}
+      <div class="desc-wrap font-poppins text-[14px] 3xl:text-[20px] text-center max-w-[800px] 3xl:max-w-[1275px] mx-auto ">
+        {{ section.settings.description }}
+      </div>
+    {% endif %}
   </div>
 </section>
 
