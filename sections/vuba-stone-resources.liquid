@@ -3,7 +3,7 @@
 <section class="download-vuba-mac-section bg-[#fafafa] pt-[60px] 3xl:pt-[95px] pb-[60px] 3xl:pb-[130px]">
   <div class="inner-container">
     <h3 class="text-secondary text-[36px] xl:text-3xl 3xl:text-[53px] font-medium font-poppins leading-[40px] 3xl:leading-normal mb-[20px] md:mb-[24px] text-center">
-      Download Vuba Mac Resources
+      {{ section.settings.heading }}
     </h3>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[40px] xl:gap-[20px] 2xl:gap-[30px] 3xl:gap-[50px]">
       {% for resource in resources %}
@@ -39,7 +39,14 @@
 {% schema %}
 {
   "name": "Download Vuba Mac",
-  "settings": [],
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Download Vuba Mac Resources",
+      "label": "heading"
+    }
+  ],
   "blocks": [
     {
       "type": "resource",
