@@ -11,13 +11,23 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "vuba_introduction_aUQnJY": {
+      "type": "vuba-introduction",
+      "settings": {
+        "logo": "shopify://shop_images/LogoIdeasVuba.svg",
+        "heading": "Introducing Vuba Stone",
+        "description": "<p>The ultimate solution for flood-resistant paving that </p><p>revolutionises traditional construction methods.</p>"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "vuba_introduction_aUQnJY"
   ]
 }
