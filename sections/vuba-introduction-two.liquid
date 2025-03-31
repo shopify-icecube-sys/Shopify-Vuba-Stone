@@ -14,9 +14,11 @@
                       alt="Document Icon"
                     >
                   {% endif %}
-                  <h3 class="font-medium lg:font-semibold font-poppins text-lg 3xl:text-[19px] text-secondary block">
-                    {{ block.settings.card_title }}
-                  </h3>
+                  {% if block.settings.card_title != blank %}
+                    <h3 class="font-medium lg:font-semibold font-poppins text-lg 3xl:text-[19px] text-secondary block">
+                      {{ block.settings.card_title }}
+                    </h3>
+                  {% endif %}
                 </div>
               </div>
               <div class="desck-wrap text-[14px] 3xl:text-[12px] leading-[1.5]">
