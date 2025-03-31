@@ -1,6 +1,84 @@
+<section class="technical-data-sheet bg-gray-light">
+  <div class="container">
+    <div class="bg-white rounded-3xl py-5 xl:py-14">
+      <div class="inner-container">
+        <h2 class="text-2xl font-medium mb-6 text-secondary">{{ section.settings.heading }}</h2>
+        <div class="space-y-4 md:space-y-0 text-sm 2xl:text-base font-medium">
+          {% for block in section.blocks %}
+            <div
+              class="flex flex-wrap gap-3 justify-between items-center border-2 md:border-0 md:border-b-2 border-gray rounded-2xl md:rounded-none px-4 md:px-0 py-6"
+              {{ block.shopify_attributes }}
+            >
+              <strong class="font-medium w-full md:w-auto md:opacity-50">{{ block.settings.product_name }}</strong>
+              <date class="inline-block text-black opacity-50">{{ block.settings.date }}</date>
+              <div class="flex items-center gap-4 w-full md:w-auto">
+                <a
+                  class="flex items-center gap-4 border-2 md:border-0 rounded-[50px] text-primary px-8 py-3 md:p-0 border-primary uppercase font-bold"
+                  href="{{ block.settings.download_link }}"
+                >
+                  <span class="md:hidden">Download</span>
+                  <img class="hidden md:block" src="{{ 'view-icon.svg' | asset_url }}" alt="view-icon">
+                  <img class="md:hidden" src="{{ 'cloud-download-icon.svg' | asset_url }}" alt="cloud-download-icon">
+                </a>
+                <a href="{{ block.settings.download_link }}">
+                  <img class="hidden md:block" src="{{ 'download-icon.svg' | asset_url }}" alt="download-icon">
+                  <img class="md:hidden" src="{{ 'eye-icon.svg' | asset_url }}" alt="eye-icon">
+                </a>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+        <div class="btn-wrap text-center mt-10 md:hidden">
+          <a
+            class="bg-primary text-white px-8 py-[15px] text-sm font-bold uppercase hover:bg-secondary inline-block rounded-lg"
+            href="#"
+            >View More</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Technical Data Sheet",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Manuals"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "data_sheet",
+      "name": "Data Sheet",
+      "settings": [
+        {
+          "type": "text",
+          "id": "product_name",
+          "label": "Product Name"
+        },
+        {
+          "type": "text",
+          "id": "date",
+          "label": "Date"
+        },
+        {
+          "type": "url",
+          "id": "download_link",
+          "label": "Download Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Technical Data Sheet",
+      "category": "Custom"
+    }
+  ]
+}
 {% endschema %}
