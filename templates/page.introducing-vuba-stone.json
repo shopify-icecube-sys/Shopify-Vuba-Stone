@@ -121,6 +121,17 @@
         "section_heading": "Latest Projects",
         "blog_handle": "project"
       }
+    },
+    "vuba_intro_multirow_9VY8pk": {
+      "type": "vuba-intro-multirow",
+      "settings": {
+        "heading_1": "What is VubaMac?",
+        "description_1": "<p>With a monolithic bond guaranteeing long-lasting performance, VubaMac surpasses conventional materials like concrete and asphalt in longevity and flexibility</p>",
+        "video_url": "",
+        "heading_2": "What is VubaMac?",
+        "description_2": "<p>With a monolithic bond guaranteeing long-lasting performance, VubaMac surpasses conventional materials like concrete and asphalt in longevity and flexibility</p>",
+        "image_url": "shopify://shop_images/air-source-heat-pump.png"
+      }
     }
   },
   "order": [
@@ -129,6 +140,7 @@
     "vuba_introduction_two_GptM3Q",
     "vuba_richtext_intro_L37gmb",
     "vuba_intro_multicolumn_ifK3H3",
-    "vuba_latest_project_4QqytH"
+    "vuba_latest_project_4QqytH",
+    "vuba_intro_multirow_9VY8pk"
   ]
 }
