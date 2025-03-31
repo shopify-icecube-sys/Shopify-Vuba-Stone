@@ -16,7 +16,7 @@
                   class="flex items-center gap-4 border-2 md:border-0 rounded-[50px] text-primary px-8 py-3 md:p-0 border-primary uppercase font-bold"
                   href="{{ block.settings.download_link }}"
                 >
-                  <span class="md:hidden">Download</span>
+                  <span class="md:hidden">{{ block.settings.button_text }}</span>
                   <img class="hidden md:block" src="{{ 'view-icon.svg' | asset_url }}" alt="view-icon">
                   <img class="md:hidden" src="{{ 'cloud-download-icon.svg' | asset_url }}" alt="cloud-download-icon">
                 </a>
@@ -70,6 +70,12 @@
           "type": "url",
           "id": "download_link",
           "label": "Download Link"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Download Button",
+          "default":"Download"
         }
       ]
     }
