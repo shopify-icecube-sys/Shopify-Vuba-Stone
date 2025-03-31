@@ -17,20 +17,20 @@
         "padding_bottom": 28
       }
     },
-    "vuba_banner_image_7M8KaE": {
+    "vuba_banner_image_fbUJxN": {
       "type": "vuba-banner-image",
       "settings": {
         "background_image": "shopify://shop_images/vuba-mac-2.jpg",
         "background_image_mobile": "shopify://shop_images/vuba-mac-2.jpg",
         "logo_desktop": "shopify://shop_images/header-logo-blue-d.svg",
         "logo_mobile": "shopify://shop_images/header-logo-blue-m.svg",
-        "title": "Training Course dates and",
-        "title2": "locations",
+        "title": "DOWNLOAD OUR BROCHURE",
+        "title2": "DOWNLOAD OUR BROCHURE",
         "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>",
-        "button_text_en": "2 DAY COURSE",
-        "button_link_en": "shopify://products/cano-cristales",
-        "button_text_esp": "1-1 TRAINING",
-        "button_link_esp": "shopify://products/cano-cristales",
+        "button_text_en": "DOWNLOAD EN",
+        "button_link_en": "",
+        "button_text_esp": "DOWNLOAD ESP",
+        "button_link_esp": "",
         "div_color": "#821832"
       }
     },
@@ -178,6 +178,7 @@
       ],
       "settings": {
         "section_title": "Technical and Training Team",
+        "section_title_left": "",
         "section_description": "<p>We are the preferred surface for household names, big brands and homeowners worldwide.</p><p>Proudly BBA certified, a testament to our quality and excellence.</p>"
       }
     },
@@ -193,7 +194,7 @@
   },
   "order": [
     "main",
-    "vuba_banner_image_7M8KaE",
+    "vuba_banner_image_fbUJxN",
     "vuba_training_course_WMYMRq",
     "vuba_latest_project_djTy4n",
     "vuba_teams_bTE3HP",
