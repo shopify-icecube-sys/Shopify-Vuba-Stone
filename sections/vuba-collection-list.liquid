@@ -10,11 +10,13 @@
         {% if block.settings.collection %}
           <div class="column">
             <figure class="text-center">
-              <img
-                src="{{ block.settings.collection.image | img_url: 'master' }}"
-                alt="Collection Title"
-                class="w-full h-auto object-cover aspect-[1/1] mb-[20px] 3xl:mb-[22px]"
-              >
+              {% if block.settings.collection.image != blank %}
+                <img
+                  src="{{ block.settings.collection.image | img_url: 'master' }}"
+                  alt="Collection Title"
+                  class="w-full h-auto object-cover aspect-[1/1] mb-[20px] 3xl:mb-[22px]"
+                >
+              {% endif %}
               <figcaption class="font-medium text[18px] font-poppins">
                 {{ block.settings.collection.title }}
               </figcaption>
