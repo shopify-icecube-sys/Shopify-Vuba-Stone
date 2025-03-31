@@ -85,6 +85,7 @@
         "resource_jcLAyx": {
           "type": "resource",
           "settings": {
+            "image": "shopify://shop_images/statementCountry.jpg",
             "title": "",
             "file_title": "",
             "file_url": ""
