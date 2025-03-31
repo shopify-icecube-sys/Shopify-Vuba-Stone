@@ -530,6 +530,36 @@
         "heading": "Introducing Vuba Stone",
         "description": "<p>The ultimate solution for flood-resistant paving that</p><p>revolutionises traditional construction methods.</p>"
       }
+    },
+    "vuba_introduction_two_TagLAz": {
+      "type": "vuba-introduction-two",
+      "blocks": {
+        "card_NCE4jz": {
+          "type": "card",
+          "settings": {
+            "card_title": "Learn About",
+            "card_description": "This is a sample description.",
+            "download_link": "/",
+            "download_btn": "Download"
+          }
+        },
+        "card_dQUtah": {
+          "type": "card",
+          "settings": {
+            "card_title": "Learn About",
+            "card_description": "This is a sample description.",
+            "download_link": "/",
+            "download_btn": "Download"
+          }
+        }
+      },
+      "block_order": [
+        "card_NCE4jz",
+        "card_dQUtah"
+      ],
+      "settings": {
+        "right_image": "shopify://shop_images/Introducing-Vuba-Stone-hero.png"
+      }
     }
   },
   "order": [
@@ -554,6 +584,7 @@
     "vuba_technical_data_pExGUA",
     "vuba_technical_data_JC6e7G",
     "vuba_collection_list_kLmbaB",
-    "vuba_introduction_xBBNgk"
+    "vuba_introduction_xBBNgk",
+    "vuba_introduction_two_TagLAz"
   ]
 }
