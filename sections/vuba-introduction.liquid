@@ -1,6 +1,57 @@
+<section class="pt-40 ">
+  <div class="container">
+    <div class=" bg-secondary rounded-3xl overflow-hidden px-6 pt-10 xl:pt-20 3xl:pt-24 pb-[120px] lg:pb-[50px] xl:pb-[200px] 2xl:pb-[280px] 3xl:pb-[330px]">
+      <div class="block-wrap">
+        <div class="text-center">
+          <figure class="mb-7">
+            {% if section.settings.logo != blank %}
+              <img
+                src="{{ section.settings.logo | img_url: 'master' }}"
+                alt="Vuba Stone Logo"
+                class="mx-auto 3xl:w-[387px]"
+              >
+            {% endif %}
+          </figure>
+          <h3 class="text-white text-[40px] xl:text-[72px] 3xl:text-[94px] font-bold font-poppins mb-[20px] leading-[1] lg:leading-normal">
+            {{ section.settings.heading }}
+          </h3>
+          <div class="text-wrap text-[14px] xl:text-[22px] 3xl:text-[27px] font-poppins text-white max-w-[730px] mx-auto font-medium">
+            <p>
+              {{ section.settings.description }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Vuba Stone Section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo Image"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Introducing Vuba Stone"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "The ultimate solution for flood-resistant paving that revolutionises traditional construction methods."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vuba Stone Section"
+    }
+  ]
+}
 {% endschema %}
