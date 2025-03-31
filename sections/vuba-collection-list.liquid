@@ -23,14 +23,16 @@
         {% endif %}
       {% endfor %}
     </div>
-    <div class="mt-8 3xl:mt-10 text-center block md:hidden">
-      <a
-        href="{{ section.settings.view_more_url }}"
-        class="text-sm 3xl:text-base tracking-widest inline-block bg-primary hover:bg-secondary text-white hover:text-white px-7 py-4 rounded-xl font-bold"
-      >
-        {{ section.settings.view_more_button }}
-      </a>
-    </div>
+    {% if section.settings.view_more_button != blank %}
+      <div class="mt-8 3xl:mt-10 text-center block md:hidden">
+        <a
+          href="{{ section.settings.view_more_url }}"
+          class="text-sm 3xl:text-base tracking-widest inline-block bg-primary hover:bg-secondary text-white hover:text-white px-7 py-4 rounded-xl font-bold"
+        >
+          {{ section.settings.view_more_button }}
+        </a>
+      </div>
+    {% endif %}
   </div>
 </section>
 
