@@ -522,6 +522,14 @@
         "view_more_button": "View More",
         "view_more_url": "/"
       }
+    },
+    "vuba_introduction_xBBNgk": {
+      "type": "vuba-introduction",
+      "settings": {
+        "logo": "shopify://shop_images/vuba-stone-brochure-m.svg",
+        "heading": "Introducing Vuba Stone",
+        "description": "<p>The ultimate solution for flood-resistant paving that revolutionises traditional construction methods.</p>"
+      }
     }
   },
   "order": [
@@ -545,6 +553,7 @@
     "vuba_technical_searchbar_UdqkKf",
     "vuba_technical_data_pExGUA",
     "vuba_technical_data_JC6e7G",
-    "vuba_collection_list_kLmbaB"
+    "vuba_collection_list_kLmbaB",
+    "vuba_introduction_xBBNgk"
   ]
 }
