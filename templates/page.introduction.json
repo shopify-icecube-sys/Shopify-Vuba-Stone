@@ -89,7 +89,7 @@
           "type": "highlight",
           "settings": {
             "icon": "shopify://shop_images/m-icon3.svg",
-            "icon_mobile": "shopify://shop_images/m-icon3.svg",
+            "icon_mobile": "shopify://shop_images/m-icon-mobile-3.svg",
             "title": "Real European Marble &",
             "title2": "Quartz"
           }
