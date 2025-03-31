@@ -1,1 +1,59 @@
-hi
+<section class="custom-section text-center py-12">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold">{{ section.settings.heading }}</h2>
+    <p class="text-lg text-gray-600 mt-2">{{ section.settings.subheading }}</p>
+    {% if section.settings.image != blank %}
+      <img src="{{ section.settings.image | img_url: 'master' }}" alt="" class="mx-auto mt-4 rounded-lg shadow-lg">
+    {% endif %}
+    {% if section.settings.button_link != blank and section.settings.button_text != blank %}
+      <a
+        href="{{ section.settings.button_link }}"
+        class="mt-4 inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700"
+      >
+        {{- section.settings.button_text -}}
+      </a>
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Custom Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Welcome to Our Store"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Discover our latest collection"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Shop Now"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Section",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
