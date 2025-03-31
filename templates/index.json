@@ -580,7 +580,8 @@
           "settings": {
             "icon": "shopify://shop_images/doc-icon.png",
             "icon_mobile": "shopify://shop_images/doc-icon.png",
-            "title": "30 Years InThe Making"
+            "title": "30 Years In",
+            "title2": "The Making"
           }
         }
       },
