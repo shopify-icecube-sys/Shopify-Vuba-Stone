@@ -24,10 +24,42 @@
         "heading": "Introducing Vuba Stone",
         "description": "<p>The ultimate solution for flood-resistant paving that </p><p>revolutionises traditional construction methods.</p>"
       }
+    },
+    "vuba_introduction_two_GptM3Q": {
+      "type": "vuba-introduction-two",
+      "blocks": {
+        "card_daixfA": {
+          "type": "card",
+          "settings": {
+            "card_image": "shopify://shop_images/doc-icon.png",
+            "card_title": "Learn About",
+            "card_description": "If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.",
+            "download_link": "/",
+            "download_btn": "Download"
+          }
+        },
+        "card_3eTLrp": {
+          "type": "card",
+          "settings": {
+            "card_title": "Learn About",
+            "card_description": "This is a sample description.",
+            "download_link": "/",
+            "download_btn": "Download"
+          }
+        }
+      },
+      "block_order": [
+        "card_daixfA",
+        "card_3eTLrp"
+      ],
+      "settings": {
+        "right_image": "shopify://shop_images/Introducing-Vuba-Stone-hero.png"
+      }
     }
   },
   "order": [
     "main",
-    "vuba_introduction_aUQnJY"
+    "vuba_introduction_aUQnJY",
+    "vuba_introduction_two_GptM3Q"
   ]
 }
