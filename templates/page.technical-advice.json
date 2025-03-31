@@ -68,7 +68,9 @@
         "technical_item_Grzg9w"
       ],
       "settings": {
-        "section_title": "Technical Advice"
+        "section_title": "Technical Advice",
+        "viewBtn_btn": "View More",
+        "viewAll_link": "/"
       }
     }
   },
