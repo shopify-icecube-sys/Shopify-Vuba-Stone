@@ -35,11 +35,7 @@
                 allowfullscreen=""
               ></iframe>
             {% else %}
-              <img
-                src="https://via.placeholder.com/600x350?text=No+Video+Available"
-                class="w-full h-auto rounded-2xl"
-                alt="No video available"
-              >
+              {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
             {% endif %}
           </figure>
         </div>
