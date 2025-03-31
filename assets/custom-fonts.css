@@ -1,73 +1,95 @@
-
 @font-face {
-    font-family: 'Schibsted Grotesk';
-    src: url('../fonts/SchibstedGrotesk-Regular.eot');
-    src: url('../fonts/SchibstedGrotesk-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/SchibstedGrotesk-Regular.woff2') format('woff2'),
-        url('../fonts/SchibstedGrotesk-Regular.woff') format('woff'),
-        url('../fonts/SchibstedGrotesk-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Schibsted Grotesk";
+  src: url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/SchibstedGrotesk-Regular.eot");
+  src: url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/SchibstedGrotesk-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/SchibstedGrotesk-Regular.woff2")
+      format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/SchibstedGrotesk-Regular.woff")
+      format("woff"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/SchibstedGrotesk-Regular.ttf")
+      format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Schibsted Grotesk';
-    src: url('../fonts/SchibstedGrotesk-Medium.eot');
-    src: url('../fonts/SchibstedGrotesk-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/SchibstedGrotesk-Medium.woff2') format('woff2'),
-        url('../fonts/SchibstedGrotesk-Medium.woff') format('woff'),
-        url('../fonts/SchibstedGrotesk-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Schibsted Grotesk";
+  src: url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/SchibstedGrotesk-Medium.eot");
+  src: url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/SchibstedGrotesk-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/SchibstedGrotesk-Medium.woff2")
+      format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/SchibstedGrotesk-Medium.woff")
+      format("woff"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/SchibstedGrotesk-Medium.ttf")
+      format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Schibsted Grotesk';
-    src: url('../fonts/SchibstedGrotesk-SemiBold.eot');
-    src: url('../fonts/SchibstedGrotesk-SemiBold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/SchibstedGrotesk-SemiBold.woff2') format('woff2'),
-        url('../fonts/SchibstedGrotesk-SemiBold.woff') format('woff'),
-        url('../fonts/SchibstedGrotesk-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Schibsted Grotesk";
+  src: url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/SchibstedGrotesk-SemiBold.eot");
+  src: url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/SchibstedGrotesk-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/SchibstedGrotesk-SemiBold.woff2")
+      format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/SchibstedGrotesk-SemiBold.woff")
+      format("woff"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/SchibstedGrotesk-SemiBold.ttf")
+      format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Schibsted Grotesk';
-    src: url('../fonts/SchibstedGrotesk-Black.eot');
-    src: url('../fonts/SchibstedGrotesk-Black.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/SchibstedGrotesk-Black.woff2') format('woff2'),
-        url('../fonts/SchibstedGrotesk-Black.woff') format('woff'),
-        url('../fonts/SchibstedGrotesk-Black.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Schibsted Grotesk";
+  src: url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/SchibstedGrotesk-Black.eot");
+  src: url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/SchibstedGrotesk-Black.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/SchibstedGrotesk-Black.woff2")
+      format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/SchibstedGrotesk-Black.woff")
+      format("woff"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/SchibstedGrotesk-Black.ttf")
+      format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Schibsted Grotesk';
-    src: url('../fonts/SchibstedGrotesk-ExtraBold.eot');
-    src: url('../fonts/SchibstedGrotesk-ExtraBold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/SchibstedGrotesk-ExtraBold.woff2') format('woff2'),
-        url('../fonts/SchibstedGrotesk-ExtraBold.woff') format('woff'),
-        url('../fonts/SchibstedGrotesk-ExtraBold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Schibsted Grotesk";
+  src: url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/SchibstedGrotesk-ExtraBold.eot");
+  src: url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/SchibstedGrotesk-ExtraBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/SchibstedGrotesk-ExtraBold.woff2")
+      format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/SchibstedGrotesk-ExtraBold.woff")
+      format("woff"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/SchibstedGrotesk-ExtraBold.ttf")
+      format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Schibsted Grotesk';
-    src: url('../fonts/SchibstedGrotesk-Bold.eot');
-    src: url('../fonts/SchibstedGrotesk-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/SchibstedGrotesk-Bold.woff2') format('woff2'),
-        url('../fonts/SchibstedGrotesk-Bold.woff') format('woff'),
-        url('../fonts/SchibstedGrotesk-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Schibsted Grotesk";
+  src: url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/SchibstedGrotesk-Bold.eot");
+  src: url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/SchibstedGrotesk-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/SchibstedGrotesk-Bold.woff2")
+      format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/SchibstedGrotesk-Bold.woff")
+      format("woff"),
+    url("https://cdn.shopify.com/s/files/1/0628/7520/5734/files/SchibstedGrotesk-Bold.ttf")
+      format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
-
