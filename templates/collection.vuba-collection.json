@@ -19,9 +19,11 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
+      "disabled": true,
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
+        "columns_mobile": "2",
         "color_scheme": "scheme-1",
         "image_ratio": "adapt",
         "image_shape": "default",
@@ -32,14 +34,20 @@
         "enable_filtering": true,
         "filter_type": "horizontal",
         "enable_sorting": true,
-        "columns_mobile": "2",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "vuba_collection_product_grid_4QwM7q": {
+      "type": "vuba-collection-product-grid",
+      "settings": {
+        "product_collection": "vuba-america"
       }
     }
   },
   "order": [
     "banner",
-    "product-grid"
+    "product-grid",
+    "vuba_collection_product_grid_4QwM7q"
   ]
 }
