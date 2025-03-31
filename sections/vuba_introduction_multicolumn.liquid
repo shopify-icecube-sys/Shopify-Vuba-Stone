@@ -16,14 +16,14 @@
             alt="{{ block.settings.title }}"
             class="w-full max-w-[60px] 3xl:max-h-[142px] mb-[20px]  md:hidden"
           >
-          <h3 class="text-white text-left md:text-center text-[14px] 3xl:text-[24px] font-bold font-poppins xl:leading-6 3xl:leading-9">
+          <h3 class="text-white text-left md:text-center text-[text-[14px] 3xl:text-[24px] font-bold font-poppins xl:leading-6 3xl:leading-9">
             {{ block.settings.title }}
           </h3>
         </div>
       {% endfor %}
     </div>
     <div class="desc-wrap font-poppins text-[14px] 3xl:text-[20px] text-center max-w-[800px] 3xl:max-w-[1275px] mx-auto ">
-      <p>{{ section.settings.description }}</p>
+      {{ section.settings.description }}
     </div>
   </div>
 </section>
