@@ -46,7 +46,7 @@
               </h3>
             {% endif %}
             <div class="text-[16px] 2xl:text-[23px] font-poppins ">
-              {{ section.settings.description_2 }}
+              {% if section.settings.description_2 != blank %}{{ section.settings.description_2 }} {% endif %}
             </div>
           </div>
         </div>
