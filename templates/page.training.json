@@ -21,7 +21,7 @@
       "type": "vuba-banner-image",
       "settings": {
         "background_image": "shopify://shop_images/vuba-mac-2.jpg",
-        "background_image_mobile": "shopify://shop_images/vuba-mac-2.jpg",
+        "background_image_mobile": "shopify://shop_images/banner-m.jpg",
         "logo_desktop": "shopify://shop_images/header-logo-blue-d.svg",
         "logo_mobile": "shopify://shop_images/header-logo-blue-m.svg",
         "title": "Training Course dates and",
