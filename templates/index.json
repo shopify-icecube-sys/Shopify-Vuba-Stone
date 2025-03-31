@@ -428,7 +428,52 @@
       ],
       "settings": {
         "heading": "Manuals",
-        "view_more_btn": "View More"
+        "view_more_btn": "View More",
+        "view_more_url": "/"
+      }
+    },
+    "vuba_technical_data_JC6e7G": {
+      "type": "vuba-technical-data",
+      "blocks": {
+        "data_sheet_zyTnDr": {
+          "type": "data_sheet",
+          "settings": {
+            "product_name": "Technical Data Sheet Product Name",
+            "date": "12.02.23"
+          }
+        },
+        "data_sheet_qqKD7e": {
+          "type": "data_sheet",
+          "settings": {
+            "product_name": "Technical Data Sheet Product Name",
+            "date": "12.02.23"
+          }
+        },
+        "data_sheet_7kx9YP": {
+          "type": "data_sheet",
+          "settings": {
+            "product_name": "Technical Data Sheet Product Name",
+            "date": "12.02.23"
+          }
+        },
+        "data_sheet_TCiB9R": {
+          "type": "data_sheet",
+          "settings": {
+            "product_name": "Technical Data Sheet Product Name",
+            "date": "12.02.23"
+          }
+        }
+      },
+      "block_order": [
+        "data_sheet_zyTnDr",
+        "data_sheet_qqKD7e",
+        "data_sheet_7kx9YP",
+        "data_sheet_TCiB9R"
+      ],
+      "settings": {
+        "heading": "Press packs",
+        "view_more_btn": "View More",
+        "view_more_url": "/"
       }
     }
   },
@@ -451,6 +496,7 @@
     "vuba_timeline_46bUyn",
     "technical_download_banner_Cehjgz",
     "vuba_technical_searchbar_UdqkKf",
-    "vuba_technical_data_pExGUA"
+    "vuba_technical_data_pExGUA",
+    "vuba_technical_data_JC6e7G"
   ]
 }
