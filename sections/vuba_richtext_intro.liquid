@@ -1,6 +1,41 @@
+<section class="mb-[60px]">
+  <div class="inner-container">
+    <div class="text-center 3xl:max-w-[1355px] mx-auto">
+      {% if section.settings.heading != blank %}
+        <h3 class="text-secondary text-[36px] xl:text-3xl 3xl:text-[53px] font-medium font-poppins leading-[40px] 3xl:leading-normal mb-[20px] lg:mb-7 ">
+          {{ section.settings.heading }}
+        </h3>
+      {% endif %}
+      {% if section.settings.description != blank %}
+        <div class="text-[16px] 2xl:text-[23px] font-poppins text-[#7C7C7C]">
+          <p>{{ section.settings.description }}</p>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "VubaMac introduction",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "What is VubaMac?"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "With a monolithic bond guaranteeing long-lasting performance, VubaMac surpasses conventional materials like concrete and asphalt in longevity and flexibility. Plus, its ease of application, provided by a single supplier, offers unmatched convenience, with installations completed in just one day, minimising disruption and providing a smoother, quieter alternative. Say hello to a greener, more resilient future with VubaMac."
+    }
+  ],
+  "presets": [
+    {
+      "name": "VubaMac Introduction"
+    }
+  ]
+}
 {% endschema %}
