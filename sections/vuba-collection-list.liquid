@@ -28,7 +28,7 @@
         href="/collections"
         class="text-sm 3xl:text-base tracking-widest inline-block bg-primary hover:bg-secondary text-white hover:text-white px-7 py-4 rounded-xl font-bold"
       >
-        VIEW MORE
+        {{ section.settings.view_more_button }}
       </a>
     </div>
   </div>
@@ -43,6 +43,12 @@
       "id": "heading",
       "label": "Heading",
       "default": "Our Colours"
+    },
+    {
+      "type": "text",
+      "id": "view_more_button",
+      "label": "View More",
+      "default":"View More"
     }
   ],
   "blocks": [
