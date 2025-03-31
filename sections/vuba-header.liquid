@@ -64,10 +64,10 @@
       </button>
     </div>
   </div>
-  <nav class="bg-secondary md:py-3">
+  <nav class="bg-secondary">
     <div class="container">
       <div class="mx-auto flex justify-between items-center text-xs 3xl:text-base tracking-wider xl:tracking-widest font-semibold">
-        <ul class="hidden md:flex space-x-3 lg:space-x-8 xl:space-x-8 3xl:space-x-14">
+        <ul class="hidden md:flex lg:space-x-5 3xl:space-x-5">
           {% for link in linklists[section.settings.menu].links %}
             <li>
               <a href="{{ link.url }}" class="text-white">{{ link.title }}</a>
