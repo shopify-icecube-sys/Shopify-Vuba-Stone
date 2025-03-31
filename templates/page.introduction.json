@@ -71,7 +71,7 @@
           "type": "highlight",
           "settings": {
             "icon": "shopify://shop_images/m-icon1.svg",
-            "icon_mobile": "shopify://shop_images/m-icon1.svg",
+            "icon_mobile": "shopify://shop_images/m-icon-mobile-1.svg",
             "title": "30 Years In",
             "title2": "The Making"
           }
