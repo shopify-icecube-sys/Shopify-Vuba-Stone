@@ -93,12 +93,6 @@
           "settings": {
             "collection": "vuba-america"
           }
-        },
-        "collection_wUhhcF": {
-          "type": "collection",
-          "settings": {
-            "collection": "vuba-america"
-          }
         }
       },
       "block_order": [
@@ -107,8 +101,7 @@
         "collection_L6bxDn",
         "collection_ey7yyL",
         "collection_YmETUg",
-        "collection_3pcLkC",
-        "collection_wUhhcF"
+        "collection_3pcLkC"
       ],
       "settings": {
         "heading": "Our Colours",
