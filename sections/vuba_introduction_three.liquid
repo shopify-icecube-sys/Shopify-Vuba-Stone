@@ -21,12 +21,13 @@
             <figure class="relative w-full pb-[56.25%] rounded-2xl overflow-hidden">
               <iframe
                 class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/{{ section.settings.video_intro_url }}"
+                src="{{ settings.video_url | replace: 'watch?v=', 'embed/' }}"
                 title="Video"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen=""
-              ></iframe>
+                allowfullscreen
+              >
+              </iframe>
             </figure>
           </div>
         {% endif %}
@@ -73,13 +74,9 @@
       "default": "<p>Description One</p>"
     },
     {
-      "type": "video_url",
+      "type": "url",
       "id": "video_intro_url",
       "label": "Video URL",
-      "accept": [
-    "youtube",
-    "vimeo"
-  ]
     },
     {
       "type": "text",
