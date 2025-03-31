@@ -1,4 +1,4 @@
-<header id="header" class="header z-50 absolute left-0 top-0 w-full transition-all duration-300">
+<header id="header" class="header z-50 relative">
   <div class="md:bg-primary pt-12 md:py-5">
     <div class="container mx-auto flex justify-between items-center">
       <div class="flex items-center">
@@ -64,23 +64,25 @@
       </button>
     </div>
   </div>
-  <nav class="bg-secondary md:py-3">
+  <nav class="bg-secondary">
     <div class="container">
       <div class="mx-auto flex justify-between items-center text-xs 3xl:text-base tracking-wider xl:tracking-widest font-semibold">
-        <ul class="hidden md:flex space-x-3 lg:space-x-8 xl:space-x-8 3xl:space-x-14">
+        <ul class="hidden md:flex lg:space-x-5 3xl:space-x-5">
           {% for link in linklists[section.settings.menu].links %}
             <li>
-              <a href="{{ link.url }}" class="text-white">{{ link.title }}</a>
+              <a href="{{ link.url }}" class="text-white hover:bg-primary py-3 px-2 lg:px-3 3xl:px-5 inline-block">
+                {{- link.title -}}
+              </a>
             </li>
           {% endfor %}
         </ul>
-        <a href="/" class="hidden md:block text-white">CONTACT</a>
+        <a href="/" class="hidden md:block text-white hover:bg-primary py-3 px-2 lg:px-3">CONTACT</a>
       </div>
     </div>
   </nav>
   <div
     id="mobile-menu"
-    class="fixed top-0 left-0 w-full bg-white transform -translate-y-full transition-transform duration-300 ease-in-out z-50 h-[100vh] md:h-auto overflow-y-auto"
+    class="fixed top-0 left-0 w-full bg-white transform -translate-y-full transition-transform duration-300 ease-in-out z-50 h-[100vh] md:h-auto overflow-y-auto md:hidden"
   >
     <div class="bg-white flex justify-center min-h-screen py-12 px-4">
       <div class="w-full text-center">
@@ -92,7 +94,7 @@
         <div class="header-logo-open">
           <img src="{{ 'header-logo-menu.svg' | asset_url }}" class="mx-auto" alt="Vuba Stone Logo Mobile">
         </div>
-        <div class="relative my-10 px-3">
+        <div class="relative my-10 px-3 w-[300px] md:w-auto mx-auto">
           <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
             <div class="field">
               <input
