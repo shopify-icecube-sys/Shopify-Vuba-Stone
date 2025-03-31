@@ -41,7 +41,7 @@
 
       <div class="column order-1 px-5 lg:px-0 lg:order-2 lg:w-[50%] xl:w-[56%] lg:ps-5 xl:ps-0">
         <figure class="-mt-[60px] lg:-mt-[100px] xl:-mt-[250px] 2xl:-mt-[325px] 3xl:-mt-[360px]">
-          {% if section.settings.right_image %}
+          {% if section.settings.right_image != blank %}
             <img class="w-[100%]" src="{{ section.settings.right_image | image_url }}" alt="Image">
           {% endif %}
         </figure>
@@ -85,7 +85,14 @@
         {
           "type": "url",
           "id": "download_link",
-          "label": "Download Link"
+          "label": "Download Link",
+          "default": "/"
+        },
+        {
+          "type": "text",
+          "id": "download_btn",
+          "label": "Download Button",
+          "default": "Download"
         }
       ]
     }
