@@ -1,0 +1,96 @@
+<section
+  class="bg-fixed bg-cover bg-center pt-[60px] pb-[60px] 3xl:pt-[190px] 3xl:pb-[120px] text-white "
+  {% if section.settings.background_image != blank %}
+    style="background-image: url('{{ section.settings.background_image | img_url: 'master' }}');"
+  {% endif %}
+>
+  <div class="inner-container ">
+    <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-[40px] md:gap-6 mb-[40px] 3xl:mb-[130px] max-w-[400px] md:max-w-max mx-auto">
+      {% for block in section.blocks %}
+        <div class="text-center" {{ block.shopify_attributes }}>
+          {% if block.settings.icon != blank %}
+            <img
+              src="{{ block.settings.icon | img_url: 'master' }}"
+              alt="MultiColumn background Image"
+              class="w-full max-w-[60px] 3xl:max-h-[142px] mx-auto mb-[32px] hidden md:block"
+            >
+          {% endif %}
+          {% if block.settings.icon_mobile != blank %}
+            <img
+              src="{{ block.settings.icon_mobile | img_url: 'master' }}"
+              alt="{{ block.settings.title }}"
+              class="w-full max-w-[60px] 3xl:max-h-[142px] mb-[20px]  md:hidden"
+            >
+          {% endif %}
+          {% if block.settings.title != blank %}
+            <h3 class="text-white text-left md:text-center text-[text-[14px] 3xl:text-[24px] font-bold font-poppins xl:leading-6 3xl:leading-9">
+              {{ block.settings.title }}
+              {% if block.settings.title2 != blank %}
+                <br>
+                {{ block.settings.title2 }}
+              {% endif %}
+            </h3>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+    {% if section.settings.description != blank %}
+      <div class="desc-wrap font-poppins text-[14px] 3xl:text-[20px] text-center max-w-[800px] 3xl:max-w-[1275px] mx-auto ">
+        {{ section.settings.description }}
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Vuba Intro MultiColumn",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Description</p>"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "highlight",
+      "name": "Highlight Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Desktop Icon"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon_mobile",
+          "label": "Mobile Icon"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "title2",
+          "label": "Title"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vuba Intro MultiColumn",
+      "category": "Custom Section"
+    }
+  ]
+}
+{% endschema %}
