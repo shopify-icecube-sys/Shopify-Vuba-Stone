@@ -475,37 +475,6 @@
         "view_more_btn": "View More",
         "view_more_url": "/"
       }
-    },
-    "vuba_collection_list_ef8TrB": {
-      "type": "vuba-collection-list",
-      "blocks": {
-        "collection_jArGn9": {
-          "type": "collection",
-          "settings": {
-            "collection": "vuba-america"
-          }
-        },
-        "collection_rRCFgH": {
-          "type": "collection",
-          "settings": {
-            "collection": "vuba-america"
-          }
-        },
-        "collection_dftKtm": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection_jArGn9",
-        "collection_rRCFgH",
-        "collection_dftKtm"
-      ],
-      "settings": {
-        "heading": "Our Colours"
-      }
     }
   },
   "order": [
@@ -528,7 +497,6 @@
     "technical_download_banner_Cehjgz",
     "vuba_technical_searchbar_UdqkKf",
     "vuba_technical_data_pExGUA",
-    "vuba_technical_data_JC6e7G",
-    "vuba_collection_list_ef8TrB"
+    "vuba_technical_data_JC6e7G"
   ]
 }
