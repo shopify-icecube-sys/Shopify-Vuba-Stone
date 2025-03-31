@@ -98,7 +98,7 @@
           "type": "highlight",
           "settings": {
             "icon": "shopify://shop_images/m-icon4.svg",
-            "icon_mobile": "shopify://shop_images/m-icon4.svg",
+            "icon_mobile": "shopify://shop_images/m-icon-mobile-4.svg",
             "title": "We Invest In Our",
             "title2": "Dealers"
           }
