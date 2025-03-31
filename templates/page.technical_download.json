@@ -25,10 +25,100 @@
         "heading": "Technical Downloads",
         "paragraph": "<p>this page would have a big list of all the pdfs we have to data sheets, application guides ,</p><p>warranty documents etc. We would want this to look simple whilst condensing all the</p><p>information.</p>"
       }
+    },
+    "vuba_technical_data_ayMFdN": {
+      "type": "vuba-technical-data",
+      "blocks": {
+        "data_sheet_CPK6Vw": {
+          "type": "data_sheet",
+          "settings": {
+            "product_name": "Technical Data Sheet Product Name",
+            "date": "12.02.23"
+          }
+        },
+        "data_sheet_bEbkqX": {
+          "type": "data_sheet",
+          "settings": {
+            "product_name": "Technical Data Sheet Product Name",
+            "date": "12.02.23"
+          }
+        },
+        "data_sheet_BHqFG3": {
+          "type": "data_sheet",
+          "settings": {
+            "product_name": "Technical Data Sheet Product Name",
+            "date": "12.02.23"
+          }
+        },
+        "data_sheet_Ec6QEz": {
+          "type": "data_sheet",
+          "settings": {
+            "product_name": "Technical Data Sheet Product Name",
+            "date": "12.02.23"
+          }
+        }
+      },
+      "block_order": [
+        "data_sheet_CPK6Vw",
+        "data_sheet_bEbkqX",
+        "data_sheet_BHqFG3",
+        "data_sheet_Ec6QEz"
+      ],
+      "settings": {
+        "heading": "Manuals",
+        "view_more_btn": "View More",
+        "view_more_url": "/"
+      }
+    },
+    "vuba_technical_data_gAX3nY": {
+      "type": "vuba-technical-data",
+      "blocks": {
+        "data_sheet_wp6WW7": {
+          "type": "data_sheet",
+          "settings": {
+            "product_name": "Technical Data Sheet Product Name",
+            "date": "12.02.23"
+          }
+        },
+        "data_sheet_rJfmTH": {
+          "type": "data_sheet",
+          "settings": {
+            "product_name": "Technical Data Sheet Product Name",
+            "date": "12.02.23"
+          }
+        },
+        "data_sheet_bJBDKX": {
+          "type": "data_sheet",
+          "settings": {
+            "product_name": "Technical Data Sheet Product Name",
+            "date": "12.02.23"
+          }
+        },
+        "data_sheet_GGT78H": {
+          "type": "data_sheet",
+          "settings": {
+            "product_name": "Technical Data Sheet Product Name",
+            "date": "12.02.23"
+          }
+        }
+      },
+      "block_order": [
+        "data_sheet_wp6WW7",
+        "data_sheet_rJfmTH",
+        "data_sheet_bJBDKX",
+        "data_sheet_GGT78H"
+      ],
+      "settings": {
+        "heading": "Press packs",
+        "view_more_btn": "View More",
+        "view_more_url": "/"
+      }
     }
   },
   "order": [
     "main",
-    "vuba_technical_downloads_GUmWqp"
+    "vuba_technical_downloads_GUmWqp",
+    "vuba_technical_data_ayMFdN",
+    "vuba_technical_data_gAX3nY"
   ]
 }
