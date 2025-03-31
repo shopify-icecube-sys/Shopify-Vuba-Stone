@@ -528,7 +528,7 @@
       "settings": {
         "logo": "shopify://shop_images/vuba-stone-brochure-m.svg",
         "heading": "Introducing Vuba Stone",
-        "description": "<p>The ultimate solution for flood-resistant paving that revolutionises traditional construction methods.</p>"
+        "description": "<p>The ultimate solution for flood-resistant paving that</p><p>revolutionises traditional construction methods.</p>"
       }
     }
   },
