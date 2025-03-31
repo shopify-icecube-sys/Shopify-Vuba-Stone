@@ -11,13 +11,24 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "vuba_technical_downloads_GUmWqp": {
+      "type": "vuba-technical-downloads",
+      "settings": {
+        "desktop_image": "shopify://shop_images/vuba-stone-brochure-m.svg",
+        "mobile_image": "shopify://shop_images/vuba-stone-brochure-m.svg",
+        "heading": "Technical Downloads",
+        "paragraph": "<p>this page would have a big list of all the pdfs we have to data sheets, application guides ,</p><p>warranty documents etc. We would want this to look simple whilst condensing all the</p><p>information.</p>"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "vuba_technical_downloads_GUmWqp"
   ]
 }
