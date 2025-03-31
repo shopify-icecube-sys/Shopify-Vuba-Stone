@@ -17,11 +17,13 @@
               {{ section.settings.heading }}
             </h3>
           {% endif %}
-          <div class="text-wrap text-[14px] xl:text-[22px] 3xl:text-[27px] font-poppins text-white max-w-[730px] mx-auto font-medium">
-            <div>
-              {{ section.settings.description }}
+          {% if section.settings.description != blank %}
+            <div class="text-wrap text-[14px] xl:text-[22px] 3xl:text-[27px] font-poppins text-white max-w-[730px] mx-auto font-medium">
+              <div>
+                {{ section.settings.description }}
+              </div>
             </div>
-          </div>
+          {% endif %}
         </div>
       </div>
     </div>
