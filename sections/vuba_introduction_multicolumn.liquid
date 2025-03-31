@@ -25,6 +25,10 @@
           {% if block.settings.title != blank %}
             <h3 class="text-white text-left md:text-center text-[text-[14px] 3xl:text-[24px] font-bold font-poppins xl:leading-6 3xl:leading-9">
               {{ block.settings.title }}
+              {% if block.settings.title2 != blank %}
+                <br>
+                {{ block.settings.title2 }}
+              {% endif %}
             </h3>
           {% endif %}
         </div>
