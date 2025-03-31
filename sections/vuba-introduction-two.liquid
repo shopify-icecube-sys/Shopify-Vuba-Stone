@@ -7,7 +7,7 @@
             <div class="border-[3px] border-secondary p-7 2xl:p-8 3xl:p-10 2xl:pb-6 rounded-[20px] bg-white text-sm 3xl:text-xl">
               <div class="flex justify-start mb-5 xl:mb-2">
                 <div class="flex xl:flex-col items-center gap-x-3">
-                  {% if block.settings.card_image %}
+                  {% if block.settings.card_image != blank %}
                     <img
                       src="{{ block.settings.card_image | image_url }}"
                       class="w-10 3xl:w-20 xl:mb-5 3xl:mb-[22px] xl:ml-0 mr-auto  3xl:max-w-[65px]"
