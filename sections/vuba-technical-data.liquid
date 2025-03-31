@@ -2,7 +2,9 @@
   <div class="container">
     <div class="bg-white rounded-3xl py-5 xl:py-14">
       <div class="inner-container">
-        <h2 class="text-2xl font-medium mb-6 text-secondary">{{ section.settings.heading }}</h2>
+        {% if section.settings.heading != blank %}
+          <h2 class="text-2xl font-medium mb-6 text-secondary">{{ section.settings.heading }}</h2>
+        {% endif %}
         <div class="space-y-4 md:space-y-0 text-sm 2xl:text-base font-medium">
           {% for block in section.blocks %}
             <div
