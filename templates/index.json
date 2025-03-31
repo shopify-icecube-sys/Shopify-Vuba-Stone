@@ -394,9 +394,8 @@
         "data_sheet_MHHi7w": {
           "type": "data_sheet",
           "settings": {
-            "product_name": "",
-            "date": "",
-            "download_link": ""
+            "product_name": "Technical Data Sheet Product Name",
+            "date": ""
           }
         }
       },
