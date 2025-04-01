@@ -15,7 +15,7 @@
             <div class="download-block flex flex-col gap-[13px]">
               <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px] rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
                 <figure>
-                  <img src="{{ 'doc-icon.svg' | asset_url }}" alt="doc" class="max-w-[41px] 3xl:max-w-[50px]">
+                  <img src="{{ block.settings.icon | image_url }}" alt="doc" class="max-w-[41px] 3xl:max-w-[50px]">
                 </figure>
                 <div class="content">
                   <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">
@@ -50,6 +50,11 @@
           "type": "image_picker",
           "id": "resource_image",
           "label": "Resource Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon Image"
         },
         {
           "type": "text",
