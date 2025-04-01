@@ -9,20 +9,18 @@
       <div class="column">
         <div class="inner-block">
           {% if section.settings.section_image_1 != blank %}
-              <figure class="mb-[20px] md:mb-[45px] 3xl:mb-[75px]">
-                <img
-                  src="
-                    {{ section.settings.section_image_1 | img_url:'master' }}"
-                  alt="Vuba Mac Download"
-                  class="aspect-[1/1]">
-              </figure>
-            {% else %}               
-              {{
-              'hero-apparel-3'
-              | placeholder_svg_tag: 'placeholder-svg placeholder'
-              }} 
+            <figure class="mb-[20px] md:mb-[45px] 3xl:mb-[75px]">
+              <img
+                src="                    {{ section.settings.section_image_1 | img_url:'master' }}"
+                alt="Vuba Mac Download"
+                class="aspect-[1/1]"
+              >
+            </figure>
+          {% else %}
+            {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
           {% endif %}
           <div class="download-block flex flex-col gap-[13px]">
+<<<<<<< HEAD
           {% for block in section.blocks %}
             <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px] rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
               <figure>
@@ -42,58 +40,114 @@
             </div>
           {% endfor %}
         </div>
+=======
+            <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px]  rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
+              <figure>
+                <img
+                  src="images/doc-icon.svg"
+                  alt="doc"
+                  class="max-w-[41px] 3xl:max-w-[50px]"
+                >
+              </figure>
+              <div class="content">
+                <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">
+                  Heavy Vehicle
+                </h3>
+                <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download </a>
+              </div>
+            </div>
+            <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px]  rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
+              <figure>
+                <img
+                  src="images/doc-icon.svg"
+                  alt="doc"
+                  class="max-w-[41px] 3xl:max-w-[50px]"
+                >
+              </figure>
+              <div class="content">
+                <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">
+                  Heavy Vehicle
+                </h3>
+                <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download </a>
+              </div>
+            </div>
+            <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px]  rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
+              <figure>
+                <img
+                  src="images/doc-icon.svg"
+                  alt="doc"
+                  class="max-w-[41px] 3xl:max-w-[50px]"
+                >
+              </figure>
+              <div class="content">
+                <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">
+                  Heavy Vehicle
+                </h3>
+                <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download </a>
+              </div>
+            </div>
+          </div>
+>>>>>>> a9a9cde17e08888faeef523dda067ca03fc4caf0
         </div>
       </div>
-
 
       <div class="column">
         <div class="inner-block">
           {% if section.settings.section_image_2 != blank %}
             <figure class="mb-[20px] md:mb-[45px] 3xl:mb-[75px]">
               <img
-                src="
-                  {{ section.settings.section_image_2 | img_url:'master' }}"
+                src="                  {{ section.settings.section_image_2 | img_url:'master' }}"
                 alt="Vuba Mac Download"
-                class="aspect-[1/1]">
+                class="aspect-[1/1]"
+              >
             </figure>
-          {% else %}               
-            {{
-            'hero-apparel-3'
-            | placeholder_svg_tag: 'placeholder-svg placeholder'
-            }} 
-        {% endif %}
+          {% else %}
+            {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+          {% endif %}
           <div class="download-block flex flex-col gap-[13px]">
             <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px]  rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
-              <figure><img
+              <figure>
+                <img
                   src="images/doc-icon.svg"
                   alt="doc"
-                  class="max-w-[41px] 3xl:max-w-[50px]"></figure>
+                  class="max-w-[41px] 3xl:max-w-[50px]"
+                >
+              </figure>
               <div class="content">
-                <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">Heavy Vehicle</h3>
-                <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download
-                </a>
+                <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">
+                  Heavy Vehicle
+                </h3>
+                <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download </a>
               </div>
             </div>
             <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px]  rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
-              <figure><img
+              <figure>
+                <img
                   src="images/doc-icon.svg"
                   alt="doc"
-                  class="max-w-[41px] 3xl:max-w-[50px]"></figure>
+                  class="max-w-[41px] 3xl:max-w-[50px]"
+                >
+              </figure>
               <div class="content">
-                <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">Heavy Vehicle</h3>
-                <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download
-                </a>
+                <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">
+                  Heavy Vehicle
+                </h3>
+                <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download </a>
               </div>
             </div>
             <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px]  rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
-              <figure><img
+              <figure>
+                <img
                   src="images/doc-icon.svg"
                   alt="doc"
-                  class="max-w-[41px] 3xl:max-w-[50px]"></figure>
+                  class="max-w-[41px] 3xl:max-w-[50px]"
+                >
+              </figure>
               <div class="content">
-                <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">Heavy Vehicle</h3>
-                <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download
-                </a>
+                <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">
+                  Heavy Vehicle
+                </h3>
+                <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download </a>
               </div>
             </div>
           </div>
@@ -105,49 +159,58 @@
           {% if section.settings.section_image_3 != blank %}
             <figure class="mb-[20px] md:mb-[45px] 3xl:mb-[75px]">
               <img
-                src="
-                  {{ section.settings.section_image_3 | img_url:'master' }}"
+                src="                  {{ section.settings.section_image_3 | img_url:'master' }}"
                 alt="Vuba Mac Download"
-                class="aspect-[1/1]">
+                class="aspect-[1/1]"
+              >
             </figure>
-          {% else %}               
-            {{
-            'hero-apparel-3'
-            | placeholder_svg_tag: 'placeholder-svg placeholder'
-            }} 
-        {% endif %}
+          {% else %}
+            {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+          {% endif %}
           <div class="download-block flex flex-col gap-[13px]">
             <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px]  rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
-              <figure><img
+              <figure>
+                <img
                   src="images/doc-icon.svg"
                   alt="doc"
-                  class="max-w-[41px] 3xl:max-w-[50px]"></figure>
+                  class="max-w-[41px] 3xl:max-w-[50px]"
+                >
+              </figure>
               <div class="content">
-                <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">Heavy Vehicle</h3>
-                <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download
-                </a>
+                <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">
+                  Heavy Vehicle
+                </h3>
+                <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download </a>
               </div>
             </div>
             <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px]  rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
-              <figure><img
+              <figure>
+                <img
                   src="images/doc-icon.svg"
                   alt="doc"
-                  class="max-w-[41px] 3xl:max-w-[50px]"></figure>
+                  class="max-w-[41px] 3xl:max-w-[50px]"
+                >
+              </figure>
               <div class="content">
-                <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">Heavy Vehicle</h3>
-                <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download
-                </a>
+                <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">
+                  Heavy Vehicle
+                </h3>
+                <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download </a>
               </div>
             </div>
             <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px]  rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
-              <figure><img
+              <figure>
+                <img
                   src="images/doc-icon.svg"
                   alt="doc"
-                  class="max-w-[41px] 3xl:max-w-[50px]"></figure>
+                  class="max-w-[41px] 3xl:max-w-[50px]"
+                >
+              </figure>
               <div class="content">
-                <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">Heavy Vehicle</h3>
-                <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download
-                </a>
+                <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">
+                  Heavy Vehicle
+                </h3>
+                <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download </a>
               </div>
             </div>
           </div>
@@ -159,49 +222,58 @@
           {% if section.settings.section_image_4 != blank %}
             <figure class="mb-[20px] md:mb-[45px] 3xl:mb-[75px]">
               <img
-                src="
-                  {{ section.settings.section_image_4 | img_url:'master' }}"
+                src="                  {{ section.settings.section_image_4 | img_url:'master' }}"
                 alt="Vuba Mac Download"
-                class="aspect-[1/1]">
+                class="aspect-[1/1]"
+              >
             </figure>
-          {% else %}               
-            {{
-            'hero-apparel-3'
-            | placeholder_svg_tag: 'placeholder-svg placeholder'
-            }} 
-        {% endif %}
+          {% else %}
+            {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+          {% endif %}
           <div class="download-block flex flex-col gap-[13px]">
             <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px]  rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
-              <figure><img
+              <figure>
+                <img
                   src="images/doc-icon.svg"
                   alt="doc"
-                  class="max-w-[41px] 3xl:max-w-[50px]"></figure>
+                  class="max-w-[41px] 3xl:max-w-[50px]"
+                >
+              </figure>
               <div class="content">
-                <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">Heavy Vehicle</h3>
-                <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download
-                </a>
+                <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">
+                  Heavy Vehicle
+                </h3>
+                <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download </a>
               </div>
             </div>
             <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px]  rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
-              <figure><img
+              <figure>
+                <img
                   src="images/doc-icon.svg"
                   alt="doc"
-                  class="max-w-[41px] 3xl:max-w-[50px]"></figure>
+                  class="max-w-[41px] 3xl:max-w-[50px]"
+                >
+              </figure>
               <div class="content">
-                <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">Heavy Vehicle</h3>
-                <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download
-                </a>
+                <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">
+                  Heavy Vehicle
+                </h3>
+                <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download </a>
               </div>
             </div>
             <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px]  rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
-              <figure><img
+              <figure>
+                <img
                   src="images/doc-icon.svg"
                   alt="doc"
-                  class="max-w-[41px] 3xl:max-w-[50px]"></figure>
+                  class="max-w-[41px] 3xl:max-w-[50px]"
+                >
+              </figure>
               <div class="content">
-                <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">Heavy Vehicle</h3>
-                <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download
-                </a>
+                <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">
+                  Heavy Vehicle
+                </h3>
+                <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download </a>
               </div>
             </div>
           </div>
@@ -211,6 +283,7 @@
   </div>
 </section>
 {% schema %}
+<<<<<<< HEAD
   {
     "name": "Vuba Download Mac",
     "settings": [
@@ -272,3 +345,42 @@
     ]
   }
 {% endschema %}
+=======
+{
+  "name": "Vuba Download Mac",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section Title",
+      "default": "Download Vuba Mac Resources"
+    },
+    {
+      "type": "image_picker",
+      "id": "section_image_1",
+      "label": "Section Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "section_image_2",
+      "label": "Section Image 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "section_image_3",
+      "label": "Section Image 3"
+    }, {
+      "type": "image_picker",
+      "id": "section_image_4",
+      "label": "Section Image 4"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vuba Download Mac",
+      "category": "Vuba Mac"
+    }
+  ]
+}
+{% endschema %}
+>>>>>>> a9a9cde17e08888faeef523dda067ca03fc4caf0
