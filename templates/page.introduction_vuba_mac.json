@@ -122,6 +122,7 @@
         "download_item_ahB46V": {
           "type": "download_item",
           "settings": {
+            "icon": "shopify://shop_images/m-icon-mobile-4.svg",
             "title": "Heavy Vehicle",
             "link": ""
           }
