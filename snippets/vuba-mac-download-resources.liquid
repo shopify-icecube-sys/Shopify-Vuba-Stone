@@ -1,0 +1,21 @@
+<div class="download-block flex flex-col gap-[13px]">
+  {% for block in section.blocks %}
+    <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px] rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
+      <figure>
+        <img
+          src="{{ block.settings.icon | img_url: 'master' }}"
+          alt="{{ block.settings.icon_alt }}"
+          class="max-w-[41px] 3xl:max-w-[50px]"
+        >
+      </figure>
+      <div class="content">
+        <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">
+          {{ block.settings.title }}
+        </h3>
+        <a href="{{ block.settings.link }}" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">
+          Download
+        </a>
+      </div>
+    </div>
+  {% endfor %}
+</div>
