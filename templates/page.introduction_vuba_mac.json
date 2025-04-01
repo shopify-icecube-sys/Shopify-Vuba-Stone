@@ -115,6 +115,25 @@
         "background_image": "shopify://shop_images/vuba-mac-2.jpg",
         "description": "<p>With a monolithic bond guaranteeing long-lasting performance, VubaMac surpasses conventional materials like </p><p>concrete and asphalt in longevity and flexibility. Plus, its ease of application, provided by a single supplier, offers</p><p>unmatched convenience, with installations completed in just one day, minimising disruption and providing a </p><p>smoother, quieter alternative.</p>"
       }
+    },
+    "vuba_mac_download_xPKi8k": {
+      "type": "vuba-mac-download",
+      "blocks": {
+        "download_item_4iJwNx": {
+          "type": "download_item",
+          "settings": {
+            "title": "Heavy Vehicle",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "download_item_4iJwNx"
+      ],
+      "settings": {
+        "section_title": "Download Vuba Mac Resources",
+        "section_image": "shopify://shop_images/air-source-heat-pump.png"
+      }
     }
   },
   "order": [
@@ -122,6 +141,7 @@
     "vuba_introduction_pAVw9g",
     "vuba_introduction_two_63M8U6",
     "vuba_text_with_vedio_XU3dpw",
-    "vuba_intro_multicolumn_87pp9a"
+    "vuba_intro_multicolumn_87pp9a",
+    "vuba_mac_download_xPKi8k"
   ]
 }
