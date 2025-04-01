@@ -19,7 +19,7 @@
             </figure>
             <div class="absolute inset-0 bg-opacity-40 flex flex-col justify-end p-5 2xl:py-12 2xl:px-10 text-white bg-balck">
               <h3 class="font-bold text-2xl 3xl:text-[33px]">{{ article.title }}</h3>
-              <p class="text-sm mt-3 mb-4">
+              <p class="text-sm 2xl:text-base mt-4 mb-5 3xl:mb-7">
                 {%- if article.excerpt.size > 0 -%}
                   {{ article.excerpt | strip_html | truncatewords: 20 }}
                 {%- else -%}
@@ -29,7 +29,7 @@
               <div>
                 <a
                   href="{{ article.url }}"
-                  class="px-6 uppercase py-3 rounded-[10px] inline-block tracking-widest text-sm font-bold border-[3px] border-white hover:bg-primary hover:border-primary"
+                  class="btn btn-outline-white"
                   >Learn More</a
                 >
               </div>
