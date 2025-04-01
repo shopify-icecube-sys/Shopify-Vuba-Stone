@@ -50,39 +50,12 @@
         "quote": "<p>Experience the magic of Vusion technology!<br/>“The best tool for selling a job is to let the customer </p><p>see what can be done beforehand. Vusion takes </p><p>away the guesswork and allows customers to see the future. Amazing!”</p>",
         "author": "George Child, New Look Surfacing"
       }
-    },
-    "vuba_stone_resources_wNg4A9": {
-      "type": "vuba-stone-resources",
-      "blocks": {
-        "resource_ftnAW4": {
-          "type": "resource",
-          "settings": {
-            "resource_image": "shopify://shop_images/9f552440-ac94-4997-985e-e621c71979d7.jpg",
-            "resource_title": "",
-            "download_link": ""
-          }
-        },
-        "resource_8X7ydF": {
-          "type": "resource",
-          "settings": {
-            "resource_image": "shopify://shop_images/9f552440-ac94-4997-985e-e621c71979d7.jpg",
-            "resource_title": "",
-            "download_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "resource_ftnAW4",
-        "resource_8X7ydF"
-      ],
-      "settings": {}
     }
   },
   "order": [
     "vuba_banner_image_kFLjhb",
     "vuba_richtext_6J9PEW",
     "vuba_mac_section_one_y7KRnV",
-    "vuba_distribution_hub_a3nAJU",
-    "vuba_stone_resources_wNg4A9"
+    "vuba_distribution_hub_a3nAJU"
   ]
 }
