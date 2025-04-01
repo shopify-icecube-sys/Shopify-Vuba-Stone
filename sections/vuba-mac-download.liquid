@@ -3,7 +3,7 @@
     <div class="column">
       <div class="inner-block">
         {% assign column_image_key = 'section.settings.section_image_' | append: column_number %}
-        {{ column_image_key }}
+        variable value:{{ column_image_key }}
         {% assign column_image = section.settings[column_image_key] %}
         {% if column_image != blank %}
           <figure class="mb-[20px] md:mb-[45px] 3xl:mb-[75px]">
