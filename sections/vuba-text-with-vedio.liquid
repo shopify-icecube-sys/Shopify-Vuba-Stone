@@ -1,25 +1,41 @@
 <section class="odd-even-sectoin mx-auto mb-[60px] lg:mb-[80px] 2xl:mb-[130px]">
-    <div class="container">
-        <div class="flex flex-col gap-y-[40px] xl:gap-y-[60px] 2xl:gap-y-[120px]">
-            <div class="flex flex-wrap gap-y-[40px] lg:items-center">
-                <div class="column w-[100%] md:w-[46%]">
-                    <div class="md:max-w-[300px] lg:max-w-[400px] xl:max-w-[500px] 2xl:max-w-[599px]">
-                        <h3 class="text-secondary text-[36px] xl:text-3xl 3xl:text-[53px] font-medium font-poppins leading-[40px] 3xl:leading-normal mb-[20px] lg:mb-7">
-                            {{ section.settings.heading }}
-                        </h3>
-                        <div class="text-[16px] 2xl:text-[23px] font-poppins">
-                            <p>{{ section.settings.description }}</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="column w-[100%] md:w-[54%]">
-                    <figure class="relative w-full pb-[56.25%] rounded-2xl overflow-hidden">
-                        <iframe class="absolute top-0 left-0 w-full h-full" src="{{ section.settings.video_url }}" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-                    </figure>
-                </div>
+  <div class="container">
+    <div class="flex flex-col gap-y-[40px] xl:gap-y-[60px] 2xl:gap-y-[120px]">
+      <div class="flex flex-wrap gap-y-[40px] lg:items-center">
+        <div class="column w-[100%] md:w-[46%]">
+          <div class="md:max-w-[300px] lg:max-w-[400px] xl:max-w-[500px] 2xl:max-w-[599px]">
+            <h3 class="text-secondary text-[36px] xl:text-3xl 3xl:text-[53px] font-medium font-poppins leading-[40px] 3xl:leading-normal mb-[20px] lg:mb-7">
+              {{ section.settings.heading }}
+            </h3>
+            <div class="text-[16px] 2xl:text-[23px] font-poppins">
+              <p>{{ section.settings.description }}</p>
             </div>
+          </div>
         </div>
+        {% if section.settings.video_url contains 'youtube.com' or section.settings.video_url contains 'youtu.be' %}
+          {% assign video_id = section.settings.video_url
+            | replace: 'https://www.youtube.com/watch?v=', ''
+            | replace: 'https://youtu.be/', ''
+          %}
+          {% assign final_video_url = 'https://www.youtube.com/embed/' | append: video_id %}
+        {% else %}
+          {% assign final_video_url = section.settings.video_url %}
+        {% endif %}
+        <div class="column w-[100%] md:w-[54%]">
+          <figure class="relative w-full pb-[56.25%] rounded-2xl overflow-hidden">
+            <iframe
+              class="absolute top-0 left-0 w-full h-full"
+              src="{{ section.settings.video_url }}"
+              title="Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen=""
+            ></iframe>
+          </figure>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
 {% schema %}
