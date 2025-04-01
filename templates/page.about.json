@@ -132,12 +132,65 @@
         "section_title_left": "Senior Management",
         "section_description": ""
       }
+    },
+    "vuba_timeline_FwRgWB": {
+      "type": "vuba-timeline",
+      "blocks": {
+        "timeline_item_TK3tcP": {
+          "type": "timeline_item",
+          "settings": {
+            "year": "2009",
+            "heading": "<p>Our Training Courses</p>",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum aquis congu.</p>",
+            "image": "shopify://shop_images/vuba-mac-2.jpg",
+            "image_position": "left"
+          }
+        },
+        "timeline_item_XdrkYA": {
+          "type": "timeline_item",
+          "settings": {
+            "year": "2012",
+            "heading": "<p>Our Training Courses</p>",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum aquis congu.</p>",
+            "image": "shopify://shop_images/bull-pic.jpg",
+            "image_position": "right"
+          }
+        },
+        "timeline_item_Rd6dWe": {
+          "type": "timeline_item",
+          "settings": {
+            "year": "2016",
+            "heading": "<p>Our Training Courses</p>",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum aquis congu.</p>",
+            "image": "shopify://shop_images/vuba-mac-2.jpg",
+            "image_position": "left"
+          }
+        },
+        "timeline_item_ETc7JP": {
+          "type": "timeline_item",
+          "settings": {
+            "year": "2018",
+            "heading": "<p>Our Training Courses</p>",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum aquis congu.</p>",
+            "image": "shopify://shop_images/training-cource-1.jpg",
+            "image_position": "right"
+          }
+        }
+      },
+      "block_order": [
+        "timeline_item_TK3tcP",
+        "timeline_item_XdrkYA",
+        "timeline_item_Rd6dWe",
+        "timeline_item_ETc7JP"
+      ],
+      "settings": {}
     }
   },
   "order": [
     "main",
     "vuba_banner_image_wqtQtY",
     "vuba_richtext_NEgFBD",
-    "vuba_teams_Uiw86R"
+    "vuba_teams_Uiw86R",
+    "vuba_timeline_FwRgWB"
   ]
 }
