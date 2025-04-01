@@ -122,17 +122,33 @@
         "download_item_4iJwNx": {
           "type": "download_item",
           "settings": {
+            "icon": "shopify://shop_images/air-source-heat-pump.png",
+            "title": "Heavy Vehicle",
+            "link": "shopify://pages/contact"
+          }
+        },
+        "download_item_WBMM3N": {
+          "type": "download_item",
+          "settings": {
+            "title": "Heavy Vehicle",
+            "link": ""
+          }
+        },
+        "download_item_qApJxq": {
+          "type": "download_item",
+          "settings": {
             "title": "Heavy Vehicle",
             "link": ""
           }
         }
       },
       "block_order": [
-        "download_item_4iJwNx"
+        "download_item_4iJwNx",
+        "download_item_WBMM3N",
+        "download_item_qApJxq"
       ],
       "settings": {
-        "section_title": "Download Vuba Mac Resources",
-        "section_image": "shopify://shop_images/air-source-heat-pump.png"
+        "section_title": "Download Vuba Mac Resources"
       }
     }
   },
