@@ -25,10 +25,6 @@
               {% endif %}
             </div>
             <div class="w-[45%] lg:w-[49%] relative z-10 {% if block.settings.image_position == 'right' %}pt-[70px] xl:pt-16 3xl:pt-[180px]{% endif %}">
-              <h2 class="text-primary font-bold text-3xl xl:text-4xl xl:leading-[1] 2xl:text-5xl 3xl:text-[138px] absolute pl-6 2xl:pl-10 3xl:pl-24 -top-16 xl:-top-20 3xl:-top-48">
-                Our<br>
-                History
-              </h2>
               {% if block.settings.image != blank %}
                 <img
                   src="{{ block.settings.image | img_url: 'original' }}"
