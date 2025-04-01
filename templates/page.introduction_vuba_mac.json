@@ -139,12 +139,28 @@
             "title": "Heavy Vehicle",
             "link": ""
           }
+        },
+        "download_item_RdmQQT": {
+          "type": "download_item",
+          "settings": {
+            "title": "Heavy Vehicle",
+            "link": ""
+          }
+        },
+        "download_item_tBXkYE": {
+          "type": "download_item",
+          "settings": {
+            "title": "Heavy Vehicle",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "download_item_iUcAyL",
         "download_item_9EBWwQ",
-        "download_item_xid9hY"
+        "download_item_xid9hY",
+        "download_item_RdmQQT",
+        "download_item_tBXkYE"
       ],
       "settings": {
         "section_title": "Download Vuba Mac Resources"
