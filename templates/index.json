@@ -58,13 +58,22 @@
           "type": "resource",
           "settings": {
             "resource_image": "shopify://shop_images/air-source-heat-pump.png",
+            "icon": "shopify://shop_images/doc-icon.png",
             "resource_title": "dsdsdsa",
             "download_link": "shopify://blogs/news/blog-post-five"
+          }
+        },
+        "resource_mYYpD3": {
+          "type": "resource",
+          "settings": {
+            "resource_title": "",
+            "download_link": ""
           }
         }
       },
       "block_order": [
-        "resource_h8KyKm"
+        "resource_h8KyKm",
+        "resource_mYYpD3"
       ],
       "settings": {}
     }
