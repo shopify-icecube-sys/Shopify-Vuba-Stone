@@ -23,6 +23,7 @@
             {% for block in section.blocks %}
               <div
                 class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px] rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]"
+                id="block-{{ block.id }}"
                 {{ block.shopify_attributes }}
               >
                 <figure>
@@ -53,7 +54,7 @@
           {% if section.settings.section_image_2 != blank %}
             <figure class="mb-[20px] md:mb-[45px] 3xl:mb-[75px]">
               <img
-                src=" {{ section.settings.section_image_2 | img_url:'master' }}"
+                src="{{ section.settings.section_image_2 | img_url:'master' }}"
                 alt="Vuba Mac Download"
                 class="aspect-[1/1]"
               >
@@ -65,6 +66,7 @@
             {% for block in section.blocks %}
               <div
                 class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px] rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]"
+                id="block-{{ block.id }}"
                 {{ block.shopify_attributes }}
               >
                 <figure>
@@ -95,7 +97,7 @@
           {% if section.settings.section_image_3 != blank %}
             <figure class="mb-[20px] md:mb-[45px] 3xl:mb-[75px]">
               <img
-                src=" {{ section.settings.section_image_3 | img_url:'master' }}"
+                src="{{ section.settings.section_image_3 | img_url:'master' }}"
                 alt="Vuba Mac Download"
                 class="aspect-[1/1]"
               >
@@ -107,6 +109,7 @@
             {% for block in section.blocks %}
               <div
                 class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px] rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]"
+                id="block-{{ block.id }}"
                 {{ block.shopify_attributes }}
               >
                 <figure>
@@ -137,7 +140,7 @@
           {% if section.settings.section_image_4 != blank %}
             <figure class="mb-[20px] md:mb-[45px] 3xl:mb-[75px]">
               <img
-                src=" {{ section.settings.section_image_4 | img_url:'master' }}"
+                src="{{ section.settings.section_image_4 | img_url:'master' }}"
                 alt="Vuba Mac Download"
                 class="aspect-[1/1]"
               >
@@ -149,6 +152,7 @@
             {% for block in section.blocks %}
               <div
                 class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px] rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]"
+                id="block-{{ block.id }}"
                 {{ block.shopify_attributes }}
               >
                 <figure>
