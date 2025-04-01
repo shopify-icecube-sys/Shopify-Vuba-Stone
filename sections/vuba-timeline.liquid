@@ -1,0 +1,101 @@
+<section class="timeline-wrapper max-h-screen overflow-y-auto">
+  <div class="container">
+    <div class="timeline-container h-screen overflow-y-scroll scroll-smooth snap-y snap-mandatory">
+      {% for block in section.blocks %}
+        <div
+          class="timeline-item h-screen flex items-center justify-center text-2xl snap-start relative about before:content-[''] before:w-24 3xl:before:3xl:w-60 before:h-full before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:bg-primary before:z-[1]"
+          {{ block.shopify_attributes }}
+        >
+          <div class="flex {% if block.settings.image_position == 'right' %}flex-row-reverse{% endif %} xl:px-24 3xl:px-52">
+            <div class="w-[45%] lg:w-[49%] {% if block.settings.image_position == 'right' %}text-start{% else %}text-end{% endif %} text-sm 3xl:text-base relative z-10 {% if block.settings.image_position == 'right' %}pl-7 md:pl-10 3xl:pl-20{% else %}pr-7 md:pr-10 3xl:pr-20{% endif %} pt-[70px] xl:pt-16 3xl:pt-[180px]">
+              {% if block.settings.heading != blank %}
+                <div class="text-xl xl:text-2xl 3xl:text-[51px] font-bold xl:leading-[1] text-primary mb-3 3xl:mb-7">
+                  {{ block.settings.heading }}
+                </div>
+              {% endif %}
+              {% if block.settings.description != blank %}
+                <div>{{ block.settings.description }}</div>
+              {% endif %}
+            </div>
+            <div class="bg-primary w-16 3xl:w-[180px] text-white relative z-10 pt-6 3xl:pt-10 {% if block.settings.image_position == 'right' %}left-2{% else %}right-2{% endif %}">
+              {% if block.settings.year != blank %}
+                <h3 class="font-bold w-full text-4xl 3xl:text-9xl break-words px-2 inline-block]">
+                  {{ block.settings.year }}
+                </h3>
+              {% endif %}
+            </div>
+            <div class="w-[45%] lg:w-[49%] relative z-10 {% if block.settings.image_position == 'right' %}pt-[70px] xl:pt-16 3xl:pt-[180px]{% endif %}">
+              {% if block.settings.image != blank %}
+                <img
+                  src="{{ block.settings.image | img_url: 'original' }}"
+                  class="w-full rounded-2xl 3xl:rounded-3xl"
+                  alt="{{ block.settings.heading }}"
+                >
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Vuba Timeline",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "timeline_item",
+      "name": "Timeline Item",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Year",
+          "id": "year",
+          "default": "2009"
+        },
+        {
+          "type": "richtext",
+          "label": "Heading",
+          "id": "heading",
+          "default": "<p>Our Training Courses</p>"
+        },
+        {
+          "type": "richtext",
+          "label": "Description",
+          "id": "description",
+          "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum aquis congu.</p>"
+        },
+        {
+          "type": "image_picker",
+          "label": "Image",
+          "id": "image"
+        },
+        {
+          "type": "radio",
+          "label": "Image Position",
+          "id": "image_position",
+          "default": "left",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vuba Timeline",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
