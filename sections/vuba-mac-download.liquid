@@ -1,153 +1,265 @@
 <section class="download-vuba-mac-section bg-[#fafafa] pt-[60px] 3xl:pt-[95px] pb-[60px] 3xl:pb-[130px]">
   <div class="inner-container">
-    <h3 class="text-secondary text-[36px] xl:text-3xl 3xl:text-[53px] font-medium font-poppins leading-[40px] 3xl:leading-normal mb-[20px] md:mb-[24px] text-center">
-    Download Vuba Mac Resources</h3>
+    {% if section.settings.section_title != blank %}
+      <h3 class="text-secondary text-[36px] xl:text-3xl 3xl:text-[53px] font-medium font-poppins leading-[40px] 3xl:leading-normal mb-[20px] md:mb-[24px] text-center">
+        {{ section.settings.section_title }}
+      </h3>
+    {% endif %}
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[40px]  xl:gap-[20px] 2xl:gap-[30px] 3xl:gap-[50px]">
       <div class="column">
         <div class="inner-block">
-            <figure class="mb-[20px] md:mb-[45px] 3xl:mb-[75px]"><img src="images/statementCountry.jpg" alt="Vuba Mac Download" class="aspect-[1/1]"></figure>
-            <div class="download-block flex flex-col gap-[13px]">
-              <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px]  rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
-                <figure><img src="images/doc-icon.svg" alt="doc" class="max-w-[41px] 3xl:max-w-[50px]"></figure>
-                <div class="content">
-                  <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">Heavy Vehicle</h3>
-                  <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download
-                  </a>
-                </div>
+          {% if section.settings.section_image_1 != blank %}
+              <figure class="mb-[20px] md:mb-[45px] 3xl:mb-[75px]">
+                <img
+                  src="
+                    {{ section.settings.section_image_1 | img_url:'master' }}"
+                  alt="Vuba Mac Download"
+                  class="aspect-[1/1]">
+              </figure>
+            {% else %}               
+              {{
+              'hero-apparel-3'
+              | placeholder_svg_tag: 'placeholder-svg placeholder'
+              }} 
+          {% endif %}
+          <div class="download-block flex flex-col gap-[13px]">
+            <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px]  rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
+              <figure><img
+                  src="images/doc-icon.svg"
+                  alt="doc"
+                  class="max-w-[41px] 3xl:max-w-[50px]"></figure>
+              <div class="content">
+                <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">Heavy Vehicle</h3>
+                <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download
+                </a>
               </div>
-              <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px]  rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
-                <figure><img src="images/doc-icon.svg" alt="doc" class="max-w-[41px] 3xl:max-w-[50px]"></figure>
-                <div class="content">
-                  <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">Heavy Vehicle</h3>
-                  <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download
-                  </a>
-                </div>
+            </div>
+            <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px]  rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
+              <figure><img
+                  src="images/doc-icon.svg"
+                  alt="doc"
+                  class="max-w-[41px] 3xl:max-w-[50px]"></figure>
+              <div class="content">
+                <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">Heavy Vehicle</h3>
+                <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download
+                </a>
               </div>
-              <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px]  rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
-                <figure><img src="images/doc-icon.svg" alt="doc" class="max-w-[41px] 3xl:max-w-[50px]"></figure>
-                <div class="content">
-                  <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">Heavy Vehicle</h3>
-                  <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download
-                  </a>
-                </div>
+            </div>
+            <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px]  rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
+              <figure><img
+                  src="images/doc-icon.svg"
+                  alt="doc"
+                  class="max-w-[41px] 3xl:max-w-[50px]"></figure>
+              <div class="content">
+                <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">Heavy Vehicle</h3>
+                <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download
+                </a>
               </div>
-            </div>           
+            </div>
+          </div>
         </div>
       </div>
 
 
       <div class="column">
         <div class="inner-block">
-            <figure class="mb-[20px] md:mb-[45px] 3xl:mb-[75px]"><img src="images/methodStatement.jpg" alt="Vuba Mac Download" class="aspect-[1/1]"></figure>
-            <div class="download-block flex flex-col gap-[13px]">
-              <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px]  rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
-                <figure><img src="images/doc-icon.svg" alt="doc" class="max-w-[41px] 3xl:max-w-[50px]"></figure>
-                <div class="content">
-                  <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">Heavy Vehicle</h3>
-                  <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download
-                  </a>
-                </div>
+          {% if section.settings.section_image_2 != blank %}
+            <figure class="mb-[20px] md:mb-[45px] 3xl:mb-[75px]">
+              <img
+                src="
+                  {{ section.settings.section_image_2 | img_url:'master' }}"
+                alt="Vuba Mac Download"
+                class="aspect-[1/1]">
+            </figure>
+          {% else %}               
+            {{
+            'hero-apparel-3'
+            | placeholder_svg_tag: 'placeholder-svg placeholder'
+            }} 
+        {% endif %}
+          <div class="download-block flex flex-col gap-[13px]">
+            <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px]  rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
+              <figure><img
+                  src="images/doc-icon.svg"
+                  alt="doc"
+                  class="max-w-[41px] 3xl:max-w-[50px]"></figure>
+              <div class="content">
+                <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">Heavy Vehicle</h3>
+                <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download
+                </a>
               </div>
-              <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px]  rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
-                <figure><img src="images/doc-icon.svg" alt="doc" class="max-w-[41px] 3xl:max-w-[50px]"></figure>
-                <div class="content">
-                  <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">Heavy Vehicle</h3>
-                  <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download
-                  </a>
-                </div>
+            </div>
+            <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px]  rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
+              <figure><img
+                  src="images/doc-icon.svg"
+                  alt="doc"
+                  class="max-w-[41px] 3xl:max-w-[50px]"></figure>
+              <div class="content">
+                <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">Heavy Vehicle</h3>
+                <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download
+                </a>
               </div>
-              <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px]  rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
-                <figure><img src="images/doc-icon.svg" alt="doc" class="max-w-[41px] 3xl:max-w-[50px]"></figure>
-                <div class="content">
-                  <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">Heavy Vehicle</h3>
-                  <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download
-                  </a>
-                </div>
+            </div>
+            <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px]  rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
+              <figure><img
+                  src="images/doc-icon.svg"
+                  alt="doc"
+                  class="max-w-[41px] 3xl:max-w-[50px]"></figure>
+              <div class="content">
+                <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">Heavy Vehicle</h3>
+                <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download
+                </a>
               </div>
-            </div>           
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="column">
         <div class="inner-block">
-            <figure class="mb-[20px] md:mb-[45px] 3xl:mb-[75px]"><img src="images/buildUpCountry.jpg" alt="Vuba Mac Download" class="aspect-[1/1]"></figure>
-            <div class="download-block flex flex-col gap-[13px]">
-              <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px]  rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
-                <figure><img src="images/doc-icon.svg" alt="doc" class="max-w-[41px] 3xl:max-w-[50px]"></figure>
-                <div class="content">
-                  <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">Heavy Vehicle</h3>
-                  <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download
-                  </a>
-                </div>
+          {% if section.settings.section_image_3 != blank %}
+            <figure class="mb-[20px] md:mb-[45px] 3xl:mb-[75px]">
+              <img
+                src="
+                  {{ section.settings.section_image_3 | img_url:'master' }}"
+                alt="Vuba Mac Download"
+                class="aspect-[1/1]">
+            </figure>
+          {% else %}               
+            {{
+            'hero-apparel-3'
+            | placeholder_svg_tag: 'placeholder-svg placeholder'
+            }} 
+        {% endif %}
+          <div class="download-block flex flex-col gap-[13px]">
+            <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px]  rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
+              <figure><img
+                  src="images/doc-icon.svg"
+                  alt="doc"
+                  class="max-w-[41px] 3xl:max-w-[50px]"></figure>
+              <div class="content">
+                <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">Heavy Vehicle</h3>
+                <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download
+                </a>
               </div>
-              <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px]  rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
-                <figure><img src="images/doc-icon.svg" alt="doc" class="max-w-[41px] 3xl:max-w-[50px]"></figure>
-                <div class="content">
-                  <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">Heavy Vehicle</h3>
-                  <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download
-                  </a>
-                </div>
+            </div>
+            <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px]  rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
+              <figure><img
+                  src="images/doc-icon.svg"
+                  alt="doc"
+                  class="max-w-[41px] 3xl:max-w-[50px]"></figure>
+              <div class="content">
+                <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">Heavy Vehicle</h3>
+                <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download
+                </a>
               </div>
-              <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px]  rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
-                <figure><img src="images/doc-icon.svg" alt="doc" class="max-w-[41px] 3xl:max-w-[50px]"></figure>
-                <div class="content">
-                  <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">Heavy Vehicle</h3>
-                  <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download
-                  </a>
-                </div>
+            </div>
+            <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px]  rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
+              <figure><img
+                  src="images/doc-icon.svg"
+                  alt="doc"
+                  class="max-w-[41px] 3xl:max-w-[50px]"></figure>
+              <div class="content">
+                <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">Heavy Vehicle</h3>
+                <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download
+                </a>
               </div>
-            </div>           
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="column">
         <div class="inner-block">
-            <figure class="mb-[20px] md:mb-[45px] 3xl:mb-[75px]"><img src="images/buildUp.jpg" alt="Vuba Mac Download" class="aspect-[1/1]"></figure>
-            <div class="download-block flex flex-col gap-[13px]">
-              <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px]  rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
-                <figure><img src="images/doc-icon.svg" alt="doc" class="max-w-[41px] 3xl:max-w-[50px]"></figure>
-                <div class="content">
-                  <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">Heavy Vehicle</h3>
-                  <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download
-                  </a>
-                </div>
+          {% if section.settings.section_image_4 != blank %}
+            <figure class="mb-[20px] md:mb-[45px] 3xl:mb-[75px]">
+              <img
+                src="
+                  {{ section.settings.section_image_4 | img_url:'master' }}"
+                alt="Vuba Mac Download"
+                class="aspect-[1/1]">
+            </figure>
+          {% else %}               
+            {{
+            'hero-apparel-3'
+            | placeholder_svg_tag: 'placeholder-svg placeholder'
+            }} 
+        {% endif %}
+          <div class="download-block flex flex-col gap-[13px]">
+            <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px]  rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
+              <figure><img
+                  src="images/doc-icon.svg"
+                  alt="doc"
+                  class="max-w-[41px] 3xl:max-w-[50px]"></figure>
+              <div class="content">
+                <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">Heavy Vehicle</h3>
+                <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download
+                </a>
               </div>
-              <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px]  rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
-                <figure><img src="images/doc-icon.svg" alt="doc" class="max-w-[41px] 3xl:max-w-[50px]"></figure>
-                <div class="content">
-                  <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">Heavy Vehicle</h3>
-                  <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download
-                  </a>
-                </div>
+            </div>
+            <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px]  rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
+              <figure><img
+                  src="images/doc-icon.svg"
+                  alt="doc"
+                  class="max-w-[41px] 3xl:max-w-[50px]"></figure>
+              <div class="content">
+                <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">Heavy Vehicle</h3>
+                <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download
+                </a>
               </div>
-              <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px]  rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
-                <figure><img src="images/doc-icon.svg" alt="doc" class="max-w-[41px] 3xl:max-w-[50px]"></figure>
-                <div class="content">
-                  <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">Heavy Vehicle</h3>
-                  <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download
-                  </a>
-                </div>
+            </div>
+            <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px]  rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
+              <figure><img
+                  src="images/doc-icon.svg"
+                  alt="doc"
+                  class="max-w-[41px] 3xl:max-w-[50px]"></figure>
+              <div class="content">
+                <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">Heavy Vehicle</h3>
+                <a href="#" class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]">Download
+                </a>
               </div>
-            </div>           
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 {% schema %}
-{
-  "name": "Vuba Download Mac",
-  "settings": [
-    {
-      "type": "header",
-      "content": "Download Vuba Mac"
-    }
-  ],
-  "presets": [
-    {
-      "name": "Vuba Download Mac",
-      "category": "Vuba Mac"
-    }
-  ]
-}
+  {
+    "name": "Vuba Download Mac",
+    "settings": [
+      {
+        "type": "text",
+        "id": "section_title",
+        "label": "Section Title",
+        "default": "Download Vuba Mac Resources"
+      },
+      {
+        "type": "image_picker",
+        "id": "section_image_1",
+        "label": "Section Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "section_image_2",
+        "label": "Section Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "section_image_3",
+        "label": "Section Image"
+      }, {
+        "type": "image_picker",
+        "id": "section_image_4",
+        "label": "Section Image"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Vuba Download Mac",
+        "category": "Vuba Mac"
+      }
+    ]
+  }
 {% endschema %}
