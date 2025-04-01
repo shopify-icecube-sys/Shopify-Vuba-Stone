@@ -89,6 +89,30 @@
             "title": "",
             "link": ""
           }
+        },
+        "download_item_3pJPqz": {
+          "type": "download_item",
+          "settings": {
+            "icon": "shopify://shop_images/m-icon-mobile-4.svg",
+            "title": "",
+            "link": ""
+          }
+        },
+        "download_item_CiEHbN": {
+          "type": "download_item",
+          "settings": {
+            "icon": "shopify://shop_images/m-icon-mobile-4.svg",
+            "title": "",
+            "link": ""
+          }
+        },
+        "download_item_fmdmwN": {
+          "type": "download_item",
+          "settings": {
+            "icon": "shopify://shop_images/m-icon-mobile-4.svg",
+            "title": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -96,7 +120,10 @@
         "resource_ACWAkU",
         "resource_W3Q3Em",
         "resource_7jdMxD",
-        "download_item_U7jLQ7"
+        "download_item_U7jLQ7",
+        "download_item_3pJPqz",
+        "download_item_CiEHbN",
+        "download_item_fmdmwN"
       ],
       "settings": {}
     }
