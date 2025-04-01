@@ -1,26 +1,24 @@
-<section class="download-vuba-mac-section bg-[#fafafa] pt-[60px] 3xl:pt-[95px] pb-[60px] 3xl:pb-[130px]">
-  <div class="inner-container">
-    {% if section.settings.section_title != blank %}
-      <h3 class="text-secondary text-[36px] xl:text-3xl 3xl:text-[53px] font-medium font-poppins leading-[40px] 3xl:leading-normal mb-[20px] md:mb-[24px] text-center">
-        {{ section.settings.section_title }}
-      </h3>
-    {% endif %}
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[40px] xl:gap-[20px] 2xl:gap-[30px] 3xl:gap-[50px]">
-      <div class="column">
-        <div class="inner-block">
-          {% if section.settings.section_image_1 != blank %}
-            <figure class="mb-[20px] md:mb-[45px] 3xl:mb-[75px]">
-              <img
-                src="{{ section.settings.section_image_1 | img_url:'master' }}"
-                alt="Vuba Mac Download"
-                class="aspect-[1/1]"
-              >
-            </figure>
-          {% else %}
-            {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
-          {% endif %}
-          <div class="download-block flex flex-col gap-[13px]">
-            {% for block in section.blocks %}
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[40px] xl:gap-[20px] 2xl:gap-[30px] 3xl:gap-[50px]">
+  {% for column_number in (1..4) %}
+    <div class="column">
+      <div class="inner-block">
+        {% assign column_image_key = 'section.settings.section_image_' | append: column_number %}
+        {{ column_image_key }}
+        {% assign column_image = section.settings[column_image_key] %}
+        {% if column_image != blank %}
+          <figure class="mb-[20px] md:mb-[45px] 3xl:mb-[75px]">
+            <img
+              src="{{ column_image | img_url:'master' }}"
+              alt="Vuba Mac Download"
+              class="aspect-[1/1]"
+            >
+          </figure>
+        {% else %}
+          {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+        {% endif %}
+        <div class="download-block flex flex-col gap-[13px]">
+          {% for block in section.blocks %}
+            {% if block.settings.column == column_number %}
               <div
                 class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px] rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]"
                 id="block-{{ block.id }}"
@@ -45,202 +43,85 @@
                   </a>
                 </div>
               </div>
-            {% endfor %}
-          </div>
-        </div>
-      </div>
-      <div class="column">
-        <div class="inner-block">
-          {% if section.settings.section_image_2 != blank %}
-            <figure class="mb-[20px] md:mb-[45px] 3xl:mb-[75px]">
-              <img
-                src="{{ section.settings.section_image_2 | img_url:'master' }}"
-                alt="Vuba Mac Download"
-                class="aspect-[1/1]"
-              >
-            </figure>
-          {% else %}
-            {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
-          {% endif %}
-          <div class="download-block flex flex-col gap-[13px]">
-            {% for block in section.blocks %}
-              <div
-                class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px] rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]"
-                id="block-{{ block.id }}"
-                {{ block.shopify_attributes }}
-              >
-                <figure>
-                  <img
-                    src="{{ block.settings.icon | img_url: 'master' }}"
-                    alt="{{ block.settings.icon_alt }}"
-                    class="max-w-[41px] 3xl:max-w-[50px]"
-                  >
-                </figure>
-                <div class="content">
-                  <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">
-                    {{ block.settings.title }}
-                  </h3>
-                  <a
-                    href="{{ block.settings.link }}"
-                    class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]"
-                  >
-                    Download
-                  </a>
-                </div>
-              </div>
-            {% endfor %}
-          </div>
-        </div>
-      </div>
-      <div class="column">
-        <div class="inner-block">
-          {% if section.settings.section_image_3 != blank %}
-            <figure class="mb-[20px] md:mb-[45px] 3xl:mb-[75px]">
-              <img
-                src="{{ section.settings.section_image_3 | img_url:'master' }}"
-                alt="Vuba Mac Download"
-                class="aspect-[1/1]"
-              >
-            </figure>
-          {% else %}
-            {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
-          {% endif %}
-          <div class="download-block flex flex-col gap-[13px]">
-            {% for block in section.blocks %}
-              <div
-                class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px] rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]"
-                id="block-{{ block.id }}"
-                {{ block.shopify_attributes }}
-              >
-                <figure>
-                  <img
-                    src="{{ block.settings.icon | img_url: 'master' }}"
-                    alt="{{ block.settings.icon_alt }}"
-                    class="max-w-[41px] 3xl:max-w-[50px]"
-                  >
-                </figure>
-                <div class="content">
-                  <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">
-                    {{ block.settings.title }}
-                  </h3>
-                  <a
-                    href="{{ block.settings.link }}"
-                    class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]"
-                  >
-                    Download
-                  </a>
-                </div>
-              </div>
-            {% endfor %}
-          </div>
-        </div>
-      </div>
-      <div class="column">
-        <div class="inner-block">
-          {% if section.settings.section_image_4 != blank %}
-            <figure class="mb-[20px] md:mb-[45px] 3xl:mb-[75px]">
-              <img
-                src="{{ section.settings.section_image_4 | img_url:'master' }}"
-                alt="Vuba Mac Download"
-                class="aspect-[1/1]"
-              >
-            </figure>
-          {% else %}
-            {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
-          {% endif %}
-          <div class="download-block flex flex-col gap-[13px]">
-            {% for block in section.blocks %}
-              <div
-                class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px] rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]"
-                id="block-{{ block.id }}"
-                {{ block.shopify_attributes }}
-              >
-                <figure>
-                  <img
-                    src="{{ block.settings.icon | img_url: 'master' }}"
-                    alt="{{ block.settings.icon_alt }}"
-                    class="max-w-[41px] 3xl:max-w-[50px]"
-                  >
-                </figure>
-                <div class="content">
-                  <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">
-                    {{ block.settings.title }}
-                  </h3>
-                  <a
-                    href="{{ block.settings.link }}"
-                    class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]"
-                  >
-                    Download
-                  </a>
-                </div>
-              </div>
-            {% endfor %}
-          </div>
+            {% endif %}
+          {% endfor %}
         </div>
       </div>
     </div>
-  </div>
-</section>
+  {% endfor %}
+</div>
 {% schema %}
 {
-"name": "Vuba Download Mac",
+  "name": "Vuba Download Mac",
   "settings": [
-      {
-        "type": "text",
-        "id": "section_title",
-        "label": "Section Title",
-        "default": "Download Vuba Mac Resources"
-      },
-      {
-        "type": "image_picker",
-        "id": "section_image_1",
-        "label": "Section Image"
-      },
-      {
-        "type": "image_picker",
-        "id": "section_image_2",
-        "label": "Section Image"
-      },
-      {
-        "type": "image_picker",
-        "id": "section_image_3",
-        "label": "Section Image"
-      },
-      {
-        "type": "image_picker",
-        "id": "section_image_4",
-        "label": "Section Image"
-      }
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section Title",
+      "default": "Download Vuba Mac Resources"
+    },
+    {
+      "type": "image_picker",
+      "id": "section_image_1",
+      "label": "Section Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "section_image_2",
+      "label": "Section Image 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "section_image_3",
+      "label": "Section Image 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "section_image_4",
+      "label": "Section Image 4"
+    }
   ],
-"blocks": [
-      {
-        "type": "download_item",
-        "name": "Download Item 1",
-        "settings": [
-          {
-            "type": "image_picker",
-            "id": "icon",
-            "label": "Icon"
-          },
-          {
-            "type": "text",
-            "id": "title",
-            "label": "Title",
-            "default": "Heavy Vehicle"
-          },
-          {
-            "type": "url",
-            "id": "link",
-            "label": "Download Link"
-          }
+  "blocks": [
+    {
+      "type": "download_item",
+      "name": "Download Item 1",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Heavy Vehicle"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Download Link"
+        },
+        {
+          "type": "select",
+          "id": "column",
+          "label": "Column",
+          "options": [
+            { "value": "1", "label": "Column 1" },
+            { "value": "2", "label": "Column 2" },
+            { "value": "3", "label": "Column 3" },
+            { "value": "4", "label": "Column 4" }
+          ],
+          "default": "1"
+        }
       ]
     }
-],
-"presets": [
-  {
-    "name": "Vuba Download Mac",
-    "category": "Vuba Mac"
-  }
-]
+  ],
+  "presets": [
+    {
+      "name": "Vuba Download Mac",
+      "category": "Vuba Mac"
+    }
+  ]
 }
 {% endschema %}
