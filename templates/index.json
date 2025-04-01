@@ -50,97 +50,12 @@
         "quote": "<p>Experience the magic of Vusion technology!<br/>“The best tool for selling a job is to let the customer </p><p>see what can be done beforehand. Vusion takes </p><p>away the guesswork and allows customers to see the future. Amazing!”</p>",
         "author": "George Child, New Look Surfacing"
       }
-    },
-    "vuba_stone_resources_6Vydgq": {
-      "type": "vuba-stone-resources",
-      "blocks": {
-        "resource_h8KyKm": {
-          "type": "resource",
-          "settings": {
-            "resource_image": "shopify://shop_images/air-source-heat-pump.png",
-            "icon": "shopify://shop_images/doc-icon.png",
-            "resource_title": "dsdsdsa",
-            "download_link": "shopify://blogs/news/blog-post-five"
-          }
-        },
-        "resource_AaPXMV": {
-          "type": "resource",
-          "settings": {
-            "resource_image": "shopify://shop_images/air-source-heat-pump.png",
-            "icon": "shopify://shop_images/doc-icon.png",
-            "resource_title": "dsdsdsa",
-            "download_link": "shopify://blogs/news/blog-post-five"
-          }
-        },
-        "resource_DaxXJN": {
-          "type": "resource",
-          "settings": {
-            "resource_image": "shopify://shop_images/air-source-heat-pump.png",
-            "icon": "shopify://shop_images/doc-icon.png",
-            "resource_title": "dsdsdsa",
-            "download_link": "shopify://blogs/news/blog-post-five"
-          }
-        },
-        "resource_g4Bb3J": {
-          "type": "resource",
-          "settings": {
-            "resource_image": "shopify://shop_images/air-source-heat-pump.png",
-            "icon": "shopify://shop_images/doc-icon.png",
-            "resource_title": "dsdsdsa",
-            "download_link": "shopify://blogs/news/blog-post-five"
-          }
-        },
-        "resource_YF7kmD": {
-          "type": "resource",
-          "settings": {
-            "icon": "shopify://shop_images/doc-icon.png",
-            "resource_title": "dsdsdsa",
-            "download_link": "shopify://blogs/news/blog-post-five"
-          }
-        },
-        "resource_drk9r3": {
-          "type": "resource",
-          "settings": {
-            "icon": "shopify://shop_images/doc-icon.png",
-            "resource_title": "dsdsdsa",
-            "download_link": "shopify://blogs/news/blog-post-five"
-          }
-        },
-        "resource_tdcUHf": {
-          "type": "resource",
-          "settings": {
-            "icon": "shopify://shop_images/doc-icon.png",
-            "resource_title": "dsdsdsa",
-            "download_link": "shopify://blogs/news/blog-post-five"
-          }
-        },
-        "resource_AwCYyL": {
-          "type": "resource",
-          "settings": {
-            "icon": "shopify://shop_images/doc-icon.png",
-            "resource_title": "dsdsdsa",
-            "download_link": "shopify://blogs/news/blog-post-five"
-          }
-        }
-      },
-      "block_order": [
-        "resource_h8KyKm",
-        "resource_AaPXMV",
-        "resource_DaxXJN",
-        "resource_g4Bb3J",
-        "resource_YF7kmD",
-        "resource_drk9r3",
-        "resource_tdcUHf",
-        "resource_AwCYyL"
-      ],
-      "settings": {}
     }
   },
   "order": [
     "vuba_banner_image_kFLjhb",
     "vuba_richtext_6J9PEW",
     "vuba_mac_section_one_y7KRnV",
-    "vuba_distribution_hub_a3nAJU",
-    "vuba_stone_resources_6Vydgq"
+    "vuba_distribution_hub_a3nAJU"
   ]
 }
