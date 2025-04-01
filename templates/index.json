@@ -50,41 +50,12 @@
         "quote": "<p>Experience the magic of Vusion technology!<br/>“The best tool for selling a job is to let the customer </p><p>see what can be done beforehand. Vusion takes </p><p>away the guesswork and allows customers to see the future. Amazing!”</p>",
         "author": "George Child, New Look Surfacing"
       }
-    },
-    "vuba_stone_resources_7QPzBJ": {
-      "type": "vuba-stone-resources",
-      "blocks": {
-        "resource_mGyWVW": {
-          "type": "resource",
-          "settings": {
-            "resource_image": "shopify://shop_images/air-source-heat-pump.png",
-            "icon": "shopify://shop_images/doc-icon.png",
-            "resource_title": "",
-            "download_link": ""
-          }
-        },
-        "resource_UTJp9E": {
-          "type": "resource",
-          "settings": {
-            "resource_image": "shopify://shop_images/air-source-heat-pump.png",
-            "icon": "shopify://shop_images/doc-icon.png",
-            "resource_title": "",
-            "download_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "resource_mGyWVW",
-        "resource_UTJp9E"
-      ],
-      "settings": {}
     }
   },
   "order": [
     "vuba_banner_image_kFLjhb",
     "vuba_richtext_6J9PEW",
     "vuba_mac_section_one_y7KRnV",
-    "vuba_distribution_hub_a3nAJU",
-    "vuba_stone_resources_7QPzBJ"
+    "vuba_distribution_hub_a3nAJU"
   ]
 }
