@@ -5,46 +5,110 @@
         {{ section.settings.section_title }}
       </h3>
     {% endif %}
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[40px]  xl:gap-[20px] 2xl:gap-[30px] 3xl:gap-[50px]">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[40px] xl:gap-[20px] 2xl:gap-[30px] 3xl:gap-[50px]">
       <div class="column">
-        {% render 'vuba-mac-download-resources' %}
+        <div class="inner-block">
+          {% if section.settings.section_image_1 != blank %}
+            <figure class="mb-[20px] md:mb-[45px] 3xl:mb-[75px]">
+              <img
+                src="{{ section.settings.section_image_1 | img_url:'master' }}"
+                alt="Vuba Mac Download"
+                class="aspect-[1/1]"
+              >
+            </figure>
+          {% else %}
+            {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+          {% endif %}
+          {% render 'vuba-mac-download-resources' %}
+        </div>
       </div>
-
       <div class="column">
-        {% render 'vuba-mac-download-resources' %}
+        <div class="inner-block">
+          {% if section.settings.section_image_2 != blank %}
+            <figure class="mb-[20px] md:mb-[45px] 3xl:mb-[75px]">
+              <img
+                src=" {{ section.settings.section_image_2 | img_url:'master' }}"
+                alt="Vuba Mac Download"
+                class="aspect-[1/1]"
+              >
+            </figure>
+          {% else %}
+            {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+          {% endif %}
+          {% render 'vuba-mac-download-resources' %}
+        </div>
       </div>
-
       <div class="column">
-        {% render 'vuba-mac-download-resources' %}
+        <div class="inner-block">
+          {% if section.settings.section_image_3 != blank %}
+            <figure class="mb-[20px] md:mb-[45px] 3xl:mb-[75px]">
+              <img
+                src=" {{ section.settings.section_image_3 | img_url:'master' }}"
+                alt="Vuba Mac Download"
+                class="aspect-[1/1]"
+              >
+            </figure>
+          {% else %}
+            {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+          {% endif %}
+          {% render 'vuba-mac-download-resources' %}
+        </div>
       </div>
-
       <div class="column">
-        {% render 'vuba-mac-download-resources' %}
+        <div class="inner-block">
+          {% if section.settings.section_image_4 != blank %}
+            <figure class="mb-[20px] md:mb-[45px] 3xl:mb-[75px]">
+              <img
+                src=" {{ section.settings.section_image_4 | img_url:'master' }}"
+                alt="Vuba Mac Download"
+                class="aspect-[1/1]"
+              >
+            </figure>
+          {% else %}
+            {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+          {% endif %}
+          {% render 'vuba-mac-download-resources' %}
+        </div>
       </div>
     </div>
   </div>
 </section>
 {% schema %}
 {
-  "name": "Vuba Download Mac",
+"name": "Vuba Download Mac",
   "settings": [
-    {
-      "type": "text",
-      "id": "section_title",
-      "label": "Section Title",
-      "default": "Download Vuba Mac Resources"
-    },
-    {
-      "type": "image_picker",
-      "id": "section_image",
-      "label": "Section Image"
-    }
+      {
+        "type": "text",
+        "id": "section_title",
+        "label": "Section Title",
+        "default": "Download Vuba Mac Resources"
+      },
+      {
+        "type": "image_picker",
+        "id": "section_image_1",
+        "label": "Section Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "section_image_2",
+        "label": "Section Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "section_image_3",
+        "label": "Section Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "section_image_4",
+        "label": "Section Image"
+      }
   ],
-  "blocks": [
-  {
-    "type": "download_item",
-    "name": "Download Item 1",
-    "settings": [
+"blocks": [
+      {
+        "type": "download_item",
+        "name": "Download Item 1",
+        "settings": [
       {
         "type": "image_picker",
         "id": "icon",
@@ -62,13 +126,13 @@
         "label": "Download Link"
       }
     ]
-  }
-],
-  "presets": [
-    {
-      "name": "Vuba Download Mac",
-      "category": "Vuba Mac"
     }
-  ]
+],
+"presets": [
+  {
+    "name": "Vuba Download Mac",
+    "category": "Vuba Mac"
+  }
+]
 }
 {% endschema %}
