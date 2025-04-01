@@ -118,7 +118,37 @@
     },
     "vuba_mac_download_xUjfFJ": {
       "type": "vuba-mac-download",
-      "settings": {}
+      "blocks": {
+        "download_item_iUcAyL": {
+          "type": "download_item",
+          "settings": {
+            "title": "Heavy Vehicle",
+            "link": ""
+          }
+        },
+        "download_item_9EBWwQ": {
+          "type": "download_item",
+          "settings": {
+            "title": "Heavy Vehicle",
+            "link": ""
+          }
+        },
+        "download_item_xid9hY": {
+          "type": "download_item",
+          "settings": {
+            "title": "Heavy Vehicle",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "download_item_iUcAyL",
+        "download_item_9EBWwQ",
+        "download_item_xid9hY"
+      ],
+      "settings": {
+        "section_title": "Download Vuba Mac Resources"
+      }
     }
   },
   "order": [
