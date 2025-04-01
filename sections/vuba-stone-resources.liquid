@@ -1,1 +1,74 @@
-hi
+<section class="download-vuba-mac-section bg-[#fafafa] pt-[60px] 3xl:pt-[95px] pb-[60px] 3xl:pb-[130px]">
+  <div class="inner-container">
+    <h3 class="text-secondary text-[36px] xl:text-3xl 3xl:text-[53px] font-medium font-poppins leading-[40px] 3xl:leading-normal mb-[20px] md:mb-[24px] text-center">
+      Download Vuba Mac Resources
+    </h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[40px] xl:gap-[20px] 2xl:gap-[30px] 3xl:gap-[50px]">
+      {% for block in section.blocks %}
+        <div class="column">
+          <div class="inner-block">
+            {% if block.settings.resource_image %}
+              <figure class="mb-[20px] md:mb-[45px] 3xl:mb-[75px]">
+                <img src="{{ block.settings.resource_image | image_url }}" alt="Vuba Mac Download" class="aspect-[1/1]">
+              </figure>
+            {% endif %}
+            <div class="download-block flex flex-col gap-[13px]">
+              <div class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px] rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]">
+                <figure>
+                  <img src="{{ 'doc-icon.svg' | asset_url }}" alt="doc" class="max-w-[41px] 3xl:max-w-[50px]">
+                </figure>
+                <div class="content">
+                  <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">
+                    {{ block.settings.resource_title }}
+                  </h3>
+                  <a
+                    href="{{ block.settings.download_link }}"
+                    class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Download Vuba Mac",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "resource",
+      "name": "Downloadable Resource",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "resource_image",
+          "label": "Resource Image"
+        },
+        {
+          "type": "text",
+          "id": "resource_title",
+          "label": "Title"
+        },
+        {
+          "type": "url",
+          "id": "download_link",
+          "label": "Download Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Download Vuba Mac",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
