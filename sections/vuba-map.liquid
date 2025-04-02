@@ -44,7 +44,9 @@
             {% if block.settings.country != blank %}
               <h2 class="font-bold text-4xl md:text-3xl mb-2">{{ block.settings.country }}</h2>
             {% endif %}
-            <strong class="inline-block mb-2">{{ block.settings.role }}</strong>
+            {% if block.settings.country != blank %}
+              <strong class="inline-block mb-2">{{ block.settings.role }}</strong>
+            {% endif %}
             <ul>
               <li>Company name: {{ block.settings.company_name }}</li>
               <li>Contact name: {{ block.settings.contact_name }}</li>
