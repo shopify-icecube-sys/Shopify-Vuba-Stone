@@ -20,10 +20,6 @@ cart-items.is-empty .title-wrapper-with-link,
   text-align: center;
 }
 
-.cart__empty-text {
-  margin: 4.5rem 0 2rem;
-}
-
 .cart__contents > * + * {
   margin-top: 2.5rem;
 }
@@ -38,12 +34,6 @@ cart-items.is-empty .title-wrapper-with-link,
 
 .cart__login-paragraph a {
   font-size: inherit;
-}
-
-@media screen and (min-width: 990px) {
-  .cart__empty-text {
-    margin: 0 0 3rem;
-  }
 }
 
 cart-items {
