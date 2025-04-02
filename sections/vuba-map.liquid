@@ -2,14 +2,17 @@
   <div class="installer-form padding-right-zeero pb-14 md:py-14 3xl:py-24">
     <div class="inner-container md:max-w-none flex flex-wrap">
       <div class="col-left rounded-3xl overflow-hidden w-full md:w-[50%] bg-white mb-12 md:mb-0">
-        <img class="w-full" src="images/installer-from.jpg" alt="">
+        <img class="w-full" src="{{ section.settings.left_image | img_url: 'master' }}" alt="">
       </div>
       <div class="col-right w-full md:w-[50%] text-center">
-        <h2 class="text-white font-bold text-2xl xl:text-3xl mb-8 2xl:mb-10 3xl:mb-20">Explore our interactive map</h2>
-        <img src="images/interactive-map.png" alt="">
+        <h2 class="text-white font-bold text-2xl xl:text-3xl mb-8 2xl:mb-10 3xl:mb-20">
+          {{ section.settings.heading }}
+        </h2>
+        <img src="{{ section.settings.right_image | img_url: 'master' }}" alt="">
       </div>
     </div>
   </div>
+
   <div class="dealer-list">
     <div class="inner-container">
       <div class="flex justify-between items-center border-b-2 border-white pb-8 lg:px-10 3xl:px-20">
@@ -17,140 +20,45 @@
           onclick="toggleDealerList()"
           class="btn btn-primary hover:bg-white hover:text-secondary hover:border-white"
         >
-          VIEW DEALER LIST
+          {{ section.settings.button_text }}
         </button>
-        <img src="images/down-arrow.svg" alt="down-arrow">
+        <img src="{{ section.settings.button_icon | img_url: 'small' }}" alt="down-arrow">
       </div>
+
       <div
         id="dealer-list"
         class="md:grid md:grid-cols-2 lg:grid-cols-3 gap-8 3xl:gap-x-44 3xl:gap-y-12 hidden text-white lg:px-10 3xl:px-20 pt-10 3xl:py-16"
       >
-        <div class="text-sm 2xl:text-lg">
-          <h2 class="font-bold text-4xl md:text-3xl mb-2">Bulgaria</h2>
-          <strong class="inline-block mb-2">Exclusive Distributor / Contractor</strong>
-          <ul>
-            <li>Company name: M Diva Green Ltd</li>
-            <li>Contact name: Elina Hadzhieva</li>
-            <li>Contact number: <a class="hover:text-primary" href="tel:359878709988">+359878709988</a></li>
-            <li>Website: <a class="hover:text-primary" href="#">Mdivagreen.com</a></li>
-            <li>
-              Email: <a class="hover:text-primary" href="mailto:m.diva.green@gmail.com">m.diva.green@gmail.com</a>
-            </li>
-            <li>Instagram: <a class="hover:text-primary" href="#">m.diva.green</a></li>
-          </ul>
-        </div>
-        <div class="text-sm 2xl:text-lg">
-          <h2 class="font-bold text-4xl md:text-3xl mb-2">Romania</h2>
-          <strong class="inline-block mb-2">Exclusive Distributor / Contractor</strong>
-          <ul>
-            <li>Company name: M Diva Green Ltd</li>
-            <li>Contact name: Elina Hadzhieva</li>
-            <li>Contact number: <a class="hover:text-primary" href="tel:359878709988">+359878709988</a></li>
-            <li>Website: <a class="hover:text-primary" href="#">Mdivagreen.com</a></li>
-            <li>
-              Email: <a class="hover:text-primary" href="mailto:m.diva.green@gmail.com">m.diva.green@gmail.com</a>
-            </li>
-            <li>Instagram: <a class="hover:text-primary" href="#">m.diva.green</a></li>
-          </ul>
-        </div>
-        <div class="text-sm 2xl:text-lg">
-          <h2 class="font-bold text-4xl md:text-3xl mb-2">Kosovo</h2>
-          <strong class="inline-block mb-2">Exclusive Distributor / Contractor</strong>
-          <ul>
-            <li>Company name: M Diva Green Ltd</li>
-            <li>Contact name: Elina Hadzhieva</li>
-            <li>Contact number: <a class="hover:text-primary" href="tel:359878709988">+359878709988</a></li>
-            <li>Website: <a class="hover:text-primary" href="#">Mdivagreen.com</a></li>
-            <li>
-              Email: <a class="hover:text-primary" href="mailto:m.diva.green@gmail.com">m.diva.green@gmail.com</a>
-            </li>
-            <li>Instagram: <a class="hover:text-primary" href="#">m.diva.green</a></li>
-          </ul>
-        </div>
-        <div class="text-sm 2xl:text-lg">
-          <h2 class="font-bold text-4xl md:text-3xl mb-2">Ukraine</h2>
-          <strong class="inline-block mb-2">Exclusive Distributor / Contractor</strong>
-          <ul>
-            <li>Company name: M Diva Green Ltd</li>
-            <li>Contact name: Elina Hadzhieva</li>
-            <li>Contact number: <a class="hover:text-primary" href="tel:359878709988">+359878709988</a></li>
-            <li>Website: <a class="hover:text-primary" href="#">Mdivagreen.com</a></li>
-            <li>
-              Email: <a class="hover:text-primary" href="mailto:m.diva.green@gmail.com">m.diva.green@gmail.com</a>
-            </li>
-            <li>Instagram: <a class="hover:text-primary" href="#">m.diva.green</a></li>
-          </ul>
-        </div>
-        <div class="text-sm 2xl:text-lg">
-          <h2 class="font-bold text-4xl md:text-3xl mb-2">Norway</h2>
-          <strong class="inline-block mb-2">Exclusive Distributor / Contractor</strong>
-          <ul>
-            <li>Company name: M Diva Green Ltd</li>
-            <li>Contact name: Elina Hadzhieva</li>
-            <li>Contact number: <a class="hover:text-primary" href="tel:359878709988">+359878709988</a></li>
-            <li>Website: <a class="hover:text-primary" href="#">Mdivagreen.com</a></li>
-            <li>
-              Email: <a class="hover:text-primary" href="mailto:m.diva.green@gmail.com">m.diva.green@gmail.com</a>
-            </li>
-            <li>Instagram: <a class="hover:text-primary" href="#">m.diva.green</a></li>
-          </ul>
-        </div>
-        <div class="text-sm 2xl:text-lg">
-          <h2 class="font-bold text-4xl md:text-3xl mb-2">Slovenia</h2>
-          <strong class="inline-block mb-2">Exclusive Distributor / Contractor</strong>
-          <ul>
-            <li>Company name: M Diva Green Ltd</li>
-            <li>Contact name: Elina Hadzhieva</li>
-            <li>Contact number: <a class="hover:text-primary" href="tel:359878709988">+359878709988</a></li>
-            <li>Website: <a class="hover:text-primary" href="#">Mdivagreen.com</a></li>
-            <li>
-              Email: <a class="hover:text-primary" href="mailto:m.diva.green@gmail.com">m.diva.green@gmail.com</a>
-            </li>
-            <li>Instagram: <a class="hover:text-primary" href="#">m.diva.green</a></li>
-          </ul>
-        </div>
-        <div class="text-sm 2xl:text-lg">
-          <h2 class="font-bold text-4xl md:text-3xl mb-2">Hungary</h2>
-          <strong class="inline-block mb-2">Exclusive Distributor / Contractor</strong>
-          <ul>
-            <li>Company name: M Diva Green Ltd</li>
-            <li>Contact name: Elina Hadzhieva</li>
-            <li>Contact number: <a class="hover:text-primary" href="tel:359878709988">+359878709988</a></li>
-            <li>Website: <a class="hover:text-primary" href="#">Mdivagreen.com</a></li>
-            <li>
-              Email: <a class="hover:text-primary" href="mailto:m.diva.green@gmail.com">m.diva.green@gmail.com</a>
-            </li>
-            <li>Instagram: <a class="hover:text-primary" href="#">m.diva.green</a></li>
-          </ul>
-        </div>
-        <div class="text-sm 2xl:text-lg">
-          <h2 class="font-bold text-4xl md:text-3xl mb-2">Ireland</h2>
-          <strong class="inline-block mb-2">Exclusive Distributor / Contractor</strong>
-          <ul>
-            <li>Company name: M Diva Green Ltd</li>
-            <li>Contact name: Elina Hadzhieva</li>
-            <li>Contact number: <a class="hover:text-primary" href="tel:359878709988">+359878709988</a></li>
-            <li>Website: <a class="hover:text-primary" href="#">Mdivagreen.com</a></li>
-            <li>
-              Email: <a class="hover:text-primary" href="mailto:m.diva.green@gmail.com">m.diva.green@gmail.com</a>
-            </li>
-            <li>Instagram: <a class="hover:text-primary" href="#">m.diva.green</a></li>
-          </ul>
-        </div>
-        <div class="text-sm 2xl:text-lg">
-          <h2 class="font-bold text-4xl md:text-3xl mb-2">UK</h2>
-          <strong class="inline-block mb-2">Exclusive Distributor / Contractor</strong>
-          <ul>
-            <li>Company name: M Diva Green Ltd</li>
-            <li>Contact name: Elina Hadzhieva</li>
-            <li>Contact number: <a class="hover:text-primary" href="tel:359878709988">+359878709988</a></li>
-            <li>Website: <a class="hover:text-primary" href="#">Mdivagreen.com</a></li>
-            <li>
-              Email: <a class="hover:text-primary" href="mailto:m.diva.green@gmail.com">m.diva.green@gmail.com</a>
-            </li>
-            <li>Instagram: <a class="hover:text-primary" href="#">m.diva.green</a></li>
-          </ul>
-        </div>
+        {% for dealer in section.blocks %}
+          <div class="text-sm 2xl:text-lg">
+            <h2 class="font-bold text-4xl md:text-3xl mb-2">{{ dealer.settings.country }}</h2>
+            <strong class="inline-block mb-2">{{ dealer.settings.role }}</strong>
+            <ul>
+              <li>Company name: {{ dealer.settings.company_name }}</li>
+              <li>Contact name: {{ dealer.settings.contact_name }}</li>
+              <li>
+                Contact number:
+                <a class="hover:text-primary" href="tel:{{ dealer.settings.phone }}">{{ dealer.settings.phone }}</a>
+              </li>
+              <li>
+                Website:
+                <a class="hover:text-primary" href="{{ dealer.settings.website }}" target="_blank">
+                  {{- dealer.settings.website -}}
+                </a>
+              </li>
+              <li>
+                Email:
+                <a class="hover:text-primary" href="mailto:{{ dealer.settings.email }}">{{ dealer.settings.email }}</a>
+              </li>
+              <li>
+                Instagram:
+                <a class="hover:text-primary" href="{{ dealer.settings.instagram }}" target="_blank">
+                  {{- dealer.settings.instagram -}}
+                </a>
+              </li>
+            </ul>
+          </div>
+        {% endfor %}
       </div>
     </div>
   </div>
@@ -160,12 +68,101 @@
 {
   "name": "Vuba Map",
   "settings": [
-
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Explore our interactive map"
+    },
+    {
+      "type": "image_picker",
+      "id": "left_image",
+      "label": "Left Side Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "right_image",
+      "label": "Right Side Image"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "VIEW DEALER LIST"
+    },
+    {
+      "type": "image_picker",
+      "id": "button_icon",
+      "label": "Button Icon"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "dealer",
+      "name": "Dealer",
+      "settings": [
+        {
+          "type": "text",
+          "id": "country",
+          "label": "Country"
+        },
+        {
+          "type": "text",
+          "id": "role",
+          "label": "Role",
+          "default": "Exclusive Distributor / Contractor"
+        },
+        {
+          "type": "text",
+          "id": "company_name",
+          "label": "Company Name"
+        },
+        {
+          "type": "text",
+          "id": "contact_name",
+          "label": "Contact Name"
+        },
+        {
+          "type": "text",
+          "id": "phone",
+          "label": "Phone Number"
+        },
+        {
+          "type": "url",
+          "id": "website",
+          "label": "Website URL"
+        },
+        {
+          "type": "text",
+          "id": "email",
+          "label": "Email"
+        },
+        {
+          "type": "url",
+          "id": "instagram",
+          "label": "Instagram URL"
+        }
+      ]
+    }
   ],
   "presets": [
     {
       "name": "Vuba Map",
-      "category": "Text"
+      "category": "Text",
+      "blocks": [
+        {
+          "type": "dealer",
+          "settings": {
+            "country": "Bulgaria",
+            "company_name": "M Diva Green Ltd",
+            "contact_name": "Elina Hadzhieva",
+            "phone": "+359878709988",
+            "website": "https://mdivagreen.com",
+            "email": "m.diva.green@gmail.com",
+            "instagram": "https://instagram.com/m.diva.green"
+          }
+        }
+      ]
     }
   ]
 }
