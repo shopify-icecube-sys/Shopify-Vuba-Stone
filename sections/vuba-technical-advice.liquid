@@ -27,7 +27,7 @@
             </div>
           </div>
           {% if block.settings.description != blank %}
-            <p>{{ block.settings.description }}</p>
+            <div>{{ block.settings.description }}</div>
           {% endif %}
 
           <a
@@ -97,10 +97,10 @@
           "default": "Cracking"
         },
         {
-          "type": "textarea",
+          "type": "richtext",
           "id": "description",
           "label": "Description",
-          "default": "If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project."
+          "default": "<p>If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.</p>"
         },
         {
           "type": "image_picker",
