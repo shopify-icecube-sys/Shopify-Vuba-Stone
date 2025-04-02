@@ -198,7 +198,9 @@
       ],
       "settings": {
         "heading": "Explore our interactive map",
-        "button_text": "VIEW DEALER LIST"
+        "left_image": "shopify://shop_images/register-installer-form.jpg",
+        "button_text": "VIEW DEALER LIST",
+        "button_icon": "shopify://shop_images/down-arrow.svg"
       }
     }
   },
