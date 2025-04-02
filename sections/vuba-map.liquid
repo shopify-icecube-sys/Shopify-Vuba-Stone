@@ -30,7 +30,9 @@
             {{ section.settings.button_text }}
           </button>
         {% endif %}
-        <img src="{{ section.settings.button_icon | img_url: 'small' }}" alt="down-arrow">
+        {% if section.settings.button_icon != blank %}
+          <img src="{{ section.settings.button_icon | img_url: 'small' }}" alt="down-arrow">
+        {% endif %}
       </div>
 
       <div
