@@ -34,43 +34,8 @@
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   }).addTo(map);
 
-  // Installer data
-  var installers = [
-      { name: "New York", lat: 40.7128, lng: -74.0060 },
-      { name: "São Paulo", lat: -23.5505, lng: -46.6333 },
-      { name: "Los Angeles", lat: 34.0522, lng: -118.2437 },
-      { name: "London", lat: 51.5074, lng: -0.1278 },
-      { name: "Paris", lat: 48.8566, lng: 2.3522 },
-      { name: "Tokyo", lat: 35.6895, lng: 139.6917 },
-      { name: "Moscow", lat: 55.7558, lng: 37.6173 },
-      { name: "Sydney", lat: -33.8688, lng: 151.2093 },
-      { name: "Mexico City", lat: 19.4326, lng: -99.1332 },
-      { name: "Beijing", lat: 39.9042, lng: 116.4074 }
-  ];
-
   // Create a marker cluster group
   var markers = L.markerClusterGroup();
-
-  // Add markers to the cluster group
-  installers.forEach(function(installer) {
-      var marker = L.marker([installer.lat, installer.lng]);
-      marker.bindPopup("<b>" + installer.name + "</b>");
-      markers.addLayer(marker);
-  });
-
-  // Add the marker cluster group to the map
-  map.addLayer(markers);
-
-  // Handle dropdown change
-  document.getElementById('locationDropdown').addEventListener('change', function(e) {
-      var selected = e.target.value;
-      if (selected) {
-          var location = installers.find(i => i.name === selected);
-          if (location) {
-              map.setView([location.lat, location.lng], 10);
-          }
-      }
-  });
 </script>
 
 {% schema %}
