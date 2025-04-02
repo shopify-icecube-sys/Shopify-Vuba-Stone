@@ -116,20 +116,119 @@
         "description": "<p>With a monolithic bond guaranteeing long-lasting performance, VubaMac surpasses conventional materials like </p><p>concrete and asphalt in longevity and flexibility. Plus, its ease of application, provided by a single supplier, offers</p><p>unmatched convenience, with installations completed in just one day, minimising disruption and providing a </p><p>smoother, quieter alternative.</p>"
       }
     },
-    "vuba_mac_download_pCRU9x": {
+    "vuba_mac_download_FjXtyb": {
       "type": "vuba-mac-download",
       "blocks": {
-        "download_item_ahB46V": {
+        "download_item_LW8cHN": {
           "type": "download_item",
           "settings": {
-            "icon": "shopify://shop_images/m-icon-mobile-4.svg",
             "title": "Heavy Vehicle",
-            "link": ""
+            "link": "",
+            "column_id": "D"
+          }
+        },
+        "download_item_ednR3U": {
+          "type": "download_item",
+          "settings": {
+            "title": "Heavy Vehicle",
+            "link": "",
+            "column_id": "B"
+          }
+        },
+        "download_item_Fp74UU": {
+          "type": "download_item",
+          "settings": {
+            "title": "Heavy Vehicle",
+            "link": "",
+            "column_id": "B"
+          }
+        },
+        "download_item_zXQBCn": {
+          "type": "download_item",
+          "settings": {
+            "title": "Heavy Vehicle",
+            "link": "",
+            "column_id": "B"
+          }
+        },
+        "download_item_XiixmB": {
+          "type": "download_item",
+          "settings": {
+            "title": "Heavy Vehicle",
+            "link": "",
+            "column_id": "A"
+          }
+        },
+        "download_item_WxiN8g": {
+          "type": "download_item",
+          "settings": {
+            "title": "Heavy Vehicle",
+            "link": "",
+            "column_id": "A"
+          }
+        },
+        "download_item_fiKnrU": {
+          "type": "download_item",
+          "settings": {
+            "title": "Heavy Vehicle",
+            "link": "",
+            "column_id": "A"
+          }
+        },
+        "download_item_iqCMUW": {
+          "type": "download_item",
+          "settings": {
+            "title": "Heavy Vehicle",
+            "link": "",
+            "column_id": "C"
+          }
+        },
+        "download_item_FnmRfH": {
+          "type": "download_item",
+          "settings": {
+            "title": "Heavy Vehicle",
+            "link": "",
+            "column_id": "C"
+          }
+        },
+        "download_item_qw4eCj": {
+          "type": "download_item",
+          "settings": {
+            "title": "Heavy Vehicle",
+            "link": "",
+            "column_id": "C"
+          }
+        },
+        "download_item_teybDa": {
+          "type": "download_item",
+          "settings": {
+            "title": "Heavy Vehicle",
+            "link": "",
+            "column_id": "D"
+          }
+        },
+        "download_item_xBjyz7": {
+          "type": "download_item",
+          "settings": {
+            "title": "Heavy Vehicle",
+            "link": "",
+            "column_id": "D"
           }
         }
       },
       "block_order": [
-        "download_item_ahB46V"
+        "download_item_LW8cHN",
+        "download_item_ednR3U",
+        "download_item_Fp74UU",
+        "download_item_zXQBCn",
+        "download_item_XiixmB",
+        "download_item_WxiN8g",
+        "download_item_fiKnrU",
+        "download_item_iqCMUW",
+        "download_item_FnmRfH",
+        "download_item_qw4eCj",
+        "download_item_teybDa",
+        "download_item_xBjyz7"
       ],
       "settings": {
         "section_title": "Download Vuba Mac Resources"
@@ -142,6 +241,6 @@
     "vuba_introduction_two_63M8U6",
     "vuba_text_with_vedio_XU3dpw",
     "vuba_intro_multicolumn_87pp9a",
-    "vuba_mac_download_pCRU9x"
+    "vuba_mac_download_FjXtyb"
   ]
 }
