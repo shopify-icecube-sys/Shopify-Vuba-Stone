@@ -10,13 +10,11 @@
       {% for col in columns %}
         <div class="column">
           <div class="inner-block">
-            {% capture image_setting %}
-              section.settings.section_image_{{ forloop.index }}
-            {% endcapture %}
-            {% if image_setting != blank %}
+            {% assign image_var = 'section_image_' | append: forloop.index %}
+            {% if section.settings[image_var] != blank %}
               <figure class="mb-[20px] md:mb-[45px] 3xl:mb-[75px]">
                 <img
-                  src="{{ image_setting | img_url:'master' }}"
+                  src="{{ section.settings[image_var] | img_url:'master' }}"
                   alt="Vuba Mac Download"
                   class="aspect-[1/1]"
                 >
