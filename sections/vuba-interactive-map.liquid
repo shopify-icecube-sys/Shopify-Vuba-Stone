@@ -1,29 +1,24 @@
 <section class="interactive-map bg-secondary pb-14 pt-44 md:py-14 3xl:py-24">
   <div class="installer-form padding-right-zeero pb-14 md:py-14 3xl:py-24">
     <div class="inner-container md:max-w-none flex flex-wrap">
-
       {% if section.settings.left_image != blank %}
         <div class="col-left rounded-3xl overflow-hidden w-full md:w-[50%] bg-white mb-12 md:mb-0">
           <img
             class="w-full"
             src="{{ section.settings.left_image | img_url: 'master' }}"
-            alt="Section Image">
+            alt="Section Image"
+          >
         </div>
-
       {% endif %}
       <div class="col-right w-full md:w-[50%] text-center">
-
         {% if section.settings.heading != blank %}
           <h2 class="text-white font-bold text-2xl xl:text-3xl mb-8 2xl:mb-10 3xl:mb-20">
-
             {{ section.settings.heading }}
           </h2>
-
         {% endif %}
 
         {% if section.settings.right_image != blank %}
           <img src="{{ section.settings.right_image | img_url: 'master' }}" alt="Section image Right">
-
         {% endif %}
       </div>
     </div>
@@ -32,97 +27,83 @@
   <div class="dealer-list">
     <div class="inner-container">
       <div class="flex justify-between items-center border-b-2 border-white pb-8 lg:px-10 3xl:px-20">
-
         {% if section.settings.button_text != blank %}
-          <button onclick="toggleDealerList()" class="btn btn-primary hover:bg-white hover:text-secondary hover:border-white">
-
+          <button
+            onclick="toggleDealerList()"
+            class="btn btn-primary hover:bg-white hover:text-secondary hover:border-white"
+          >
             {{ section.settings.button_text }}
           </button>
-
         {% endif %}
 
         {% if section.settings.button_icon != blank %}
           <img src="{{ section.settings.button_icon | img_url: 'small' }}" alt="down-arrow">
-
         {% endif %}
       </div>
 
-      <div id="dealer-list" class="md:grid md:grid-cols-2 lg:grid-cols-3 gap-8 3xl:gap-x-44 3xl:gap-y-12 hidden text-white lg:px-10 3xl:px-20 pt-10 3xl:py-16">
-
+      <div
+        id="dealer-list"
+        class="md:grid md:grid-cols-2 lg:grid-cols-3 gap-8 3xl:gap-x-44 3xl:gap-y-12 hidden text-white lg:px-10 3xl:px-20 pt-10 3xl:py-16"
+      >
         {% for block in section.blocks %}
           <div class="text-sm 2xl:text-lg" {{ block.shopify_attributes }}>
-
             {% if block.settings.country != blank %}
               <h2 class="font-bold text-4xl md:text-3xl mb-2">{{ block.settings.country }}</h2>
-
             {% endif %}
 
             {% if block.settings.country != blank %}
               <strong class="inline-block mb-2">{{ block.settings.role }}</strong>
-
             {% endif %}
             <ul>
-
               {% if block.settings.company_name != blank %}
                 <li>Company name: {{ block.settings.company_name }}</li>
-
               {% endif %}
 
               {% if block.settings.contact_name != blank %}
                 <li>Contact name: {{ block.settings.contact_name }}</li>
-
               {% endif %}
 
               {% if block.settings.phone != blank %}
                 <li>
-
                   Contact number:
                   <a class="hover:text-primary" href="tel:{{ block.settings.phone }}">{{ block.settings.phone }}</a>
                 </li>
-
               {% endif %}
 
               {% if block.settings.website != blank %}
                 <li>
-
                   Website:
                   <a
                     class="hover:text-primary"
                     href="{{ block.settings.website }}"
-                    target="_blank">
-
+                    target="_blank"
+                  >
                     {{- block.settings.website -}}
                   </a>
                 </li>
-
               {% endif %}
 
               {% if block.settings.email != blank %}
                 <li>
-
                   Email:
                   <a class="hover:text-primary" href="mailto:{{ block.settings.email }}">{{ block.settings.email }}</a>
                 </li>
-
               {% endif %}
 
               {% if block.settings.instagram != blank %}
                 <li>
-
                   Instagram:
                   <a
                     class="hover:text-primary"
                     href="{{ block.settings.instagram }}"
-                    target="_blank">
-
+                    target="_blank"
+                  >
                     {{- block.settings.instagram -}}
                   </a>
                 </li>
-
               {% endif %}
             </ul>
           </div>
-
         {% endfor %}
       </div>
     </div>
@@ -130,197 +111,195 @@
 </section>
 
 {% schema %}
+{
 
-  {
+  "name": "Vuba Map",
 
-    "name": "Vuba Map",
+  "settings": [
 
-    "settings": [
+    {
 
-      {
+      "type": "text",
 
-        "type": "text",
+      "id": "heading",
 
-        "id": "heading",
+      "label": "Heading",
 
-        "label": "Heading",
+      "default": "Explore our interactive map"
 
-        "default": "Explore our interactive map"
+    },
 
-      },
+    {
 
-      {
+      "type": "image_picker",
 
-        "type": "image_picker",
+      "id": "left_image",
 
-        "id": "left_image",
+      "label": "Left Side Image"
 
-        "label": "Left Side Image"
+    },
 
-      },
+    {
 
-      {
+      "type": "image_picker",
 
-        "type": "image_picker",
+      "id": "right_image",
 
-        "id": "right_image",
+      "label": "Right Side Image"
 
-        "label": "Right Side Image"
+    },
 
-      },
+    {
 
-      {
+      "type": "text",
 
-        "type": "text",
+      "id": "button_text",
 
-        "id": "button_text",
+      "label": "Button Text",
 
-        "label": "Button Text",
+      "default": "VIEW DEALER LIST"
 
-        "default": "VIEW DEALER LIST"
+    }, {
 
-      }, {
+      "type": "image_picker",
 
-        "type": "image_picker",
+      "id": "button_icon",
 
-        "id": "button_icon",
+      "label": "Button Icon"
 
-        "label": "Button Icon"
+    }
 
-      }
+  ],
 
-    ],
+  "blocks": [
 
-    "blocks": [
+    {
 
-      {
+      "type": "dealer",
 
-        "type": "dealer",
+      "name": "Dealer",
 
-        "name": "Dealer",
+      "settings": [
 
-        "settings": [
+        {
 
-          {
+          "type": "text",
 
-            "type": "text",
+          "id": "country",
 
-            "id": "country",
+          "label": "Country"
 
-            "label": "Country"
+        },
 
-          },
+        {
 
-          {
+          "type": "text",
 
-            "type": "text",
+          "id": "role",
 
-            "id": "role",
+          "label": "Role",
 
-            "label": "Role",
+          "default": "Exclusive Distributor / Contractor"
 
-            "default": "Exclusive Distributor / Contractor"
+        },
 
-          },
+        {
 
-          {
+          "type": "text",
 
-            "type": "text",
+          "id": "company_name",
 
-            "id": "company_name",
+          "label": "Company Name"
 
-            "label": "Company Name"
+        },
 
-          },
+        {
 
-          {
+          "type": "text",
 
-            "type": "text",
+          "id": "contact_name",
 
-            "id": "contact_name",
+          "label": "Contact Name"
 
-            "label": "Contact Name"
+        }, {
 
-          }, {
+          "type": "text",
 
-            "type": "text",
+          "id": "phone",
 
-            "id": "phone",
+          "label": "Phone Number"
 
-            "label": "Phone Number"
+        }, {
 
-          }, {
+          "type": "url",
 
-            "type": "url",
+          "id": "website",
 
-            "id": "website",
+          "label": "Website URL"
 
-            "label": "Website URL"
+        }, {
 
-          }, {
+          "type": "text",
 
-            "type": "text",
+          "id": "email",
 
-            "id": "email",
+          "label": "Email"
 
-            "label": "Email"
+        }, {
 
-          }, {
+          "type": "url",
 
-            "type": "url",
+          "id": "instagram",
 
-            "id": "instagram",
+          "label": "Instagram URL"
 
-            "label": "Instagram URL"
+        }
+
+      ]
+
+    }
+
+  ],
+
+  "presets": [
+
+    {
+
+      "name": "Vuba Map",
+
+      "category": "Text",
+
+      "blocks": [
+
+        {
+
+          "type": "dealer",
+
+          "settings": {
+
+            "country": "Bulgaria",
+
+            "company_name": "M Diva Green Ltd",
+
+            "contact_name": "Elina Hadzhieva",
+
+            "phone": "+359878709988",
+
+            "website": "https://mdivagreen.com",
+
+            "email": "m.diva.green@gmail.com",
+
+            "instagram": "https://instagram.com/m.diva.green"
 
           }
 
-        ]
+        }
 
-      }
+      ]
 
-    ],
+    }
 
-    "presets": [
+  ]
 
-      {
-
-        "name": "Vuba Map",
-
-        "category": "Text",
-
-        "blocks": [
-
-          {
-
-            "type": "dealer",
-
-            "settings": {
-
-              "country": "Bulgaria",
-
-              "company_name": "M Diva Green Ltd",
-
-              "contact_name": "Elina Hadzhieva",
-
-              "phone": "+359878709988",
-
-              "website": "https://mdivagreen.com",
-
-              "email": "m.diva.green@gmail.com",
-
-              "instagram": "https://instagram.com/m.diva.green"
-
-            }
-
-          }
-
-        ]
-
-      }
-
-    ]
-
-  }
-
+}
 {% endschema %}
