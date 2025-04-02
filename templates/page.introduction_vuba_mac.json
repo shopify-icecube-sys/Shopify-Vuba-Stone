@@ -130,6 +130,7 @@
         "download_item_ednR3U": {
           "type": "download_item",
           "settings": {
+            "icon": "shopify://shop_images/doc-icon.png",
             "title": "Heavy Vehicle",
             "link": "",
             "column_id": "B"
@@ -138,6 +139,7 @@
         "download_item_Fp74UU": {
           "type": "download_item",
           "settings": {
+            "icon": "shopify://shop_images/doc-icon.png",
             "title": "Heavy Vehicle",
             "link": "",
             "column_id": "B"
@@ -146,6 +148,7 @@
         "download_item_zXQBCn": {
           "type": "download_item",
           "settings": {
+            "icon": "shopify://shop_images/doc-icon.png",
             "title": "Heavy Vehicle",
             "link": "",
             "column_id": "B"
@@ -154,6 +157,7 @@
         "download_item_XiixmB": {
           "type": "download_item",
           "settings": {
+            "icon": "shopify://shop_images/doc-icon.png",
             "title": "Heavy Vehicle",
             "link": "",
             "column_id": "A"
@@ -162,6 +166,7 @@
         "download_item_WxiN8g": {
           "type": "download_item",
           "settings": {
+            "icon": "shopify://shop_images/doc-icon.png",
             "title": "Heavy Vehicle",
             "link": "",
             "column_id": "A"
@@ -170,6 +175,7 @@
         "download_item_fiKnrU": {
           "type": "download_item",
           "settings": {
+            "icon": "shopify://shop_images/doc-icon.png",
             "title": "Heavy Vehicle",
             "link": "",
             "column_id": "A"
@@ -178,6 +184,7 @@
         "download_item_iqCMUW": {
           "type": "download_item",
           "settings": {
+            "icon": "shopify://shop_images/doc-icon.png",
             "title": "Heavy Vehicle",
             "link": "",
             "column_id": "C"
@@ -186,6 +193,7 @@
         "download_item_FnmRfH": {
           "type": "download_item",
           "settings": {
+            "icon": "shopify://shop_images/doc-icon.png",
             "title": "Heavy Vehicle",
             "link": "",
             "column_id": "C"
@@ -194,6 +202,7 @@
         "download_item_qw4eCj": {
           "type": "download_item",
           "settings": {
+            "icon": "shopify://shop_images/doc-icon.png",
             "title": "Heavy Vehicle",
             "link": "",
             "column_id": "C"
