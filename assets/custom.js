@@ -134,7 +134,7 @@ $(document).ready(function () {
 });
 
 //vuba-map javascript
-    function toggleDealerList() {
-        document.getElementById('dealer-list').classList.toggle('hidden');
-    }
+function toggleDealerList() {
+    document.getElementById('dealer-list').classList.toggle('hidden');
+}
 
