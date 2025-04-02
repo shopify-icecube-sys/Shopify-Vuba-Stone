@@ -41,7 +41,9 @@
       >
         {% for block in section.blocks %}
           <div class="text-sm 2xl:text-lg" {{ block.shopify_attributes }}>
-            <h2 class="font-bold text-4xl md:text-3xl mb-2">{{ block.settings.country }}</h2>
+            {% if block.settings.country != blank %}
+              <h2 class="font-bold text-4xl md:text-3xl mb-2">{{ block.settings.country }}</h2>
+            {% endif %}
             <strong class="inline-block mb-2">{{ block.settings.role }}</strong>
             <ul>
               <li>Company name: {{ block.settings.company_name }}</li>
