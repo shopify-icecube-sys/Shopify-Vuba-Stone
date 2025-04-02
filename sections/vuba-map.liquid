@@ -54,16 +54,20 @@
               {% if block.settings.contact_name != blank %}
                 <li>Contact name: {{ block.settings.contact_name }}</li>
               {% endif %}
-              <li>
-                Contact number:
-                <a class="hover:text-primary" href="tel:{{ block.settings.phone }}">{{ block.settings.phone }}</a>
-              </li>
-              <li>
-                Website:
-                <a class="hover:text-primary" href="{{ block.settings.website }}" target="_blank">
-                  {{- block.settings.website -}}
-                </a>
-              </li>
+              {% if block.settings.phone != blank %}
+                <li>
+                  Contact number:
+                  <a class="hover:text-primary" href="tel:{{ block.settings.phone }}">{{ block.settings.phone }}</a>
+                </li>
+              {% endif %}
+              {% if block.settings.website != blank %}
+                <li>
+                  Website:
+                  <a class="hover:text-primary" href="{{ block.settings.website }}" target="_blank">
+                    {{- block.settings.website -}}
+                  </a>
+                </li>
+              {% endif %}
               <li>
                 Email:
                 <a class="hover:text-primary" href="mailto:{{ block.settings.email }}">{{ block.settings.email }}</a>
