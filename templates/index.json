@@ -214,6 +214,32 @@
             "email": "m.diva.green@gmail.com",
             "instagram": "https://m.diva.green"
           }
+        },
+        "dealer_THN3Bi": {
+          "type": "dealer",
+          "settings": {
+            "country": "Ireland",
+            "role": "Exclusive Distributor / Contractor",
+            "company_name": "M Diva Green Ltd",
+            "contact_name": "Elina Hadzhieva",
+            "phone": "+359878709988",
+            "website": "https://Mdivagreen.com",
+            "email": "m.diva.green@gmail.com",
+            "instagram": "https://m.diva.green"
+          }
+        },
+        "dealer_yUYWWV": {
+          "type": "dealer",
+          "settings": {
+            "country": "UK",
+            "role": "Exclusive Distributor / Contractor",
+            "company_name": "M Diva Green Ltd",
+            "contact_name": "Elina Hadzhieva",
+            "phone": "+359878709988",
+            "website": "https://Mdivagreen.com",
+            "email": "m.diva.green@gmail.com",
+            "instagram": "https://m.diva.green"
+          }
         }
       },
       "block_order": [
@@ -223,7 +249,9 @@
         "dealer_nKYn3X",
         "dealer_a9hVaD",
         "dealer_jayNHe",
-        "dealer_ygx7mb"
+        "dealer_ygx7mb",
+        "dealer_THN3Bi",
+        "dealer_yUYWWV"
       ],
       "settings": {
         "heading": "Explore our interactive map",
