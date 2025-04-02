@@ -48,7 +48,9 @@
               <strong class="inline-block mb-2">{{ block.settings.role }}</strong>
             {% endif %}
             <ul>
-              <li>Company name: {{ block.settings.company_name }}</li>
+              {% if block.settings.company_name != blank %}
+                <li>Company name: {{ block.settings.company_name }}</li>
+              {% endif %}
               <li>Contact name: {{ block.settings.contact_name }}</li>
               <li>
                 Contact number:
