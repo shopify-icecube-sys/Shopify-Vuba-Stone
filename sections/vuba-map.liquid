@@ -74,12 +74,14 @@
                   <a class="hover:text-primary" href="mailto:{{ block.settings.email }}">{{ block.settings.email }}</a>
                 </li>
               {% endif %}
-              <li>
-                Instagram:
-                <a class="hover:text-primary" href="{{ block.settings.instagram }}" target="_blank">
-                  {{- block.settings.instagram -}}
-                </a>
-              </li>
+              {% if block.settings.instagram != blank %}
+                <li>
+                  Instagram:
+                  <a class="hover:text-primary" href="{{ block.settings.instagram }}" target="_blank">
+                    {{- block.settings.instagram -}}
+                  </a>
+                </li>
+              {% endif %}
             </ul>
           </div>
         {% endfor %}
