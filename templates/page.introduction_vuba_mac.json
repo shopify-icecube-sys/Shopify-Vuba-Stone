@@ -122,6 +122,7 @@
         "download_item_LW8cHN": {
           "type": "download_item",
           "settings": {
+            "icon": "shopify://shop_images/doc-icon.png",
             "title": "Heavy Vehicle",
             "link": "",
             "column_id": "D"
@@ -211,6 +212,7 @@
         "download_item_teybDa": {
           "type": "download_item",
           "settings": {
+            "icon": "shopify://shop_images/doc-icon.png",
             "title": "Heavy Vehicle",
             "link": "",
             "column_id": "D"
@@ -219,6 +221,7 @@
         "download_item_xBjyz7": {
           "type": "download_item",
           "settings": {
+            "icon": "shopify://shop_images/doc-icon.png",
             "title": "Heavy Vehicle",
             "link": "",
             "column_id": "D"
