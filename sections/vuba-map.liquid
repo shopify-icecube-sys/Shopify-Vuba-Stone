@@ -30,7 +30,7 @@
         class="md:grid md:grid-cols-2 lg:grid-cols-3 gap-8 3xl:gap-x-44 3xl:gap-y-12 hidden text-white lg:px-10 3xl:px-20 pt-10 3xl:py-16"
       >
         {% for dealer in section.blocks %}
-          <div class="text-sm 2xl:text-lg">
+          <div class="text-sm 2xl:text-lg" {{ dealer.shopify_attributes }}>
             <h2 class="font-bold text-4xl md:text-3xl mb-2">{{ dealer.settings.country }}</h2>
             <strong class="inline-block mb-2">{{ dealer.settings.role }}</strong>
             <ul>
