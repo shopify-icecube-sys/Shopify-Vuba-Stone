@@ -53,7 +53,30 @@
     },
     "vuba_map_ew9zMw": {
       "type": "vuba-map",
-      "settings": {}
+      "blocks": {
+        "dealer_DFb7BM": {
+          "type": "dealer",
+          "settings": {
+            "country": "",
+            "role": "Exclusive Distributor / Contractors",
+            "company_name": "ree",
+            "contact_name": "errerer",
+            "phone": "6756765",
+            "website": "shopify://blogs/project",
+            "email": "@",
+            "instagram": "shopify://pages/request-for-quote"
+          }
+        }
+      },
+      "block_order": [
+        "dealer_DFb7BM"
+      ],
+      "settings": {
+        "heading": "Explore our interactive map",
+        "left_image": "shopify://shop_images/Group-432.png",
+        "right_image": "shopify://shop_images/Group-432.png",
+        "button_text": "VIEW DEALER LIST"
+      }
     }
   },
   "order": [
