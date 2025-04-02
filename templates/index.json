@@ -192,7 +192,7 @@
         "dealer_jayNHe": {
           "type": "dealer",
           "settings": {
-            "country": "Bulgaria",
+            "country": "Slovenia",
             "role": "Exclusive Distributor / Contractor",
             "company_name": "M Diva Green Ltd",
             "contact_name": "Elina Hadzhieva",
@@ -200,6 +200,19 @@
             "website": "https://mdivagreen.com",
             "email": "m.diva.green@gmail.com",
             "instagram": "https://instagram.com/m.diva.green"
+          }
+        },
+        "dealer_ygx7mb": {
+          "type": "dealer",
+          "settings": {
+            "country": "Hungary",
+            "role": "Exclusive Distributor / Contractor",
+            "company_name": "M Diva Green Ltd",
+            "contact_name": "Elina Hadzhieva",
+            "phone": "+359878709988",
+            "website": "https://Mdivagreen.com",
+            "email": "m.diva.green@gmail.com",
+            "instagram": "https://m.diva.green"
           }
         }
       },
@@ -209,7 +222,8 @@
         "dealer_RMhtnx",
         "dealer_nKYn3X",
         "dealer_a9hVaD",
-        "dealer_jayNHe"
+        "dealer_jayNHe",
+        "dealer_ygx7mb"
       ],
       "settings": {
         "heading": "Explore our interactive map",
