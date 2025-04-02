@@ -191,15 +191,126 @@
             "email": "m.diva.green@gmail.com",
             "instagram": "https://instagram.com/m.diva.green"
           }
+        },
+        "dealer_z9heyg": {
+          "type": "dealer",
+          "settings": {
+            "country": "Bulgaria",
+            "role": "Exclusive Distributor / Contractor",
+            "company_name": "M Diva Green Ltd",
+            "contact_name": "Elina Hadzhieva",
+            "phone": "+359878709988",
+            "website": "https://mdivagreen.com",
+            "email": "m.diva.green@gmail.com",
+            "instagram": "https://instagram.com/m.diva.green"
+          }
+        },
+        "dealer_HAmwbj": {
+          "type": "dealer",
+          "settings": {
+            "country": "Bulgaria",
+            "role": "Exclusive Distributor / Contractor",
+            "company_name": "M Diva Green Ltd",
+            "contact_name": "Elina Hadzhieva",
+            "phone": "+359878709988",
+            "website": "https://mdivagreen.com",
+            "email": "m.diva.green@gmail.com",
+            "instagram": "https://instagram.com/m.diva.green"
+          }
+        },
+        "dealer_zVUMVJ": {
+          "type": "dealer",
+          "settings": {
+            "country": "Bulgaria",
+            "role": "Exclusive Distributor / Contractor",
+            "company_name": "M Diva Green Ltd",
+            "contact_name": "Elina Hadzhieva",
+            "phone": "+359878709988",
+            "website": "https://mdivagreen.com",
+            "email": "m.diva.green@gmail.com",
+            "instagram": "https://instagram.com/m.diva.green"
+          }
+        },
+        "dealer_6YwCaa": {
+          "type": "dealer",
+          "settings": {
+            "country": "Bulgaria",
+            "role": "Exclusive Distributor / Contractor",
+            "company_name": "M Diva Green Ltd",
+            "contact_name": "Elina Hadzhieva",
+            "phone": "+359878709988",
+            "website": "https://mdivagreen.com",
+            "email": "m.diva.green@gmail.com",
+            "instagram": "https://instagram.com/m.diva.green"
+          }
+        },
+        "dealer_QgXUKh": {
+          "type": "dealer",
+          "settings": {
+            "country": "Bulgaria",
+            "role": "Exclusive Distributor / Contractor",
+            "company_name": "M Diva Green Ltd",
+            "contact_name": "Elina Hadzhieva",
+            "phone": "+359878709988",
+            "website": "https://mdivagreen.com",
+            "email": "m.diva.green@gmail.com",
+            "instagram": "https://instagram.com/m.diva.green"
+          }
+        },
+        "dealer_FhdLXi": {
+          "type": "dealer",
+          "settings": {
+            "country": "Bulgaria",
+            "role": "Exclusive Distributor / Contractor",
+            "company_name": "M Diva Green Ltd",
+            "contact_name": "Elina Hadzhieva",
+            "phone": "+359878709988",
+            "website": "https://mdivagreen.com",
+            "email": "m.diva.green@gmail.com",
+            "instagram": "https://instagram.com/m.diva.green"
+          }
+        },
+        "dealer_3fGBRX": {
+          "type": "dealer",
+          "settings": {
+            "country": "Bulgaria",
+            "role": "Exclusive Distributor / Contractor",
+            "company_name": "M Diva Green Ltd",
+            "contact_name": "Elina Hadzhieva",
+            "phone": "+359878709988",
+            "website": "https://mdivagreen.com",
+            "email": "m.diva.green@gmail.com",
+            "instagram": "https://instagram.com/m.diva.green"
+          }
+        },
+        "dealer_ji8iUa": {
+          "type": "dealer",
+          "settings": {
+            "country": "Bulgaria",
+            "role": "Exclusive Distributor / Contractor",
+            "company_name": "M Diva Green Ltd",
+            "contact_name": "Elina Hadzhieva",
+            "phone": "+359878709988",
+            "website": "https://mdivagreen.com",
+            "email": "m.diva.green@gmail.com",
+            "instagram": "https://instagram.com/m.diva.green"
+          }
         }
       },
       "block_order": [
-        "dealer_Yahzt3"
+        "dealer_Yahzt3",
+        "dealer_z9heyg",
+        "dealer_HAmwbj",
+        "dealer_zVUMVJ",
+        "dealer_6YwCaa",
+        "dealer_QgXUKh",
+        "dealer_FhdLXi",
+        "dealer_3fGBRX",
+        "dealer_ji8iUa"
       ],
       "settings": {
         "heading": "Explore our interactive map",
         "left_image": "shopify://shop_images/register-installer-form.jpg",
-        "right_image": "shopify://shop_images/Screenshot_2025-02-24_at_10.23.41.png",
         "button_text": "VIEW DEALER LIST",
         "button_icon": "shopify://shop_images/down-arrow.svg"
       }
