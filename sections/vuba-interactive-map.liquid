@@ -1,6 +1,3 @@
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
 <section class="interactive-map bg-secondary pb-14 pt-44 md:py-14 3xl:py-24">
   <div class="installer-form padding-right-zeero pb-14 md:py-14 3xl:py-24">
     <div class="inner-container md:max-w-none flex flex-wrap">
@@ -111,37 +108,54 @@
     </div>
   </div>
 </section>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-  console.log(typeof L);
-  // Initialize Leaflet.js map
-  var map = L.map("map").setView([10, -75], 3);
+  // Initialize the map
+  var map = L.map('map').setView([20, -75], 3);
 
-  // Add OpenStreetMap tiles
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    attribution: "&copy; OpenStreetMap contributors"
+  // Add a tile layer to the map
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   }).addTo(map);
 
-  // Function to locate a dealer on the map
-  window.locateDealer = function (element) {
-    var lat = element.getAttribute("data-lat");
-    var lng = element.getAttribute("data-lng");
-    var country = element.getAttribute("data-country");
+  // Installer data
+  var installers = [
+      { name: "New York", lat: 40.7128, lng: -74.0060 },
+      { name: "São Paulo", lat: -23.5505, lng: -46.6333 },
+      { name: "Los Angeles", lat: 34.0522, lng: -118.2437 },
+      { name: "London", lat: 51.5074, lng: -0.1278 },
+      { name: "Paris", lat: 48.8566, lng: 2.3522 },
+      { name: "Tokyo", lat: 35.6895, lng: 139.6917 },
+      { name: "Moscow", lat: 55.7558, lng: 37.6173 },
+      { name: "Sydney", lat: -33.8688, lng: 151.2093 },
+      { name: "Mexico City", lat: 19.4326, lng: -99.1332 },
+      { name: "Beijing", lat: 39.9042, lng: 116.4074 }
+  ];
 
-    if (lat && lng) {
-      map.setView([lat, lng], 8); // Zoom into the dealer location
+  // Create a marker cluster group
+  var markers = L.markerClusterGroup();
 
-      // Add or update a marker for the selected dealer
-      if (window.selectedMarker) {
-        map.removeLayer(window.selectedMarker);
+  // Add markers to the cluster group
+  installers.forEach(function(installer) {
+      var marker = L.marker([installer.lat, installer.lng]);
+      marker.bindPopup("<b>" + installer.name + "</b>");
+      markers.addLayer(marker);
+  });
+
+  // Add the marker cluster group to the map
+  map.addLayer(markers);
+
+  // Handle dropdown change
+  document.getElementById('locationDropdown').addEventListener('change', function(e) {
+      var selected = e.target.value;
+      if (selected) {
+          var location = installers.find(i => i.name === selected);
+          if (location) {
+              map.setView([location.lat, location.lng], 10);
+          }
       }
-
-      window.selectedMarker = L.marker([lat, lng]).addTo(map)
-        .bindPopup(`<strong>${country}</strong>`)
-        .openPopup();
-    }
-  };
-});
+  });
 </script>
 
 {% schema %}
