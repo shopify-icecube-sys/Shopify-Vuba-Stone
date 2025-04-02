@@ -112,51 +112,35 @@
   </div>
 </section>
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    // Initialize the Map
-    var map = L.map('dealer-map').setView([10, -75], 3); // Centered on North & South America
+document.addEventListener("DOMContentLoaded", function () {
+  // Initialize Leaflet.js map
+  var map = L.map("dealer-map").setView([10, -75], 3);
 
-    // Add OpenStreetMap Tile Layer
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; OpenStreetMap contributors'
-    }).addTo(map);
+  // Add OpenStreetMap tiles
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: "&copy; OpenStreetMap contributors"
+  }).addTo(map);
 
-    // Add markers for dealers (example)
-    var dealers = [
-      {
-        country: "USA",
-        company: "USA Distributors",
-        contact: "John Doe",
-        phone: "+1 555-1234",
-        website: "https://usadealers.com",
-        email: "contact@usadealers.com",
-        coords: [37.0902, -95.7129] // USA Coordinates
-      },
-      {
-        country: "Brazil",
-        company: "Brazil Suppliers",
-        contact: "Carlos Silva",
-        phone: "+55 21 99999-9999",
-        website: "https://brazildealers.com",
-        email: "carlos@brazildealers.com",
-        coords: [-14.2350, -51.9253] // Brazil Coordinates
+  // Function to locate a dealer on the map
+  window.locateDealer = function (element) {
+    var lat = element.getAttribute("data-lat");
+    var lng = element.getAttribute("data-lng");
+    var country = element.getAttribute("data-country");
+
+    if (lat && lng) {
+      map.setView([lat, lng], 8); // Zoom into the dealer location
+
+      // Add or update a marker for the selected dealer
+      if (window.selectedMarker) {
+        map.removeLayer(window.selectedMarker);
       }
-    ];
 
-    // Add Markers to Map
-    dealers.forEach(dealer => {
-      var popupContent = `
-        <strong>${dealer.country}</strong><br>
-        ${dealer.company}<br>
-        Contact: ${dealer.contact}<br>
-        Phone: <a href="tel:${dealer.phone}">${dealer.phone}</a><br>
-        <a href="${dealer.website}" target="_blank">Website</a> |
-        <a href="mailto:${dealer.email}">Email</a>
-      `;
-      L.marker(dealer.coords).addTo(map)
-        .bindPopup(popupContent);
-    });
-  });
+      window.selectedMarker = L.marker([lat, lng]).addTo(map)
+        .bindPopup(`<strong>${country}</strong>`)
+        .openPopup();
+    }
+  };
+});
 </script>
 
 {% schema %}
