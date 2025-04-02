@@ -24,6 +24,7 @@
 {%- endunless -%}
 
 <script src="{{ 'quantity-popover.js' | asset_url }}" defer="defer"></script>
+<div class="vuba-stone pt-44 md:pt-14 pb-14  3xl:py-32">
 <div class="container">
 <cart-items class="gradient color-{{ section.settings.color_scheme }} isolate{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %}">
   <div class="page-width">
@@ -451,6 +452,7 @@
   </div>
 </cart-items>
 </div>
+  </div>
 {% schema %}
 {
   "name": "t:sections.main-cart-items.name",
