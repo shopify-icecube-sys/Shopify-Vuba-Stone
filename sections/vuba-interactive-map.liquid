@@ -27,14 +27,14 @@
   <div class="dealer-list">
     <div class="inner-container">
       <div class="flex justify-between items-center border-b-2 border-white pb-8 lg:px-10 3xl:px-20">
-        {% if section.settings.button_text != blank %}
-          <button
-            onclick="toggleDealerList()"
-            class="btn btn-primary hover:bg-white hover:text-secondary hover:border-white"
-          >
+        <button
+          onclick="toggleDealerList()"
+          class="btn btn-primary hover:bg-white hover:text-secondary hover:border-white"
+        >
+          {% if section.settings.button_text != blank %}
             {{ section.settings.button_text }}
-          </button>
-        {% endif %}
+          {% endif %}
+        </button>
 
         {% if section.settings.button_icon != blank %}
           <img src="{{ section.settings.button_icon | img_url: 'small' }}" alt="down-arrow">
