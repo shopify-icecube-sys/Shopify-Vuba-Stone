@@ -26,12 +26,13 @@
         "logo_mobile": "shopify://shop_images/header-logo-blue-m.svg",
         "title": "About Us",
         "title2": "",
-        "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>",
+        "description": "",
         "button_text_en": "MEET THE TEAM",
         "button_link_en": "shopify://collections/all",
         "button_text_esp": "OUR HISTORY",
         "button_link_esp": "shopify://products/ellis-island",
-        "div_color": "#821832"
+        "div_color": "#821832",
+        "description_about": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>"
       }
     },
     "vuba_richtext_NEgFBD": {
