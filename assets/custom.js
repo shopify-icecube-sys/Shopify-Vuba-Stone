@@ -137,6 +137,7 @@ $(document).ready(function () {
   });
   // Interactive Map Installer Template
   function toggleDealerList() {
+    console.log("button clicked");
     document.getElementById("dealer-list").classList.toggle("hidden");
   }
 });
