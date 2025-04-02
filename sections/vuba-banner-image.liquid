@@ -66,6 +66,11 @@
               {{ section.settings.button_text_esp }}
             </a>
           {% endif %}
+          {% if section.settings.description_about != blank %}
+            <div class="text-sm font-light mb-5 3xl:mb-8">
+              {{ section.settings.description_about }}
+            </div>
+          {% endif %}
         </div>
       </div>
     </div>
@@ -141,7 +146,13 @@
       "id": "div_color",
       "label": "Small Div Background Color",
       "default": "#6c757d"
-    }
+    },
+    {
+      "type": "richtext",
+      "id": "description_about",
+      "label": "Description",
+      "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>"
+    },
   ],
   "presets": [
     {
