@@ -199,6 +199,7 @@
       "settings": {
         "heading": "Explore our interactive map",
         "left_image": "shopify://shop_images/register-installer-form.jpg",
+        "right_image": "shopify://shop_images/Screenshot_2025-02-24_at_10.23.41.png",
         "button_text": "VIEW DEALER LIST",
         "button_icon": "shopify://shop_images/down-arrow.svg"
       }
