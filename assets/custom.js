@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (window.scrollY > 50) {
       //header.classList.add("bg-white");
     } else {
-     // header.classList.remove("bg-white");
+      // header.classList.remove("bg-white");
     }
   });
 });
@@ -72,7 +72,6 @@ $(document).ready(function () {
     autoWidth: true,
     autoplay: true,
     autoplayTimeout: 3000,
-    
   });
   //  Vuba World Blends section
   $(".vuba-world-bleds-slider").owlCarousel({
@@ -137,3 +136,8 @@ $(document).ready(function () {
     },
   });
 });
+
+// Interactive Map Installer Template
+function toggleDealerList() {
+  document.getElementById("dealer-list").classList.toggle("hidden");
+}
