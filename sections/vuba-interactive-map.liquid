@@ -112,36 +112,19 @@
   </div>
 </section>
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-  console.log(typeof L);
-  // Initialize Leaflet.js map
-  var map = L.map("dealer-map").setView([10, -75], 3);
+  document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(function () {
+      if (document.getElementById("dealer-map")) {
+        var map = L.map("dealer-map").setView([10, -75], 3);
 
-  // Add OpenStreetMap tiles
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    attribution: "&copy; OpenStreetMap contributors"
-  }).addTo(map);
-
-  // Function to locate a dealer on the map
-  window.locateDealer = function (element) {
-    var lat = element.getAttribute("data-lat");
-    var lng = element.getAttribute("data-lng");
-    var country = element.getAttribute("data-country");
-
-    if (lat && lng) {
-      map.setView([lat, lng], 8); // Zoom into the dealer location
-
-      // Add or update a marker for the selected dealer
-      if (window.selectedMarker) {
-        map.removeLayer(window.selectedMarker);
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+          attribution: "&copy; OpenStreetMap contributors"
+        }).addTo(map);
+      } else {
+        console.error("Map container not found!");
       }
-
-      window.selectedMarker = L.marker([lat, lng]).addTo(map)
-        .bindPopup(`<strong>${country}</strong>`)
-        .openPopup();
-    }
-  };
-});
+    }, 1000); // Delay to allow Shopify sections to load
+  });
 </script>
 
 {% schema %}
