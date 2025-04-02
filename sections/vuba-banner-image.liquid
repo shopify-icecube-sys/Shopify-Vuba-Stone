@@ -44,11 +44,11 @@
             {% endif %}
           </h3>
         {% endif %}
-        <div class="text-sm font-light mb-5 3xl:mb-8">
-          {% if section.settings.description != blank %}
+        {% if section.settings.description != blank %}
+          <div class="text-sm font-light mb-5 3xl:mb-8">
             {{ section.settings.description }}
-          {% endif %}
-        </div>
+          </div>
+        {% endif %}
         <div class="flex flex-wrap gap-4">
           {% if section.settings.button_text_en != blank and section.settings.button_link_en != blank %}
             <a
