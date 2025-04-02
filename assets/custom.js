@@ -28,12 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // <!---------- End of the navbar toggle and sticky header ----------->
 
-// Interactive Map Installer Template
-function toggleDealerList() {
-  console.log("button clicked");
-  document.getElementById("dealer-list").classList.toggle("hidden");
-}
-
 // const video = document.getElementById("video");
 
 // video.addEventListener("click", () => {
