@@ -102,9 +102,10 @@
                       {%- endif -%}
                     </p>
                   {%- when 'description' -%}
+                    {% comment %}{{ product.description | strip_html | truncate: 200 }}{% endcomment %}
                     {%- if product.description != blank -%}
                       <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
-                        {{ product.description }}
+                        {{ product.description | strip_html | truncate: 200 }}
                       </div>
                     {%- endif -%}
                   {%- when 'sku' -%}
