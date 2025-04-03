@@ -154,6 +154,9 @@ cart-remove-button .icon-remove {
     padding: 0;
     border: 0px;
   }
+  .cart-item__quantity .cart-item__quantity-wrapper {
+    justify-content: flex-start;
+  }
 }
 
 @media screen and (min-width: 750px) {
