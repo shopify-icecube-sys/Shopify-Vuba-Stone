@@ -1,6 +1,108 @@
+<section class="filter-inspire-imagination">
+  <div class="container">
+    <div class="py-16 3xl:py-24 w-full text-center ">
+      <h2 class="text-2xl 3xl:text-[44px] text-secondary font-semibold inline-block leading-[1.2]">
+        {{ section.settings.heading }}
+      </h2>
+    </div>
+    <div class="flex flex-col md:flex-row gap-10 pb-14 3xl:pb-24">
+      <aside class="w-full md:w-1/4 gap-y-10 flex flex-wrap flex-col">
+        <div class="col">
+          <h3 class="text-2xl 3xl:text-4xl font-semibold border-b-2 border-[#707070] pb-5 mb-7">Filter by colour</h3>
+          <div class="flex flex-wrap gap-2 items-end">
+            {% for i in (1..3) %}
+              {% assign filter_key = 'filter_' | append: i %}
+              <button class="px-4 py-2 text-primary hover:text-white hover:bg-primary border-[3px] border-primary rounded-full uppercase font-bold text-xs tracking-widest">
+                {{ section.settings[filter_key] }}
+              </button>
+            {% endfor %}
+          </div>
+        </div>
+      </aside>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 w-full md:w-[75%]">
+        <div class="bg-white rounded-2xl overflow-hidden relative">
+          {% if section.settings.project_image != blank %}
+            <img
+              src="{{ section.settings.project_image | img_url: 'large' }}"
+              class="w-full aspect-square object-cover h-full"
+              alt="Project Image"
+            >
+          {% else %}
+            <img
+              src="https://via.placeholder.com/300"
+              class="w-full aspect-square object-cover h-full"
+              alt="Default Project"
+            >
+          {% endif %}
+          <div class="absolute top-0 left-0 w-full h-full p-4 flex flex-wrap items-end justify-end">
+            <div class="btn-wrap flex flex-wrap gap-2 justify-end">
+              <a
+                class="px-3 py-1 hover:text-white bg-white hover:bg-primary border-[3px] border-white hover:border-primary rounded-full uppercase font-bold text-[11px] tracking-widest inline-block"
+                href="#"
+              >
+                {{ section.settings.project_tag }}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Filter Inspire Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Use our filters to inspire your imagination"
+    },
+    {
+      "type": "header",
+      "content": "Filters"
+    },
+    {
+      "type": "text",
+      "id": "filter_1",
+      "label": "Filter Option 1",
+      "default": "Red and Purple"
+    },
+    {
+      "type": "text",
+      "id": "filter_2",
+      "label": "Filter Option 2",
+      "default": "Yellow and Warm"
+    },
+    {
+      "type": "text",
+      "id": "filter_3",
+      "label": "Filter Option 3",
+      "default": "Light and Neutral"
+    },
+    {
+      "type": "header",
+      "content": "Projects"
+    },
+    {
+      "type": "image_picker",
+      "id": "project_image",
+      "label": "Project Image"
+    },
+    {
+      "type": "text",
+      "id": "project_tag",
+      "label": "Project Tag",
+      "default": "Swimming pool"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Filter Inspire Section"
+    }
+  ]
+}
 {% endschema %}
