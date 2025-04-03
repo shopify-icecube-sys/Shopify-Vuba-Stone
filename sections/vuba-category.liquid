@@ -75,11 +75,13 @@
                   {% endif %}
                 </div>
               </div>
-              <div class="btn-wrap mt-5 text-center">
-                <button class="btn btn-primary">
-                  {{ section.settings.view_more_text }}
-                </button>
-              </div>
+              {% if section.settings.view_more_text != blank %}
+                <div class="btn-wrap mt-5 text-center">
+                  <button class="btn btn-primary">
+                    {{ section.settings.view_more_text }}
+                  </button>
+                </div>
+              {% endif %}
             </div>
           {% endif %}
         {% endfor %}
