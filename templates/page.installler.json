@@ -183,13 +183,6 @@
         "section_heading": "Latest Projects",
         "blog_handle": "project"
       }
-    },
-    "vuba_interactive_map_dfQAi4": {
-      "type": "vuba-interactive-map",
-      "settings": {
-        "heading": "Explore our interactive map",
-        "left_image": "shopify://shop_images/register-installer-form.jpg"
-      }
     }
   },
   "order": [
@@ -199,7 +192,6 @@
     "vuba_benefit_q9HxXa",
     "vuba_installer_wi69pN",
     "vuba_multicolumn_installer_fUJeYR",
-    "vuba_latest_project_6834X8",
-    "vuba_interactive_map_dfQAi4"
+    "vuba_latest_project_6834X8"
   ]
 }
