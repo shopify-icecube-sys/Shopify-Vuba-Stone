@@ -135,6 +135,9 @@ cart-remove-button .icon-remove {
     align-items: flex-start;
     justify-content: flex-end;
   }
+  .small-hide {
+    display: none !important;
+  }
 }
 
 @media screen and (min-width: 750px) {
