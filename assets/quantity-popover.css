@@ -70,7 +70,12 @@ quantity-popover .quick-order-list-remove-button .button {
   width: 15px;
   height: 14px;
 }
-
+quantity-input.quantity {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
 @media screen and (max-width: 989px) {
   .quantity-popover__info.global-settings-popup {
     left: 0;
