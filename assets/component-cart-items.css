@@ -9,7 +9,9 @@ cart-items .title-wrapper-with-link {
 .cart-item__totals {
   position: relative;
 }
-
+.cart-item__image {
+  width: 100%;
+}
 .cart-item__media {
   position: relative;
 }
