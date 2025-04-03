@@ -4,26 +4,22 @@
       <h2 class="text-2xl 3xl:text-[44px] font-medium mb-0 leading-[1.2]">Related Products</h2>
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-x-3 gap-y-3.5">
-      {% for related_product in product.collections.first.products %}
-        {% if related_product.id != product.id %}
-          <div class="bg-gray rounded-2xl py-12 px-10 md:px-5 xl:px-10 text-center h-full flex flex-wrap flex-col">
-            <div class="mx-auto rounded-full overflow-hidden mb-7">
-              <img
-                src="{{ related_product.featured_image | img_url: '540x540' }}"
-                alt="{{ related_product.title }}"
-                class="w-full aspect-[1/1] object-cover"
-              >
-            </div>
-            <span class="text-sm 3xl:text-base text-primary mt-2">{{ related_product.options.first }}</span>
-            <h3 class="text-2xl 3xl:text-[26px] font-medium my-3">{{ related_product.title }}</h3>
-            <a
-              href="{{ related_product.url }}"
-              class="text-sm 3xl:text-lg xl:my-3 inline-block font-medium underline hover:text-primary"
-              >View product</a
-            >
-          </div>
-        {% endif %}
-      {% endfor %}
+      <div class="bg-gray rounded-2xl py-12 px-10 md:px-5 xl:px-10 text-center h-full flex flex-wrap flex-col">
+        <div class="mx-auto rounded-full overflow-hidden mb-7">
+          <img
+            src="{{ related_product.featured_image | img_url: '540x540' }}"
+            alt="{{ related_product.title }}"
+            class="w-full aspect-[1/1] object-cover"
+          >
+        </div>
+        <span class="text-sm 3xl:text-base text-primary mt-2">{{ related_product.options.first }}</span>
+        <h3 class="text-2xl 3xl:text-[26px] font-medium my-3">{{ related_product.title }}</h3>
+        <a
+          href="{{ related_product.url }}"
+          class="text-sm 3xl:text-lg xl:my-3 inline-block font-medium underline hover:text-primary"
+          >View product</a
+        >
+      </div>
     </div>
     {% if product.collections.first.products.size > 5 %}
       <div class="mt-8 3xl:mt-10 text-center block md:hidden">
