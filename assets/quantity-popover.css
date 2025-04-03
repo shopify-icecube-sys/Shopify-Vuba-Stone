@@ -89,6 +89,7 @@ quantity-input.quantity input.quantity__input {
   text-align: center;
   height: 1.8rem;
   border: solid 1px #821832;
+  outline: none;
 }
 .quantity__input::-webkit-outer-spin-button,
 .quantity__input::-webkit-inner-spin-button {
