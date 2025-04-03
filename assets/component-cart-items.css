@@ -70,10 +70,6 @@ cart-items .title-wrapper-with-link {
   margin: 0;
 }
 
-.cart-item__discounted-prices .cart-item__old-price {
-  font-size: 1.4rem;
-}
-
 .cart-item__old-price {
   opacity: 0.7;
 }
@@ -233,10 +229,6 @@ cart-remove-button .icon-remove {
 
   .cart-item__media {
     width: 10rem;
-  }
-
-  .cart-item__price-wrapper > *:only-child:not(.cart-item__discounted-prices) {
-    margin-top: 1rem;
   }
 
   .cart-item__error {
