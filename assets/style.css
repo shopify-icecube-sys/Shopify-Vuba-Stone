@@ -17,3 +17,10 @@ p:empty,
 dl:empty {
   display: none;
 }
+
+.common-cart-table thead th {
+  white-space: nowrap;
+  padding: 1rem;
+  background: #821832;
+  color: #fff;
+}
