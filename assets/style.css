@@ -4,3 +4,6 @@ body {
 .title--primary {
   color: #821832;
 }
+.visually-hidden {
+  display: none;
+}
