@@ -26,11 +26,13 @@
                   </button>
                 {% endfor %}
               </div>
-              <div class="btn-wrap mt-10 md:hidden">
-                <button class="btn btn-secondary">
-                  {{ section.settings.more_filters_text }}
-                </button>
-              </div>
+              {% if section.settings.more_filters_text != blank %}
+                <div class="btn-wrap mt-10 md:hidden">
+                  <button class="btn btn-secondary">
+                    {{ section.settings.more_filters_text }}
+                  </button>
+                </div>
+              {% endif %}
             </div>
           {% endif %}
         {% endfor %}
@@ -40,7 +42,7 @@
         {% for block in section.blocks %}
           {% if block.type == 'project' %}
             <div class="bg-white rounded-2xl overflow-hidden relative">
-              {% if block.settings.project_image %}
+              {% if block.settings.project_image != blank %}
                 <img
                   src="{{ block.settings.project_image | img_url: '600x600' }}"
                   class="w-full aspect-square object-cover h-full"
