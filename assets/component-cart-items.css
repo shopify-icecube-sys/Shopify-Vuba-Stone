@@ -57,6 +57,12 @@ cart-remove-button .icon-remove {
   bottom: 0;
   padding: 0;
 }
+.cart-item__quantity .cart-item__quantity-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
 
 @media screen and (min-width: 750px) {
   .cart-item .loading__spinner {
