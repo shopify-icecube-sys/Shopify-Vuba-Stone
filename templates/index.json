@@ -51,117 +51,6 @@
         "author": "George Child, New Look Surfacing"
       }
     },
-    "vuba_map_ew9zMw": {
-      "type": "vuba-map",
-      "blocks": {
-        "dealer_DFb7BM": {
-          "type": "dealer",
-          "settings": {
-            "country": "",
-            "role": "Exclusive Distributor / Contractors",
-            "company_name": "ree",
-            "contact_name": "errerer",
-            "phone": "6756765",
-            "website": "shopify://blogs/project",
-            "email": "@",
-            "instagram": "shopify://pages/request-for-quote"
-          }
-        },
-        "dealer_F9tKjB": {
-          "type": "dealer",
-          "settings": {
-            "country": "",
-            "role": "Exclusive Distributor / Contractors",
-            "company_name": "ree",
-            "contact_name": "errerer",
-            "phone": "6756765",
-            "website": "shopify://blogs/project",
-            "email": "@",
-            "instagram": "shopify://pages/request-for-quote"
-          }
-        },
-        "dealer_9kGUWc": {
-          "type": "dealer",
-          "settings": {
-            "country": "",
-            "role": "Exclusive Distributor / Contractors",
-            "company_name": "ree",
-            "contact_name": "errerer",
-            "phone": "6756765",
-            "website": "shopify://blogs/project",
-            "email": "@",
-            "instagram": "shopify://pages/request-for-quote"
-          }
-        },
-        "dealer_XrVBhK": {
-          "type": "dealer",
-          "settings": {
-            "country": "",
-            "role": "Exclusive Distributor / Contractors",
-            "company_name": "ree",
-            "contact_name": "errerer",
-            "phone": "6756765",
-            "website": "shopify://blogs/project",
-            "email": "@",
-            "instagram": "shopify://pages/request-for-quote"
-          }
-        },
-        "dealer_Gi9j4z": {
-          "type": "dealer",
-          "settings": {
-            "country": "",
-            "role": "Exclusive Distributor / Contractors",
-            "company_name": "ree",
-            "contact_name": "errerer",
-            "phone": "6756765",
-            "website": "shopify://blogs/project",
-            "email": "@",
-            "instagram": "shopify://pages/request-for-quote"
-          }
-        },
-        "dealer_XDrJGX": {
-          "type": "dealer",
-          "settings": {
-            "country": "",
-            "role": "Exclusive Distributor / Contractors",
-            "company_name": "ree",
-            "contact_name": "errerer",
-            "phone": "6756765",
-            "website": "shopify://blogs/project",
-            "email": "@",
-            "instagram": "shopify://pages/request-for-quote"
-          }
-        },
-        "dealer_TmEDj9": {
-          "type": "dealer",
-          "settings": {
-            "country": "",
-            "role": "Exclusive Distributor / Contractors",
-            "company_name": "ree",
-            "contact_name": "errerer",
-            "phone": "6756765",
-            "website": "shopify://blogs/project",
-            "email": "@",
-            "instagram": "shopify://pages/request-for-quote"
-          }
-        }
-      },
-      "block_order": [
-        "dealer_DFb7BM",
-        "dealer_F9tKjB",
-        "dealer_9kGUWc",
-        "dealer_XrVBhK",
-        "dealer_Gi9j4z",
-        "dealer_XDrJGX",
-        "dealer_TmEDj9"
-      ],
-      "settings": {
-        "heading": "Explore our interactive map",
-        "left_image": "shopify://shop_images/Group-432.png",
-        "right_image": "shopify://shop_images/Group-432.png",
-        "button_text": "VIEW DEALER LIST"
-      }
-    },
     "vuba_category_QkLqQQ": {
       "type": "vuba-category",
       "blocks": {
@@ -223,7 +112,6 @@
     "vuba_richtext_6J9PEW",
     "vuba_mac_section_one_y7KRnV",
     "vuba_distribution_hub_a3nAJU",
-    "vuba_map_ew9zMw",
     "vuba_category_QkLqQQ"
   ]
 }
