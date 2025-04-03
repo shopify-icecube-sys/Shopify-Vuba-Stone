@@ -144,6 +144,11 @@ cart-remove-button .icon-remove {
   .small-hide {
     display: none !important;
   }
+  .common-cart-table thead th {
+    white-space: nowrap;
+    padding: 0.5rem;
+    font-weight: 400;
+  }
 }
 
 @media screen and (min-width: 750px) {
