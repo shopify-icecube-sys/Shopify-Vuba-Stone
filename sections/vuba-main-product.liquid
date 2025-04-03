@@ -39,12 +39,12 @@
                     {{- block.settings.text -}}
                   </p>
                 {%- when 'title' -%}
-                  <h2 class="product__title {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
-                    {%- unless placeholder -%}
+                  <h2 class="product__title text-2xl 3xl:text-[44px] font-semibold mb-3 leading-[1.5]">
+                    {%- if product.title != blank -%}
                       {{ product.title | escape }}
                     {%- else -%}
                       {{ 'onboarding.product_title' | t }}
-                    {%- endunless -%}
+                    {%- endif -%}
                   </h2>
                 {%- when 'price' -%}
                   <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
