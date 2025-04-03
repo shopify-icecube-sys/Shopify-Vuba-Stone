@@ -39,6 +39,7 @@
                     >
                       {{- block.settings.text -}}
                     </p>
+                    <div class="pb-3 3xl:pb-5 mb-4 3xl:mb-6 border-b-2 border-gray 3xl:text-2xl">
                   {%- when 'title' -%}
                     <h2
                       class="text-2xl 3xl:text-[44px] font-semibold mb-3 leading-[1.5]"
@@ -49,6 +50,7 @@
                   {%- when 'price' -%}
                     <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                       <span class="inline-block mb-3" {{ block.shopify_attributes }}>{{ product.price | money }}</span>
+                    </div>
                     </div>
                   {%- when 'inventory' -%}
                     <p
