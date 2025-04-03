@@ -108,10 +108,29 @@
         "heading_title": "Related Products",
         "products_to_show": 5
       }
+    },
+    "vuba_main_product_Bmr98g": {
+      "type": "vuba-main-product",
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
+    "vuba_main_product_Bmr98g",
     "related-products",
     "vuba_related_products_HD4kxg"
   ]
