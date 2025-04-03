@@ -16,15 +16,15 @@
             <div class="bg-gray rounded-2xl py-12 px-10 md:px-5 xl:px-10 text-center h-full flex flex-wrap flex-col">
               <div class="mx-auto rounded-full overflow-hidden mb-7">
                 <img
-                  src="{{ product.featured_image | img_url: '540x540' }}"
-                  alt="{{ product.title }}"
+                  src="{{ recommendation.featured_image | img_url: '540x540' }}"
+                  alt="{{ recommendation.title }}"
                   class="w-full aspect-[1/1] object-cover"
                 >
               </div>
-              <span class="text-sm 3xl:text-base text-primary mt-2">{{ product.options.first }}</span>
-              <h3 class="text-2xl 3xl:text-[26px] font-medium my-3">{{ product.title }}</h3>
+              <span class="text-sm 3xl:text-base text-primary mt-2">{{ recommendation.options.first }}</span>
+              <h3 class="text-2xl 3xl:text-[26px] font-medium my-3">{{ recommendation.title }}</h3>
               <a
-                href="{{ product.url }}"
+                href="{{ recommendation.url }}"
                 class="text-sm 3xl:text-lg xl:my-3 inline-block font-medium underline hover:text-primary"
                 >View product</a
               >
