@@ -161,6 +161,12 @@
         "right_image": "shopify://shop_images/Group-432.png",
         "button_text": "VIEW DEALER LIST"
       }
+    },
+    "vuba_category_QkLqQQ": {
+      "type": "vuba-category",
+      "settings": {
+        "heading": "Heading"
+      }
     }
   },
   "order": [
@@ -168,6 +174,7 @@
     "vuba_richtext_6J9PEW",
     "vuba_mac_section_one_y7KRnV",
     "vuba_distribution_hub_a3nAJU",
-    "vuba_map_ew9zMw"
+    "vuba_map_ew9zMw",
+    "vuba_category_QkLqQQ"
   ]
 }
