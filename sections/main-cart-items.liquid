@@ -100,7 +100,7 @@
                       {% endif %}
                     </td>
 
-                    <td class="cart-item__details  text-center">
+                    <td class="cart-item__details  text-left">
                       {%- if settings.show_vendor -%}
                         <p class="caption-with-letter-spacing">{{ item.product.vendor }}</p>
                       {%- endif -%}
@@ -227,7 +227,7 @@
                         assign has_vol_pricing = true
                       endif
                     -%}
-                    <td class="text-center text-right cart-item__quantity{% if has_qty_rules or has_vol_pricing %} cart-item__quantity--info{% endif %}">
+                    <td class="text-center text-center cart-item__quantity{% if has_qty_rules or has_vol_pricing %} cart-item__quantity--info{% endif %}">
                       <quantity-popover>
                         <div class="cart-item__quantity-wrapper quantity-popover-wrapper">
                           <label class="visually-hidden" for="Quantity-{{ item.index | plus: 1 }}">
