@@ -139,7 +139,7 @@ cart-remove-button .icon-remove {
     display: flex;
     justify-content: space-between;
     border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.2);
-    margin-bottom: 4rem;
+    background: #821832;
   }
   .small-hide {
     display: none !important;
