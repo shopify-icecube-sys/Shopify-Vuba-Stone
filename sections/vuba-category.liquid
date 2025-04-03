@@ -13,9 +13,11 @@
         {% for block in section.blocks %}
           {% if block.type == 'filter' %}
             <div class="col">
-              <h3 class="text-2xl 3xl:text-4xl font-semibold border-b-2 border-[#707070] pb-5 mb-7">
-                {{ block.settings.filter_title }}
-              </h3>
+              {% if block.settings.filter_title != blank %}
+                <h3 class="text-2xl 3xl:text-4xl font-semibold border-b-2 border-[#707070] pb-5 mb-7">
+                  {{ block.settings.filter_title }}
+                </h3>
+              {% endif %}
               <div class="flex flex-wrap gap-2 items-end">
                 {% assign filter_options = block.settings.filter_options | split: ',' %}
                 {% for option in filter_options %}
