@@ -2,10 +2,6 @@ cart-items .title-wrapper-with-link {
   margin-top: 0;
 }
 
-.cart-item__quantity-wrapper {
-  display: flex;
-}
-
 .cart-item__totals {
   position: relative;
 }
@@ -165,10 +161,6 @@ cart-remove-button .icon-remove {
 
   .cart-item__quantity {
     grid-column: 2 / 5;
-  }
-
-  .cart-item__quantity-wrapper {
-    flex-wrap: wrap;
   }
 
   .cart-item__totals {
