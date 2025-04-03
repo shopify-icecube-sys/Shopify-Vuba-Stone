@@ -17,7 +17,9 @@ p:empty,
 dl:empty {
   display: none;
 }
-
+.table-responsive {
+  overflow-x: auto;
+}
 .common-cart-table thead th {
   white-space: nowrap;
   padding: 1rem;
