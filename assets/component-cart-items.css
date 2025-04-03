@@ -135,6 +135,12 @@ cart-remove-button .icon-remove {
     align-items: flex-start;
     justify-content: flex-end;
   }
+  .cart-items thead tr {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.2);
+    margin-bottom: 4rem;
+  }
   .small-hide {
     display: none !important;
   }
