@@ -211,6 +211,8 @@ cart-remove-button .icon-remove {
 
   table tbody .cart-item__media {
     min-width: 10rem;
+    width: 10rem;
+    line-height: 0;
   }
 
   .cart-item__error {
