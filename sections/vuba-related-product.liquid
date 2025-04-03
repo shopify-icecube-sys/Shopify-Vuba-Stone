@@ -1,32 +1,39 @@
 <section class="other-samples pb-14 3xl:pb-28">
-  <div class="container">
-    <div class="heading-wrap mb-10 3xl:mb-14 text-center">
-      <h2 class="text-2xl 3xl:text-[44px] font-medium mb-0 leading-[1.2]">Other Samples</h2>
-    </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-x-3 gap-y-3.5">
-      <div class="bg-gray rounded-2xl py-12 px-10 md:px-5 xl:px-10 text-center h-full flex flex-wrap flex-col">
-        <div class="mx-auto rounded-full overflow-hidden mb-7">
-          <img
-            src="{{ product.featured_image | img_url: '540x540' }}"
-            alt="{{ product.title }}"
-            class="w-full aspect-[1/1] object-cover"
+  <product-recommendations
+    class="related-products page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    data-url="{{ routes.product_recommendations_url }}?limit={{ section.settings.products_to_show }}"
+    data-section-id="{{ section.id }}"
+    data-product-id="{{ product.id }}"
+  >
+    <div class="container">
+      <div class="heading-wrap mb-10 3xl:mb-14 text-center">
+        <h2 class="text-2xl 3xl:text-[44px] font-medium mb-0 leading-[1.2]">Other Samples</h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-x-3 gap-y-3.5">
+        <div class="bg-gray rounded-2xl py-12 px-10 md:px-5 xl:px-10 text-center h-full flex flex-wrap flex-col">
+          <div class="mx-auto rounded-full overflow-hidden mb-7">
+            <img
+              src="{{ product.featured_image | img_url: '540x540' }}"
+              alt="{{ product.title }}"
+              class="w-full aspect-[1/1] object-cover"
+            >
+          </div>
+          <span class="text-sm 3xl:text-base text-primary mt-2">{{ product.options.first }}</span>
+          <h3 class="text-2xl 3xl:text-[26px] font-medium my-3">{{ product.title }}</h3>
+          <a
+            href="{{ product.url }}"
+            class="text-sm 3xl:text-lg xl:my-3 inline-block font-medium underline hover:text-primary"
+            >View product</a
           >
         </div>
-        <span class="text-sm 3xl:text-base text-primary mt-2">{{ product.options.first }}</span>
-        <h3 class="text-2xl 3xl:text-[26px] font-medium my-3">{{ product.title }}</h3>
-        <a
-          href="{{ product.url }}"
-          class="text-sm 3xl:text-lg xl:my-3 inline-block font-medium underline hover:text-primary"
-          >View product</a
-        >
       </div>
+      {% if collections['other-samples'].products.size > 5 %}
+        <div class="mt-8 3xl:mt-10 text-center block md:hidden">
+          <a href="/collections/other-samples" class="btn btn-primary"> VIEW MORE </a>
+        </div>
+      {% endif %}
     </div>
-    {% if collections['other-samples'].products.size > 5 %}
-      <div class="mt-8 3xl:mt-10 text-center block md:hidden">
-        <a href="/collections/other-samples" class="btn btn-primary"> VIEW MORE </a>
-      </div>
-    {% endif %}
-  </div>
+  </product-recommendations>
 </section>
 {% schema %}
 {
