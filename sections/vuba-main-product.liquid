@@ -6,6 +6,13 @@
   data-update-url="true"
   data-url="{{ product.url }}"
 >
+  <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+  {%- if product.quantity_price_breaks_configured? -%}
+    <script src="{{ 'show-more.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'price-per-item.js' | asset_url }}" defer="defer"></script>
+  {%- endif -%}
+
   <section class="product-detapl py-14 3xl:py-16">
     <div class="inner-container">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-10 3xl:gap-40">
