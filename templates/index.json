@@ -164,9 +164,99 @@
     },
     "vuba_category_QkLqQQ": {
       "type": "vuba-category",
-      "settings": {
-        "heading": "Heading"
-      }
+      "blocks": {
+        "filter_bRCNNq": {
+          "type": "filter",
+          "settings": {
+            "filter_title": "FILTER BY COLOUR",
+            "filter_options": "Red and Purple, Yellow and Warm, Light and Neutral, Red and Purple, Yellow and Warm, Light and Neutral, Red and Purple, Yellow and Warm, Light and Neutral, Red and Purple, Yellow and Warm, Light and Neutral"
+          }
+        },
+        "project_QWyW8t": {
+          "type": "project",
+          "settings": {
+            "project_image": "shopify://shop_images/Introducing-Vuba-Stone-hero.png",
+            "project_tag": "RED AND PURPLE",
+            "project_location": "LIGHT AND NEUTRAL"
+          }
+        },
+        "project_zJmw8z": {
+          "type": "project",
+          "settings": {
+            "project_image": "shopify://shop_images/Introducing-Vuba-Stone-hero.png",
+            "project_tag": "RED AND PURPLE",
+            "project_location": "LIGHT AND NEUTRAL"
+          }
+        },
+        "project_MbLE7w": {
+          "type": "project",
+          "settings": {
+            "project_image": "shopify://shop_images/Introducing-Vuba-Stone-hero.png",
+            "project_tag": "RED AND PURPLE",
+            "project_location": "LIGHT AND NEUTRAL"
+          }
+        },
+        "project_HRLabA": {
+          "type": "project",
+          "settings": {
+            "project_image": "shopify://shop_images/Introducing-Vuba-Stone-hero.png",
+            "project_tag": "RED AND PURPLE",
+            "project_location": "LIGHT AND NEUTRAL"
+          }
+        },
+        "project_pitUMc": {
+          "type": "project",
+          "settings": {
+            "project_image": "shopify://shop_images/Introducing-Vuba-Stone-hero.png",
+            "project_tag": "RED AND PURPLE",
+            "project_location": "LIGHT AND NEUTRAL"
+          }
+        },
+        "project_88W7qw": {
+          "type": "project",
+          "settings": {
+            "project_image": "shopify://shop_images/Introducing-Vuba-Stone-hero.png",
+            "project_tag": "RED AND PURPLE",
+            "project_location": "LIGHT AND NEUTRAL"
+          }
+        },
+        "project_FxmXPi": {
+          "type": "project",
+          "settings": {
+            "project_image": "shopify://shop_images/Introducing-Vuba-Stone-hero.png",
+            "project_tag": "RED AND PURPLE",
+            "project_location": "LIGHT AND NEUTRAL"
+          }
+        },
+        "project_nnDaUp": {
+          "type": "project",
+          "settings": {
+            "project_image": "shopify://shop_images/Introducing-Vuba-Stone-hero.png",
+            "project_tag": "RED AND PURPLE",
+            "project_location": "LIGHT AND NEUTRAL"
+          }
+        },
+        "filter_QAHjyU": {
+          "type": "filter",
+          "settings": {
+            "filter_title": "FILTER BY JOB",
+            "filter_options": "RESIDENTIAL, COMMERCIAL"
+          }
+        }
+      },
+      "block_order": [
+        "filter_bRCNNq",
+        "project_QWyW8t",
+        "project_zJmw8z",
+        "project_MbLE7w",
+        "project_HRLabA",
+        "project_pitUMc",
+        "project_88W7qw",
+        "project_FxmXPi",
+        "project_nnDaUp",
+        "filter_QAHjyU"
+      ],
+      "settings": {}
     }
   },
   "order": [
