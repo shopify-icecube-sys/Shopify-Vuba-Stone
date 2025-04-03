@@ -19,7 +19,11 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-10 3xl:gap-40">
         <div class="flex justify-center items-start">
           {%- unless placeholder -%}
-            <img src="images/product-img.png" class="w-[320px]  rounded-full 3xl:w-[540px]" alt="Yosemite Product">
+            <img
+              src="{{ product.featured_image | img_url: '540x540' }}"
+              class="w-[320px] rounded-full 3xl:w-[540px]"
+              alt="{{ product.title }}"
+            >
           {%- else -%}
             <div class="product__media-item">
               <div
