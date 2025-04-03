@@ -57,12 +57,14 @@
               {% endif %}
               <div class="absolute top-0 left-0 w-full h-full p-4 flex flex-wrap items-end justify-end">
                 <div class="btn-wrap flex flex-wrap gap-2 justify-end">
-                  <a
-                    class="px-3 py-1 hover:text-white bg-white hover:bg-primary border-[3px] border-white hover:border-primary rounded-full uppercase font-bold text-[11px] tracking-widest inline-block"
-                    href="#"
-                  >
-                    {{ block.settings.project_tag }}
-                  </a>
+                  {% if block.settings.project_tag != blank %}
+                    <a
+                      class="px-3 py-1 hover:text-white bg-white hover:bg-primary border-[3px] border-white hover:border-primary rounded-full uppercase font-bold text-[11px] tracking-widest inline-block"
+                      href="#"
+                    >
+                      {{ block.settings.project_tag }}
+                    </a>
+                  {% endif %}
                   <a
                     class="px-3 py-1 hover:text-white bg-white hover:bg-primary border-[3px] border-white hover:border-primary rounded-full uppercase font-bold text-[11px] tracking-widest inline-block"
                     href="#"
