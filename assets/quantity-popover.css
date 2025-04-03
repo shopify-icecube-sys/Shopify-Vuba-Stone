@@ -76,6 +76,14 @@ quantity-input.quantity {
   align-items: center;
   justify-content: center;
 }
+button.quantity__button {
+  width: 1.7rem;
+  padding: 0.4rem;
+  aspect-ratio: 1 / 1;
+  border: solid 1px #821832;
+  background-color: #821832;
+  color: #fff;
+}
 @media screen and (max-width: 989px) {
   .quantity-popover__info.global-settings-popup {
     left: 0;
