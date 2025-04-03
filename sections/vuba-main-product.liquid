@@ -26,7 +26,10 @@
               <span class="inline-block mb-3">{{ product.price | money }}</span>
             </div>
             <p>
-              {{ product.description | strip_html | truncate: 200 }}
+              {% comment %}
+                | strip_html | truncate: 200
+              {% endcomment %}
+              {{ product.description }}
             </p>
           </div>
           <div class="flex flex-wrap gap-3">
