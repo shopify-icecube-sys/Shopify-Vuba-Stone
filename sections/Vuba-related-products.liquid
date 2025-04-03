@@ -15,8 +15,8 @@
           </div>
         {% endif %}
 
-        {% for recommendation in recommendations.products %}
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-x-3 gap-y-3.5">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-x-3 gap-y-3.5">
+          {% for recommendation in recommendations.products %}
             <div class="bg-gray rounded-2xl py-12 px-10 md:px-5 xl:px-10 text-center h-full flex flex-wrap flex-col">
               <div class="mx-auto rounded-full overflow-hidden mb-7">
                 <img
@@ -33,8 +33,8 @@
                 >View product</a
               >
             </div>
-          </div>
-        {% endfor %}
+          {% endfor %}
+        </div>
         {% if collections['other-samples'].products.size > 5 %}
           <div class="mt-8 3xl:mt-10 text-center block md:hidden">
             <a href="/collections/other-samples" class="btn btn-primary"> VIEW MORE </a>
