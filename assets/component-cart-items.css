@@ -276,11 +276,6 @@ cart-remove-button .icon-remove {
   .cart-items th {
     border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
   }
-
-  .cart-items thead th:first-child {
-    width: 50%;
-  }
-
   .cart-items th + th {
     padding-left: 4rem;
   }
