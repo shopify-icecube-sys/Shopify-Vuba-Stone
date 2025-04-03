@@ -21,10 +21,6 @@ ol:empty,
 ul:empty {
   display: none;
 }
-ul[class],
-ol[class] {
-  margin-bottom: 0;
-}
 .table-responsive {
   overflow-x: auto;
 }
