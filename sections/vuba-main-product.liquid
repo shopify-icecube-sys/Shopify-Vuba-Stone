@@ -43,7 +43,9 @@
                     {{ product.title }}
                   </h2>
                 {%- when 'price' -%}
-                  <span class="inline-block mb-3" {{ block.shopify_attributes }}>{{ product.price | money }}</span>
+                  <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
+                    <span class="inline-block mb-3" {{ block.shopify_attributes }}>{{ product.price | money }}</span>
+                  </div>
                 {%- when 'inventory' -%}
                   <p
                     class="product__inventory{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.inventory_management != 'shopify' %} visibility-hidden{% endif %}"
