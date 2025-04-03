@@ -2,7 +2,7 @@
   <div class="container">
     <div class="py-16 3xl:py-24 w-full text-center ">
       <h2 class="text-2xl 3xl:text-[44px] text-secondary font-semibold inline-block leading-[1.2]">
-        Use our filters to inspire your imagination
+        {{ section.settings.heading }}
       </h2>
     </div>
 
@@ -73,7 +73,14 @@
 {% schema %}
 {
   "name": "Vuba Category",
-  "settings": [],
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Heading",
+      "label": "Heading"
+    }
+  ],
   "blocks": [
     {
       "type": "filter",
