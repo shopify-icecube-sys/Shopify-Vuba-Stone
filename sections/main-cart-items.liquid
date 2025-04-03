@@ -74,7 +74,7 @@
                   >
                     {{ 'sections.cart.headings.quantity' | t }}
                   </th>
-                  <th class="small-hide text-right caption-with-letter-spacing" colspan="1" scope="col">
+                  <th class="small-hide caption-with-letter-spacing" colspan="1" scope="col">
                     {{ 'sections.cart.headings.total' | t }}
                   </th>
                 </tr>
@@ -390,7 +390,7 @@
                       </quantity-popover>
                     </td>
 
-                    <td class="cart-item__totals text-right small-hide">
+                    <td class="cart-item__totals small-hide">
                       {%- render 'loading-spinner' -%}
                       <div class="cart-item__price-wrapper">
                         {%- if item.original_line_price != item.final_line_price -%}
