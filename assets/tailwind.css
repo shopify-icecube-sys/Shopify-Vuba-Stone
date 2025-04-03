@@ -834,10 +834,6 @@ video {
   margin-bottom: 0.75rem;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -890,6 +886,10 @@ video {
   margin-inline-start: auto;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -932,6 +932,10 @@ video {
 
 .mt-auto {
   margin-top: auto;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .block {
@@ -1082,16 +1086,20 @@ video {
   width: 300px;
 }
 
-.w-\[320px\] {
-  width: 320px;
-}
-
 .w-\[45\%\] {
   width: 45%;
 }
 
 .w-full {
   width: 100%;
+}
+
+.w-\[520px\] {
+  width: 520px;
+}
+
+.w-\[320px\] {
+  width: 320px;
 }
 
 .max-w-2xl {
@@ -1271,11 +1279,6 @@ video {
   gap: 40px;
 }
 
-.gap-x-10 {
-  -moz-column-gap: 2.5rem;
-  column-gap: 2.5rem;
-}
-
 .gap-x-3 {
   -moz-column-gap: 0.75rem;
   column-gap: 0.75rem;
@@ -1318,6 +1321,11 @@ video {
 
 .gap-y-8 {
   row-gap: 2rem;
+}
+
+.gap-x-10 {
+  -moz-column-gap: 2.5rem;
+  column-gap: 2.5rem;
 }
 
 .space-x-5 > :not([hidden]) ~ :not([hidden]) {
@@ -1448,8 +1456,16 @@ video {
   border-bottom-width: 2px;
 }
 
+.border-t {
+  border-top-width: 1px;
+}
+
 .border-t-2 {
   border-top-width: 2px;
+}
+
+.border-b-\[1px\] {
+  border-bottom-width: 1px;
 }
 
 .border-\[\#707070\] {
@@ -1676,11 +1692,6 @@ video {
   padding-bottom: 1.75rem;
 }
 
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 .py-\[25px\] {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -1696,6 +1707,11 @@ video {
   padding-bottom: 6px;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1706,10 +1722,6 @@ video {
 
 .pb-14 {
   padding-bottom: 3.5rem;
-}
-
-.pb-3 {
-  padding-bottom: 0.75rem;
 }
 
 .pb-5 {
@@ -1842,6 +1854,14 @@ video {
 
 .pt-\[70px\] {
   padding-top: 70px;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
 }
 
 .text-left {
@@ -2103,17 +2123,11 @@ h6 {
   margin-bottom: 0.75rem;
 }
 
-p:not(:last-child),
-dl:not(:last-child),
-ul:not(:last-child),
-ol:not(:last-child) {
+p {
   margin-bottom: 0.8em;
 }
 
-p:empty,
-dl:empty,
-ol:empty,
-ul:empty {
+p:empty {
   display: none;
 }
 
@@ -2130,11 +2144,6 @@ p:last-child {
 figure > img,
 a > img {
   width: 100%;
-}
-
-a,
-span {
-  display: inline-block;
 }
 
 :root {
@@ -2917,10 +2926,6 @@ span {
     text-align: center;
   }
 
-  .md\:text-right {
-    text-align: right;
-  }
-
   .md\:text-start {
     text-align: start;
   }
@@ -3208,10 +3213,6 @@ span {
     margin-top: -250px;
   }
 
-  .xl\:mb-12 {
-    margin-bottom: 3rem;
-  }
-
   .xl\:mb-2 {
     margin-bottom: 0.5rem;
   }
@@ -3238,6 +3239,14 @@ span {
 
   .xl\:mt-6 {
     margin-top: 1.5rem;
+  }
+
+  .xl\:mb-12 {
+    margin-bottom: 3rem;
+  }
+
+  .xl\:mt-7 {
+    margin-top: 1.75rem;
   }
 
   .xl\:flex {
@@ -3306,10 +3315,6 @@ span {
 
   .xl\:border-\[3px\] {
     border-width: 3px;
-  }
-
-  .xl\:p-3 {
-    padding: 0.75rem;
   }
 
   .xl\:px-10 {
@@ -3504,10 +3509,6 @@ span {
 
   .\32xl\:p-10 {
     padding: 2.5rem;
-  }
-
-  .\32xl\:p-4 {
-    padding: 1rem;
   }
 
   .\32xl\:p-8 {
@@ -3783,12 +3784,16 @@ span {
     width: 325px;
   }
 
-  .\33xl\:w-\[540px\] {
-    width: 540px;
-  }
-
   .\33xl\:w-auto {
     width: auto;
+  }
+
+  .\33xl\:w-\[520px\] {
+    width: 520px;
+  }
+
+  .\33xl\:w-\[540px\] {
+    width: 540px;
   }
 
   .\33xl\:min-w-\[160px\] {
@@ -3875,11 +3880,6 @@ span {
     gap: 50px;
   }
 
-  .\33xl\:gap-x-24 {
-    -moz-column-gap: 6rem;
-    column-gap: 6rem;
-  }
-
   .\33xl\:gap-x-44 {
     -moz-column-gap: 11rem;
     column-gap: 11rem;
@@ -3899,6 +3899,11 @@ span {
 
   .\33xl\:gap-y-8 {
     row-gap: 2rem;
+  }
+
+  .\33xl\:gap-x-24 {
+    -moz-column-gap: 6rem;
+    column-gap: 6rem;
   }
 
   .\33xl\:space-x-5 > :not([hidden]) ~ :not([hidden]) {
@@ -4044,14 +4049,6 @@ span {
     padding-bottom: 0px;
   }
 
-  .\33xl\:pb-10 {
-    padding-bottom: 2.5rem;
-  }
-
-  .\33xl\:pb-12 {
-    padding-bottom: 3rem;
-  }
-
   .\33xl\:pb-14 {
     padding-bottom: 3.5rem;
   }
@@ -4074,10 +4071,6 @@ span {
 
   .\33xl\:pb-36 {
     padding-bottom: 9rem;
-  }
-
-  .\33xl\:pb-5 {
-    padding-bottom: 1.25rem;
   }
 
   .\33xl\:pb-8 {
@@ -4166,6 +4159,18 @@ span {
 
   .\33xl\:pt-\[95px\] {
     padding-top: 95px;
+  }
+
+  .\33xl\:pb-5 {
+    padding-bottom: 1.25rem;
+  }
+
+  .\33xl\:pb-10 {
+    padding-bottom: 2.5rem;
+  }
+
+  .\33xl\:pb-12 {
+    padding-bottom: 3rem;
   }
 
   .\33xl\:text-2xl {
