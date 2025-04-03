@@ -101,13 +101,21 @@
         "description_f3Ejiz": {
           "type": "description",
           "settings": {}
+        },
+        "buy_buttons_jb8yER": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
         }
       },
       "block_order": [
         "title_tbGbk6",
         "price_3A7f4j",
         "quantity_selector_ypjW9U",
-        "description_f3Ejiz"
+        "description_f3Ejiz",
+        "buy_buttons_jb8yER"
       ],
       "settings": {
         "enable_sticky_info": true,
