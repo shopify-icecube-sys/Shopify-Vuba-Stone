@@ -65,12 +65,14 @@
                       {{ block.settings.project_tag }}
                     </a>
                   {% endif %}
-                  <a
-                    class="px-3 py-1 hover:text-white bg-white hover:bg-primary border-[3px] border-white hover:border-primary rounded-full uppercase font-bold text-[11px] tracking-widest inline-block"
-                    href="#"
-                  >
-                    {{ block.settings.project_location }}
-                  </a>
+                  {% if block.settings.project_location != blank %}
+                    <a
+                      class="px-3 py-1 hover:text-white bg-white hover:bg-primary border-[3px] border-white hover:border-primary rounded-full uppercase font-bold text-[11px] tracking-widest inline-block"
+                      href="#"
+                    >
+                      {{ block.settings.project_location }}
+                    </a>
+                  {% endif %}
                 </div>
               </div>
               <div class="btn-wrap mt-5 text-center">
