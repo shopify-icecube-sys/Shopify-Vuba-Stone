@@ -23,7 +23,9 @@
                 {% endfor %}
               </div>
               <div class="btn-wrap mt-10 md:hidden">
-                <button class="btn btn-secondary">More Filters</button>
+                <button class="btn btn-secondary">
+                  {{ section.settings.more_filters_text }}
+                </button>
               </div>
             </div>
           {% endif %}
@@ -87,11 +89,17 @@
       "label": "Heading"
     },
     {
-    "type": "text",
-    "id": "view_more_text",
-    "label": "View More Button Text",
-    "default": "View More"
-  }
+      "type": "text",
+      "id": "view_more_text",
+      "label": "View More Button Text",
+      "default": "View More"
+    },
+    {
+      "type": "text",
+      "id": "more_filters_text",
+      "label": "More Filters Button Text",
+      "default": "More Filters"
+    }
   ],
   "blocks": [
     {
