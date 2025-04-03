@@ -83,53 +83,6 @@
         "padding_bottom": 12
       }
     },
-    "vuba_main_product_Bmr98g": {
-      "type": "vuba-main-product",
-      "blocks": {
-        "title_fQV9xt": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h1"
-          }
-        },
-        "variant_picker_apaWci": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
-          }
-        },
-        "price_UYKCzq": {
-          "type": "price",
-          "settings": {}
-        },
-        "quantity_selector_b9J9dB": {
-          "type": "quantity_selector",
-          "disabled": true,
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "title_fQV9xt",
-        "variant_picker_apaWci",
-        "price_UYKCzq",
-        "quantity_selector_b9J9dB"
-      ],
-      "settings": {
-        "product": "",
-        "color_scheme": "",
-        "secondary_background": false,
-        "media_size": "large",
-        "constrain_to_viewport": true,
-        "media_fit": "cover",
-        "media_position": "left",
-        "image_zoom": "lightbox",
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "related-products": {
       "type": "related-products",
       "disabled": true,
@@ -159,7 +112,6 @@
   },
   "order": [
     "main",
-    "vuba_main_product_Bmr98g",
     "related-products",
     "vuba_related_products_HD4kxg"
   ]
