@@ -6,9 +6,11 @@
           {{ section.settings.title }}
         </h2>
       {% endif %}
-      {% if section.settings.description != blank %}
-        {{ section.settings.description }}
-      {% endif %}
+      <div class="text-sm md:text-base 3xl:text-2xl mb-5">
+        {% if section.settings.description != blank %}
+          {{ section.settings.description }}
+        {% endif %}
+      </div>
 
       <div class="text-center pt-9 md:pt-20 xl:max-w-3xl 3xl:max-w-6xl mx-auto">
         {% if section.settings.desktop_image != blank %}
