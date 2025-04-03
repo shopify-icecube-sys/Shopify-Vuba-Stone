@@ -46,18 +46,6 @@ cart-items {
   pointer-events: none;
 }
 
-.cart__footer-wrapper:last-child .cart__footer {
-  padding-bottom: 5rem;
-}
-
-.cart__footer > div:only-child {
-  margin-left: auto;
-}
-
-.cart__footer > * + * {
-  margin-top: 6.5rem;
-}
-
 .cart__footer .discounts {
   margin-bottom: 1rem;
 }
@@ -116,14 +104,6 @@ cart-items {
     display: flex;
     justify-content: space-between;
     border: 0;
-  }
-
-  .cart__footer-wrapper:last-child {
-    padding-top: 0;
-  }
-
-  .cart__footer > * {
-    width: 35rem;
   }
 
   .cart__footer > * + * {
