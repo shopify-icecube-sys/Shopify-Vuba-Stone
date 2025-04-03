@@ -38,11 +38,12 @@
                   >
                     {{- block.settings.text -}}
                   </p>
-                  <div class="mb-7 xl:mb-12 3xl:mb-24">
                 {%- when 'title' -%}
-                  <h2 class="text-2xl 3xl:text-[44px] font-semibold mb-3 leading-[1.5]">{{ product.title }}</h2>
+                  <h2 class="text-2xl 3xl:text-[44px] font-semibold mb-3 leading-[1.5]" {{ block.shopify_attributes }}>
+                    {{ product.title }}
+                  </h2>
                 {%- when 'price' -%}
-                  <span class="inline-block mb-3">{{ product.price | money }}</span>
+                  <span class="inline-block mb-3" {{ block.shopify_attributes }}>{{ product.price | money }}</span>
                 {%- when 'inventory' -%}
                   <p
                     class="product__inventory{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.inventory_management != 'shopify' %} visibility-hidden{% endif %}"
@@ -100,7 +101,6 @@
                       {{ product.description }}
                     </div>
                   {%- endif -%}
-                  </div>
                 {%- when 'sku' -%}
                   <p
                     class="product__sku{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.sku.size == 0 %} visibility-hidden{% endif %}"
