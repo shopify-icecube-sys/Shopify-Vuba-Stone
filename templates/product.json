@@ -89,10 +89,20 @@
         "title_tbGbk6": {
           "type": "title",
           "settings": {}
+        },
+        "price_3A7f4j": {
+          "type": "price",
+          "settings": {}
+        },
+        "description_f3Ejiz": {
+          "type": "description",
+          "settings": {}
         }
       },
       "block_order": [
-        "title_tbGbk6"
+        "title_tbGbk6",
+        "price_3A7f4j",
+        "description_f3Ejiz"
       ],
       "settings": {
         "enable_sticky_info": true,
