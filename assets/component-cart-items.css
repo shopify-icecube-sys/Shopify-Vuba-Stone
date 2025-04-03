@@ -256,17 +256,8 @@ cart-remove-button .icon-remove {
     display: table;
   }
 
-  .cart-items td {
-    vertical-align: top;
-    padding-top: 4rem;
-  }
-
   .cart-item {
     display: table-row;
-  }
-
-  .cart-item > td + td {
-    padding-left: 4rem;
   }
 
   .cart-item__media {
