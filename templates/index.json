@@ -178,11 +178,38 @@
             "filter_title": "FILTER BY JOB",
             "filter_options": ""
           }
+        },
+        "project_8rb9eG": {
+          "type": "project",
+          "settings": {
+            "project_image": "shopify://shop_images/epoxy-vuba-2.jpg",
+            "project_tag": "",
+            "project_location": ""
+          }
+        },
+        "project_WQCKwx": {
+          "type": "project",
+          "settings": {
+            "project_image": "shopify://shop_images/epoxy-vuba-1.jpg",
+            "project_tag": "",
+            "project_location": ""
+          }
+        },
+        "project_NfCHfh": {
+          "type": "project",
+          "settings": {
+            "project_image": "shopify://shop_images/epoxy-vuba-2.jpg",
+            "project_tag": "",
+            "project_location": ""
+          }
         }
       },
       "block_order": [
         "filter_bRCNNq",
-        "filter_QAHjyU"
+        "filter_QAHjyU",
+        "project_8rb9eG",
+        "project_WQCKwx",
+        "project_NfCHfh"
       ],
       "settings": {
         "heading": "Use our filters to inspire your imagination",
