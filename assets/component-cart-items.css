@@ -209,8 +209,8 @@ cart-remove-button .icon-remove {
     display: table-row;
   }
 
-  .cart-item__media {
-    width: 10rem;
+  table tbody .cart-item__media {
+    min-width: 10rem;
   }
 
   .cart-item__error {
