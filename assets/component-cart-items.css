@@ -298,10 +298,6 @@ cart-remove-button .icon-remove {
     padding-left: 4rem;
   }
 
-  .cart-item__details {
-    width: 35rem;
-  }
-
   .cart-item__media {
     width: 10rem;
   }
@@ -319,14 +315,6 @@ cart-remove-button .icon-remove {
   .cart-item .cart-item__quantity,
   .cart-items .cart-items__heading--wide {
     padding-left: 6rem;
-  }
-
-  .cart-item__details {
-    width: 50rem;
-  }
-
-  .cart-items thead th:first-child {
-    width: 60%;
   }
 }
 
