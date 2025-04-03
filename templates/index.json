@@ -87,11 +87,19 @@
         "view_more_text": "View More",
         "more_filters_text": "More Filters"
       }
+    },
+    "vuba_world_blends_VrDpYk": {
+      "type": "vuba-world-blends",
+      "settings": {
+        "heading": "Vuba World Blends",
+        "collection": "vuba-america"
+      }
     }
   },
   "order": [
     "vuba_banner_image_kFLjhb",
     "vuba_richtext_6J9PEW",
-    "vuba_category_QkLqQQ"
+    "vuba_category_QkLqQQ",
+    "vuba_world_blends_VrDpYk"
   ]
 }
