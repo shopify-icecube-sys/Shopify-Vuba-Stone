@@ -91,10 +91,29 @@
           "settings": {
             "heading_size": "h1"
           }
+        },
+        "variant_picker_apaWci": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "price_UYKCzq": {
+          "type": "price",
+          "settings": {}
+        },
+        "quantity_selector_b9J9dB": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
         }
       },
       "block_order": [
-        "title_fQV9xt"
+        "title_fQV9xt",
+        "variant_picker_apaWci",
+        "price_UYKCzq",
+        "quantity_selector_b9J9dB"
       ],
       "settings": {
         "product": "",
