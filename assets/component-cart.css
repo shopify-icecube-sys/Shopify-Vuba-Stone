@@ -40,10 +40,6 @@ cart-items {
   pointer-events: none;
 }
 
-.cart__footer .discounts {
-  margin-bottom: 1rem;
-}
-
 .cart__note {
   height: fit-content;
   top: 2.5rem;
