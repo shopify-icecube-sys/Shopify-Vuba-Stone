@@ -8,11 +8,15 @@
     <div class="inner-container">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-10 3xl:gap-40">
         <div class="flex justify-center items-start">
-          <img
-            src="{{ product.featured_image | img_url: '540x540' }}"
-            class="w-[320px] rounded-full 3xl:w-[540px]"
-            alt="{{ product.title }}"
-          >
+          {% if product.featured_image != blank %}
+            <img
+              src="{{ product.featured_image | img_url: '540x540' }}"
+              class="w-[320px] rounded-full 3xl:w-[540px]"
+              alt="{{ product.title }}"
+            >
+          {% else %}
+            {{ 'product-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+          {% endif %}
         </div>
         <div class="col-right text-sm 3xl:text-lg">
           <div class="mb-7 xl:mb-12 3xl:mb-24">
