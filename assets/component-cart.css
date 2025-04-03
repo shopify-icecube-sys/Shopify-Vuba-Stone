@@ -95,21 +95,6 @@ cart-items {
   .cart__contents > * + * {
     margin-top: 0;
   }
-
-  .cart__items + .cart__footer {
-    grid-column: 2;
-  }
-
-  .cart__footer {
-    display: flex;
-    justify-content: space-between;
-    border: 0;
-  }
-
-  .cart__footer > * + * {
-    margin-left: 4rem;
-    margin-top: 0;
-  }
 }
 
 .cart__ctas button {
