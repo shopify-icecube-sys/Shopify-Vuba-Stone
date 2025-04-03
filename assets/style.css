@@ -10,3 +10,10 @@ body {
 .text-right {
   text-align: right;
 }
+dl:not(:last-child) {
+  margin-bottom: 0.8em;
+}
+p:empty,
+dl:empty {
+  display: none;
+}
