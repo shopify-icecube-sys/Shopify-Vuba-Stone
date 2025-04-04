@@ -141,6 +141,10 @@ quantity-popover quick-order-list-remove-button .button {
   -webkit-appearance: none;
   appearance: none;
 }
+.quantity__button svg {
+  width: 1rem;
+  pointer-events: none;
+}
 @media screen and (max-width: 989px) {
   .quantity-popover__info.global-settings-popup {
     left: 0;
