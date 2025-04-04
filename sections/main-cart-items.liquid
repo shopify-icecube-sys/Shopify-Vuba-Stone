@@ -369,7 +369,11 @@
                             {%- endif -%}
                           </div>
                         {%- endif -%}
-                        <div class="cart-item__error" id="Line-item-error-{{ item.index | plus: 1 }}" role="alert">
+                        <div
+                          class="cart-item__error hidden"
+                          id="Line-item-error-{{ item.index | plus: 1 }}"
+                          role="alert"
+                        >
                           <small class="cart-item__error-text"></small>
                           <svg
                             aria-hidden="true"
