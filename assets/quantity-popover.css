@@ -1,12 +1,3 @@
-:root {
-  --color-foreground: 18, 18, 18;
-  --font-body-scale: 1;
-  --inputs-border-width: 1px;
-  --inputs-radius: 0px;
-  --inputs-border-width: 1px;
-  --inputs-border-width: 1px;
-  --duration-short: 0.1s;
-}
 quantity-popover {
   position: relative;
   display: block;
@@ -77,12 +68,8 @@ quantity-popover quick-order-list-remove-button .button {
   transition: transform var(--duration-default) ease;
 }
 .quantity {
-  color: rgba(var(--color-foreground));
   position: relative;
-  width: calc(14rem / var(--font-body-scale) + var(--inputs-border-width) * 2);
   display: flex;
-  border-radius: var(--inputs-radius);
-  min-height: calc((var(--inputs-border-width) * 2) + 4.5rem);
 }
 .quantity:before {
   background: rgb(var(--color-background));
