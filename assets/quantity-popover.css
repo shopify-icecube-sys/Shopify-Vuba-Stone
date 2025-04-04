@@ -70,6 +70,9 @@ quantity-popover quick-order-list-remove-button .button {
 .quantity {
   position: relative;
   display: flex;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #821832;
 }
 .quantity__button {
   min-width: 2.5rem;
