@@ -1,6 +1,7 @@
 :root {
   --color-foreground: 18, 18, 18;
   --font-body-scale: 1;
+  --inputs-border-width: 1px;
 }
 quantity-popover {
   position: relative;
