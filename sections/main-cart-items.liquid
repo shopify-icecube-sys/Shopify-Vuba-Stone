@@ -248,9 +248,8 @@
                                 <span class="visually-hidden">
                                   {{- 'products.product.quantity.decrease' | t: product: item.product.title | escape -}}
                                 </span>
-                                <span class="svg-wrapper">
-                                  {{- 'icon-minus.svg' | inline_asset_content -}}
-                                </span>
+                                {{- 'icon-minus.svg' | inline_asset_content -}}
+                                <span class="svg-wrapper hidden"> </span>
                               </button>
                               <input
                                 class="quantity__input"
@@ -275,9 +274,8 @@
                                 <span class="visually-hidden">
                                   {{- 'products.product.quantity.increase' | t: product: item.product.title | escape -}}
                                 </span>
-                                <span class="svg-wrapper">
-                                  {{- 'icon-plus.svg' | inline_asset_content -}}
-                                </span>
+                                {{- 'icon-plus.svg' | inline_asset_content -}}
+                                <span class="svg-wrapper hidden"> </span>
                               </button>
                             </quantity-input>
                           </div>
