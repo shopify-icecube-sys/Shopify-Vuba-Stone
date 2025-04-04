@@ -282,7 +282,7 @@
                               class="button button--tertiary"
                               aria-label="{{ 'sections.cart.remove_title' | t: title: item.title }}"
                             >
-                              {% render 'icon-remove' %}
+                              {{- 'icon-remove.svg' | inline_asset_content -}}
                             </a>
                           </cart-remove-button>
                         </div>
