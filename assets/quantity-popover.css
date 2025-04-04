@@ -91,6 +91,7 @@ quantity-popover quick-order-list-remove-button .button {
   appearance: none;
   outline: none;
   width: 5rem;
+  -moz-appearance: textfield;
 }
 .quantity__input::-webkit-outer-spin-button,
 .quantity__input::-webkit-inner-spin-button {
@@ -98,10 +99,6 @@ quantity-popover quick-order-list-remove-button .button {
   margin: 0;
 }
 
-.quantity__input {
-  -moz-appearance: textfield;
-  text-align: center; /* Center text properly */
-}
 .quantity__button svg {
   width: 1rem;
   pointer-events: none;
