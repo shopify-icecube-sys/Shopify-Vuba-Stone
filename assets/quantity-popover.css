@@ -67,7 +67,29 @@ quantity-popover quick-order-list-remove-button .button {
 .quantity-popover__info-button--icon-only svg {
   transition: transform var(--duration-default) ease;
 }
-
+.quantity {
+  color: rgba(var(--color-foreground));
+  position: relative;
+  width: calc(14rem / var(--font-body-scale) + var(--inputs-border-width) * 2);
+  display: flex;
+  border-radius: var(--inputs-radius);
+  min-height: calc((var(--inputs-border-width) * 2) + 4.5rem);
+}
+.quantity:before {
+  background: rgb(var(--color-background));
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--inputs-radius-outset);
+  box-shadow: var(--inputs-shadow-horizontal-offset)
+    var(--inputs-shadow-vertical-offset) var(--inputs-shadow-blur-radius)
+    rgba(var(--color-shadow), var(--inputs-shadow-opacity));
+  z-index: -1;
+}
 @media screen and (max-width: 989px) {
   .quantity-popover__info.global-settings-popup {
     left: 0;
