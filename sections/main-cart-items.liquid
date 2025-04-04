@@ -292,7 +292,7 @@
                             class="quantity-popover__info-button quantity-popover__info-button--icon-with-label button button--tertiary medium-hide large-up-hide"
                             aria-expanded="false"
                           >
-                            {% render 'icon-info' %}
+                            {{- 'icon-info.svg' | inline_asset_content -}}
                             <span>
                               {%- if has_vol_pricing -%}
                                 {{ 'products.product.volume_pricing.note' | t }}
