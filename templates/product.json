@@ -94,7 +94,7 @@
           "type": "price",
           "settings": {}
         },
-        "quantity_selector_ypjW9U": {
+        "quantity_selector_dT6zbK": {
           "type": "quantity_selector",
           "settings": {}
         },
@@ -113,7 +113,7 @@
       "block_order": [
         "title_tbGbk6",
         "price_3A7f4j",
-        "quantity_selector_ypjW9U",
+        "quantity_selector_dT6zbK",
         "description_f3Ejiz",
         "buy_buttons_jb8yER"
       ],
