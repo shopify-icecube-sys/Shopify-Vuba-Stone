@@ -23,7 +23,7 @@
         assign show_dynamic_checkout = true
       endif
     -%}
-
+    <button class="btn btn-outline-primary">Order Sample</button>
     <product-form
       class="product-form"
       data-hide-errors="{{ gift_card_recipient_feature_active }}"
@@ -150,5 +150,4 @@
 
     <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
   {%- endif -%}
-  <button class="btn btn-outline-primary">Order Sample</button>
 </div>
