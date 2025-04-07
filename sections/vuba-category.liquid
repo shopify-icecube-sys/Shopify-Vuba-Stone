@@ -1,6 +1,6 @@
 <section class="filter-inspire-imagination">
   <div class="container">
-    <div class="py-16 3xl:py-24 w-full text-center">
+    <div class="py-16 3xl:py-24 w-full text-center ">
       {% if section.settings.heading != blank %}
         <h2 class="text-2xl 3xl:text-[44px] text-secondary font-semibold inline-block leading-[1.2]">
           {{ section.settings.heading }}
@@ -9,35 +9,39 @@
     </div>
 
     <div class="flex flex-col md:flex-row gap-10 pb-14 3xl:pb-24">
-      <!-- Sidebar Filters -->
       <aside class="w-full md:w-1/4 gap-y-10 flex flex-wrap flex-col">
-        {% for filter in section.settings.project_filters.value %}
-          <div class="col">
-            <h3 class="text-2xl 3xl:text-4xl font-semibold border-b-2 border-[#707070] pb-5 mb-7">
-              {{ filter.filter_name }}
-            </h3>
-            <div class="flex flex-wrap gap-2 items-end">
-              {% for option in filter.filter_options %}
-                <button
-                  class="filter-btn px-4 py-2 text-primary hover:text-white hover:bg-primary border-[3px] border-primary rounded-full uppercase font-bold text-xs tracking-widest"
-                  data-filter="{{ option }}"
-                >
-                  {{ option }}
-                </button>
-              {% endfor %}
+        {% for block in section.blocks %}
+          {% if block.type == 'filter' %}
+            <div class="col">
+              {% if block.settings.filter_title != blank %}
+                <h3 class="text-2xl 3xl:text-4xl font-semibold border-b-2 border-[#707070] pb-5 mb-7">
+                  {{ block.settings.filter_title }}
+                </h3>
+              {% endif %}
+              <div class="flex flex-wrap gap-2 items-end">
+                {% assign filter_options = block.settings.filter_options | split: ',' %}
+                {% for option in filter_options %}
+                  <button class="px-4 py-2 text-primary hover:text-white hover:bg-primary border-[3px] border-primary rounded-full uppercase font-bold text-xs tracking-widest">
+                    {{ option | strip }}
+                  </button>
+                {% endfor %}
+              </div>
+              {% if section.settings.more_filters_text != blank %}
+                <div class="btn-wrap mt-10 md:hidden">
+                  <button class="btn btn-secondary">
+                    {{ section.settings.more_filters_text }}
+                  </button>
+                </div>
+              {% endif %}
             </div>
-          </div>
+          {% endif %}
         {% endfor %}
       </aside>
 
-      <!-- Projects Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 w-full md:w-[75%]">
         {% for block in section.blocks %}
           {% if block.type == 'project' %}
-            <div
-              class="project-item bg-white rounded-2xl overflow-hidden relative"
-              data-tags="{{ block.settings.project_tag }}"
-            >
+            <div class="bg-white rounded-2xl overflow-hidden relative">
               {% if block.settings.project_image != blank %}
                 <img
                   src="{{ block.settings.project_image | img_url: '600x600' }}"
@@ -56,6 +60,7 @@
                   {% if block.settings.project_tag != blank %}
                     <a
                       class="px-3 py-1 hover:text-white bg-white hover:bg-primary border-[3px] border-white hover:border-primary rounded-full uppercase font-bold text-[11px] tracking-widest inline-block"
+                      href="#"
                     >
                       {{ block.settings.project_tag }}
                     </a>
@@ -63,12 +68,20 @@
                   {% if block.settings.project_location != blank %}
                     <a
                       class="px-3 py-1 hover:text-white bg-white hover:bg-primary border-[3px] border-white hover:border-primary rounded-full uppercase font-bold text-[11px] tracking-widest inline-block"
+                      href="#"
                     >
                       {{ block.settings.project_location }}
                     </a>
                   {% endif %}
                 </div>
               </div>
+              {% if section.settings.view_more_text != blank %}
+                <div class="btn-wrap mt-5 text-center">
+                  <button class="btn btn-primary">
+                    {{ section.settings.view_more_text }}
+                  </button>
+                </div>
+              {% endif %}
             </div>
           {% endif %}
         {% endfor %}
@@ -76,25 +89,6 @@
     </div>
   </div>
 </section>
-
-<!-- Filtering Script -->
-<script>
-  document.querySelectorAll('.filter-btn').forEach(button => {
-    button.addEventListener('click', function() {
-      let selectedFilter = this.getAttribute('data-filter');
-      let projects = document.querySelectorAll('.project-item');
-
-      projects.forEach(project => {
-        let tags = project.getAttribute('data-tags');
-        if (tags.includes(selectedFilter) || selectedFilter === "All") {
-          project.style.display = "block";
-        } else {
-          project.style.display = "none";
-        }
-      });
-    });
-  });
-</script>
 
 {% schema %}
 {
@@ -117,15 +111,26 @@
       "id": "more_filters_text",
       "label": "More Filters Button Text",
       "default": "More Filters"
-    },
-    {
-      "type": "metaobject",
-      "id": "project_filters",
-      "label": "Select Filters",
-      "metaobject_type": "project_filters"
     }
   ],
   "blocks": [
+    {
+      "type": "filter",
+      "name": "Filter",
+      "settings": [
+        {
+          "type": "text",
+          "id": "filter_title",
+          "label": "Filter Title"
+        },
+        {
+          "type": "textarea",
+          "id": "filter_options",
+          "label": "Filter Options (comma-separated)",
+          "default": "Red and Purple, Yellow and Warm, Light and Neutral"
+        }
+      ]
+    },
     {
       "type": "project",
       "name": "Project",
@@ -151,7 +156,31 @@
   "presets": [
     {
       "name": "Vuba Category",
-      "category": "Custom"
+      "category": "Custom",
+      "blocks": [
+        {
+          "type": "filter",
+          "settings": {
+            "filter_title": "Filter by colour",
+            "filter_options": "Red and Purple, Yellow and Warm, Light and Neutral"
+          }
+        },
+        {
+          "type": "filter",
+          "settings": {
+            "filter_title": "Job Type",
+            "filter_options": "Residential, Commercial"
+          }
+        },
+        {
+          "type": "project",
+          "settings": {
+            "project_image": "",
+            "project_tag": "Swimming pool",
+            "project_location": "Yosemite"
+          }
+        }
+      ]
     }
   ]
 }
