@@ -1,31 +1,53 @@
 {% comment %}
-  Dynamic Project Filters - Shopify Section
-  - Allows users to select a collection dynamically from the Shopify Admin.
-  - Displays products from the selected collection.
-  - Debugging messages included if no products are found.
+  Dynamic Project Filters - Shopify Section with Filtering
+  - Allows users to filter products dynamically.
+  - Uses metaobjects for filter options.
+  - Debugging messages included for missing products or filters.
 {% endcomment %}
 
 <section class="project-filters">
   {% assign collection = section.settings.collection %}
+  {% assign selected_filter = section.settings.filter_tag %}
 
-  {% if collection != blank and collection.products.size > 0 %}
-    <h2>{{ collection.title }}</h2>
-    <div class="product-grid">
-      {% for product in collection.products %}
-        <div class="product-item">
-          <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
-          <h3>{{ product.title }}</h3>
-          <p>{{ product.price | money }}</p>
-          <a href="{{ product.url }}">View product</a>
-        </div>
+  <div class="filter-options">
+    <label for="filter-dropdown">Filter by:</label>
+    <select id="filter-dropdown">
+      <option value="all">All</option>
+      {% for tag in collection.all_tags %}
+        <option
+          value="{{ tag }}"
+          {% if selected_filter == tag %}
+            selected
+          {% endif %}
+        >
+          {{ tag }}
+        </option>
       {% endfor %}
-    </div>
-  {% else %}
-    <p>No products found in the selected collection.</p>
-  {% endif %}
+    </select>
+  </div>
+
+  <div class="product-grid">
+    {% if collection != blank and collection.products.size > 0 %}
+      {% for product in collection.products %}
+        {% if selected_filter == 'all' or product.tags contains selected_filter %}
+          <div class="product-item" data-tags="{{ product.tags | join: ',' }}">
+            <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+            <h3>{{ product.title }}</h3>
+            <p>{{ product.price | money }}</p>
+            <a href="{{ product.url }}">View product</a>
+          </div>
+        {% endif %}
+      {% endfor %}
+    {% else %}
+      <p>No products found in the selected collection.</p>
+    {% endif %}
+  </div>
 </section>
 
 <style>
+  .filter-options {
+    margin-bottom: 15px;
+  }
   .product-grid {
     display: flex;
     flex-wrap: wrap;
@@ -42,6 +64,22 @@
   }
 </style>
 
+<script>
+  document.getElementById('filter-dropdown').addEventListener('change', function() {
+    var selectedTag = this.value;
+    var products = document.querySelectorAll('.product-item');
+
+    products.forEach(function(product) {
+      var tags = product.getAttribute('data-tags').split(',');
+      if (selectedTag === 'all' || tags.includes(selectedTag)) {
+        product.style.display = 'block';
+      } else {
+        product.style.display = 'none';
+      }
+    });
+  });
+</script>
+
 {% schema %}
 {
   "name": "Dynamic Project Filters",
@@ -50,6 +88,12 @@
       "type": "collection",
       "id": "collection",
       "label": "Choose Collection"
+    },
+    {
+      "type": "text",
+      "id": "filter_tag",
+      "label": "Default Filter Tag",
+      "default": "all"
     },
     {
       "type": "range",
