@@ -39,11 +39,49 @@
         "heading": "Vuba World Blends",
         "collection": "vuba-america"
       }
+    },
+    "vuba_category_t4giWC": {
+      "type": "vuba-category",
+      "blocks": {
+        "filter_DxgNUM": {
+          "type": "filter",
+          "settings": {
+            "filter_title": "Filter by colour",
+            "filter_options": "Red and Purple, Yellow and Warm, Light and Neutral"
+          }
+        },
+        "filter_FBQttQ": {
+          "type": "filter",
+          "settings": {
+            "filter_title": "Job Type",
+            "filter_options": "Residential, Commercial"
+          }
+        },
+        "project_g4E3rj": {
+          "type": "project",
+          "settings": {
+            "project_image": "shopify://shop_images/IMG_0554_1_1.jpg",
+            "project_tag": "Swimming pool",
+            "project_location": "Yosemite"
+          }
+        }
+      },
+      "block_order": [
+        "filter_DxgNUM",
+        "filter_FBQttQ",
+        "project_g4E3rj"
+      ],
+      "settings": {
+        "heading": "Heading",
+        "view_more_text": "View More",
+        "more_filters_text": "More Filters"
+      }
     }
   },
   "order": [
     "vuba_banner_image_kFLjhb",
     "vuba_richtext_6J9PEW",
-    "vuba_world_blends_VrDpYk"
+    "vuba_world_blends_VrDpYk",
+    "vuba_category_t4giWC"
   ]
 }
