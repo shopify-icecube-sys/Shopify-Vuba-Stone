@@ -12,23 +12,31 @@
       <!-- Sidebar Filters (Admin-Managed) -->
       <aside class="w-full md:w-1/4 gap-y-10 flex flex-wrap flex-col">
         {% if section.settings.project_filters != blank %}
-          {% for filter in section.settings.project_filters.value %}
-            <div class="col">
-              <h3 class="text-2xl 3xl:text-4xl font-semibold border-b-2 border-[#707070] pb-5 mb-7">
-                {{ filter.filter_name }}
-              </h3>
-              <div class="flex flex-wrap gap-2 items-end">
-                {% for option in filter.filter_options %}
-                  <button
-                    class="filter-btn px-4 py-2 text-primary hover:text-white hover:bg-primary border-[3px] border-primary rounded-full uppercase font-bold text-xs tracking-widest"
-                    data-filter="{{ option }}"
-                  >
-                    {{ option }}
-                  </button>
-                {% endfor %}
-              </div>
-            </div>
-          {% endfor %}
+          {% assign selected_filters = section.settings.project_filters.value %}
+
+          {% if selected_filters.size > 0 %}
+            {% for filter in selected_filters %}
+              {% if filter.filter_options.size > 0 %}
+                <div class="col">
+                  <h3 class="text-2xl 3xl:text-4xl font-semibold border-b-2 border-[#707070] pb-5 mb-7">
+                    {{ filter.filter_name }}
+                  </h3>
+                  <div class="flex flex-wrap gap-2 items-end">
+                    {% for option in filter.filter_options %}
+                      <button
+                        class="filter-btn px-4 py-2 text-primary hover:text-white hover:bg-primary border-[3px] border-primary rounded-full uppercase font-bold text-xs tracking-widest"
+                        data-filter="{{ option }}"
+                      >
+                        {{ option }}
+                      </button>
+                    {% endfor %}
+                  </div>
+                </div>
+              {% endif %}
+            {% endfor %}
+          {% else %}
+            <p>No filters selected. Please choose filters in Shopify Admin.</p>
+          {% endif %}
         {% else %}
           <p>No filters available. Please add filters in Shopify Admin.</p>
         {% endif %}
@@ -75,17 +83,27 @@
 <!-- Filtering Script -->
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    document.querySelectorAll('.filter-btn').forEach(button => {
-      button.addEventListener('click', function() {
-        let selectedFilter = this.getAttribute('data-filter');
-        let collections = document.querySelectorAll('.project-item');
+    let buttons = document.querySelectorAll(".filter-btn");
+    let collections = document.querySelectorAll(".project-item");
 
+    // Initially show all collections
+    collections.forEach(collection => collection.style.display = "block");
+
+    buttons.forEach(button => {
+      button.addEventListener("click", function() {
+        let selectedFilter = this.getAttribute("data-filter");
+
+        // Toggle active class
+        buttons.forEach(btn => btn.classList.remove("active"));
+        this.classList.add("active");
+
+        // Show only collections that match the selected filter
         collections.forEach(collection => {
-          let tags = collection.getAttribute('data-tags').split(',');
+          let tags = collection.getAttribute("data-tags")?.split(",");
           if (tags.includes(selectedFilter)) {
-            collection.style.display = "block"; // Show matched collections
+            collection.style.display = "block";
           } else {
-            collection.style.display = "none"; // Hide non-matching collections
+            collection.style.display = "none";
           }
         });
       });
