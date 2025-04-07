@@ -1,42 +1,70 @@
+{% comment %}
+  Dynamic Project Filters - Shopify Section
+  - Allows users to select a collection dynamically from the Shopify Admin.
+  - Displays products from the selected collection.
+  - Debugging messages included if no products are found.
+{% endcomment %}
+
+<section class="project-filters">
+  {% assign collection = section.settings.collection %}
+
+  {% if collection != blank and collection.products.size > 0 %}
+    <h2>{{ collection.title }}</h2>
+    <div class="product-grid">
+      {% for product in collection.products %}
+        <div class="product-item">
+          <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+          <h3>{{ product.title }}</h3>
+          <p>{{ product.price | money }}</p>
+          <a href="{{ product.url }}">View product</a>
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p>No products found in the selected collection.</p>
+  {% endif %}
+</section>
+
+<style>
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .product-item {
+    width: 200px;
+    text-align: center;
+  }
+  .product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+</style>
+
 {% schema %}
 {
   "name": "Dynamic Project Filters",
   "settings": [
     {
-      "type": "metaobject",
-      "id": "project_filters",
-      "label": "Select Filter Set",
-      "metaobject_type": "project_filters"
-    },
-    {
       "type": "collection",
-      "id": "selected_collection",
-      "label": "Choose Collection",
-      "info": "Select the collection of projects to display."
+      "id": "collection",
+      "label": "Choose Collection"
     },
     {
       "type": "range",
       "id": "product_limit",
-      "label": "Number of Products to Show",
-      "min": 3,
+      "min": 1,
       "max": 20,
       "step": 1,
-      "default": 9
-    },
-    {
-      "type": "checkbox",
-      "id": "enable_filters",
-      "label": "Enable Filters",
-      "default": true
+      "default": 10,
+      "label": "Number of Products to Show"
     }
   ],
   "presets": [
     {
-      "name": "Dynamic Filters with Products",
-      "settings": {
-        "enable_filters": true,
-        "product_limit": 9
-      }
+      "name": "Dynamic Project Filters",
+      "category": "Custom"
     }
   ]
 }
