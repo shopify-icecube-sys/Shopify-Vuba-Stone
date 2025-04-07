@@ -33,61 +33,6 @@
         "richtext": "<p>We are preferred surface for household names, big brands and homeowners worldwide. Proudly BBA certified, a testament to our quality and excellence.</p>"
       }
     },
-    "vuba_category_QkLqQQ": {
-      "type": "vuba-category",
-      "blocks": {
-        "filter_bRCNNq": {
-          "type": "filter",
-          "settings": {
-            "filter_title": "FILTER BY COLOUR",
-            "filter_options": ""
-          }
-        },
-        "filter_QAHjyU": {
-          "type": "filter",
-          "settings": {
-            "filter_title": "FILTER BY JOB",
-            "filter_options": ""
-          }
-        },
-        "project_8rb9eG": {
-          "type": "project",
-          "settings": {
-            "project_image": "shopify://shop_images/epoxy-vuba-2.jpg",
-            "project_tag": "red color",
-            "project_location": ""
-          }
-        },
-        "project_WQCKwx": {
-          "type": "project",
-          "settings": {
-            "project_image": "shopify://shop_images/epoxy-vuba-1.jpg",
-            "project_tag": "",
-            "project_location": ""
-          }
-        },
-        "project_NfCHfh": {
-          "type": "project",
-          "settings": {
-            "project_image": "shopify://shop_images/epoxy-vuba-2.jpg",
-            "project_tag": "",
-            "project_location": ""
-          }
-        }
-      },
-      "block_order": [
-        "filter_bRCNNq",
-        "filter_QAHjyU",
-        "project_8rb9eG",
-        "project_WQCKwx",
-        "project_NfCHfh"
-      ],
-      "settings": {
-        "heading": "Use our filters to inspire your imagination",
-        "view_more_text": "View More",
-        "more_filters_text": "More Filters"
-      }
-    },
     "vuba_world_blends_VrDpYk": {
       "type": "vuba-world-blends",
       "settings": {
@@ -99,7 +44,6 @@
   "order": [
     "vuba_banner_image_kFLjhb",
     "vuba_richtext_6J9PEW",
-    "vuba_category_QkLqQQ",
     "vuba_world_blends_VrDpYk"
   ]
 }
