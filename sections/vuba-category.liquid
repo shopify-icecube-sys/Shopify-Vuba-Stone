@@ -1,6 +1,6 @@
 <section class="filter-inspire-imagination">
   <div class="container">
-    <div class="py-16 3xl:py-24 w-full text-center ">
+    <div class="py-16 3xl:py-24 w-full text-center">
       {% if section.settings.heading != blank %}
         <h2 class="text-2xl 3xl:text-[44px] text-secondary font-semibold inline-block leading-[1.2]">
           {{ section.settings.heading }}
@@ -9,44 +9,44 @@
     </div>
 
     <div class="flex flex-col md:flex-row gap-10 pb-14 3xl:pb-24">
+      <!-- Sidebar Filters (Admin-Managed) -->
       <aside class="w-full md:w-1/4 gap-y-10 flex flex-wrap flex-col">
-        {% for block in section.blocks %}
-          {% if block.type == 'filter' %}
+        {% if section.settings.project_filters != blank %}
+          {% for filter in section.settings.project_filters.value %}
             <div class="col">
-              {% if block.settings.filter_title != blank %}
-                <h3 class="text-2xl 3xl:text-4xl font-semibold border-b-2 border-[#707070] pb-5 mb-7">
-                  {{ block.settings.filter_title }}
-                </h3>
-              {% endif %}
+              <h3 class="text-2xl 3xl:text-4xl font-semibold border-b-2 border-[#707070] pb-5 mb-7">
+                {{ filter.filter_name }}
+              </h3>
               <div class="flex flex-wrap gap-2 items-end">
-                {% assign filter_options = block.settings.filter_options | split: ',' %}
-                {% for option in filter_options %}
-                  <button class="px-4 py-2 text-primary hover:text-white hover:bg-primary border-[3px] border-primary rounded-full uppercase font-bold text-xs tracking-widest">
-                    {{ option | strip }}
+                {% for option in filter.filter_options %}
+                  <button
+                    class="filter-btn px-4 py-2 text-primary hover:text-white hover:bg-primary border-[3px] border-primary rounded-full uppercase font-bold text-xs tracking-widest"
+                    data-filter="{{ option }}"
+                  >
+                    {{ option }}
                   </button>
                 {% endfor %}
               </div>
-              {% if section.settings.more_filters_text != blank %}
-                <div class="btn-wrap mt-10 md:hidden">
-                  <button class="btn btn-secondary">
-                    {{ section.settings.more_filters_text }}
-                  </button>
-                </div>
-              {% endif %}
             </div>
-          {% endif %}
-        {% endfor %}
+          {% endfor %}
+        {% else %}
+          <p>No filters available. Please add filters in Shopify Admin.</p>
+        {% endif %}
       </aside>
 
+      <!-- Dynamic Collection Grid (Admin-Selected) -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 w-full md:w-[75%]">
         {% for block in section.blocks %}
-          {% if block.type == 'project' %}
-            <div class="bg-white rounded-2xl overflow-hidden relative">
-              {% if block.settings.project_image != blank %}
+          {% if block.type == 'collection_project' %}
+            <div
+              class="project-item bg-white rounded-2xl overflow-hidden relative"
+              data-tags="{{ block.settings.collection_filter_value }}"
+            >
+              {% if block.settings.collection_image != blank %}
                 <img
-                  src="{{ block.settings.project_image | img_url: '600x600' }}"
+                  src="{{ block.settings.collection_image | img_url: '600x600' }}"
                   class="w-full aspect-square object-cover h-full"
-                  alt="Project Image"
+                  alt="Collection Image"
                 >
               {% else %}
                 <img
@@ -57,31 +57,13 @@
               {% endif %}
               <div class="absolute top-0 left-0 w-full h-full p-4 xl:p-3 2xl:p-4 flex flex-wrap items-end justify-end">
                 <div class="btn-wrap flex flex-wrap gap-2 justify-end">
-                  {% if block.settings.project_tag != blank %}
-                    <a
-                      class="px-3 py-1 hover:text-white bg-white hover:bg-primary border-[3px] border-white hover:border-primary rounded-full uppercase font-bold text-[11px] tracking-widest inline-block"
-                      href="#"
-                    >
-                      {{ block.settings.project_tag }}
-                    </a>
-                  {% endif %}
-                  {% if block.settings.project_location != blank %}
-                    <a
-                      class="px-3 py-1 hover:text-white bg-white hover:bg-primary border-[3px] border-white hover:border-primary rounded-full uppercase font-bold text-[11px] tracking-widest inline-block"
-                      href="#"
-                    >
-                      {{ block.settings.project_location }}
-                    </a>
-                  {% endif %}
+                  <span
+                    class="tag-badge px-3 py-1 bg-white text-primary border-[3px] border-primary rounded-full uppercase font-bold text-[11px] tracking-widest inline-block"
+                  >
+                    {{ block.settings.collection_filter_value }}
+                  </span>
                 </div>
               </div>
-              {% if section.settings.view_more_text != blank %}
-                <div class="btn-wrap mt-5 text-center">
-                  <button class="btn btn-primary">
-                    {{ section.settings.view_more_text }}
-                  </button>
-                </div>
-              {% endif %}
             </div>
           {% endif %}
         {% endfor %}
@@ -90,6 +72,27 @@
   </div>
 </section>
 
+<!-- Filtering Script -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll('.filter-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        let selectedFilter = this.getAttribute('data-filter');
+        let collections = document.querySelectorAll('.project-item');
+
+        collections.forEach(collection => {
+          let tags = collection.getAttribute('data-tags').split(',');
+          if (tags.includes(selectedFilter)) {
+            collection.style.display = "block"; // Show matched collections
+          } else {
+            collection.style.display = "none"; // Hide non-matching collections
+          }
+        });
+      });
+    });
+  });
+</script>
+
 {% schema %}
 {
   "name": "Vuba Category",
@@ -97,58 +100,35 @@
     {
       "type": "text",
       "id": "heading",
-      "default": "Heading",
+      "default": "Use our filters to inspire your imagination",
       "label": "Heading"
     },
     {
-      "type": "text",
-      "id": "view_more_text",
-      "label": "View More Button Text",
-      "default": "View More"
-    },
-    {
-      "type": "text",
-      "id": "more_filters_text",
-      "label": "More Filters Button Text",
-      "default": "More Filters"
+      "type": "metaobject",
+      "id": "project_filters",
+      "label": "Select Filters",
+      "metaobject_type": "project_filters"
     }
   ],
   "blocks": [
     {
-      "type": "filter",
-      "name": "Filter",
+      "type": "collection_project",
+      "name": "Collection Project",
       "settings": [
         {
-          "type": "text",
-          "id": "filter_title",
-          "label": "Filter Title"
+          "type": "collection",
+          "id": "collection",
+          "label": "Select Collection"
         },
-        {
-          "type": "textarea",
-          "id": "filter_options",
-          "label": "Filter Options (comma-separated)",
-          "default": "Red and Purple, Yellow and Warm, Light and Neutral"
-        }
-      ]
-    },
-    {
-      "type": "project",
-      "name": "Project",
-      "settings": [
         {
           "type": "image_picker",
-          "id": "project_image",
-          "label": "Project Image"
+          "id": "collection_image",
+          "label": "Collection Image"
         },
         {
           "type": "text",
-          "id": "project_tag",
-          "label": "Tag"
-        },
-        {
-          "type": "text",
-          "id": "project_location",
-          "label": "Location"
+          "id": "collection_filter_value",
+          "label": "Filter Value (Match with Admin Filter)"
         }
       ]
     }
@@ -156,31 +136,7 @@
   "presets": [
     {
       "name": "Vuba Category",
-      "category": "Custom",
-      "blocks": [
-        {
-          "type": "filter",
-          "settings": {
-            "filter_title": "Filter by colour",
-            "filter_options": "Red and Purple, Yellow and Warm, Light and Neutral"
-          }
-        },
-        {
-          "type": "filter",
-          "settings": {
-            "filter_title": "Job Type",
-            "filter_options": "Residential, Commercial"
-          }
-        },
-        {
-          "type": "project",
-          "settings": {
-            "project_image": "",
-            "project_tag": "Swimming pool",
-            "project_location": "Yosemite"
-          }
-        }
-      ]
+      "category": "Custom"
     }
   ]
 }
