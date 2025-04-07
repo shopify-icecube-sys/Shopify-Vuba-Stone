@@ -1,186 +1,42 @@
-<section class="filter-inspire-imagination">
-  <div class="container">
-    <div class="py-16 3xl:py-24 w-full text-center ">
-      {% if section.settings.heading != blank %}
-        <h2 class="text-2xl 3xl:text-[44px] text-secondary font-semibold inline-block leading-[1.2]">
-          {{ section.settings.heading }}
-        </h2>
-      {% endif %}
-    </div>
-
-    <div class="flex flex-col md:flex-row gap-10 pb-14 3xl:pb-24">
-      <aside class="w-full md:w-1/4 gap-y-10 flex flex-wrap flex-col">
-        {% for block in section.blocks %}
-          {% if block.type == 'filter' %}
-            <div class="col">
-              {% if block.settings.filter_title != blank %}
-                <h3 class="text-2xl 3xl:text-4xl font-semibold border-b-2 border-[#707070] pb-5 mb-7">
-                  {{ block.settings.filter_title }}
-                </h3>
-              {% endif %}
-              <div class="flex flex-wrap gap-2 items-end">
-                {% assign filter_options = block.settings.filter_options | split: ',' %}
-                {% for option in filter_options %}
-                  <button class="px-4 py-2 text-primary hover:text-white hover:bg-primary border-[3px] border-primary rounded-full uppercase font-bold text-xs tracking-widest">
-                    {{ option | strip }}
-                  </button>
-                {% endfor %}
-              </div>
-              {% if section.settings.more_filters_text != blank %}
-                <div class="btn-wrap mt-10 md:hidden">
-                  <button class="btn btn-secondary">
-                    {{ section.settings.more_filters_text }}
-                  </button>
-                </div>
-              {% endif %}
-            </div>
-          {% endif %}
-        {% endfor %}
-      </aside>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 w-full md:w-[75%]">
-        {% for block in section.blocks %}
-          {% if block.type == 'project' %}
-            <div class="bg-white rounded-2xl overflow-hidden relative">
-              {% if block.settings.project_image != blank %}
-                <img
-                  src="{{ block.settings.project_image | img_url: '600x600' }}"
-                  class="w-full aspect-square object-cover h-full"
-                  alt="Project Image"
-                >
-              {% else %}
-                <img
-                  src="https://via.placeholder.com/600"
-                  class="w-full aspect-square object-cover h-full"
-                  alt="Placeholder"
-                >
-              {% endif %}
-              <div class="absolute top-0 left-0 w-full h-full p-4 xl:p-3 2xl:p-4 flex flex-wrap items-end justify-end">
-                <div class="btn-wrap flex flex-wrap gap-2 justify-end">
-                  {% if block.settings.project_tag != blank %}
-                    <a
-                      class="px-3 py-1 hover:text-white bg-white hover:bg-primary border-[3px] border-white hover:border-primary rounded-full uppercase font-bold text-[11px] tracking-widest inline-block"
-                      href="#"
-                    >
-                      {{ block.settings.project_tag }}
-                    </a>
-                  {% endif %}
-                  {% if block.settings.project_location != blank %}
-                    <a
-                      class="px-3 py-1 hover:text-white bg-white hover:bg-primary border-[3px] border-white hover:border-primary rounded-full uppercase font-bold text-[11px] tracking-widest inline-block"
-                      href="#"
-                    >
-                      {{ block.settings.project_location }}
-                    </a>
-                  {% endif %}
-                </div>
-              </div>
-              {% if section.settings.view_more_text != blank %}
-                <div class="btn-wrap mt-5 text-center">
-                  <button class="btn btn-primary">
-                    {{ section.settings.view_more_text }}
-                  </button>
-                </div>
-              {% endif %}
-            </div>
-          {% endif %}
-        {% endfor %}
-      </div>
-    </div>
-  </div>
-</section>
-
 {% schema %}
 {
-  "name": "Vuba Category",
+  "name": "Dynamic Project Filters",
   "settings": [
     {
-      "type": "text",
-      "id": "heading",
-      "default": "Heading",
-      "label": "Heading"
+      "type": "metaobject",
+      "id": "project_filters",
+      "label": "Select Filter Set",
+      "metaobject_type": "project_filters"
     },
     {
-      "type": "text",
-      "id": "view_more_text",
-      "label": "View More Button Text",
-      "default": "View More"
+      "type": "collection",
+      "id": "selected_collection",
+      "label": "Choose Collection",
+      "info": "Select the collection of projects to display."
     },
     {
-      "type": "text",
-      "id": "more_filters_text",
-      "label": "More Filters Button Text",
-      "default": "More Filters"
-    }
-  ],
-  "blocks": [
-    {
-      "type": "filter",
-      "name": "Filter",
-      "settings": [
-        {
-          "type": "text",
-          "id": "filter_title",
-          "label": "Filter Title"
-        },
-        {
-          "type": "textarea",
-          "id": "filter_options",
-          "label": "Filter Options (comma-separated)",
-          "default": "Red and Purple, Yellow and Warm, Light and Neutral"
-        }
-      ]
+      "type": "range",
+      "id": "product_limit",
+      "label": "Number of Products to Show",
+      "min": 3,
+      "max": 20,
+      "step": 1,
+      "default": 9
     },
     {
-      "type": "project",
-      "name": "Project",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "project_image",
-          "label": "Project Image"
-        },
-        {
-          "type": "text",
-          "id": "project_tag",
-          "label": "Tag"
-        },
-        {
-          "type": "text",
-          "id": "project_location",
-          "label": "Location"
-        }
-      ]
+      "type": "checkbox",
+      "id": "enable_filters",
+      "label": "Enable Filters",
+      "default": true
     }
   ],
   "presets": [
     {
-      "name": "Vuba Category",
-      "category": "Custom",
-      "blocks": [
-        {
-          "type": "filter",
-          "settings": {
-            "filter_title": "Filter by colour",
-            "filter_options": "Red and Purple, Yellow and Warm, Light and Neutral"
-          }
-        },
-        {
-          "type": "filter",
-          "settings": {
-            "filter_title": "Job Type",
-            "filter_options": "Residential, Commercial"
-          }
-        },
-        {
-          "type": "project",
-          "settings": {
-            "project_image": "",
-            "project_tag": "Swimming pool",
-            "project_location": "Yosemite"
-          }
-        }
-      ]
+      "name": "Dynamic Filters with Products",
+      "settings": {
+        "enable_filters": true,
+        "product_limit": 9
+      }
     }
   ]
 }
