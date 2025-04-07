@@ -39,11 +39,21 @@
         "heading": "Vuba World Blends",
         "collection": "vuba-america"
       }
+    },
+    "vuba_category_YBH749": {
+      "type": "vuba-category",
+      "settings": {
+        "project_filters": "",
+        "selected_collection": "",
+        "product_limit": 9,
+        "enable_filters": true
+      }
     }
   },
   "order": [
     "vuba_banner_image_kFLjhb",
     "vuba_richtext_6J9PEW",
-    "vuba_world_blends_VrDpYk"
+    "vuba_world_blends_VrDpYk",
+    "vuba_category_YBH749"
   ]
 }
