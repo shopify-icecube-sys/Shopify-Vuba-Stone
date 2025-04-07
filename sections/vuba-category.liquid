@@ -1,138 +1,187 @@
+<section class="filter-inspire-imagination">
+  <div class="container">
+    <div class="py-16 3xl:py-24 w-full text-center ">
+      {% if section.settings.heading != blank %}
+        <h2 class="text-2xl 3xl:text-[44px] text-secondary font-semibold inline-block leading-[1.2]">
+          {{ section.settings.heading }}
+        </h2>
+      {% endif %}
+    </div>
+
+    <div class="flex flex-col md:flex-row gap-10 pb-14 3xl:pb-24">
+      <aside class="w-full md:w-1/4 gap-y-10 flex flex-wrap flex-col">
+        {% for block in section.blocks %}
+          {% if block.type == 'filter' %}
+            <div class="col">
+              {% if block.settings.filter_title != blank %}
+                <h3 class="text-2xl 3xl:text-4xl font-semibold border-b-2 border-[#707070] pb-5 mb-7">
+                  {{ block.settings.filter_title }}
+                </h3>
+              {% endif %}
+              <div class="flex flex-wrap gap-2 items-end">
+                {% assign filter_options = block.settings.filter_options | split: ',' %}
+                {% for option in filter_options %}
+                  <button class="px-4 py-2 text-primary hover:text-white hover:bg-primary border-[3px] border-primary rounded-full uppercase font-bold text-xs tracking-widest">
+                    {{ option | strip }}
+                  </button>
+                {% endfor %}
+              </div>
+              {% if section.settings.more_filters_text != blank %}
+                <div class="btn-wrap mt-10 md:hidden">
+                  <button class="btn btn-secondary">
+                    {{ section.settings.more_filters_text }}
+                  </button>
+                </div>
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endfor %}
+      </aside>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 w-full md:w-[75%]">
+        {% for block in section.blocks %}
+          {% if block.type == 'project' %}
+            <div class="bg-white rounded-2xl overflow-hidden relative">
+              {% if block.settings.project_image != blank %}
+                <img
+                  src="{{ block.settings.project_image | img_url: '600x600' }}"
+                  class="w-full aspect-square object-cover h-full"
+                  alt="Project Image"
+                >
+              {% else %}
+                <img
+                  src="https://via.placeholder.com/600"
+                  class="w-full aspect-square object-cover h-full"
+                  alt="Placeholder"
+                >
+              {% endif %}
+              <div class="absolute top-0 left-0 w-full h-full p-4 xl:p-3 2xl:p-4 flex flex-wrap items-end justify-end">
+                <div class="btn-wrap flex flex-wrap gap-2 justify-end">
+                  {% if block.settings.project_tag != blank %}
+                    <a
+                      class="px-3 py-1 hover:text-white bg-white hover:bg-primary border-[3px] border-white hover:border-primary rounded-full uppercase font-bold text-[11px] tracking-widest inline-block"
+                      href="#"
+                    >
+                      {{ block.settings.project_tag }}
+                    </a>
+                  {% endif %}
+                  {% if block.settings.project_location != blank %}
+                    <a
+                      class="px-3 py-1 hover:text-white bg-white hover:bg-primary border-[3px] border-white hover:border-primary rounded-full uppercase font-bold text-[11px] tracking-widest inline-block"
+                      href="#"
+                    >
+                      {{ block.settings.project_location }}
+                    </a>
+                  {% endif %}
+                </div>
+              </div>
+              {% if section.settings.view_more_text != blank %}
+                <div class="btn-wrap mt-5 text-center">
+                  <button class="btn btn-primary">
+                    {{ section.settings.view_more_text }}
+                  </button>
+                </div>
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
 {% schema %}
 {
-  "name": "Dynamic Project Filters",
-  "settings": [],
-  "blocks": [],
+  "name": "Vuba Category",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Heading",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "view_more_text",
+      "label": "View More Button Text",
+      "default": "View More"
+    },
+    {
+      "type": "text",
+      "id": "more_filters_text",
+      "label": "More Filters Button Text",
+      "default": "More Filters"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "filter",
+      "name": "Filter",
+      "settings": [
+        {
+          "type": "text",
+          "id": "filter_title",
+          "label": "Filter Title"
+        },
+        {
+          "type": "textarea",
+          "id": "filter_options",
+          "label": "Filter Options (comma-separated)",
+          "default": "Red and Purple, Yellow and Warm, Light and Neutral"
+        }
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Project",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "project_image",
+          "label": "Project Image"
+        },
+        {
+          "type": "text",
+          "id": "project_tag",
+          "label": "Tag"
+        },
+        {
+          "type": "text",
+          "id": "project_location",
+          "label": "Location"
+        }
+      ]
+    }
+  ],
   "presets": [
     {
-      "name": "Dynamic Filters"
+      "name": "Vuba Category",
+      "category": "Custom",
+      "blocks": [
+        {
+          "type": "filter",
+          "settings": {
+            "filter_title": "Filter by colour",
+            "filter_options": "Red and Purple, Yellow and Warm, Light and Neutral"
+          }
+        },
+        {
+          "type": "filter",
+          "settings": {
+            "filter_title": "Job Type",
+            "filter_options": "Residential, Commercial"
+          }
+        },
+        {
+          "type": "project",
+          "settings": {
+            "project_image": "",
+            "project_tag": "Swimming pool",
+            "project_location": "Yosemite"
+          }
+        }
+      ]
     }
   ]
 }
 {% endschema %}
-
-<section class="filters-section flex flex-wrap">
-  <!-- Sidebar: Dynamic Filters -->
-  <aside class="w-full md:w-1/4 gap-y-10 flex flex-wrap flex-col">
-    {% for filter in shop.metaobjects.project_filters.values %}
-      <div class="col">
-        <h3 class="text-2xl 3xl:text-4xl font-semibold border-b-2 border-[#707070] pb-5 mb-7">
-          {{ filter.filter_title }}
-        </h3>
-        <div class="flex flex-wrap gap-2 items-end">
-          {% for option in filter.filter_options %}
-            <button
-              class="filter-btn"
-              data-filter-type="{{ filter.filter_title | handleize }}"
-              data-filter-value="{{ option | handle }}"
-            >
-              {{ option }}
-            </button>
-          {% endfor %}
-        </div>
-      </div>
-    {% endfor %}
-    <button id="clear-filters" class="btn btn-secondary mt-4">Clear Filters</button>
-  </aside>
-
-  <!-- Main Content: Project Grid -->
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 w-full md:w-[75%]">
-    {% for product in collections.all.products %}
-      <div
-        class="project-item bg-white rounded-2xl overflow-hidden relative"
-        data-color="{{ product.metafields.custom.color | handle }}"
-        data-job="{{ product.metafields.custom.job | handle }}"
-      >
-        {% if product.featured_image %}
-          <img src="{{ product.featured_image | img_url: '600x600' }}" class="w-full aspect-square object-cover h-full">
-        {% else %}
-          <img src="https://via.placeholder.com/600" class="w-full aspect-square object-cover h-full">
-        {% endif %}
-
-        <div class="absolute top-0 left-0 w-full h-full p-4 xl:p-3 2xl:p-4 flex flex-wrap items-end justify-end">
-          <div class="btn-wrap flex flex-wrap gap-2 justify-end">
-            {% if product.metafields.custom.color %}
-              <span class="filter-tag">{{ product.metafields.custom.color }}</span>
-            {% endif %}
-            {% if product.metafields.custom.job %}
-              <span class="filter-tag">{{ product.metafields.custom.job }}</span>
-            {% endif %}
-          </div>
-        </div>
-      </div>
-    {% endfor %}
-  </div>
-</section>
-
-<!-- JavaScript for Filtering -->
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-      const filterButtons = document.querySelectorAll(".filter-btn");
-      const projects = document.querySelectorAll(".project-item");
-      let activeFilters = { color: [], job: [] };
-
-      function filterProjects() {
-          projects.forEach((project) => {
-              const projectColor = project.dataset.color;
-              const projectJob = project.dataset.job;
-
-              const colorMatch = activeFilters.color.length === 0 || activeFilters.color.includes(projectColor);
-              const jobMatch = activeFilters.job.length === 0 || activeFilters.job.includes(projectJob);
-
-              if (colorMatch && jobMatch) {
-                  project.style.display = "block";
-              } else {
-                  project.style.display = "none";
-              }
-          });
-      }
-
-      filterButtons.forEach((button) => {
-          button.addEventListener("click", function () {
-              const filterType = this.dataset.filterType;
-              const filterValue = this.dataset.filterValue;
-
-              if (activeFilters[filterType].includes(filterValue)) {
-                  activeFilters[filterType] = activeFilters[filterType].filter((val) => val !== filterValue);
-                  this.classList.remove("active");
-              } else {
-                  activeFilters[filterType].push(filterValue);
-                  this.classList.add("active");
-              }
-
-              filterProjects();
-          });
-      });
-
-      document.getElementById("clear-filters").addEventListener("click", function () {
-          activeFilters = { color: [], job: [] };
-          document.querySelectorAll(".filter-btn").forEach(btn => btn.classList.remove("active"));
-          filterProjects();
-      });
-  });
-</script>
-
-<style>
-  .filter-btn {
-    background: #f4f4f4;
-    border: 1px solid #ccc;
-    padding: 10px 15px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-
-  .filter-btn.active {
-    background: #000;
-    color: #fff;
-  }
-
-  .project-item {
-    transition: all 0.3s ease;
-  }
-
-  .filter-tag {
-    background: rgba(0, 0, 0, 0.1);
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-</style>
