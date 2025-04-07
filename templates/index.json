@@ -43,9 +43,9 @@
     "vuba_category_YBH749": {
       "type": "vuba-category",
       "settings": {
-        "project_filters": "",
-        "selected_collection": "",
-        "product_limit": 9,
+        "project_filters": "project-filters-csrbdzt9",
+        "selected_collection": "vuba-america",
+        "product_limit": 14,
         "enable_filters": true
       }
     }
