@@ -91,7 +91,9 @@
                 {{ 'products.product.add_to_cart' | t }}
               {%- endif -%}
             </span>
-            {%- render 'loading-spinner' -%}
+            {% comment %}
+              {%- render 'loading-spinner' -%}
+            {% endcomment %}
           </button>
           {%- if show_dynamic_checkout -%}
             {{ form | payment_button }}
