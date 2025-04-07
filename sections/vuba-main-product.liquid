@@ -615,8 +615,7 @@
         <div class="mt-4 3xl:mt-10 xl:flex items-start gap-x-10 3xl:gap-x-24">
           <h3 class="text-lg 3xl:text-4xl mb-2 font-medium xl:min-w-[78px] 3xl:min-w-[160px]">Specs</h3>
           <p>
-            Big Sur brings the essence of coastal beauty to any outdoor setting. Inspired by the rugged landscapes of
-            California’s coastline, Big Sur evokes a serene and calming aesthetic.
+            {{ product.metafields.custom.specifications | default: 'No overview found' }}
           </p>
         </div>
       </div>
