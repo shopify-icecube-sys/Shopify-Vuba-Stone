@@ -1,6 +1,233 @@
+<section class="filter-inspire-imagination">
+  <div class="container">
+    {% if section.settings.heading != blank %}
+      <div class="py-16 3xl:py-24 w-full text-center ">
+        <h2 class="text-2xl 3xl:text-[44px] text-secondary font-semibold inline-block leading-[1.2]">
+          {{ section.settings.heading }}
+        </h2>
+      </div>
+    {% endif %}
+
+    <div class="flex flex-col md:flex-row gap-10 pb-14 3xl:pb-24">
+      <aside class="w-full md:w-1/4 gap-y-10 flex flex-wrap flex-col">
+        <div class="col">
+          <h3 class="text-2xl 3xl:text-4xl font-semibold border-b-2 border-[#707070] pb-5 mb-7">Filter by colour</h3>
+          <div class="flex flex-wrap gap-2 items-end">
+            {% for filter_values in shop.metaobjects.casestudy.values %}
+              {% if filter_values.color.value != blank %}
+                <button
+                  class="px-4 py-2 text-primary hover:text-white hover:bg-primary border-[3px] border-primary rounded-full uppercase font-bold text-xs tracking-widest"
+
+                  data-filter-type="color"
+
+                  data-filter-value="{{ filter_values.color.value }}"
+                >
+                  {{ filter_values.color.value }}
+                </button>
+              {% endif %}
+            {% endfor %}
+          </div>
+          <div class="btn-wrap mt-10 md:hidden">
+            <button class="btn btn-secondary">More Filters</button>
+          </div>
+        </div>
+
+        <div class="col">
+          <h3 class="text-2xl 3xl:text-4xl font-semibold border-b-2 border-[#707070] pb-5 mb-7">Filter by job</h3>
+          <div class="flex flex-wrap gap-2 items-end">
+            {% for filter_values in shop.metaobjects.casestudy.values %}
+              {% if filter_values.job.value != blank %}
+                <button
+                  class="px-4 py-2 text-primary hover:text-white hover:bg-primary border-[3px] border-primary rounded-full uppercase font-bold text-xs tracking-widest"
+
+                  data-filter-type="job"
+
+                  data-filter-value="{{ filter_values.job.value }}"
+                >
+                  {{ filter_values.job.value }}
+                </button>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="col">
+          <h3 class="text-2xl 3xl:text-4xl font-semibold border-b-2 border-[#707070] pb-5 mb-7">Job Type</h3>
+          <div class="flex flex-wrap gap-2 items-end">
+            {% for filter_values in shop.metaobjects.casestudy.values %}
+              {% if filter_values.type.value != blank %}
+                <button
+                  class="px-4 py-2 text-primary hover:text-white hover:bg-primary border-[3px] border-primary rounded-full uppercase font-bold text-xs tracking-widest"
+
+                  data-filter-type="type"
+
+                  data-filter-value="{{ filter_values.type.value }}"
+                >
+                  {{ filter_values.type.value }}
+                </button>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </aside>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 w-full md:w-[75%]">
+        {% for filter_values in shop.metaobjects.casestudy.values %}
+          <div
+            class="bg-white rounded-2xl overflow-hidden relative"
+            data-color="{{ filter_values.color.value }}"
+            data-job="{{ filter_values.job.value }}"
+            data-type="{{ filter_values.type.value }}"
+          >
+            {% if filter_values.image.value != blank %}
+              <img
+                src="{{ filter_values.image.value | img_url:'master' }}"
+                class="w-full aspect-square object-cover h-full"
+                alt="Project 1"
+              >
+            {% endif %}
+            <div class="absolute top-0 left-0 w-full h-full p-4 xl:p-3 2xl:p-4 flex flex-wrap items-end justify-end">
+              <div class="btn-wrap flex flex-wrap gap-2 justify-end">
+                {% if filter_values.job.value != blank %}
+                  <a
+                    class="px-3 py-1 hover:text-white bg-white hover:bg-primary border-[3px] border-white hover:border-primary rounded-full uppercase font-bold text-[11px] tracking-widest inline-block"
+                    href="#"
+                  >
+                    {{- filter_values.job.value -}}
+                  </a>
+                {% endif %}
+                {% if filter_values.type.value != blank %}
+                  <a
+                    class="px-3 py-1 hover:text-white bg-white hover:bg-primary border-[3px] border-white hover:border-primary rounded-full uppercase font-bold text-[11px] tracking-widest inline-block"
+                    href="#"
+                  >
+                    {{- filter_values.type.value -}}
+                  </a>
+                {% endif %}
+
+                {% if filter_values.color.value != blank %}
+                  <a
+                    class="px-3 py-1 hover:text-white bg-white hover:bg-primary border-[3px] border-white hover:border-primary rounded-full uppercase font-bold text-[11px] tracking-widest inline-block"
+
+                    href="#"
+                  >
+                    {{- filter_values.color.value -}}
+                  </a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+        <div class="btn-wrap mt-5 md:hidden text-center">
+          <button class="btn btn-primary">View More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+
+    const filterButtons = document.querySelectorAll("[data-filter-type]");
+
+    const filterItems = document.querySelectorAll("[data-color], [data-job], [data-type]");
+
+    let selectedFilters = {
+
+      color: [],
+
+      job: [],
+
+      type: []
+
+    };
+
+    filterButtons.forEach(button => {
+
+      button.addEventListener("click", function () {
+
+        const filterType = this.getAttribute("data-filter-type");
+
+        const filterValue = this.getAttribute("data-filter-value");
+
+        if (selectedFilters[filterType].includes(filterValue)) {
+
+          selectedFilters[filterType] = selectedFilters[filterType].filter(value => value !== filterValue);
+
+          this.classList.remove("bg-primary", "text-white");
+
+        } else {
+
+          selectedFilters[filterType].push(filterValue);
+
+          this.classList.add("bg-primary", "text-white");
+
+        }
+
+        filterItems.forEach(item => {
+
+          const itemColor = item.getAttribute("data-color");
+
+          const itemJob = item.getAttribute("data-job");
+
+          const itemType = item.getAttribute("data-type");
+
+          const matchesColor = selectedFilters.color.length === 0 || selectedFilters.color.includes(itemColor);
+
+          const matchesJob = selectedFilters.job.length === 0 || selectedFilters.job.includes(itemJob);
+
+          const matchesType = selectedFilters.type.length === 0 || selectedFilters.type.includes(itemType);
+
+          if (matchesColor && matchesJob && matchesType) {
+
+            item.style.display = "block";
+
+          } else {
+
+            item.style.display = "none";
+
+          }
+
+        });
+
+      });
+
+    });
+
+  });
+</script>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+
+  "name": "Case Study",
+
+  "settings": [
+
+    {
+
+      "type": "text",
+
+      "id": "heading",
+
+      "default": "Heading",
+
+      "label": "Heading"
+
+    }
+
+  ],
+
+  "presets": [
+
+    {
+
+      "name": "Case Study"
+
+    }
+
+  ]
+
+}
 {% endschema %}
