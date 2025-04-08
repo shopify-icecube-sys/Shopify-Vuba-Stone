@@ -139,7 +139,10 @@ $(document).ready(function () {
 });
 
 // Filter category Section
+console.log("hello");
 document.addEventListener("DOMContentLoaded", function () {
+  console.log("filter");
+
   const filterButtons = document.querySelectorAll("[data-filter-type]");
   const filterItems = document.querySelectorAll(
     "[data-color], [data-job], [data-type]"
