@@ -156,7 +156,7 @@
       "type": "Vuba-related-products",
       "settings": {
         "heading_title": "Related Products",
-        "products_to_show": 5
+        "products_to_show": 4
       }
     }
   },
