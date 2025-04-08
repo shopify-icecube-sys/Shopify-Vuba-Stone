@@ -26,7 +26,7 @@
               {% for block in section.blocks %}
                 {% if block.settings.column_id == col %}
                   <div
-                    class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px] rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]"
+                    class="box-block border-[3px] border-secondary py-6 px-8 md:py-4 md:px-4 3xl:py-6 3xl:px-8 rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]"
                     {{ block.shopify_attributes }}
                   >
                     <figure>
@@ -37,12 +37,12 @@
                       >
                     </figure>
                     <div class="content">
-                      <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">
+                      <h3 class="font-semibold text-lg md:text-base 3xl:text-lg text-secondary block mb-0">
                         {{ block.settings.title }}
                       </h3>
                       <a
                         href="{{ block.settings.link }}"
-                        class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]"
+                        class="font-medium underline text-sm"
                       >
                         Download
                       </a>
