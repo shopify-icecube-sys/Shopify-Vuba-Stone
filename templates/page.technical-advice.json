@@ -17,44 +17,44 @@
         "padding_bottom": 28
       }
     },
-    "vuba_technical_advice_B6kdaW": {
+    "vuba_technical_advice_DfJiqA": {
       "type": "vuba-technical-advice",
       "blocks": {
-        "technical_item_QLeqHb": {
+        "technical_item_jXjGtg": {
           "type": "technical_item",
           "settings": {
             "title": "Cracking",
-            "description": "If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.",
+            "description": "<p>If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.</p>",
             "icon": "shopify://shop_images/doc-icon.png",
             "download_btn": "Download",
             "button_link": "/"
           }
         },
-        "technical_item_JYQb4B": {
+        "technical_item_NQdLPL": {
           "type": "technical_item",
           "settings": {
             "title": "Cracking",
-            "description": "If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.",
+            "description": "<p>If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.</p>",
             "icon": "shopify://shop_images/doc-icon.png",
             "download_btn": "Download",
             "button_link": "/"
           }
         },
-        "technical_item_DBaRqK": {
+        "technical_item_wUaGrc": {
           "type": "technical_item",
           "settings": {
             "title": "Cracking",
-            "description": "If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.",
+            "description": "<p>If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.</p>",
             "icon": "shopify://shop_images/doc-icon.png",
             "download_btn": "Download",
             "button_link": "/"
           }
         },
-        "technical_item_Grzg9w": {
+        "technical_item_JizCxN": {
           "type": "technical_item",
           "settings": {
             "title": "Cracking",
-            "description": "If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.",
+            "description": "<p>If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.</p>",
             "icon": "shopify://shop_images/doc-icon.png",
             "download_btn": "Download",
             "button_link": "/"
@@ -62,10 +62,10 @@
         }
       },
       "block_order": [
-        "technical_item_QLeqHb",
-        "technical_item_JYQb4B",
-        "technical_item_DBaRqK",
-        "technical_item_Grzg9w"
+        "technical_item_jXjGtg",
+        "technical_item_NQdLPL",
+        "technical_item_wUaGrc",
+        "technical_item_JizCxN"
       ],
       "settings": {
         "section_title": "Technical Advice",
@@ -76,6 +76,6 @@
   },
   "order": [
     "main",
-    "vuba_technical_advice_B6kdaW"
+    "vuba_technical_advice_DfJiqA"
   ]
 }

@@ -1,7 +1,7 @@
 <section class="technical-advice pt-20 3xl:pt-52 pb-14 3xl:pb-32">
   <div class="container">
     {% if section.settings.section_title != blank %}
-      <h2 class="text-4xl 2xl:text-[51px] text-secondary font-medium mb-8 3xl:mb-14">
+      <h2 class="text-2xl 2xl:text-3xl text-secondary font-medium mb-8 3xl:mb-14">
         {{ section.settings.section_title }}
       </h2>
     {% endif %}
@@ -27,7 +27,9 @@
             </div>
           </div>
           {% if block.settings.description != blank %}
-            <div>{{ block.settings.description }}</div>
+            <div>
+              {{ block.settings.description }}
+            </div>
           {% endif %}
 
           <a
@@ -38,6 +40,7 @@
           >
             {{ block.settings.download_btn }}
             <img
+              class="w-auto"
               src="https://cdn.shopify.com/s/files/1/0628/7520/5734/files/download-icon.svg?v=1743054092"
               alt="Download Icon"
             >
@@ -46,10 +49,9 @@
       {% endfor %}
     </div>
     {% if section.settings.viewBtn_btn != blank %}
-      <div class="btn-wrap text-center mt-10">
+      <div class="btn-wrap text-center mt-10 md:hidden">
         <a
-          class="bg-primary text-white px-8 py-[15px] text-sm font-bold uppercase hover:bg-secondar inline-block rounded-lg"
-          href=""
+          class="btn btn-primary"
           {% if section.settings.viewall_link != blank %}
             href="{{ section.settings.viewAll_link }}"
           {% endif %}
