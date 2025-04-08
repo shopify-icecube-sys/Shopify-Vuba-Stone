@@ -22,7 +22,7 @@
       "settings": {
         "logo": "shopify://shop_images/LogoIdeasVuba.svg",
         "heading": "Introducing Vuba Stone",
-        "description": "<p>The ultimate solution for flood-resistant paving that </p><p>revolutionises traditional construction methods.</p>"
+        "description": "<p>The ultimate solution for flood-resistant paving that revolutionises traditional construction methods.</p>"
       }
     },
     "vuba_introduction_two_GptM3Q": {
@@ -62,6 +62,17 @@
       "settings": {
         "heading": "What is VubaMac?",
         "description": "<p>With a monolithic bond guaranteeing long-lasting performance, VubaMac surpasses conventional materials </p><p>like concrete and asphalt in longevity and flexibility. Plus, its ease of application, provided by a single supplier, </p><p>offers unmatched convenience, with installations completed in just one day, minimising disruption and </p><p>providing a smoother, quieter alternative. Say hello to a greener, more resilient future with VubaMac.</p>"
+      }
+    },
+    "vuba_intro_multirow_9VY8pk": {
+      "type": "vuba-intro-multirow",
+      "settings": {
+        "heading_1": "What is VubaMac?",
+        "description_1": "With a monolithic bond guaranteeing long-lasting performance, VubaMac surpasses conventional materials like concrete and asphalt in longevity and flexibility. Plus, its ease of application, provided by a single supplier, offers unmatched convenience, with installations completed in just one day, minimising disruption and providing a smoother, quieter alternative. Say hello to a greener, more resilient future with VubaMac.",
+        "video_url": "https://www.youtube.com/watch?v=D0UnqGm_miA",
+        "heading_2": "What is VubaMac?",
+        "description_2": "<p>With a monolithic bond guaranteeing long-lasting performance, VubaMac surpasses conventional materials like concrete and asphalt in longevity and flexibility. Plus, its ease of application, provided by a single supplier, offers unmatched convenience, with installations completed in just one day, minimising disruption and providing a smoother, quieter alternative. Say hello to a greener, more resilient future with VubaMac.</p>",
+        "image_url": "shopify://shop_images/air-source-heat-pump.png"
       }
     },
     "vuba_intro_multicolumn_ifK3H3": {
@@ -120,17 +131,6 @@
       "settings": {
         "section_heading": "Latest Projects",
         "blog_handle": "project"
-      }
-    },
-    "vuba_intro_multirow_9VY8pk": {
-      "type": "vuba-intro-multirow",
-      "settings": {
-        "heading_1": "What is VubaMac?",
-        "description_1": "With a monolithic bond guaranteeing long-lasting performance, VubaMac surpasses conventional materials like concrete and asphalt in longevity and flexibility. Plus, its ease of application, provided by a single supplier, offers unmatched convenience, with installations completed in just one day, minimising disruption and providing a smoother, quieter alternative. Say hello to a greener, more resilient future with VubaMac.",
-        "video_url": "https://www.youtube.com/watch?v=D0UnqGm_miA",
-        "heading_2": "What is VubaMac?",
-        "description_2": "<p>With a monolithic bond guaranteeing long-lasting performance, VubaMac surpasses conventional materials like concrete and asphalt in longevity and flexibility. Plus, its ease of application, provided by a single supplier, offers unmatched convenience, with installations completed in just one day, minimising disruption and providing a smoother, quieter alternative. Say hello to a greener, more resilient future with VubaMac.</p>",
-        "image_url": "shopify://shop_images/air-source-heat-pump.png"
       }
     }
   },
