@@ -9,10 +9,10 @@
       {% assign columns = 'A,B,C,D' | split: ',' %}
       {% for col in columns %}
         <div class="column">
-          <div class="inner-block">
+          <div class="inner-block space-y-7 xl:space-y-10 3xl:space-y-20">
             {% assign image_var = 'section_image_' | append: forloop.index %}
             {% if section.settings[image_var] != blank %}
-              <figure class="mb-[20px] md:mb-[45px] 3xl:mb-[75px]">
+              <figure>
                 <img
                   src="{{ section.settings[image_var] | img_url:'master' }}"
                   alt="Vuba Mac Download"
