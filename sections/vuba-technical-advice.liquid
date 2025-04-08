@@ -26,11 +26,11 @@
               {% endif %}
             </div>
           </div>
-          <div>
-            {% if block.settings.description != blank %}
+          {% if block.settings.description != blank %}
+            <div>
               {{ block.settings.description }}
-            {% endif %}
-          </div>
+            </div>
+          {% endif %}
 
           <a
             {% if block.settings.button_link != blank %}
