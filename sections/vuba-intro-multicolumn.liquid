@@ -4,7 +4,7 @@
     style="background-image: url('{{ section.settings.background_image | img_url: 'master' }}');"
   {% endif %}
 >
-  <div class="inner-container ">
+  <div class="inner-container relative z-10">
     <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-[40px] md:gap-6 mb-[40px] 3xl:mb-[130px] max-w-[400px] md:max-w-max mx-auto">
       {% for block in section.blocks %}
         <div class="text-center" {{ block.shopify_attributes }}>
