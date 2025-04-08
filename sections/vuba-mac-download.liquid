@@ -1,11 +1,11 @@
 <section class="download-vuba-mac-section bg-[#fafafa] pt-[60px] 3xl:pt-[95px] pb-[60px] 3xl:pb-[130px]">
   <div class="inner-container">
     {% if section.settings.section_title != blank %}
-      <h3 class="text-secondary text-[36px] xl:text-3xl 3xl:text-[53px] font-medium font-poppins leading-[40px] 3xl:leading-normal mb-[20px] md:mb-[24px] text-center">
+      <h3 class="text-secondary text-4xl 3xl:text-[53px] font-medium leading-[1.2] text-center mb-10">
         {{ section.settings.section_title }}
       </h3>
     {% endif %}
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[40px] xl:gap-[20px] 2xl:gap-[30px] 3xl:gap-[50px]">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 md:gap-5 3xl:gap-10">
       {% assign columns = 'A,B,C,D' | split: ',' %}
       {% for col in columns %}
         <div class="column">
