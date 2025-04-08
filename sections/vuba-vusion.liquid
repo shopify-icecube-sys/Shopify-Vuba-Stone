@@ -3,7 +3,7 @@
     <div class="row flex flex-col md:flex-row items-center md:items-center">
       <div class="w-full md:w-1/2">
         {% if section.settings.logo != blank %}
-          <figure class="3xl:max-w-[644px]">
+          <figure class="max-w-[340px] xl:max-w-[380px] 2xl:max-w-[440px] 3xl:max-w-[644px]">
             <img src="{{ section.settings.logo | image_url }}" alt="Sample Image" class="w-full h-auto object-cover">
           </figure>
         {% endif %}
