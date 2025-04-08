@@ -5,14 +5,14 @@
   {% endif %}
 >
   <div class="inner-container relative z-10">
-    <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-[40px] md:gap-6 mb-[40px] 3xl:mb-[130px] max-w-[400px] md:max-w-max mx-auto">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-5 text-start md:text-center">
       {% for block in section.blocks %}
-        <div class="text-center" {{ block.shopify_attributes }}>
+        <div class="space-y-5 3xl:space-y-8" {{ block.shopify_attributes }}>
           {% if block.settings.icon != blank %}
             <img
               src="{{ block.settings.icon | img_url: 'master' }}"
               alt="MultiColumn background Image"
-              class="w-full max-w-[60px] 3xl:max-h-[142px] mx-auto mb-[32px] hidden md:block"
+              class="h-16 3xl:h-28 md:mx-auto"
             >
           {% endif %}
           {% if block.settings.icon_mobile != blank %}
@@ -23,7 +23,7 @@
             >
           {% endif %}
           {% if block.settings.title != blank %}
-            <h3 class="text-white text-left md:text-center text-[text-[14px] 3xl:text-[24px] font-bold font-poppins xl:leading-6 3xl:leading-9">
+            <h3 class="font-bold text-sm 3xl:text-2xl">
               {{ block.settings.title }}
               {% if block.settings.title2 != blank %}
                 <br>
@@ -35,7 +35,7 @@
       {% endfor %}
     </div>
     {% if section.settings.description != blank %}
-      <div class="desc-wrap font-poppins text-[14px] 3xl:text-[20px] text-center max-w-[800px] 3xl:max-w-[1275px] mx-auto ">
+      <div class="desc-wrap text-sm 3xl:text-2xl mt-10 3xl:mt-36 xl:px-24">
         {{ section.settings.description }}
       </div>
     {% endif %}
