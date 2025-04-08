@@ -11,13 +11,21 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "vuba_filter_CgQNLQ": {
+      "type": "vuba-filter",
+      "settings": {
+        "heading": "Use our filters to inspire your imagination"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "vuba_filter_CgQNLQ"
   ]
 }
