@@ -29,12 +29,14 @@
           <span class="name block my-4 3xl:my-9 text-secondary"> - {{ section.settings.author }} </span>
         {% endif %}
 
-        <a
-          href="{{ section.settings.button_link }}"
-          class="px-8 md:tracking-widest 3xl:px-12 py-[15px] 3xl:py-4 inline-block font-AvenirNext rounded-[10px] text-sm 3xl:text-base font-bold text-white bg-primary hover:bg-secondary"
-        >
-          {{ section.settings.button_text }}
-        </a>
+        <div class="btn-wrap block">
+          <a
+            href="{{ section.settings.button_link }}"
+            class="btn btn-primary"
+          >
+            {{ section.settings.button_text }}
+          </a>
+        </div>
       </div>
     </div>
   </div>
