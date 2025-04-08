@@ -1,18 +1,18 @@
 <section class="download-vuba-mac-section bg-[#fafafa] pt-[60px] 3xl:pt-[95px] pb-[60px] 3xl:pb-[130px]">
   <div class="inner-container">
     {% if section.settings.section_title != blank %}
-      <h3 class="text-secondary text-[36px] xl:text-3xl 3xl:text-[53px] font-medium font-poppins leading-[40px] 3xl:leading-normal mb-[20px] md:mb-[24px] text-center">
+      <h3 class="text-secondary text-4xl 3xl:text-[53px] font-medium leading-[1.2] text-center mb-10">
         {{ section.settings.section_title }}
       </h3>
     {% endif %}
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[40px] xl:gap-[20px] 2xl:gap-[30px] 3xl:gap-[50px]">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 md:gap-5 3xl:gap-10">
       {% assign columns = 'A,B,C,D' | split: ',' %}
       {% for col in columns %}
         <div class="column">
-          <div class="inner-block">
+          <div class="inner-block space-y-7 xl:space-y-10 3xl:space-y-20">
             {% assign image_var = 'section_image_' | append: forloop.index %}
             {% if section.settings[image_var] != blank %}
-              <figure class="mb-[20px] md:mb-[45px] 3xl:mb-[75px]">
+              <figure>
                 <img
                   src="{{ section.settings[image_var] | img_url:'master' }}"
                   alt="Vuba Mac Download"
@@ -22,11 +22,11 @@
             {% else %}
               {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
             {% endif %}
-            <div class="download-block flex flex-col gap-[13px]">
+            <div class="download-block flex flex-col space-y-3">
               {% for block in section.blocks %}
                 {% if block.settings.column_id == col %}
                   <div
-                    class="box-block border-[3px] border-secondary px-[30px] py-[25px] md:px-[20px] md:py-[18px] 3xl:px-[26px] 3xl:py-[23px] rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]"
+                    class="box-block border-[3px] border-secondary py-6 px-8 md:py-4 md:px-4 3xl:py-6 3xl:px-8 rounded-[19px] bg-white flex items-center gap-[20px] 3xl:gap-[30px]"
                     {{ block.shopify_attributes }}
                   >
                     <figure>
@@ -37,12 +37,12 @@
                       >
                     </figure>
                     <div class="content">
-                      <h3 class="font-medium lg:font-semibold font-poppins text-[18px] text-secondary block">
+                      <h3 class="font-semibold text-lg md:text-base 3xl:text-lg text-secondary block mb-0">
                         {{ block.settings.title }}
                       </h3>
                       <a
                         href="{{ block.settings.link }}"
-                        class="font-medium underline mt-4 3xl:mt-[24px] font-poppins text-[12px]"
+                        class="font-medium underline text-sm"
                       >
                         Download
                       </a>
