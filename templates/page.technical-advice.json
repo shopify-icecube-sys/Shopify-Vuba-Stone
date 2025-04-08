@@ -11,13 +11,67 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "vuba_technical_advice_DfJiqA": {
+      "type": "vuba-technical-advice",
+      "blocks": {
+        "technical_item_jXjGtg": {
+          "type": "technical_item",
+          "settings": {
+            "title": "Cracking",
+            "description": "<p>If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.</p>",
+            "download_btn": "Download",
+            "button_link": "/"
+          }
+        },
+        "technical_item_NQdLPL": {
+          "type": "technical_item",
+          "settings": {
+            "title": "Cracking",
+            "description": "<p>If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.</p>",
+            "download_btn": "Download",
+            "button_link": "/"
+          }
+        },
+        "technical_item_wUaGrc": {
+          "type": "technical_item",
+          "settings": {
+            "title": "Cracking",
+            "description": "<p>If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.</p>",
+            "download_btn": "Download",
+            "button_link": "/"
+          }
+        },
+        "technical_item_JizCxN": {
+          "type": "technical_item",
+          "settings": {
+            "title": "Cracking",
+            "description": "<p>If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.</p>",
+            "download_btn": "Download",
+            "button_link": "/"
+          }
+        }
+      },
+      "block_order": [
+        "technical_item_jXjGtg",
+        "technical_item_NQdLPL",
+        "technical_item_wUaGrc",
+        "technical_item_JizCxN"
+      ],
+      "settings": {
+        "section_title": "Technical Advice",
+        "viewBtn_btn": "View All",
+        "viewAll_link": "/"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "vuba_technical_advice_DfJiqA"
   ]
 }
