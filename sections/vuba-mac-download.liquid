@@ -22,7 +22,7 @@
             {% else %}
               {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
             {% endif %}
-            <div class="download-block flex flex-col gap-[13px]">
+            <div class="download-block flex flex-col space-y-3">
               {% for block in section.blocks %}
                 {% if block.settings.column_id == col %}
                   <div
