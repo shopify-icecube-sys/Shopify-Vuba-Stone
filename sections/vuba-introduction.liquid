@@ -18,10 +18,8 @@
             </h3>
           {% endif %}
           {% if section.settings.description != blank %}
-            <div class="text-wrap text-[14px] xl:text-[22px] 3xl:text-[27px] font-poppins text-white max-w-[730px] mx-auto font-medium">
-              <div>
-                {{ section.settings.description }}
-              </div>
+            <div class="text-wrap font-medium text-sm xl:text-lg 3xl:text-[27px] md:max-w-sm 2xl:max-w-lg 3xl:max-w-2xl mx-auto xl:leading-[1.5]">
+              {{ section.settings.description }}
             </div>
           {% endif %}
         </div>
