@@ -196,7 +196,6 @@ class CartItems extends HTMLElement {
 
         if (cartFooter)
           cartFooter.classList.toggle("is-empty", parsedState.item_count === 0);
-        console.log("hello cart is empty");
         if (cartDrawerWrapper)
           cartDrawerWrapper.classList.toggle(
             "is-empty",
