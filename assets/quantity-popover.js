@@ -1,190 +1,130 @@
-quantity-popover {
-  position: relative;
-  display: block;
-}
+if (!customElements.get("quantity-popover")) {
+  customElements.define(
+    "quantity-popover",
+    class QuantityPopover extends HTMLElement {
+      constructor() {
+        super();
+        this.mql = window.matchMedia("(min-width: 990px)");
+        this.mqlTablet = window.matchMedia("(min-width: 750px)");
+        this.infoButtonDesktop = this.querySelector(
+          ".quantity-popover__info-button--icon-only"
+        );
+        this.infoButtonMobile = this.querySelector(
+          ".quantity-popover__info-button--icon-with-label"
+        );
+        this.popoverInfo = this.querySelector(".quantity-popover__info");
+        this.closeButton = this.querySelector(".button-close");
+        this.eventMouseEnterHappened = false;
 
-quantity-popover volume-pricing li:nth-child(odd) {
-  background: rgba(var(--color-foreground), 0.03);
-}
+        if (this.closeButton) {
+          this.closeButton.addEventListener(
+            "click",
+            this.closePopover.bind(this)
+          );
+        }
 
-quantity-popover volume-pricing li {
-  font-size: 1.2rem;
-  letter-spacing: 0.06rem;
-  padding: 0.6rem 0.8rem;
-  display: flex;
-  justify-content: space-between;
-}
+        if (
+          this.popoverInfo &&
+          this.infoButtonDesktop &&
+          this.mqlTablet.matches
+        ) {
+          this.popoverInfo.addEventListener(
+            "mouseleave",
+            this.closePopover.bind(this)
+          );
+        }
 
-.quantity-popover__info.global-settings-popup {
-  width: 100%;
-  z-index: 3;
-  position: absolute;
-  background-color: rgb(var(--color-background));
-  max-width: 36rem;
-}
+        if (this.infoButtonDesktop) {
+          this.infoButtonDesktop.addEventListener(
+            "click",
+            this.togglePopover.bind(this)
+          );
+          this.infoButtonDesktop.addEventListener(
+            "focusout",
+            this.closePopover.bind(this)
+          );
+        }
 
-.quantity-popover__info .button-close,
-.variant-remove-total quick-order-list-remove-all-button .button,
-.quick-order-list-total__confirmation
-  quick-order-list-remove-all-button
-  .button,
-quantity-popover quick-order-list-remove-button .button {
-  --shadow-opacity: 0;
-  --border-opacity: 0;
-}
+        if (this.infoButtonMobile) {
+          this.infoButtonMobile.addEventListener(
+            "click",
+            this.togglePopover.bind(this)
+          );
+        }
 
-.quantity-popover__info-button {
-  display: flex;
-  align-items: center;
-  margin: 0 0.4rem 0 0;
-  min-width: 1.5rem;
-  min-height: 1.5rem;
-  --shadow-opacity: 0;
-  --border-opacity: 0;
-}
+        if (this.infoButtonDesktop && this.mqlTablet.matches) {
+          this.infoButtonDesktop.addEventListener(
+            "mouseenter",
+            this.togglePopover.bind(this)
+          );
+          this.infoButtonDesktop.addEventListener(
+            "mouseleave",
+            this.closePopover.bind(this)
+          );
+        }
+      }
 
-.quantity-popover__info-button--icon-with-label {
-  align-items: flex-start;
-  text-align: left;
-}
+      togglePopover(event) {
+        event.preventDefault();
+        if (event.type === "mouseenter") {
+          this.eventMouseEnterHappened = true;
+        }
 
-.quantity-popover__info-button--icon-with-label svg {
-  flex-shrink: 0;
-}
+        if (event.type === "click" && this.eventMouseEnterHappened) return;
 
-.quantity-popover__info-button--open {
-  text-decoration: underline;
-}
+        const button =
+          this.infoButtonDesktop && this.mql.matches
+            ? this.infoButtonDesktop
+            : this.infoButtonMobile;
+        const isExpanded = button.getAttribute("aria-expanded") === "true";
 
-.quantity-popover__info-button span {
-  padding-left: 1rem;
-}
+        if ((this.mql.matches && !isExpanded) || event.type === "click") {
+          button.setAttribute("aria-expanded", !isExpanded);
 
-.quantity-popover__info-button--icon-only--animation svg {
-  transform: scale(1.25);
-}
+          this.popoverInfo.toggleAttribute("hidden");
 
-.quantity-popover__info-button--icon-only svg {
-  transition: transform var(--duration-default) ease;
-}
-.quantity {
-  position: relative;
-  display: flex;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #821832;
-}
-.quantity__button {
-  min-width: 2.5rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  aspect-ratio: 1 / 1;
-}
+          button.classList.toggle("quantity-popover__info-button--open");
 
-.quantity__input {
-  font-weight: 500;
-  text-align: center;
-  border: 0;
-  padding: 0 0.5rem;
-  min-width: 4rem;
-  flex-grow: 1;
-  -webkit-appearance: none;
-  appearance: none;
-  outline: none;
-  width: 5rem;
-  -moz-appearance: textfield;
-  border-style: solid;
-  border-width: 0px 1px;
-  border-color: #821832;
-}
-.quantity__input::-webkit-outer-spin-button,
-.quantity__input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
+          this.infoButtonDesktop.classList.add(
+            "quantity-popover__info-button--icon-only--animation"
+          );
+        }
 
-.quantity__button svg {
-  width: 1rem;
-  pointer-events: none;
-}
-@media screen and (max-width: 989px) {
-  .quantity-popover__info.global-settings-popup {
-    left: 0;
-    top: 100%;
-  }
+        const isOpen = button.getAttribute("aria-expanded") === "true";
 
-  .quantity-popover__info-button {
-    padding-left: 0;
-  }
-}
+        if (isOpen && event.type !== "mouseenter") {
+          button.focus();
+          button.addEventListener("keyup", (e) => {
+            if (e.key === "Escape") {
+              this.closePopover(e);
+            }
+          });
+        }
+      }
 
-.quantity-popover__info .quantity__rules {
-  margin-top: 1.2rem;
-  margin-bottom: 1rem;
-}
+      closePopover(event) {
+        event.preventDefault();
+        const isButtonChild = this.infoButtonDesktop.contains(
+          event.relatedTarget
+        );
+        const isPopoverChild = this.popoverInfo.contains(event.relatedTarget);
 
-.quantity-popover__info .volume-pricing-label {
-  display: block;
-  margin-left: 1.2rem;
-  margin-top: 1.2rem;
-  font-size: 1.2rem;
-}
+        const button =
+          this.infoButtonDesktop && this.mql.matches
+            ? this.infoButtonDesktop
+            : this.infoButtonMobile;
 
-.quantity-popover__info .button {
-  width: 3.2rem;
-  height: 3.2rem;
-  position: absolute;
-  top: 0.4rem;
-  right: 0;
-  padding: 0 1.2rem 0 0;
-  display: flex;
-  justify-content: flex-end;
-}
+        if (!isButtonChild && !isPopoverChild) {
+          button.setAttribute("aria-expanded", "false");
+          button.classList.remove("quantity-popover__info-button--open");
+          this.popoverInfo.setAttribute("hidden", "");
+          this.infoButtonDesktop.classList.remove(
+            "quantity-popover__info-button--icon-only--animation"
+          );
+        }
 
-.quantity-popover__info .volume-pricing-label ~ .button {
-  top: -0.2rem;
-}
-
-.quantity-popover__info .button .icon {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
-quantity-popover volume-pricing {
-  margin-top: 1.2rem;
-  display: block;
-}
-
-quantity-popover .quantity__rules span:first-of-type {
-  display: block;
-}
-
-@media screen and (min-width: 990px) {
-  .quantity-popover-container--empty {
-    margin-right: 2.7rem;
-  }
-
-  .quantity-popover__info.global-settings-popup {
-    width: 20rem;
-  }
-
-  .quantity-popover__info.global-settings-popup {
-    transform: translateX(-100%);
-    top: 0.5rem;
-  }
-}
-
-quantity-popover .quantity__rules {
-  margin-left: 0.8rem;
-}
-
-quantity-popover .quantity__rules .divider:nth-child(2)::before {
-  content: none;
-}
-
-quantity-popover .quantity__button:not(:focus-visible):not(.focused),
-quantity-popover .quantity__input:not(:focus-visible):not(.focused) {
-  background-color: initial;
+        this.eventMouseEnterHappened = false;
+      }
+    }
+  );
 }
