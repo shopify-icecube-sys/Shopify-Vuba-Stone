@@ -7,10 +7,7 @@
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
     {{ 'custom-fonts.css' | asset_url | stylesheet_tag }}
-    {% comment %}
-
-      {{ 'tailwind.css' | asset_url | stylesheet_tag }}
-    {% endcomment %}
+    {{ 'tailwind.css' | asset_url | stylesheet_tag }}
     {{ 'style.css' | asset_url | stylesheet_tag }}
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
