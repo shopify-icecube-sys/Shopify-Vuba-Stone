@@ -26,8 +26,8 @@
 <script src="{{ 'quantity-popover.js' | asset_url }}" defer="defer"></script>
 
 <cart-items
-  class="cart-page pt-12 md:pt-14 3xl:pt-32 gradient color-{{ section.settings.color_scheme }} isolate{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %}   data-id="
-  {{ section.id }}
+  class="cart-page pt-12 md:pt-14 3xl:pt-32 gradient color-{{ section.settings.color_scheme }} isolate{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %}"
+  data-id="{{ section.id }}"
 >
   <div class="container page-width">
     <div class="title-wrapper-with-link flex flex-wrap items-center justify-between gap-3">
