@@ -180,8 +180,8 @@ class CartItems extends HTMLElement {
       })
       .then((state) => {
         const parsedState = JSON.parse(state);
-        console.log("Parsed State:", parsedState); // 👈 Yeh line add karo
-        console.log("Sections returned:", parsedState.sections); // 👈 Yeh bhi add karo
+        console.log("Parsed State:", parsedState);
+        console.log("Sections returned:", parsedState.sections);
         const quantityElement =
           document.getElementById(`Quantity-${line}`) ||
           document.getElementById(`Drawer-quantity-${line}`);
