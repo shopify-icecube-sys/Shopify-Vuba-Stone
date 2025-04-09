@@ -173,6 +173,12 @@ class CartItems extends HTMLElement {
       sections: this.getSectionsToRender().map((section) => section.section),
       sections_url: window.location.pathname,
     });
+    console.log(
+      "Sections to render:",
+      this.getSectionsToRender()
+        .map((s) => s.section)
+        .join(",")
+    );
 
     fetch(`${routes.cart_change_url}`, { ...fetchConfig(), ...{ body } })
       .then((response) => {
