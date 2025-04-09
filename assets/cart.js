@@ -178,7 +178,7 @@ class CartItems extends HTMLElement {
       .then((response) => {
         return response.text();
       })
-      console.log("Cart Change URL:" routes.cart_change_url);
+      console.log("Cart Change URL:" +  routes.cart_change_url);
       .then((state) => {
         const parsedState = JSON.parse(state);
         const quantityElement =
