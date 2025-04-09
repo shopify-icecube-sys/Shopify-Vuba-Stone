@@ -272,6 +272,7 @@ class CartItems extends HTMLElement {
       .finally(() => {
         this.disableLoading(line);
       });
+    console.log(errors);
   }
 
   updateLiveRegions(line, message) {
