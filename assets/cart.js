@@ -175,10 +175,10 @@ class CartItems extends HTMLElement {
     });
 
     fetch(`${routes.cart_change_url}`, { ...fetchConfig(), ...{ body } })
-      console.log("Cart Change URL:", routes.cart_change_url);
       .then((response) => {
         return response.text();
       })
+      console.log("Cart Change URL:" routes.cart_change_url);
       .then((state) => {
         const parsedState = JSON.parse(state);
         const quantityElement =
