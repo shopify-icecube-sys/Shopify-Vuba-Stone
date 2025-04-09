@@ -178,14 +178,13 @@ class CartItems extends HTMLElement {
       .then((response) => {
         return response.text();
       })
-      console.log("Cart Change URL:" + routes.cart_change_url);
       .then((state) => {
         const parsedState = JSON.parse(state);
         const quantityElement =
           document.getElementById(`Quantity-${line}`) ||
           document.getElementById(`Drawer-quantity-${line}`);
         const items = document.querySelectorAll(".cart-item");
-
+        console.log("Cart Change URL:" + routes.cart_change_url);
         if (parsedState.errors) {
           quantityElement.value = quantityElement.getAttribute("value");
           this.updateLiveRegions(line, parsedState.errors);
