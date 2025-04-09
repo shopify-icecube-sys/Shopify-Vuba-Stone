@@ -173,8 +173,6 @@ class CartItems extends HTMLElement {
       sections_url: window.location.pathname,
     });
 
-    console.log(body);
-
     fetch(`${routes.cart_change_url}`, { ...fetchConfig(), ...{ body } })
       .then((response) => {
         return response.text();
@@ -195,6 +193,7 @@ class CartItems extends HTMLElement {
         this.classList.toggle("is-empty", parsedState.item_count === 0);
         const cartDrawerWrapper = document.querySelector("cart-drawer");
         const cartFooter = document.getElementById("main-cart-footer");
+        console.log(cartFooter);
 
         if (cartFooter)
           cartFooter.classList.toggle("is-empty", parsedState.item_count === 0);
