@@ -162,7 +162,7 @@ class CartItems extends HTMLElement {
       },
     ];
   }
-  console.log(document.getElementById("main-cart-footer").dataset.id);
+  console.log('test' .document.getElementById("main-cart-footer").dataset.id);
   updateQuantity(line, quantity, name, variantId) {
     this.enableLoading(line);
 
