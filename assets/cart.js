@@ -204,14 +204,39 @@ class CartItems extends HTMLElement {
       
         this.getSectionsToRender().forEach((section) => {
           const elementToReplace =
-            document
-              .getElementById(section.id)
-              .querySelector(section.selector) ||
-            document.getElementById(section.id);
-          elementToReplace.innerHTML = this.getSectionInnerHTML(
-            parsedState.sections[section.section],
-            section.selector
-          );
+    document
+      .getElementById(section.id)
+      .querySelector(section.selector) ||
+    document.getElementById(section.id);
+    
+  console.log(`Section ID: ${section.id}`);
+  console.log(`Element to replace:`, elementToReplace);
+  console.log(`HTML in parsed state:`, parsedState.sections[section.section] ? 'Present' : 'Missing');
+  
+  if (section.id === 'main-cart-footer') {
+    // Special handling for cart footer to ensure total is updated
+    const footerHtml = parsedState.sections[section.section];
+    if (footerHtml) {
+      const tempDiv = document.createElement('div');
+      tempDiv.innerHTML = footerHtml;
+      
+      // Find the total price in the new HTML
+      const newTotalElement = tempDiv.querySelector('.totals__total-value');
+      if (newTotalElement) {
+        const currentTotalElement = document.querySelector('.totals__total-value');
+        if (currentTotalElement) {
+          currentTotalElement.textContent = newTotalElement.textContent;
+        }
+      }
+    }
+  }
+  
+  if (elementToReplace) {
+    elementToReplace.innerHTML = this.getSectionInnerHTML(
+      parsedState.sections[section.section],
+      section.selector
+    );
+  }
         });
         const updatedValue = parsedState.items[line - 1]
           ? parsedState.items[line - 1].quantity
