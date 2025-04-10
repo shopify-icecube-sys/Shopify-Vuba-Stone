@@ -215,14 +215,20 @@ class CartItems extends HTMLElement {
   console.log('Element to replace:', elementToReplace);
   console.log('Section HTML available:', !!parsedState.sections[section.section]);
   
+  if (section.id === 'main-cart-footer') {
+    console.log('Main cart footer HTML:', parsedState.sections[section.section]);
+  }
+  
   if (elementToReplace) {
     const newHTML = this.getSectionInnerHTML(
       parsedState.sections[section.section],
       section.selector
     );
-    console.log('New HTML length:', newHTML?.length || 0);
+    console.log('New HTML length for', section.id, ':', newHTML?.length || 0);
     if (newHTML) {
       elementToReplace.innerHTML = newHTML;
+    } else {
+      console.warn(`Failed to extract inner HTML for section ${section.id}`);
     }
   }
         });
@@ -307,10 +313,13 @@ class CartItems extends HTMLElement {
   }
 
   getSectionInnerHTML(html, selector) {
-    return new DOMParser()
-      .parseFromString(html, "text/html")
-      .querySelector(selector).innerHTML;
+  const el = new DOMParser().parseFromString(html, "text/html").querySelector(selector);
+  if (!el) {
+    console.warn(`Could not find element with selector "${selector}" in HTML`);
+    return null;
   }
+  return el.innerHTML;
+}
 
   enableLoading(line) {
     const mainCartItems =
