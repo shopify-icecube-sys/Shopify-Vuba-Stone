@@ -206,14 +206,25 @@ class CartItems extends HTMLElement {
 
         this.getSectionsToRender().forEach((section) => {
           const elementToReplace =
-            document
-              .getElementById(section.id)
-              .querySelector(section.selector) ||
-            document.getElementById(section.id);
-          elementToReplace.innerHTML = this.getSectionInnerHTML(
-            parsedState.sections[section.section],
-            section.selector
-          );
+    document
+      .getElementById(section.id)
+      .querySelector(section.selector) ||
+    document.getElementById(section.id);
+  
+  console.log('Section ID:', section.id);
+  console.log('Element to replace:', elementToReplace);
+  console.log('Section HTML available:', !!parsedState.sections[section.section]);
+  
+  if (elementToReplace) {
+    const newHTML = this.getSectionInnerHTML(
+      parsedState.sections[section.section],
+      section.selector
+    );
+    console.log('New HTML length:', newHTML?.length || 0);
+    if (newHTML) {
+      elementToReplace.innerHTML = newHTML;
+    }
+  }
         });
         const updatedValue = parsedState.items[line - 1]
           ? parsedState.items[line - 1].quantity
