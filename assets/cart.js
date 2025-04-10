@@ -201,7 +201,7 @@ class CartItems extends HTMLElement {
             "is-empty",
             parsedState.item_count === 0
           );
-
+        console.log(parsedState.sections["main-cart-footer"]);
         this.getSectionsToRender().forEach((section) => {
           const elementToReplace =
             document
