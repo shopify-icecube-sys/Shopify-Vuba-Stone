@@ -172,7 +172,7 @@ class CartItems extends HTMLElement {
       sections: this.getSectionsToRender().map((section) => section.section),
       sections_url: window.location.pathname,
     });
-    console.log(body);
+
     fetch(`${routes.cart_change_url}`, { ...fetchConfig(), ...{ body } })
       .then((response) => {
         return response.text();
@@ -201,10 +201,7 @@ class CartItems extends HTMLElement {
             "is-empty",
             parsedState.item_count === 0
           );
-        console.log(parsedState.sections["main-cart-footer"]);
-        console.log(document.getElementById("main-cart-footer"));
-        console.log(document.getElementById("main-cart-footer")?.dataset?.id);
-
+      
         this.getSectionsToRender().forEach((section) => {
           const elementToReplace =
             document
