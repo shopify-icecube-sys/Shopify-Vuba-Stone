@@ -179,6 +179,8 @@ class CartItems extends HTMLElement {
       })
       .then((state) => {
         const parsedState = JSON.parse(state);
+        console.log('Cart update response:', parsedState); // Debug cart data
+        console.log('Total price:', parsedState.total_price); // Check if total exists
         const quantityElement =
           document.getElementById(`Quantity-${line}`) ||
           document.getElementById(`Drawer-quantity-${line}`);
