@@ -204,6 +204,7 @@ class CartItems extends HTMLElement {
         console.log(parsedState.sections["main-cart-footer"]);
         console.log(document.getElementById("main-cart-footer"));
         console.log(document.getElementById("main-cart-footer")?.dataset?.id);
+        console.log(document.getElementById("main-cart-footer").dataset.id);
         this.getSectionsToRender().forEach((section) => {
           const elementToReplace =
             document
