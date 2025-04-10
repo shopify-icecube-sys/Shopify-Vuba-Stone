@@ -158,7 +158,7 @@ class CartItems extends HTMLElement {
       {
         id: "main-cart-footer",
         section: document.getElementById("main-cart-footer").dataset.id,
-        selector: "#main-cart-footer",
+        selector: ".js-contents",
       },
     ];
   }
@@ -179,8 +179,6 @@ class CartItems extends HTMLElement {
       })
       .then((state) => {
         const parsedState = JSON.parse(state);
-        console.log('Cart update response:', parsedState); // Debug cart data
-        console.log('Total price:', parsedState.total_price); // Check if total exists
         const quantityElement =
           document.getElementById(`Quantity-${line}`) ||
           document.getElementById(`Drawer-quantity-${line}`);
@@ -206,31 +204,14 @@ class CartItems extends HTMLElement {
 
         this.getSectionsToRender().forEach((section) => {
           const elementToReplace =
-    document
-      .getElementById(section.id)
-      .querySelector(section.selector) ||
-    document.getElementById(section.id);
-  
-  console.log('Section ID:', section.id);
-  console.log('Element to replace:', elementToReplace);
-  console.log('Section HTML available:', !!parsedState.sections[section.section]);
-  
-  if (section.id === 'main-cart-footer') {
-    console.log('Main cart footer HTML:', parsedState.sections[section.section]);
-  }
-  
-  if (elementToReplace) {
-    const newHTML = this.getSectionInnerHTML(
-      parsedState.sections[section.section],
-      section.selector
-    );
-    console.log('New HTML length for', section.id, ':', newHTML?.length || 0);
-    if (newHTML) {
-      elementToReplace.innerHTML = newHTML;
-    } else {
-      console.warn(`Failed to extract inner HTML for section ${section.id}`);
-    }
-  }
+            document
+              .getElementById(section.id)
+              .querySelector(section.selector) ||
+            document.getElementById(section.id);
+          elementToReplace.innerHTML = this.getSectionInnerHTML(
+            parsedState.sections[section.section],
+            section.selector
+          );
         });
         const updatedValue = parsedState.items[line - 1]
           ? parsedState.items[line - 1].quantity
@@ -313,13 +294,10 @@ class CartItems extends HTMLElement {
   }
 
   getSectionInnerHTML(html, selector) {
-  const el = new DOMParser().parseFromString(html, "text/html").querySelector(selector);
-  if (!el) {
-    console.warn(`Could not find element with selector "${selector}" in HTML`);
-    return null;
+    return new DOMParser()
+      .parseFromString(html, "text/html")
+      .querySelector(selector).innerHTML;
   }
-  return el.innerHTML;
-}
 
   enableLoading(line) {
     const mainCartItems =
