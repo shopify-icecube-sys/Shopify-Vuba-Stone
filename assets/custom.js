@@ -1,3 +1,4 @@
+/*
 // Start of the navbar toggle and sticky header
 document.addEventListener("DOMContentLoaded", function () {
   let menuBtn = document.getElementById("menu-btn");
@@ -185,3 +186,4 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+*/
