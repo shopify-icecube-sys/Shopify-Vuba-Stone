@@ -164,7 +164,6 @@ class CartItems extends HTMLElement {
   }
   
   updateQuantity(line, quantity, name, variantId) {
-    console.log('test' +document.getElementById("main-cart-footer").dataset.id);
     this.enableLoading(line);
 
     const body = JSON.stringify({
@@ -202,7 +201,7 @@ class CartItems extends HTMLElement {
             "is-empty",
             parsedState.item_count === 0
           );
-
+        console.log(document.getElementById("main-cart-footer")?.dataset?.id);
         this.getSectionsToRender().forEach((section) => {
           const elementToReplace =
             document
