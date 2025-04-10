@@ -18,11 +18,11 @@
 {%- endstyle -%}
 
 <div
-  class="cart-footer-main pb-12 md:pb-14 3xl:pb-32 pt-6 md:pt-7 3xl:pt-16 gradient {% if cart == empty %} is-empty{% endif %}"
+  class="gradient color-{{ section.settings.color_scheme }}{% if cart == empty %} is-empty{% endif %}"
   id="main-cart-footer"
   data-id="{{ section.id }}"
 >
-  <div class="container">
+  <div class="page-width">
     <div class="cart__footer isolate section-{{ section.id }}-padding">
       {%- if settings.show_cart_note -%}
         <cart-note class="cart__note field">
@@ -37,7 +37,7 @@
         </cart-note>
       {%- endif -%}
 
-      <div class="cart__blocks text-center md:text-right">
+      <div class="cart__blocks">
         {% for block in section.blocks %}
           {%- case block.type -%}
             {%- when '@app' -%}
@@ -59,7 +59,7 @@
                 </div>
 
                 <div class="totals">
-                  <h4 class="totals__total mb-2">{{ 'sections.cart.estimated_total' | t }}</h4>
+                  <h2 class="totals__total">{{ 'sections.cart.estimated_total' | t }}</h2>
                   <p class="totals__total-value">{{ cart.total_price | money_with_currency }}</p>
                 </div>
 
@@ -108,7 +108,7 @@
                 <button
                   type="submit"
                   id="checkout"
-                  class="cart__checkout-button btn btn-primary"
+                  class="cart__checkout-button button"
                   name="checkout"
                   {% if cart == empty %}
                     disabled
@@ -147,7 +147,7 @@
     {
       "type": "header",
       "content": "t:sections.all.padding.section_padding_heading"
-    },
+    },    
     {
       "type": "range",
       "id": "padding_top",
