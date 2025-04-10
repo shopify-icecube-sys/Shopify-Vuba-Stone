@@ -203,56 +203,77 @@ class CartItems extends HTMLElement {
           );
       
         this.getSectionsToRender().forEach((section) => {
-            try {
-              const elementToReplace =
-                document.getElementById(section.id)?.querySelector(section.selector) ||
-                document.getElementById(section.id);
-              
-              if (elementToReplace) {
-                elementToReplace.innerHTML = this.getSectionInnerHTML(
-                  parsedState.sections[section.section],
-                  section.selector
-                );
-              }
-            } catch (error) {
-              console.error(`Error updating section ${section.id}:`, error);
-            }
-          });
+  try {
+    const elementToReplace =
+      document.getElementById(section.id)?.querySelector(section.selector) ||
+      document.getElementById(section.id);
+    
+    if (elementToReplace) {
+      elementToReplace.innerHTML = this.getSectionInnerHTML(
+        parsedState.sections[section.section],
+        section.selector
+      );
+    }
+  } catch (error) {
+    console.error(`Error updating section ${section.id}:`, error);
+  }
+});
+
+// Direct price update with dynamic currency support
+try {
+  const totalElements = document.querySelectorAll('.totals__total-value');
+  
+  if (totalElements.length > 0) {
+    // Get currency information and format price dynamically
+    if (parsedState.currency && parsedState.total_price !== undefined) {
+      // Extract currency from the response
+      const currencyCode = parsedState.currency || 'GBP'; // Default to GBP if not provided
+      const currencySymbol = this.getCurrencySymbol(currencyCode);
+      
+      // Format price using Intl.NumberFormat for proper locale handling
+      const formattedPrice = new Intl.NumberFormat('en', {
+        style: 'currency',
+        currency: currencyCode,
+        minimumFractionDigits: 2
+      }).format(parsedState.total_price / 100);
+      
+      // Format according to shop's display preferences
+      // This maintains the format "£29.90 GBP" but uses dynamic currency values
+      const formattedPriceWithCode = `${formattedPrice} ${currencyCode}`;
+      
+      totalElements.forEach(element => {
+        element.textContent = formattedPriceWithCode;
+      });
+    } else {
+      // Fallback to fetching cart data with currency
+      fetch('/cart.js')
+        .then(response => response.json())
+        .then(cartData => {
+          const currencyCode = cartData.currency || 'GBP';
+          const currencySymbol = this.getCurrencySymbol(currencyCode);
           
-          // Direct price update regardless of section rendering
-          try {
-            const totalElements = document.querySelectorAll('.totals__total-value');
-            
-            if (totalElements.length > 0) {
-              // Get formatted price from the response if available
-              let formattedPrice;
-              
-              if (parsedState.total_price !== undefined) {
-                formattedPrice = `£${(parsedState.total_price / 100).toFixed(2)} GBP`;
-              } else {
-                // Fallback to fetching cart data
-                fetch('/cart.js')
-                  .then(response => response.json())
-                  .then(cartData => {
-                    formattedPrice = `£${(cartData.total_price / 100).toFixed(2)} GBP`;
-                    
-                    totalElements.forEach(element => {
-                      element.textContent = formattedPrice;
-                    });
-                  })
-                  .catch(error => console.error('Error fetching cart data:', error));
-                
-                // Return early since we're handling the update in the fetch callback
-                return;
-              }
-              
-              totalElements.forEach(element => {
-                element.textContent = formattedPrice;
-              });
-            }
-          } catch (error) {
-            console.error('Error updating cart total:', error);
-          }
+          // Format using Intl.NumberFormat
+          const formattedPrice = new Intl.NumberFormat('en', {
+            style: 'currency',
+            currency: currencyCode,
+            minimumFractionDigits: 2
+          }).format(cartData.total_price / 100);
+          
+          const formattedPriceWithCode = `${formattedPrice} ${currencyCode}`;
+          
+          totalElements.forEach(element => {
+            element.textContent = formattedPriceWithCode;
+          });
+        })
+        .catch(error => console.error('Error fetching cart data:', error));
+      
+      // Return early since we're handling the update in the fetch callback
+      return;
+    }
+  }
+} catch (error) {
+  console.error('Error updating cart total:', error);
+}
         const updatedValue = parsedState.items[line - 1]
           ? parsedState.items[line - 1].quantity
           : undefined;
@@ -377,6 +398,22 @@ class CartItems extends HTMLElement {
     cartDrawerItemElements.forEach((overlay) =>
       overlay.classList.add("hidden")
     );
+  }
+  // Add the getCurrencySymbol method here
+  getCurrencySymbol(currencyCode) {
+    // Common currency symbols
+    const currencySymbols = {
+      'USD': '$',
+      'EUR': '€',
+      'GBP': '£',
+      'JPY': '¥',
+      'CAD': 'C$',
+      'AUD': 'A$',
+      'INR': '₹'
+      // Add more currencies as needed
+    };
+    
+    return currencySymbols[currencyCode] || currencyCode;
   }
 }
 
