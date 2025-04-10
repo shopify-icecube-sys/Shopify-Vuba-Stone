@@ -158,7 +158,7 @@ class CartItems extends HTMLElement {
       {
         id: "main-cart-footer",
         section: document.getElementById("main-cart-footer").dataset.id,
-        selector: "#main-cart-footer",
+        selector: "main-cart-footer",
       },
     ];
   }
