@@ -139,34 +139,29 @@ class CartItems extends HTMLElement {
   }
 
   getSectionsToRender() {
-  return [
-    {
-      id: 'main-cart-items',
-      section: 'main-cart-items',
-      selector: '.js-contents',
-    },
-    {
-      id: 'main-cart-footer',
-      section: 'main-cart-footer',
-      selector: '#main-cart-footer',
-    },
-    {
-      id: 'cart-icon-bubble',
-      section: 'cart-icon-bubble',
-      selector: '.shopify-section',
-    },
-    {
-      id: 'cart-live-region-text',
-      section: 'cart-live-region-text',
-      selector: '.shopify-section',
-    },
-    {
-      id: 'main-cart-footer',
-      section: 'main-cart-footer',
-      selector: '.js-contents',
-    }
-  ];
-}
+    return [
+      {
+        id: "main-cart-items",
+        section: document.getElementById("main-cart-items").dataset.id,
+        selector: ".js-contents",
+      },
+      {
+        id: "cart-icon-bubble",
+        section: "cart-icon-bubble",
+        selector: ".shopify-section",
+      },
+      {
+        id: "cart-live-region-text",
+        section: "cart-live-region-text",
+        selector: ".shopify-section",
+      },
+      {
+        id: "main-cart-footer",
+        section: document.getElementById("main-cart-footer").dataset.id,
+        selector: ".js-contents",
+      },
+    ];
+  }
 
   updateQuantity(line, quantity, name, variantId) {
     this.enableLoading(line);
@@ -208,22 +203,16 @@ class CartItems extends HTMLElement {
           );
 
         this.getSectionsToRender().forEach((section) => {
-  const elementToReplace =
-    document
-      .getElementById(section.id)
-      .querySelector(section.selector) ||
-    document.getElementById(section.id);
-  
-  if (elementToReplace) {
-    const newHTML = this.getSectionInnerHTML(
-      parsedState.sections[section.section],
-      section.selector
-    );
-    if (newHTML) {
-      elementToReplace.innerHTML = newHTML;
-    }
-  }
-});
+          const elementToReplace =
+            document
+              .getElementById(section.id)
+              .querySelector(section.selector) ||
+            document.getElementById(section.id);
+          elementToReplace.innerHTML = this.getSectionInnerHTML(
+            parsedState.sections[section.section],
+            section.selector
+          );
+        });
         const updatedValue = parsedState.items[line - 1]
           ? parsedState.items[line - 1].quantity
           : undefined;
