@@ -17,9 +17,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     >
-    {% comment %}
-      {{ 'custom.js' | asset_url | script_tag }}
-    {% endcomment %}
+    {{ 'custom.js' | asset_url | script_tag }}
 
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
