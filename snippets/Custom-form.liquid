@@ -48,39 +48,45 @@
     <div class="container">
       {% form 'contact' %}
         {{ form.errors | default_errors }}
+        {{ form.posted_successfully? }}
 
-        <div class="first-name">
-          <label for="first-name">First name</label>
-          <input type="text" name="contact[first_name]" id="first-name">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" name="contact[name]" id="name" required>
         </div>
 
-        <div class="last-name">
-          <label for="last-name">Last name</label>
-          <input type="text" name="contact[last_name]" id="last-name">
-        </div>
-
-        <div class="phone">
-          <label for="phone">Phone</label>
-          <input type="tel" name="contact[phone]" id="phone">
-        </div>
-
-        <div class="email">
+        <div class="field">
           <label for="email">Email</label>
-          <input type="email" name="contact[email]" id="email">
+          <input type="email" name="contact[email]" id="email" required>
         </div>
 
-        <div class="order-number">
-          <label for="order-number">Order number</label>
-          <input type="text" name="contact[order_number]" id="order-number">
+        <div class="field">
+          <label for="contact">Contact</label>
+          <input type="tel" name="contact[phone]" id="contact" required>
         </div>
 
-        <div class="message">
-          <label for="message">Message</label>
-          <textarea name="contact[body]" id="message"></textarea>
+        <div class="field">
+          <label for="size">Size (sqft)</label>
+          <input type="text" name="contact[tags]" id="size" placeholder="e.g. 2000 sqft">
+        </div>
+
+        <div class="field">
+          <label for="timeline">Timeline</label>
+          <input type="text" name="contact[timeline]" id="timeline" placeholder="e.g. 3 Months">
+        </div>
+
+        <div class="field">
+          <label for="base">Current Base</label>
+          <input type="text" name="contact[base]" id="base" placeholder="e.g. Concrete">
+        </div>
+
+        <div class="field">
+          <label for="image">Picture Upload (link)</label>
+          <input type="url" name="contact[picture_url]" id="image" placeholder="https://example.com/image.jpg">
         </div>
 
         <div class="submit">
-          <input type="submit" value="Create">
+          <input type="submit" value="Submit">
         </div>
       {% endform %}
     </div>
