@@ -56,10 +56,7 @@
     var modal = document.getElementById("myModal");
     var btn = document.getElementById("myBtn");
 
-    // On form submit
-    const form = document.getElementById("zip-form");
-
-    form.addEventListener("submit", function (e) {
+    btn.addEventListener("submit", function (e) {
       e.preventDefault(); // Stop default submit
 
       const zip = document.getElementById("zipcode").value.trim();
