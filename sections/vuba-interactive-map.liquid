@@ -8,9 +8,26 @@
   <div class="installer-form padding-right-zeero pb-14 md:py-14 3xl:py-24">
     <div class="inner-container md:max-w-none flex flex-wrap">
       <div class="col-left rounded-3xl overflow-hidden w-full md:w-[50%] bg-white px-5 xl:px-7 py-10 3xl:py-16 2xl:px-12 3xl:px-16">
-        <h3 class="text-xl font-bold mb-4">Find by Zip Code</h3>
-        <input type="text" id="zipcode" placeholder="Enter Zip Code" class="w-full mb-4 p-3 border rounded">
-        <button id="search-btn" class="w-full bg-primary text-white font-bold py-3 rounded">Search</button>
+        <h2 class="text-primary font-bold text-2xl xl:text-3xl mb-10 3xl:mb-14 ">Let us help you Find an Installer</h2>
+        <form class="space-y-6 text-secondary">
+          <div class="grid grid-cols-1 gap-4">
+            <div class="input-group">
+              <label class="block text-xs font-semibold tracking-widest mb-2 uppercase" for="first-name"
+                >Zip code *</label
+              >
+              <input
+                class="w-full h-9 border border-secondary text-black outline-none rounded px-3 py-2"
+                required=""
+                type="number"
+                pattern="[0-9]{5}"
+                title="Five digit zip code"
+              >
+            </div>
+          </div>
+          <div>
+            <button type="submit" class="btn btn-primary py-2 px-5">Send</button>
+          </div>
+        </form>
       </div>
       <div class="col-right w-full md:w-[50%] text-center">
         {% if section.settings.heading != blank %}
