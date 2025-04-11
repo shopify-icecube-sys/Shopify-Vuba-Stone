@@ -320,57 +320,57 @@ class CartItems extends HTMLElement {
             parsedState.item_count === 0
           );
       
-this.getSectionsToRender().forEach((section) => {
-    try {
-      const elementToReplace =
-        document.getElementById(section.id)?.querySelector(section.selector) ||
-        document.getElementById(section.id);
-      
-      if (elementToReplace) {
-        elementToReplace.innerHTML = this.getSectionInnerHTML(
-          parsedState.sections[section.section],
-          section.selector
-        );
-      }
-    } catch (error) {
-      console.error(`Error updating section ${section.id}:`, error);
-    }
-  });
-  
-  // Direct price update regardless of section rendering
-  try {
-    const totalElements = document.querySelectorAll('.totals__total-value');
-    
-    if (totalElements.length > 0) {
-      // Get formatted price from the response if available
-      let formattedPrice;
-      
-      if (parsedState.total_price !== undefined) {
-        formattedPrice = `£${(parsedState.total_price / 100).toFixed(2)} GBP`;
-      } else {
-        // Fallback to fetching cart data
-        fetch('/cart.js')
-          .then(response => response.json())
-          .then(cartData => {
-            formattedPrice = `£${(cartData.total_price / 100).toFixed(2)} GBP`;
+        this.getSectionsToRender().forEach((section) => {
+            try {
+              const elementToReplace =
+                document.getElementById(section.id)?.querySelector(section.selector) ||
+                document.getElementById(section.id);
+              
+              if (elementToReplace) {
+                elementToReplace.innerHTML = this.getSectionInnerHTML(
+                  parsedState.sections[section.section],
+                  section.selector
+                );
+              }
+            } catch (error) {
+              console.error(`Error updating section ${section.id}:`, error);
+            }
+          });
+          
+          // Direct price update regardless of section rendering
+          try {
+            const totalElements = document.querySelectorAll('.totals__total-value');
             
-            totalElements.forEach(element => {
-              element.textContent = formattedPrice;
-            });
-          })
-          .catch(error => console.error('Error fetching cart data:', error));
-        
-        // Return early since we're handling the update in the fetch callback
-        return;
-      }
-      
-      totalElements.forEach(element => {
-        element.textContent = formattedPrice;
-      });
-    }
-  } catch (error) {
-    console.error('Error updating cart total:', error);
-  }
+            if (totalElements.length > 0) {
+              // Get formatted price from the response if available
+              let formattedPrice;
+              
+              if (parsedState.total_price !== undefined) {
+                formattedPrice = `£${(parsedState.total_price / 100).toFixed(2)} GBP`;
+              } else {
+                // Fallback to fetching cart data
+                fetch('/cart.js')
+                  .then(response => response.json())
+                  .then(cartData => {
+                    formattedPrice = `£${(cartData.total_price / 100).toFixed(2)} GBP`;
+                    
+                    totalElements.forEach(element => {
+                      element.textContent = formattedPrice;
+                    });
+                  })
+                  .catch(error => console.error('Error fetching cart data:', error));
+                
+                // Return early since we're handling the update in the fetch callback
+                return;
+              }
+              
+              totalElements.forEach(element => {
+                element.textContent = formattedPrice;
+              });
+            }
+          } catch (error) {
+            console.error('Error updating cart total:', error);
+          }
         const updatedValue = parsedState.items[line - 1]
           ? parsedState.items[line - 1].quantity
           : undefined;
