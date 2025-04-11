@@ -41,70 +41,11 @@
             {{ section.settings.heading }}
           </h2>
         {% endif %}
-        <img src="images/interactive-map.png" alt="">
+        <img src="https://cdn.shopify.com/s/files/1/0628/7520/5734/files/interactive-map.png?v=1744362949" alt="">
       </div>
     </div>
   </div>
 </section>
-
-<!-- Leaflet Scripts -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
-<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css">
-<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css">
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-<script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
-
-<!-- Main Script -->
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    let mapInitialized = false;
-    let map;
-
-    const form = document.getElementById("zip-form");
-    const mapContainer = document.getElementById("map-container");
-
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-
-      const zip = document.getElementById("zipcode").value.trim();
-      if (zip === "") return;
-
-      fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${zip}`)
-        .then(res => res.json())
-        .then(data => {
-          if (data.length > 0) {
-            const lat = data[0].lat;
-            const lon = data[0].lon;
-
-            mapContainer.classList.remove("hidden");
-
-            if (!mapInitialized) {
-              map = L.map('map').setView([lat, lon], 12);
-              L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: '&copy; OpenStreetMap contributors'
-              }).addTo(map);
-              mapInitialized = true;
-            } else {
-              map.setView([lat, lon], 12);
-            }
-
-            const popupContent = `
-              <strong>Name:</strong> John Doe<br>
-              <strong>Email:</strong> john@example.com<br>
-              <strong>Contact:</strong> +1 1234567890<br>
-              <strong>Size:</strong> 2000 sqft<br>
-              <strong>Timeline:</strong> 3 Months<br>
-              <strong>Current Base:</strong> Concrete<br>
-              <strong>Picture:</strong><br><img src="https://via.placeholder.com/100" width="100"/>
-            `;
-            L.marker([lat, lon]).addTo(map).bindPopup(popupContent).openPopup();
-          } else {
-            alert("Location not found!");
-          }
-        });
-    });
-  });
-</script>
 
 {% schema %}
 {
