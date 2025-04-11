@@ -1,94 +1,245 @@
 <section class="timeline-wrapper max-h-screen overflow-y-auto">
   <div class="container">
     <div class="timeline-container h-screen overflow-y-scroll scroll-smooth snap-y snap-mandatory">
-      {% for block in section.blocks %}
-        <div
-          class="timeline-item h-screen flex items-center justify-center text-2xl snap-start relative about before:content-[''] before:w-24 3xl:before:3xl:w-60 before:h-full before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:bg-primary before:z-[1]"
-          {{ block.shopify_attributes }}
-        >
-          <div class="flex {% if block.settings.image_position == 'right' %}flex-row-reverse{% endif %} xl:px-24 3xl:px-52">
-            <div class="w-[45%] lg:w-[49%] {% if block.settings.image_position == 'right' %}text-start{% else %}text-end{% endif %} text-sm 3xl:text-base relative z-10 {% if block.settings.image_position == 'right' %}pl-7 md:pl-10 3xl:pl-20{% else %}pr-7 md:pr-10 3xl:pr-20{% endif %} pt-[70px] xl:pt-16 3xl:pt-[180px]">
-              {% if block.settings.heading != blank %}
-                <div class="text-xl xl:text-2xl 3xl:text-[51px] font-bold xl:leading-[1] text-primary mb-3 3xl:mb-7">
-                  {{ block.settings.heading }}
-                </div>
-              {% endif %}
-              {% if block.settings.description != blank %}
-                <div>{{ block.settings.description }}</div>
-              {% endif %}
+      <div class="timeline-item h-screen flex items-center justify-center text-2xl snap-start relative about before:content-[''] before:w-24 3xl:before:3xl:w-60 before:h-full before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:bg-primary before:z-[1]">
+        <div class="flex xl:px-24 3xl:px-52">
+          <div class="w-[45%] lg:w-[49%] text-end text-sm 3xl:text-base relative z-10 pr-7 md:pr-10 3xl:pr-20">
+            {% if section.settings.heading_2009 != blank %}
+              <h2 class="text-xl xl:text-2xl 3xl:text-[51px] font-bold xl:leading-[1] text-primary mb-3 3xl:mb-7">
+                {{ section.settings.heading_2009 | newline_to_br }}
+              </h2>
+            {% endif %}
+            {% if section.settings.paragraph_2009 != blank %}
+              <div>
+                {{ section.settings.paragraph_2009 }}
+              </div>
+            {% endif %}
+          </div>
+          {% if section.settings.year_2009 != blank %}
+            <div class="bg-primary w-16 3xl:w-[180px] text-white relative z-10 pt-6 3xl:pt-10 right-2">
+              <h3 class="font-bold w-full text-4xl 3xl:text-9xl break-words px-2 inline-block]">
+                {{ section.settings.year_2009 }}
+              </h3>
             </div>
-            <div class="bg-primary w-16 3xl:w-[180px] text-white relative z-10 pt-6 3xl:pt-10 {% if block.settings.image_position == 'right' %}left-2{% else %}right-2{% endif %}">
-              {% if block.settings.year != blank %}
-                <h3 class="font-bold w-full text-4xl 3xl:text-9xl break-words px-2 inline-block]">
-                  {{ block.settings.year }}
-                </h3>
-              {% endif %}
-            </div>
-            <div class="w-[45%] lg:w-[49%] relative z-10 {% if block.settings.image_position == 'right' %}pt-[70px] xl:pt-16 3xl:pt-[180px]{% endif %}">
-              {% if block.settings.image != blank %}
-                <img
-                  src="{{ block.settings.image | img_url: 'original' }}"
-                  class="w-full rounded-2xl 3xl:rounded-3xl"
-                  alt="{{ block.settings.heading }}"
-                >
-              {% endif %}
-            </div>
+          {% endif %}
+          <div class="w-[45%] lg:w-[49%]  relative z-10 pt-[70px] xl:pt-16 3xl:pt-[180px]">
+            {% if section.settings.main_heading != blank %}
+              <h2 class="text-primary font-bold text-3xl xl:text-4xl xl:leading-[1] 2xl:text-5xl 3xl:text-[138px] absolute pl-6 2xl:pl-10 3xl:pl-24 -top-16 xl:-top-20 3xl:-top-48 mb-0">
+                {{ section.settings.main_heading | newline_to_br }}
+              </h2>
+            {% endif %}
+            {% if section.settings.image_2009 != blank %}
+              <img
+                src="{{ section.settings.image_2009 | img_url: 'master' }}"
+                class="w-full rounded-2xl 3xl:rounded-3xl"
+                alt="bull pic"
+              >
+            {% endif %}
           </div>
         </div>
-      {% endfor %}
+      </div>
+      <div class="timeline-item h-screen flex items-center justify-center text-2xl snap-start relative about before:content-[''] before:w-24 3xl:before:3xl:w-60 before:h-full before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:bg-primary before:z-[1]">
+        <div class="flex flex-row-reverse xl:px-24 3xl:px-52">
+          <div class="w-[45%] lg:w-[49%]  text-start text-sm 3xl:text-base relative z-10 pl-7 md:pl-10 3xl:pl-20 pt-[70px] xl:pt-16 3xl:pt-[180px]">
+            {% if section.settings.heading_2012 != blank %}
+              <h2 class="text-xl xl:text-2xl 3xl:text-[51px] font-bold xl:leading-[1] text-primary mb-3 3xl:mb-7">
+                {{ section.settings.heading_2012 | newline_to_br }}
+              </h2>
+            {% endif %}
+            {% if section.settings.paragraph_2012 != blank %}
+              <div>
+                {{ section.settings.paragraph_2012 }}
+              </div>
+            {% endif %}
+          </div>
+          {% if section.settings.year_2012 != blank %}
+            <div class="bg-primary w-16 3xl:w-[180px] text-white relative z-10 pt-6 3xl:pt-10 left-2">
+              <h3 class="font-bold w-full text-4xl 3xl:text-9xl break-words px-2 inline-block]">
+                {{ section.settings.year_2012 }}
+              </h3>
+            </div>
+          {% endif %}
+          {% if section.settings.image_2012 != blank %}
+            <div class="w-[45%] lg:w-[49%]  relative z-10">
+              <img
+                src="{{ section.settings.image_2012 | img_url: 'master' }}"
+                class="w-full rounded-2xl 3xl:rounded-3xl"
+                alt="bull pic"
+              >
+            </div>
+          {% endif %}
+        </div>
+      </div>
+      <div class="timeline-item h-screen flex items-center justify-center text-2xl snap-start relative about before:content-[''] before:w-24 3xl:before:3xl:w-60 before:h-full before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:bg-primary before:z-[1]">
+        <div class="flex xl:px-24 3xl:px-52">
+          <div class="w-[45%] lg:w-[49%] text-end text-sm 3xl:text-base relative z-10 pr-7 md:pr-10 3xl:pr-20">
+            {% if section.settings.heading_2016 != blank %}
+              <h2 class="text-xl xl:text-2xl 3xl:text-[51px] font-bold xl:leading-[1] text-primary mb-3 3xl:mb-7">
+                {{ section.settings.heading_2016 | newline_to_br }}
+              </h2>
+            {% endif %}
+            {% if section.settings.paragraph_2016 != blank %}
+              <div>
+                {{ section.settings.paragraph_2016 }}
+              </div>
+            {% endif %}
+          </div>
+          {% if section.settings.year_2016 != blank %}
+            <div class="bg-primary w-16 3xl:w-[180px] text-white relative z-10 pt-6 3xl:pt-10 right-2">
+              <h3 class="font-bold w-full text-4xl 3xl:text-9xl break-words px-2 inline-block]">
+                {{ section.settings.year_2016 }}
+              </h3>
+            </div>
+          {% endif %}
+          {% if section.settings.image_2016 != blank %}
+            <div class="w-[45%] lg:w-[49%]  relative z-10 pt-[70px] xl:pt-16 3xl:pt-[180px]">
+              <img
+                src="{{ section.settings.image_2016 | img_url: 'master' }}"
+                class="w-full rounded-2xl 3xl:rounded-3xl"
+                alt="bull pic"
+              >
+            </div>
+          {% endif %}
+        </div>
+      </div>
+      <div class="timeline-item h-screen flex items-center justify-center text-2xl snap-start relative about before:content-[''] before:w-24 3xl:before:3xl:w-60 before:h-full before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:bg-primary before:z-[1]">
+        <div class="flex flex-row-reverse xl:px-24 3xl:px-52">
+          <div class="w-[45%] lg:w-[49%]  text-start text-sm 3xl:text-base relative z-10 pl-7 md:pl-10 3xl:pl-20 pt-[70px] xl:pt-16 3xl:pt-[180px]">
+            {% if section.settings.heading_2018 != blank %}
+              <h2 class="text-xl xl:text-2xl 3xl:text-[51px] font-bold xl:leading-[1] text-primary mb-3 3xl:mb-7">
+                {{ section.settings.heading_2018 | newline_to_br }}
+              </h2>
+            {% endif %}
+            {% if section.settings.paragraph_2018 != blank %}
+              <div>
+                {{ section.settings.paragraph_2018 }}
+              </div>
+            {% endif %}
+          </div>
+          {% if section.settings.year_2018 != blank %}
+            <div class="bg-primary w-16 3xl:w-[180px] text-white relative z-10 pt-6 3xl:pt-10 left-2">
+              <h3 class="font-bold w-full text-4xl 3xl:text-9xl break-words px-2 inline-block]">
+                {{ section.settings.year_2018 }}
+              </h3>
+            </div>
+          {% endif %}
+          {% if section.settings.image_2018 != blank %}
+            <div class="w-[45%] lg:w-[49%]  relative z-10">
+              <img
+                src="{{ section.settings.image_2018 | img_url: 'master' }}"
+                class="w-full rounded-2xl 3xl:rounded-3xl"
+                alt="bull pic"
+              >
+            </div>
+          {% endif %}
+        </div>
+      </div>
     </div>
   </div>
 </section>
-
 {% schema %}
 {
   "name": "Vuba Timeline",
-  "settings": [],
-  "blocks": [
+  "tag": "section",
+  "class": "custom-section",
+  "settings": [
     {
-      "type": "timeline_item",
-      "name": "Timeline Item",
-      "settings": [
-        {
-          "type": "text",
-          "label": "Year",
-          "id": "year",
-          "default": "2009"
-        },
-        {
-          "type": "richtext",
-          "label": "Heading",
-          "id": "heading",
-          "default": "<p>Our Training Courses</p>"
-        },
-        {
-          "type": "richtext",
-          "label": "Description",
-          "id": "description",
-          "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum aquis congu.</p>"
-        },
-        {
-          "type": "image_picker",
-          "label": "Image",
-          "id": "image"
-        },
-        {
-          "type": "radio",
-          "label": "Image Position",
-          "id": "image_position",
-          "default": "left",
-          "options": [
-            {
-              "value": "left",
-              "label": "Left"
-            },
-            {
-              "value": "right",
-              "label": "Right"
-            }
-          ]
-        }
-      ]
+      "type": "textarea",
+      "id": "heading_2009",
+      "label": "2009 Heading",
+      "default":"Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "paragraph_2009",
+      "label": "2009 Paragraph",
+      "default":"<p>Lorem Ipsum</p>"
+    },
+    {
+      "type": "text",
+      "id": "year_2009",
+      "label": "2009 Year",
+      "default": "2009"
+    },
+    {
+      "type": "textarea",
+      "id": "main_heading",
+      "label": "Main heading",
+      "default":"Our History"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2009",
+      "label": "2009 Image"
+    },
+    {
+      "type": "textarea",
+      "id": "heading_2012",
+      "label": "Heading 2012",
+      "default":"Heading 2012"
+    },
+    {
+      "type": "richtext",
+      "id": "paragraph_2012",
+      "label": "Paragraph 2012",
+      "default":"<p>Lorem Ipsum</p>"
+    },
+    {
+      "type": "text",
+      "id": "year_2012",
+      "label": "Year 2012",
+      "default": "2012"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2012",
+      "label": "Image 2012"
+    },
+    {
+      "type": "textarea",
+      "id": "heading_2016",
+      "label": "Heading 2016",
+      "default":"Heading 2016"
+    },
+    {
+      "type": "richtext",
+      "id": "paragraph_2016",
+      "label": "Paragraph 2016",
+      "default":"<p>Lorem Ipsum</p>"
+    },
+    {
+      "type": "text",
+      "id": "year_2016",
+      "label": "Year 2016",
+      "default": "2016"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2016",
+      "label": "Image 2016"
+    },
+    {
+      "type": "textarea",
+      "id": "heading_2018",
+      "label": "Heading 2018",
+      "default":"Heading 2018"
+    },
+    {
+      "type": "richtext",
+      "id": "paragraph_2018",
+      "label": "Paragraph 2018",
+      "default":"<p>Lorem Ipsum</p>"
+    },
+    {
+      "type": "text",
+      "id": "year_2018",
+      "label": "Year 2018",
+      "default": "2018"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2018",
+      "label": "Image 2018"
     }
   ],
   "presets": [
