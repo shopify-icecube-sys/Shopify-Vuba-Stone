@@ -311,7 +311,7 @@ class CartItems extends HTMLElement {
               cartDrawerWrapper
             ) {
               trapFocus(
-
+                }
         if (cartFooter)
           cartFooter.classList.toggle("is-empty", parsedState.item_count === 0);
         if (cartDrawerWrapper)
