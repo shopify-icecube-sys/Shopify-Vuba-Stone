@@ -50,64 +50,47 @@
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
 <script>
-  var map = L.map('map').setView([20, -75], 1.8);
+  let mapInitialized = false;
+  let map;
 
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; OpenStreetMap contributors'
-  }).addTo(map);
-
-  // Sample marker data (you can replace this with dynamic Liquid/JS loop)
-  var markerData = [
-    {
-      lat: 40.7128,
-      lng: -74.0060,
-      name: "John Doe",
-      email: "john@example.com",
-      contact: "+1 1234567890",
-      size: "2000 sqft",
-      timeline: "3 Months",
-      base: "Concrete",
-      image: "https://via.placeholder.com/100"
-    },
-    {
-      lat: 34.0522,
-      lng: -118.2437,
-      name: "Jane Smith",
-      email: "jane@example.com",
-      contact: "+1 9876543210",
-      size: "150 m²",
-      timeline: "6 Weeks",
-      base: "Gravel",
-      image: "https://via.placeholder.com/100"
-    }
-  ];
-
-  markerData.forEach(item => {
-    var popupContent = `
-      <strong>Name:</strong> ${item.name}<br>
-      <strong>Email:</strong> ${item.email}<br>
-      <strong>Contact:</strong> ${item.contact}<br>
-      <strong>Size:</strong> ${item.size}<br>
-      <strong>Timeline:</strong> ${item.timeline}<br>
-      <strong>Current Base:</strong> ${item.base}<br>
-      <strong>Picture:</strong><br><img src="${item.image}" width="100"/>
-    `;
-    L.marker([item.lat, item.lng]).addTo(map).bindPopup(popupContent);
-  });
-
-  // Handle form submission to move map
+  // Handle form submission
   document.getElementById("zip-form").addEventListener("submit", function(e) {
     e.preventDefault();
-    var zip = document.getElementById("zipcode").value;
-    if (zip.trim() === "") return;
+    const zip = document.getElementById("zipcode").value.trim();
+    if (zip === "") return;
 
     fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${zip}`)
       .then(res => res.json())
       .then(data => {
         if (data.length > 0) {
-          var lat = data[0].lat;
-          var lon = data[0].lon;
-          map.setView([lat, lon], 12);
+          const lat = data[0].lat;
+          const lon = data[0].lon;
+
+          // Show the map container
+          document.getElementById("map-container").classList.remove("hidden");
+
+          // Initialize map if not done already
+          if (!mapInitialized) {
+            map = L.map('map').setView([lat, lon], 12);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+              attribution: '&copy; OpenStreetMap contributors'
+            }).addTo(map);
+            mapInitialized = true;
+          } else {
+            map.setView([lat, lon], 12);
+          }
+
+          // Add marker and popup
+          const popupContent = `
+            <strong>Name:</strong> John Doe<br>
+            <strong>Email:</strong> john@example.com<br>
+            <strong>Contact:</strong> +1 1234567890<br>
+            <strong>Size:</strong> 2000 sqft<br>
+            <strong>Timeline:</strong> 3 Months<br>
+            <strong>Current Base:</strong> Concrete<br>
+            <strong>Picture:</strong><br><img src="https://via.placeholder.com/100" width="100"/>
+          `;
+          L.marker([lat, lon]).addTo(map).bindPopup(popupContent).openPopup();
         } else {
           alert("Location not found!");
         }
