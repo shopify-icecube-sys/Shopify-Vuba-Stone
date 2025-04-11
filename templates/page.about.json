@@ -136,55 +136,25 @@
     },
     "vuba_timeline_FwRgWB": {
       "type": "vuba-timeline",
-      "blocks": {
-        "timeline_item_TK3tcP": {
-          "type": "timeline_item",
-          "settings": {
-            "year": "2009",
-            "heading": "<p>Our Training Courses</p>",
-            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum aquis congu.</p>",
-            "image": "shopify://shop_images/vuba-mac-2.jpg",
-            "image_position": "left"
-          }
-        },
-        "timeline_item_XdrkYA": {
-          "type": "timeline_item",
-          "settings": {
-            "year": "2012",
-            "heading": "<p>Our Training Courses</p>",
-            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum aquis congu.</p>",
-            "image": "shopify://shop_images/bull-pic.jpg",
-            "image_position": "right"
-          }
-        },
-        "timeline_item_Rd6dWe": {
-          "type": "timeline_item",
-          "settings": {
-            "year": "2016",
-            "heading": "<p>Our Training Courses</p>",
-            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum aquis congu.</p>",
-            "image": "shopify://shop_images/vuba-mac-2.jpg",
-            "image_position": "left"
-          }
-        },
-        "timeline_item_ETc7JP": {
-          "type": "timeline_item",
-          "settings": {
-            "year": "2018",
-            "heading": "<p>Our Training Courses</p>",
-            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum aquis congu.</p>",
-            "image": "shopify://shop_images/training-cource-1.jpg",
-            "image_position": "right"
-          }
-        }
-      },
-      "block_order": [
-        "timeline_item_TK3tcP",
-        "timeline_item_XdrkYA",
-        "timeline_item_Rd6dWe",
-        "timeline_item_ETc7JP"
-      ],
-      "settings": {}
+      "settings": {
+        "heading_2009": "Our\ntraining\ncourses",
+        "paragraph_2009": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum aquis congu. Nullam cursu. Lorem ipsum dolor sit am quis congue. Nullam curugue quis congue. Nullam cursu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum augue quis congue. Nullam cursu</p>",
+        "year_2009": "2009",
+        "main_heading": "Our \nHistory",
+        "image_2009": "shopify://shop_images/bull-pic.jpg",
+        "heading_2012": "Our\ntraining\ncourses",
+        "paragraph_2012": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum aquis congu. Nullam cursu. Lorem ipsum dolor sit am quis congue. Nullam curugue quis congue. Nullam cursu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum augue quis congue. Nullam cursu</p>",
+        "year_2012": "2012",
+        "image_2012": "shopify://shop_images/bull-pic.jpg",
+        "heading_2016": "Our\ntraining\ncourses",
+        "paragraph_2016": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum aquis congu. Nullam cursu. Lorem ipsum dolor sit am quis congue. Nullam curugue quis congue. Nullam cursu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum augue quis congue. Nullam cursu</p>",
+        "year_2016": "2016",
+        "image_2016": "shopify://shop_images/bull-pic.jpg",
+        "heading_2018": "Our\ntraining\ncourses",
+        "paragraph_2018": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum aquis congu. Nullam cursu. Lorem ipsum dolor sit am quis congue. Nullam curugue quis congue. Nullam cursu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum augue quis congue. Nullam cursu</p>",
+        "year_2018": "2018",
+        "image_2018": "shopify://shop_images/bull-pic.jpg"
+      }
     }
   },
   "order": [
