@@ -47,8 +47,10 @@
       >&times;</span
     >
     {% form 'contact' %}
-      {{ form.errors | default_errors }}
-      {{ form.posted_successfully? }}
+      {% comment %}
+               {{ form.errors | default_errors }}
+        {{ form.posted_successfully? }}
+      {% endcomment %}
 
       <h2 class="text-xl font-semibold mb-6 text-gray-800">Installer Details</h2>
 
