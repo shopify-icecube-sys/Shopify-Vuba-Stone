@@ -65,6 +65,12 @@
         return;
       }
 
+            // ✅ ZIP code ko popup form me inject karo
+      const zipFieldInPopup = document.getElementById("zip_in_popup");
+      if (zipFieldInPopup) {
+        zipFieldInPopup.value = zip;
+      }
+
       // If zip code valid, show popup
       modal.style.display = "block";
     });
