@@ -65,7 +65,6 @@
         return;
       }
 
-            // ✅ ZIP code ko popup form me inject karo
       const zipFieldInPopup = document.getElementById("zip_in_popup");
       if (zipFieldInPopup) {
         zipFieldInPopup.value = zip;
@@ -87,6 +86,21 @@
         modal.style.display = "none";
       }
     }
+
+    // Check if form posted successfully
+    const successMessage = document.querySelector(".form__message");
+
+    if (successMessage) {
+      // Show modal again in case it was closed
+      const modal = document.getElementById("myModal");
+      modal.style.display = "block";
+
+      // Auto close after 3 seconds
+      setTimeout(function () {
+        modal.style.display = "none";
+      }, 3000); // 3000ms = 3 sec
+    }
+
   });
 </script>
 
