@@ -121,12 +121,6 @@
         "button_text": "GO TO INSTALLER",
         "button_link": "shopify://collections"
       }
-    },
-    "vuba_interactive_map_3bQp6a": {
-      "type": "vuba-interactive-map",
-      "settings": {
-        "heading": "Explore our interactive map"
-      }
     }
   },
   "order": [
@@ -140,7 +134,6 @@
     "vuba_stampede_XhMWq3",
     "vuba_epoxy_stone_eWXmKp",
     "vuba_world_blends_qLUdYH",
-    "vuba_headline_zqWMqq",
-    "vuba_interactive_map_3bQp6a"
+    "vuba_headline_zqWMqq"
   ]
 }
