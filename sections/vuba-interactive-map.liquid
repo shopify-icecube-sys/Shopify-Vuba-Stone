@@ -1,43 +1,87 @@
 <style>
   #map {
-      height: 600px;
-      width: 100%;
+    height: 300px;
+    width: 100%;
+  }
+  #map-container.hidden {
+    display: none;
   }
 </style>
+
 <section class="interactive-map bg-secondary pb-14 pt-44 md:py-14 3xl:py-24">
   <div class="installer-form padding-right-zeero pb-14 md:py-14 3xl:py-24">
-    <div class="inner-container md:max-w-none flex flex-wrap">
-      <div class="col-left rounded-3xl overflow-hidden w-full md:w-[50%] bg-white mb-12 md:mb-0">
-        <h3 class="text-xl font-bold mb-4">Find by Zip Code</h3>
-        <input type="text" id="zipcode" placeholder="Enter Zip Code" class="w-full mb-4 p-3 border rounded">
-        <button id="search-btn" class="w-full bg-primary text-white font-bold py-3 rounded">Search</button>
+    <div class="inner-container md:max-w-none flex flex-wrap items-start">
+      <!-- Form Area -->
+      <div class="col-left rounded-3xl overflow-hidden w-full md:w-[50%] bg-white px-5 xl:px-7 py-10 3xl:py-16 2xl:px-12 3xl:px-16">
+        <h2 class="text-primary font-bold text-2xl xl:text-3xl mb-10 3xl:mb-14">Let us help you Find an Installer</h2>
+        <form id="zip-form" class="space-y-6 text-secondary" onsubmit="return false;">
+          <div class="grid grid-cols-1 gap-4">
+            <div class="input-group">
+              <label class="block text-xs font-semibold tracking-widest mb-2 uppercase"> Zip code * </label>
+              <input
+                id="zipcode"
+                class="w-full h-9 border border-secondary text-black outline-none rounded px-3 py-2"
+                required
+                type="text"
+                pattern="[0-9]{5}"
+                title="Five digit zip code"
+              >
+            </div>
+          </div>
+          <div>
+            <button type="button" class="btn btn-primary py-2 px-5" id="myBtn">Send</button>
+          </div>
+        </form>
       </div>
-      <div class="col-right w-full md:w-[50%] text-center">
+
+      <!-- Map Area -->
+      <div class="col-right w-full md:w-[50%] text-center pt-10 3xl:pt-16">
         {% if section.settings.heading != blank %}
           <h2 class="text-white font-bold text-2xl xl:text-3xl mb-8 2xl:mb-10 3xl:mb-20">
             {{ section.settings.heading }}
           </h2>
         {% endif %}
-
-        <!-- Map Container -->
-        <div id="map" class="mx-auto"></div>
+        <img src="https://cdn.shopify.com/s/files/1/0628/7520/5734/files/interactive-map.png?v=1744362949" alt="">
       </div>
     </div>
   </div>
+  <div class="container">
+    {% render 'Custom-form' %}
+  </div>
 </section>
-<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
-<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css">
-<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css">
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-<script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
 <script>
-  // Initialize the map
-   var map = L.map('map').setView([20, -75], 1.8);
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get modal and button
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myBtn");
 
-  // Add a tile layer to the map
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-  }).addTo(map);
+    btn.addEventListener("click", function (e) {
+
+      const zip = document.getElementById("zipcode").value.trim();
+
+      // Check if zip code is valid
+      if (zip === "" || !/^\d{5}$/.test(zip)) {
+        alert("Please enter a valid 5-digit ZIP code");
+        return;
+      }
+
+      // If zip code valid, show popup
+      modal.style.display = "block";
+    });
+
+    // Close modal handlers
+    var span = document.getElementsByClassName("close")[0];
+
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  });
 </script>
 
 {% schema %}
@@ -54,7 +98,7 @@
   "presets": [
     {
       "name": "Vuba Map",
-      "category": "Text",
+      "category": "Text"
     }
   ]
 }
