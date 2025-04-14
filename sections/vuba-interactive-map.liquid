@@ -65,6 +65,16 @@
         return;
       }
 
+        const successMsg = document.querySelector(".form__message");
+        if (successMsg) {
+          successMsg.remove(); // or successMsg.style.display = "none";
+        }
+
+      const zipFieldInPopup = document.getElementById("zip_in_popup");
+      if (zipFieldInPopup) {
+        zipFieldInPopup.value = zip;
+      }
+
       // If zip code valid, show popup
       modal.style.display = "block";
     });
@@ -81,6 +91,22 @@
         modal.style.display = "none";
       }
     }
+
+    // Check if form posted successfully
+    const successMessage = document.querySelector(".form__message");
+    console.log(successMessage);
+
+    if (successMessage) {
+      // Show modal again in case it was closed
+      const modal = document.getElementById("myModal");
+      modal.style.display = "block";
+
+      // Auto close after 3 seconds
+      setTimeout(function () {
+        modal.style.display = "none";
+      }, 3000); // 3000ms = 3 sec
+    }
+
   });
 </script>
 
