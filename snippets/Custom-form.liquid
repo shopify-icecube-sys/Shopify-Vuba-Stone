@@ -1,6 +1,175 @@
-<iframe
-  aria-label="Vuba Stone - Find an installer"
-  frameborder="0"
-  style="height:500px;width:99%;border:none;"
-  src="https://forms.zohopublic.eu/vubachemicalinnovationsltd/form/VubaStoneFindaninstaller/formperma/MceOZPMdmIYrcslgwyUJ1cQvRG9I5cPT319eCzZ0gys"
-></iframe>
+<style>
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0,0.4);
+    }
+
+    .modal-content {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+    }
+    .close {
+      color: #aaaaaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      display: inline-block;
+      position: absolute;
+      right: 0.5em;
+      top: 0.2em;
+  }
+
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+</style>
+<!-- The Modal -->
+<div id="myModal" class="modal fixed inset-0 bg-black bg-opacity-50 hidden z-50 overflow-auto">
+  <div class="modal-content bg-white w-full max-w-2xl mx-auto mt-20 rounded-lg shadow-lg p-6 relative">
+    <span class="close absolute top-3 right-5 text-2xl font-bold text-gray-400 hover:text-black cursor-pointer"
+      >&times;</span
+    >
+    {% form 'contact' %}
+      {%- if form.posted_successfully? -%}
+        <h3 class="form-status form-status-list form__message" tabindex="-1" autofocus>
+          {% comment %}
+            {{- 'icon-success.svg' | inline_asset_content -}}
+          {% endcomment %}
+          {{ 'templates.contact.form.post_success' | t }}
+        </h3>
+      {%- elsif form.errors -%}
+        <div class="form__message">
+          <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>
+            {{- 'icon-error.svg' | inline_asset_content -}}
+            {{ 'templates.contact.form.error_heading' | t }}
+          </h2>
+        </div>
+        <ul class="form-status-list caption-large" role="list">
+          <li>
+            <a href="#ContactForm-email" class="link">
+              {{ form.errors.translated_fields.email | capitalize }}
+              {{ form.errors.messages.email }}
+            </a>
+          </li>
+        </ul>
+      {%- endif -%}
+
+      <h2 class="text-xl font-semibold mb-6 text-gray-800">Installer Details</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <label for="name" class="block text-xs font-semibold tracking-widest mb-2 uppercase">Name</label>
+          <input
+            type="text"
+            name="contact[name]"
+            id="name"
+            class="w-full h-9 border border-secondary text-black outline-none rounded px-3 py-2"
+            required
+          >
+        </div>
+
+        <div>
+          <label for="email" class="block text-xs font-semibold tracking-widest mb-2 uppercase">Email</label>
+          <input
+            type="email"
+            name="contact[email]"
+            id="email"
+            class="w-full h-9 border border-secondary text-black outline-none rounded px-3 py-2"
+            required
+          >
+        </div>
+
+        <div>
+          <label for="contact" class="block text-xs font-semibold tracking-widest mb-2 uppercase">Contact</label>
+          <input
+            type="tel"
+            name="contact[phone]"
+            id="contact"
+            class="w-full h-9 border border-secondary text-black outline-none rounded px-3 py-2"
+            required
+          >
+        </div>
+
+        <div>
+          <label for="size" class="block text-xs font-semibold tracking-widest mb-2 uppercase">Size (sqft)</label>
+          <input
+            type="text"
+            name="contact[tags]"
+            id="size"
+            placeholder="e.g. 2000 sqft"
+            class="w-full h-9 border border-secondary text-black outline-none rounded px-3 py-2"
+          >
+        </div>
+
+        <div>
+          <label for="timeline" class="block text-xs font-semibold tracking-widest mb-2 uppercase">Timeline</label>
+          <input
+            type="text"
+            name="contact[timeline]"
+            id="timeline"
+            placeholder="e.g. 3 Months"
+            class="w-full h-9 border border-secondary text-black outline-none rounded px-3 py-2"
+          >
+        </div>
+
+        <div>
+          <label for="base" class="block text-xs font-semibold tracking-widest mb-2 uppercase">Current Base</label>
+          <input
+            type="text"
+            name="contact[base]"
+            id="base"
+            placeholder="e.g. Concrete"
+            class="w-full h-9 border border-secondary text-black outline-none rounded px-3 py-2"
+          >
+        </div>
+
+        <div>
+          <label for="zip_in_popup" class="block text-xs font-semibold tracking-widest mb-2 uppercase">Zip Code</label>
+          <input
+            type="text"
+            name="contact[zip]"
+            id="zip_in_popup"
+            class="w-full h-9 border border-secondary text-black outline-none rounded px-3 py-2"
+            readonly
+          >
+        </div>
+
+        <div class="md:col-span-2">
+          <label for="image" class="block text-xs font-semibold tracking-widest mb-2 uppercase"
+            >Picture Upload (URL)</label
+          >
+          <input
+            type="file"
+            name="contact[picture_url]"
+            id="image"
+            class="h-9 mt-2 outline-none text-black w-full"
+          >
+        </div>
+      </div>
+
+      <div class="mt-6">
+        <button
+          type="submit"
+          class="btn btn-primary py-2 px-5"
+        >
+          Submit
+        </button>
+      </div>
+    {% endform %}
+  </div>
+</div>
