@@ -19,6 +19,7 @@
     },
     "vuba_banner_image_wqtQtY": {
       "type": "vuba-banner-image",
+      "disabled": true,
       "settings": {
         "background_image": "shopify://shop_images/vuba-mac-2.jpg",
         "background_image_mobile": "shopify://shop_images/vuba-mac-2.jpg",
@@ -33,6 +34,22 @@
         "button_link_esp": "shopify://products/ellis-island",
         "div_color": "#821832",
         "description_about": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>"
+      }
+    },
+    "vuba_banner_two_YqCn74": {
+      "type": "vuba-banner-two",
+      "settings": {
+        "desktop_banner": "shopify://shop_images/vuba-mac-2.jpg",
+        "mobile_banner": "shopify://shop_images/placeholder-product.png",
+        "div_color": "#821832",
+        "logo_desktop": "shopify://shop_images/header-logo-blue-d.svg",
+        "logo_mobile": "shopify://shop_images/header-logo-blue-m.svg",
+        "heading": "About Us",
+        "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum augue quis congue. Nullam cursu Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
+        "button_1_label": "MEET THE TEAM",
+        "button_1_link": "shopify://collections",
+        "button_2_label": "Our hIstory",
+        "button_2_link": "shopify://collections"
       }
     },
     "vuba_richtext_NEgFBD": {
@@ -160,6 +177,7 @@
   "order": [
     "main",
     "vuba_banner_image_wqtQtY",
+    "vuba_banner_two_YqCn74",
     "vuba_richtext_NEgFBD",
     "vuba_teams_Uiw86R",
     "vuba_timeline_FwRgWB"
