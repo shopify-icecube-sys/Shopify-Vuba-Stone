@@ -54,14 +54,9 @@
                 <h2 class="common-form-title mb-0">{{ section.settings.title }}</h2>
               </div>
             {% endif %}
-            <iframe
-              class="w-full min-h-max mb-4"
-              id="installer-form-iframe"
-              aria-label="Vuba Stone - Find an installer"
-              frameborder="0"
-              style="min-height: 600px;"
-              src="https://forms.zohopublic.eu/vubachemicalinnovationsltd/form/VubaStoneFindaninstaller/formperma/MceOZPMdmIYrcslgwyUJ1cQvRG9I5cPT319eCzZ0gys"
-            ></iframe>
+            {% if section.settings.custom_form != blank %}
+              {{ section.settings.custom_form }}
+            {% endif %}
           </div>
         </div>
       </div>
