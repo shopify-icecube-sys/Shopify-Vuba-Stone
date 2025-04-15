@@ -79,16 +79,16 @@
             </div>
             <div class="col-right hidden md:block">
               <div class="max-w-3xl mr-0 ml-auto bg-white rounded-3xl overflow-hidden">
-                <div class="bg-primary text-white mb-auto common-form-box">
-                  {% if section.settings.title != blank %}
-                    <div class="common-form-heading-wrap">
-                      <h2 class="common-form-title mb-0">{{ section.settings.title }}</h2>
-                    </div>
-                  {% endif %}
-                  {% if section.settings.custom_form != blank %}
+                {% if section.settings.custom_form != blank %}
+                  <div class="bg-primary text-white mb-auto common-form-box">
+                    {% if section.settings.title != blank %}
+                      <div class="common-form-heading-wrap">
+                        <h2 class="common-form-title mb-0">{{ section.settings.title }}</h2>
+                      </div>
+                    {% endif %}
                     {{ section.settings.custom_form }}
-                  {% endif %}
-                </div>
+                  </div>
+                {% endif %}
               </div>
             </div>
           </div>
