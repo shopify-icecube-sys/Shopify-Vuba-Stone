@@ -57,8 +57,9 @@
                 </ul>
               </div>
               <a
-                href="{{ block.settings.registration_link }}"
-                class="inline-block cursor-pointer mt-8 px-6 py-3 border-[3px] hover:text-primary hover:bg-white hover:border-white font-bold rounded-lg"
+                href="javascript:void(0);"
+                data-course-id="{{ block.settings.course_id }}"
+                class="show-form-button inline-block cursor-pointer mt-8 px-6 py-3 border-[3px] hover:text-primary hover:bg-white hover:border-white font-bold rounded-lg"
               >
                 {{- block.settings.registration_button_text -}}
               </a>
@@ -77,13 +78,18 @@
                 {% endif %}
               </div>
             </div>
-            <div class="col-right hidden md:block">
-              <div class="max-w-3xl mr-0 ml-auto bg-white rounded-3xl overflow-hidden">
-                <img
-                  class="w-full"
-                  src="https://cdn.shopify.com/s/files/1/0628/7520/5734/files/register-installer-form_1.jpg?v=1743047843"
-                  alt="Form image"
-                >
+            <div class="col-right hidden form-container-{{ block.settings.course_id }}">
+              <div class="max-w-3xl mr-0 ml-auto rounded-3xl overflow-hidden">
+                {% if block.settings.custom_form != blank %}
+                  <div class="bg-primary text-white mb-auto common-form-box">
+                    {% if block.settings.title != blank %}
+                      <div class="common-form-heading-wrap">
+                        <h2 class="common-form-title mb-0">{{ block.settings.title }}</h2>
+                      </div>
+                    {% endif %}
+                    {{ block.settings.custom_form }}
+                  </div>
+                {% endif %}
               </div>
             </div>
           </div>
@@ -92,7 +98,25 @@
     </div>
   {% endfor %}
 </section>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".show-form-button");
 
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", function () {
+        const id = this.getAttribute("data-course-id");
+        const form = document.querySelector(`.form-container-${id}`);
+
+        if (form) {
+          form.classList.toggle("hidden");
+          if (!form.classList.contains("hidden")) {
+            form.scrollIntoView({ behavior: "smooth" });
+          }
+        }
+      });
+    });
+  });
+</script>
 {% schema %}
 {
   "name": "Vuba Training Courses",
@@ -173,11 +197,6 @@
           "default": "1"
         },
         {
-          "type": "url",
-          "label": "Registration Link",
-          "id": "registration_link"
-        },
-        {
           "type": "text",
           "label": "Registration Button Text",
           "id": "registration_button_text",
@@ -192,6 +211,21 @@
           "type": "image_picker",
           "label": "Warranty Image Alt",
           "id": "warranty_image_alt"
+        },
+        {
+          "type": "header",
+          "content": "Right Column (Form Section)"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Form Heading"
+        },
+        {
+          "type": "liquid",
+          "id": "custom_form",
+          "label": "Custom Form Code"
         }
       ]
     }

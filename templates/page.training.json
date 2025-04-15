@@ -54,7 +54,9 @@
             "registration_link": "",
             "registration_button_text": "BECOME A REGISTERED INSTALLER",
             "warranty_image": "shopify://shop_images/10-year-waranty.svg",
-            "warranty_image_alt": "shopify://shop_images/10-year-waranty.svg"
+            "warranty_image_alt": "shopify://shop_images/10-year-waranty.svg",
+            "title": "Became a register installer",
+            "custom_form": "<iframe aria-label='Vuba Stone -Register for Training Course' frameborder=\"0\" style=\"height:500px;width:99%;border:none;\" src='https://forms.zohopublic.eu/vubachemicalinnovationsltd/form/VubaStoneRegisterforTrainingCourse/formperma/FvaDkGWCT772BmtZjdg-9Bxi6R-PWZFoS4aoWMr0ASE'></iframe>"
           }
         },
         "course_CdxFqP": {
@@ -71,7 +73,9 @@
             "day_2_content": "<p>- The cost varies based on how many jobs sold, days the technical team are there, flight and hotel costs etc. We would like them to fill in a form about 1-1 training so we can have a video call about costs and scheduling this with the team.</p>",
             "course_id": "2",
             "registration_link": "",
-            "registration_button_text": "BECOME A REGISTERED INSTALLER"
+            "registration_button_text": "BECOME A REGISTERED INSTALLER",
+            "title": "Became a register installer",
+            "custom_form": "<iframe aria-label='Vuba Stone -Register for Training Course' frameborder=\"0\" style=\"height:500px;width:99%;border:none;\" src='https://forms.zohopublic.eu/vubachemicalinnovationsltd/form/VubaStoneRegisterforTrainingCourse/formperma/FvaDkGWCT772BmtZjdg-9Bxi6R-PWZFoS4aoWMr0ASE'></iframe>"
           }
         }
       },
@@ -81,7 +85,7 @@
       ],
       "settings": {
         "section_title": "Our training courses",
-        "section_description": "<p>We are the preferred surface for household names, big brands and homeowners worldwide. </p><p>Proudly BBA certified, a testament to our quality and excellence.</p>"
+        "section_description": "<p>We are the preferred surface for household names, big brands and homeowners worldwide. Proudly BBA certified, a testament to our quality and excellence.</p>"
       }
     },
     "vuba_latest_project_djTy4n": {
@@ -180,7 +184,7 @@
       "settings": {
         "section_title": "Technical and Training Team",
         "section_title_left": "",
-        "section_description": "<p>We are the preferred surface for household names, big brands and homeowners worldwide.</p><p>Proudly BBA certified, a testament to our quality and excellence.</p>"
+        "section_description": "<p>We are the preferred surface for household names, big brands and homeowners worldwide. Proudly BBA certified, a testament to our quality and excellence.</p>"
       }
     },
     "vuba_testimonial_text_LtDpNt": {

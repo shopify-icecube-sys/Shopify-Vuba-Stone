@@ -122,7 +122,10 @@
         "team_member_3xEXHY"
       ],
       "settings": {
-        "description": "We are the preferred surface for household names, big brands and homeowners worldwide. Proudly BBA certified, a testament to our quality and excellence."
+        "section_title": "",
+        "section_title_left": "",
+        "section_description": "<p>We are the preferred surface for household names, big brands and homeowners worldwide. Proudly BBA certified, a testament to our quality and excellence.</p>",
+        "description": ""
       }
     },
     "vuba_timeline_FwRgWB": {

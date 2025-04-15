@@ -47,11 +47,18 @@
       </div>
 
       <div class="col-right">
-        {% if section.settings.contact_image != blank %}
-          <div class="max-w-3xl mr-0 ml-auto bg-gray rounded-3xl overflow-hidden">
-            <img class="w-full" src="{{ section.settings.contact_image | image_url }}" alt="Contact Form">
+        <div class="max-w-3xl mr-0 ml-auto bg-gray rounded-3xl overflow-hidden">
+          <div class="bg-primary text-white mb-auto common-form-box">
+            {% if section.settings.title != blank %}
+              <div class="common-form-heading-wrap">
+                <h2 class="common-form-title mb-0">{{ section.settings.title }}</h2>
+              </div>
+            {% endif %}
+            {% if section.settings.custom_form != blank %}
+              {{ section.settings.custom_form }}
+            {% endif %}
           </div>
-        {% endif %}
+        </div>
       </div>
     </div>
   </div>
@@ -61,6 +68,10 @@
 {
   "name": "Vuba Contact Us",
   "settings": [
+    {
+      "type": "header",
+      "content": "Left Column"
+    },
     {
       "type": "text",
       "id": "heading",
@@ -102,9 +113,19 @@
       "label": "Mobile Logo"
     },
     {
-      "type": "image_picker",
-      "id": "contact_image",
-      "label": "Right Side Image"
+      "type": "header",
+      "content": "Right Column (Form Section)"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Form Heading"
+    },
+    {
+      "type": "liquid",
+      "id": "custom_form",
+      "label": "Custom Form Code",
     }
   ],
   "presets": [

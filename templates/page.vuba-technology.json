@@ -115,13 +115,15 @@
         "image_block_BBMjgf": {
           "type": "image_block",
           "settings": {
-            "image": "shopify://shop_images/Group-432.png"
+            "title": "Let's get started!",
+            "custom_form": "<iframe aria-label='Vuba Stone -Register for Training Course' frameborder=\"0\" style=\"height:500px;width:99%;border:none;\" src='https://forms.zohopublic.eu/vubachemicalinnovationsltd/form/VubaStoneRegisterforTrainingCourse/formperma/FvaDkGWCT772BmtZjdg-9Bxi6R-PWZFoS4aoWMr0ASE'></iframe>"
           }
         },
         "image_block_b6za6B": {
           "type": "image_block",
           "settings": {
-            "image": "shopify://shop_images/Group-397.png"
+            "title": "Upload complete project photos",
+            "custom_form": "<iframe aria-label='Vuba Stone -Register for Training Course' frameborder=\"0\" style=\"height:500px;width:99%;border:none;\" src='https://forms.zohopublic.eu/vubachemicalinnovationsltd/form/VubaStoneRegisterforTrainingCourse/formperma/FvaDkGWCT772BmtZjdg-9Bxi6R-PWZFoS4aoWMr0ASE'></iframe>"
           }
         }
       },

@@ -27,7 +27,8 @@
         "logo_link": "/",
         "desktop_logo": "shopify://shop_images/footer-logo-d.png",
         "mobile_logo": "shopify://shop_images/footer-logo-m.svg",
-        "contact_image": "shopify://shop_images/register-installer-form.jpg"
+        "title": "Form Heading",
+        "custom_form": "<iframe aria-label='Vuba Stone -Register for Training Course' frameborder=\"0\" style=\"height:500px;width:99%;border:none;\" src='https://forms.zohopublic.eu/vubachemicalinnovationsltd/form/VubaStoneRegisterforTrainingCourse/formperma/FvaDkGWCT772BmtZjdg-9Bxi6R-PWZFoS4aoWMr0ASE'></iframe>"
       }
     },
     "vuba_latest_project_4neBBT": {
