@@ -40,7 +40,7 @@
       "type": "vuba-banner-two",
       "settings": {
         "desktop_banner": "shopify://shop_images/vuba-mac-2.jpg",
-        "mobile_banner": "shopify://shop_images/placeholder-product.png",
+        "mobile_banner": "shopify://shop_images/banner-m.jpg",
         "div_color": "#821832",
         "logo_desktop": "shopify://shop_images/header-logo-blue-d.svg",
         "logo_mobile": "shopify://shop_images/header-logo-blue-m.svg",
@@ -147,10 +147,7 @@
         "team_member_3xEXHY"
       ],
       "settings": {
-        "section_title": "",
-        "description": "We are the preferred surface for household names, big brands and homeowners worldwide. Proudly BBA certified, a testament to our quality and excellence.",
-        "section_title_left": "",
-        "section_description": ""
+        "description": "We are the preferred surface for household names, big brands and homeowners worldwide. Proudly BBA certified, a testament to our quality and excellence."
       }
     },
     "vuba_timeline_FwRgWB": {
