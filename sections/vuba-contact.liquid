@@ -47,11 +47,21 @@
       </div>
 
       <div class="col-right">
-        {% if section.settings.contact_image != blank %}
-          <div class="max-w-3xl mr-0 ml-auto bg-gray rounded-3xl overflow-hidden">
-            <img class="w-full" src="{{ section.settings.contact_image | image_url }}" alt="Contact Form">
+        <div class="max-w-3xl mr-0 ml-auto bg-gray rounded-3xl overflow-hidden">
+          <div class="bg-primary text-white mb-auto common-form-box">
+            <div class="common-form-heading-wrap">
+              <h2 class="common-form-title mb-0">Register to Become and Installer</h2>
+            </div>
+            <iframe
+              class="w-full min-h-max mb-4"
+              id="installer-form-iframe"
+              aria-label="Vuba Stone - Find an installer"
+              frameborder="0"
+              style="min-height: 600px;"
+              src="https://forms.zohopublic.eu/vubachemicalinnovationsltd/form/VubaStoneFindaninstaller/formperma/MceOZPMdmIYrcslgwyUJ1cQvRG9I5cPT319eCzZ0gys"
+            ></iframe>
           </div>
-        {% endif %}
+        </div>
       </div>
     </div>
   </div>
