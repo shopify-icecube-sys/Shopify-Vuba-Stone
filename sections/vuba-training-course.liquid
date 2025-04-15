@@ -105,13 +105,13 @@
     buttons.forEach((btn) => {
       btn.addEventListener("click", function () {
         const id = this.getAttribute("data-course-id");
-        const formContainer = document.querySelector(
-          `.form-container-${id}`
-        );
+        const form = document.querySelector(`.form-container-${id}`);
 
-        if (formContainer) {
-          formContainer.classList.remove("hidden");
-          formContainer.scrollIntoView({ behavior: "smooth" });
+        if (form) {
+          form.classList.toggle("hidden");
+          if (!form.classList.contains("hidden")) {
+            form.scrollIntoView({ behavior: "smooth" });
+          }
         }
       });
     });
