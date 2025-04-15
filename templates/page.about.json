@@ -54,6 +54,7 @@
     },
     "vuba_richtext_NEgFBD": {
       "type": "vuba-richtext",
+      "disabled": true,
       "settings": {
         "title": "",
         "richtext": "<p>We are preferred surface for household names, big brands and homeowners worldwide.</p><p>Proudly BBA certified, a testament to our quality and excellence.</p>"
