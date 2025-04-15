@@ -182,7 +182,10 @@
         "team_member_cXD4ME"
       ],
       "settings": {
-        "description": "We are the preferred surface for household names, big brands and homeowners worldwide."
+        "section_title": "Technical and Training Team",
+        "section_title_left": "",
+        "section_description": "<p>We are the preferred surface for household names, big brands and homeowners worldwide. Proudly BBA certified, a testament to our quality and excellence.</p>",
+        "description": ""
       }
     },
     "vuba_testimonial_text_LtDpNt": {
