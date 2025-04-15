@@ -19,10 +19,9 @@
     },
     "vuba_banner_image_wqtQtY": {
       "type": "vuba-banner-image",
-      "disabled": true,
       "settings": {
         "background_image": "shopify://shop_images/vuba-mac-2.jpg",
-        "background_image_mobile": "shopify://shop_images/vuba-mac-2.jpg",
+        "background_image_mobile": "shopify://shop_images/banner-m.jpg",
         "logo_desktop": "shopify://shop_images/header-logo-blue-d.svg",
         "logo_mobile": "shopify://shop_images/header-logo-blue-m.svg",
         "title": "About Us",
@@ -38,6 +37,7 @@
     },
     "vuba_banner_two_YqCn74": {
       "type": "vuba-banner-two",
+      "disabled": true,
       "settings": {
         "desktop_banner": "shopify://shop_images/vuba-mac-2.jpg",
         "mobile_banner": "shopify://shop_images/banner-m.jpg",
