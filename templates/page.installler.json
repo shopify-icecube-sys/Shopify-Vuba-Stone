@@ -21,7 +21,7 @@
       "type": "vuba-banner-image",
       "settings": {
         "background_image": "shopify://shop_images/vuba-mac-2.jpg",
-        "background_image_mobile": "shopify://shop_images/vuba-mac-2.jpg",
+        "background_image_mobile": "shopify://shop_images/banner-m.jpg",
         "logo_desktop": "shopify://shop_images/header-logo-blue-d.svg",
         "logo_mobile": "shopify://shop_images/header-logo-blue-m.svg",
         "title": "Let us help you find",
@@ -38,8 +38,7 @@
     "vuba_interactive_map_trtWEB": {
       "type": "vuba-interactive-map",
       "settings": {
-        "heading": "Explore our interactive map",
-        "left_image": "shopify://shop_images/register-installer-form_1.jpg"
+        "heading": "Explore our interactive map"
       }
     },
     "vuba_benefit_q9HxXa": {
