@@ -1,5 +1,10 @@
 <section class="technical-team pt-44 pb-14 md:py-14 3xl:py-24">
   <div class="container">
+    {% if section.settings.description != blank %}
+      <div class="max-w-5xl mx-auto text-center pb-10 3xl:pb-24">
+        <p class="text-sm md:text-base 3xl:text-2xl">{{ section.settings.description }}</p>
+      </div>
+    {% endif %}
     <div class="max-w-5xl mx-auto text-center pb-10 3xl:pb-28">
       {% if section.settings.section_title != blank %}
         <h2 class="text-4xl md:text-4xl 3xl:text-[51px] text-primary font-bold mb-7 3xl:mb-14">
@@ -53,6 +58,12 @@
       "label": "Section Title",
       "id": "section_title",
       "default": "Technical and Training Team"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "We are the preferred surface for household names, big brands and homeowners worldwide."
     },
     {
       "type": "text",
