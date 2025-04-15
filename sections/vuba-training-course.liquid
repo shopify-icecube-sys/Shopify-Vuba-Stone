@@ -98,7 +98,25 @@
     </div>
   {% endfor %}
 </section>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".show-form-button");
 
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", function () {
+        const id = this.getAttribute("data-course-id");
+        const formContainer = document.querySelector(
+          `.form-container-${id}`
+        );
+
+        if (formContainer) {
+          formContainer.classList.remove("hidden");
+          formContainer.scrollIntoView({ behavior: "smooth" });
+        }
+      });
+    });
+  });
+</script>
 {% schema %}
 {
   "name": "Vuba Training Courses",
