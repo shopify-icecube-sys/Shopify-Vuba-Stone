@@ -23,9 +23,23 @@
         assign show_dynamic_checkout = true
       endif
     -%}
-    <button class="btn btn-outline-primary">
-      <a href="/pages/request-for-quote">Order Sample</a>
-    </button>
+    {% comment %}
+              <button
+        type="button"
+        data-aid="product-form-submit-button"
+        data-name="product-submit"
+        aria-label="Add {{ product.title }} to cart"
+        data-product-form-block="true"
+        class="btn btn-outline-primary armament-button rfq-btn-0 rfq-btn"
+        data-armada-animation="button-secondary"
+        id="rfq-btn-0"
+        data-product-id="{{ product.id }}"
+        onclick="GRFQApp.addProduct(this,{{ product.id }})"
+      >
+        <span class="!flex items-center justify-center" data-armada-button-text="">Order Sample</span>
+      </button>
+    {% endcomment %}
+
     <product-form
       class="product-form"
       data-hide-errors="{{ gift_card_recipient_feature_active }}"
@@ -62,7 +76,7 @@
           {%- render 'gift-card-recipient-form', product: product, form: form, section: section -%}
         {%- endif -%}
 
-        <div class="product-form__buttons">
+        <div class="product-form__buttons flex flex-wrap gap-3">
           {%- liquid
             assign check_against_inventory = true
             if product.selected_or_first_available_variant.inventory_management != 'shopify' or product.selected_or_first_available_variant.inventory_policy == 'continue'
