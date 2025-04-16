@@ -23,9 +23,21 @@
         assign show_dynamic_checkout = true
       endif
     -%}
-    <button class="btn btn-outline-primary">
-      <a href="/pages/request-for-quote">Order Sample</a>
+    <button
+      type="button"
+      data-aid="product-form-submit-button"
+      data-name="product-submit"
+      aria-label="Add {{ product.title }} to cart"
+      data-product-form-block="true"
+      class="btn btn-outline-primary armament-button text-body w-full rfq-btn-0 rfq-btn"
+      data-armada-animation="button-secondary"
+      id="rfq-btn-0"
+      data-product-id="{{ product.id }}"
+      onclick="GRFQApp.addProduct(this,{{ product.id }})"
+    >
+      <span class="!flex items-center justify-center" data-armada-button-text="">Order Sample</span>
     </button>
+
     <product-form
       class="product-form"
       data-hide-errors="{{ gift_card_recipient_feature_active }}"
