@@ -2,14 +2,14 @@
   {% if section.settings.background_image != blank %}
     <img
       src="{{ section.settings.background_image | image_url }}"
-      class="w-full h-screen object-cover md:block hidden"
+      class="w-full object-cover md:block hidden h-[500px] 2xl:h-[600px] 3xl:h-[790px]"
       alt="banner desktop"
     >
   {% endif %}
   {% if section.settings.background_image_mobile != blank %}
     <img
       src="{{ section.settings.background_image_mobile | image_url }}"
-      class="w-full object-cover md:hidden"
+      class="w-full object-cover md:hidden h-[500px]"
       alt="banner mobile"
     >
   {% endif %}

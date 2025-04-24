@@ -122,79 +122,78 @@
   </div>
 </section>
 
-{% comment %}
-  <script>
-     document.addEventListener("DOMContentLoaded", function () {
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
 
-      const filterButtons = document.querySelectorAll("[data-filter-type]");
+    const filterButtons = document.querySelectorAll("[data-filter-type]");
 
-      const filterItems = document.querySelectorAll("[data-color], [data-job], [data-type]");
+    const filterItems = document.querySelectorAll("[data-color], [data-job], [data-type]");
 
-      let selectedFilters = {
+    let selectedFilters = {
 
-        color: [],
+      color: [],
 
-        job: [],
+      job: [],
 
-        type: []
+      type: []
 
-      };
+    };
 
-      filterButtons.forEach(button => {
+    filterButtons.forEach(button => {
 
-        button.addEventListener("click", function () {
+      button.addEventListener("click", function () {
 
-          const filterType = this.getAttribute("data-filter-type");
+        const filterType = this.getAttribute("data-filter-type");
 
-          const filterValue = this.getAttribute("data-filter-value");
+        const filterValue = this.getAttribute("data-filter-value");
 
-          if (selectedFilters[filterType].includes(filterValue)) {
+        if (selectedFilters[filterType].includes(filterValue)) {
 
-            selectedFilters[filterType] = selectedFilters[filterType].filter(value => value !== filterValue);
+          selectedFilters[filterType] = selectedFilters[filterType].filter(value => value !== filterValue);
 
-            this.classList.remove("bg-primary", "text-white");
+          this.classList.remove("bg-primary", "text-white");
+
+        } else {
+
+          selectedFilters[filterType].push(filterValue);
+
+          this.classList.add("bg-primary", "text-white");
+
+        }
+
+        filterItems.forEach(item => {
+
+          const itemColor = item.getAttribute("data-color");
+
+          const itemJob = item.getAttribute("data-job");
+
+          const itemType = item.getAttribute("data-type");
+
+          const matchesColor = selectedFilters.color.length === 0 || selectedFilters.color.includes(itemColor);
+
+          const matchesJob = selectedFilters.job.length === 0 || selectedFilters.job.includes(itemJob);
+
+          const matchesType = selectedFilters.type.length === 0 || selectedFilters.type.includes(itemType);
+
+          if (matchesColor && matchesJob && matchesType) {
+
+            item.style.display = "block";
 
           } else {
 
-            selectedFilters[filterType].push(filterValue);
-
-            this.classList.add("bg-primary", "text-white");
+            item.style.display = "none";
 
           }
-
-          filterItems.forEach(item => {
-
-            const itemColor = item.getAttribute("data-color");
-
-            const itemJob = item.getAttribute("data-job");
-
-            const itemType = item.getAttribute("data-type");
-
-            const matchesColor = selectedFilters.color.length === 0 || selectedFilters.color.includes(itemColor);
-
-            const matchesJob = selectedFilters.job.length === 0 || selectedFilters.job.includes(itemJob);
-
-            const matchesType = selectedFilters.type.length === 0 || selectedFilters.type.includes(itemType);
-
-            if (matchesColor && matchesJob && matchesType) {
-
-              item.style.display = "block";
-
-            } else {
-
-              item.style.display = "none";
-
-            }
-
-          });
 
         });
 
       });
 
     });
-  </script>
-{% endcomment %}
+
+  });
+</script>
+
 {% schema %}
 {
   "name": "vuba filter",

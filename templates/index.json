@@ -12,7 +12,7 @@
     "vuba_banner_image_kFLjhb": {
       "type": "vuba-banner-image",
       "settings": {
-        "background_image": "shopify://shop_images/banner-d.jpg",
+        "background_image": "shopify://shop_images/banner-d_1.jpg",
         "background_image_mobile": "shopify://shop_images/banner-m.jpg",
         "logo_desktop": "shopify://shop_images/vuba-stone-brochure-d.svg",
         "logo_mobile": "shopify://shop_images/vuba-stone-brochure-m.svg",
