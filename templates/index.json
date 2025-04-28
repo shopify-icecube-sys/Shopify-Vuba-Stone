@@ -18,10 +18,10 @@
         "logo_mobile": "shopify://shop_images/vuba-stone-brochure-m.svg",
         "title": "DOWNLOAD OUR BROCHURE",
         "title2": "",
-        "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>",
-        "button_text_en": "DOWNLOAD EN",
+        "description": "<p>Discover our latest brochure to learn more about Vuba Stone, explore our innovative systems, and get inspired by stunning project ideas.</p>",
+        "button_text_en": "Homeowner",
         "button_link_en": "shopify://collections",
-        "button_text_esp": "DOWNLOAD ESP",
+        "button_text_esp": "Installer",
         "button_link_esp": "shopify://collections/vuba-america",
         "div_color": "#005676",
         "description_about": ""
@@ -31,11 +31,12 @@
       "type": "vuba-richtext",
       "settings": {
         "title": "This is Vuba Stone",
-        "richtext": "<p>We are preferred surface for household names, big brands and homeowners worldwide. Proudly BBA certified, a testament to our quality and excellence.</p>"
+        "richtext": "<p>We are the leading worldwide manufacturer of resin and aggregates used for commercial and residential projects for pedestrian and vehicle traffic for permeable and durable resin surfacing. </p>"
       }
     },
     "vuba_stone_update_ejAbT4": {
       "type": "vuba-stone-update",
+      "disabled": true,
       "settings": {
         "section_heading": "Vuba Stone Updates",
         "blog_handle": "news"
@@ -45,7 +46,7 @@
       "type": "vuba-mac-section-one",
       "settings": {
         "title": "Vuba Mac",
-        "description": "<p>We would like a section dedicated to VubaMac and how it is the first permeable base</p><p> specifically designed for Resin Bound surfacing.</p><p>- We offer a 10 year warranty on VubaMac.<br/>- Video of VubaMac been installed.</p>",
+        "description": "<p>The Vuba Stone Full System. The ultimate solution for flood-resistant paving that revolutionises traditional construction methods. Utilising 100% recycled aggregates and renewable binders, VubaMac not only reduces environmental impact but also addresses pressing issues like CO2 emissions from concrete and VOC emissions from asphalt. Its groundbreaking Less Dig approach preserves the earth, saving millions of kilograms of earth per street while eliminating the need for drainage systems.</p>",
         "desktop_image": "shopify://shop_images/VubaMacAggregate.png"
       }
     },
@@ -53,8 +54,8 @@
       "type": "vuba-mac-section-two",
       "settings": {
         "heading": "Vuba Mac",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "image": "shopify://shop_images/vuba-mac-2.jpg",
+        "description": "VubaMac provides a comprehensive 10-year warranty, ensuring that your purchase is fully backed by a trusted company. With our commitment to quality, durability, and customer satisfaction, Vuba Stone stands behind the excellence of our VubaMac product. This extended warranty gives you peace of mind, knowing your investment is protected long term.",
+        "image": "shopify://shop_images/VubaMac_Graphic.png",
         "video_url": "https://cdn.shopify.com/videos/c/o/v/728b5f01834f4ec2bbee173c63051434.mp4",
         "video_poster": "shopify://shop_images/Video-placeholder-m.jpg"
       }
