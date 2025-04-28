@@ -24,9 +24,9 @@
         "background_image_mobile": "shopify://shop_images/banner-m.jpg",
         "logo_desktop": "shopify://shop_images/header-logo-blue-d.svg",
         "logo_mobile": "shopify://shop_images/header-logo-blue-m.svg",
-        "title": "Training Course dates and",
-        "title2": "locations",
-        "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>",
+        "title": "Training Course Dates and",
+        "title2": "Locations",
+        "description": "",
         "button_text_en": "2 DAY COURSE",
         "button_link_en": "shopify://collections",
         "button_text_esp": "1 - 1 TRAINING",
@@ -45,13 +45,12 @@
             "course_description": "<p>The courses are 2 days long and include a presentation and on-site training learning about the preparation of the base and Vuba Stone application.</p>",
             "course_desc_one": "",
             "course_desc_two": "",
-            "background_image": "shopify://shop_images/training-cource-1.jpg",
+            "background_image": "shopify://shop_images/Training_Course.png",
             "heading_one": "Day 1",
-            "day_1_content": "<p>-     Meet and greet with an introduction to Vuba Stone</p><p>-   On-site introduction to all tools, equipment, and project preparation</p><p>-  Introduction to the installation process</p><p>-  Theory Presentation</p><p>- Q&A sessions with the Vuba team and experienced Vuba Stone installers</p>",
+            "day_1_content": "<p>Day 1:</p><p>- Meet and greet with an introduction to Vuba Stone</p><p>- Theory Presentation & Q&A session with the Vuba team and experienced Vuba Stone installers</p><p>- On-site introduction to all tools, site setup, and project preparation</p><p>- Introduction to the installation process</p>",
             "heading_two": "Day 2",
-            "day_2_content": "<p>- Completing a Vuba Stone project up to 1000 square feet</p><p>- Practical introduction to mixing and applying Vuba Stone</p><p>- Using all necessary tools and equipment</p><p>- Introduction to vertical and VubaMec applications</p><p></p>",
+            "day_2_content": "<p>Day 2:</p><p>- Completing a Vuba Stone project up to 1,000 sq. ft.</p><p>- Practical introduction to mixing Vuba Stone and application</p><p>- Introduction to vertical applications and VubaMac</p><p>- Using all necessary tools and equipment</p>",
             "course_id": "1",
-            "registration_link": "",
             "registration_button_text": "BECOME A REGISTERED INSTALLER",
             "warranty_image": "shopify://shop_images/10-year-waranty.svg",
             "warranty_image_alt": "shopify://shop_images/10-year-waranty.svg",
@@ -63,16 +62,15 @@
           "type": "course",
           "settings": {
             "course_title": "1-1 Training",
-            "course_description": "<p>The 1-1 training is offered to the installer when they have sold between 3-5 projects and a member of the technical and training team fly’s over to their location and helps them install during an intense training week.</p>",
+            "course_description": "<p>2 day training must be completed prior to registering for this training.</p>",
             "course_desc_one": "",
             "course_desc_two": "To registering for this training.",
-            "background_image": "shopify://shop_images/banner-d.jpg",
+            "background_image": "shopify://shop_images/Levelling_Mr_Mudd.jpg",
             "heading_one": "",
-            "day_1_content": "<p>- During this training they cover base preparation, training the team, handing over the project to the client, borders and features, optional Vuba Mac and VubaVert if the customer has sold them.</p>",
+            "day_1_content": "<p>The 1-1 training is available to any installer when they have sold between 3-5 projects. A member of our Technical and Training Team flies over to their location to help them install during an intense training week.</p><p>During this training they cover base preparation, training the team, handing over the project to the client, borders and features, optional VubaMac & VubaVert if the customer has sold them.</p>",
             "heading_two": "",
-            "day_2_content": "<p>- The cost varies based on how many jobs sold, days the technical team are there, flight and hotel costs etc. We would like them to fill in a form about 1-1 training so we can have a video call about costs and scheduling this with the team.</p>",
+            "day_2_content": "<p>Please fill out this form if you are interested in 1-1 training and we can organize a video call to discuss the costs and scheduling with our team.</p>",
             "course_id": "2",
-            "registration_link": "",
             "registration_button_text": "BECOME A REGISTERED INSTALLER",
             "title": "Became a register installer",
             "custom_form": "<iframe aria-label='Vuba Stone -Register for Training Course' frameborder=\"0\" style=\"height:500px;width:99%;border:none;\" src='https://forms.zohopublic.eu/vubachemicalinnovationsltd/form/VubaStoneRegisterforTrainingCourse/formperma/FvaDkGWCT772BmtZjdg-9Bxi6R-PWZFoS4aoWMr0ASE'></iframe>"
@@ -85,13 +83,13 @@
       ],
       "settings": {
         "section_title": "Our training courses",
-        "section_description": "<p>We are the preferred surface for household names, big brands and homeowners worldwide. Proudly BBA certified, a testament to our quality and excellence.</p>"
+        "section_description": "<p>We are the leading worldwide manufacturer of resin and aggregates used for commercial and residential projects for pedestrian and vehicle traffic for permeable and durable resin surfacing.</p>"
       }
     },
     "vuba_latest_project_djTy4n": {
       "type": "vuba-latest-project",
       "settings": {
-        "section_heading": "Completed during training, and participants",
+        "section_heading": "Our Previous Training Courses",
         "blog_handle": "news"
       }
     },
@@ -184,16 +182,16 @@
       "settings": {
         "section_title": "Technical and Training Team",
         "section_title_left": "",
-        "section_description": "<p>We are the preferred surface for household names, big brands and homeowners worldwide. Proudly BBA certified, a testament to our quality and excellence.</p>"
+        "section_description": "<p>Trained by experts, trusted by homeowners—our Technical and Training Team makes it happen.</p>"
       }
     },
     "vuba_testimonial_text_LtDpNt": {
       "type": "vuba-testimonial-text",
       "settings": {
-        "testimonial_text": "“We would like a testimonial from Ogburn Construction” (An installer that has completed 1-1 training) for new installers to view.",
-        "testimonial_subtext": "for new installers",
-        "testimonial_name": "Person's name,",
-        "testimonial_date": "date here"
+        "testimonial_text": "Stephen Ogburn - Ogburn Concrete Leveling and Resurfacing",
+        "testimonial_subtext": "“As a company, we believe strongly that team alignment and clear communication are key to delivering consistent, high-quality work. That’s why we decided to bring in a Vuba Stone trainer to work with us for a full week on our own projects. This approach allowed every team member, across all roles, the opportunity to ask questions, gain hands-on experience, and build a high level of confidence and competence with the product. It’s an investment in our people and our process and one we’d highly recommend. The trainers have years of practical experience and we had the ability to work out some issues specific to our region. All of which has resulted in the highest customer rating of any product we offer!\"",
+        "testimonial_name": "",
+        "testimonial_date": ""
       }
     }
   },
