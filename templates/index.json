@@ -64,14 +64,14 @@
       "type": "vuba-latest-project",
       "settings": {
         "section_heading": "Latest Projects",
-        "blog_handle": "news"
+        "blog_handle": "project"
       }
     },
     "vuba_installer_FFY7En": {
       "type": "vuba-installer",
       "settings": {
         "category_name": "Category Name",
-        "button_link": "shopify://collections",
+        "button_link": "shopify://pages/contact",
         "button_text": "GO TO INSTALLER",
         "image": "shopify://shop_images/vuba-installer-man-d.png",
         "image_alt": "Vuba Installer"
@@ -82,7 +82,7 @@
       "settings": {
         "main_image": "shopify://shop_images/tiktok.jpg",
         "heading": "Join the Stampede!",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "description": "We have more than 100 Million views and 1 Million Followers across social media worldwide! Follow us on Instagram, Facebook and LinkedIn for industry updates and the latest Vuba Stone news & innovations!"
       }
     },
     "vuba_epoxy_stone_eWXmKp": {
@@ -116,11 +116,11 @@
     "vuba_headline_zqWMqq": {
       "type": "vuba-headline",
       "settings": {
-        "headline_image": "shopify://shop_images/Headline-Click-through.jpg",
-        "headline_text": "Headline & Click Throughs",
-        "subheading_text": "We are the preferred surface for household names, big brands and homeowners worldwide.",
-        "button_text": "GO TO INSTALLER",
-        "button_link": "shopify://collections"
+        "headline_image": "shopify://shop_images/Vusion_Example_1.png",
+        "headline_text": "VUSION",
+        "subheading_text": "Struggling to decide what blend to have on your project? With homeowners in mind we created Vusion, a virtual representation of what your driveway could look like. Pick up to three blends and have the results back in one working day.",
+        "button_text": "Try now",
+        "button_link": "https://vusion.vubaresin.com/"
       }
     }
   },

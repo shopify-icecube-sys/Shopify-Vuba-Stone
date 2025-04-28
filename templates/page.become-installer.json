@@ -24,9 +24,9 @@
         "background_image_mobile": "shopify://shop_images/banner-m.jpg",
         "logo_desktop": "shopify://shop_images/header-logo-blue-d.svg",
         "logo_mobile": "shopify://shop_images/header-logo-blue-m.svg",
-        "title": "Our Installer are always",
-        "title2": "In demand",
-        "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>",
+        "title": "Vuba Stone Installers",
+        "title2": "Are in High Demand",
+        "description": "<p>Sign up below to become part of our installer network and join a thriving community bringing beautiful, in-demand surfaces to life.</p>",
         "button_text_en": "",
         "button_link_en": "",
         "button_text_esp": "",
@@ -38,11 +38,11 @@
     "vuba_register_installer_3Y3kKE": {
       "type": "vuba-register-installer",
       "settings": {
-        "register_bg_image": "shopify://shop_images/epoxy-vuba-2.jpg",
-        "client_image": "shopify://shop_images/client-pic.jpg",
-        "client_name": "Name, Surname",
-        "client_company": "Company",
-        "client_testimonial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        "register_bg_image": "shopify://shop_images/Mr_Mudd_Payette_Patio.heic",
+        "client_image": "shopify://shop_images/1519865801930.jpg",
+        "client_name": "Brian Wheeler",
+        "client_company": "Mr Mudd Concrete Corp",
+        "client_testimonial": "“I've been in business for 21 years and have tried everything overlay/ resurfacing products on the market, and unfortunately, I had never found one that would hold up in my climate with all the freeze/thaw cycles. The problem with traditional epoxy overlays is that the sun breaks them down, and they get hard, brittle, and fall apart. Cement based overlays have the tendency to soak up water, freeze, and delaminate. I had given up the idea of being able to do a resurface product until I found Vuba Stone. The thing that makes Vuba Stone different is that you put it on there much thicker, so it almost works like an exoskeleton over top of the concrete or whatever base you lay it on. Also, the fact that it is a urethane resin with a UV stabilizer, the sun doesn't break it down, and it has some flex to it, which allows it to hold up long-term.\nSince June of 2023, we have sold over $5,200,000 and have installed over $5,000,000.\nOur average dollar per sale is around $10k, and we specialize in the homeowner concrete repair market. Our goal for 2025 is to install $5,000,000.”"
       }
     },
     "vuba_benefit_fhD8ge": {
@@ -52,36 +52,36 @@
           "type": "benefit",
           "settings": {
             "icon": "shopify://shop_images/making-icon.svg",
-            "title": "Dedicated Account Manager",
+            "title": "Dedicated Support Network",
             "title2": "",
-            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum aquis congue. Nullam cursuLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum augue quis congue. </p>"
+            "description": "<p>Our Dedicated Support Network is here to guide you every step of the way, from your first install to growing your business. Whether you need technical advice, marketing support, or quick answers, our team is just a message or call away.<br/></p>"
           }
         },
         "benefit_UYQjhh": {
           "type": "benefit",
           "settings": {
             "icon": "shopify://shop_images/technology-icon.svg",
-            "title": "Top Tier Training",
-            "title2": "",
-            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum aquis congue. Nullam cursuLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum augue quis congue. </p>"
+            "title": "Top Tier",
+            "title2": "Training",
+            "description": "<p>Through our extensive network, Vuba Stone Installers gain access to customers. We’re expected to receive over 5000 homeowner leads in 2025. </p>"
           }
         },
         "benefit_4RYwGq": {
           "type": "benefit",
           "settings": {
             "icon": "shopify://shop_images/quartz-icon.svg",
-            "title": "Exclusive Products",
+            "title": "Exclusive Training Opportunities",
             "title2": "",
-            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum aquis congue. Nullam cursuLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum augue quis congue. </p>"
+            "description": "<p>Gain hands-on experience through our expert-led training courses, designed to build confidence and set you up for success from day one.</p>"
           }
         },
         "benefit_9k33Yn": {
           "type": "benefit",
           "settings": {
             "icon": "shopify://shop_images/dealers-icon.svg",
-            "title": "Benefit from our R&D",
-            "title2": "",
-            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum aquis congue. Nullam cursuLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum augue quis congue. </p>"
+            "title": "High Demand",
+            "title2": "High Profit",
+            "description": "<p>Vuba Stone is rapidly growing across North America and beyond. Our installers are in high demand, with the potential for high-margin, repeat business.</p>"
           }
         }
       },

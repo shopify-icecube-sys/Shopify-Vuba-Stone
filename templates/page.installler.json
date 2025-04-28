@@ -26,7 +26,7 @@
         "logo_mobile": "shopify://shop_images/header-logo-blue-m.svg",
         "title": "Let us help you find",
         "title2": "an Installler",
-        "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p><p><br/><a href=\"/blogs/project\" title=\"Project\">Click here if you would like to be an installer</a></p>",
+        "description": "<p>To transform your space with one of our certified installers, simply fill out the form below, and we’ll connect you with an installer in your area.</p><p><br/><a href=\"/blogs/project\" title=\"Project\">Click here if you would like to be an installer</a></p>",
         "button_text_en": "",
         "button_link_en": "",
         "button_text_esp": "",
@@ -48,36 +48,36 @@
           "type": "benefit",
           "settings": {
             "icon": "shopify://shop_images/making-icon.svg",
-            "title": "Benefit Title",
+            "title": "Real European Marble & Quartz",
             "title2": "",
-            "description": "<p>Benefit description goes here.</p>"
+            "description": "<p>Sourced for their exceptional quality and natural beauty. This gives our surfaces a premium finish that's as durable as it is stunning—bringing timeless elegance to every project.</p>"
           }
         },
         "benefit_rYmbUG": {
           "type": "benefit",
           "settings": {
             "icon": "shopify://shop_images/technology-icon.svg",
-            "title": "Benefit Title",
+            "title": "Expert Training",
             "title2": "",
-            "description": "<p>Benefit description goes here.</p>"
+            "description": "<p>Vuba Stone installers are professionally trained to deliver top-quality results, every time. Our expert training gives homeowners peace of mind—knowing their surface is installed by someone with the skills, knowledge, and support to get it done right.</p>"
           }
         },
         "benefit_EcatwE": {
           "type": "benefit",
           "settings": {
             "icon": "shopify://shop_images/quartz-icon.svg",
-            "title": "Benefit Title",
+            "title": "Low Maintenance",
             "title2": "",
-            "description": "<p>Benefit description goes here.</p>"
+            "description": "<p>A Vuba Stone surface requires minimal maintenance to preserve its aesthetics. We recommend periodic inspections every 5-10 years to ensure its durability.</p>"
           }
         },
         "benefit_EqFjJr": {
           "type": "benefit",
           "settings": {
             "icon": "shopify://shop_images/dealers-icon.svg",
-            "title": "Benefit Title",
+            "title": "5 Year Warranty",
             "title2": "",
-            "description": "<p>Benefit description goes here.</p>"
+            "description": "<p>We offer a 5-year warranty on Vuba materials when a project is installed to our specifications, ensuring long-lasting quality and satisfaction.</p>"
           }
         }
       },
@@ -96,7 +96,7 @@
       "settings": {
         "category_name": "Category Name",
         "button_link": "#",
-        "button_text": "GO TO INSTALLER",
+        "button_text": "Become an installer",
         "image": "shopify://shop_images/vuba-installer-man-d.png",
         "image_alt": "Vuba Installer"
       }
@@ -104,22 +104,10 @@
     "vuba_multicolumn_installer_fUJeYR": {
       "type": "vuba-multicolumn-installer",
       "blocks": {
-        "slide_mcetYG": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/banner-d.jpg",
-            "alt_text": "Installer",
-            "title": "Installer",
-            "description": "<p>Default description for Installer.</p>",
-            "background_color": "#005676",
-            "link": "#",
-            "button_text": "Learn more"
-          }
-        },
         "slide_Udy9pr": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/banner-d.jpg",
+            "image": "shopify://shop_images/Vuba_Stone_Installer_Scheme_Logos-01.png",
             "alt_text": "Registered",
             "title": "Registered",
             "description": "<p>Default description for Registered.</p>",
@@ -131,9 +119,9 @@
         "slide_JXMMqJ": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/banner-d.jpg",
+            "image": "shopify://shop_images/Vuba_Stone_Installer_Scheme_Logos-03.png",
             "alt_text": "Approved",
-            "title": "Approved",
+            "title": "Certified",
             "description": "<p>Default description for Approved.</p>",
             "background_color": "#b16f4d",
             "link": "#",
@@ -143,7 +131,7 @@
         "slide_NC4PCJ": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/banner-d.jpg",
+            "image": "shopify://shop_images/Vuba_Stone_Installer_Scheme_Logos-05.png",
             "alt_text": "Premium",
             "title": "Premium",
             "description": "<p>Default description for Premium.</p>",
@@ -155,18 +143,17 @@
         "slide_DbDenH": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/banner-d.jpg",
+            "image": "shopify://shop_images/Vuba_Stone_Installer_Scheme_Logos-07.png",
             "alt_text": "Elite",
             "title": "Elite",
             "description": "<p>Default description for Elite.</p>",
-            "background_color": "#a38c6b",
+            "background_color": "#a3926b",
             "link": "#",
             "button_text": "Learn more"
           }
         }
       },
       "block_order": [
-        "slide_mcetYG",
         "slide_Udy9pr",
         "slide_JXMMqJ",
         "slide_NC4PCJ",
