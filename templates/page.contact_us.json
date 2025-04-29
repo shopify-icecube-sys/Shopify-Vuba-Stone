@@ -21,20 +21,20 @@
       "type": "vuba-contact",
       "settings": {
         "heading": "Contact Us Today",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum augue quis congue. Nullam cursus lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "description": "Ready to get started with Vuba Stone? Reach out to our team for expert advice, tailored product recommendations, and all the support you need. Whether you're upgrading your home or looking to start installing, we’re here to help every step of the way. Get in touch today!",
         "email": "sales@vuba-stone.com",
         "phone": "01482 778897",
         "logo_link": "/",
         "desktop_logo": "shopify://shop_images/footer-logo-d.png",
         "mobile_logo": "shopify://shop_images/footer-logo-m.svg",
-        "title": "Form Heading",
+        "title": "Contact Us",
         "custom_form": "<iframe aria-label='Vuba Stone -Register for Training Course' frameborder=\"0\" style=\"height:500px;width:99%;border:none;\" src='https://forms.zohopublic.eu/vubachemicalinnovationsltd/form/VubaStoneRegisterforTrainingCourse/formperma/FvaDkGWCT772BmtZjdg-9Bxi6R-PWZFoS4aoWMr0ASE'></iframe>"
       }
     },
     "vuba_latest_project_4neBBT": {
       "type": "vuba-latest-project",
       "settings": {
-        "section_heading": "Industry Update",
+        "section_heading": "Latest News & Case Studies",
         "blog_handle": "project"
       }
     }
