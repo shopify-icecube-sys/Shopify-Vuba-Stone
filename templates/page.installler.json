@@ -122,10 +122,10 @@
             "image": "shopify://shop_images/Vuba_Stone_Installer_Scheme_Logos-03.png",
             "alt_text": "Approved",
             "title": "Certified",
-            "description": "<p>Default description for Approved.</p>",
+            "description": "<p>An Installer who has completed several Vuba Stone projects and training, demonstrating proven experience and commitment to the craft.<br/><br/></p>",
             "background_color": "#b16f4d",
             "link": "#",
-            "button_text": "Learn more"
+            "button_text": ""
           }
         },
         "slide_NC4PCJ": {
@@ -134,10 +134,10 @@
             "image": "shopify://shop_images/Vuba_Stone_Installer_Scheme_Logos-05.png",
             "alt_text": "Premium",
             "title": "Premium",
-            "description": "<p>Default description for Premium.</p>",
+            "description": "<p>Trusted installer of Vuba Stone, known for consistently delivering high-quality installations and maintaining a strong, long-term relationship with our team.</p>",
             "background_color": "#b7b7b7",
             "link": "#",
-            "button_text": "Learn more"
+            "button_text": ""
           }
         },
         "slide_DbDenH": {
@@ -146,7 +146,7 @@
             "image": "shopify://shop_images/Vuba_Stone_Installer_Scheme_Logos-07.png",
             "alt_text": "Elite",
             "title": "Elite",
-            "description": "<p>Default description for Elite.</p>",
+            "description": "<p>An industry leading installer, specializing in high-volume, high-quality Vuba Stone installations, and sets the standard within our network.</p>",
             "background_color": "#a3926b",
             "link": "#",
             "button_text": "Learn more"
