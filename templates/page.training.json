@@ -99,8 +99,8 @@
         "team_member_xd4PwN": {
           "type": "team_member",
           "settings": {
-            "team_member_name": "Ellie Platten",
-            "team_member_company": "Americas Territory Manager",
+            "team_member_name": "Ellie Platten | Americas Territory Manager",
+            "team_member_company": "",
             "team_member_image": "shopify://shop_images/Copy_of_Ellie_Platten_edit.png",
             "team_member_description": ""
           }
@@ -108,8 +108,8 @@
         "team_member_jnpr3E": {
           "type": "team_member",
           "settings": {
-            "team_member_name": "Ellis Webb",
-            "team_member_company": "Americas Account Manager",
+            "team_member_name": "Ellis Webb | Americas Account Manager",
+            "team_member_company": "",
             "team_member_image": "shopify://shop_images/Copy_of_Ellis.png",
             "team_member_description": ""
           }
@@ -117,9 +117,18 @@
         "team_member_THpkjU": {
           "type": "team_member",
           "settings": {
-            "team_member_name": "Georgie Foote",
-            "team_member_company": "Americas Sales Administrator",
+            "team_member_name": "Georgie Foote | Americas Sales Administrator",
+            "team_member_company": "",
             "team_member_image": "shopify://shop_images/Copy_of_Georgia_Foote_1.png",
+            "team_member_description": ""
+          }
+        },
+        "team_member_JPwPLy": {
+          "type": "team_member",
+          "settings": {
+            "team_member_name": "Sean Scott | Managing Director",
+            "team_member_company": "",
+            "team_member_image": "shopify://shop_images/Sean_Headshot_Cropped.jpg",
             "team_member_description": ""
           }
         }
@@ -127,7 +136,8 @@
       "block_order": [
         "team_member_xd4PwN",
         "team_member_jnpr3E",
-        "team_member_THpkjU"
+        "team_member_THpkjU",
+        "team_member_JPwPLy"
       ],
       "settings": {
         "section_title": "Vuba Team",
