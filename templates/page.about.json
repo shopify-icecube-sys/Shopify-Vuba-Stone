@@ -20,142 +20,29 @@
     "vuba_banner_image_wqtQtY": {
       "type": "vuba-banner-image",
       "settings": {
-        "background_image": "shopify://shop_images/vuba-mac-2.jpg",
-        "background_image_mobile": "shopify://shop_images/banner-m.jpg",
+        "background_image": "shopify://shop_images/Team_in_Warehouse_bad4f9b3-d2ed-4645-a24a-02b0871c57f4.jpg",
+        "background_image_mobile": "shopify://shop_images/Team_in_Warehouse_bad4f9b3-d2ed-4645-a24a-02b0871c57f4.jpg",
         "logo_desktop": "shopify://shop_images/header-logo-blue-d.svg",
         "logo_mobile": "shopify://shop_images/header-logo-blue-m.svg",
         "title": "About Us",
         "title2": "",
         "description": "",
-        "button_text_en": "MEET THE TEAM",
-        "button_link_en": "shopify://collections/all",
-        "button_text_esp": "OUR HISTORY",
-        "button_link_esp": "shopify://products/ellis-island",
+        "button_text_en": "",
+        "button_link_en": "",
+        "button_text_esp": "",
+        "button_link_esp": "",
         "div_color": "#821832",
-        "description_about": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>"
+        "description_about": "<p>Vuba Stone is an industry-leading permeable surface manufacturer and aggregate processer. With a professionally-trained network of over 120 installers across North and South America, we are dedicated to quality. </p>"
       }
     },
-    "vuba_teams_Uiw86R": {
-      "type": "vuba-teams",
-      "blocks": {
-        "team_member_t9UmB3": {
-          "type": "team_member",
-          "settings": {
-            "team_member_name": "Name, Surname",
-            "team_member_company": "Company",
-            "team_member_image": "shopify://shop_images/technical-1.jpg",
-            "team_member_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum"
-          }
-        },
-        "team_member_rYLxyG": {
-          "type": "team_member",
-          "settings": {
-            "team_member_name": "Name, Surname",
-            "team_member_company": "Company",
-            "team_member_image": "shopify://shop_images/technical-1.jpg",
-            "team_member_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum"
-          }
-        },
-        "team_member_NLKFtG": {
-          "type": "team_member",
-          "settings": {
-            "team_member_name": "Name, Surname",
-            "team_member_company": "Company",
-            "team_member_image": "shopify://shop_images/technical-1.jpg",
-            "team_member_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum"
-          }
-        },
-        "team_member_gHbKCg": {
-          "type": "team_member",
-          "settings": {
-            "team_member_name": "Name, Surname",
-            "team_member_company": "Company",
-            "team_member_image": "shopify://shop_images/technical-1.jpg",
-            "team_member_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum"
-          }
-        },
-        "team_member_YwynTx": {
-          "type": "team_member",
-          "settings": {
-            "team_member_name": "Name, Surname",
-            "team_member_company": "Company",
-            "team_member_image": "shopify://shop_images/technical-1.jpg",
-            "team_member_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum"
-          }
-        },
-        "team_member_KkVRhk": {
-          "type": "team_member",
-          "settings": {
-            "team_member_name": "Name, Surname",
-            "team_member_company": "Company",
-            "team_member_image": "shopify://shop_images/technical-1.jpg",
-            "team_member_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum"
-          }
-        },
-        "team_member_UtWErm": {
-          "type": "team_member",
-          "settings": {
-            "team_member_name": "Name, Surname",
-            "team_member_company": "Company",
-            "team_member_image": "shopify://shop_images/technical-1.jpg",
-            "team_member_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum"
-          }
-        },
-        "team_member_3xEXHY": {
-          "type": "team_member",
-          "settings": {
-            "team_member_name": "Name, Surname",
-            "team_member_company": "Company",
-            "team_member_image": "shopify://shop_images/technical-1.jpg",
-            "team_member_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum"
-          }
-        }
-      },
-      "block_order": [
-        "team_member_t9UmB3",
-        "team_member_rYLxyG",
-        "team_member_NLKFtG",
-        "team_member_gHbKCg",
-        "team_member_YwynTx",
-        "team_member_KkVRhk",
-        "team_member_UtWErm",
-        "team_member_3xEXHY"
-      ],
+    "vuba_testimonial_text_czPD4M": {
+      "type": "vuba-testimonial-text",
+      "name": "Vuba Testimonial Text",
       "settings": {
-        "section_title": "",
-        "section_title_left": "",
-        "section_description": "<p>We are the preferred surface for household names, big brands and homeowners worldwide. Proudly BBA certified, a testament to our quality and excellence.</p>"
-      }
-    },
-    "rich_text_MCphw8": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_VzM7mL": {
-          "type": "heading",
-          "settings": {
-            "heading": "Vuba Stone is an industry-leading permeable surface manufacturer and aggregate processer. With a professionally-trained network of over 120 installers across North and South America, we are dedicated to quality.",
-            "heading_size": "h1"
-          }
-        },
-        "text_KWkFcP": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We are the number 1 resin surfacing solution throughout North and South America. As part of the Vuba Chemical Innovations family, Vuba Stone is changing the game of flooring systems as the only manufacturer that also processes aggregates. We are committed to delivering exceptional standards, from our experienced technical and training team to our fantastic sales and marketing department. </p><p>Here at Vuba Stone, we are a family, partners in everything that we do. </p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_VzM7mL",
-        "text_KWkFcP"
-      ],
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "testimonial_text": "",
+        "testimonial_subtext": "",
+        "testimonial_name": "",
+        "testimonial_date": "We are the number 1 resin surfacing solution throughout North and South America. As part of the Vuba Chemical Innovations family, Vuba Stone is changing the game of flooring systems as the only manufacturer that also processes aggregates. We are committed to delivering exceptional standards, from our experienced technical and training team to our fantastic sales and marketing department. <br> Here at Vuba Stone, we are a family, partners in everything that we do."
       }
     },
     "vuba_timeline_FwRgWB": {
@@ -184,8 +71,7 @@
   "order": [
     "main",
     "vuba_banner_image_wqtQtY",
-    "vuba_teams_Uiw86R",
-    "rich_text_MCphw8",
+    "vuba_testimonial_text_czPD4M",
     "vuba_timeline_FwRgWB"
   ]
 }

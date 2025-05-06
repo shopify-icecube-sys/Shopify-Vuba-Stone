@@ -34,6 +34,13 @@
         "richtext": "<p>We are the leading worldwide manufacturer of resin and aggregates used for commercial and residential projects for pedestrian and vehicle traffic for permeable and durable resin surfacing. </p>"
       }
     },
+    "vuba_latest_project_EzJDYY": {
+      "type": "vuba-latest-project",
+      "settings": {
+        "section_heading": "Vuba Stone Updates",
+        "blog_handle": "project"
+      }
+    },
     "vuba_stone_update_ejAbT4": {
       "type": "vuba-stone-update",
       "disabled": true,
@@ -58,13 +65,6 @@
         "image": "shopify://shop_images/VubaMac_Graphic.png",
         "video_url": "https://cdn.shopify.com/videos/c/o/v/728b5f01834f4ec2bbee173c63051434.mp4",
         "video_poster": "shopify://shop_images/Video-placeholder-m.jpg"
-      }
-    },
-    "vuba_latest_project_EzJDYY": {
-      "type": "vuba-latest-project",
-      "settings": {
-        "section_heading": "Vuba Stone Updates",
-        "blog_handle": "project"
       }
     },
     "vuba_installer_FFY7En": {
@@ -127,10 +127,10 @@
   "order": [
     "vuba_banner_image_kFLjhb",
     "vuba_richtext_6J9PEW",
+    "vuba_latest_project_EzJDYY",
     "vuba_stone_update_ejAbT4",
     "vuba_mac_section_one_y7KRnV",
     "vuba_mac_section_two_6aJYrG",
-    "vuba_latest_project_EzJDYY",
     "vuba_installer_FFY7En",
     "vuba_stampede_XhMWq3",
     "vuba_epoxy_stone_eWXmKp",

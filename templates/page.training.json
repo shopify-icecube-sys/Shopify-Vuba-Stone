@@ -99,90 +99,40 @@
         "team_member_xd4PwN": {
           "type": "team_member",
           "settings": {
-            "team_member_name": "Name, Surname",
-            "team_member_company": "Company",
-            "team_member_image": "shopify://shop_images/technical-1.jpg",
-            "team_member_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum"
+            "team_member_name": "Ellie Platten",
+            "team_member_company": "Americas Territory Manager",
+            "team_member_image": "shopify://shop_images/Copy_of_Ellie_Platten_edit.png",
+            "team_member_description": ""
           }
         },
         "team_member_jnpr3E": {
           "type": "team_member",
           "settings": {
-            "team_member_name": "Name, Surname",
-            "team_member_company": "Company",
-            "team_member_image": "shopify://shop_images/technical-1.jpg",
-            "team_member_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum"
+            "team_member_name": "Ellis Webb",
+            "team_member_company": "Americas Account Manager",
+            "team_member_image": "shopify://shop_images/Copy_of_Ellis.png",
+            "team_member_description": ""
           }
         },
         "team_member_THpkjU": {
           "type": "team_member",
           "settings": {
-            "team_member_name": "Name, Surname",
-            "team_member_company": "Company",
-            "team_member_image": "shopify://shop_images/technical-1.jpg",
-            "team_member_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum"
-          }
-        },
-        "team_member_XwKrb9": {
-          "type": "team_member",
-          "settings": {
-            "team_member_name": "Name, Surname",
-            "team_member_company": "Company",
-            "team_member_image": "shopify://shop_images/technical-1.jpg",
-            "team_member_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum"
-          }
-        },
-        "team_member_RnEh9X": {
-          "type": "team_member",
-          "settings": {
-            "team_member_name": "Name, Surname",
-            "team_member_company": "Company",
-            "team_member_image": "shopify://shop_images/technical-1.jpg",
-            "team_member_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum"
-          }
-        },
-        "team_member_74wF86": {
-          "type": "team_member",
-          "settings": {
-            "team_member_name": "Name, Surname",
-            "team_member_company": "Company",
-            "team_member_image": "shopify://shop_images/technical-1.jpg",
-            "team_member_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum"
-          }
-        },
-        "team_member_dNGPkh": {
-          "type": "team_member",
-          "settings": {
-            "team_member_name": "Name, Surname",
-            "team_member_company": "Company",
-            "team_member_image": "shopify://shop_images/technical-1.jpg",
-            "team_member_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum"
-          }
-        },
-        "team_member_cXD4ME": {
-          "type": "team_member",
-          "settings": {
-            "team_member_name": "Name, Surname",
-            "team_member_company": "Company",
-            "team_member_image": "shopify://shop_images/technical-1.jpg",
-            "team_member_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra bibendum"
+            "team_member_name": "Georgie Foote",
+            "team_member_company": "Americas Sales Administrator",
+            "team_member_image": "shopify://shop_images/Copy_of_Georgia_Foote_1.png",
+            "team_member_description": ""
           }
         }
       },
       "block_order": [
         "team_member_xd4PwN",
         "team_member_jnpr3E",
-        "team_member_THpkjU",
-        "team_member_XwKrb9",
-        "team_member_RnEh9X",
-        "team_member_74wF86",
-        "team_member_dNGPkh",
-        "team_member_cXD4ME"
+        "team_member_THpkjU"
       ],
       "settings": {
-        "section_title": "Technical and Training Team",
+        "section_title": "Vuba Team",
         "section_title_left": "",
-        "section_description": "<p>Trained by experts, trusted by homeowners—our Technical and Training Team makes it happen.</p>"
+        "section_description": ""
       }
     },
     "vuba_testimonial_text_LtDpNt": {
