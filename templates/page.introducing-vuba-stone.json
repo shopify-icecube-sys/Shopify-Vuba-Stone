@@ -22,7 +22,7 @@
       "settings": {
         "logo": "shopify://shop_images/LogoIdeasVuba.svg",
         "heading": "Introducing Vuba Stone",
-        "description": "<p>The ultimate solution for flood-resistant paving that revolutionises traditional construction methods.</p>"
+        "description": "<p>A high quality, decorative surfacing solution. Built to last.</p>"
       }
     },
     "vuba_introduction_two_GptM3Q": {
@@ -60,15 +60,15 @@
     "vuba_richtext_intro_L37gmb": {
       "type": "vuba_richtext_intro",
       "settings": {
-        "heading": "What is VubaMac?",
-        "description": "<p>With a monolithic bond guaranteeing long-lasting performance, VubaMac surpasses conventional materials like concrete and asphalt in longevity and flexibility. Plus, its ease of application, provided by a single supplier, offers unmatched convenience, with installations completed in just one day, minimising disruption and providing a smoother, quieter alternative. Say hello to a greener, more resilient future with VubaMac.</p>"
+        "heading": "What is Vuba Stone?",
+        "description": "<p>VubaStone is a high-performance resin surfacing system that combines premium European marble with a UV-stable polyurethane resin to create a smooth, durable, and visually striking finish. </p>"
       }
     },
     "vuba_intro_multirow_9VY8pk": {
       "type": "vuba-intro-multirow",
       "settings": {
         "heading_1": "What is VubaMac?",
-        "description_1": "With a monolithic bond guaranteeing long-lasting performance, VubaMac surpasses conventional materials like concrete and asphalt in longevity and flexibility. Plus, its ease of application, provided by a single supplier, offers unmatched convenience, with installations completed in just one day, minimising disruption and providing a smoother, quieter alternative. Say hello to a greener, more resilient future with VubaMac.",
+        "description_1": "Designed for both residential and commercial use, it's ideal for driveways, patios, walkways, and pool decks. Unlike traditional concrete or pavers, VubaStone is fully permeable, helping to reduce surface water and flooding issues.",
         "video_url": "https://www.youtube.com/watch?v=D0UnqGm_miA",
         "heading_2": "What is VubaMac?",
         "description_2": "<p>With a monolithic bond guaranteeing long-lasting performance, VubaMac surpasses conventional materials like concrete and asphalt in longevity and flexibility. Plus, its ease of application, provided by a single supplier, offers unmatched convenience, with installations completed in just one day, minimising disruption and providing a smoother, quieter alternative. Say hello to a greener, more resilient future with VubaMac.</p>",
