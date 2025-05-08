@@ -20,21 +20,21 @@
     "vuba_technical_advice_DfJiqA": {
       "type": "vuba-technical-advice",
       "blocks": {
-        "technical_item_jXjGtg": {
-          "type": "technical_item",
-          "settings": {
-            "title": "Cracking",
-            "description": "<p>If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.</p>",
-            "icon": "shopify://shop_images/doc-icon.png",
-            "download_btn": "Download",
-            "button_link": "/"
-          }
-        },
         "technical_item_NQdLPL": {
           "type": "technical_item",
           "settings": {
-            "title": "Cracking",
-            "description": "<p>If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.</p>",
+            "title": "VubaMac The Ultimate Homeowner's Guide",
+            "description": "",
+            "icon": "shopify://shop_images/doc-icon.png",
+            "download_btn": "Download",
+            "button_link": "/https://cdn.shopify.com/s/files/1/0628/7520/5734/files/VubaMac_Homeowner_Guide_1.pdf?v=1746718956"
+          }
+        },
+        "technical_item_JizCxN": {
+          "type": "technical_item",
+          "settings": {
+            "title": "VubaMac Technical Data Sheet",
+            "description": "",
             "icon": "shopify://shop_images/doc-icon.png",
             "download_btn": "Download",
             "button_link": "/"
@@ -43,29 +43,114 @@
         "technical_item_wUaGrc": {
           "type": "technical_item",
           "settings": {
-            "title": "Cracking",
-            "description": "<p>If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.</p>",
+            "title": "VubaVert Application Guide",
+            "description": "",
             "icon": "shopify://shop_images/doc-icon.png",
+            "download_btn": "Download",
+            "button_link": "https://cdn.shopify.com/s/files/1/0628/7520/5734/files/VubaVert_Application_Guide.pdf?v=1746719143"
+          }
+        },
+        "technical_item_qch4nm": {
+          "type": "technical_item",
+          "settings": {
+            "title": "Warranty",
+            "description": "",
+            "icon": "shopify://shop_images/doc-icon_3bb1d763-b982-4399-a14c-68589e6c5f3b.png",
+            "download_btn": "Download",
+            "button_link": "https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Vuba_Stone_Warranty_Document_5.pdf?v=1746718529"
+          }
+        },
+        "technical_item_jXjGtg": {
+          "type": "technical_item",
+          "settings": {
+            "title": "Vuba World Color Chart",
+            "description": "",
+            "icon": "shopify://shop_images/doc-icon.png",
+            "download_btn": "Download",
+            "button_link": "https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Vuba_Stone_Warranty_Document_5.pdf?v=1746718529"
+          }
+        },
+        "technical_item_QWb3VA": {
+          "type": "technical_item",
+          "settings": {
+            "title": "VubaStone Contractor Guide",
+            "description": "",
+            "icon": "shopify://shop_images/doc-icon_3bb1d763-b982-4399-a14c-68589e6c5f3b.png",
+            "download_btn": "Download",
+            "button_link": "https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Vuba_Stone_Trifold_-_Contractor_-_Website_1_1.pdf?v=1746720166"
+          }
+        },
+        "technical_item_bdcxAG": {
+          "type": "technical_item",
+          "settings": {
+            "title": "VubaStone Kit and Coverage Rates",
+            "description": "",
+            "icon": "shopify://shop_images/doc-icon_3bb1d763-b982-4399-a14c-68589e6c5f3b.png",
+            "download_btn": "Download",
+            "button_link": "https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Vuba_Stone_Kit_Coverage_Rates_13.jpg?v=1746720331"
+          }
+        },
+        "technical_item_UJWn9t": {
+          "type": "technical_item",
+          "settings": {
+            "title": "Colour Bound Datasheet",
+            "description": "",
+            "icon": "shopify://shop_images/doc-icon_3bb1d763-b982-4399-a14c-68589e6c5f3b.png",
+            "download_btn": "Download",
+            "button_link": "https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Vuba_Stone_Color_Bound_Datasheet_2.pdf?v=1746721589"
+          }
+        },
+        "technical_item_Ntq7tg": {
+          "type": "technical_item",
+          "settings": {
+            "title": "",
+            "description": "",
+            "icon": "shopify://shop_images/doc-icon_3bb1d763-b982-4399-a14c-68589e6c5f3b.png",
             "download_btn": "Download",
             "button_link": "/"
           }
         },
-        "technical_item_JizCxN": {
+        "technical_item_TpeRW9": {
           "type": "technical_item",
           "settings": {
             "title": "Cracking",
             "description": "<p>If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.</p>",
-            "icon": "shopify://shop_images/doc-icon.png",
+            "download_btn": "Download",
+            "button_link": "/"
+          }
+        },
+        "technical_item_i9PVRB": {
+          "type": "technical_item",
+          "settings": {
+            "title": "Cracking",
+            "description": "<p>If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.</p>",
+            "download_btn": "Download",
+            "button_link": "/"
+          }
+        },
+        "technical_item_TxUwNN": {
+          "type": "technical_item",
+          "settings": {
+            "title": "Cracking",
+            "description": "<p>If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.</p>",
             "download_btn": "Download",
             "button_link": "/"
           }
         }
       },
       "block_order": [
-        "technical_item_jXjGtg",
         "technical_item_NQdLPL",
+        "technical_item_JizCxN",
         "technical_item_wUaGrc",
-        "technical_item_JizCxN"
+        "technical_item_qch4nm",
+        "technical_item_jXjGtg",
+        "technical_item_QWb3VA",
+        "technical_item_bdcxAG",
+        "technical_item_UJWn9t",
+        "technical_item_Ntq7tg",
+        "technical_item_TpeRW9",
+        "technical_item_i9PVRB",
+        "technical_item_TxUwNN"
       ],
       "settings": {
         "section_title": "Technical Advice",

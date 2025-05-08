@@ -47,11 +47,31 @@
             "download_link": "https://www.flipsnack.com/E7BF6588B7A/new-shelf/full-view.html",
             "download_btn": "Download"
           }
+        },
+        "card_mnBzmA": {
+          "type": "card",
+          "settings": {
+            "card_title": "VubaMac Base Buildup",
+            "card_description": "",
+            "download_link": "https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Vuba_Stone_-_VubaMac_Base_Build-Up_V11_3_3.pdf?v=1746717757",
+            "download_btn": "Download"
+          }
+        },
+        "card_khaFjz": {
+          "type": "card",
+          "settings": {
+            "card_title": "VubaMac Technical Data Sheet",
+            "card_description": "",
+            "download_link": "https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Vuba_Stone_VubaMac_Technical_Datasheet_3_5_3.pdf?v=1746718040",
+            "download_btn": "Download"
+          }
         }
       },
       "block_order": [
         "card_hgCgBk",
-        "card_ckQyMt"
+        "card_ckQyMt",
+        "card_mnBzmA",
+        "card_khaFjz"
       ],
       "settings": {
         "right_image": "shopify://shop_images/Untitled-1_1.png"
@@ -64,35 +84,6 @@
         "description": "<p>With a monolithic bond guaranteeing long-lasting performance, VubaMac surpasses conventional materials like concrete and asphalt in longevity and flexibility. Plus, its ease of application, provided by a single supplier, offers unmatched convenience, with installations completed in just one day, minimizing disruption and providing a smoother, quieter alternative. Say hello to a greener, more resilient future with VubaMac. </p>",
         "video_url": "https://cdn.shopify.com/videos/c/o/v/34c108f81d13410d93fa2f8c87d8ae1f.mp4"
       }
-    },
-    "vuba_introduction_two_nRPa6c": {
-      "type": "vuba-introduction-two",
-      "blocks": {
-        "card_8jgxCh": {
-          "type": "card",
-          "settings": {
-            "card_title": "Vuba Mac Base Buildup",
-            "card_description": "<p>This is a sample description.</p>",
-            "download_link": "/",
-            "download_btn": "Download"
-          }
-        },
-        "card_M64XWd": {
-          "type": "card",
-          "settings": {
-            "card_title": "Learn About",
-            "card_description": "<p>This is a sample description.</p>",
-            "download_link": "/",
-            "download_btn": "Download"
-          }
-        }
-      },
-      "block_order": [
-        "card_8jgxCh",
-        "card_M64XWd"
-      ],
-      "name": "Vuba Introduction Two",
-      "settings": {}
     },
     "vuba_intro_multicolumn_87pp9a": {
       "type": "vuba-intro-multicolumn",
@@ -151,7 +142,6 @@
     "vuba_introduction_pAVw9g",
     "vuba_introduction_two_63M8U6",
     "vuba_text_with_vedio_XU3dpw",
-    "vuba_introduction_two_nRPa6c",
     "vuba_intro_multicolumn_87pp9a"
   ]
 }
