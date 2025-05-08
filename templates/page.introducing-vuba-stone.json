@@ -54,7 +54,7 @@
         "card_3eTLrp"
       ],
       "settings": {
-        "right_image": "shopify://shop_images/Introducing-Vuba-Stone-hero.png"
+        "right_image": "shopify://shop_images/Kit.png"
       }
     },
     "vuba_richtext_intro_L37gmb": {
@@ -69,10 +69,10 @@
       "settings": {
         "heading_1": "",
         "description_1": "Designed for both residential and commercial use, it's ideal for driveways, patios, walkways, and pool decks. Unlike traditional concrete or pavers, VubaStone is fully permeable, helping to reduce surface water and flooding issues.",
-        "video_url": "https://www.youtube.com/watch?v=D0UnqGm_miA",
+        "video_url": "",
         "heading_2": "",
         "description_2": "<p>Vuba Stone is slip-resistant, low-maintenance, and resistant to fading—even in harsh sunlight. Available in over 24 colors inspired by locations around the world, Vuba Stone offers a luxury look with long-lasting performance, making it a favourable choice for both homeowners and professional installers.</p>",
-        "image_url": "shopify://shop_images/air-source-heat-pump.png"
+        "image_url": "shopify://shop_images/Second_Pic.jpg"
       }
     },
     "vuba_intro_multicolumn_ifK3H3": {
@@ -122,7 +122,7 @@
         "highlight_BbLeTL"
       ],
       "settings": {
-        "background_image": "shopify://shop_images/vuba-mac-2.jpg",
+        "background_image": "shopify://shop_images/Third_Pic.jpg",
         "description": ""
       }
     },
