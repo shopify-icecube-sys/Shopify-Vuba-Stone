@@ -65,6 +65,35 @@
         "video_url": "https://cdn.shopify.com/videos/c/o/v/34c108f81d13410d93fa2f8c87d8ae1f.mp4"
       }
     },
+    "vuba_introduction_two_nRPa6c": {
+      "type": "vuba-introduction-two",
+      "blocks": {
+        "card_8jgxCh": {
+          "type": "card",
+          "settings": {
+            "card_title": "Vuba Mac Base Buildup",
+            "card_description": "<p>This is a sample description.</p>",
+            "download_link": "/",
+            "download_btn": "Download"
+          }
+        },
+        "card_M64XWd": {
+          "type": "card",
+          "settings": {
+            "card_title": "Learn About",
+            "card_description": "<p>This is a sample description.</p>",
+            "download_link": "/",
+            "download_btn": "Download"
+          }
+        }
+      },
+      "block_order": [
+        "card_8jgxCh",
+        "card_M64XWd"
+      ],
+      "name": "Vuba Introduction Two",
+      "settings": {}
+    },
     "vuba_intro_multicolumn_87pp9a": {
       "type": "vuba-intro-multicolumn",
       "blocks": {
@@ -115,140 +144,6 @@
         "background_image": "shopify://shop_images/Double.jpg",
         "description": ""
       }
-    },
-    "vuba_mac_download_FjXtyb": {
-      "type": "vuba-mac-download",
-      "blocks": {
-        "download_item_LW8cHN": {
-          "type": "download_item",
-          "settings": {
-            "icon": "shopify://shop_images/doc-icon.png",
-            "title": "Pedestrian",
-            "link": "https://cdn.shopify.com/s/files/1/0759/2978/0515/files/VubaMac_Base_Build-Up_Pedestrian_2.pdf",
-            "column_id": "D"
-          }
-        },
-        "download_item_ednR3U": {
-          "type": "download_item",
-          "settings": {
-            "icon": "shopify://shop_images/doc-icon.png",
-            "title": "Heavy Vehicle",
-            "link": "",
-            "column_id": "B"
-          }
-        },
-        "download_item_Fp74UU": {
-          "type": "download_item",
-          "settings": {
-            "icon": "shopify://shop_images/doc-icon.png",
-            "title": "Heavy Vehicle",
-            "link": "",
-            "column_id": "B"
-          }
-        },
-        "download_item_zXQBCn": {
-          "type": "download_item",
-          "settings": {
-            "icon": "shopify://shop_images/doc-icon.png",
-            "title": "Heavy Vehicle",
-            "link": "",
-            "column_id": "B"
-          }
-        },
-        "download_item_XiixmB": {
-          "type": "download_item",
-          "settings": {
-            "icon": "shopify://shop_images/doc-icon.png",
-            "title": "Heavy Vehicle",
-            "link": "",
-            "column_id": "A"
-          }
-        },
-        "download_item_WxiN8g": {
-          "type": "download_item",
-          "settings": {
-            "icon": "shopify://shop_images/doc-icon.png",
-            "title": "Heavy Vehicle",
-            "link": "",
-            "column_id": "A"
-          }
-        },
-        "download_item_fiKnrU": {
-          "type": "download_item",
-          "settings": {
-            "icon": "shopify://shop_images/doc-icon.png",
-            "title": "Heavy Vehicle",
-            "link": "",
-            "column_id": "A"
-          }
-        },
-        "download_item_iqCMUW": {
-          "type": "download_item",
-          "settings": {
-            "icon": "shopify://shop_images/doc-icon.png",
-            "title": "Heavy Vehicle",
-            "link": "",
-            "column_id": "C"
-          }
-        },
-        "download_item_FnmRfH": {
-          "type": "download_item",
-          "settings": {
-            "icon": "shopify://shop_images/doc-icon.png",
-            "title": "Heavy Vehicle",
-            "link": "",
-            "column_id": "C"
-          }
-        },
-        "download_item_qw4eCj": {
-          "type": "download_item",
-          "settings": {
-            "icon": "shopify://shop_images/doc-icon.png",
-            "title": "Heavy Vehicle",
-            "link": "",
-            "column_id": "C"
-          }
-        },
-        "download_item_teybDa": {
-          "type": "download_item",
-          "settings": {
-            "icon": "shopify://shop_images/doc-icon.png",
-            "title": "Vehicle",
-            "link": "https://cdn.shopify.com/s/files/1/0759/2978/0515/files/VubaMac_Base_Build-Up_Vehicle_1_6dcca6c9-ff2b-4d9d-bb86-a29080f1933b.pdf",
-            "column_id": "D"
-          }
-        },
-        "download_item_xBjyz7": {
-          "type": "download_item",
-          "settings": {
-            "icon": "shopify://shop_images/doc-icon.png",
-            "title": "Commercial",
-            "link": "https://cdn.shopify.com/s/files/1/0759/2978/0515/files/Amend_2_VubaMac_Application_Guide_-_Commercial_1.pdf",
-            "column_id": "D"
-          }
-        }
-      },
-      "block_order": [
-        "download_item_LW8cHN",
-        "download_item_ednR3U",
-        "download_item_Fp74UU",
-        "download_item_zXQBCn",
-        "download_item_XiixmB",
-        "download_item_WxiN8g",
-        "download_item_fiKnrU",
-        "download_item_iqCMUW",
-        "download_item_FnmRfH",
-        "download_item_qw4eCj",
-        "download_item_teybDa",
-        "download_item_xBjyz7"
-      ],
-      "settings": {
-        "section_title": "Download Vuba Mac Resources",
-        "section_image_1": "shopify://shop_images/statementCountry.jpg",
-        "section_image_2": "shopify://shop_images/methodStatement.jpg",
-        "section_image_3": "shopify://shop_images/buildUpCountry.jpg",
-        "section_image_4": "shopify://shop_images/buildUp.jpg"
-      }
     }
   },
   "order": [
@@ -256,7 +151,7 @@
     "vuba_introduction_pAVw9g",
     "vuba_introduction_two_63M8U6",
     "vuba_text_with_vedio_XU3dpw",
-    "vuba_intro_multicolumn_87pp9a",
-    "vuba_mac_download_FjXtyb"
+    "vuba_introduction_two_nRPa6c",
+    "vuba_intro_multicolumn_87pp9a"
   ]
 }
