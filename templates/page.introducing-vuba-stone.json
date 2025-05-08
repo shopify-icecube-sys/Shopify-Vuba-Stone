@@ -32,8 +32,8 @@
           "type": "card",
           "settings": {
             "card_image": "shopify://shop_images/doc-icon.png",
-            "card_title": "Learn About",
-            "card_description": "<p>If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.</p>",
+            "card_title": "Vuba Stone Resin Technical Data Sheet",
+            "card_description": "",
             "download_link": "/",
             "download_btn": "Download"
           }
@@ -42,8 +42,8 @@
           "type": "card",
           "settings": {
             "card_image": "shopify://shop_images/doc-icon.png",
-            "card_title": "The environment",
-            "card_description": "<p>If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.</p>",
+            "card_title": "Vuba Stone Base Build Up",
+            "card_description": "",
             "download_link": "/",
             "download_btn": "Download"
           }
@@ -67,11 +67,11 @@
     "vuba_intro_multirow_9VY8pk": {
       "type": "vuba-intro-multirow",
       "settings": {
-        "heading_1": "What is VubaMac?",
+        "heading_1": "",
         "description_1": "Designed for both residential and commercial use, it's ideal for driveways, patios, walkways, and pool decks. Unlike traditional concrete or pavers, VubaStone is fully permeable, helping to reduce surface water and flooding issues.",
         "video_url": "https://www.youtube.com/watch?v=D0UnqGm_miA",
-        "heading_2": "What is VubaMac?",
-        "description_2": "<p>With a monolithic bond guaranteeing long-lasting performance, VubaMac surpasses conventional materials like concrete and asphalt in longevity and flexibility. Plus, its ease of application, provided by a single supplier, offers unmatched convenience, with installations completed in just one day, minimising disruption and providing a smoother, quieter alternative. Say hello to a greener, more resilient future with VubaMac.</p>",
+        "heading_2": "",
+        "description_2": "<p>Vuba Stone is slip-resistant, low-maintenance, and resistant to fading—even in harsh sunlight. Available in over 24 colors inspired by locations around the world, Vuba Stone offers a luxury look with long-lasting performance, making it a favourable choice for both homeowners and professional installers.</p>",
         "image_url": "shopify://shop_images/air-source-heat-pump.png"
       }
     },
@@ -123,7 +123,7 @@
       ],
       "settings": {
         "background_image": "shopify://shop_images/vuba-mac-2.jpg",
-        "description": "<p>With a monolithic bond guaranteeing long-lasting performance, VubaMac surpasses conventional materials like concrete and asphalt in longevity and flexibility. Plus, its ease of application, provided by a single supplier, offers unmatched convenience, with installations completed in just one day, minimising disruption and providing a smoother, quieter alternative.</p>"
+        "description": ""
       }
     },
     "vuba_latest_project_4QqytH": {
