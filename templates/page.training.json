@@ -88,6 +88,7 @@
     },
     "vuba_latest_project_djTy4n": {
       "type": "vuba-latest-project",
+      "disabled": true,
       "settings": {
         "section_heading": "Our Previous Training Courses",
         "blog_handle": "news"

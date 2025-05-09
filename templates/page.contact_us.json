@@ -33,6 +33,7 @@
     },
     "vuba_latest_project_4neBBT": {
       "type": "vuba-latest-project",
+      "disabled": true,
       "settings": {
         "section_heading": "Latest News & Case Studies",
         "blog_handle": "project"
