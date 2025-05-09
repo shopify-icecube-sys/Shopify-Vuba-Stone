@@ -40,6 +40,16 @@
             "button_link": "/"
           }
         },
+        "technical_item_Ntq7tg": {
+          "type": "technical_item",
+          "settings": {
+            "title": "VubaMac Base Buildup",
+            "description": "",
+            "icon": "shopify://shop_images/doc-icon_3bb1d763-b982-4399-a14c-68589e6c5f3b.png",
+            "download_btn": "Download",
+            "button_link": "https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Vuba_Stone_-_VubaMac_Base_Build-Up_V11_3_4.pdf?v=1746775077"
+          }
+        },
         "technical_item_wUaGrc": {
           "type": "technical_item",
           "settings": {
@@ -70,6 +80,16 @@
             "button_link": "https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Vuba_Stone_Warranty_Document_5.pdf?v=1746718529"
           }
         },
+        "technical_item_UJWn9t": {
+          "type": "technical_item",
+          "settings": {
+            "title": "Colour Bound Datasheet",
+            "description": "",
+            "icon": "shopify://shop_images/doc-icon_3bb1d763-b982-4399-a14c-68589e6c5f3b.png",
+            "download_btn": "Download",
+            "button_link": "https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Vuba_Stone_Color_Bound_Datasheet_2.pdf?v=1746721589"
+          }
+        },
         "technical_item_QWb3VA": {
           "type": "technical_item",
           "settings": {
@@ -90,64 +110,47 @@
             "button_link": "https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Vuba_Stone_Kit_Coverage_Rates_13.jpg?v=1746720331"
           }
         },
-        "technical_item_UJWn9t": {
-          "type": "technical_item",
-          "settings": {
-            "title": "Colour Bound Datasheet",
-            "description": "",
-            "icon": "shopify://shop_images/doc-icon_3bb1d763-b982-4399-a14c-68589e6c5f3b.png",
-            "download_btn": "Download",
-            "button_link": "https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Vuba_Stone_Color_Bound_Datasheet_2.pdf?v=1746721589"
-          }
-        },
-        "technical_item_Ntq7tg": {
-          "type": "technical_item",
-          "settings": {
-            "title": "",
-            "description": "",
-            "icon": "shopify://shop_images/doc-icon_3bb1d763-b982-4399-a14c-68589e6c5f3b.png",
-            "download_btn": "Download",
-            "button_link": "/"
-          }
-        },
         "technical_item_TpeRW9": {
           "type": "technical_item",
           "settings": {
-            "title": "Cracking",
-            "description": "<p>If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.</p>",
+            "title": "Vuba Permeability Report",
+            "description": "",
+            "icon": "shopify://shop_images/doc-icon_3bb1d763-b982-4399-a14c-68589e6c5f3b.png",
             "download_btn": "Download",
-            "button_link": "/"
+            "button_link": "https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Vuba_Permeability_Report_2_1.pdf?v=1746775303"
           }
         },
         "technical_item_i9PVRB": {
           "type": "technical_item",
           "settings": {
-            "title": "Cracking",
-            "description": "<p>If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.</p>",
+            "title": "Aftercare and Cleaning Guide",
+            "description": "",
+            "icon": "shopify://shop_images/doc-icon_3bb1d763-b982-4399-a14c-68589e6c5f3b.png",
             "download_btn": "Download",
-            "button_link": "/"
+            "button_link": "https://cdn.shopify.com/s/files/1/0628/7520/5734/files/Aftercare_and_Cleaning_Guide_3.pdf?v=1746775407"
           }
         },
         "technical_item_TxUwNN": {
           "type": "technical_item",
           "settings": {
-            "title": "Cracking",
-            "description": "<p>If you have cracks in your system it could be due to a number of reasons. This is something that can be prevented for every project.</p>",
+            "title": "UV Resin Binder Technical Data Sheet",
+            "description": "",
+            "icon": "shopify://shop_images/doc-icon_3bb1d763-b982-4399-a14c-68589e6c5f3b.png",
             "download_btn": "Download",
-            "button_link": "/"
+            "button_link": "https://cdn.shopify.com/s/files/1/0628/7520/5734/files/UV_World_Resin_Vuba_Stone_Resin_Bound_Binder_UVR_Technical_Datasheet_V8_2_2_4.pdf?v=1746775588"
           }
         }
       },
       "block_order": [
         "technical_item_NQdLPL",
         "technical_item_JizCxN",
+        "technical_item_Ntq7tg",
         "technical_item_wUaGrc",
         "technical_item_qch4nm",
         "technical_item_jXjGtg",
+        "technical_item_UJWn9t",
         "technical_item_QWb3VA",
         "technical_item_bdcxAG",
-        "technical_item_UJWn9t",
-        "technical_item_Ntq7tg",
         "technical_item_TpeRW9",
         "technical_item_i9PVRB",
         "technical_item_TxUwNN"
