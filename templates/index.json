@@ -34,6 +34,13 @@
         "richtext": "<p>We are the global leading manufacturer of resin and processor of aggregates, delivering durable, permeable surfacing solutions for commercial and residential projects. <br/><br/>Our trusted network of over 120 certified installers spans across North, Central, and South America, ensuring expert application, local support, and consistent quality on every project. Whether it's a high-profile commercial development or a custom residential installation, our installer network brings our world-class systems to life on-site.</p>"
       }
     },
+    "vuba_world_blends_qLUdYH": {
+      "type": "vuba-world-blends",
+      "settings": {
+        "heading": "Vuba World Blends",
+        "collection": "vuba-america"
+      }
+    },
     "vuba_latest_project_EzJDYY": {
       "type": "vuba-latest-project",
       "disabled": true,
@@ -60,6 +67,7 @@
     },
     "vuba_mac_section_two_6aJYrG": {
       "type": "vuba-mac-section-two",
+      "disabled": true,
       "settings": {
         "heading": "Vuba Mac",
         "description": "VubaMac provides a comprehensive 10-year warranty, ensuring that your purchase is fully backed by a trusted company. With our commitment to quality, durability, and customer satisfaction, Vuba Stone stands behind the excellence of our VubaMac product. This extended warranty gives you peace of mind, knowing your investment is protected long term.",
@@ -107,13 +115,6 @@
         "button_link": ""
       }
     },
-    "vuba_world_blends_qLUdYH": {
-      "type": "vuba-world-blends",
-      "settings": {
-        "heading": "Vuba World Blends",
-        "collection": "vuba-america"
-      }
-    },
     "vuba_headline_zqWMqq": {
       "type": "vuba-headline",
       "settings": {
@@ -128,6 +129,7 @@
   "order": [
     "vuba_banner_image_kFLjhb",
     "vuba_richtext_6J9PEW",
+    "vuba_world_blends_qLUdYH",
     "vuba_latest_project_EzJDYY",
     "vuba_stone_update_ejAbT4",
     "vuba_mac_section_one_y7KRnV",
@@ -135,7 +137,6 @@
     "vuba_installer_FFY7En",
     "vuba_stampede_XhMWq3",
     "vuba_epoxy_stone_eWXmKp",
-    "vuba_world_blends_qLUdYH",
     "vuba_headline_zqWMqq"
   ]
 }
