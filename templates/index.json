@@ -13,7 +13,7 @@
       "type": "vuba-banner-image",
       "settings": {
         "background_image": "shopify://shop_images/Driveway_Mr_Mudd_Installer_Page_56442178-c729-4b90-b0b3-63e68d309c20.jpg",
-        "background_image_mobile": "shopify://shop_images/banner-m.jpg",
+        "background_image_mobile": "shopify://shop_images/Driveway_Mr_Mudd_Installer_Page_3ef893a5-34fb-41be-aeea-9e276438cbf3.jpg",
         "logo_desktop": "shopify://shop_images/vuba-stone-brochure-d.svg",
         "logo_mobile": "shopify://shop_images/vuba-stone-brochure-m.svg",
         "title": "DOWNLOAD OUR BROCHURE",
@@ -117,9 +117,9 @@
     "vuba_headline_zqWMqq": {
       "type": "vuba-headline",
       "settings": {
-        "headline_image": "shopify://shop_images/Vusion_Example_1.png",
+        "headline_image": "shopify://shop_images/Example_1_d1cf22ea-9817-419a-8ae9-16f994038f02.png",
         "headline_text": "VUSION",
-        "subheading_text": "Struggling to decide what blend to have on your project? With homeowners in mind we created Vusion, a virtual representation of what your driveway could look like. Pick up to three blends and have the results back in one working day.",
+        "subheading_text": "Struggling to decide what blend to have on your project? With homeowners in mind we have created Vusion, a virtual representation of what your driveway could look like. Pick up to three blends and have the results back in one working day.",
         "button_text": "Try now",
         "button_link": "https://vusion.vubaresin.com/"
       }
