@@ -73,8 +73,8 @@
       "settings": {
         "category_name": "Category Name",
         "button_link": "shopify://pages/contact",
-        "button_text": "GO TO INSTALLER",
-        "image": "shopify://shop_images/vuba-installer-man-d.png",
+        "button_text": "Find out more",
+        "image": "shopify://shop_images/Copy_of_Team_Trowelling_crop.jpg",
         "image_alt": "Vuba Installer"
       }
     },
