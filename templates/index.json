@@ -86,14 +86,6 @@
         "image_alt": "Vuba Installer"
       }
     },
-    "vuba_stampede_XhMWq3": {
-      "type": "vuba-stampede",
-      "settings": {
-        "main_image": "shopify://shop_images/tiktok.jpg",
-        "heading": "Join the Stampede!",
-        "description": "We have more than 100 Million views and 1 Million Followers across social media worldwide! Follow us on Instagram, Facebook and LinkedIn for industry updates and the latest Vuba Stone news & innovations!"
-      }
-    },
     "vuba_epoxy_stone_eWXmKp": {
       "type": "vuba-epoxy-stone",
       "settings": {
@@ -124,6 +116,14 @@
         "button_text": "Try now",
         "button_link": "https://vusion.vubaresin.com/"
       }
+    },
+    "vuba_stampede_XhMWq3": {
+      "type": "vuba-stampede",
+      "settings": {
+        "main_image": "shopify://shop_images/tiktok.jpg",
+        "heading": "Join the Stampede!",
+        "description": "We have more than 100 Million views and 1 Million Followers across social media worldwide! Follow us on Instagram, Facebook and LinkedIn for industry updates and the latest Vuba Stone news & innovations!"
+      }
     }
   },
   "order": [
@@ -135,8 +135,8 @@
     "vuba_mac_section_one_y7KRnV",
     "vuba_mac_section_two_6aJYrG",
     "vuba_installer_FFY7En",
-    "vuba_stampede_XhMWq3",
     "vuba_epoxy_stone_eWXmKp",
-    "vuba_headline_zqWMqq"
+    "vuba_headline_zqWMqq",
+    "vuba_stampede_XhMWq3"
   ]
 }

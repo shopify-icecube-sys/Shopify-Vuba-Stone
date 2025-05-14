@@ -40,6 +40,7 @@
     },
     "vuba_world_colors_CwnG7t": {
       "type": "vuba-world-colors",
+      "disabled": true,
       "settings": {
         "logo": "shopify://shop_images/footer-logo-d.png",
         "logo_alt": "Footer Logo",
